@@ -10,6 +10,7 @@ const IndexPage = () => (
   <Layout>
      <Helmet>
         <script defer="defer" src={withPrefix('menu.js')} type="text/javascript" />
+    
     </Helmet>
     {/* <SEO title="Home" />
     <h1>Hi people</h1>

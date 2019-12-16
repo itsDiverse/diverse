@@ -72,8 +72,8 @@ const Header = ({ siteTitle }) => (
 </div>
 
     <div className="dropdownSection right" data-dropdown="developers" aria-hidden="true">
-      <div className="dropdownContent" style={{width: `400px`, height: `400px`}}>
-     
+      <div className="dropdownContent" style={{width: `800px`, height: `400px`}}>
+       
       </div>
     </div>
 
@@ -84,8 +84,57 @@ const Header = ({ siteTitle }) => (
     </div>
 
     <div className="dropdownSection right" data-dropdown="diverse" aria-hidden="true">
-      <div className="dropdownContent" style={{width: `400px`, height: `400px`}}>
-
+      <div className="dropdownContent" style={{width: `800px`, height: `400px`}}>
+      <div className="productNav">
+          <h3>Logo & Brand Identity</h3>
+          <div className="productNavItem"><Link to="/page-2/">Logo Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Brand Style Guides</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Business Cards and Stationary</Link></div>
+        </div>
+        <div className="productNav">
+          <h3>Web & Mobile</h3>
+          <div className="productNavItem"><Link to="/page-2/">Web & Mobile Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Social Media Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Banner Ads</Link></div>
+        </div>
+        <div className="productNav">
+          <h3>Print Design</h3>
+          <div className="productNavItem"><Link to="/page-2/">Flyer Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Brochure Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Poster Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Catalog Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Menu Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Postcard Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Invitation Design</Link></div>
+        </div>
+        <div className="productNav">
+          <h3>Packaging & Labels</h3>
+          <div className="productNavItem"><Link to="/page-2/">Book & Album Covers</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Packaging Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Car Wraps</Link></div>
+        </div>
+        <div className="productNav">
+          <h3>Visual Design</h3>
+          <div className="productNavItem"><Link to="/page-2/">Photoshop Editing</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Presentation Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Info Graphic Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Vector Tracing</Link></div>
+        </div>
+        <div className="productNav">
+          <h3>Architecture & Building Design</h3>
+          <div className="productNavItem"><Link to="/page-2/">Architecture & Interior Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Landscape Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Building Information Modeling</Link></div>
+        </div>
+        <div className="productNav">
+          <h3>Product & Characters Design</h3>
+          <div className="productNavItem"><Link to="/page-2/">3D Model & Product Design</Link></div>
+          <div className="productNavItem"><Link to="/page-2/">Character Modeling</Link></div>
+        </div>
+        <div className="productNav">
+          <h3>Merchandise</h3>
+          <div className="productNavItem"><Link to="/page-2/">T-Shirts & Merchandise</Link></div>
+        </div>
       </div>
     </div>
 
