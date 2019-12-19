@@ -172,17 +172,7 @@ function globalNavPopup(t) {
                     i = this.secondaryNavItem.getBoundingClientRect();
                 n.right > i.left && (this.container.classList.add("compact"), this.compact = !0)
             }
-    }, globalNavDropdowns.prototype.registerArrowKeyNavigation = function (t, e) {
-        var n = this;
-        null !== this.keyDownHandler && this.unregisterArrowKeyNavigation();
-        var i = [].slice.call(e.querySelectorAll("a")),
-            o = 0;
-        i[o].focus(), this.keyDownHandler = function (e) {
-            9 === e.keyCode ? (t.focus(), n.startCloseTimeout()) : 38 === e.keyCode ? (e.preventDefault(), --o < 0 && (o += i.length), i[o].focus()) : 40 === e.keyCode && (e.preventDefault(), ++o >= i.length && (o -= i.length), i[o].focus())
-        }, this.container.addEventListener("keydown", this.keyDownHandler)
-    }, globalNavDropdowns.prototype.unregisterArrowKeyNavigation = function () {
-        this.container.removeEventListener("keydown", this.keyDownHandler), this.keyDownHandler = null
-    }, globalNavDropdowns.prototype.openDropdown = function (t, e) {
+    },globalNavDropdowns.prototype.openDropdown = function (t, e) {
         var n = this;
         if (this.activeDropdown !== t) {
             this.container.classList.add("overlayActive"), this.container.classList.add("dropdownActive"), this.activeDropdown = t, this.activeDropdown.setAttribute("aria-expanded", "true"), this.dropdownRoots.forEach(function (t, e) {
