@@ -1,34 +1,6 @@
-import PropTypes from "prop-types"
 import React from "react"
-import { withPrefix, Link } from "gatsby"
-import logo from "../images/diverseLogo.svg"
 
-const Header = ({ siteTitle }) => (
-
-
-
-  <header>
-     
-
-
-  </header>
-
-
-
-)
-
-
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-
-
-export default Header
-
-
+export default () => 
+<div style={{ textAlign: `center`, height: `100px`, backgroundColor: `#eee` }}>
+  <h3>Header</h3>
+</div>
