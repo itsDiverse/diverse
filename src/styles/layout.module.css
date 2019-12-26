@@ -1,7 +1,5 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    
 }
 
 .headerContainer{
@@ -10,13 +8,12 @@
 }
 
 .contentContainer {
-    flex-grow: 1;
+   
+    height: 100vh;
 }
 
 .footerContainer{
     width: 100%;
     background-color: #f3f3f3;
-    position: absolute;
-    bottom: 0;
-
+  
   }
