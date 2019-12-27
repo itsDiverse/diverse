@@ -3,6 +3,7 @@ import style from "../../styles/quadBox.module.css"
 import { checkPropTypes } from "prop-types"
 import diverseSymbol from "../../images/diverseSymbol.svg"
 import diverseSymbolWhite from "../../images/diverseSymbolWhite.svg"
+
 export default (props) =>
 <>
 <div className={style.contentContainer}>
@@ -15,7 +16,7 @@ export default (props) =>
     <div className={style.quadBoxContainer} style={{gridTemplateRows: props.boxHeight}}>
         <div className={style.quadBox}>
             <div className={style.quadBoxLeft} >
-                <span className={style.imageContainer}><img src={diverseSymbolWhite} alt="Diverse Company Logo" width="60px" /></span>
+                <span className={style.imageContainer}><img src={props.image1} alt="Diverse Company Logo" width="60px" /></span>
             </div>
             
             <div className={style.quadBoxText}> 

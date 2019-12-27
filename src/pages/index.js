@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import QuadBox from '../components/widgets/quadBox'
+import diverseSymbolWhite from "../images/diverseSymbol.svg"
 
 const IndexPage = () => {
   return (
@@ -22,7 +23,8 @@ const IndexPage = () => {
           box4title='Bench'
           box4blurb='A team of bookkeepers, and powerful financial reporting software with zero learning curve.'
           box4Color='#14B5EA'
-        />
+          image1={diverseSymbolWhite}
+         />
   
         
        
