@@ -1,7 +1,7 @@
 .quadBoxContainer{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 200px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
     grid-gap: 40px;
     justify-items: stretch;
     margin: 0 auto;
@@ -11,6 +11,7 @@
 
   .headerBox{
     max-width: 1040px;
+    padding-top: 40px;
     margin: 0 auto;
     text-align: center;
     width: 80vw;
@@ -41,11 +42,36 @@
   .quadBoxLeft {
     width: 40%;
     padding: 20px;
-    background-Color:#a7a7a7;
+    position: relative;
+    z-index: 2;
+  }
+
+  .quadBoxLeft::before {
     transform: skewX(-12deg);
     right: -20px;
     transform-origin: top right;
-    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgb(202, 21, 21);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+
+ .imageContainer{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-position: 50%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
   }
   
   .quadBoxText {
@@ -70,10 +96,12 @@
     .quadBoxContainer{
       grid-template-columns: auto;
       padding: 20px;
+      grid-template-rows: auto;
     }
 
     .quadBox {
       flex-direction: column;
+     
     }
 
     .quadBoxLeft {

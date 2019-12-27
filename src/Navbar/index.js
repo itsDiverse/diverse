@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import styled from "styled-components"
+import diverseLogo from "../images/diverseLogo.svg"
 
 const NavbarEl = styled.nav`
   display: flex;
@@ -26,7 +27,7 @@ class Navbar extends Component {
     const { children, onMouseLeave } = this.props
     return (
       <NavbarEl onMouseLeave={onMouseLeave}>
-        <Logo>DIVERSE</Logo>
+        <Logo><img src={diverseLogo} alt="Diverse Company Logo" width="100px" /></Logo>
         <NavbarList>{children}</NavbarList>
       </NavbarEl>
     )
