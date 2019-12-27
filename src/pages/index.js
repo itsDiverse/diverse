@@ -8,17 +8,20 @@ const IndexPage = () => {
       <Layout>
         <QuadBox 
           boxHeight='200px 200px'
-          heading='the heading works bro!' 
-          blurb='and here is the lipsum!'
-          box1title='A box title!'
-          box1blurb='a'
-          box1Color='blue'
-          box2title='2a'
-          box2blurb='2'
-          box3title='title!'
-          box3blurb='a 3rd'
-          box4title='A 4th box title!'
-          box4blurb='a 4th box description will go here'
+          heading='Seamless integrations with finance software' 
+          blurb="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+          box1title='Expensify'
+          box1blurb='An application for expense management, receipt scanning, and business travel.'
+          box1Color='#14B5EA'
+          box2title='Quickbooks'
+          box2blurb='Manage your accounting, get invoices paid, accept payments, and much more.'
+          box2Color='#14B5EA'
+          box3title='Xero'
+          box3blurb="Easy-to-use, cloud-based accounting platform for small businesses and their advisors."
+          box3Color='#14B5EA'
+          box4title='Bench'
+          box4blurb='A team of bookkeepers, and powerful financial reporting software with zero learning curve.'
+          box4Color='#14B5EA'
         />
   
         

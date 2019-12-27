@@ -2,17 +2,34 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 200px;
-    grid-gap: 30px;
+    grid-gap: 40px;
     justify-items: stretch;
     margin: 0 auto;
     max-width: 1040px;
-   
-   
+    padding: 40px;
+  }
+
+  .headerBox{
+    max-width: 1040px;
+    margin: 0 auto;
+    text-align: center;
+    width: 80vw;
+  }
+
+  h2.heading {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+
+  h3.heading {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 21px;
   }
   
   .quadBox {
     
-      background-color: #eee;
     box-Shadow: 0 6px 12px -2px rgba(50,50,93,.25), 0 3px 7px -3px rgba(0,0,0,.3);
     border-radius: 8px;
     display: flex;
@@ -32,6 +49,45 @@
   }
   
   .quadBoxText {
-   text-align: center;
+   text-align: left;
+   padding: 20px;
+   width:60%;
+  }
+
+  .quadBoxText h1{
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    color: rgb(94, 94, 94);
+  }
+  .quadBoxText p{
+    font-size: 18px;
+    line-height: 31px;
+    color: rgb(134, 134, 134);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .quadBoxContainer{
+      grid-template-columns: auto;
+      padding: 20px;
+    }
+
+    .quadBox {
+      flex-direction: column;
+    }
+
+    .quadBoxLeft {
+      width: 100%;
+      padding: 20px;
+      transform: none;
+      height: 25%;
+    }
+
+    .quadBoxText {
+      text-align: center;
+      padding: 20px;
+      width:100%;
+     }
+
   }
   

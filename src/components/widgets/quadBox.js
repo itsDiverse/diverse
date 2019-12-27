@@ -4,9 +4,9 @@ import { checkPropTypes } from "prop-types"
 export default (props) =>
 <>
 <div className={style.contentContainer}>
-    <div style={{textAlign: `center`}}>
-<h2>{props.heading}</h2>
-        <h3>{props.blurb}</h3>
+    <div className={style.headerBox}>
+        <h2 className={style.heading}>{props.heading}</h2>
+        <h3 className={style.heading}>{props.blurb}</h3>
     </div>
 
     <div className={style.quadBoxContainer} style={{gridTemplateRows: props.boxHeight}}>
