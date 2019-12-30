@@ -15,8 +15,9 @@ export default (props) =>
 
     <div className={style.quadBoxContainer} style={{gridTemplateRows: props.boxHeight}}>
         <div className={style.quadBox}>
-            <div className={style.quadBoxLeft} >
-                <span className={style.imageContainer}><img src={props.image1} alt="Diverse Company Logo" width="60px" /></span>
+            <div className={style.quadBoxLeft}>
+                <span className={style.quadBoxLeftSkew} style={{backgroundColor: props.box1Color}} ></span>
+                <span className={style.imageContainer}><img src={props.image1} alt="Diverse Company Logo"/></span>
             </div>
             
             <div className={style.quadBoxText}> 
@@ -27,8 +28,9 @@ export default (props) =>
         </div>
 
         <div className={style.quadBox}>
-            <div className={style.quadBoxLeft} style={{backgroundColor: props.box2Color}}>
-               <img src={diverseSymbolWhite} alt="Diverse Company Logo" width="60px" />
+            <div className={style.quadBoxLeft}>
+            <span className={style.quadBoxLeftSkew} style={{backgroundColor: props.box2Color}} ></span>
+            <span className={style.imageContainer}><img src={props.image2} alt="Diverse Company Logo"/></span>
             </div>
             
             <div className={style.quadBoxText}> 
@@ -39,8 +41,9 @@ export default (props) =>
         </div>
 
         <div className={style.quadBox}>
-            <div className={style.quadBoxLeft} style={{backgroundColor: props.box3Color}}>
-                <img src={diverseSymbolWhite} alt="Diverse Company Logo" width="60px" />
+            <div className={style.quadBoxLeft}>
+                <span className={style.quadBoxLeftSkew} style={{backgroundColor: props.box3Color}} ></span>
+                <span className={style.imageContainer}><img src={props.image3} alt="Diverse Company Logo"/></span>
             </div>
             
             <div className={style.quadBoxText}> 
@@ -51,8 +54,9 @@ export default (props) =>
         </div>
 
         <div className={style.quadBox}>
-            <div className={style.quadBoxLeft} style={{backgroundColor: props.box4Color}}>
-                <img src={diverseSymbolWhite} alt="Diverse Company Logo" width="60px" />
+            <div className={style.quadBoxLeft}>
+            <span className={style.quadBoxLeftSkew} style={{backgroundColor: props.box4Color}} ></span>
+                <span className={style.imageContainer}><img src={props.image4} alt="Diverse Company Logo"/></span>
             </div>
             
             <div className={style.quadBoxText}> 
