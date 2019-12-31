@@ -33,21 +33,61 @@ a {
 }
 
 @font-face {
-  font-family: "proxima";
+  font-family: "Proxima";
   src: url("../fonts/ProximaNova-Regular-webfont.woff2");
 }
 
 body {
-  font-family: "proxima", impact;
+  font-family: "Proxima", serif;
+  background-color: aliceblue;
 }
 
 
 .contentContainer {
-  max-width: 1040px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
+
+.buttonDark{
+  padding: 10px 20px 10px 20px;
+  margin-right: 20px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  border:none;
+  box-shadow: 1px 5px 15px -3px rgba(0,0,0,0.20);
+  background-color: #337AC8;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.buttonDark:hover{
+  transform: translateY(-1px);
+  box-shadow: 1px 8px 15px -3px rgba(0,0,0,0.20);
+  background-color: rgb(62, 136, 214);
+}
+
+.buttonLight{
+  padding: 10px 20px 10px 20px;
+  margin-right: 20px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  border:none;
+  box-shadow: 1px 5px 15px -3px rgba(0,0,0,0.20);
+  background-color: #F7F9FC;
+  color: rgb(62, 136, 214);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.buttonLight:hover{
+  transform: translateY(-1px);
+  box-shadow: 1px 8px 15px -3px rgba(0,0,0,0.20);
+  background-color: #ffffff;
+}
+
 
 
 

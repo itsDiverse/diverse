@@ -4,22 +4,27 @@ import diverseLogo from "../images/diverseLogo.svg"
 
 const NavbarEl = styled.nav`
   display: flex;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
   font-size: 14px;
+  
+  
 `
 
 const Logo = styled.span`
   padding-top: 1rem;
   font-weight: bold;
   font-size: 18px;
+  
 `
 
 const NavbarList = styled.ul`
   display: flex;
   list-style: none;
   margin: 0;
+  
+  
 `
 
 class Navbar extends Component {
@@ -27,7 +32,7 @@ class Navbar extends Component {
     const { children, onMouseLeave } = this.props
     return (
       <NavbarEl onMouseLeave={onMouseLeave}>
-        <Logo><img src={diverseLogo} alt="Diverse Company Logo" width="100px" /></Logo>
+        <Logo><img src={diverseLogo} alt="Diverse Company Logo" width="120px" /></Logo>
         <NavbarList>{children}</NavbarList>
       </NavbarEl>
     )

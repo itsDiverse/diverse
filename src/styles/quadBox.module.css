@@ -1,3 +1,9 @@
+.wrapper{
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottomd: 80px;
+}
+
 .quadBoxContainer{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -5,12 +11,12 @@
     grid-gap: 40px;
     justify-items: stretch;
     margin: 0 auto;
-    max-width: 1040px;
+    max-width: 1200px;
     padding: 40px;
   }
 
   .headerBox{
-    max-width: 1040px;
+    max-width: 1200px;
     padding-top: 40px;
     margin: 0 auto;
     text-align: center;
@@ -36,6 +42,7 @@
     display: flex;
     position: relative;
     overflow: hidden;
+    background-color: #ffffff;
    
   }
   

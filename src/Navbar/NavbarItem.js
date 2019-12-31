@@ -5,11 +5,11 @@ import styled from 'styled-components'
 const NavbarItemTitle = styled.button`
     background: transparent;
     border: 0;
-    font-weight: bold;
+    font-weight: 100;
     font-family: inherit;
-    font-size: 14px;
+    font-size: 14.5px;
     padding: 1rem 1rem 2rem 0;
-    color: #000;
+    color: rgb(53, 53, 53);
     display: flex;
     justify-content: center;
     transition: opacity 250ms;
