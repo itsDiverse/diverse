@@ -2,6 +2,8 @@
 .container {
     display: flex;
     padding: 60px;
+    position: relative;
+  
 }
 
 .contentContainer {
@@ -11,17 +13,31 @@
 .videoContainer{
     width: 50%;
     background-color: #000;
-    -moz-transform: translate(15px, 0px) skew(-7deg, -5deg);
-    -webkit-transform: translate(15px, 0px) skew(-7deg, -5deg);
-    -o-transform: translate(15px, 0px) skew(-7deg, -5deg);
-    -ms-transform: translate(15px, 0px) skew(-7deg, -5deg);
-    transform: translate(15px, 0px) skew(-7deg, -5deg);
-    box-shadow: 34.3px 62.5px 125px -25px rgba(50,50,93,.5), 20.6px 37.5px 75px -37.5px rgba(0,0,0,.6);
+    position: absolute;
+    --device-scale: 0.16;
+    width: calc(3072px * var(--device-scale));
+    height: calc(1704px * var(--device-scale));
+    left: calc(65% + 100px);
+    top: 90%;
+    transform:translate(-120%,-50%) rotate3d(.342,-.94,0,21deg) rotateZ(7deg);
+    box-shadow: 37.2px 62.5px 125px -25px rgba(50,50,93,.5), 22.3px 37.5px 75px -37.5px rgba(0,0,0,.6);
     flex-basis: content;
     align-self: flex-start;
     border-radius: 8px;
     overflow: hidden;
     margin-right: -50px;
+}
+
+
+
+@media (min-width: 670px){
+    .videoContainer {
+        --device-scale: 0.21;
+            left: 119%;
+            top: 80%;
+        }
+        
+
 }
 
 .contentContainer h1{
