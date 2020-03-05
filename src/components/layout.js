@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Header from './header'
+
 import Footer from './footer'
 
 import '../styles/index.css'
@@ -10,7 +10,7 @@ const Layout = (props) => {
   return (
     <div className={layoutStyles.container}>
       <div className={layoutStyles.headerContainer}>
-        <Header />
+        
       </div>
       <div className={layoutStyles.contentContainer}>
        {props.children}
