@@ -1,6 +1,8 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import QuadBox from '../components/widgets/quadBox'
+import Module8 from '../components/widgets/module8'
 import ContentHeader from '../components/widgets/contentHeader'
 import diverseSymbol from "../images/diverseSymbol.svg"
 import diverseSymbolWhite from "../images/diverseSymbolWhite.svg"
@@ -9,6 +11,15 @@ import headerVideo from "../videos/hanzAnimationTest.mp4"
 const IndexPage = () => {
   return (
     <div>
+        <Helmet>
+        <script src="js/jquery.js"></script>
+<script src="js/jquery.meow.js"></script>
+
+
+
+
+      </Helmet>
+      
       <Layout>
         
         <ContentHeader 
@@ -46,6 +57,16 @@ const IndexPage = () => {
           image4={diverseSymbolWhite}
           
          />
+
+         <Module8
+         
+          textColor1='#3ecf8e'
+          textColor2='#32325d'
+         />
+
+         
+
+
   
         
        
