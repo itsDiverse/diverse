@@ -1,6 +1,5 @@
 import React from 'react'
 import style from "../../styles/module8.module.css"
-import { AnimatedList } from 'react-animated-list';
 
 class AnimatedModule extends React.Component {
   constructor(props) {
@@ -15,9 +14,6 @@ class AnimatedModule extends React.Component {
         { content: 'Payment failed and an alert was sent', time: '7 hours ago' },
         { content: 'Canceled subscription to Additional Storage', time: '7 hours ago' },
         { content: 'Stripe automatically updated a Visa ending in 4242', time: '7 hours ago' },
-        // {content: 'Subscribed to Bronze Plan' , time: '7 hours ago'},
-        // {content: 'SPayment failed and an alert was sent' , time: '7 hours ago'},
-        // {content: 'Stripe automatically updated a Visa ending in 4242' , time: '7 hours ago'}, 
       ]
     }
   }
@@ -48,8 +44,6 @@ class AnimatedModule extends React.Component {
               </ul>
             </div>
           </div>
-
-
         </React.Fragment>
       )
     })
