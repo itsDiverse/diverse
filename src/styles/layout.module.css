@@ -1,0 +1,20 @@
+.container {
+    
+}
+
+.headerContainer{
+   
+  z-index: 1000;
+   
+}
+
+.contentContainer {
+   
+  
+}
+
+.footerContainer{
+    width: 100%;
+    background-color: #f3f3f3;
+  
+  }
