@@ -2,24 +2,21 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import QuadBox from '../components/widgets/quadBox'
+import Module3 from '../components/widgets/module3'
 import Module8 from '../components/widgets/module8'
 import ContentHeader from '../components/widgets/contentHeader'
 import diverseSymbol from "../images/diverseSymbol.svg"
 import diverseSymbolWhite from "../images/diverseSymbolWhite.svg"
 import headerVideo from "../videos/hanzAnimationTest.mp4"
+import module3 from '../components/widgets/module3'
 
 const IndexPage = () => {
   return (
     <div>
         <Helmet>
-        <script src="js/jquery.js"></script>
-<script src="js/jquery.meow.js"></script>
-
-
-
-
-
-      </Helmet>
+          <script src="js/jquery.js"></script>
+          <script src="js/jquery.meow.js"></script>
+        </Helmet>
       
       <Layout>
         
@@ -34,6 +31,9 @@ const IndexPage = () => {
           button2style='Light'
         />
         
+        <Module3
+
+        />
         
         <QuadBox 
           boxHeight='auto'
