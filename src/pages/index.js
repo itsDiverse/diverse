@@ -1,14 +1,32 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
+
 import QuadBox from '../components/widgets/quadBox'
+
 import Module3 from '../components/widgets/module3'
+
+import Module5 from '../components/widgets/module5'
+
+import Module6 from '../components/widgets/module6'
+import Module6Image1 from "../images/template/submit.svg"
+import Module6Image2 from '../images/template/incorporation.svg'
+import Module6Image3 from '../images/template/tax-id.svg'
+import Module6Image4 from '../images/template/documents.svg'
+
+import Module7 from '../components/widgets/module7'
+import Module7icon from "../images/template/compliance.svg"
+import Module7icon2 from "../images/template/platform-management.svg"
+import Module7icon3 from "../images/template/international-support.svg"
+
 import Module8 from '../components/widgets/module8'
 import ContentHeader from '../components/widgets/contentHeader'
 import diverseSymbol from "../images/diverseSymbol.svg"
 import diverseSymbolWhite from "../images/diverseSymbolWhite.svg"
 import headerVideo from "../videos/hanzAnimationTest.mp4"
-import module3 from '../components/widgets/module3'
+
+import Module9 from '../components/widgets/module9'
+
 
 const IndexPage = () => {
   return (
@@ -33,6 +51,64 @@ const IndexPage = () => {
         
         <Module3
 
+        />
+
+        <Module5
+          box1title='Explore the docs'
+          box1text='You can use Connect Payouts through the Dashboard or via the API.'
+          box1link='#'
+
+          box2title='Pricing'
+          box2text='Starting at 0.25% of payout volume; per-account fee may apply.'
+          box2link='#'
+
+          title='Ready to get started?'
+          text='Get in touch or create an account.'
+          smallText='Connect Payouts is available for platforms based in the US.'
+
+          button1color='#3ecf8e'
+          button1textColor='#ffffff'
+          button1title='Contact Sales'
+
+          button2color=''
+          button2textColor=''
+          button2title='Create Account'
+
+        />
+
+        <Module6
+          heading='WHATS’S THE PROCESS?'
+          text='With Stripe Atlas, your company can be set up within days. We help with all the paperwork.'
+          
+          image1={Module6Image1}
+          step1text='Submit your application'
+          step1color='#e39f48'
+          
+          image2={Module6Image2}
+          step2text='Sign documents and access your bank account'
+          step2color='#e39f48'
+
+          image3={Module6Image3}
+          step3text='Your company is formed in Delaware'
+          step3color='#e39f48'
+          
+          image4={Module6Image4}
+          step4text='Receive a tax ID number from the IRS'
+          step4color='#e39f48'
+        />
+
+        <Module7
+
+        icon={Module7icon}
+        title='COMPLIANCE'
+        box1title='Lawyer friendly'
+        heading2='Platform management'
+
+        icon2={Module7icon2}
+
+        icon3={Module7icon3}
+
+        
         />
         
         <QuadBox 
@@ -63,6 +139,10 @@ const IndexPage = () => {
          
           textColor1='#3ecf8e'
           textColor2='#32325d'
+         />
+
+         <Module9
+
          />
 
          
