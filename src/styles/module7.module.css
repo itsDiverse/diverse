@@ -40,9 +40,9 @@
 #connectedAccountsNav h1 {margin-left: 42px;padding-bottom: 3px;font-size: 17px;font-weight: 500}
 #connectedAccountsNav ul {margin: 29px 0 0 32px}
 #connectedAccountsNav li+li {margin-top: 15px}
-#connected-accounts-view {-webkit-box-flex: 1;-ms-flex: 1;flex: 1;padding-top: 77px}
-#connected-accounts-subnav {display: -webkit-box;display: -ms-flexbox;display: flex;padding-bottom: 3px;color: #525f7f}
-#connected-accounts-subnav li+li {margin-left: 25px}
+#connectedAccountsView {-webkit-box-flex: 1;-ms-flex: 1;flex: 1;padding-top: 77px}
+#connectedAccountsSubnav {display: -webkit-box;display: -ms-flexbox;display: flex;padding-bottom: 3px;color: #525f7f}
+#connectedAccountsSubnav li+li {margin-left: 25px}
 #connectedAccountsView section {margin-top: 20px;border-radius: 6px;background: #fff;-webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);overflow: hidden;color: #8898aa}
 #connectedAccountsView section h2 {padding: 20px;border-bottom: 2px solid #e6ebf1;text-transform: uppercase;font-size: 1em;color: #424770}
 #connectedAccountsView section li {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;padding: 14px 20px}
@@ -122,7 +122,7 @@
     #internationalSupport .common-BodyText {-webkit-columns: 2;columns: 2;-webkit-column-gap: var(--gutter);column-gap: var(--gutter)}
     #connectedAccountsNav ul {margin-top: 25px}
     .platformManagementSection{display: grid;grid: auto/1fr auto;grid-gap: 0 70px;padding: 0 20px;padding-top: 80px;}
-    .compliance-content{display: grid;grid: auto/1fr 1fr;grid-gap: 35px;padding-bottom: 80px;}
+    .complianceContent{display: grid;grid: auto/1fr 1fr;grid-gap: 35px;padding-bottom: 80px;}
 }
 @media (max-width: 880px){
 	.complianceContent{padding-bottom: 50px;}

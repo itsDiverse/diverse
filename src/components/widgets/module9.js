@@ -8,8 +8,8 @@ export default (props) =>
 		<div className={style.paymentsStackSection}>
 			<div className={style.containerLg}>
 				<div className={style.paymentsStackSectionIntro}>
-					<h2 className={style.sectionTitle}>The new payments stack</h2>
-					<p className={style.sectiondesc}>Stripe combines a payments platform with applications that put revenue data at the heart of business operations.</p>
+					<h2 className={style.sectionTitle}>{props.title}</h2>
+					<p className={style.sectiondesc}>{props.titleDesc}</p>
 				</div>
 				<div className={[style.platformDiagram, style.diagram].join(' ')}>
 					<div className={[style.diagramApps, style.diagramSection, style.animated, style.fadeInLeft].join(' ')}>
@@ -32,10 +32,10 @@ export default (props) =>
 				      </div>
 				      <div className={[style.diagramAppsContent, style.diagramContent, style.animated, style.fadeInRight].join(' ')}>
 				        <h4 className={[style.uppercaseText, style.diagramTitle].join(' ')}>
-				          Applications
+				          {props.subTitle1}
 				        </h4>
 				        <p className={style.diagramDesc}>
-				          Sitting atop our payments platform are applications to manage revenue, prevent fraud, and expand internationally.
+				          	{props.title1Desc}
 				        </p>
 				      </div>
 				      <div className={[style.diagramPlatforms, style.diagramSection, style.animated, style.delay06s, style.left15, style.fadeInLeft].join(' ')}>
@@ -50,10 +50,10 @@ export default (props) =>
 				      </div>
 				      <div className={[style.diagramPlatformsContent, style.diagramContent, style.animated, style.delay06s, style.right15, style.fadeInRight].join(' ')}>
 				        <h4 className={[style.uppercaseText, style.diagramTitle].join(' ')}>
-				          Payments platform
+				          	{props.subTitle2}
 				        </h4>
 				        <p className={style.diagramDesc}>
-				          At our core is a powerful payments engine that makes moving money easy.
+				          {props.title2Desc}
 				        </p>
       				   </div>
       				    <div className={[style.diagramInfra, style.diagramSection, style.jsDiagram, style.animated, style.fadeInLeft, style.delay03s, style.left10].join(' ')}>
@@ -70,10 +70,10 @@ export default (props) =>
 					    </div>
 					    <div className={[style.diagramInfraContent, style.diagramContent, style.jsDiagramExplanation, style.animated, style.fadeInRight, style.delay03s, style.right10].join(' ')}>
 					        <h4 className={[style.uppercaseText, style.diagramTitle].join(' ')}>
-					          Infrastructure
+					          {props.subTitle3}
 					        </h4>
 					        <p className={style.diagramDesc}>
-					          Our cloud-based infrastructure provides reliability, scalability, and security.
+					          {props.title3Desc}
 					        </p>
 					    </div>
 				</div>

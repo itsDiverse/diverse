@@ -3,12 +3,12 @@ import style from "../../styles/module7.module.css"
 
 export default (props) =>
 <>
-	<div className={style.contentWrapper}>
+<div className={style.contentWrapper}>
 		<div className={style.complianceSection}>
 			<div className={style.containerLg}>
 				<div className={style.complianceTitle}>
-					<img src={props.icon} />
-					<h2 className={style.uppercaseText}>{props.title}</h2>
+					<img src={props.icon1} />
+					<h2 className={style.uppercaseText}>COMPLIANCE</h2>
 				</div>
 				<div className={style.complianceContentWrapper}>
 					<div className={style.complianceContent}>
@@ -17,7 +17,7 @@ export default (props) =>
 							<p>Under the hood, Connect is powered by secure credit card data tokenization to help you meet PCI obligations, contains monitoring and verification systems to help you with KYC needs and tax obligations, and leverages Stripe’s money transmission licenses in the U.S. as well as European e-money authorization.</p>
 						</div>
 						<div className={style.complianceRightContent}>
-							<h3>{props.box1title}</h3>
+							<h3>Lawyer friendly</h3>
 							<ul>
 					          <li>Dynamic risk-based KYC/AML checks for all recipients</li>
 					          <li>API-based OFAC and sanctions screening</li>
@@ -31,12 +31,12 @@ export default (props) =>
 				</div>
 				<div className={style.platformManagementSection}>
 					<div className={style.platformManagementLeftContent}>
-						<img src={props.icon2} />
-						<h2 className={style.uppercaseText}>{props.heading2}</h2>
+						<img src="images/platform-management.svg" />
+						<h2 className={style.uppercaseText}>Platform management</h2>
 						<p>If you’re managing payouts for large numbers of people, you need a hub for all the workflows involved. Our dashboard lets support and operations teams view every stage of the user lifecycle: account history, verification, transfers, and more.</p>
 						<p>Easily track the flow of funds from a customer to a recipient, with full records of all transactions in Stripe—we provide the ledger. Optional application fees let you specify your earnings and Stripe nets everything out. In the U.S., Connect includes gross earnings tracking and automated 1099 form generation and delivery.</p>
 					</div>
-					<div className={style.laptop}>
+					<div className={[style.platformManagementRightContent, style.laptop].join(' ')}>
 						<span className={style.shadow}></span>
 						<span className={style.lid}></span>
 						<span className={style.camera}></span>
@@ -144,13 +144,13 @@ export default (props) =>
 					      </span>
 					</div>
 				</div>
-				<div id="internationalSupport">
+				<div id="international-support">
 					<div className={style.internationalSupportLeftContent}>
-						<img src={props.icon3} />
+						<img src="images/international-support.svg" />
 						<h2 className={style.uppercaseText}>INTERNATIONAL SUPPORT</h2>
 						<p className={style.commonBodyText}>
 					        Expanding internationally typically requires significant resources, time and money. With Connect, you can swiftly expand internationally anywhere Stripe operates, without establishing separate local subsidiaries. This includes credit card processing capabilities in over 30 countries, with charges processed centrally or locally in the recipient’s country, which saves money on fees and improves decline rates. Accept payments in 135+ currencies, pay out in 15+ currencies and present the most relevant payment methods in checkout flows to further optimize conversion rate. All of Connect’s capabilities are supported by Stripe’s core payment functionality, used by millions of businesses and available in over 25 countries. Stripe has 14 global offices, so we can support <a href="#" className={style.commonLink}>marketplaces</a> and <a href="#" className={style.commonLink}>platforms</a> all over the world.
-					        <a href="#features-list" className={style.jsFeaturesListTrigger}>
+					        <a href="#featuresList" className={style.jsFeaturesListTrigger}>
 					          See the full list of Connect features
 					          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M6 4V0H4v4H0v2h4v4h2V6h4V4H6z"></path></svg>
 					        </a>
@@ -167,7 +167,8 @@ export default (props) =>
 					      <h2>
 					          Instant debit card payouts
 					      </h2>
-					     
+					      
+					      
 
 					      <h2>Settlement currencies</h2>
 					      <ul id="settlementCurrencies">

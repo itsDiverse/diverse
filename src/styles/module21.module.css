@@ -1,0 +1,41 @@
+.contentWrapper{-webkit-box-flex: 1;-ms-flex-positive: 1;flex-grow: 1}
+.containerLg{max-width: 1040px;margin: 0 auto;padding: 0px;width: 100%;}
+.intelligentRevenueSection{position: relative;padding: 50px 0;background-color: #32325d;}
+.intelligentRevenue{display: flex;flex-direction: column;padding: 0 20px;margin-left: auto;margin-right: auto;}
+.intelligentRevenueSection .intelligentRevenue{grid-column-gap: 15%;}
+.intelligentRevenueLeft h2{font-weight: 400;font-size: 34px;line-height: 1.4;color: #fff;}
+.intelligentRevenueLeft p{margin: 20px 0;font-weight: 400;font-size: 19px;line-height: 32px;color: #fff;}
+.intelligentRevenueLeft .intelligentLink{color: #9cdbff;font-size: 19px;line-height: 32px;font-weight: 500;-webkit-transition: color .1s ease;transition: color .1s ease;display: block;margin-bottom: 20px;}
+.intelligentRevenueLeft .intelligentLink:hover{color: #fff;}
+.intelligentRevenueLeft .intelligentLink:after{font: normal 16px StripeIcons;content: "\2192";padding-left: 5px;}
+.intelligentRevenueRight{position: relative;overflow: hidden; }
+.intelligentLine{position: absolute;top: 0;left: calc((32px - 2px) / 2);height: 100%;}
+.intelligentChecklist{display: flex;margin: 30px 0;}
+.checklistIcon:after{position: absolute;top: calc(32px / 2);left: calc(32px / 2);width: calc(32px * 2);height: calc(32px * 2);transform: translate(calc(32px * -1),calc(32px * -1));border-radius: 50%;background-color: #32325d;content: "";}
+.intelligentChecklist .checklistIcon svg{position: relative;z-index: 1}
+.checklistIcon{    position: relative;flex: 0 0 auto;width: 32px;}
+.checklistContent{padding-left: 25px;}
+.checklistContent h3{font-weight: 500;font-size: 17px;line-height: 32px;color: #fff;}
+.checklistContent ul{list-style: none;}
+.checklistContent ul li{margin: 6px 0;counter-increment: helm-checklist;position: relative;margin: 12px 0;padding-left: 32px;}
+.checklistContent ul li span.checkIcon{position: absolute;top: 4px;left: 0;height: 18px;width: 18px;border-radius: 50%;display: inline-flex;align-items: center;justifyContent: center;}
+.checklistContent ul li span{font-size: 15px;color: #ecfaff;font-weight: 400;line-height: 28px;}
+.intelligentRevenueRight div:nth-of-type(2){margin-top: 0px;}
+@media (min-width: 1024px){
+	.intelligentRevenueLeftContent{position: -webkit-sticky;position: sticky;top: 0;}
+}
+@media (min-width: 880px){
+	.intelligentRevenueSection{padding: 150px 0;}
+}
+@media (min-width: 670px){
+	.intelligentRevenueSection{padding: 100px 0;}
+	.intelligentRevenue{display: grid;grid-column-gap: 40px;grid-row-gap: 40px;grid-template-columns: repeat(2,1fr);}
+	.intelligentRevenueLeft h2{font-size: 47px;}
+	.intelligentRevenueLeft p{margin: 40px 0;}
+	.intelligentChecklist{margin: 0px;}
+	.checklistContent{padding-left: 50px;}
+	.intelligentChecklist{padding-bottom: 35px;}
+}	
+@media (max-width: 320px){
+	.intelligentChecklist{margin: 20px 0;}
+}
