@@ -72,10 +72,10 @@
 #internationalSupport aside h2 {color: #57c3f0;font-weight: 600;text-transform: uppercase;font-size: 15px;padding-top: 1.2em;padding-bottom: 1.2em}
 #internationalSupport aside h2:not(:first-child) {margin-top: 21px;border-top: 2px solid #f1f6fa}
 #internationalSupport aside ul {display: grid}
-#internationalSupport .flag-list {grid-auto-columns: -webkit-min-content;grid-auto-columns: min-content;grid-auto-flow: column;margin-top: 12px}
-#internationalSupport .flag-list .commonFlagIcon:before {margin-right: 5px}
-#internationalSupport .flag-list:not(.commonFlagIcon) {white-space: nowrap;	}
-#internationalSupport .contact-us {margin-top: 12px}
+#internationalSupport .flagList {grid-auto-columns: -webkit-min-content;grid-auto-columns: min-content;grid-auto-flow: column;margin-top: 12px}
+#internationalSupport .flagList .commonFlagIcon:before {margin-right: 5px}
+#internationalSupport .flagList:not(.commonFlagIcon) {white-space: nowrap;	}
+#internationalSupport .contactUs {margin-top: 12px}
 #bank-networks {grid: auto/1fr 1fr;grid-gap: 12px 0;margin-bottom: 1.5em}
 #internationalSupport #settlementCurrencies {grid-template-columns: repeat(6, -webkit-min-content);grid-template-columns: repeat(6, min-content);padding-bottom: 22px;font-weight: 500;font-size: 13px}
 #settlementCurrencies li {padding: 0 9px;border-right: 1px solid #e4edf5}
@@ -87,7 +87,7 @@
 .common-FlagIcon--sg:before {background-position: -72px -160px;}
 .common-FlagIcon--gb:before {background-position: -41px -60px;}
 .common-FlagIcon--jp:before {background-position: -196px -85px;}
-#internationalSupport .flag-list .common-FlagIcon:before {margin-right: 5px;}
+#internationalSupport .flagList .commonFlagIcon:before {margin-right: 5px;}
 .common-FlagIcon--be:before {background-position: -227px -10px;}
 .common-FlagIcon--ca:before {background-position: -382px -10px;}
 .common-FlagIcon--sg:before {background-position: -72px -160px;}
@@ -119,7 +119,7 @@
 	.platformManagementSection .laptop{left: 0;margin: 0;}
 	.platformManagementSection .laptop .shadow{will-change: transform}
 	#internationalSupport {--gutter: 41px;grid-template-rows: 200px auto;margin-top: 0}
-    #internationalSupport .common-BodyText {-webkit-columns: 2;columns: 2;-webkit-column-gap: var(--gutter);column-gap: var(--gutter)}
+    #internationalSupport .commonBodyText {-webkit-columns: 2;columns: 2;-webkit-column-gap: var(--gutter);column-gap: var(--gutter)}
     #connectedAccountsNav ul {margin-top: 25px}
     .platformManagementSection{display: grid;grid: auto/1fr auto;grid-gap: 0 70px;padding: 0 20px;padding-top: 80px;}
     .complianceContent{display: grid;grid: auto/1fr 1fr;grid-gap: 35px;padding-bottom: 80px;}
