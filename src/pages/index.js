@@ -2,51 +2,66 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
+/* ----------------- QUAD BOX -----------------*/
 import QuadBox from '../components/widgets/quadBox'
 
+/* ----------------- MODULE 3 -----------------*/
 import Module3 from '../components/widgets/module3'
 
+/* ----------------- MODULE 5 -----------------*/
 import Module5 from '../components/widgets/module5'
 
+/* ----------------- MODULE 6 -----------------*/
 import Module6 from '../components/widgets/module6'
 import Module6Image1 from "../images/template/submit.svg"
 import Module6Image2 from '../images/template/incorporation.svg'
 import Module6Image3 from '../images/template/tax-id.svg'
 import Module6Image4 from '../images/template/documents.svg'
 
+/* ----------------- MODULE 7 -----------------*/
 import Module7 from '../components/widgets/module7'
 import Module7icon from "../images/template/compliance.svg"
 import Module7icon2 from "../images/template/platform-management.svg"
 import Module7icon3 from "../images/template/international-support.svg"
 
+/* ----------------- MODULE 8 -----------------*/
 import Module8 from '../components/widgets/module8'
 import ContentHeader from '../components/widgets/contentHeader'
 import diverseSymbol from "../images/diverseSymbol.svg"
 import diverseSymbolWhite from "../images/diverseSymbolWhite.svg"
 import headerVideo from "../videos/hanzAnimationTest.mp4"
 
+/* ----------------- MODULE 9 -----------------*/
 import Module9 from '../components/widgets/module9'
 
+/* ----------------- MODULE 10 -----------------*/
 import Module10 from '../components/widgets/module10'
 
+/* ----------------- MODULE 11 -----------------*/
 import Module11 from '../components/widgets/module11'
 import Module11image1 from "../images/template/sharing.svg"
 import Module11image2 from "../images/template/lyft.png"
 import Module11image3 from "../images/template/route.svg"
 
+/* ----------------- MODULE 11a -----------------*/
 import Module11a from '../components/widgets/module11a'
 import Module11aimage1 from "../images/template/sharing.svg"
 import Module11aimage2 from "../images/template/lyft.png"
 import Module11aimage3 from "../images/template/route.svg"
 
+/* ----------------- MODULE 12 -----------------*/
 import Module12 from '../components/widgets/module12'
 
+/* ----------------- MODULE 13 -----------------*/
 import Module13 from '../components/widgets/module13'
 
+/* ----------------- MODULE 18 -----------------*/
 import Module18 from '../components/widgets/module18'
 
+/* ----------------- MODULE 20 -----------------*/
 import Module20 from '../components/widgets/module20'
 
+/* ----------------- MODULE 21 -----------------*/
 import Module21 from '../components/widgets/module21'
 
 const IndexPage = () => {
