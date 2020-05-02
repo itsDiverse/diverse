@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 import Footer from './footer'
 
 import '../styles/index.css'
@@ -8,6 +7,8 @@ import layoutStyles from '../styles/layout.module.css'
 
 const Layout = (props) => {
   return (
+    <>
+    
     <div className={layoutStyles.container}>
       <div className={layoutStyles.headerContainer}>
         
@@ -19,7 +20,7 @@ const Layout = (props) => {
         <Footer />
       </div>
   </div> 
-    
+    </>
  )
 }
 

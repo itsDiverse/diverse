@@ -1,9 +1,34 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
+import Nav from '../navbar/index'
 
 /* ----------------- QUAD BOX -----------------*/
 import QuadBox from '../components/widgets/quadBox'
+
+/* ----------------- MODULE 1 -----------------*/
+import Module1 from '../components/widgets/module1'
+
+import Module1image1 from "../images/template/amazon.svg"
+import Module1image2 from '../images/template/booking_com.svg'
+import Module1image3 from '../images/template/docusign.svg'
+import Module1image4 from '../images/template/instacart.svg'
+import Module1image5 from '../images/template/peleton.svg'
+import Module1image6 from '../images/template/shopify.svg'
+import Module1image7 from '../images/template/unicef.svg'
+
+/* ----------------- MODULE 1a -----------------*/
+import Module1a from '../components/widgets/module1a'
+
+import Module1aimage1 from "../images/template/amazon.svg"
+import Module1aimage2 from '../images/template/booking_com.svg'
+import Module1aimage3 from '../images/template/docusign.svg'
+import Module1aimage4 from '../images/template/instacart.svg'
+import Module1aimage5 from '../images/template/peleton.svg'
+import Module1aimage6 from '../images/template/shopify.svg'
+import Module1aimage7 from '../images/template/unicef.svg'
+
+
 
 /* ----------------- MODULE 3 -----------------*/
 import Module3 from '../components/widgets/module3'
@@ -55,8 +80,17 @@ import Module12 from '../components/widgets/module12'
 /* ----------------- MODULE 13 -----------------*/
 import Module13 from '../components/widgets/module13'
 
+/* ----------------- MODULE 14 -----------------*/
+import Module14 from '../components/widgets/module14'
+
+/* ----------------- MODULE 17 -----------------*/
+import Module17 from '../components/widgets/module17'
+
 /* ----------------- MODULE 18 -----------------*/
 import Module18 from '../components/widgets/module18'
+
+/* ----------------- MODULE 19 -----------------*/
+import Module19 from '../components/widgets/module19'
 
 /* ----------------- MODULE 20 -----------------*/
 import Module20 from '../components/widgets/module20'
@@ -74,9 +108,49 @@ const IndexPage = () => {
       
       <Layout>
 
-        <Module21 />
+      <Nav />
 
-        <Module20 />
+        <Module19 />
+
+        <Module17 />
+
+        <Module14 />
+
+        <Module1 
+         image1={Module1image1}
+         image1alt='1'
+         image2={Module1image2}
+         image2alt='2'
+         image3={Module1image3}
+         image3alt='3'
+         image4={Module1image4}
+         image4alt='4'
+         image5={Module1image5}
+         image5alt='5'
+         image6={Module1image6}
+         image6alt='6'
+         image7={Module1image7}
+         image7alt='7'
+        
+        />
+
+        <Module1a 
+         image1={Module1aimage1}
+         image1alt='1'
+         image2={Module1aimage2}
+         image2alt='2'
+         image3={Module1aimage3}
+         image3alt='3'
+         image4={Module1aimage4}
+         image4alt='4'
+         image5={Module1aimage5}
+         image5alt='5'
+         image6={Module1aimage6}
+         image6alt='6'
+         image7={Module1aimage7}
+         image7alt='7'
+        
+        />
 
         
 
@@ -109,7 +183,9 @@ const IndexPage = () => {
           button2style='Light'
         />
 
-        
+<Module21 />
+
+<Module20 />
         
         <Module3
 
