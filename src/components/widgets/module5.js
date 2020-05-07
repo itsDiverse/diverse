@@ -1,9 +1,10 @@
 import React from "react"
 import style from "../../styles/module5.module.css"
+import layoutStyle from "../../styles/layout.module.css"
 
 export default (props) =>
 <>
-<div className={style.contentWrapper}>
+<div className={layoutStyle.contentWrapper}>
 		<div className={style.footerWithCardSectionWrapper}> 
 		<section className={style.footerWithCardSection}>
 				<div className={style.containerXl}>
@@ -11,7 +12,7 @@ export default (props) =>
 						<div className={style.footerCardsWrapper}>
 							<a href="#">
 							<span className={style.footerCardsIcon}>
-                                */ insert image icone here /*
+							<img src={props.image1} alt={props.image1alt} />
                             </span>
 							<h3 className={style.linkArrow}>{props.box1title}</h3>
 							<p>{props.box1text}</p>
@@ -20,17 +21,17 @@ export default (props) =>
 						<div className={style.footerCardsWrapper}>
 							<a href="#">
 							<span className={style.footerCardsIcon}>
-                                */ insert image icone here /*
+							<img src={props.image2} alt={props.image2alt} />
                             </span>
 							<h3 className={style.linkArrow} >{props.box2title}</h3>
-							<p>{props.box1text}</p>
+							<p>{props.box2text}</p>
 							</a>
 						</div>
 					</div>
 				</div>
 		</section>
 		<section className={style.getInTouchSection}>
-			<div className={style.containerLg}>
+			<div className={layoutStyle.containerLg}>
 				<div className={style.getInTouchContentWrapper}>
 					<div className={style.getInTouchContent}>
 						<h2>{props.title}</h2>

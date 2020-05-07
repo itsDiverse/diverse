@@ -109,24 +109,7 @@ export default (props) =>
 						</div>
 						
 					</div>
-                    <div class="services-box">
-							<a href="#">
-							<div class="services-innercontainer">
-								<div class="services-icon sales">
-									<span></span>
-								</div>
-								<div class="services-content-wrapper">
-									<div class="services-content">
-										<h2 class="services-title">Help & Support</h2>
-										<p class="services-desc">We’re here to help with any questions or code.</p>
-									</div>
-									<div class="services-footer">
-										<span class="services-footer-text text-blue">Get support</span>
-									</div>
-								</div>
-							</div>
-							</a>
-						</div>
+                   
 				</div>
 			</section>
 			<div className={[style.container, style.joinUsSection].join(' ')}>

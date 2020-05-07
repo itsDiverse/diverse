@@ -1,11 +1,12 @@
 import React from "react"
 import style from "../../styles/module6.module.css"
+import layoutStyle from "../../styles/layout.module.css"
 
 export default (props) =>
 <>
-	<div className={style.contentWrapper}>
+	<div className={layoutStyle.contentWrapper}>
 		<div className={style.processSection}>
-			<div className={style.containerLg}>
+			<div className={layoutStyle.containerLg}>
 				<div className={style.processContentSection}>
 					<div className={style.processContentTitle}>
 						<h2 className={style.sectionTitle}>{props.heading}</h2>

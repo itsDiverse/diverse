@@ -98,6 +98,9 @@ import Module20 from '../components/widgets/module20'
 /* ----------------- MODULE 21 -----------------*/
 import Module21 from '../components/widgets/module21'
 
+/* ----------------- MODULE 21 -----------------*/
+import Module22 from '../components/widgets/module22'
+
 const IndexPage = () => {
   return (
     <div>

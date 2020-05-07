@@ -28,7 +28,7 @@ export default (props) =>
 		        <img src={props.image7} alt={props.image7alt} />
 		      </li>
 		  	</ul>
-		  	<a href="#"><span className={[style.commonodyText, style.linkArrow].join(' ')}>Millions of tech-forward businesses use Stripe to power their&nbsp;payments</span></a>
+		  	<a href="#"><span className={[style.commonodyText, style.linkArrow].join(' ')}>{props.text}</span></a>
 		</section>
 	</div>
 </>
