@@ -3,8 +3,8 @@ import style from "../../styles/module1a.module.css"
 
 export default (props) =>
 <>
-	<div className={style.contentWrapper}>
-		<section className={[style.containerLg, style.logoSection].join(' ')}>
+	<div className={'contentWrapper'}>
+		<section className={['containerLg', style.logoSection].join(' ')}>
 			<ul>
 		      <li>
 		        <img src={props.image1} alt={props.image1alt} />

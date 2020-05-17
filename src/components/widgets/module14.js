@@ -1,13 +1,12 @@
 import React from "react"
 import style from "../../styles/module14.module.css"
-import layoutStyle from "../../styles/layout.module.css"
 
 
 export default (props) =>
 <>
-	<div className={layoutStyle.contentWrapper}>
+	<div className={'contentWrapper'}>
 		<div className={style.listingCardSection}>
-			<div className={layoutStyle.containerLg}>
+			<div className={'containerLg'}>
 				<div className={style.listingCardWrapper}>
 					<div className={style.listingCardBox} style={{ display: props.display1 }}>
 						<a href={props.box1link}>

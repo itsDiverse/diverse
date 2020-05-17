@@ -1,13 +1,12 @@
 import React from "react"
 import style from "../../styles/module9.module.css"
-import layoutStyle from "../../styles/layout.module.css"
 
 export default (props) =>
 <>
 
-	<div className={layoutStyle.contentWrapper}>
+	<div className={'contentWrapper'}>
 		<div className={style.paymentsStackSection}>
-			<div className={layoutStyle.containerLg}>
+			<div className={'containerLg'}>
 				<div className={style.paymentsStackSectionIntro}>
 					<h2 className={style.sectionTitle}>{props.title}</h2>
 					<p className={style.sectiondesc}>{props.titleDesc}</p>

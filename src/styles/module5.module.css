@@ -1,7 +1,5 @@
 
-.contentWrapper{-webkit-box-flex: 1;-ms-flex-positive: 1;flex-grow: 1}
-.containerXl{max-width: 1160px;margin: 0 auto;padding: 0px;width: 100%;}
-.containerLg{max-width: 1040px;margin: 0 auto;padding: 0px;width: 100%;}
+
 .footerWithCardSectionWrapper{background: transparent;overflow: hidden;padding-top: 500px;margin-top: -480px;position: relative;}
 .footerWithCardSectionWrapper:before{content: "";position: absolute;left: 0;right: 0;top: 600px;height: 6000px;background: #f6f9fc;-webkit-transform: skew(0,-12deg);transform: skew(0,-12deg);}
 .footerCards >*{pointer-events: auto;position: relative;}

@@ -1,5 +1,4 @@
-.contentWrapper{-webkit-box-flex: 1;-ms-flex-positive: 1;flex-grow: 1}
-.containerXl{max-width: 1160px;margin: 0 auto;padding: 0px;width: 100%;}
+
 .sectionLogosWrapper{padding: 0 20px;-webkit-box-pack: center;display: flex;-ms-flex-pack: center;justify-content: center;flex-wrap: wrap;}
 .sectionLogosWrapper a{display: block;margin: 0;padding: 0;position: relative;height: 120px;line-height: 120px;}
 .sectionLogosWrapper a span{position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%,-50%) scale(.7);transform: translate(-50%,-50%) scale(.7);overflow: hidden;text-indent: -500px;}

@@ -1,12 +1,11 @@
 import React from "react"
 import style from "../../styles/module3.module.css"
-import layoutStyle from "../../styles/layout.module.css"
 
 export default (props) =>
     <>
 
-<div className={layoutStyle.contentWrapper}>
-		<section className={layoutStyle.containerLg}>
+<div className={'contentWrapper'}>
+		<section className={'containerLg'}>
 			<div className={style.corporateCardSection}>
 				<div className={style.corporateCardColumn}>
 					<div className={style.corporateCardIcon}>

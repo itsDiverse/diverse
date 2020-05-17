@@ -1,13 +1,13 @@
 import React from "react"
 import style from "../../styles/module10.module.css"
-import layoutStyle from "../../styles/layout.module.css"
+
 
 export default (props) =>
 <>
 
-<div className={layoutStyle.contentWrapper}>
+<div className={'contentWrapper'}>
 		<div className={style.solutionsRootedSection}>
-			<div className={layoutStyle.containerLg}>
+			<div className={'containerLg'}>
 			    <div className={style.sectionIntro}>
 					<h2 className={style.sectionTitle}>{props.intro}</h2>
 			  		<p className={style.sectionDesc}>{props.description}</p>

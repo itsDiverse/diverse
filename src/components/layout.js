@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import '../styles/index.css'
 import layoutStyles from '../styles/layout.module.css'
 
+
 const Layout = (props) => {
   return (
     <>
@@ -33,8 +34,8 @@ const Layout = (props) => {
         <Link to="/module12">Module 12</Link>&nbsp;|&nbsp;
         <Link to="/module13">Module 13</Link>&nbsp;|&nbsp;
         <Link to="/module14">Module 14</Link>&nbsp;|&nbsp;
-        <Link to="/module15">Module 15</Link>&nbsp;|&nbsp;
-        <Link to="/module16">Module 16</Link>&nbsp;|&nbsp;
+        <Link to="/module15">Module 15 x</Link>&nbsp;|&nbsp;
+        <Link to="/module16">Module 16 x</Link>&nbsp;|&nbsp;
         <Link to="/module17">Module 17</Link>&nbsp;|&nbsp;
         <Link to="/module18">Module 18</Link>&nbsp;|&nbsp;
         <Link to="/module19">Module 19</Link>&nbsp;|&nbsp;

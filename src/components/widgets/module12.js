@@ -1,12 +1,11 @@
 import React from "react"
 import style from "../../styles/module12.module.css"
-import layoutStyle from "../../styles/layout.module.css"
 
 export default (props) =>
 <>
-	<div className={layoutStyle.contentWrapper}>
+	<div className={'contentWrapper'}>
 		<div className={style.sectionLogos}>
-			<div className={layoutStyle.containerXl}>
+			<div className={'containerXl'}>
 				<div className={style.sectionLogosWrapper}>
 					<div>
 						<a href="#">

@@ -1,3 +1,5 @@
+import layoutStyle from "../../styles/layout.module.css"
+
 <!DOCTYPE html>
 <html ontouchmove>
 <head>

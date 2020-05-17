@@ -1,12 +1,11 @@
 import React from "react"
 import style from "../../styles/module13.module.css"
-import layoutStyle from "../../styles/layout.module.css"
 
 export default (props) =>
 <>
-	<div className={layoutStyle.contentWrapper}>
+	<div className={'contentWrapper'}>
 		<div className={style.goingAbout20Minutes}>
-			<div className={layoutStyle.containerLg}>
+			<div className={'containerLg'}>
 				<div className={style.goingAbout20MinutesBox}>
 					<div className={[style.leftBoxContent, style.aboutMinutesTitle].join(' ')}>
 						<h2>{props.title}</h2>

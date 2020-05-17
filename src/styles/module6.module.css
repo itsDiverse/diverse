@@ -1,5 +1,4 @@
-.contentWrapper{-webkit-box-flex: 1;-ms-flex-positive: 1;flex-grow: 1}
-.containerLg{max-width: 1040px;margin: 0 auto;padding: 0px;width: 100%;}
+
 .processSection{position: relative;padding: 120px 0px;background-color: #f6f9fc;}
 .sectionTitle{color: #32325d;margin-bottom: 20px;font-weight: 600;line-height: 32px;letter-spacing: .025em;font-size: 20px;}
 .sectionDesc{font-weight: 300;font-size: 21px;line-height: 32px;color: #424770;}

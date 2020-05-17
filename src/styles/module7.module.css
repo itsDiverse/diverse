@@ -1,6 +1,4 @@
 
-.contentWrapper{-webkit-box-flex: 1;-ms-flex-positive: 1;flex-grow: 1}
-.containerLg{max-width: 1040px;margin: 0 auto;padding: 0px;width: 100%;}
 .complianceSection{position: relative;z-index: 1;padding-bottom: 15px;padding-top: 140px;}
 .uppercaseText{font-weight: 600;text-transform: uppercase;letter-spacing: .025em;}
 .complianceTitle{text-align: center;padding-bottom: 15px;margin-bottom: 20px;}

@@ -4,7 +4,7 @@ import style from "../../styles/module22.module.css"
 export default (props) =>
 <>
     <section>
-      <div className={style.containerLg}>
+      <div className={'containerLg'}>
         <div className={style.customerHelpPayment}>
           <div className={[style.payment_slider, style.payment_sliderColumnsContainer, style.payment_slider_horizontal].join(' ')}>
             <div className={[style.Carousel, style.jsCarousel, style.payment_slider_carousel].join(' ')}>

@@ -1,11 +1,10 @@
 import React from "react"
 import style from "../../styles/module11.module.css"
-import layoutStyle from "../../styles/layout.module.css"
 
 export default (props) =>
 <>
-<div className={layoutStyle.contentWrapper}>
-		<div className={layoutStyle.containerLg}>
+<div className={'contentWrapper'}>
+		<div className={'containerLg'}>
 			<div className={style.b2cMarketplaces}>
 				<div className={style.marketplacesTitleSection}>
 					<img src={props.image1} />
@@ -14,7 +13,7 @@ export default (props) =>
 				</div>
 			</div>
 		</div>
-		<div className={style.containerXl}>
+		<div className={'containerXl'}>
 			<div className={style.marketplacesGallerySectionWrapper}>
 				<div className={style.marketplacesGallerySection}>
 					<div className={style.marketplacesGalleryPhoto}></div>
@@ -29,7 +28,7 @@ export default (props) =>
 				</div>
 			</div>
 		</div>
-		<div className={style.containerXl}>
+		<div className={'containerXl'}>
 			<div className={style.marketplacesGalleryBottomContent}>
 				<div className={style.marketplacesGalleryBottomContentLeft}>
 					<figure className={style.marketplacesGalleryRouting}>

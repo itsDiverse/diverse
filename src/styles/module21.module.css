@@ -1,5 +1,4 @@
-.contentWrapper{-webkit-box-flex: 1;-ms-flex-positive: 1;flex-grow: 1}
-.containerLg{max-width: 1040px;margin: 0 auto;padding: 0px;width: 100%;}
+
 .intelligentRevenueSection{position: relative;padding: 50px 0;background-color: #32325d;}
 .intelligentRevenue{display: flex;flex-direction: column;padding: 0 20px;margin-left: auto;margin-right: auto;}
 .intelligentRevenueSection .intelligentRevenue{grid-column-gap: 15%;}

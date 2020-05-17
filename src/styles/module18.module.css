@@ -1,5 +1,4 @@
-.contentWrapper{-webkit-box-flex: 1;-ms-flex-positive: 1;flex-grow: 1}
-.containerLg{max-width: 1040px;margin: 0 auto;padding: 0px;width: 100%;}
+
 .regulatoryComplianceTitle{padding: 80px 20px 0;max-width: 700px;margin: 0 auto 60px;text-align: center;}
 .regulatoryComplianceTitle svg{width: 48px;height: 48px;}
 .fillPurple{fill: #9cdbff;}

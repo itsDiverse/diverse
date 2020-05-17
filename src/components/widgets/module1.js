@@ -4,8 +4,8 @@ import style from "../../styles/module1.module.css"
 export default (props) =>
 <>
 
-	<div className={style.contentWrapper}>
-		<section className={[style.stylecontainerLg, style.logoSection].join(' ')}>
+	<div className={'contentWrapper'}>
+		<section className={['stylecontainerLg', style.logoSection].join(' ')}>
 			<ul>
 		      <li className={style.logo1}>
 		        <img src={props.image1} alt={props.image1alt} />

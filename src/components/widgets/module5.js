@@ -1,13 +1,13 @@
 import React from "react"
 import style from "../../styles/module5.module.css"
-import layoutStyle from "../../styles/layout.module.css"
+
 
 export default (props) =>
 <>
-<div className={layoutStyle.contentWrapper}>
+<div className={'contentWrapper'}>
 		<div className={style.footerWithCardSectionWrapper}> 
 		<section className={style.footerWithCardSection}>
-				<div className={style.containerXl}>
+				<div className={'containerXl'}>
 					<div className={style.footerCards}>
 						<div className={style.footerCardsWrapper}>
 							<a href="#">
@@ -31,7 +31,7 @@ export default (props) =>
 				</div>
 		</section>
 		<section className={style.getInTouchSection}>
-			<div className={layoutStyle.containerLg}>
+			<div className={'containerLg'}>
 				<div className={style.getInTouchContentWrapper}>
 					<div className={style.getInTouchContent}>
 						<h2>{props.title}</h2>

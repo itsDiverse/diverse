@@ -3,9 +3,9 @@ import style from "../../styles/module7.module.css"
 
 export default (props) =>
 <>
-<div className={style.contentWrapper}>
+<div className={'contentWrapper'}>
 		<div className={style.complianceSection}>
-			<div className={style.containerLg}>
+			<div className={'containerLg'}>
 				<div className={style.complianceTitle}>
 					<img src={props.icon1} />
 					<h2 className={style.uppercaseText}>COMPLIANCE</h2>

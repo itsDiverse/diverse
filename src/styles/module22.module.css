@@ -1,10 +1,4 @@
-a {text-decoration: none}
-a, button, input, select, textarea {-webkit-tap-highlight-color: transparent;}
-html[lang=ja] body {font-family: Camphor, Meiryo, Hiragino Sans, sans-serif}
-:root {overflow-x: hidden;height: 100%;}
-:focus{outline: none;}
-blockquote, body, button, dd, dl, figure, h1, h2, h3, h4, h5, h6, ol, p, pre, ul {margin: 0;padding: 0;}
-.containerLg{margin: 0 auto;padding: 0 20px;width: 100%;max-width: 1040px;}
+
 .titleH2 {font-weight: 500;font-size: 19px;line-height: 32px;color: #32325d}
 .textPdesc {font-weight: 400;font-size: 17px;line-height: 28px;color: #525f7f}
 .linkA {color: #6772e5;font-weight: 500;-webkit-transition: color .1s ease;transition: color .1s ease;cursor: pointer;}

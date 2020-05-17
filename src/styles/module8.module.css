@@ -1,11 +1,6 @@
 
-ol,ul {list-style: none}
-a {text-decoration: none}
-button{border: none;outline: none;background: none;font-family: inherit}
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{display: block;}
-h1 {font-size: 2em;margin: .67em 0;}
 .oneTimeToLifetimeCustomer{background-color: #f6f9fc;padding: 140px 0;}
-.containerLg{max-width: 1040px;margin: 0 auto;padding: 0px;width: 100%;}
+
 .textCenter{text-align: center;}
 .sectionTitle{margin: 25px 0 18px;font-size: 42px;line-height: 52px;color: #32325d;font-weight: 400;}
 .sectionDesc{margin-bottom: 90px;max-width: 880px;margin-left: auto;margin-right: auto;font-size: 24px;line-height: 36px;color: #424770;font-weight: 300;}
