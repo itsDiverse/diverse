@@ -19,7 +19,7 @@ export default (props) =>
 				</div>
 			</div>
 			<section className={style.servicesSection}>
-				<div className={layoutStyle.containerLg}>
+				<div className={'containerLg'}>
 					<div className={style.row}>
 						
 						<div className={style.servicesBox} style={{ display: props.display1 }}>
