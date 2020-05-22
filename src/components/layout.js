@@ -18,7 +18,7 @@ const Layout = props => {
           <Link to="/module4">Module 4 x</Link>&nbsp;|&nbsp;
           <Link to="/module5">Module 5</Link>&nbsp;|&nbsp;
           <Link to="/module6">Module 6</Link>&nbsp;|&nbsp;
-          <Link to="/module7">Module 7</Link>&nbsp;|&nbsp;
+          <Link to="/module7">Module 7 y</Link>&nbsp;|&nbsp;
           <Link to="/module8">Module 8 x</Link>&nbsp;|&nbsp;
           <Link to="/module9">Module 9</Link>&nbsp;|&nbsp;
           <Link to="/module10">Module 10</Link>&nbsp;|&nbsp;
@@ -27,7 +27,7 @@ const Layout = props => {
           <Link to="/module12">Module 12</Link>&nbsp;|&nbsp;
           <Link to="/module13">Module 13</Link>&nbsp;|&nbsp;
           <Link to="/module14">Module 14</Link>&nbsp;|&nbsp;
-          <Link to="/module15">Module 15 x</Link>&nbsp;|&nbsp;
+          <Link to="/module15">Module 15 y</Link>&nbsp;|&nbsp;
           <Link to="/module16">Module 16</Link>&nbsp;|&nbsp;
           <Link to="/module17">Module 17</Link>&nbsp;|&nbsp;
           <Link to="/module18">Module 18</Link>&nbsp;|&nbsp;
