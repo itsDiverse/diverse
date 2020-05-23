@@ -34,7 +34,7 @@ const Layout = props => {
           <Link to="/module19">Module 19</Link>&nbsp;|&nbsp;
           <Link to="/module20">Module 20</Link>&nbsp;|&nbsp;
           <Link to="/module21">Module 21</Link>&nbsp;|&nbsp;
-          <Link to="/module22">Module 22</Link>&nbsp;|&nbsp;
+          <Link to="/module22">Module 22 y</Link>&nbsp;|&nbsp;
           <Link to="/module22a">Module 22a</Link>&nbsp;|&nbsp;
           <Link to="/module23">Module 23</Link>&nbsp;|&nbsp;
           <Link to="/module24">Module 24</Link>&nbsp;|&nbsp;
