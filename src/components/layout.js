@@ -13,9 +13,9 @@ const Layout = props => {
         <div className={layoutStyles.footerContainer}>
           <Link to="/module1">Module 1</Link>&nbsp;|&nbsp;
           <Link to="/module1a">Module 1a</Link>&nbsp;|&nbsp;
-          <Link to="/module2">Module 2 x</Link>&nbsp;|&nbsp;
+          <Link to="/module2">Module 2 y</Link>&nbsp;|&nbsp;
           <Link to="/module3">Module 3</Link>&nbsp;|&nbsp;
-          <Link to="/module4">Module 4 x</Link>&nbsp;|&nbsp;
+          <Link to="/module4">Module 4 y</Link>&nbsp;|&nbsp;
           <Link to="/module5">Module 5 y</Link>&nbsp;|&nbsp;
           <Link to="/module6">Module 6</Link>&nbsp;|&nbsp;
           <Link to="/module7">Module 7</Link>&nbsp;|&nbsp;
