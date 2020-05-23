@@ -1,9 +1,8 @@
 import React, { useEffect } from "react"
 import style from "../../styles/module16.module.css"
-import useJquery from "react-use-jquery"
+import $ from "jquery"
 
 export default props => {
-  const $ = useJquery()
   useEffect(() => {
     if ($) {
       /*
@@ -30,7 +29,7 @@ export default props => {
         },
       })*/
     }
-  }, [$])
+  }, [])
 
   return (
     <div className={"contentWapper"}>
