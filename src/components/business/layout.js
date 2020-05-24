@@ -1,6 +1,7 @@
 import React from "react"
 import { useMediaQuery } from "react-responsive"
 import AnimatedNavbar from "../navbar"
+import { default as MobileNavbar } from "../mobileNavbar/mobileNavbar"
 import { default as Footer } from "../footer"
 
 const MediaNav = () => {
@@ -9,7 +10,7 @@ const MediaNav = () => {
     query: "(min-device-width: 1224px)",
   })
   if (isDesktopOrLaptop) return <AnimatedNavbar duration={300} />
-  if (isTabletOrMobile) return <div>here mobile nav</div>
+  if (isTabletOrMobile) return <MobileNavbar></MobileNavbar>
 
   return null
 }
