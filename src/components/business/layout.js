@@ -4,6 +4,9 @@ import AnimatedNavbar from "../navbar"
 import { default as MobileNavbar } from "../mobileNavbar/mobileNavbar"
 import { default as Footer } from "../footer"
 
+//Todo: 1st will use the two different components for menu in desktop and mobile
+//because business wants that. But, keeping an eye opened in possible
+//responsive with styled components media queries.
 const MediaNav = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" })
   const isDesktopOrLaptop = useMediaQuery({
@@ -15,6 +18,7 @@ const MediaNav = () => {
   return null
 }
 
+//TODO: mobile footer. May reuse desktop one with Styled media queries.
 const MediaFooter = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" })
   const isDesktopOrLaptop = useMediaQuery({
@@ -27,6 +31,7 @@ const MediaFooter = () => {
   return null
 }
 
+//TODO: refactore inline styles
 export default ({ children }) => (
   <div style={{ display: "flex", flexDirection: "column" }}>
     <MediaNav />
