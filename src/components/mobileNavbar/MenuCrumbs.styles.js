@@ -10,11 +10,15 @@ export const StyledMenuCrumbs = styled.div`
 export const StyledMenuCrumbsItem = styled.div`
   padding: 14px 5px;
   font-size: 12.5px;
-  font-weight: bold;
+  font-weight: 800;
   font-family: sans-serif;
   display: flex;
   flex-shrink: 0;
+  color: #195bb6;
 
+  &:last-child {
+    font-weight: 400;
+  }
   &:not(:last-child):after {
     margin-left: 5px;
     content: " > ";
