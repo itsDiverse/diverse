@@ -1,7 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import Layout from "../components/layout"
-import Nav from "../navbar/index"
+import Nav from "../components/navbar/index"
 
 /* ----------------- QUAD BOX -----------------*/
 import QuadBox from "../components/widgets/quadBox"
