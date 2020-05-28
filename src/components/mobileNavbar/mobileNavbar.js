@@ -13,7 +13,7 @@ const MobileNavbar = ({ menuOpened, onToggleMenu }) => {
     <>
       <MobileNavBar>
         <StyledBrandRow>
-          <IconApp size={50}></IconApp>
+          <IconApp size={32}></IconApp>
           <StyledBrandName>diverse</StyledBrandName>
         </StyledBrandRow>
         <MenuIcon>

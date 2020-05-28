@@ -8,9 +8,8 @@ export const StyledMenuCrumbs = styled.div`
 `
 
 export const StyledMenuCrumbsItem = styled.div`
-  color: #0a50a3;
   padding: 14px 5px;
-  font-size: 14px;
+  font-size: 12.5px;
   font-weight: bold;
   font-family: sans-serif;
   display: flex;
@@ -31,6 +30,9 @@ export const StyledMenuCrumbsHome = styled.div`
 export const StyledMenuHeaderText = styled.div`
   text-transform: uppercase;
   margin-left: 5px;
+  font-weight: 800;
+  font-size: 11px;
+  color: #195bb6;
 `
 export const StyledMenuCrumbsHeaderRow = styled.div`
   display: flex;
@@ -38,8 +40,9 @@ export const StyledMenuCrumbsHeaderRow = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 15px 21px;
+  padding: 15px 5px;
+
   &:first-of-type  {
-    margin-left: 30px;
+    margin-left: 20px;
   }
 `

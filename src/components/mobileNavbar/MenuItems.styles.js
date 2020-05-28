@@ -9,7 +9,7 @@ export const StyledMenuItems = styled.div`
 
 export const StyledMenuItem = styled.div`
   padding: 25px 0px;
-  border-bottom: 2px solid #80808021;
+  border-bottom: 1px solid #e6e6e682;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;

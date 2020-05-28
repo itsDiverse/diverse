@@ -58,4 +58,5 @@ export const menu = [
   {
     title: "Contact",
   },
+  { title: "Login", color: "#195BB6", icon: "login" },
 ]
