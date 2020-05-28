@@ -13,14 +13,15 @@ export const StyledMenuItem = styled.div`
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 800;
-  color: #444;
+  color: ${({ title }) => (title === "Login" ? "#195BB6;" : "#4B4B4B;")}
   display: flex;
   flex-direction: row;
   align-items: center;
 `
 export const StyledIconWrapper = styled.div`
-  width: 60px;
+  width: ${({ title }) => (title === "Login" ? "15px;" : "60px;")}
   text-align: center;
+  display: flex;
 `
 
 export const StyledIconNavigator = styled.div`

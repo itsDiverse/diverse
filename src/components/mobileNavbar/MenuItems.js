@@ -18,9 +18,12 @@ const MenuItems = ({ menu, onClickMenu }) => {
             onClick={() => {
               onClickMenu(menuItem)
             }}
+            title={menuItem.title}
           >
             {iconComponent && (
-              <StyledIconWrapper>{iconComponent}</StyledIconWrapper>
+              <StyledIconWrapper title={menuItem.title}>
+                {iconComponent}
+              </StyledIconWrapper>
             )}
             {menuItem.title}
             <StyledIconNavigator />
