@@ -4,6 +4,7 @@ import {
   IconGraphicDesign,
   IconProgrammingTech,
   IconVideo,
+  IconLogin,
 } from "../icons"
 
 const getIcons = icon => {
@@ -16,6 +17,8 @@ const getIcons = icon => {
       return <IconProgrammingTech />
     case "video":
       return <IconVideo />
+    case "login":
+      return <IconLogin />
     default:
       return null
   }
