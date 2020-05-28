@@ -1,3 +1,3 @@
-import { default as MobileNavbar } from "./mobileNavbar"
+import { default as MobileNavbar } from "./MobileNavbar"
 
 export default MobileNavbar
