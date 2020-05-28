@@ -1,10 +1,21 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
+
+const fadeinout = keyframes`
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+`
 
 export const StyledMenu = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
   background: white;
+  animation: ${fadeinout} 1s linear forwards;
 `
 
 export const StyledMenuFooter = styled.div`
