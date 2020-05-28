@@ -1,19 +1,26 @@
 import React from "react"
 import { useMediaQuery } from "react-responsive"
 import AnimatedNavbar from "../navbar"
-import { default as MobileNavbar } from "../mobileNavbar/mobileNavbar"
+import { StyledLayoutWrapper, StyledLayoutMain } from "./layout.styles"
+import { default as MobileNavbar } from "../mobileNavbar/MobileNavbar"
 import { default as Footer } from "../footer"
 
 //Todo: 1st will use the two different components for menu in desktop and mobile
 //because business wants that. But, keeping an eye opened in possible
 //responsive with styled components media queries.
-const MediaNav = () => {
+const MediaNav = ({ menuOpened, onToggleMenu }) => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" })
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-device-width: 1224px)",
   })
   if (isDesktopOrLaptop) return <AnimatedNavbar duration={300} />
-  if (isTabletOrMobile) return <MobileNavbar></MobileNavbar>
+  if (isTabletOrMobile)
+    return (
+      <MobileNavbar
+        menuOpened={menuOpened}
+        onToggleMenu={onToggleMenu}
+      ></MobileNavbar>
+    )
 
   return null
 }
@@ -32,21 +39,16 @@ const MediaFooter = () => {
 }
 
 //TODO: refactore inline styles
-export default ({ children }) => (
-  <div style={{ display: "flex", flexDirection: "column" }}>
-    <MediaNav />
-    <div
-      style={{
-        maxWidth: "1200px",
-        margin: "auto",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      {children}
-    </div>
-    <MediaFooter />
-  </div>
-)
+const Layout = ({ children }) => {
+  const [menuOpened, setMenuOpened] = React.useState(false)
+
+  return (
+    <StyledLayoutWrapper>
+      <MediaNav menuOpened={menuOpened} onToggleMenu={setMenuOpened} />
+      <StyledLayoutMain>{!menuOpened && children}</StyledLayoutMain>
+      {/*TODO: enable footer !menuOpened*/ false && <MediaFooter />}
+    </StyledLayoutWrapper>
+  )
+}
+
+export default Layout
