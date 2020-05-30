@@ -17,9 +17,11 @@ export const StyledBrandRow = styled.div`
   align-items: center;
   justify-content: flex-start;
 `
-export const StyledBrandName = styled.h2`
+export const StyledBrandName = styled.div`
   text-transform: uppercase;
   margin-left: 10px;
+  font-size: 16px;
+  font-weight: 800;
 `
 
 export const StyledIconBurger = styled.button`
@@ -27,9 +29,9 @@ export const StyledIconBurger = styled.button`
   left: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 1.2rem;
-  height: 1.2rem;
+  justify-content: space-between;
+  width: 1.25rem;
+  height: 1rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -41,10 +43,9 @@ export const StyledIconBurger = styled.button`
   }
 
   div {
-    width: 1.2rem;
-    height: 0.25rem;
+    width: 1.25rem;
+    height: 0.15rem;
     background: ${({ open }) => (open ? "#4B4B4B" : "#4B4B4B")};
-    border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
