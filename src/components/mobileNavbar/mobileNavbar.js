@@ -4,6 +4,7 @@ import {
   MobileNavBar,
   StyledBrandRow,
   StyledBrandName,
+  StyledIconBurger,
 } from "./MobileNavbar.styles"
 import { IconApp } from "../icons"
 import { default as Menu } from "./Menu"
@@ -16,13 +17,14 @@ const MobileNavbar = ({ menuOpened, onToggleMenu }) => {
           <IconApp size={32}></IconApp>
           <StyledBrandName>diverse</StyledBrandName>
         </StyledBrandRow>
-        <MenuIcon>
-          {menuOpened ? (
-            <div onClick={() => onToggleMenu(false)}> X </div>
-          ) : (
-            <div onClick={() => onToggleMenu(true)}> = </div>
-          )}
-        </MenuIcon>
+        <StyledIconBurger
+          open={menuOpened}
+          onClick={() => onToggleMenu(!menuOpened)}
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </StyledIconBurger>
       </MobileNavBar>
       {menuOpened && <Menu />}
     </>
