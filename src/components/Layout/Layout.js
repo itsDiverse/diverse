@@ -33,8 +33,8 @@ const MediaFooter = () => {
     query: "(min-device-width: 1224px)",
   })
 
-  if (isDesktopOrLaptop) return <Footer></Footer>
-  if (isTabletOrMobile) return <Footer></Footer>
+  if (isDesktopOrLaptop) return <Footer />
+  if (isTabletOrMobile) return null
 
   return null
 }
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
     <StyledLayoutWrapper>
       <MediaNav menuOpened={menuOpened} onToggleMenu={setMenuOpened} />
       <StyledLayoutMain>{!menuOpened && children}</StyledLayoutMain>
-      <Footer />
+      <MediaFooter></MediaFooter>
     </StyledLayoutWrapper>
   )
 }
