@@ -1,8 +1,8 @@
 import React from "react"
 import { useMediaQuery } from "react-responsive"
 
-import { default as MobileNavbar } from "../mobileNavbar/MobileNavbar"
-import AnimatedNavbar from "../navbar"
+import { default as MobileNavbar } from "../MobileNavbar/MobileNavbar"
+import AnimatedNavbar from "../Navbar"
 
 import { StyledLayoutWrapper, StyledLayoutMain } from "./Layout.styles"
 import { Footer } from "../Footer"
