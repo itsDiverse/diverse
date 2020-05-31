@@ -23,27 +23,6 @@ export const StyledCallToActionFooter = styled.div`
   flex: 1;
 `
 
-export const StyledButton = styled.div`
-  background: ${({ primary }) => (primary ? "#195BB6;" : "#EBEDF0;")};
-  color: ${({ primary }) => (primary ? "#FFF;" : "#4B4B4B;")};
-  padding: 8px 25px;
-  border-radius: ${({ rounded }) => (rounded ? "20px" : "6px")};
-  display: flex;
-  align-items: center;
-  font-size: 13.5px;
-`
-export const StyledSquaredButton = styled.div`
-  background: ${({ primary }) => (primary ? "#195BB6;" : "#EBEDF0;")};
-  color: ${({ primary }) => (primary ? "#FFF;" : "#4B4B4B;")};
-  padding: 14px 25px;
-  border-radius: ${({ rounded }) => (rounded ? "20px" : "6px")};
-  display: flex;
-  align-items: center;
-  font-size: 13.5px;
-  width: 60px;
-  height: 45px;
-`
-
 export const StyledFooterSepearator = styled.div`
   font-size: 1rem;
   color: #ccc;

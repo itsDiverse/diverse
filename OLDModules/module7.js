@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import { Layout } from "../components/layout"
 
 import Module7 from "../components/widgets/module7"
 import Module7icon from "../images/template/compliance.svg"

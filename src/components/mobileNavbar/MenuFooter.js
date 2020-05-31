@@ -2,8 +2,6 @@ import React from "react"
 
 import {
   StyledMenuFooter,
-  StyledButton,
-  StyledSquaredButton,
   StyledFooterSepearator,
   StyledProposalTitle,
   StyledProposalSubheading,
@@ -12,11 +10,11 @@ import {
   StyledCallOrTextFooter,
   StyledCallToActionFooter,
 } from "./MenuFooter.styles"
-
+import { Button, SquaredButton } from "../Button"
 import { IconPhone, IconWhitePage } from "../icons"
 
 const ProposalCTA = () => (
-  <StyledButton primary>
+  <Button primary>
     <StyledButtonRow>
       <IconWhitePage size={25}></IconWhitePage>
       <StyledButtonDescription>
@@ -26,25 +24,25 @@ const ProposalCTA = () => (
         </StyledProposalSubheading>
       </StyledButtonDescription>
     </StyledButtonRow>
-  </StyledButton>
+  </Button>
 )
 const CallOrTextFooter = ({ onCancelPhone }) => (
   <StyledCallOrTextFooter>
-    <StyledSquaredButton onClick={onCancelPhone}>X</StyledSquaredButton>
-    <StyledButton rounded={true} primary>
+    <SquaredButton onClick={onCancelPhone}>X</SquaredButton>
+    <Button rounded={true} primary>
       CALL
-    </StyledButton>
+    </Button>
     <StyledFooterSepearator> or </StyledFooterSepearator>
-    <StyledButton rounded={true} primary>
+    <Button rounded={true} primary>
       TEXT
-    </StyledButton>
+    </Button>
   </StyledCallOrTextFooter>
 )
 const CallToActionFooter = ({ onClickTelephone }) => (
   <StyledCallToActionFooter>
-    <StyledSquaredButton onClick={onClickTelephone}>
+    <SquaredButton onClick={onClickTelephone}>
       <IconPhone size={15} color={"#4b4b4b"} />
-    </StyledSquaredButton>
+    </SquaredButton>
     <ProposalCTA></ProposalCTA>
   </StyledCallToActionFooter>
 )

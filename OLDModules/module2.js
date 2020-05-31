@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import { Layout } from "../components/layout"
 import Module2 from "../components/widgets/module2"
 
 const SecondPage = () => (
