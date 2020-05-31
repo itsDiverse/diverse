@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Brand } from "../Brand"
 import {
   StyledSection,
   StyledSectionContainer,
@@ -11,7 +11,7 @@ import {
 
 export const FooterSections = () => (
   <StyledSection>
-    <h1>LogoHere</h1>
+    <Brand size={50}></Brand>
     <StyledSectionContainer>
       <StyledSectionLeft>
         <StyledSectionPhrase>
