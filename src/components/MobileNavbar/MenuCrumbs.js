@@ -6,13 +6,13 @@ import {
   StyledMenuHeaderText,
   StyledMenuCrumbsHeaderRow,
 } from "./MenuCrumbs.styles"
-import { IconPlay, IconPhone } from "../icons"
+import { IconPhone } from "../icons"
+import { VideoCTA } from "../VideoCTA"
 
 const MenuCrumbsHome = () => (
   <StyledMenuCrumbsHome>
     <StyledMenuCrumbsHeaderRow>
-      <IconPlay size={20} />
-      <StyledMenuHeaderText> How Diverse Works</StyledMenuHeaderText>
+      <VideoCTA icon />
     </StyledMenuCrumbsHeaderRow>
     <StyledMenuCrumbsHeaderRow>
       <IconPhone color={"#195bb6"} size={20} />

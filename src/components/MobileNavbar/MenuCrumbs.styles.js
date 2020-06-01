@@ -41,12 +41,17 @@ export const StyledMenuHeaderText = styled.div`
 export const StyledMenuCrumbsHeaderRow = styled.div`
   display: flex;
   flex: 1;
+  font-size: 14px;
+  font-weight: 800;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  padding: 15px 5px;
+  justify-content: space-between;
+  padding: 10px 4px;
+  color: #195bb6;
 
   &:first-of-type  {
-    margin-left: 20px;
+    flex-grow: 2;
+    flex-wrap: nowrap;
+    margin-left: 10px;
   }
 `
