@@ -1,11 +1,13 @@
 import React, { Component } from "react"
 import styled from "styled-components"
+import { Brand } from "../../Brand"
 
 const NavbarEl = styled.nav`
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 2rem;
+  padding-top: 1rem;
+  align-items: center;
 `
 
 const Logo = styled.span`
@@ -31,7 +33,7 @@ class Navbar extends Component {
     const { children, onMouseLeave } = this.props
     return (
       <NavbarEl onMouseLeave={onMouseLeave}>
-        <Logo>DIVERSE</Logo>
+        <Brand size={50} />
         <NavbarList>{children}</NavbarList>
         <SignIn>Sign in 🡢</SignIn>
       </NavbarEl>
