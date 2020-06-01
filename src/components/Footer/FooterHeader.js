@@ -8,6 +8,7 @@ import {
 } from "./FooterHeader.styles"
 
 import { Button } from "../Button"
+import { VideoCTA } from "../VideoCTA"
 
 const OurServicesDropdown = ({ expanded, onSetExpanded }) => (
   <div onClick={onSetExpanded}>
@@ -18,10 +19,7 @@ const OurServicesDropdown = ({ expanded, onSetExpanded }) => (
 
 const OurServicesVideo = () => (
   <StyledGroup>
-    <Button rounded primary>
-      Video
-    </Button>
-    <StyledDescription>How Our Services Work ></StyledDescription>
+    <VideoCTA icon />
   </StyledGroup>
 )
 

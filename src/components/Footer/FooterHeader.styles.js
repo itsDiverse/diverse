@@ -11,16 +11,6 @@ export const StyledFooterHeader = styled.div`
 `
 export const StyledDescription = styled.h4``
 
-export const StyledGroup = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  ${StyledDescription} {
-    margin-left: 10px;
-  }
-`
-
 export const StyledRow = styled.div`
   display: flex;
   flex-direction: row;
