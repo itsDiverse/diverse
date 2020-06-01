@@ -6,6 +6,7 @@ import AnimatedNavbar from "../Navbar"
 
 import { StyledLayoutWrapper, StyledLayoutMain } from "./Layout.styles"
 import { Footer } from "../Footer"
+import { MobileFooter } from "../MobileFooter"
 
 //Todo: 1st will use the two different components for menu in desktop and mobile
 //because business wants that. But, keeping an eye opened in possible
@@ -34,7 +35,7 @@ const MediaFooter = () => {
   })
 
   if (isDesktopOrLaptop) return <Footer />
-  if (isTabletOrMobile) return null
+  if (isTabletOrMobile) return <MobileFooter />
 
   return null
 }
