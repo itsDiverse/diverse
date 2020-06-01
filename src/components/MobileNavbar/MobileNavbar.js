@@ -1,22 +1,14 @@
 import React, { useState } from "react"
-import {
-  MenuIcon,
-  MobileNavBar,
-  StyledBrandRow,
-  StyledBrandName,
-  StyledIconBurger,
-} from "./MobileNavbar.styles"
+import { MenuIcon, MobileNavBar, StyledIconBurger } from "./MobileNavbar.styles"
 import { IconApp } from "../icons"
 import { default as Menu } from "./Menu"
+import { Brand } from "../Brand"
 
 const MobileNavbar = ({ menuOpened, onToggleMenu }) => {
   return (
     <>
       <MobileNavBar>
-        <StyledBrandRow>
-          <IconApp size={32}></IconApp>
-          <StyledBrandName>diverse</StyledBrandName>
-        </StyledBrandRow>
+        <Brand size={50} />
         <StyledIconBurger
           open={menuOpened}
           onClick={() => onToggleMenu(!menuOpened)}
