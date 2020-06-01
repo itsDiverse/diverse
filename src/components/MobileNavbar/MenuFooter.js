@@ -3,29 +3,13 @@ import React from "react"
 import {
   StyledMenuFooter,
   StyledFooterSepearator,
-  StyledProposalTitle,
-  StyledProposalSubheading,
-  StyledButtonRow,
-  StyledButtonDescription,
   StyledCallOrTextFooter,
   StyledCallToActionFooter,
 } from "./MenuFooter.styles"
 import { Button, SquaredButton } from "../Button"
-import { IconPhone, IconWhitePage } from "../icons"
+import { IconPhone } from "../icons"
+import { ProposalCTA } from "../ProposalCTA"
 
-const ProposalCTA = () => (
-  <Button primary>
-    <StyledButtonRow>
-      <IconWhitePage size={25}></IconWhitePage>
-      <StyledButtonDescription>
-        <StyledProposalTitle>Get A Free Proposal</StyledProposalTitle>
-        <StyledProposalSubheading>
-          Tailored to your company's needs.
-        </StyledProposalSubheading>
-      </StyledButtonDescription>
-    </StyledButtonRow>
-  </Button>
-)
 const CallOrTextFooter = ({ onCancelPhone }) => (
   <StyledCallOrTextFooter>
     <SquaredButton onClick={onCancelPhone}>X</SquaredButton>

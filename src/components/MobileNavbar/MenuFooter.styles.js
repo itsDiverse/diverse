@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "./node_modules/styled-components"
 
 export const StyledMenuFooter = styled.div`
   display: flex;
@@ -27,27 +27,4 @@ export const StyledFooterSepearator = styled.div`
   font-size: 1rem;
   color: #ccc;
   font-weight: 800;
-`
-
-export const StyledButtonRow = styled.div`
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  align-items: center;
-`
-export const StyledButtonDescription = styled.div`
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 20px;
-`
-
-export const StyledProposalTitle = styled.h2`
-  color: white;
-  font-size: 1rem;
-`
-export const StyledProposalSubheading = styled.h4`
-  color: white;
-  font-size: 0.5rem;
 `
