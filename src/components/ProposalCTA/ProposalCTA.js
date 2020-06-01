@@ -5,10 +5,11 @@ import {
   StyledProposalSubheading,
   StyledButtonRow,
   StyledButtonDescription,
-} from "../ProposalCTA.styles"
+} from "./ProposalCTA.styles"
+
 import { IconWhitePage } from "../icons"
 
-const ProposalCTA = () => (
+export const ProposalCTA = () => (
   <Button primary>
     <StyledButtonRow>
       <IconWhitePage size={25}></IconWhitePage>
@@ -21,4 +22,3 @@ const ProposalCTA = () => (
     </StyledButtonRow>
   </Button>
 )
-export default ProposalCTA

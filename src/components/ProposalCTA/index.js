@@ -1,1 +1,1 @@
-export { default as ProposalCTA } from "./ProposalCTA"
+export { ProposalCTA } from "./ProposalCTA"
