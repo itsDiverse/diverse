@@ -3,11 +3,11 @@ import styled from "styled-components"
 export const Button = styled.button`
   background: ${({ primary }) => (primary ? "#195BB6;" : "#EBEDF0;")};
   color: ${({ primary }) => (primary ? "#FFF;" : "#4B4B4B;")};
-  padding: 8px 25px;
+  padding: ${({ small }) => (small ? "5px 18px;" : "8px 25px;")};
   border-radius: ${({ rounded }) => (rounded ? "20px" : "6px")};
   display: flex;
   align-items: center;
-  font-size: 13.5px;
+  font-size: ${({ small }) => (small ? "11px;" : "13.5px;")};
   border: none;
 `
 export const SquaredButton = styled.button`
