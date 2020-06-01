@@ -1,6 +1,5 @@
-import React, { useState } from "react"
-import { MenuIcon, MobileNavBar, StyledIconBurger } from "./MobileNavbar.styles"
-import { IconApp } from "../icons"
+import React from "react"
+import { MobileNavBar, StyledIconBurger } from "./MobileNavbar.styles"
 import { default as Menu } from "./Menu"
 import { Brand } from "../Brand"
 
