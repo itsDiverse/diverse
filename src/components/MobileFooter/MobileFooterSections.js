@@ -5,24 +5,35 @@ import {
   StyledDropDownItem,
 } from "./MobileFooter.styles"
 
-import { StyledMobileFooterSections } from "./MobileFooterSections.styles"
+import {
+  StyledMobileFooterSections,
+  StyledButtonsRow,
+  StyledButtonsCol,
+  StyledPhoneNumber,
+  StyledGetInTouch,
+  StyledSmallDivider,
+} from "./MobileFooterSections.styles"
 
 import { DropDown } from "../DropDown"
+import { Button } from "../Button"
+import { ProposalCTA } from "../ProposalCTA"
 
 const GetInTouch = () => (
-  <div>
-    <Button rounded primary>
-      CALL US
-    </Button>
-    <Button rounded primary>
-      TEXT US
-    </Button>
-    <Button rounded primary>
-      EMAIL US
-    </Button>
-    <Divisor></Divisor>
-    <Button proposal />
-  </div>
+  <StyledButtonsCol>
+    <StyledButtonsRow>
+      <Button rounded primary small>
+        CALL US
+      </Button>
+      <Button rounded primary small>
+        TEXT US
+      </Button>
+      <Button rounded primary small>
+        EMAIL US
+      </Button>
+    </StyledButtonsRow>
+    <StyledSmallDivider />
+    <ProposalCTA />
+  </StyledButtonsCol>
 )
 
 export const MobileFooterSections = () => (
@@ -49,7 +60,13 @@ export const MobileFooterSections = () => (
     </StyledMobileFooterSections>
     <StyledMobileFooterSections>
       <DropDown icon="+" title="GET IN TOUCH">
-        <GetInTouch></GetInTouch>
+        <StyledGetInTouch>
+          <StyledPhoneNumber>
+            Phone Number: <span>(833)-Diverse</span>
+          </StyledPhoneNumber>
+          <StyledPhoneNumber>Social Profiles: </StyledPhoneNumber>
+          <GetInTouch></GetInTouch>
+        </StyledGetInTouch>
       </DropDown>
     </StyledMobileFooterSections>
   </>
