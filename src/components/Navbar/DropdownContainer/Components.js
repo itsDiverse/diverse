@@ -6,7 +6,7 @@ const getDropdownRootKeyFrame = ({ animatingOut, direction }) => {
   return keyframes`
     from {
         transform: ${animatingOut ? "rotateX(0)" : "rotateX(-15deg)"};
-        opacity: ${animatingOut ? 1 : 0}
+        opacity: ${animatingOut ? 1 : 0};
     }
     to {
         transform: ${animatingOut ? "rotateX(-15deg)" : "rotateX(0)"};
@@ -18,7 +18,7 @@ const getDropdownRootKeyFrame = ({ animatingOut, direction }) => {
 export const DropdownRoot = styled.div`
     transform-origin: 0 0;
     ${promoteLayer}
-    animation-name: ${getDropdownRootKeyFrame}
+    animation-name: ${getDropdownRootKeyFrame};
     animation-duration: ${props => props.duration}ms;
     /* use 'forwards' to prevent flicker on leave animation */
     animation-fill-mode: forwards;
@@ -49,6 +49,7 @@ export const DropdownBackground = styled.div`
   overflow: hidden;
   position: relative;
   box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.2);
+  background-color: white;
   &:before {
     content: "";
     z-index: -1;
@@ -61,7 +62,7 @@ export const DropdownBackground = styled.div`
 
 export const InvertedDiv = styled.div`
     ${promoteLayer}
-    position: ${props => (props.absolute ? "absolute" : "relative")}
+    position: ${props => (props.absolute ? "absolute" : "relative")};
     top: 0;
     left: 0;
     &:first-of-type {
