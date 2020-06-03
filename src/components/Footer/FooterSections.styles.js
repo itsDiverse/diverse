@@ -25,29 +25,46 @@ export const StyledSectionColumns = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   margin: 0px 25px;
-
-  h4 {
-    font-size: 20;
-    font-weight: bold;
-    color: #707070;
-    padding-bottom: 10px;
-  }
-
-  h5 {
-    padding-bottom: 10px;
-    font-size: 18;
-    font-weight: medium;
-    color: #707070;
-  }
 `
 export const StyledSectionLeft = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
   align-content: flex-start;
+  padding: 20px 12px;
 `
 export const StyledSectionRight = styled.div`
   display: flex;
   flex: 1;
   justify-content: flex-end;
+`
+
+export const StyledSectionTitle = styled.p`
+  font-size: 20px;
+  font-weight: bold;
+  color: #707070;
+  padding-bottom: 10px;
+`
+
+export const StyledSectionSubtitle = styled.p`
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: medium;
+  color: #707070;
+
+  span {
+    color: #195bb6;
+  }
+`
+
+export const StyledSectionSubtitleSmall = styled.p`
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: medium;
+  color: #707070;
+`
+export const StyledSectionSocialMedia = styled.div`
+  svg:first-child {
+    margin-right: 10px;
+  }
 `

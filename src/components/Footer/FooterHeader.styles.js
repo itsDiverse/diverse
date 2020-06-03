@@ -19,7 +19,44 @@ export const StyledRow = styled.div`
 `
 
 export const StyledDropwdownArea = styled.div`
-  background: red;
   flex: 1;
   display: ${({ visible }) => (visible ? "flex;" : "none;")};
+`
+export const StyledDropdDownContent = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+`
+export const StyledService = styled.div`
+  padding: 10px 10px;
+  color: #707070;
+`
+
+export const StyledServiceTitle = styled.div`
+  padding: 5px 0px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  color: #195bb6;
+`
+export const StyledServiceSection = styled.p`
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+`
+export const StyledDropDownItemsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  flex: 1;
+`
+export const StyledDropDownItem = styled.div`
+  display: flex;
+  flex: 1;
+  font-weight: normal;
+  font-size: 12px;
+  color: #707070;
+  padding: 3px 0px;
 `

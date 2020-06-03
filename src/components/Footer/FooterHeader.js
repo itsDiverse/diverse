@@ -1,14 +1,18 @@
 import React from "react"
 import {
   StyledFooterHeader,
-  StyledDescription,
   StyledDropwdownArea,
-  StyledGroup,
   StyledRow,
+  StyledDropdDownContent,
+  StyledService,
+  StyledServiceSection,
+  StyledServiceTitle,
+  StyledDropDownItemsContainer,
+  StyledDropDownItem,
 } from "./FooterHeader.styles"
 
-import { Button } from "../Button"
 import { VideoCTA } from "../VideoCTA"
+import { footerData } from "./Footer.data"
 
 const OurServicesDropdown = ({ expanded, onSetExpanded }) => (
   <div onClick={onSetExpanded}>
@@ -17,11 +21,7 @@ const OurServicesDropdown = ({ expanded, onSetExpanded }) => (
   </div>
 )
 
-const OurServicesVideo = () => (
-  <StyledGroup>
-    <VideoCTA icon />
-  </StyledGroup>
-)
+const OurServicesVideo = () => <VideoCTA button withSpace />
 
 export const FooterHeader = () => {
   const [expanded, setExpanded] = React.useState(false)
@@ -36,7 +36,27 @@ export const FooterHeader = () => {
         <OurServicesVideo />
       </StyledRow>
       <StyledDropwdownArea visible={expanded}>
-        <h1>here dropdowns</h1>
+        <StyledDropdDownContent>
+          {footerData.map(section => (
+            <StyledService key={section.title}>
+              <StyledServiceTitle>{section.title}</StyledServiceTitle>
+              {section.items.map(subsection => (
+                <div key={subsection.title}>
+                  <StyledServiceSection>
+                    {subsection.title}
+                  </StyledServiceSection>
+                  <StyledDropDownItemsContainer>
+                    {subsection.items.map(item => (
+                      <StyledDropDownItem key={item.title}>
+                        {item.title}
+                      </StyledDropDownItem>
+                    ))}
+                  </StyledDropDownItemsContainer>
+                </div>
+              ))}
+            </StyledService>
+          ))}
+        </StyledDropdDownContent>
       </StyledDropwdownArea>
     </StyledFooterHeader>
   )

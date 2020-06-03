@@ -1,5 +1,6 @@
 import React from "react"
 import { Brand } from "../Brand"
+import { DarkModeSelector } from "../DarkModeSelector"
 import {
   StyledSection,
   StyledSectionContainer,
@@ -7,8 +8,12 @@ import {
   StyledSectionLeft,
   StyledSectionRight,
   StyledSectionPhrase,
+  StyledSectionSocialMedia,
+  StyledSectionTitle,
+  StyledSectionSubtitle,
+  StyledSectionSubtitleSmall,
 } from "./FooterSections.styles"
-
+import { IconInstagram, IconFacebook } from "../Icons"
 export const FooterSections = () => (
   <StyledSection>
     <Brand size={50}></Brand>
@@ -18,31 +23,36 @@ export const FooterSections = () => (
           We develop multi-channel sales processes to help businesses attract,
           close, and retain customers.
         </StyledSectionPhrase>
-        <div>darkmode selector</div>
+        <DarkModeSelector />
       </StyledSectionLeft>
       <StyledSectionRight>
         <StyledSectionColumns>
-          <h4>COMPANY</h4>
-          <h5>About Us</h5>
-          <h5>Free Proposal</h5>
-          <h5>Careers</h5>
-          <h5>Privacy Policy</h5>
-          <h5>Terms</h5>
+          <StyledSectionTitle>COMPANY</StyledSectionTitle>
+          <StyledSectionSubtitle>About Us</StyledSectionSubtitle>
+          <StyledSectionSubtitle>Free Proposal</StyledSectionSubtitle>
+          <StyledSectionSubtitle>Careers</StyledSectionSubtitle>
+          <StyledSectionSubtitle>Privacy Policy</StyledSectionSubtitle>
+          <StyledSectionSubtitle>Terms</StyledSectionSubtitle>
         </StyledSectionColumns>
         <StyledSectionColumns>
-          <h4>RESOURCES</h4>
-          <h5>FAQs</h5>
-          <h5>Client Login</h5>
-          <h5>Blog</h5>
-          <h5>Example Link</h5>
+          <StyledSectionTitle>RESOURCES</StyledSectionTitle>
+          <StyledSectionSubtitle>FAQs</StyledSectionSubtitle>
+          <StyledSectionSubtitle>Client Login</StyledSectionSubtitle>
+          <StyledSectionSubtitle>Blog</StyledSectionSubtitle>
+          <StyledSectionSubtitle>Example Link</StyledSectionSubtitle>
         </StyledSectionColumns>
         <StyledSectionColumns>
-          <h4>GET IN TOUCH</h4>
-          <h5>Contact Us</h5>
-          <h5>Live Chat</h5>
-          <h5>F I</h5>
-          <h6>Call Or Text:</h6>
-          <h5>(833)-DIVERSE</h5>
+          <StyledSectionTitle>GET IN TOUCH</StyledSectionTitle>
+          <StyledSectionSubtitle>Contact Us</StyledSectionSubtitle>
+          <StyledSectionSubtitle>Live Chat</StyledSectionSubtitle>
+          <StyledSectionSocialMedia>
+            <IconFacebook size={20} />
+            <IconInstagram size={20} />
+          </StyledSectionSocialMedia>
+          <StyledSectionSubtitleSmall>Call Or Text:</StyledSectionSubtitleSmall>
+          <StyledSectionSubtitle>
+            <span>(833)-DIVERSE</span>
+          </StyledSectionSubtitle>
         </StyledSectionColumns>
       </StyledSectionRight>
     </StyledSectionContainer>
