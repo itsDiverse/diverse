@@ -9,14 +9,6 @@ const NavbarEl = styled.nav`
   padding-top: 1rem;
   align-items: center;
 `
-
-const Logo = styled.span`
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 16px;
-  margin: 0 auto 0 0;
-`
-
 const SignIn = styled.span`
   color: rgba(126, 126, 126, 1);
   margin: 0 0 0 2rem;
