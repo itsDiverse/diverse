@@ -11,6 +11,7 @@ export const StyledIcon = styled.div`
   font-weight: bold;
   margin-right: 10px;
   color: #707070;
+  text-align: left;
 `
 export const StyledTitles = styled.div`
   flex-direction: column;
@@ -26,7 +27,8 @@ export const StyledTitle = styled.p`
 `
 export const StyledSubtitle = styled.p`
   font-weight: normal;
-  font-size: 10px;
+  font-size: 11.5px;
+  line-height: 113.1%;
   color: #707070;
 `
 export const StyledDrodDownContainer = styled.div`

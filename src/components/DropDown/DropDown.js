@@ -10,13 +10,19 @@ import {
   StyledRow,
 } from "./DropDown.styles"
 
-export const DropDown = ({ icon, title, subtitle, children }) => {
+export const DropDown = ({
+  icon_expand,
+  icon_expanded,
+  title,
+  subtitle,
+  children,
+}) => {
   const [show, setShow] = React.useState(false)
 
   return (
-    <StyledDropDown onClick={() => setShow(!show)}>
-      <StyledRow>
-        {icon && <StyledIcon>{icon}</StyledIcon>}
+    <StyledDropDown>
+      <StyledRow onClick={() => setShow(!show)}>
+        <StyledIcon>{show ? icon_expanded : icon_expand}</StyledIcon>
         <StyledTitles>
           {title && <StyledTitle>{title}</StyledTitle>}
           {subtitle && <StyledSubtitle>{subtitle}</StyledSubtitle>}
