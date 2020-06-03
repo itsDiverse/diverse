@@ -13,6 +13,8 @@ export const StyledMenu = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
+  flex-flow: column;
+  height: 100%;
   background: white;
   animation: ${fadeinout} 1s linear forwards;
 `

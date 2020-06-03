@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
     <StyledLayoutWrapper>
       <MediaNav menuOpened={menuOpened} onToggleMenu={setMenuOpened} />
       <StyledLayoutMain>{!menuOpened && children}</StyledLayoutMain>
-      <MediaFooter></MediaFooter>
+      {!menuOpened && <MediaFooter></MediaFooter>}
     </StyledLayoutWrapper>
   )
 }
