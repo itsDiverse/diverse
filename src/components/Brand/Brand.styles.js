@@ -6,11 +6,11 @@ export const StyledBrandRow = styled.div`
   flex: 1;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 15px;
 `
 export const StyledBrandName = styled.div`
   text-transform: uppercase;
   margin-left: 15px;
-  font-size: ${({ size }) => (size ? `${size / 2}px;` : "16px;")}
+  font-size: ${({ size }) => (size ? `${size / 2.2}px;` : "16px;")}
   font-weight: 800;
+  letter-spacing: 4.0px;
   `
