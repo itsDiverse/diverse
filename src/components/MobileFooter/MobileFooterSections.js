@@ -12,6 +12,7 @@ import {
   StyledPhoneNumber,
   StyledGetInTouch,
   StyledSmallDivider,
+  StyledButtonText,
 } from "./MobileFooterSections.styles"
 
 import { DropDown } from "../DropDown"
@@ -22,13 +23,13 @@ const GetInTouch = () => (
   <StyledButtonsCol>
     <StyledButtonsRow>
       <Button rounded primary small>
-        CALL US
+        <StyledButtonText>CALL US</StyledButtonText>
       </Button>
       <Button rounded primary small>
-        TEXT US
+        <StyledButtonText>TEXT US</StyledButtonText>
       </Button>
       <Button rounded primary small>
-        EMAIL US
+        <StyledButtonText> EMAIL US</StyledButtonText>
       </Button>
     </StyledButtonsRow>
     <StyledSmallDivider />
@@ -39,7 +40,7 @@ const GetInTouch = () => (
 export const MobileFooterSections = () => (
   <>
     <StyledMobileFooterSections>
-      <DropDown icon="+" title="OUR COMPANY">
+      <DropDown icon_expand="+" icon_expanded="-" title="OUR COMPANY">
         <StyledDropDownItemsContainer>
           <StyledDropDownItem>About Us</StyledDropDownItem>
           <StyledDropDownItem>Privacy Policy</StyledDropDownItem>
@@ -50,7 +51,7 @@ export const MobileFooterSections = () => (
       </DropDown>
     </StyledMobileFooterSections>
     <StyledMobileFooterSections>
-      <DropDown icon="+" title="RESOURCES">
+      <DropDown icon_expand="+" icon_expanded="-" title="RESOURCES">
         <StyledDropDownItemsContainer>
           <StyledDropDownItem>FAQs</StyledDropDownItem>
           <StyledDropDownItem>Blog</StyledDropDownItem>
@@ -59,7 +60,7 @@ export const MobileFooterSections = () => (
       </DropDown>
     </StyledMobileFooterSections>
     <StyledMobileFooterSections>
-      <DropDown icon="+" title="GET IN TOUCH">
+      <DropDown icon_expand="+" icon_expanded="-" title="GET IN TOUCH">
         <StyledGetInTouch>
           <StyledPhoneNumber>
             Phone Number: <span>(833)-Diverse</span>

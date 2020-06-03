@@ -11,7 +11,7 @@ import { VideoCTA } from "../VideoCTA"
 
 export const MobileFooterHeading = () => (
   <StyledMobileFooterHeading>
-    <Brand size={40} />
+    <Brand size={50} />
     <StyledParagraph>
       We develop multi-channel sales processes to help businesses attract,
       close, and retain customers.
