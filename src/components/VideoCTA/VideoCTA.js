@@ -12,7 +12,7 @@ export const VideoCTA = ({ icon, button }) => (
       </Button>
     ) : null}
     <StyledCTAText>
-      How Diverse Works <span>></span>
+      How Diverse Works <span> ></span>
     </StyledCTAText>
   </StyledGroup>
 )

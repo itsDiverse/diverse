@@ -17,6 +17,9 @@ export const StyledGroup = styled.div`
     font-size: 14.5px;
     line-height: 18px;
     color: #4b4b4b;
+    span {
+      margin-left: 20px;
+    }
   }
 `
 export const StyledButtonText = styled.p`

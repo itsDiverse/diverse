@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import { Link } from "gatsby"
+import React from "react"
 
 export const StyledFooterHeader = styled.div`
   display: flex;
@@ -16,6 +18,7 @@ export const StyledRow = styled.div`
   flex-direction: row;
   flex: 1;
   justify-content: space-between;
+  cursor: pointer;
 `
 
 export const StyledDropwdownArea = styled.div`
@@ -33,18 +36,19 @@ export const StyledService = styled.div`
   color: #707070;
 `
 
-export const StyledServiceTitle = styled.div`
+export const StyledServiceTitle = styled(props => <Link {...props} />)`
   padding: 5px 0px;
   font-weight: bold;
   font-size: 17px;
   line-height: 21px;
   color: #195bb6;
 `
-export const StyledServiceSection = styled.p`
+export const StyledServiceSection = styled(props => <Link {...props} />)`
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 17px;
+  color: #707070;
 `
 export const StyledDropDownItemsContainer = styled.div`
   display: flex;
@@ -52,7 +56,7 @@ export const StyledDropDownItemsContainer = styled.div`
   padding: 10px 0px;
   flex: 1;
 `
-export const StyledDropDownItem = styled.div`
+export const StyledDropDownItem = styled(props => <Link {...props} />)`
   display: flex;
   flex: 1;
   font-weight: normal;
