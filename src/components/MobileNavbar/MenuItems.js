@@ -5,7 +5,7 @@ import {
   StyledIconWrapper,
   StyledIconNavigator,
 } from "./MenuItems.styles"
-import { getIcons } from "../../components/icons"
+import { getIcons } from "../../components/Icons"
 import { Link } from "gatsby"
 
 const MenuItems = ({ menu, onClickMenu }) => {

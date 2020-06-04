@@ -7,7 +7,7 @@ import {
   StyledCallToActionFooter,
 } from "./MenuFooter.styles"
 import { Button, SquaredButton } from "../Button"
-import { IconPhone } from "../icons"
+import { IconPhone } from "../Icons"
 import { ProposalCTA } from "../ProposalCTA"
 
 const CallOrTextFooter = ({ onCancelPhone }) => (

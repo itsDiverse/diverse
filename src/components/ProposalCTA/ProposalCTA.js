@@ -7,7 +7,7 @@ import {
   StyledButtonDescription,
 } from "./ProposalCTA.styles"
 
-import { IconWhitePage } from "../icons"
+import { IconWhitePage } from "../Icons"
 
 export const ProposalCTA = () => (
   <Button primary>

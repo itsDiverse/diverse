@@ -5,7 +5,7 @@ import {
   IconProgrammingTech,
   IconVideo,
   IconLogin,
-} from "../icons"
+} from "../Icons"
 
 const getIcons = icon => {
   switch (icon) {

@@ -6,7 +6,7 @@ import {
   StyledMenuHeaderText,
   StyledMenuCrumbsHeaderRow,
 } from "./MenuCrumbs.styles"
-import { IconPhone } from "../icons"
+import { IconPhone } from "../Icons"
 import { VideoCTA } from "../VideoCTA"
 
 const MenuCrumbsHome = () => (
