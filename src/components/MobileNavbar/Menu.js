@@ -9,28 +9,41 @@ import { default as MenuFooter } from "./MenuFooter"
 import { menu } from "./menuData"
 
 const Menu = () => {
-  const [crumbs, setCrumbs] = React.useState(["Main Menu"])
+  const [crumbs, setCrumbs] = React.useState([{ title: "Home", menu: menu }])
   const [selectedMenu, setSelectedMenu] = React.useState("")
   const [headerMenu, setHeaderMenu] = React.useState("")
   const [actualMenu, setActualMenu] = React.useState(menu)
 
-  const navigate = menuItem => {
+  const navigate = (menuItem, crumbing = true) => {
     let newMenu = menuItem.items
     let label = menuItem.selectedLabel
     let title = menuItem.title
 
     if (newMenu) {
-      crumbs.push(title)
+      if (crumbing) {
+        crumbs.push({ title, menu: menuItem })
+        setCrumbs(crumbs)
+      }
+
       setSelectedMenu(title)
       setHeaderMenu(label || title)
-      setCrumbs(crumbs)
       setActualMenu(newMenu)
     } else return
   }
 
+  const onClickCrumbs = (menuItem, index) => {
+    let newCrumbs = crumbs.slice(0, index + 1)
+    setCrumbs(newCrumbs)
+    navigate(menuItem, false)
+  }
+
   return (
     <StyledMenu>
-      <MenuCrumbs crumbs={crumbs} selectedMenu={selectedMenu}></MenuCrumbs>
+      <MenuCrumbs
+        crumbs={crumbs}
+        onClickCrumbs={onClickCrumbs}
+        selectedMenu={selectedMenu}
+      ></MenuCrumbs>
       {headerMenu !== "" && <StyledMenuHeader>{headerMenu}</StyledMenuHeader>}
       <MenuItems
         menu={actualMenu}

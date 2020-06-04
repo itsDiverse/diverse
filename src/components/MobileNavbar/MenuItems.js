@@ -6,6 +6,7 @@ import {
   StyledIconNavigator,
 } from "./MenuItems.styles"
 import { getIcons } from "../../components/icons"
+import { Link } from "gatsby"
 
 const MenuItems = ({ menu, onClickMenu }) => {
   return (
@@ -20,12 +21,25 @@ const MenuItems = ({ menu, onClickMenu }) => {
             }}
             title={menuItem.title}
           >
-            {iconComponent && (
-              <StyledIconWrapper title={menuItem.title}>
-                {iconComponent}
-              </StyledIconWrapper>
+            {menuItem.to ? (
+              <Link to={menuItem.to}>
+                {iconComponent && (
+                  <StyledIconWrapper title={menuItem.title}>
+                    {iconComponent}
+                  </StyledIconWrapper>
+                )}
+                {menuItem.title}
+              </Link>
+            ) : (
+              <>
+                {iconComponent && (
+                  <StyledIconWrapper title={menuItem.title}>
+                    {iconComponent}
+                  </StyledIconWrapper>
+                )}
+                {menuItem.title}
+              </>
             )}
-            {menuItem.title}
             <StyledIconNavigator />
           </StyledMenuItem>
         )

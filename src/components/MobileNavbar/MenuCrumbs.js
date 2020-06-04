@@ -21,7 +21,7 @@ const MenuCrumbsHome = () => (
   </StyledMenuCrumbsHome>
 )
 
-const MenuCrumbs = ({ crumbs, selectedMenu }) => {
+const MenuCrumbs = ({ crumbs, onClickCrumbs, selectedMenu }) => {
   return (
     <StyledMenuCrumbs>
       {selectedMenu === "" ? (
@@ -29,7 +29,12 @@ const MenuCrumbs = ({ crumbs, selectedMenu }) => {
       ) : (
         crumbs &&
         crumbs.map((crumb, index) => (
-          <StyledMenuCrumbsItem key={index}>{crumb}</StyledMenuCrumbsItem>
+          <StyledMenuCrumbsItem
+            key={index}
+            onClick={() => onClickCrumbs(crumb.menu, index)}
+          >
+            {crumb.title}
+          </StyledMenuCrumbsItem>
         ))
       )}
     </StyledMenuCrumbs>

@@ -14,11 +14,14 @@ export const menu = [
           {
             title: "Writing Services",
             items: [
-              { title: "WEBSITE CONTENT" },
-              { title: "EMAIL COPY" },
-              { title: "PRESS RELEASE" },
-              { title: "BUSINESS NAMES & SLOGAN" },
-              { title: "WEBSITE CONTENT" },
+              { title: "WEBSITE CONTENT", to: "writting/website-content" },
+              { title: "EMAIL COPY", to: "writting/email-copy" },
+              { title: "PRESS RELEASE", to: "writting/press-release" },
+              {
+                title: "BUSINESS NAMES & SLOGAN",
+                to: "writting/business-names",
+              },
+              { title: "WEBSITE CONTENT", to: "writting/website-content" },
             ],
           },
         ],
