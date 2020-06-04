@@ -18,7 +18,7 @@ import {
 import { DropDown } from "../DropDown"
 import { Button } from "../Button"
 import { ProposalCTA } from "../ProposalCTA"
-
+import { Link } from "gatsby"
 const GetInTouch = () => (
   <StyledButtonsCol>
     <StyledButtonsRow>
@@ -42,20 +42,36 @@ export const MobileFooterSections = () => (
     <StyledMobileFooterSections>
       <DropDown icon_expand="+" icon_expanded="-" title="OUR COMPANY">
         <StyledDropDownItemsContainer>
-          <StyledDropDownItem>About Us</StyledDropDownItem>
-          <StyledDropDownItem>Privacy Policy</StyledDropDownItem>
-          <StyledDropDownItem>Free Proposal</StyledDropDownItem>
-          <StyledDropDownItem>Terms</StyledDropDownItem>
-          <StyledDropDownItem>Careers</StyledDropDownItem>
+          <StyledDropDownItem>
+            <Link>About Us</Link>
+          </StyledDropDownItem>
+          <StyledDropDownItem>
+            <Link>Privacy Policy</Link>
+          </StyledDropDownItem>
+          <StyledDropDownItem>
+            <Link>Free Proposal</Link>
+          </StyledDropDownItem>
+          <StyledDropDownItem>
+            <Link>Terms</Link>
+          </StyledDropDownItem>
+          <StyledDropDownItem>
+            <Link>Careers</Link>
+          </StyledDropDownItem>
         </StyledDropDownItemsContainer>
       </DropDown>
     </StyledMobileFooterSections>
     <StyledMobileFooterSections>
       <DropDown icon_expand="+" icon_expanded="-" title="RESOURCES">
         <StyledDropDownItemsContainer>
-          <StyledDropDownItem>FAQs</StyledDropDownItem>
-          <StyledDropDownItem>Blog</StyledDropDownItem>
-          <StyledDropDownItem>Client Login</StyledDropDownItem>
+          <StyledDropDownItem>
+            <Link>FAQs</Link>
+          </StyledDropDownItem>
+          <StyledDropDownItem>
+            <Link>Blog</Link>
+          </StyledDropDownItem>
+          <StyledDropDownItem>
+            <Link>Client Login</Link>
+          </StyledDropDownItem>
         </StyledDropDownItemsContainer>
       </DropDown>
     </StyledMobileFooterSections>

@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Button } from "../Button"
 
 export const StyledMobileFooterSections = styled.div`
-  padding: 20px 40px 20px 40px;
+  padding: 20px;
   border-bottom: 1px solid #f2f2f2;
 `
 export const StyledButtonsRow = styled.div`
