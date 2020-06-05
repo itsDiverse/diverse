@@ -48,3 +48,10 @@ export const StyledButtonText = styled.p`
   padding: 0px;
   margin: 2px;
 `
+export const StyledCTARow = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+`

@@ -13,6 +13,7 @@ import {
   StyledGetInTouch,
   StyledSmallDivider,
   StyledButtonText,
+  StyledCTARow,
 } from "./MobileFooterSections.styles"
 
 import { DropDown } from "../DropDown"
@@ -33,7 +34,9 @@ const GetInTouch = () => (
       </Button>
     </StyledButtonsRow>
     <StyledSmallDivider />
-    <ProposalCTA />
+    <StyledCTARow>
+      <ProposalCTA />
+    </StyledCTARow>
   </StyledButtonsCol>
 )
 
