@@ -1,7 +1,9 @@
 import styled from "styled-components"
 
 export const StyledMobileFooter = styled.div`
-  display: inline-block;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 `
 
 export const StyledDropDownItemsContainer = styled.div`
