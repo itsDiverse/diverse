@@ -14,8 +14,8 @@ const NavbarItemTitle = styled.span`
   /* position above the dropdown, otherwise the dropdown will cover up the bottom sliver of the buttons */
   position: relative;
   z-index: 2;
-  &hover,
-  &focus {
+  &:hover,
+  &:focus {
     opacity: 0.7;
     outline: none;
   }
@@ -26,6 +26,7 @@ const DropdownSlot = styled.div`
   left: 50%;
   transform: translateX(-50%);
   perspective: 1500px;
+  z-index: 9999;
 `
 
 const NavbarItemEl = styled.li`
