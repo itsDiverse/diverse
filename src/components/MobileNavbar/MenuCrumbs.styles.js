@@ -29,10 +29,10 @@ export const StyledMenuCrumbsHome = styled.div`
   flex-direction: row;
   justify-content: space-between;
   text-transform: uppercase;
+  padding: 20px 30px;
 `
 export const StyledMenuHeaderText = styled.div`
   text-transform: uppercase;
-  margin-left: 5px;
   font-weight: 800;
   font-size: 12px;
   color: #195bb6;
@@ -45,12 +45,10 @@ export const StyledMenuCrumbsHeaderRow = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 4px;
   color: #195bb6;
 
   &:first-of-type  {
     flex-grow: 2;
     flex-wrap: nowrap;
-    margin-left: 10px;
   }
 `
