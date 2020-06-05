@@ -12,16 +12,12 @@ import { VideoAndAnimationDropdown } from "./DropdownContents/VideoAndAnimation"
 
 const navbarConfig = [
   {
-    title: "Graphics & Design",
-    dropdown: GraphicsAndDesignDropdown,
-  },
-  {
-    title: "Digital Marketing",
+    title: "Marketing & Writing",
     dropdown: DigitalMarketingDropdown,
   },
   {
-    title: "Writing & Translation",
-    dropdown: WritingAndTranslationDropdown,
+    title: "Graphics & Design",
+    dropdown: GraphicsAndDesignDropdown,
   },
   {
     title: "Video & Animation",

@@ -8,6 +8,7 @@ const NavbarEl = styled.nav`
   min-width: 1200px;
   padding-top: 1rem;
   align-items: center;
+  margin: auto;
 `
 const SignIn = styled.span`
   color: rgba(126, 126, 126, 1);
