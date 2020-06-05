@@ -45,4 +45,6 @@ export const StyledButtonText = styled.p`
   line-height: 13px;
   text-align: center;
   color: #ffffff;
+  padding: 0px;
+  margin: 2px;
 `
