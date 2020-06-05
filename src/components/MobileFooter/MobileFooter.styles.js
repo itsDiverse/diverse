@@ -10,7 +10,7 @@ export const StyledDropDownItemsContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 10px 0px;
+  padding: 0px 0px 10px 0px;
   flex: 1;
 `
 export const StyledDropDownItem = styled.div`
