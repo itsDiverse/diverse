@@ -5,7 +5,7 @@ import { Brand } from "../../Brand"
 const NavbarEl = styled.nav`
   display: flex;
   max-width: 1200px;
-  margin: 0 auto;
+  min-width: 1200px;
   padding-top: 1rem;
   align-items: center;
 `
