@@ -47,6 +47,7 @@ export const StyledDrodDownContainer = styled.div`
 export const StyledRow = styled.div`
   display: flex;
   flex-direction: row;
+  flex: 1;
   align-items: center;
   cursor: pointer;
   -webkit-touch-callout: none;
