@@ -4,6 +4,7 @@ export const StyledMobileFooterHeading = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px 0px 0px;
+  flex: 1;
 `
 export const StyledGrayRow = styled.div`
   padding: 15px 15px;
