@@ -41,53 +41,49 @@ const GetInTouch = () => (
 )
 
 export const MobileFooterSections = () => (
-  <>
-    <StyledMobileFooterSections>
-      <DropDown icon_expand="+" icon_expanded="-" title="OUR COMPANY">
-        <StyledDropDownItemsContainer>
-          <StyledDropDownItem>
-            <Link>About Us</Link>
-          </StyledDropDownItem>
-          <StyledDropDownItem>
-            <Link>Privacy Policy</Link>
-          </StyledDropDownItem>
-          <StyledDropDownItem>
-            <Link>Free Proposal</Link>
-          </StyledDropDownItem>
-          <StyledDropDownItem>
-            <Link>Terms</Link>
-          </StyledDropDownItem>
-          <StyledDropDownItem>
-            <Link>Careers</Link>
-          </StyledDropDownItem>
-        </StyledDropDownItemsContainer>
-      </DropDown>
-    </StyledMobileFooterSections>
-    <StyledMobileFooterSections>
-      <DropDown icon_expand="+" icon_expanded="-" title="RESOURCES">
-        <StyledDropDownItemsContainer>
-          <StyledDropDownItem>
-            <Link>FAQs</Link>
-          </StyledDropDownItem>
-          <StyledDropDownItem>
-            <Link>Blog</Link>
-          </StyledDropDownItem>
-          <StyledDropDownItem>
-            <Link>Client Login</Link>
-          </StyledDropDownItem>
-        </StyledDropDownItemsContainer>
-      </DropDown>
-    </StyledMobileFooterSections>
-    <StyledMobileFooterSections>
-      <DropDown icon_expand="+" icon_expanded="-" title="GET IN TOUCH">
-        <StyledGetInTouch>
-          <StyledPhoneNumber>
-            Phone Number: <span>(833)-Diverse</span>
-          </StyledPhoneNumber>
-          <StyledPhoneNumber>Social Profiles: </StyledPhoneNumber>
-          <GetInTouch></GetInTouch>
-        </StyledGetInTouch>
-      </DropDown>
-    </StyledMobileFooterSections>
-  </>
+  <StyledMobileFooterSections>
+    <DropDown icon_expand="+" icon_expanded="-" title="OUR COMPANY">
+      <StyledDropDownItemsContainer>
+        <StyledDropDownItem>
+          <Link>About Us</Link>
+        </StyledDropDownItem>
+        <StyledDropDownItem>
+          <Link>Privacy Policy</Link>
+        </StyledDropDownItem>
+        <StyledDropDownItem>
+          <Link>Free Proposal</Link>
+        </StyledDropDownItem>
+        <StyledDropDownItem>
+          <Link>Terms</Link>
+        </StyledDropDownItem>
+        <StyledDropDownItem>
+          <Link>Careers</Link>
+        </StyledDropDownItem>
+      </StyledDropDownItemsContainer>
+    </DropDown>
+
+    <DropDown icon_expand="+" icon_expanded="-" title="RESOURCES">
+      <StyledDropDownItemsContainer>
+        <StyledDropDownItem>
+          <Link>FAQs</Link>
+        </StyledDropDownItem>
+        <StyledDropDownItem>
+          <Link>Blog</Link>
+        </StyledDropDownItem>
+        <StyledDropDownItem>
+          <Link>Client Login</Link>
+        </StyledDropDownItem>
+      </StyledDropDownItemsContainer>
+    </DropDown>
+
+    <DropDown icon_expand="+" icon_expanded="-" title="GET IN TOUCH">
+      <StyledGetInTouch>
+        <StyledPhoneNumber>
+          Phone Number: <span>(833)-Diverse</span>
+        </StyledPhoneNumber>
+        <StyledPhoneNumber>Social Profiles: </StyledPhoneNumber>
+        <GetInTouch></GetInTouch>
+      </StyledGetInTouch>
+    </DropDown>
+  </StyledMobileFooterSections>
 )

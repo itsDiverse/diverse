@@ -1,9 +1,16 @@
 import styled from "styled-components"
 import { Button } from "../Button"
+import { StyledDropDown } from "../DropDown/DropDown.styles"
 
 export const StyledMobileFooterSections = styled.div`
-  padding: 20px;
-  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  ${StyledDropDown} {
+    padding: 20px;
+    border-bottom: 1px solid #f2f2f2;
+  }
 `
 export const StyledButtonsRow = styled.div`
   display: flex;
