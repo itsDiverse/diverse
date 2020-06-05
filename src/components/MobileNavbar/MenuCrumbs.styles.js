@@ -3,7 +3,6 @@ import styled from "styled-components"
 export const StyledMenuCrumbs = styled.div`
   display: flex;
   background: rgb(229, 236, 241);
-  padding: 5px 20px;
   overflow-y: scroll;
 `
 

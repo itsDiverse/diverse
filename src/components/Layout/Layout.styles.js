@@ -21,7 +21,6 @@ export const StyledLayoutMain = styled.div`
   {
     max-width: 1600px;  
     width: 1400px;  
-    margin: auto;
     padding: 20px; 
 
   }

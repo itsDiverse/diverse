@@ -4,8 +4,8 @@ export const StyledMenu = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  max-height: ${({ height }) => `${height}px`};
-  min-height: ${({ height }) => `${height}px`};
+  max-height: 100vh;
+  min-height: 100vh;
 `
 
 export const MobileNavBar = styled.div`
