@@ -5,6 +5,7 @@ export const StyledDropDown = styled.div`
   display: flex;
   flex-direction: column;
   user-select: inherit;
+  flex: 1;
 `
 
 export const StyledIcon = styled.div`
