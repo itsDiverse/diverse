@@ -35,13 +35,13 @@ export const StyledMenuHeaderText = styled.div`
   text-transform: uppercase;
   margin-left: 5px;
   font-weight: 800;
-  font-size: 11px;
+  font-size: 12px;
   color: #195bb6;
 `
 export const StyledMenuCrumbsHeaderRow = styled.div`
   display: flex;
   flex: 1;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 800;
   flex-direction: row;
   align-items: center;

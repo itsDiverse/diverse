@@ -17,6 +17,12 @@ export const StyledMenuItem = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  a {
+    font-size: inherit; 
+    color: inherit; 
+
+  }
 `
 export const StyledIconWrapper = styled.div`
   width: ${({ title }) => (title === "Login" ? "15px;" : "60px;")}
