@@ -1,13 +1,5 @@
-import styled, { keyframes } from "styled-components"
-
-const fadeinout = keyframes`
-  0% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1;
-  }
-`
+import styled from "styled-components"
+import { fadeinout } from "../animations"
 
 export const StyledMenu = styled.div`
   display: flex;
