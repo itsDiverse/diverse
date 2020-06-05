@@ -20,6 +20,7 @@ export const StyledRow = styled.div`
   justify-content: space-between;
   cursor: pointer;
   user-select: none;
+  align-items: center;
 `
 
 export const StyledDropwdownArea = styled.div`
