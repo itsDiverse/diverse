@@ -57,6 +57,9 @@ export const StyledSectionSubtitle = styled(props => <Link {...props} />)`
   span {
     color: #195bb6;
   }
+  a {
+    text-decoration: none;
+  }
 `
 
 export const StyledSectionSubtitleSmall = styled.p`
