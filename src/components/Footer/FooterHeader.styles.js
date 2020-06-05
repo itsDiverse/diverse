@@ -4,7 +4,9 @@ import React from "react"
 import { fadeinout } from "../animations"
 
 export const StyledFooterHeader = styled.div`
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 
   border-bottom: 2px solid #f2f2f2;
   border-top: 2px solid #f2f2f2;
