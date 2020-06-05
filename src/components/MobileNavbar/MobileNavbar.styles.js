@@ -13,8 +13,8 @@ export const MobileNavBar = styled.div`
   flex-direction: row;
   box-shadow: 0 1px 4px 1px #eee;
   padding: 10px 20px;
-  flex-grow: 0;
   align-items: center;
+  flex-grow: 0;
 `
 
 export const StyledIconBurger = styled.button`

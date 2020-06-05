@@ -16,6 +16,8 @@ export const StyledMenu = styled.div`
   flex-flow: column;
   background: white;
   animation: ${fadeinout} 1s linear forwards;
+  padding: 0px;
+  margin: 0px;
 `
 
 export const StyledMenuFooter = styled.div`
