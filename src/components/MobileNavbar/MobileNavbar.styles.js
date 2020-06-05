@@ -1,5 +1,13 @@
 import styled from "styled-components"
 
+export const StyledMenu = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: ${({ height }) => `${height}px`};
+  min-height: ${({ height }) => `${height}px`};
+`
+
 export const MobileNavBar = styled.div`
   display: flex;
   flex: 1;
@@ -8,20 +16,6 @@ export const MobileNavBar = styled.div`
   padding: 10px 20px;
   flex-grow: 0;
   align-items: center;
-`
-
-export const StyledBrandRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  align-items: center;
-  justify-content: flex-start;
-`
-export const StyledBrandName = styled.div`
-  text-transform: uppercase;
-  margin-left: 10px;
-  font-size: 16px;
-  font-weight: 800;
 `
 
 export const StyledIconBurger = styled.button`
