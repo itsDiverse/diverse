@@ -6,12 +6,12 @@ export const StyledMobileFooterHeading = styled.div`
   padding: 20px 0px 0px;
 `
 export const StyledGrayRow = styled.div`
-  padding: 15px 40px;
+  padding: 15px 15px;
   margin: 10px -20px 0px;
   background: #fbfbfb;
   font-size: 15px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 `
 
 export const StyledParagraph = styled.p`
