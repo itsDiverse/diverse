@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const StyledLayoutWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   flex: 1;
 `
 
@@ -22,7 +22,7 @@ export const StyledLayoutMain = styled.div`
     max-width: 1600px;  
     width: 1400px;  
     padding: 20px; 
-
+    margin: auto; 
   }
 }
 `

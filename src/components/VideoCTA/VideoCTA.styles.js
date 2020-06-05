@@ -26,4 +26,6 @@ export const StyledButtonText = styled.p`
   font-size: 15px;
   line-height: 18px;
   color: #ffffff;
+  padding: 0px;
+  margin: 0px;
 `

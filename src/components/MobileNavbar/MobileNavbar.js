@@ -6,12 +6,10 @@ import {
 } from "./MobileNavbar.styles"
 import { default as Menu } from "./Menu"
 import { Brand } from "../Brand"
-import { useWindowDimensions } from "../../hooks/InnerWidth"
 
 const MobileNavbar = ({ menuOpened, onToggleMenu }) => {
-  const { height, width } = useWindowDimensions()
   return (
-    <StyledMenu height={height} width={width}>
+    <StyledMenu>
       <MobileNavBar>
         <Brand size={50} />
         <StyledIconBurger

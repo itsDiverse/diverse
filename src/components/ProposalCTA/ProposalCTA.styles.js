@@ -14,11 +14,21 @@ export const StyledButtonDescription = styled.div`
   margin-left: 20px;
 `
 
-export const StyledProposalTitle = styled.h2`
-  color: white;
-  font-size: 1rem;
+export const StyledProposalTitle = styled.p`
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  padding: 0px;
+  margin: 0px;
 `
-export const StyledProposalSubheading = styled.h4`
-  color: white;
-  font-size: 0.5rem;
+export const StyledProposalSubheading = styled.p`
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+  color: #ffffff;
+  padding: 0px;
+  margin: 0px;
 `
