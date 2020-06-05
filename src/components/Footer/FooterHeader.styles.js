@@ -19,6 +19,7 @@ export const StyledRow = styled.div`
   flex: 1;
   justify-content: space-between;
   cursor: pointer;
+  user-select: none;
 `
 
 export const StyledDropwdownArea = styled.div`
