@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 export const StyledMobileFooterServices = styled.div`
   padding: 10px 2px;
