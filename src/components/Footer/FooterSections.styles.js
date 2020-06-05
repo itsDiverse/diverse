@@ -67,6 +67,8 @@ export const StyledSectionSubtitleSmall = styled.p`
   font-size: 14px;
   font-weight: medium;
   color: #707070;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 `
 export const StyledSectionSocialMedia = styled.div`
   svg:first-child {
