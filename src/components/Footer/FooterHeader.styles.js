@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 import React from "react"
+import { fadeinout } from "../animations"
 
 export const StyledFooterHeader = styled.div`
   display: flex;
@@ -32,6 +33,7 @@ export const StyledDropdDownContent = styled.div`
   flex: 1;
   flex-direction: row;
   justify-content: space-between;
+  animation: ${fadeinout} 1s linear forwards;
 `
 export const StyledService = styled.div`
   padding: 10px 10px;
