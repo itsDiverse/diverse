@@ -5,6 +5,11 @@ export const StyledDropDown = styled.div`
   display: flex;
   flex-direction: column;
   user-select: inherit;
+  -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1; /* OLD - Firefox 19- */
+  width: 100%; /* For old syntax, otherwise collapses. */
+  -webkit-flex: 1; /* Chrome */
+  -ms-flex: 1; /* IE 10 */
   flex: 1;
 `
 
