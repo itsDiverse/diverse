@@ -54,6 +54,9 @@ export const StyledSectionSubtitle = styled(props => <Link {...props} />)`
   font-weight: medium;
   color: #707070;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
   span {
     color: #195bb6;
   }

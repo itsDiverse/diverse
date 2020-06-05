@@ -34,6 +34,12 @@ export const StyledDropdDownContent = styled.div`
   flex-direction: row;
   justify-content: space-between;
   animation: ${fadeinout} 1s linear forwards;
+  a {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `
 export const StyledService = styled.div`
   padding: 10px 10px;
