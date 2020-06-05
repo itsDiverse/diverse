@@ -13,12 +13,11 @@ export const StyledGroup = styled.div`
 
   ${StyledCTAText} {
     margin-left: ${({ withSpace }) => (withSpace ? "40px" : "15px")};
-    font-weight: 600;
-    font-size: 14.5px;
-    line-height: 18px;
-    color: #4b4b4b;
+    font-size: inherit;
+    color: inherit;
     span {
-      margin-left: 20px;
+      margin-left: ${({ withSpace }) => (withSpace ? "20px" : "2px")};
+      font-size: inherit;
     }
   }
 `
