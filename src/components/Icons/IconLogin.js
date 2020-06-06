@@ -1,6 +1,6 @@
 import React from "react"
 
-export default () => (
+export const IconLogin = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="13.313"

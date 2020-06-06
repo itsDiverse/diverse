@@ -1,6 +1,6 @@
 import React from "react"
 
-export default ({ color, size }) => (
+export const IconProgrammingTech = ({ color, size }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="19.159"

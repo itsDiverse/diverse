@@ -7,7 +7,7 @@ import {
   IconLogin,
 } from "../Icons"
 
-const getIcons = icon => {
+export const getIcons = icon => {
   switch (icon) {
     case "marketing":
       return <IconMarketing />
@@ -23,5 +23,3 @@ const getIcons = icon => {
       return null
   }
 }
-
-export default getIcons

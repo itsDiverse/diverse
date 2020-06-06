@@ -1,6 +1,6 @@
 import React from "react"
 
-export default ({ size }) => (
+export const IconPlay = ({ size }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
