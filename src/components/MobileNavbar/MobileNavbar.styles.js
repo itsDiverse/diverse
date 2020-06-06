@@ -1,20 +1,18 @@
 import styled from "styled-components"
 
 export const StyledMenu = styled.div`
-  flex: 1;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  flex: 1 1 100%;
 `
 
 export const MobileNavBar = styled.div`
   display: flex;
-  flex: 1;
+  flex: 1 0 0 80px;
   flex-direction: row;
   box-shadow: 0 1px 4px 1px #eee;
   padding: 10px 20px;
   align-items: center;
-  flex-grow: 0;
 `
 
 export const StyledIconBurger = styled.button`

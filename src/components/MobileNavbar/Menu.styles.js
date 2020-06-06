@@ -3,24 +3,24 @@ import { fadeinout } from "../animations"
 
 export const StyledMenu = styled.div`
   display: flex;
-  flex: 1;
   flex-direction: column;
-  flex-flow: column;
   background: white;
   animation: ${fadeinout} 1s linear forwards;
   padding: 0px;
   margin: 0px;
+  justify-content: space-between;
+  flex: 1 1 100%;
 `
 
 export const StyledMenuFooter = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 1;
-  justify-content: flex-end;
+  flex: 1 0 100px;
 `
 
 export const StyledMenuHeader = styled.div`
   display: flex;
+  flex: 1 1 90px;
   flex-direction: row;
   width: max-content;
   padding: 8px 32px;

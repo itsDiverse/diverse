@@ -4,6 +4,7 @@ export const StyledMenuCrumbs = styled.div`
   display: flex;
   background: rgb(229, 236, 241);
   overflow-y: scroll;
+  flex: 1 1 90px;
 `
 
 export const StyledMenuCrumbsItem = styled.div`
@@ -12,7 +13,6 @@ export const StyledMenuCrumbsItem = styled.div`
   font-weight: 800;
   font-family: sans-serif;
   display: flex;
-  flex-shrink: 0;
   color: #195bb6;
 
   &:last-child {
