@@ -4,6 +4,7 @@ export const StyledMobileFooter = styled.div`
   padding: 20px;
   display: flex;
   flex-direction: column;
+  flex: 1;
 `
 
 export const StyledDropDownItemsContainer = styled.div`

@@ -5,6 +5,7 @@ export const StyledCopyright = styled.div`
   flex-direction: column;
   color: #707070;
   align-items: center;
+  flex: 1;
 `
 export const StyledMark = styled.p`
   font-size: 10px;

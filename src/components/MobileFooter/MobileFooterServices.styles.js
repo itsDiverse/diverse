@@ -5,6 +5,8 @@ export const StyledMobileFooterServices = styled.div`
   padding: 10px 2px;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  flex: 1;
 `
 export const StyledDropdDownContent = styled.div`
   display: flex;
