@@ -5,14 +5,17 @@ export const StyledCopyright = styled.div`
   padding: 20px 0px;
   display: flex;
   flex-direction: row;
-  font-size: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
   color: #707070;
 `
 
 export const StyledLanguage = styled.p`
   display: flex;
   flex: 1;
-  align-items: flex-start;
+  align-items: center;
 `
 export const StyledMark = styled.p`
   display: flex;

@@ -42,18 +42,25 @@ export const StyledSectionRight = styled.div`
 `
 
 export const StyledSectionTitle = styled.p`
-  font-size: 20px;
+  font-style: normal;
   font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+
   color: #707070;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 `
 
 export const StyledSectionSubtitle = styled(props => <Link {...props} />)`
-  padding-bottom: 10px;
-  font-size: 18px;
-  font-weight: medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
   color: #707070;
   text-decoration: none;
+  padding-bottom: 11px;
+
   &:hover {
     text-decoration: underline;
   }
