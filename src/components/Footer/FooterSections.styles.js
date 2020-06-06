@@ -17,9 +17,11 @@ export const StyledSectionContainer = styled.div`
 `
 export const StyledSectionPhrase = styled.p`
   max-width: 400px;
-  font-size: 18px;
-  color: #707070;
+  font-style: normal;
   font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  color: #707070;
   margin-bottom: 10px;
 `
 export const StyledSectionColumns = styled.div`
@@ -66,6 +68,7 @@ export const StyledSectionSubtitle = styled(props => <Link {...props} />)`
   }
   span {
     color: #195bb6;
+    font-weight: 600;
   }
   a {
     text-decoration: none;
@@ -74,8 +77,11 @@ export const StyledSectionSubtitle = styled(props => <Link {...props} />)`
 
 export const StyledSectionSubtitleSmall = styled.p`
   padding-bottom: 10px;
-  font-size: 14px;
-  font-weight: medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+
   color: #707070;
   margin-bottom: 0px;
   padding-bottom: 0px;
