@@ -1,5 +1,7 @@
 import React from "react"
-import ImagePlaceholder from "../assets/IMAGE_PLACEHOLDER.png"
+
+import { IconDesktopMarketing } from "../../Icons"
+
 import {
   DropdownEl,
   DropdownSection,
@@ -23,7 +25,7 @@ const Primary = () => {
       <DropdownSection>
         <ListPrimary>
           <li>
-            <Logo src={ImagePlaceholder} />
+            <IconDesktopMarketing />
           </li>
           <li>
             <DropdownTitle>Digital Marketing</DropdownTitle>
@@ -84,7 +86,7 @@ const Compact = () => {
       <DropdownSection>
         <ListPrimary>
           <li>
-            <Logo src={ImagePlaceholder} />
+            <IconDesktopMarketing />
           </li>
           <li>
             <DropdownTitle>Digital Marketing</DropdownTitle>

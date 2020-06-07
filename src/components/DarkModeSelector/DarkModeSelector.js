@@ -1,3 +1,4 @@
 import React from "react"
+import { Switch } from "../SwitchCheckbox"
 
-export const DarkModeSelector = () => <div>Dark Mode Selector</div>
+export const DarkModeSelector = () => <Switch />

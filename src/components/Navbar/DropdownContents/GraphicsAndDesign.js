@@ -9,7 +9,7 @@ import {
   DropdownButton,
   ListPrimary,
 } from "./Components.js"
-import ImagePlaceholder from "../assets/IMAGE_PLACEHOLDER.png"
+import { IconDesktopGraphicDesign } from "../../Icons"
 
 export const GraphicsAndDesignDropdown = () => {
   const condition = window.innerWidth <= 990
@@ -22,7 +22,7 @@ const Primary = () => {
       <DropdownSection>
         <ListPrimary>
           <li>
-            <Logo src={ImagePlaceholder} />
+            <IconDesktopGraphicDesign />
           </li>
           <li>
             <DropdownTitle>Graphics & Design</DropdownTitle>
@@ -101,7 +101,7 @@ const Compact = () => {
       <DropdownSection>
         <ListPrimary>
           <li>
-            <Logo src={ImagePlaceholder} />
+            <IconDesktopGraphicDesign />
           </li>
           <li>
             <DropdownTitle>Graphics & Design</DropdownTitle>

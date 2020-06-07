@@ -1,5 +1,5 @@
 import React from "react"
-import ImagePlaceholder from "../assets/IMAGE_PLACEHOLDER.png"
+import { IconDesktopVideo } from "../../Icons"
 import {
   DropdownEl,
   DropdownSection,
@@ -17,7 +17,7 @@ export const VideoAndAnimationDropdown = () => {
       <DropdownSection>
         <ListPrimary>
           <li>
-            <Logo src={ImagePlaceholder} />
+            <IconDesktopVideo />
           </li>
           <li>
             <DropdownTitle>Video & Animation</DropdownTitle>

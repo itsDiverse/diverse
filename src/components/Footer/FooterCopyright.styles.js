@@ -16,6 +16,9 @@ export const StyledLanguage = styled.p`
   display: flex;
   flex: 1;
   align-items: center;
+  svg {
+    margin-right: 5px;
+  }
 `
 export const StyledMark = styled.p`
   display: flex;

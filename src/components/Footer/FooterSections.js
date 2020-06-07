@@ -23,7 +23,6 @@ export const FooterSections = () => (
           We develop multi-channel sales processes to help businesses attract,
           close, and retain customers.
         </StyledSectionPhrase>
-        <DarkModeSelector />
       </StyledSectionLeft>
       <StyledSectionRight>
         <StyledSectionColumns>
