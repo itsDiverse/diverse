@@ -11,8 +11,10 @@ export const DropdownSection = styled.div`
 
 export const Heading = styled.h3`
   font-weight: bold;
-  margin: 1rem 0 0.5rem 0;
-  color: rgba(126, 126, 126, 1);
+  font-style: normal;
+  font-size: 18px;
+  line-height: 18px;
+  color: #707070;
 `
 
 export const HeadingLink = Heading.withComponent(`li`)
@@ -62,5 +64,11 @@ export const ListSection = styled.ul`
   li {
     display: flex;
     white-space: nowrap;
+    color: #707070;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `

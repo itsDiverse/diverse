@@ -1,6 +1,8 @@
 import React from "react"
+
 import { Brand } from "../Brand"
-import { DarkModeSelector } from "../DarkModeSelector"
+import { IconInstagram, IconFacebook } from "../Icons"
+
 import {
   StyledSection,
   StyledSectionContainer,
@@ -10,10 +12,10 @@ import {
   StyledSectionPhrase,
   StyledSectionSocialMedia,
   StyledSectionTitle,
-  StyledSectionSubtitle,
   StyledSectionSubtitleSmall,
+  StyledSectionSubtitle,
 } from "./FooterSections.styles"
-import { IconInstagram, IconFacebook } from "../Icons"
+
 export const FooterSections = () => (
   <StyledSection>
     <Brand size={50}></Brand>
