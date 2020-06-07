@@ -35,6 +35,8 @@ export const DropdownButton = styled.div`
   padding: 0.75rem;
   white-space: nowrap;
   margin: 1.5rem 0;
+  font-style: normal;
+  font-weight: bold;
   font-size: 13.5px;
   line-height: 16px;
   text-align: center;
