@@ -14,19 +14,14 @@ class DropdownContainer extends Component {
     children: PropTypes.node.isRequired,
     animatingOut: PropTypes.bool,
     direction: PropTypes.oneOf(["left", "right"]),
-    duration: PropTypes.number
+    duration: PropTypes.number,
   }
 
   currentDropdownEl = createRef()
   prevDropdownEl = createRef()
 
   render() {
-    const {
-      children,
-      direction,
-      animatingOut,
-      duration
-    } = this.props
+    const { children, direction, animatingOut, duration } = this.props
     const [currentDropdown, prevDropdown] = Children.toArray(children)
     return (
       <DropdownRoot

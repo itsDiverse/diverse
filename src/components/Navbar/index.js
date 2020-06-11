@@ -76,6 +76,9 @@ class AnimatedNavbar extends Component {
     const currentIndex = this.state.activeIndices[
       this.state.activeIndices.length - 1
     ]
+
+    //const currentIndex = 2
+
     const prevIndex =
       this.state.activeIndices.length > 1 &&
       this.state.activeIndices[this.state.activeIndices.length - 2]
@@ -101,17 +104,19 @@ class AnimatedNavbar extends Component {
                 index={index}
                 onMouseEnter={this.onMouseEnter}
               >
-                {currentIndex === index && (
-                  <DropdownContainer
-                    direction={direction}
-                    animatingOut={this.state.animatingOut}
-                    className={n.className}
-                    duration={duration}
-                  >
-                    <CurrentDropdown />
-                    {PrevDropdown && <PrevDropdown />}
-                  </DropdownContainer>
-                )}
+                <div>
+                  {currentIndex === index && (
+                    <DropdownContainer
+                      direction={direction}
+                      animatingOut={this.state.animatingOut}
+                      className={n.className}
+                      duration={duration}
+                    >
+                      <CurrentDropdown />
+                      {PrevDropdown && <PrevDropdown />}
+                    </DropdownContainer>
+                  )}
+                </div>
               </NavbarItem>
             )
           })}

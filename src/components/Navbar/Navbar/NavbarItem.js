@@ -23,32 +23,35 @@ const NavbarItemTitle = styled.span`
 
 const DropdownSlot = styled.div`
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  perspective: 1500px;
+  //left: 50%;
+  //transform: translateX(-50%);
+  //perspective: 1500px;
   z-index: 9999;
+  width: 100%;
+  margin: auto;
 `
 
 const NavbarItemEl = styled.li`
   position: relative;
-  ${DropdownSlot}:nth-child(1) ${DropdownBackground} {
-    left: 200px;
-    @media(max-width: 937px){
-      left: 250px;
-    }
-  }
-  ${DropdownSlot}:nth-child(2) ${DropdownBackground} {
-    left: 115px;
-  }
-  ${DropdownSlot}:nth-child(3) ${DropdownBackground} {
-    left: -20px;
-  }
-  ${DropdownSlot}:nth-child(4) ${DropdownBackground} {
-    left: -150px;
-  }
-  ${DropdownSlot}:nth-child(5) ${DropdownBackground} {
-    left: -260px;
-  }
+  
+  // ${DropdownSlot}:nth-child(1) ${DropdownBackground} {
+  //   left: 200px;
+  //   @media(max-width: 937px){
+  //     left: 250px;
+  //   }
+  // }
+  // ${DropdownSlot}:nth-child(2) ${DropdownBackground} {
+  //   left: 115px;
+  // }
+  // ${DropdownSlot}:nth-child(3) ${DropdownBackground} {
+  //   left: -20px;
+  // }
+  // ${DropdownSlot}:nth-child(4) ${DropdownBackground} {
+  //   left: -150px;
+  // }
+  // ${DropdownSlot}:nth-child(5) ${DropdownBackground} {
+  //   left: -260px;
+  // }
 `
 
 class NavbarItem extends Component {

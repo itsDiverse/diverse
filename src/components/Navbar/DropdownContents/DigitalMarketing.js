@@ -14,8 +14,7 @@ import {
 } from "./Components.js"
 
 export const DigitalMarketingDropdown = () => {
-  const condition = window.innerWidth <= 937
-
+  const condition = window.innerWidth <= 1500
   return <>{condition ? <Compact /> : <Primary />}</>
 }
 
