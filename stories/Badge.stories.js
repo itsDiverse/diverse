@@ -1,5 +1,5 @@
-import React from 'react';
-import { Badge } from '../src/components/Badge';
+import React from 'react'
+import { Badge } from '../src/components/Badge'
 
 export default {
   title: 'Badge',
