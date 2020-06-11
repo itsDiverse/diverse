@@ -1,3 +1,5 @@
 import React from "react"
 import { Badge } from "../components"
-export default props => <Badge></Badge>
+
+
+export const sayHi = () => <Badge color="white"> Perro </Badge> 

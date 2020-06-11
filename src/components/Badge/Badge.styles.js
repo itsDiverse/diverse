@@ -1,6 +1,11 @@
 import styled from "styled-components"
 
 export const StyledBadge = styled.div`
-   font-size: 20px;
-   color: $ { (color) => color } 
+display: inline;
+padding: 4px;
+background: grey;
+font-size: 30px;
+font-family: Helvetica;
+border-radius: 5px;
+color: white;
 `
