@@ -4,11 +4,13 @@ import {
   StyledDropwdownArea,
   StyledRow,
   StyledDropdDownContent,
-  StyledService,
-  StyledServiceSection,
-  StyledServiceTitle,
-  StyledDropDownItemsContainer,
-  StyledDropDownItem,
+  StyledSection,
+  StyledSectionTitle,
+  StyledSubsection,
+  StyledSubsectionItems,
+  StyledSectionColumn,
+  StyledItemTitle,
+  StyledSubsectionTitle,
 } from "./FooterHeader.styles"
 
 import { VideoCTA } from "../VideoCTA"
@@ -35,26 +37,27 @@ export const FooterHeader = () => {
         />
         <OurServicesVideo />
       </StyledRow>
+
       <StyledDropwdownArea visible={expanded}>
         <StyledDropdDownContent>
           {footerData.map(section => (
-            <StyledService key={section.title}>
-              <StyledServiceTitle>{section.title}</StyledServiceTitle>
-              {section.items.map(subsection => (
-                <div key={subsection.title}>
-                  <StyledServiceSection>
-                    {subsection.title}
-                  </StyledServiceSection>
-                  <StyledDropDownItemsContainer>
-                    {subsection.items.map(item => (
-                      <StyledDropDownItem key={item.title}>
-                        {item.title}
-                      </StyledDropDownItem>
-                    ))}
-                  </StyledDropDownItemsContainer>
-                </div>
-              ))}
-            </StyledService>
+            <StyledSection>
+              <StyledSectionTitle>{section.title}</StyledSectionTitle>
+              <StyledSectionColumn>
+                {section.items.map(subsection => (
+                  <StyledSubsection>
+                    <StyledSubsectionTitle>
+                      {subsection.title}
+                    </StyledSubsectionTitle>
+                    <StyledSubsectionItems>
+                      {subsection.items.map(item => (
+                        <StyledItemTitle>{item.title}</StyledItemTitle>
+                      ))}
+                    </StyledSubsectionItems>
+                  </StyledSubsection>
+                ))}
+              </StyledSectionColumn>
+            </StyledSection>
           ))}
         </StyledDropdDownContent>
       </StyledDropwdownArea>

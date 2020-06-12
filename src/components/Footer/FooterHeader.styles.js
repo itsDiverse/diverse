@@ -12,7 +12,11 @@ export const StyledFooterHeader = styled.div`
   border-top: 2px solid #f2f2f2;
   padding: 40px 20px;
 `
-export const StyledDescription = styled.h4``
+
+export const StyledDropwdownArea = styled.div`
+  flex: 1;
+  display: ${({ visible }) => (visible ? "flex;" : "none;")};
+`
 
 export const StyledRow = styled.div`
   display: flex;
@@ -24,10 +28,6 @@ export const StyledRow = styled.div`
   align-items: center;
 `
 
-export const StyledDropwdownArea = styled.div`
-  flex: 1;
-  display: ${({ visible }) => (visible ? "flex;" : "none;")};
-`
 export const StyledDropdDownContent = styled.div`
   display: flex;
   flex: 1;
@@ -41,36 +41,44 @@ export const StyledDropdDownContent = styled.div`
     }
   }
 `
-export const StyledService = styled.div`
-  padding: 10px 10px;
-  color: #707070;
-`
 
-export const StyledServiceTitle = styled(props => <Link {...props} />)`
+export const StyledSection = styled.div``
+
+export const StyledSectionTitle = styled(props => <Link {...props} />)`
   padding: 5px 0px;
   font-weight: bold;
   font-size: 17px;
   line-height: 21px;
   color: #195bb6;
+  padding: 5px 0px;
 `
-export const StyledServiceSection = styled(props => <Link {...props} />)`
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 17px;
-  color: #707070;
-`
-export const StyledDropDownItemsContainer = styled.div`
+
+export const StyledSectionColumn = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 10px 0px;
   flex: 1;
 `
-export const StyledDropDownItem = styled(props => <Link {...props} />)`
+
+export const StyledSubsection = styled.div`
+  padding: 8px 0px;
+`
+
+export const StyledSubsectionTitle = styled(props => <Link {...props} />)`
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  color: #707070;
+  padding: 5px 0px;
+`
+
+export const StyledSubsectionItems = styled.div``
+
+export const StyledItemTitle = styled(props => <Link {...props} />)`
   display: flex;
   flex: 1;
   font-weight: normal;
   font-size: 12px;
   color: #707070;
-  padding: 3px 0px;
+  padding: 5px 0px;
 `
