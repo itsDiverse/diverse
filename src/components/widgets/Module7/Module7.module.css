@@ -1,0 +1,635 @@
+.complianceSection {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 15px;
+  padding-top: 140px;
+}
+.uppercaseText {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+.complianceTitle {
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+.complianceTitle img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+}
+.complianceTitle h2 {
+  font-size: 20px;
+  line-height: 32px;
+  color: #32325d;
+}
+.complianceContentWrapper {
+  padding: 0 20px;
+}
+.complianceContent {
+  border-bottom: 2px solid #f2f6fa;
+}
+.complianceLeftContent p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: #525f7f;
+  margin-top: 1em;
+}
+.complianceLeftContent p:first-child {
+  margin-top: 0px;
+}
+.complianceLeftContent .commonLink {
+  color: #6772e5;
+  font-weight: 500;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+  cursor: pointer;
+}
+.complianceContent .complianceRightContent {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  margin-top: 30px;
+  padding: 22px 20px 18px;
+  border-radius: 4px;
+  background: #f6f9fc;
+}
+.complianceRightContent h3 {
+  margin-bottom: 18px;
+  color: #57c3f0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.complianceRightContent ul {
+  list-style: none;
+}
+.complianceRightContent ul li {
+  position: relative;
+  padding-left: 28px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: #525f7f;
+}
+.complianceRightContent ul li:after {
+  content: url(../images/template/lawyer-friendly-checkmark.svg);
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 19px;
+}
+.complianceRightContent li + li {
+  margin-top: 9px;
+}
+
+.platformManagementLeftContent img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 23px;
+  margin-right: auto;
+}
+.platformManagementLeftContent h2 {
+  margin-bottom: 20px;
+  color: #32325d;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+.platformManagementLeftContent p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: #525f7f;
+  margin-top: 1em;
+}
+.platformManagementLeftContent p:first-child {
+  margin-top: 0em;
+}
+.platformManagementSection .laptop {
+  position: relative;
+  width: 584px;
+  height: 405px;
+  top: 30px;
+  -webkit-transform: scale(0.57);
+  transform: scale(0.57);
+  -webkit-transform-origin: 0 40px;
+  transform-origin: 0 40px;
+  left: calc(50% - 166px);
+}
+.platformManagementSection .laptop * {
+  position: absolute;
+}
+.platformManagementSection .laptop .shadow {
+  left: 17px;
+  right: 17px;
+  top: 40px;
+  height: 490px;
+  opacity: 0.3;
+  background: #7692b3;
+  -webkit-filter: blur(30px);
+  filter: blur(30px);
+}
+.platformManagementSection .laptop .lid {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #e5ebf2, #f3f8fb);
+  border-radius: 20px;
+  -webkit-box-shadow: inset 1px -4px 6px rgba(145, 161, 181, 0.3);
+  box-shadow: inset 1px -4px 6px rgba(145, 161, 181, 0.3);
+}
+.platformManagementSection .laptop .camera {
+  width: 4px;
+  height: 4px;
+  top: 10px;
+  left: 50%;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: #dae0e8;
+}
+.platformManagementSection .laptop .screen {
+  top: 24px;
+  bottom: 35px;
+  left: 17px;
+  right: 17px;
+  border-radius: 4px;
+  -webkit-box-shadow: -1px 1px 6px rgba(171, 183, 204, 0.2);
+  box-shadow: -1px 1px 6px rgba(171, 183, 204, 0.2);
+  background: #f2f6fa;
+}
+.platformManagementSection .laptop .chassis {
+  width: 100%;
+  height: 142px;
+  top: calc(100% - 11px);
+  border-radius: 8px 8px 14px 14px;
+  -webkit-transform: perspective(880px) rotateX(40deg);
+  transform: perspective(880px) rotateX(40deg);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  background: linear-gradient(rgba(145, 161, 181, 0.2), rgba(145, 161, 181, 0)),
+    linear-gradient(45deg, #e5ebf2, #f3f8fb);
+  -webkit-box-shadow: inset 0 -2px 3px rgba(145, 161, 181, 0.5),
+    inset -1px -6px 4px rgba(253, 255, 255, 0.9);
+  box-shadow: inset 0 -2px 3px rgba(145, 161, 181, 0.5),
+    inset -1px -6px 4px rgba(253, 255, 255, 0.9);
+}
+.platformManagementSection .laptop .chassis * {
+  opacity: 0.3;
+  background: linear-gradient(45deg, #b2bdcc, #c1ccd8);
+  -webkit-box-shadow: 1px 1px 1px hsla(0, 0%, 100%, 0.75);
+  box-shadow: 1px 1px 1px hsla(0, 0%, 100%, 0.75);
+}
+.platformManagementSection .laptop .keyboard {
+  left: 28px;
+  right: 28px;
+  top: 8px;
+  height: 66px;
+  border-radius: 2px 2px 4px 4px;
+}
+.platformManagementSection .laptop .trackpad {
+  left: 165px;
+  right: 165px;
+  top: 76px;
+  height: 52px;
+  border-radius: 4px 4px 6px 6px;
+}
+.dashboardConnectedAccounts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1020px;
+  min-height: 550px;
+  left: calc(50% - 510px);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  font-size: 15px;
+  background: url(../images/template/dashboard-chrome.svg) no-repeat;
+  background-size: 100% 550px;
+}
+.platformManagementSection .dashboardConnectedAccounts * {
+  position: static;
+}
+.dashboardConnectedAccounts .active {
+  font-weight: 600;
+  color: #6772e5;
+}
+.connectedAccountsNav {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 256px;
+  flex: 0 0 256px;
+  padding-top: 26px;
+  color: #424770;
+}
+.connectedAccountsNav h1 {
+  margin-left: 42px;
+  padding-bottom: 3px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.connectedAccountsNav ul {
+  margin: 29px 0 0 32px;
+}
+.connectedAccountsNav li + li {
+  margin-top: 15px;
+}
+.connectedAccountsView {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 77px;
+}
+.connectedAccountsSubnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 3px;
+  color: #525f7f;
+}
+.connectedAccountsSubnav li + li {
+  margin-left: 25px;
+}
+.connectedAccountsView section {
+  margin-top: 20px;
+  border-radius: 6px;
+  background: #fff;
+  -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  overflow: hidden;
+  color: #8898aa;
+}
+.connectedAccountsView section h2 {
+  padding: 20px;
+  border-bottom: 2px solid #e6ebf1;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #424770;
+}
+.connectedAccountsView section li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 14px 20px;
+}
+.connectedAccountsView section li:nth-child(2n) {
+  background: #f6f9fc;
+}
+.connectedAccountsView section svg {
+  width: 16px;
+}
+.connectedAccountsView section strong {
+  margin: 0 10px;
+}
+.connectedAccountsView section .state-badge {
+  margin-left: auto;
+  line-height: 22px;
+  padding: 0 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.connectedAccountsUpcoming strong {
+  color: #f79a59;
+}
+.connectedAccountsUpcoming path:first-child {
+  fill: #fdbc72;
+}
+.connectedAccountsUpcoming path:last-child {
+  fill: #f79a59;
+}
+.connectedAccountsUpcoming .state-badge {
+  color: #f79a59;
+  border-color: #fdbc72;
+}
+.connectedAccountsRecent strong {
+  color: #45b2e8;
+}
+.connectedAccountsRecent path:first-child {
+  fill: #68d4f8;
+}
+.connectedAccountsRecent path:last-child {
+  fill: #45b2e8;
+}
+.connectedAccountsRecent .state-badge {
+  color: #45b2e8;
+  border-color: #68d4f8;
+}
+
+.internationalSupport {
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+.internationalSupport:before {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-bottom: 50px;
+  background: #f2f6fa;
+}
+.internationalSupport .commonUppercaseTitle {
+  text-align: center;
+}
+
+.internationalSupport .commonUppercaseTitle img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.internationalSupport a {
+  font-weight: 500;
+  color: #6772e5;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.internationalSupport a svg {
+  width: 10px;
+  margin-left: 3px;
+  fill: currentcolor;
+  -webkit-transition: fill 0.1s;
+  transition: fill 0.1s;
+}
+.internationalSupport a:hover {
+  color: #45b2e8;
+}
+.internationalSupport aside {
+  font-size: 15px;
+  color: #6b7c93;
+  -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  border-radius: 8px;
+  margin-top: 1.5em;
+}
+.internationalSupport aside > * {
+  padding: 0 22px;
+}
+.internationalSupport aside h2 {
+  color: #57c3f0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+.internationalSupport aside h2:not(:first-child) {
+  margin-top: 21px;
+  border-top: 2px solid #f1f6fa;
+}
+.internationalSupport aside ul {
+  display: grid;
+}
+.internationalSupport .flagList {
+  grid-auto-columns: -webkit-min-content;
+  grid-auto-columns: min-content;
+  grid-auto-flow: column;
+  margin-top: 12px;
+}
+.internationalSupport .flagList .commonFlagIcon:before {
+  margin-right: 5px;
+}
+.internationalSupport .flagList:not(.commonFlagIcon) {
+  white-space: nowrap;
+}
+.internationalSupport .contactUs {
+  margin-top: 12px;
+}
+#bank-networks {
+  grid: auto/1fr 1fr;
+  grid-gap: 12px 0;
+  margin-bottom: 1.5em;
+}
+.internationalSupport .settlementCurrencies {
+  grid-template-columns: repeat(6, -webkit-min-content);
+  grid-template-columns: repeat(6, min-content);
+  padding-bottom: 22px;
+  font-weight: 500;
+  font-size: 13px;
+}
+.settlementCurrencies li {
+  padding: 0 9px;
+  border-right: 1px solid #e4edf5;
+}
+.settlementCurrencies li:nth-child(6n) {
+  border: none;
+  padding-right: 0;
+}
+.settlementCurrencies li:nth-child(6n - 5) {
+  padding-left: 0;
+}
+.settlementCurrencies li:nth-child(6) ~ li {
+  padding-top: 6px;
+}
+.common-FlagIcon--us:before {
+  background-position: -10px -185px;
+}
+.common-FlagIcon:before {
+  content: "";
+  display: inline-block;
+  background-image: url(../images/template/flagIcons.svg);
+  width: 21px;
+  height: 15px;
+  margin-right: 12px;
+  vertical-align: -2px;
+}
+.common-FlagIcon--sg:before {
+  background-position: -72px -160px;
+}
+.common-FlagIcon--gb:before {
+  background-position: -41px -60px;
+}
+.common-FlagIcon--jp:before {
+  background-position: -196px -85px;
+}
+.internationalSupport .flagList .commonFlagIcon:before {
+  margin-right: 5px;
+}
+.common-FlagIcon--be:before {
+  background-position: -227px -10px;
+}
+.common-FlagIcon--ca:before {
+  background-position: -382px -10px;
+}
+.common-FlagIcon--sg:before {
+  background-position: -72px -160px;
+}
+.common-FlagIcon--fi:before {
+  background-position: -444px -35px;
+}
+.common-FlagIcon--fr:before {
+  background-position: -506px -35px;
+}
+.common-FlagIcon--de:before {
+  background-position: -165px -35px;
+}
+.common-FlagIcon--ie:before {
+  background-position: -382px -60px;
+}
+.common-FlagIcon--it:before {
+  background-position: -72px -85px;
+}
+.common-FlagIcon--nl:before {
+  background-position: -475px -110px;
+}
+.common-FlagIcon--pt:before {
+  background-position: -320px -135px;
+}
+.common-FlagIcon--es:before {
+  background-position: -382px -35px;
+}
+.internationalSupportLeftContent p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: #525f7f;
+}
+.internationalSupport .internationalSupportLeftContent h2 {
+  margin-bottom: 20px;
+  color: #32325d;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+.internationalSupport img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 23px;
+}
+@media (min-width: 670px) {
+  .complianceTitle h2 {
+    font-size: 21px;
+    line-height: 32px;
+  }
+  .platformManagementLeftContent h2 {
+    font-size: 21px;
+    line-height: 32px;
+  }
+  .platformManagementSection .laptop {
+    margin-top: 2em;
+    -webkit-transform: none;
+    transform: none;
+    left: calc(50% - 292px);
+  }
+  .internationalSupport aside {
+    margin: 0;
+  }
+  .internationalSupport {
+    --gutter: 30px;
+    display: grid;
+    grid-template-rows: 120px auto;
+    grid-template-columns: 306px 1fr;
+    grid-gap: 0 var(--gutter);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 140px;
+  }
+  .internationalSupport:before {
+    grid-column-end: span 2;
+    margin: 0;
+  }
+  .internationalSupport .internationalSupportLeftContent {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .internationalSupport .commonUppercaseTitle {
+    text-align: left;
+  }
+  .internationalSupport .commonUppercaseTitle img {
+    margin-left: 0;
+  }
+  .internationalSupport .internationalSupportLeftContent h2 {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+@media (min-width: 880px) {
+  .complianceContent .complianceRightContent {
+    margin-top: 1px;
+  }
+  .platformManagementSection .laptop {
+    left: 0;
+    margin: 0;
+  }
+  .platformManagementSection .laptop .shadow {
+    will-change: transform;
+  }
+  .internationalSupport {
+    --gutter: 41px;
+    grid-template-rows: 200px auto;
+    margin-top: 0;
+  }
+  .internationalSupport .commonBodyText {
+    -webkit-columns: 2;
+    columns: 2;
+    -webkit-column-gap: var(--gutter);
+    column-gap: var(--gutter);
+  }
+  .connectedAccountsNav ul {
+    margin-top: 25px;
+  }
+  .platformManagementSection {
+    display: grid;
+    grid: auto/1fr auto;
+    grid-gap: 0 70px;
+    padding: 0 20px;
+    padding-top: 80px;
+  }
+  .complianceContent {
+    display: grid;
+    grid: auto/1fr 1fr;
+    grid-gap: 35px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 880px) {
+  .complianceContent {
+    padding-bottom: 50px;
+  }
+  .complianceContentWrapper {
+    margin-bottom: 50px;
+  }
+  .platformManagementSection {
+    padding: 0 20px;
+  }
+  .platformManagementLeftContent img {
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
+  .platformManagementLeftContent h2 {
+    text-align: center;
+  }
+  .complianceSection {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .internationalSupport .internationalSupportLeftContent h2 {
+    text-align: center;
+  }
+  .internationalSupport img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .connectedAccountsNav ul {
+    margin-top: 24px;
+  }
+}

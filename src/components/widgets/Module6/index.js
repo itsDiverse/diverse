@@ -1,0 +1,1 @@
+export { default as Module6} from "./Module6"

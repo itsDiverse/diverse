@@ -1,0 +1,23 @@
+
+.regulatoryComplianceTitle{padding: 80px 20px 0;max-width: 700px;margin: 0 auto 60px;text-align: center;}
+.regulatoryComplianceTitle svg{width: 48px;height: 48px;}
+.fillPurple{fill: #9cdbff;}
+.fillBlue{fill: #7795f8;}
+.regulatoryComplianceTitle span{background-color: #c4f0ff;border-radius: 50%;height: 72px;width: 72px;display: inline-flex;align-items: center;justify-content: center;}
+.regulatoryComplianceTitle h2{margin: 16px auto;color: #32325d;font-weight: 400;font-size: 34px;line-height: 44px;color: #32325d;}
+.regulatoryComplianceChecklist{display: flex;flex-direction: column;padding: 0 20px;margin-left: auto;margin-right: auto;grid-column-gap: 80px;}
+.regulatoryComplianceChecklist .checkList h3{font-weight: 500;font-size: 19px;line-height: 32px;color: #32325d;}
+.regulatoryComplianceChecklist .checkList ul{list-style: none;}
+.regulatoryComplianceChecklist .checkList ul li{counter-increment: helmChecklist;position: relative;margin: 12px 0;font-weight: 400;font-size: 17px;line-height: 28px;color: #525f7f;position: relative;display: flex;}
+.regulatoryComplianceChecklist .checkList ul li span{padding-right: 14px;position: relative;}
+.regulatoryComplianceChecklist .checkList ul li span svg{width: 18px;height: 18px;position: absolute;top: 3px;}
+.regulatoryComplianceChecklist .checkList ul li span:first-child{padding-right: 32px;}
+.regulatoryComplianceChecklist .checkList ul li span a{color: #6772e5;font-weight: 500;-webkit-transition: color .1s ease;transition: color .1s ease;cursor: pointer;}
+@media (min-width: 670px){
+	.regulatoryComplianceTitle h2{font-size: 42px;line-height: 52px;}
+	.regulatoryComplianceChecklist{grid-template-columns: repeat(2,1fr);display: grid;grid-column-gap: 40px;grid-row-gap: 40px;}
+}
+@media (max-width: 767px){
+	.checklistLeft{margin-bottom: 30px;}
+	.regulatoryComplianceChecklist{padding: 0 40px;}
+}
