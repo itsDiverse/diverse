@@ -2,7 +2,7 @@ import React from "react"
 import { action, config } from "@storybook/addon-actions"
 import { Module5 } from "./"
 export default {
-  title: "Module5",
+  title: "Widgets/Module5",
   component: Module5,
 }
 

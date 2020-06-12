@@ -77,7 +77,7 @@
   color: #525f7f;
 }
 .complianceRightContent ul li:after {
-  content: url(../images/template/lawyer-friendly-checkmark.svg);
+  content: url(../../../images/template/lawyer-friendly-checkmark.svg);
   position: absolute;
   top: 3px;
   left: 0;
@@ -212,7 +212,7 @@
   -webkit-transform-origin: 50% 0;
   transform-origin: 50% 0;
   font-size: 15px;
-  background: url(../images/template/dashboard-chrome.svg) no-repeat;
+  background: url(../../../images/template/dashboard-chrome.svg) no-repeat;
   background-size: 100% 550px;
 }
 .platformManagementSection .dashboardConnectedAccounts * {
@@ -440,7 +440,7 @@
 .common-FlagIcon:before {
   content: "";
   display: inline-block;
-  background-image: url(../images/template/flagIcons.svg);
+  background-image: url(../../../images/template/flagIcons.svg);
   width: 21px;
   height: 15px;
   margin-right: 12px;

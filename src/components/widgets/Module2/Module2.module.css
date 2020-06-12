@@ -117,7 +117,7 @@
   margin-left: -36px;
   border-radius: 50%;
   cursor: pointer;
-  background-image: url(../images/template/play.svg);
+  background-image: url(../../../images/template/play.svg);
 
   background-position: 50%;
   background-repeat: no-repeat;
@@ -308,7 +308,7 @@ html[lang="ja"] .feedback .quotes .commonTitle:before {
   background-color: #6bf;
 }
 .feedback .feedbackLogo .video.teespring {
-  background-image: url(../images/template/teespring-video-cover.jpg);
+  background-image: url(../../../images/template/teespring-video-cover.jpg);
   background-size: cover;
   background-position: 50%;
 }
@@ -444,7 +444,7 @@ html[lang="ja"] .feedback .quotes .commonTitle:before {
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 120dpi) {
   .feedback .feedbackLogo .video.teespring {
-    background-image: url(../images/template/teespring-video-cover.jpg);
+    background-image: url(../../../images/template/teespring-video-cover.jpg);
   }
 }
 @media (max-width: 1200px) {

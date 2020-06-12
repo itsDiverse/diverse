@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react"
 import { action, config } from "@storybook/addon-actions"
 import { Module2 } from "./"
 export default {
-  title: "Module2",
+  title: "Widgets/Module2",
   component: Module2,
 }
 
-// export const Primary = () => (
-
-// )
+export const module2 = () => <Module2 />

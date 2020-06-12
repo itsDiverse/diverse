@@ -1,37 +1,214 @@
-
-.goingAbout20Minutes{position: relative;padding: 0 0 120px;margin-top: 150px;}
-.goingAbout20MinutesBox .leftBoxContent h2{font-weight: 400;font-size: 34px;line-height: 44px;color: #32325d;margin-bottom: 20px;padding: 0 20px;}
-.goingAbout20MinutesBox .leftBoxContent p{font-weight: 300;font-size: 21px;line-height: 32px;color: #424770;}
-.aboutMinutesTitle p{padding: 0 20px;}
-.aboutMinutesTitle ul li p{padding: 0px;}
-.goingAbout20MinutesBox{display: -webkitBox;display: -ms-flexbox;display: flex;-webkitBox-orient: vertical;-webkitBox-direction: normal;-ms-flex-direction: column;flex-direction: column;}
-.goingAbout20MinutesBox .leftBoxContent{-ms-flex-preferred-size: 51%;flex-basis: 51%;}
-.goingAbout20MinutesBox .rightBoxContent{-ms-flex-preferred-size: 49%;flex-basis: 49%;position: relative;}
-.goingAbout20MinutesBox .aboutMinutesBoxList{list-style: none;}
-.goingAbout20MinutesBox .aboutMinutesBoxList li{padding-left: 50px;-webkitBox-flex: 1;-ms-flex: 1;flex: 1;padding: 20px;position: relative;}
-.goingAbout20MinutesBox .aboutMinutesBoxList .icon{width: 48px;height: 48px;margin: 10px 0 20px -3px;}
-.goingAbout20MinutesBox .aboutMinutesBoxList li h3{font-weight: 500;font-size: 19px;line-height: 32px;color: #32325d;margin-bottom: 10px;}
-.goingAbout20MinutesBox .aboutMinutesBoxList li p{font-weight: 400;font-size: 17px;line-height: 28px;color: #525f7f;}
-.goingAbout20MinutesBox .leftBoxContent ul{margin-top: 40px;}
-.goingAbout20MinutesBox .aboutMinutesBoxList li .common-link{color: #6772e5;font-weight: 500;-webkit-transition: color .1s ease;transition: color .1s ease;cursor: pointer;}
-.goingAbout20Minutes .devicesDashboard.loaded {opacity: 1}
-.goingAbout20Minutes .devicesDashboard div {position: absolute;width: 1000px;height: 750px;background-size: 100% 100%;}
-.goingAbout20Minutes .devicesDashboard .laptop .device{background-image: url(../images/template/laptop-device.jpg);}
-.goingAbout20Minutes .devicesDashboard .laptop .controls{background-image: url(../images/template/laptop-controls.svg);}
-.goingAbout20Minutes .devicesDashboard .screen {-webkit-transform-origin: 0 0;transform-origin: 0 0;overflow: hidden;will-change: transform}
-.goingAbout20Minutes .devicesDashboard img {position: absolute;top: 0;right: 0;bottom: 0;left: 0}
-.goingAbout20Minutes .devicesDashboard .ground .shadow {background-image: url(../images/template/ground-shadow.png)}
-.goingAbout20Minutes .devicesDashboard .laptop {-webkit-mask: url(../images/template/laptop-mask.svg);mask: url(../images/template/laptop-mask.svg)}
-.goingAbout20Minutes .devicesDashboard .laptop .screen{width: 720px;height: 450px;border-radius: 6px;-webkit-transform: matrix3d(.8562198209416383,.021937972700884066,0,.00007058940264233656,.08894470190852294,.8079581585858137,0,-.00009582949605178664,0,0,1,0,35,42,0,1);transform: matrix3d(.8562198209416383,.021937972700884066,0,.00007058940264233656,.08894470190852294,.8079581585858137,0,-.00009582949605178664,0,0,1,0,35,42,0,1);-webkitBox-shadow: 1px 1px 4px rgba(107,124,147,.5);box-shadow: 1px 1px 4px rgba(107,124,147,.5);background: url(../images/template/laptop-screen.jpg) 0 0/100% 100%;}
-.goingAbout20Minutes .devicesDashboard{display: none;width: 1000px;height: 750px;position: absolute;z-index: -1;left: 30px;bottom: -140px;-webkit-transform: scale(.5);transform: scale(.5);-webkit-transform-origin: 0 0;transform-origin: 0 0;opacity: 0;-webkit-transition: opacity 1s ease;transition: opacity 1s ease;}
-@media (min-width: 670px){
-	.goingAbout20MinutesBox .leftBoxContent h2{font-size: 42px;line-height: 52px;}
-	.goingAbout20MinutesBox .leftBoxContent p{font-size: 24px;line-height: 36px;}
-	.goingAbout20Minutes .devicesDashboard {display: block;-webkit-transform: none;transform: none}
-	.goingAbout20MinutesBox{-webkitBox-orient: horizontal;-webkitBox-direction: normal;-ms-flex-direction: row;flex-direction: row;-webkitBox-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+.goingAbout20Minutes {
+  position: relative;
+  padding: 0 0 120px;
+  margin-top: 150px;
 }
-@media (min-width: 1040px){
-	.goingAbout20MinutesBox .aboutMinutesBoxList{margin-left: 45px;}
-	.goingAbout20MinutesBox .aboutMinutesBoxList .icon{position: absolute;left: -24px;top: 7px;}
-	.goingAbout20MinutesBox .aboutMinutesBoxList li{padding-left: 50px;}
+.goingAbout20MinutesBox .leftBoxContent h2 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 44px;
+  color: #32325d;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+.goingAbout20MinutesBox .leftBoxContent p {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  color: #424770;
+}
+.aboutMinutesTitle p {
+  padding: 0 20px;
+}
+.aboutMinutesTitle ul li p {
+  padding: 0px;
+}
+.goingAbout20MinutesBox {
+  display: -webkitBox;
+  display: -ms-flexbox;
+  display: flex;
+  -webkitbox-orient: vertical;
+  -webkitbox-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.goingAbout20MinutesBox .leftBoxContent {
+  -ms-flex-preferred-size: 51%;
+  flex-basis: 51%;
+}
+.goingAbout20MinutesBox .rightBoxContent {
+  -ms-flex-preferred-size: 49%;
+  flex-basis: 49%;
+  position: relative;
+}
+.goingAbout20MinutesBox .aboutMinutesBoxList {
+  list-style: none;
+}
+.goingAbout20MinutesBox .aboutMinutesBoxList li {
+  padding-left: 50px;
+  -webkitbox-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 20px;
+  position: relative;
+}
+.goingAbout20MinutesBox .aboutMinutesBoxList .icon {
+  width: 48px;
+  height: 48px;
+  margin: 10px 0 20px -3px;
+}
+.goingAbout20MinutesBox .aboutMinutesBoxList li h3 {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 32px;
+  color: #32325d;
+  margin-bottom: 10px;
+}
+.goingAbout20MinutesBox .aboutMinutesBoxList li p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: #525f7f;
+}
+.goingAbout20MinutesBox .leftBoxContent ul {
+  margin-top: 40px;
+}
+.goingAbout20MinutesBox .aboutMinutesBoxList li .common-link {
+  color: #6772e5;
+  font-weight: 500;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+  cursor: pointer;
+}
+.goingAbout20Minutes .devicesDashboard.loaded {
+  opacity: 1;
+}
+.goingAbout20Minutes .devicesDashboard div {
+  position: absolute;
+  width: 1000px;
+  height: 750px;
+  background-size: 100% 100%;
+}
+.goingAbout20Minutes .devicesDashboard .laptop .device {
+  background-image: url(../../../images/template/laptop-device.jpg);
+}
+.goingAbout20Minutes .devicesDashboard .laptop .controls {
+  background-image: url(../../../images/template/laptop-controls.svg);
+}
+.goingAbout20Minutes .devicesDashboard .screen {
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  overflow: hidden;
+  will-change: transform;
+}
+.goingAbout20Minutes .devicesDashboard img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.goingAbout20Minutes .devicesDashboard .ground .shadow {
+  background-image: url(../../../images/template/ground-shadow.png);
+}
+.goingAbout20Minutes .devicesDashboard .laptop {
+  -webkit-mask: url(../../../images/template/laptop-mask.svg);
+  mask: url(../../../images/template/laptop-mask.svg);
+}
+.goingAbout20Minutes .devicesDashboard .laptop .screen {
+  width: 720px;
+  height: 450px;
+  border-radius: 6px;
+  -webkit-transform: matrix3d(
+    0.8562198209416383,
+    0.021937972700884066,
+    0,
+    0.00007058940264233656,
+    0.08894470190852294,
+    0.8079581585858137,
+    0,
+    -0.00009582949605178664,
+    0,
+    0,
+    1,
+    0,
+    35,
+    42,
+    0,
+    1
+  );
+  transform: matrix3d(
+    0.8562198209416383,
+    0.021937972700884066,
+    0,
+    0.00007058940264233656,
+    0.08894470190852294,
+    0.8079581585858137,
+    0,
+    -0.00009582949605178664,
+    0,
+    0,
+    1,
+    0,
+    35,
+    42,
+    0,
+    1
+  );
+  -webkitbox-shadow: 1px 1px 4px rgba(107, 124, 147, 0.5);
+  box-shadow: 1px 1px 4px rgba(107, 124, 147, 0.5);
+  background: url(../../../images/template/laptop-screen.jpg) 0 0/100% 100%;
+}
+.goingAbout20Minutes .devicesDashboard {
+  display: none;
+  width: 1000px;
+  height: 750px;
+  position: absolute;
+  z-index: -1;
+  left: 30px;
+  bottom: -140px;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+@media (min-width: 670px) {
+  .goingAbout20MinutesBox .leftBoxContent h2 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .goingAbout20MinutesBox .leftBoxContent p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .goingAbout20Minutes .devicesDashboard {
+    display: block;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .goingAbout20MinutesBox {
+    -webkitbox-orient: horizontal;
+    -webkitbox-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkitbox-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1040px) {
+  .goingAbout20MinutesBox .aboutMinutesBoxList {
+    margin-left: 45px;
+  }
+  .goingAbout20MinutesBox .aboutMinutesBoxList .icon {
+    position: absolute;
+    left: -24px;
+    top: 7px;
+  }
+  .goingAbout20MinutesBox .aboutMinutesBoxList li {
+    padding-left: 50px;
+  }
 }

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import style from "../../styles/module22.module.css"
+import style from "./Module22.module.css"
 
 export default props => {
   return (

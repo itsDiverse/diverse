@@ -2,11 +2,11 @@ import React from "react"
 import { action, config } from "@storybook/addon-actions"
 import { Module1 } from "./"
 export default {
-  title: "Module1",
+  title: "Widgets/Module1",
   component: Module1,
 }
 
-export const Primary = () => (
+export const module1 = () => (
   <Module1
     image1="https://picsum.photos/200/300"
     image2="https://picsum.photos/200/300"

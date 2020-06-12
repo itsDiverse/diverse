@@ -1,1 +1,1 @@
-export {default as Module8} from "./Module8"
+export { default as Module8 } from "./Module8"
