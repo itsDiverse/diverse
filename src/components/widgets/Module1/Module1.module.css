@@ -1,0 +1,10 @@
+.contentWrapper{-webkit-box-flex: 1;-ms-flex-positive: 1;flex-grow: 1}
+.containerLg{max-width: 1040px;margin: 0 auto;padding: 0px;width: 100%;}
+.logoSection{margin-bottom: 40px;}
+.logoSection ul{display: flex;justify-content: center;flex-wrap: wrap;align-items: center;transition-duration: .25s;transition-timing-function: opacity,filter;padding: 0 20px;}
+.logoSection ul li{padding: 6px 15px;}
+.logoSection ul li:first-child{padding-left: 0;}
+.logoSection ul li img{max-width: 100%;max-height: 45px;}
+@media (min-width: 670px){
+    .logoSection{margin-bottom: 40px;}
+}
