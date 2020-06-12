@@ -12,8 +12,8 @@ export const DropdownSection = styled.div`
 export const Heading = styled.h3`
   font-weight: bold;
   font-style: normal;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 15px;
   color: #707070;
 `
 
@@ -26,7 +26,7 @@ export const Logo = styled.img`
 export const DropdownTitle = styled.h1`
   font-style: normal;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 27px;
   color: #195bb6;
 `
@@ -37,7 +37,7 @@ export const DropdownButton = styled.div`
   margin: 1.5rem 0;
   font-style: normal;
   font-weight: bold;
-  font-size: 13.5px;
+  font-size: 11.5px;
   line-height: 16px;
   text-align: center;
   color: #195bb6;
@@ -48,19 +48,19 @@ export const DropdownButton = styled.div`
 
 export const ListPrimary = styled.ul`
   background: #f5f5f5;
-  padding: 2rem;
+  padding: 1rem;
   margin-right: 3rem;
   list-style-type: none;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 12px;
+  line-height: 14px;
 
   color: #707070;
 `
 
 export const ListSection = styled.ul`
-  padding: 3rem;
+  padding: 2rem;
   padding-left: 0;
   list-style-type: none;
   li {
@@ -68,6 +68,7 @@ export const ListSection = styled.ul`
     white-space: nowrap;
     color: #707070;
     cursor: pointer;
+    font-size: 12px;
 
     &:hover {
       text-decoration: underline;

@@ -73,11 +73,9 @@ class AnimatedNavbar extends Component {
     let PrevDropdown
     let direction
 
-    const currentIndex = this.state.activeIndices[
+    let currentIndex = this.state.activeIndices[
       this.state.activeIndices.length - 1
     ]
-
-    //const currentIndex = 2
 
     const prevIndex =
       this.state.activeIndices.length > 1 &&
