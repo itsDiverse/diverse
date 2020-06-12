@@ -1,6 +1,11 @@
 module.exports = {
+<<<<<<< HEAD
   stories: ['../stories/**/*.stories.js'],
   addons: ['@storybook/addon-actions', '@storybook/addon-links'],
+=======
+  stories: ["../src/components/**/*.stories.js"],
+  addons: ["@storybook/addon-actions", "@storybook/addon-links"],
+>>>>>>> 82f845c803c3244a1d17786960c6c9801f38dee7
   webpackFinal: async config => {
     // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
     config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/]
@@ -18,7 +23,59 @@ module.exports = {
       require.resolve("babel-plugin-remove-graphql-queries"),
     ]
     // Prefer Gatsby ES6 entrypoint (module) over commonjs (main) entrypoint
+<<<<<<< HEAD
     config.resolve.mainFields = ["browser", "module", "main"];
     return config;
   },
 };
+=======
+    config.resolve.mainFields = ["browser", "module", "main"]
+
+    config.module.rules.push({
+      test: require.resolve("gatsby-link"),
+      loaders: ["imports-loader?___loader=>{enqueue:function(){}}"],
+    })
+
+    const rules = config.module.rules.map(rule => {
+      if (rule.test.toString() !== "/\\.css$/") {
+        return rule
+      }
+
+      const use = rule.use.map(u => {
+        const { loader } = u
+
+        if (!loader || !loader.includes("/css-loader/")) {
+          return u
+        }
+
+        const options = {
+          ...u.options,
+          modules: true,
+        }
+
+        return {
+          ...u,
+          options,
+        }
+      })
+
+      return {
+        ...rule,
+        use,
+      }
+    })
+
+    return {
+      ...config,
+      module: {
+        ...config.module,
+        rules,
+      },
+    }
+
+    // ignore gatsby-link's global `__loader` variable
+
+    return config
+  },
+}
+>>>>>>> 82f845c803c3244a1d17786960c6c9801f38dee7
