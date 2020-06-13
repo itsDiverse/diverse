@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 /*
-=======
-
->>>>>>> f56f1693d437b454195ac74367f6d317c883d574
 .intelligentRevenueSection{position: relative;padding: 50px 0;background-color: #32325d;}
 .intelligentRevenue{display: flex;flex-direction: column;padding: 0 20px;margin-left: auto;margin-right: auto;}
 .intelligentRevenueSection .intelligentRevenue{grid-column-gap: 15%;}
@@ -218,6 +214,3 @@
     margin: 20px 0;
   }
 }
-=======
-}
->>>>>>> f56f1693d437b454195ac74367f6d317c883d574
