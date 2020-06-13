@@ -275,6 +275,23 @@
   transition: 0.3s;
   width: 100%;
   margin: 1em;
+  transition: transform 1s;
+}
+
+@keyframes animateCard {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.card:first-of-type {
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+  animation: animateCard 4s infinite;
 }
 
 .card:hover {

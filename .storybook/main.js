@@ -26,6 +26,12 @@ module.exports = {
       loaders: ["imports-loader?___loader=>{enqueue:function(){}}"],
     })
 
+    config.module.rules.push({
+      test: /\.css$/,
+      use: ["style-loader", "css-loader", "sass-loader"],
+      exclude: /\.module\.css$/,
+    })
+
     const rules = config.module.rules.map(rule => {
       if (rule.test.toString() !== "/\\.css$/") {
         return rule

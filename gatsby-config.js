@@ -33,6 +33,7 @@ module.exports = {
     },*/,
     "gatsby-plugin-eslint",
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-css-modules`,
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

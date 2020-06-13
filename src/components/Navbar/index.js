@@ -6,9 +6,10 @@ import DropdownContainer from "./DropdownContainer"
 
 import { GraphicsAndDesignDropdown } from "./DropdownContents/GraphicsAndDesign.js"
 import { DigitalMarketingDropdown } from "./DropdownContents/DigitalMarketing.js"
-import { WritingAndTranslationDropdown } from "./DropdownContents/WritingAndTranslation.js"
+//import { WritingAndTranslationDropdown } from "./DropdownContents/WritingAndTranslation.js"
 import { ProgrammingAndTechDropdown } from "./DropdownContents/ProgrammingAndTech.js"
 import { VideoAndAnimationDropdown } from "./DropdownContents/VideoAndAnimation"
+import { GenericDropdownContainer } from "./DropdownContents/GenericDropdownContainer"
 
 const navbarConfig = [
   {

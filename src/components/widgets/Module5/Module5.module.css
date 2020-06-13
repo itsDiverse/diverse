@@ -1,11 +1,36 @@
-.footerWithCardSectionWrapper {
+.content-wrapper {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.container-xl {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+}
+.container-lg {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+}
+.footer-with-card-section {
+  padding: 1px;
+}
+.hover-strokeDark {
+}
+.Helm__stroke--cyan3 {
+}
+
+.footer-with-card-section-wrapper {
   background: transparent;
   overflow: hidden;
   padding-top: 500px;
   margin-top: -480px;
   position: relative;
 }
-.footerWithCardSectionWrapper:before {
+.footer-with-card-section-wrapper:before {
   content: "";
   position: absolute;
   left: 0;
@@ -16,11 +41,11 @@
   -webkit-transform: skew(0, -12deg);
   transform: skew(0, -12deg);
 }
-.footerCards > * {
+.footer-cards > * {
   pointer-events: auto;
   position: relative;
 }
-.footerCardsWrapper {
+.footer-cards-wrapper {
   position: relative;
   display: block;
   overflow: hidden;
@@ -33,11 +58,11 @@
   transition-property: color, background-color, box-shadow, transform;
   transition-duration: 0.15s;
 }
-.footerCards {
+.footer-cards {
   display: flex;
   width: 100%;
 }
-.footerCardsIcon {
+.footer-cards-icon {
   position: absolute;
   width: 130px;
   height: 130px;
@@ -47,12 +72,12 @@
   display: flex;
   align-items: center;
 }
-.linkArrow:after {
+.link-arrow:after {
   font: normal 16px StripeIcons;
   content: "\2192";
   padding-left: 5px;
 }
-.footerCardsWrapper h3 {
+.footer-cards-wrapper h3 {
   font-size: 17px;
   line-height: 28px;
   font-weight: 600;
@@ -62,14 +87,14 @@
   white-space: normal;
   color: #217ab7;
 }
-.footerCardsWrapper p {
+.footer-cards-wrapper p {
   font-weight: 400;
   font-size: 17px;
   line-height: 28px;
   color: #525f7f;
   margin: 5px 0 0;
 }
-.footerCardsIcon svg {
+.footer-cards-icon svg {
   max-width: 110px;
   max-height: 110px;
   width: 100%;
@@ -81,31 +106,31 @@
 .Helm__fill--cyan3 {
   fill: #217ab7;
 }
-.footerCardsWrapper:hover {
+.footer-cards-wrapper:hover {
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   color: #32325d !important;
   transform: translateY(-2px);
 }
-.footerCardsWrapper:hover svg .hover-fillDark {
+.footer-cards-wrapper:hover svg .hover-fillDark {
   fill: #32325d;
 }
-.footerCardsWrapper:hover svg .hover-fillLight {
+.footer-cards-wrapper:hover svg .hover-fillLight {
   fill: #8898aa;
 }
-.footerCardsWrapper svg .hover-fillDark,
-.footerCardsWrapper svg .hoverFillLight {
+.footer-cards-wrapper svg .hover-fillDark,
+.footer-cards-wrapper svg .hover-fillLight {
   transition: fill 0.15s;
 }
-.getInTouchSection {
+.get-in-touch-section {
   padding: 50px 20px;
   border-bottom: 2px solid rgba(207, 215, 223, 0.25);
 }
-.getInTouchContentWrapper {
+.get-in-touch-content-wrapper {
   z-index: 1;
   position: relative;
 }
-.getInTouchContent h2 {
+.get-in-touch-content h2 {
   font-weight: 300;
   color: #6772e5;
   display: block;
@@ -113,14 +138,14 @@
   line-height: 45px;
   margin: 0.75em 0 0;
 }
-.getInTouchContent h3 {
+.get-in-touch-content h3 {
   font-weight: 400;
   font-size: 30px;
   line-height: 45px;
   color: #32325d;
   margin: 0 0 0.75em;
 }
-.getInTouchBtn .btnDefault {
+.get-in-touch-btn .btn-default {
   white-space: nowrap;
   display: inline-block;
   height: 40px;
@@ -145,11 +170,11 @@
   background: #fff;
   cursor: pointer;
 }
-.getInTouchBtn .btnLeft {
+.get-in-touch-btn .btn-left {
   background-color: #3ecf8e;
   color: #fff;
 }
-.getInTouchBtn .btnDefault:hover {
+.get-in-touch-btn .btn-default:hover {
   -webkit-transform: translateY(-1px);
   transform: translateY(-1px);
   -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
@@ -160,24 +185,24 @@
     0 3px 6px rgba(0, 0, 0, 0.08);
   box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
-.getInTouchSection .containerLg > p {
+.get-in-touch-section .container-lg > p {
   font-weight: 400;
   font-size: 17px;
   line-height: 28px;
   color: #525f7f;
   position: relative;
 }
-.getInTouchContent,
-.getInTouchBtn {
+.get-in-touch-content,
+.get-in-touch-btn {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 50%;
   flex: 1 0 50%;
 }
 @media (min-width: 880px) {
-  .footerCardsWrapper {
+  .footer-cards-wrapper {
     padding-left: 120px;
   }
-  .getInTouchBtn {
+  .get-in-touch-btn {
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -185,7 +210,7 @@
   }
 }
 @media (min-width: 670px) {
-  .getInTouchContentWrapper {
+  .get-in-touch-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -194,7 +219,7 @@
     align-items: center;
     width: 100%;
   }
-  .footerCardsWrapper {
+  .footer-cards-wrapper {
     width: calc(50% - 30px);
     display: flex;
     flex-direction: column;
@@ -202,28 +227,28 @@
   }
 }
 @media (max-width: 990px) {
-  .footerCardsWrapper {
+  .footer-cards-wrapper {
     padding: 30px 30px 30px 110px;
   }
 }
 @media (max-width: 767px) {
-  .footerCards {
+  .footer-cards {
     display: block;
   }
-  .getInTouchContentWrapper {
+  .get-in-touch-content-wrapper {
     margin-bottom: 20px;
   }
-  .getInTouchBtn .btnDefault {
+  .get-in-touch-btn .btn-default {
     font-size: 13px;
     padding: 0 10px;
   }
-  .getInTouchSection {
+  .get-in-touch-section {
     padding: 50px 15px;
   }
-  .getInTouchBtn .btnLeft {
+  .get-in-touch-btn .btn-left {
     margin-left: 0px;
   }
-  .getInTouchBtn .btnRight {
+  .get-in-touch-btn .btn-right {
     margin-right: 0px;
   }
 }

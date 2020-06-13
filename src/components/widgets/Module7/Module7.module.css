@@ -1,55 +1,72 @@
-.complianceSection {
+ol,
+ul {
+  list-style: none;
+}
+
+.content-wrapper {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.container-lg {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+}
+.compliance-section {
   position: relative;
   z-index: 1;
   padding-bottom: 15px;
   padding-top: 140px;
 }
-.uppercaseText {
+.uppercase-text {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
-.complianceTitle {
+.compliance-title {
   text-align: center;
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
-.complianceTitle img {
+.compliance-title img {
   display: block;
   width: 72px;
   height: 72px;
   margin: 0 auto;
   margin-bottom: 23px;
 }
-.complianceTitle h2 {
+.compliance-title h2 {
   font-size: 20px;
   line-height: 32px;
   color: #32325d;
 }
-.complianceContentWrapper {
+.compliance-content-wrapper {
   padding: 0 20px;
 }
-.complianceContent {
+.compliance-content {
   border-bottom: 2px solid #f2f6fa;
 }
-.complianceLeftContent p {
+.compliance-left-content p {
   font-weight: 400;
   font-size: 17px;
   line-height: 28px;
   color: #525f7f;
   margin-top: 1em;
 }
-.complianceLeftContent p:first-child {
+.compliance-left-content p:first-child {
   margin-top: 0px;
 }
-.complianceLeftContent .commonLink {
+.common-Link,
+.compliance-left-content .common-link {
   color: #6772e5;
   font-weight: 500;
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease;
   cursor: pointer;
 }
-.complianceContent .complianceRightContent {
+.compliance-content .compliance-right-content {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
@@ -58,17 +75,17 @@
   border-radius: 4px;
   background: #f6f9fc;
 }
-.complianceRightContent h3 {
+.compliance-right-content h3 {
   margin-bottom: 18px;
   color: #57c3f0;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 15px;
 }
-.complianceRightContent ul {
+.compliance-right-content ul {
   list-style: none;
 }
-.complianceRightContent ul li {
+.compliance-right-content ul li {
   position: relative;
   padding-left: 28px;
   font-weight: 400;
@@ -76,25 +93,28 @@
   line-height: 28px;
   color: #525f7f;
 }
-.complianceRightContent ul li:after {
-  content: url(../../../images/template/lawyer-friendly-checkmark.svg);
+.compliance-right-content ul li:after {
+  content: url(./images/lawyer-friendly-checkmark.svg);
   position: absolute;
   top: 3px;
   left: 0;
   width: 19px;
 }
-.complianceRightContent li + li {
+.platform-management-right-content {
+  padding: 1px;
+}
+.compliance-right-content li + li {
   margin-top: 9px;
 }
 
-.platformManagementLeftContent img {
+.platform-management-left-content img {
   display: block;
   width: 72px;
   height: 72px;
   margin-bottom: 23px;
   margin-right: auto;
 }
-.platformManagementLeftContent h2 {
+.platform-management-left-content h2 {
   margin-bottom: 20px;
   color: #32325d;
   font-size: 20px;
@@ -103,17 +123,17 @@
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
-.platformManagementLeftContent p {
+.platform-management-left-content p {
   font-weight: 400;
   font-size: 17px;
   line-height: 28px;
   color: #525f7f;
   margin-top: 1em;
 }
-.platformManagementLeftContent p:first-child {
+.platform-management-left-content p:first-child {
   margin-top: 0em;
 }
-.platformManagementSection .laptop {
+.platform-management-section .laptop {
   position: relative;
   width: 584px;
   height: 405px;
@@ -124,10 +144,10 @@
   transform-origin: 0 40px;
   left: calc(50% - 166px);
 }
-.platformManagementSection .laptop * {
+.platform-management-section .laptop * {
   position: absolute;
 }
-.platformManagementSection .laptop .shadow {
+.platform-management-section .laptop .shadow {
   left: 17px;
   right: 17px;
   top: 40px;
@@ -137,7 +157,7 @@
   -webkit-filter: blur(30px);
   filter: blur(30px);
 }
-.platformManagementSection .laptop .lid {
+.platform-management-section .laptop .lid {
   width: 100%;
   height: 100%;
   background: linear-gradient(45deg, #e5ebf2, #f3f8fb);
@@ -145,7 +165,7 @@
   -webkit-box-shadow: inset 1px -4px 6px rgba(145, 161, 181, 0.3);
   box-shadow: inset 1px -4px 6px rgba(145, 161, 181, 0.3);
 }
-.platformManagementSection .laptop .camera {
+.platform-management-section .laptop .camera {
   width: 4px;
   height: 4px;
   top: 10px;
@@ -154,9 +174,9 @@
   border-radius: 50%;
   background: #dae0e8;
 }
-.platformManagementSection .laptop .screen {
+.platform-management-section .laptop .screen {
   top: 24px;
-  bottom: 35px;
+  bottom: 15px;
   left: 17px;
   right: 17px;
   border-radius: 4px;
@@ -164,7 +184,7 @@
   box-shadow: -1px 1px 6px rgba(171, 183, 204, 0.2);
   background: #f2f6fa;
 }
-.platformManagementSection .laptop .chassis {
+.platform-management-section .laptop .chassis {
   width: 100%;
   height: 142px;
   top: calc(100% - 11px);
@@ -180,27 +200,27 @@
   box-shadow: inset 0 -2px 3px rgba(145, 161, 181, 0.5),
     inset -1px -6px 4px rgba(253, 255, 255, 0.9);
 }
-.platformManagementSection .laptop .chassis * {
+.platform-management-section .laptop .chassis * {
   opacity: 0.3;
   background: linear-gradient(45deg, #b2bdcc, #c1ccd8);
   -webkit-box-shadow: 1px 1px 1px hsla(0, 0%, 100%, 0.75);
   box-shadow: 1px 1px 1px hsla(0, 0%, 100%, 0.75);
 }
-.platformManagementSection .laptop .keyboard {
+.platform-management-section .laptop .keyboard {
   left: 28px;
   right: 28px;
   top: 8px;
   height: 66px;
   border-radius: 2px 2px 4px 4px;
 }
-.platformManagementSection .laptop .trackpad {
+.platform-management-section .laptop .trackpad {
   left: 165px;
   right: 165px;
   top: 76px;
   height: 52px;
   border-radius: 4px 4px 6px 6px;
 }
-.dashboardConnectedAccounts {
+.dashboard-connected-accounts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,52 +232,52 @@
   -webkit-transform-origin: 50% 0;
   transform-origin: 50% 0;
   font-size: 15px;
-  background: url(../../../images/template/dashboard-chrome.svg) no-repeat;
+  background: url(./images/dashboard-chrome.svg) no-repeat;
   background-size: 100% 550px;
 }
-.platformManagementSection .dashboardConnectedAccounts * {
+.platform-management-section .dashboard-connected-accounts * {
   position: static;
 }
-.dashboardConnectedAccounts .active {
+.dashboard-connected-accounts .active {
   font-weight: 600;
   color: #6772e5;
 }
-.connectedAccountsNav {
+.connected-accounts-nav {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 256px;
   flex: 0 0 256px;
   padding-top: 26px;
   color: #424770;
 }
-.connectedAccountsNav h1 {
+.connected-accounts-nav h1 {
   margin-left: 42px;
   padding-bottom: 3px;
   font-size: 17px;
   font-weight: 500;
 }
-.connectedAccountsNav ul {
+.connected-accounts-nav ul {
   margin: 29px 0 0 32px;
 }
-.connectedAccountsNav li + li {
+.connected-accounts-nav li + li {
   margin-top: 15px;
 }
-.connectedAccountsView {
+.connected-accounts-view {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
   padding-top: 77px;
 }
-.connectedAccountsSubnav {
+.connected-accounts-subnav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 3px;
   color: #525f7f;
 }
-.connectedAccountsSubnav li + li {
+.connected-accounts-subnav li + li {
   margin-left: 25px;
 }
-.connectedAccountsView section {
+.connected-accounts-view section {
   margin-top: 20px;
   border-radius: 6px;
   background: #fff;
@@ -268,14 +288,14 @@
   overflow: hidden;
   color: #8898aa;
 }
-.connectedAccountsView section h2 {
+.connected-accounts-view section h2 {
   padding: 20px;
   border-bottom: 2px solid #e6ebf1;
   text-transform: uppercase;
   font-size: 1em;
   color: #424770;
 }
-.connectedAccountsView section li {
+.connected-accounts-view section li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,16 +304,16 @@
   align-items: center;
   padding: 14px 20px;
 }
-.connectedAccountsView section li:nth-child(2n) {
+.connected-accounts-view section li:nth-child(2n) {
   background: #f6f9fc;
 }
-.connectedAccountsView section svg {
+.connected-accounts-view section svg {
   width: 16px;
 }
-.connectedAccountsView section strong {
+.connected-accounts-view section strong {
   margin: 0 10px;
 }
-.connectedAccountsView section .state-badge {
+.connected-accounts-view section .state-badge {
   margin-left: auto;
   line-height: 22px;
   padding: 0 8px;
@@ -303,69 +323,69 @@
   text-transform: uppercase;
   font-weight: 600;
 }
-.connectedAccountsUpcoming strong {
+.connected-accounts-upcoming strong {
   color: #f79a59;
 }
-.connectedAccountsUpcoming path:first-child {
+.connected-accounts-upcoming path:first-child {
   fill: #fdbc72;
 }
-.connectedAccountsUpcoming path:last-child {
+.connected-accounts-upcoming path:last-child {
   fill: #f79a59;
 }
-.connectedAccountsUpcoming .state-badge {
+.connected-accounts-upcoming .state-badge {
   color: #f79a59;
   border-color: #fdbc72;
 }
-.connectedAccountsRecent strong {
+.connected-accounts-recent strong {
   color: #45b2e8;
 }
-.connectedAccountsRecent path:first-child {
+.connected-accounts-recent path:first-child {
   fill: #68d4f8;
 }
-.connectedAccountsRecent path:last-child {
+.connected-accounts-recent path:last-child {
   fill: #45b2e8;
 }
-.connectedAccountsRecent .state-badge {
+.connected-accounts-recent .state-badge {
   color: #45b2e8;
   border-color: #68d4f8;
 }
 
-.internationalSupport {
+.international-support {
   margin-bottom: 50px;
   padding: 0 20px;
 }
-.internationalSupport:before {
+.international-support:before {
   content: "";
   display: block;
   height: 2px;
   margin-bottom: 50px;
   background: #f2f6fa;
 }
-.internationalSupport .commonUppercaseTitle {
+.international-support .common-UppercaseTitle {
   text-align: center;
 }
 
-.internationalSupport .commonUppercaseTitle img {
+.international-support .common-UppercaseTitle img {
   margin-left: auto;
   margin-right: auto;
 }
-.internationalSupport a {
+.international-support a {
   font-weight: 500;
   color: #6772e5;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
-.internationalSupport a svg {
+.international-support a svg {
   width: 10px;
   margin-left: 3px;
   fill: currentcolor;
   -webkit-transition: fill 0.1s;
   transition: fill 0.1s;
 }
-.internationalSupport a:hover {
+.international-support a:hover {
   color: #45b2e8;
 }
-.internationalSupport aside {
+.international-support aside {
   font-size: 15px;
   color: #6b7c93;
   -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
@@ -375,10 +395,10 @@
   border-radius: 8px;
   margin-top: 1.5em;
 }
-.internationalSupport aside > * {
+.international-support aside > * {
   padding: 0 22px;
 }
-.internationalSupport aside h2 {
+.international-support aside h2 {
   color: #57c3f0;
   font-weight: 600;
   text-transform: uppercase;
@@ -386,52 +406,52 @@
   padding-top: 1.2em;
   padding-bottom: 1.2em;
 }
-.internationalSupport aside h2:not(:first-child) {
+.international-support aside h2:not(:first-child) {
   margin-top: 21px;
   border-top: 2px solid #f1f6fa;
 }
-.internationalSupport aside ul {
+.international-support aside ul {
   display: grid;
 }
-.internationalSupport .flagList {
+.international-support .flag-list {
   grid-auto-columns: -webkit-min-content;
   grid-auto-columns: min-content;
   grid-auto-flow: column;
   margin-top: 12px;
 }
-.internationalSupport .flagList .commonFlagIcon:before {
+.international-support .flag-list .common-FlagIcon:before {
   margin-right: 5px;
 }
-.internationalSupport .flagList:not(.commonFlagIcon) {
+.international-support .flag-list:not(.common-FlagIcon) {
   white-space: nowrap;
 }
-.internationalSupport .contactUs {
+.international-support .contact-us {
   margin-top: 12px;
 }
-#bank-networks {
-  grid: auto/1fr 1fr;
+.bank-networks {
+  grid: auto 1fr 1fr;
   grid-gap: 12px 0;
   margin-bottom: 1.5em;
 }
-.internationalSupport .settlementCurrencies {
+.international-support .settlement-currencies {
   grid-template-columns: repeat(6, -webkit-min-content);
   grid-template-columns: repeat(6, min-content);
   padding-bottom: 22px;
   font-weight: 500;
   font-size: 13px;
 }
-.settlementCurrencies li {
+.settlement-currencies li {
   padding: 0 9px;
   border-right: 1px solid #e4edf5;
 }
-.settlementCurrencies li:nth-child(6n) {
+.settlement-currencies li:nth-child(6n) {
   border: none;
   padding-right: 0;
 }
-.settlementCurrencies li:nth-child(6n - 5) {
+.settlement-currencies li:nth-child(6n - 5) {
   padding-left: 0;
 }
-.settlementCurrencies li:nth-child(6) ~ li {
+.settlement-currencies li:nth-child(6) ~ li {
   padding-top: 6px;
 }
 .common-FlagIcon--us:before {
@@ -440,7 +460,7 @@
 .common-FlagIcon:before {
   content: "";
   display: inline-block;
-  background-image: url(../../../images/template/flagIcons.svg);
+  background-image: url(./images/flagIcons.svg);
   width: 21px;
   height: 15px;
   margin-right: 12px;
@@ -455,7 +475,7 @@
 .common-FlagIcon--jp:before {
   background-position: -196px -85px;
 }
-.internationalSupport .flagList .commonFlagIcon:before {
+.international-support .flag-list .common-FlagIcon:before {
   margin-right: 5px;
 }
 .common-FlagIcon--be:before {
@@ -491,13 +511,13 @@
 .common-FlagIcon--es:before {
   background-position: -382px -35px;
 }
-.internationalSupportLeftContent p {
+.international-support-left-content p {
   font-weight: 400;
   font-size: 17px;
   line-height: 28px;
   color: #525f7f;
 }
-.internationalSupport .internationalSupportLeftContent h2 {
+.international-support .international-support-left-content h2 {
   margin-bottom: 20px;
   color: #32325d;
   font-size: 20px;
@@ -506,31 +526,31 @@
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
-.internationalSupport img {
+.international-support img {
   display: block;
   width: 72px;
   height: 72px;
   margin-bottom: 23px;
 }
 @media (min-width: 670px) {
-  .complianceTitle h2 {
+  .compliance-title h2 {
     font-size: 21px;
     line-height: 32px;
   }
-  .platformManagementLeftContent h2 {
+  .platform-management-left-content h2 {
     font-size: 21px;
     line-height: 32px;
   }
-  .platformManagementSection .laptop {
+  .platform-management-section .laptop {
     margin-top: 2em;
     -webkit-transform: none;
     transform: none;
     left: calc(50% - 292px);
   }
-  .internationalSupport aside {
+  .international-support aside {
     margin: 0;
   }
-  .internationalSupport {
+  .international-support {
     --gutter: 30px;
     display: grid;
     grid-template-rows: 120px auto;
@@ -541,59 +561,64 @@
     align-items: center;
     margin-top: 140px;
   }
-  .internationalSupport:before {
+  .international-support:before {
     grid-column-end: span 2;
     margin: 0;
   }
-  .internationalSupport .internationalSupportLeftContent {
+  .international-support-left-content {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
   }
-  .internationalSupport .commonUppercaseTitle {
+
+  .international-support-right-content {
+    padding: 1px;
+  }
+
+  .international-support .common-UppercaseTitle {
     text-align: left;
   }
-  .internationalSupport .commonUppercaseTitle img {
+  .international-support .common-UppercaseTitle img {
     margin-left: 0;
   }
-  .internationalSupport .internationalSupportLeftContent h2 {
+  .international-support-left-content h2 {
     font-size: 21px;
     line-height: 32px;
   }
 }
 @media (min-width: 880px) {
-  .complianceContent .complianceRightContent {
+  .compliance-content .compliance-right-content {
     margin-top: 1px;
   }
-  .platformManagementSection .laptop {
+  .platform-management-section .laptop {
     left: 0;
     margin: 0;
   }
-  .platformManagementSection .laptop .shadow {
+  .platform-management-section .laptop .shadow {
     will-change: transform;
   }
-  .internationalSupport {
+  .international-support {
     --gutter: 41px;
     grid-template-rows: 200px auto;
     margin-top: 0;
   }
-  .internationalSupport .commonBodyText {
+  .international-support .common-BodyText {
     -webkit-columns: 2;
     columns: 2;
     -webkit-column-gap: var(--gutter);
     column-gap: var(--gutter);
   }
-  .connectedAccountsNav ul {
+  .connected-accounts-nav ul {
     margin-top: 25px;
   }
-  .platformManagementSection {
+  .platform-management-section {
     display: grid;
     grid: auto/1fr auto;
     grid-gap: 0 70px;
     padding: 0 20px;
     padding-top: 80px;
   }
-  .complianceContent {
+  .compliance-content {
     display: grid;
     grid: auto/1fr 1fr;
     grid-gap: 35px;
@@ -601,35 +626,35 @@
   }
 }
 @media (max-width: 880px) {
-  .complianceContent {
+  .compliance-content {
     padding-bottom: 50px;
   }
-  .complianceContentWrapper {
+  .compliance-content-wrapper {
     margin-bottom: 50px;
   }
-  .platformManagementSection {
+  .platform-management-section {
     padding: 0 20px;
   }
-  .platformManagementLeftContent img {
+  .platform-management-left-content img {
     margin: 0 auto;
     margin-bottom: 23px;
   }
-  .platformManagementLeftContent h2 {
+  .platform-management-left-content h2 {
     text-align: center;
   }
-  .complianceSection {
+  .compliance-section {
     padding-top: 80px;
   }
 }
 @media (max-width: 767px) {
-  .internationalSupport .internationalSupportLeftContent h2 {
+  .international-support .international-support-left-content h2 {
     text-align: center;
   }
-  .internationalSupport img {
+  .international-support img {
     margin-left: auto;
     margin-right: auto;
   }
-  .connectedAccountsNav ul {
+  .connected-accounts-nav ul {
     margin-top: 24px;
   }
 }

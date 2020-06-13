@@ -41,7 +41,7 @@ class AnimatedModule extends React.Component {
     setInterval(() => {
       arr.unshift(arr.pop())
       this.setState({ content: arr })
-    }, 2000)
+    }, 4000)
   }
   render() {
     let data =

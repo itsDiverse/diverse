@@ -1,49 +1,61 @@
 import React from "react"
-import style from "./Module6.module.css"
+import "./Module6.module.css"
 
-export default (props) =>
-<>
-	<div className={'contentWrapper'}>
-		<div className={style.processSection}>
-			<div className={'containerLg'}>
-				<div className={style.processContentSection}>
-					<div className={style.processContentTitle}>
-						<h2 className={style.sectionTitle}>{props.heading}</h2>
-						<p className={style.sectionDesc}>{props.text}</p>
-					</div>
-				</div>
-				<ul className={style.timeline}>
-			        <li className={style.line}></li>
-			        <li className={style.timelineStep}>
-			          <div className={style.iconContainer} style={{ backgroundImage: `url(${props.image1})` }}>
-			            <figure className={style.icon} style={{ backgroundImage:`url(${props.image1})` }}></figure>
-			          </div>
-			          <p>{props.step1text}<br /><span className={style.stepNo} style={{ backgroundColor: props.step1color }}>Step 1</span></p>
-			        </li>
-			        <li className={style.timelineStep} >
-			          <div className={style.iconContainer}>
-			            <figure className={style.icon} style={{ backgroundImage:`url(${props.image2})` }}></figure>
-			          </div>
-			          <p>{props.step2text}<br /><span className={style.stepNo} style={{ backgroundColor: props.step2color }}>Step 2</span></p>
-			        </li>
-			        <li className={style.timelineStep}>
-			          <div className={style.iconContainer} style={{ backgroundImage:`url(${props.image3})` }}>
-			            <figure className={style.icon} style={{ backgroundImage:`url(${props.image3})` }}></figure>
-			          </div>
-			          <p>
-			            {props.step3text}
-			            <br />
-			            <span className={style.stepNo} style={{ backgroundColor: props.step3color }}>Step 3</span>
-			          </p>
-			        </li>
-			        <li className={style.timelineStep}>
-			          <div className={style.iconContainer } style={{ backgroundImage:`url(${props.image4})` }}>
-			            <figure className={style.icon} style={{ backgroundImage:`url(${props.image4})` }}></figure>
-			          </div>
-			          <p>{props.step4text}<br /><span className={style.stepNo} style={{ backgroundColor: props.step4color }}>Step 4</span></p>
-			        </li>
-			      </ul>
-			</div>
-		</div>
-	</div>
-    </>
+export default props => (
+  <>
+    <div styleName="content-wrapper">
+      <div styleName="process-section">
+        <div styleName="container-lg">
+          <div styleName="process-content-section">
+            <div styleName="process-content-title">
+              <h2 styleName="section-title uppertext">What’s the process?</h2>
+              <p styleName="section-desc">
+                With Stripe Atlas, your company can be set up within days. We
+                help with all the paperwork.
+              </p>
+            </div>
+          </div>
+          <ul styleName="timeline">
+            <li styleName="line"></li>
+            <li styleName="timeline-step">
+              <div styleName="icon-container submit">
+                <figure styleName="icon submit"></figure>
+              </div>
+              <p>
+                Submit your application
+                <span styleName="step-no">Step 1</span>
+              </p>
+            </li>
+            <li styleName="timeline-step sign-documents">
+              <div styleName="icon-container documents-bank-account">
+                <figure styleName="icon documents"></figure>
+              </div>
+              <p>
+                Sign documents and access your bank account
+                <span styleName="step-no">Step 2</span>
+              </p>
+            </li>
+            <li styleName="timeline-step">
+              <div styleName="icon-container incorporation">
+                <figure styleName="icon incorporation"></figure>
+              </div>
+              <p>
+                Your company is formed in Delaware
+                <span styleName="step-no">Step 3</span>
+              </p>
+            </li>
+            <li styleName="timeline-step">
+              <div styleName="icon-container tax-id">
+                <figure styleName="icon tax-id"></figure>
+              </div>
+              <p>
+                Receive a tax ID number from the IRS
+                <span styleName="step-no">Step 4</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </>
+)
