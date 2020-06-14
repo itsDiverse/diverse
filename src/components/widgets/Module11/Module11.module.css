@@ -1,15 +1,41 @@
-.b2cMarketplaces {
+/*added styles to make it work */
+.Quote--lyft {
+}
+.marketplaces-gallery-bottom-content-left {
+}
+.marketplaces-gallery-routing {
+}
+/*regular styles */
+
+.content-wrapper {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.container-lg {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+}
+.container-xl {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+}
+.b2c-marketplaces {
   margin-top: 130px;
   margin-bottom: 50px;
   padding: 0 20px;
 }
-.marketplacesTitleSection {
+.marketplaces-title-section {
   text-align: center;
 }
-.marketplacesTitleSection img {
+.marketplaces-title-section img {
   vertical-align: middle;
 }
-.marketplacesTitleSection h3 {
+.marketplaces-title-section h3 {
   color: #24b47e;
   text-align: center;
   width: 100%;
@@ -20,7 +46,7 @@
   letter-spacing: 0.025em;
   margin: 1em 0;
 }
-.marketplacesTitleSection p {
+.marketplaces-title-section p {
   margin: 0 0 1em;
   padding: 0;
   font-weight: 300;
@@ -32,7 +58,7 @@
   margin-right: auto;
   text-align: left;
 }
-.marketplacesGallerySection {
+.marketplaces-gallery-section {
   background: #f4f4f4;
   -webkit-box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
@@ -43,15 +69,15 @@
   position: relative;
   margin: 30px 0 60px;
 }
-.marketplacesGalleryPhoto {
+.marketplaces-gallery-photo {
   background-color: #a19273;
-  background-image: url(../../../images/template/lyft.jpg);
+  background-image: url(./images/lyft.jpg);
   width: 100%;
   min-height: 370px;
   background-size: cover;
   background-position: 50% 50%;
 }
-.marketplacesGalleryContent {
+.marketplaces-gallery-content {
   webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -76,24 +102,24 @@
   margin-left: calc((0 * 0.5) * -1);
 }
 
-.marketplacesQuoteWrapper .marketplacesQuote {
+.marketplaces-quote-wrapper .marketplaces-quote {
   margin: 0;
   padding: 40px;
   position: relative;
   z-index: 5;
   color: #fff;
 }
-.marketplacesQuote h2 {
+.marketplaces-quote h2 {
   margin: 0 0 10px -2px;
 }
-.marketplacesQuote p {
+.marketplaces-quote p {
   position: relative;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 2.1em;
   line-height: 1.6em;
   margin-bottom: 0;
 }
-.marketplacesQuote:before {
+.marketplaces-quote:before {
   content: "";
   display: block;
   background: #eb268d;
@@ -106,46 +132,46 @@
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-.marketplacesQuote:after {
+.marketplaces-quote:after {
   content: "";
   display: block;
   width: 100%;
   height: 95px;
-  background: url(../../../images/template/lyft-vert.svg);
+  background: url(./images/lyft-vert.svg);
   background-size: 100% 100%;
   position: absolute;
   top: -95px;
   left: 0;
 }
-.marketplacesGallerySectionWrapper {
+.marketplaces-gallery-section-wrapper {
   padding: 0 20px;
 }
-.marketplacesGalleryBottomContent {
+.marketplaces-gallery-bottom-content {
   padding: 0 20px;
   margin-bottom: 30px;
 }
-.marketplacesGalleryBottomContent figure {
+.marketplaces-gallery-bottom-content figure {
   width: 72px;
   margin: 10px;
   margin-left: 40px;
   float: right;
   text-align: center;
 }
-.marketplacesGalleryBottomContent div p {
+.marketplaces-gallery-bottom-content div p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 28px;
   color: #525f7f;
   margin: 0 0 1em;
 }
-.commonLink {
+.common-link {
   color: #6772e5;
   font-weight: 500;
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease;
   cursor: pointer;
 }
-.marketplacesGalleryBottomContentRight ul {
+.marketplaces-gallery-bottom-content-right ul {
   line-height: 2em;
   list-style-type: none;
   padding: 1.5em 0 0;
@@ -156,21 +182,21 @@
   line-height: 28px;
   color: #525f7f;
 }
-.linkArrow:after {
+.link-arrow:after {
   font: normal 16px StripeIcons;
   content: "\2192";
   padding-left: 5px;
 }
 @media (min-width: 670px) {
-  .marketplacesTitleSection p {
+  .marketplaces-title-section p {
     font-size: 24px;
     line-height: 36px;
   }
-  .marketplacesTitleSection h3 {
+  .marketplaces-title-section h3 {
     font-size: 21px;
     line-height: 32px;
   }
-  .marketplacesGalleryPhoto {
+  .marketplaces-gallery-photo {
     position: absolute;
     top: 0;
     left: 0;
@@ -178,13 +204,13 @@
     bottom: 0;
     min-height: auto;
   }
-  .marketplacesQuoteWrapper .marketplacesQuote {
+  .marketplaces-quote-wrapper .marketplaces-quote {
     padding: 66px;
   }
-  .marketplacesQuote:after {
+  .marketplaces-quote:after {
     width: 206px;
     height: 100%;
-    background: url(../../../images/template/lyft.svg);
+    background: url(./images/lyft.svg);
     background-size: 100% 100%;
     left: auto;
     right: -80px;
@@ -192,25 +218,25 @@
     bottom: 0;
     z-index: -1;
   }
-  .marketplacesQuote:before {
+  .marketplaces-quote:before {
     opacity: 0.9216;
     right: 126px;
   }
-  .marketplacesGalleryContent .marketplacesQuoteWrapper {
+  .marketplaces-gallery-content .marketplaces-quote-wrapper {
     flex-basis: 50%;
     max-width: 50%;
   }
-  .marketplacesGalleryBottomContent div {
+  .marketplaces-gallery-bottom-content div {
     flex-basis: 41.667%;
     max-width: 41.667%;
   }
-  .marketplacesGalleryBottomContent {
+  .marketplaces-gallery-bottom-content {
     display: flex;
     justify-content: space-around;
   }
 }
 @media (max-width: 767px) {
-  .b2cMarketplaces {
+  .b2c-marketplaces {
     margin-top: 50px;
   }
 }

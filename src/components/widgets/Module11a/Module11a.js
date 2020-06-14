@@ -1,49 +1,90 @@
 import React from "react"
-import style from "./Module11a.module.css"
+import "./Module11a.module.css"
 
-export default (props) =>
-<>
-	<div className={'contentWrapper'}>
-		<div className={'containerLg'}>
-			<div className={style.b2cMarketplaces}>
-				<div className={style.marketplacesTitleSection}>
-					<img src={props.image1} />
-					<h3>{props.title}</h3>
-					<p>{props.text}</p>
-				</div>
-			</div>
-		</div>
-		<div className={'containerXl'}>
-			<div className={style.marketplacesGallerySectionWrapper}>
-				<div className={style.marketplacesGallerySection}>
-					<div className={style.marketplacesGalleryPhoto}></div>
-					<div className={style.marketplacesGalleryContent}>
-						<div className={style.marketplacesQuoteWrapper}>
-							<div className={[style.marketplacesQuote, style.QuoteLyft].join(' ')}>
-		                      <h2><a href="#"><img src={props.boxLogo} width="237" height="30" alt="Lyft logo" /></a></h2>
-		                      <p>{props.boxText}</p>
-		                    </div>
-	                    </div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div className={'containerXl'}>
-			<div className={style.marketplacesGalleryBottomContent}>
-				<div className={style.marketplacesGalleryBottomContentLeft}>
-					<figure className={style.marketplacesGalleryRouting}>
-		              <img src={props.image3} width="72" height="72" alt="3 arrows spreading" />
-		            </figure>
-		            <p>{props.textLeft}</p>
-				</div>
-				<div className={style.marketplacesGalleryBottomContentRight}>
-					<p>{props.textRight}</p>
-					<ul>
-						<li><a className={[style.linkArrow, style.commonLink].join(' ')} href={props.link}>{props.linkText}</a></li>
-					</ul>
-				</div>	
-			</div>
-		</div>
-	</div>
-
-</>
+export default props => (
+  <div styleName="content-wrapper">
+    <div styleName="container-lg">
+      <div styleName="b2c-marketplaces">
+        <div styleName="marketplaces-title-section">
+          <img src="./images/sharing.svg" />
+          <h3>B2C marketplaces</h3>
+          <p>
+            Marketplaces connect consumers with what they want: rides, food,
+            accommodation, and more. Your payments should meet the same high
+            standards as your product experience: with just a tap, Stripe helps
+            sellers on your marketplace get paid.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div styleName="container-xl">
+      <div styleName="marketplaces-gallery-section-wrapper">
+        <div styleName="marketplaces-gallery-section">
+          <div styleName="marketplaces-gallery-photo"></div>
+          <div styleName="marketplaces-gallery-content">
+            <div styleName="marketplaces-quote-wrapper">
+              <div styleName="marketplaces-quote Quote--lyft">
+                <h2>
+                  <a href="#">
+                    <img
+                      src="./images/charity-water.png"
+                      width="237"
+                      height="30"
+                      alt="Lyft logo"
+                    />
+                  </a>
+                </h2>
+                <p>
+                  charity: water optimized their mobile and web donation flows
+                  with Stripe so they can focus on what really matters: bringing
+                  clean water to every person on the planet. Using Stripe, they
+                  also built a new monthly giving program, which makes it even
+                  easier for subscribers to donate throughout the year.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div styleName="container-xl">
+      <div styleName="marketplaces-gallery-bottom-content">
+        <div styleName="marketplaces-gallery-bottom-content-left">
+          <figure styleName="marketplaces-gallery-routing">
+            <img
+              src="./images/route.svg"
+              width="72"
+              height="72"
+              alt="3 arrows spreading"
+            />
+          </figure>
+          <p>
+            Payments for marketplaces used to be hard: accounting for seller
+            earnings, paying out multiple parties, managing 1099-Ks, tax
+            reporting, and regulatory compliance. Marketplaces shouldn’t have to
+            build all that from scratch, so we made{" "}
+            <a styleName="common-link" href="#">
+              Stripe Connect
+            </a>{" "}
+            to provide all the tools you need to run a multi-sided marketplace.
+          </p>
+        </div>
+        <div styleName="marketplaces-gallery-bottom-content-right">
+          <p>
+            Integrating Connect means always having access to state-of-the-art
+            technology. Attract and retain more sellers with instant payouts,
+            accept payments across all channels, and expand to 30+ countries
+            with a single integration.
+          </p>
+          <ul>
+            <li>
+              <a styleName="link-arrow common-link" href="#">
+                Learn more about Stripe for marketplaces
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+)

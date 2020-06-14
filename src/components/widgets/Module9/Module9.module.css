@@ -1,16 +1,40 @@
-.payments-stack-section {
+/*added classses to work*/
+.diagramInfraContent {
+}
+.diagramContent {
+}
+.jsDiagram {
+}
+.diagramPlatformsContent {
+}
+.jsDiagramExplanation {
+}
+
+/*regular styles */
+.contentWrapper {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.containerLg {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+}
+.paymentsStackSection {
   background-color: #fff;
   padding: 60px 0;
   position: relative;
 }
-.section-title {
+.sectionTitle {
   margin: 25px 0 18px;
   font-size: 42px;
   line-height: 52px;
   color: #32325d;
   font-weight: 400;
 }
-.section-desc {
+.sectionDesc {
   margin-bottom: 70px;
   max-width: 800px;
   margin-left: auto;
@@ -20,20 +44,20 @@
   color: #424770;
   font-weight: 300;
 }
-.payments-stack-section-intro {
+.paymentsStackSectionIntro {
   text-align: center;
   padding: 0 20px;
 }
-.diagram-apps {
-  grid-area: diagram-apps;
+.diagramApps {
+  grid-area: diagramApps;
   grid-template-columns: repeat(4, 1fr);
 }
-.diagram-product svg {
+.diagramProduct svg {
   width: 25px;
   height: 25px;
   transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.diagram-product {
+.diagramProduct {
   border-radius: 8px;
   background-color: #c4f0ff;
   text-align: center;
@@ -46,7 +70,7 @@
   border: 2px solid;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.diagram-section {
+.diagramSection {
   display: grid;
   min-height: 80px;
   background-color: #fff;
@@ -58,122 +82,124 @@
   box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1),
     0 3px 6px 0 rgba(0, 0, 0, 0.07);
 }
-.diagram-product-radar {
+.diagramProductRadar {
   background-color: #db78dd;
   border-color: #db78dd;
 }
-.diagram-product-sigma {
+.diagramProductSigma {
   background-color: #a688e7;
   border-color: #a688e7;
 }
-.diagram-product-billing {
+.diagramProductBilling {
   background-color: #3ecf8e;
   border-color: #3ecf8e;
 }
-.diagram-product-atlas {
+.diagramProductAtlas {
   background-color: #f0b64b;
   border-color: #f0b64b;
 }
-.diagram-product span {
+.diagramProduct span {
   display: block;
   margin: 8px 0 0;
   font-size: 15px;
   font-weight: 600;
 }
-.platform-diagram {
+.platformFiagram {
   margin: 60px 0 0;
 }
+
 .diagram {
   position: relative;
   display: grid;
   gap: 20px 0;
   grid-gap: 20px 0;
   grid-template-rows: repeat(6, auto);
-  grid-template-areas: "diagram-apps" "diagram-apps-content" "diagram-platforms" "diagram-platforms-content" "diagram-infra" "diagram-infra-content";
+  grid-template-areas: "diagramApps diagramAppsContent diagramPlatforms diagramPlatformsContent diagramInfra diagramInfraContent";
   padding: 0 20px;
 }
-.diagram-title {
+
+.diagramTitle {
   color: #32325d;
   margin: 0 0 4px;
 }
-.uppercase-text {
+.uppercaseText {
   font-size: 17px;
   line-height: 28px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
-.diagram-desc {
+.diagramDesc {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   color: #525f7f;
 }
-.diagram-product-payments {
+.diagramProductPayments {
   background-color: #818bf0;
   border-color: #818bf0;
 }
-.diagram-product-connect {
+.diagramProductConnect {
   background-color: #45b2e8;
   border-color: #45b2e8;
 }
-.diagram-platforms {
+.diagramPlatforms {
   grid-area: diagram-platforms;
   grid-template-columns: repeat(2, 1fr);
 }
-.diagram-infra {
+.diagramInfra {
   position: relative;
-  grid-area: diagram-infra;
+  grid-area: diagramInfra;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 1fr 1fr;
 }
-.diagram-infra-service {
+.diagramInfraService {
   border: 2px dashed #7795f8;
   border-radius: 8px;
   opacity: 0.5;
 }
-.diagram-infra-service:first-child {
+.diagramInfraService:first-child {
   grid-row: 1;
   grid-column: 1 / span 2;
 }
-.diagram-infra-service:nth-child(2) {
+.diagramInfraService:nth-child(2) {
   grid-row: 2;
   grid-column: 1 / span 2;
 }
-.diagram-infra-service:nth-child(3) {
+.diagramInfraService:nth-child(3) {
   grid-row: 1 / span 2;
   grid-column: 3;
 }
-.diagram-infra-service:nth-child(4) {
+.diagramInfraService:nth-child(4) {
   grid-row: 1;
   grid-column: 4 / span 3;
 }
-.diagram-infra-service:nth-child(5) {
+.diagramInfraService:nth-child(5) {
   grid-row: 2;
   grid-column: 4;
 }
-.diagram-infra-service:nth-child(6) {
+.diagramInfraService:nth-child(6) {
   grid-row: 2;
   grid-column: 5 / span 2;
 }
-.diagram-infra-service:nth-child(7) {
+.diagramInfraService:nth-child(7) {
   grid-row: 1;
   grid-column: 7 / span 3;
 }
-.diagram-infra-service:nth-child(8) {
+.diagramInfraService:nth-child(8) {
   grid-row: 2;
   grid-column: 7 / span 1;
 }
-.diagram-infra-service:nth-child(9) {
+.diagramInfraService:nth-child(9) {
   grid-row: 2;
   grid-column: 8 / span 2;
 }
-.diagram-infra-service:nth-child(10) {
+.diagramInfraService:nth-child(10) {
   grid-row: 1 / span 2;
   grid-column: 10;
 }
-.diagram-infra:after {
+.diagramInfra:after {
   content: "";
   position: absolute;
   width: calc(100% + 60px);
@@ -377,21 +403,21 @@
 }
 
 @media (min-width: 670px) {
-  .payments-stack-section {
+  .paymentsStackSection {
     background-color: #fff;
     padding: 80px 0 100px;
   }
-  .diagram-section {
+  .diagramSection {
     min-height: 104px;
   }
-  .diagram-product svg {
+  .diagramProduct svg {
     width: 40px;
     height: 40px;
   }
 }
 
 @media (min-width: 880px) {
-  .diagram-section {
+  .diagramSection {
     min-height: 104px;
     border-radius: 18px;
     padding: 15px;
@@ -404,24 +430,25 @@
     grid-gap: 30px 75px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: "diagram-apps diagram-apps-content" "diagram-platforms diagram-platforms-content" "diagram-infra diagram-infra-content";
+    grid-template-areas: "diagramApps diagramAppsContent diagramPlatforms diagramPlatformsContent diagramInfra diagramInfraContent";
   }
-  .diagram-infra-service {
+
+  .diagramInfraService {
     border-radius: 10px;
   }
-  .diagram-infra:after {
+  .diagramInfra:after {
     display: block;
   }
 }
 @media (max-width: 767px) {
-  .section-title {
+  .sectioTitle {
     font-size: 32px;
   }
-  .section-desc {
+  .sectionDesc {
     font-size: 21px;
     line-height: 32px;
   }
-  .diagram-product span {
+  .diagramProduct span {
     font-size: 13px;
   }
 }

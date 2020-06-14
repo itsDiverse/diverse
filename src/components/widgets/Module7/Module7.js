@@ -6,7 +6,7 @@ export default props => (
     <div styleName="compliance-section">
       <div styleName="container-lg">
         <div styleName="compliance-title">
-          <img src="./images/compliance.svg" />
+          <img src="images/Module7/images/compliance.svg" />
           <h2 styleName="uppercase-text">COMPLIANCE</h2>
         </div>
         <div styleName="compliance-content-wrapper">

@@ -1,34 +1,32 @@
 import React from "react"
-import style from "./Module1.module.css"
+import "./Module1.module.css"
 
 export default props => (
-  <>
-    <div className={"contentWrapper"}>
-      <section className={["stylecontainerLg", style.logoSection].join(" ")}>
-        <ul>
-          <li className={style.logo1}>
-            <img src={props.image1} alt={props.image1alt} />
-          </li>
-          <li className={style.logo2}>
-            <img src={props.image2} alt={props.image2alt} />
-          </li>
-          <li className={style.logo3}>
-            <img src={props.image3} alt={props.image3alt} />
-          </li>
-          <li className={style.logo4}>
-            <img src={props.image4} alt={props.image4alt} />
-          </li>
-          <li className={style.logo5}>
-            <img src={props.image5} alt={props.image5alt} />
-          </li>
-          <li className={style.logo6}>
-            <img src={props.image6} alt={props.image6alt} />
-          </li>
-          <li className={style.logo7}>
-            <img src={props.image7} alt={props.image7alt} />
-          </li>
-        </ul>
-      </section>
-    </div>
-  </>
+  <div styleName="content-wrapper">
+    <section styleName="container-lg logo-section">
+      <ul>
+        <li title="Amazon">
+          <img src="./images/amazon.svg" alt="Amazon" />
+        </li>
+        <li title="Booking com">
+          <img src="./images/booking_com.svg" alt="Booking com" />
+        </li>
+        <li title="Docusign">
+          <img src="./images/docusign.svg" alt="Docusign" />
+        </li>
+        <li title="Instacart">
+          <img src="./images/instacart.svg" alt="Instacart" />
+        </li>
+        <li title="Peleton">
+          <img src="./images/peleton.svg" alt="Peleton" />
+        </li>
+        <li title="Shopify">
+          <img src="./images/shopify.svg" alt="Shopify" />
+        </li>
+        <li title="Unicef">
+          <img src="./images/unicef.svg" alt="Unicef" />
+        </li>
+      </ul>
+    </section>
+  </div>
 )

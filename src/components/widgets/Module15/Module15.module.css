@@ -1,4 +1,15 @@
-.calloutCard {
+.content-wrapper {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.container-xl {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+}
+.callout-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,35 +27,35 @@
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
-.idcCallout {
+.idc-callout {
   position: relative;
   z-index: 2;
   padding-bottom: 20px;
   padding-top: 40px;
 }
-.calloutContent {
+.callout-content {
   -ms-flex-negative: 1;
   flex-shrink: 1;
   padding-bottom: 25px;
 }
-.calloutContent span {
+.callout-content span {
   font-size: 26px;
   line-height: 42px;
   color: #525f7f;
   font-weight: 400;
 }
-.calloutContent span a {
+.callout-content span a {
   color: #6772e5;
   font-weight: 500;
   -webkit-transition: color 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: color 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.calloutCard svg {
+.callout-card svg {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin: 0 auto;
 }
-.commonIdcGrid {
+.common-idc-grid {
   --stripe-height: 48px;
   --content-columns: 12;
   --gutter-columns: 4;
@@ -55,8 +66,8 @@
   z-index: -1;
   pointer-events: none;
 }
-.commonIdcGrid .backgroundContainer,
-.commonIdcGrid .idcbgContainer {
+.common-idc-grid .backgroundContainer,
+.common-idc-grid .idcbgContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +87,7 @@
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-.commonIdcGrid .backgroundContainer .grid {
+.common-idc-grid .backgroundContainer .grid {
   height: 100%;
   -ms-flex-line-pack: end;
   align-content: end;
@@ -87,22 +98,18 @@
   height: 100%;
   display: grid;
   grid-template-rows: repeat(auto-fill, var(--stripe-height));
-  grid-template-columns:
-    [viewport-start] 1fr [left-gutter-start] repeat(
+  grid-template-columns: [viewport-start] 1fr [left-gutter-start] repeat(
       var(--gutter-columns),
       var(--gutter-column-width)
-    )
-    [left-gutter-end content-start] repeat(
+    ) [left-gutter-end content-start] repeat(
       var(--content-columns),
       var(--content-column-width)
-    )
-    [content-end right-gutter-start] repeat(
+    ) [content-end right-gutter-start] repeat(
       var(--gutter-columns),
       var(--gutter-column-width)
-    )
-    [right-gutter-end] 1fr [viewport-end];
+    ) [right-gutter-end] 1fr [viewport-end];
 }
-.commonIdcGrid .backgroundContainer .grid {
+.common-idc-grid .backgroundContainer .grid {
   grid-template-columns: 1fr;
   min-width: 0;
 }
@@ -111,7 +118,7 @@
   grid-column: 1/-1;
   z-index: -1;
 }
-.commonIdcGrid .idcbgContainer {
+.common-idc-grid .idcbgContainer {
   overflow: hidden;
 }
 .idcbgContainer .grid {
@@ -122,20 +129,16 @@
   height: 100%;
   display: grid;
   grid-template-rows: repeat(auto-fill, var(--stripe-height));
-  grid-template-columns:
-    [viewport-start] 1fr [left-gutter-start] repeat(
+  grid-template-columns: [viewport-start] 1fr [left-gutter-start] repeat(
       var(--gutter-columns),
       var(--gutter-column-width)
-    )
-    [left-gutter-end content-start] repeat(
+    ) [left-gutter-end content-start] repeat(
       var(--content-columns),
       var(--content-column-width)
-    )
-    [content-end right-gutter-start] repeat(
+    ) [content-end right-gutter-start] repeat(
       var(--gutter-columns),
       var(--gutter-column-width)
-    )
-    [right-gutter-end] 1fr [viewport-end];
+    ) [right-gutter-end] 1fr [viewport-end];
   height: 100%;
   -ms-flex-line-pack: end;
   align-content: end;
@@ -172,7 +175,7 @@
   background-color: #fff;
 }
 @media (min-width: 1040px) {
-  .commonIdcGrid .backgroundContainer .grid {
+  .common-idc-grid .backgroundContainer .grid {
     --gutter-column-width: var(--content-column-width);
     min-width: calc(
       1040px / var(--content-columns) *
@@ -188,12 +191,12 @@
   }
 }
 @media (min-width: 880px) {
-  .calloutCard {
+  .callout-card {
     padding: 50px;
   }
 }
 @media (min-width: 670px) {
-  .calloutCard {
+  .callout-card {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -201,10 +204,10 @@
     padding-top: 25px;
     padding-bottom: 0;
   }
-  .calloutCard svg {
+  .callout-card svg {
     margin: 20px 0 -75px;
   }
-  .calloutContent {
+  .callout-content {
     margin: 0 0 0 50px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -213,15 +216,15 @@
     -ms-flex-align: center;
     align-items: center;
   }
-  .commonIdcGrid {
+  .common-idc-grid {
     --stripe-height: 64px;
   }
 }
 @media (max-width: 767px) {
-  .idcCallout .containerXl {
+  .idc-callout .container-xl {
     width: calc(100% - 20px);
   }
-  .calloutCard {
+  .callout-card {
     padding: 25px;
   }
 }
