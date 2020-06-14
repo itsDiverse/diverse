@@ -125,7 +125,6 @@
   left: 0;
 }
 .going-about-20-minutes .devices-dashboard .ground .shadow {
-  background-image: url(./images/ground-shadow.png);
 }
 .going-about-20-minutes .devices-dashboard .laptop {
   -webkit-mask: url(./images/laptop-mask.svg);

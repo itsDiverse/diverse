@@ -89,9 +89,7 @@ export default () => (
     <h1>Module12</h1>
     <Module12 />
     <hr></hr>
-    <h1>Module13</h1>
-    <Module13 />
-    <hr></hr>
+
     <h1>Module14</h1>
     <Module14 />
     <hr></hr>
