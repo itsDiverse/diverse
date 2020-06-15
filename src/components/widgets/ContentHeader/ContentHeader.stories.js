@@ -6,4 +6,4 @@ export default {
   component: ContentHeader,
 }
 
-export const contentHeader = () => <ContentHeader />
+export const contenttHeader = () => <ContentHeader />

@@ -1,8 +1,19 @@
-.saveTimeOnReviewsTitle {
+.content-wrapper {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.container-lg {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+}
+.save-time-on-reviews-title {
   text-align: center;
   padding: 0 15px;
 }
-.saveTimeOnReviewsTitle h3 {
+.save-time-on-reviews-title h3 {
   max-width: 850px;
   font-weight: 400;
   font-size: 34px;
@@ -10,7 +21,7 @@
   color: #32325d;
   margin: 0 auto;
 }
-.saveTimeOnReviewsTitle p {
+.save-time-on-reviews-title p {
   margin: 12px auto 60px;
   max-width: 850px;
   font-weight: 300;
@@ -18,14 +29,14 @@
   line-height: 32px;
   color: #424770;
 }
-.saveTimeOnReviews .patterns .patternsContent {
+.save-time-on-reviews .patterns .patterns-content {
   display: grid;
   grid: auto/auto;
   grid-gap: 40px;
   position: relative;
   padding: 0 15px;
 }
-.saveTimeOnReviews .feature h3 {
+.save-time-on-reviews .feature h3 {
   color: #32325d;
   margin-bottom: 12px;
   font-size: 20px;
@@ -34,12 +45,17 @@
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
-.saveTimeOnReviews .feature p {
+.save-time-on-reviews .feature p {
   font-weight: 400;
   font-size: 17px;
   line-height: 28px;
   color: #525f7f;
 }
+
+.patterns-left-content {
+  padding: 1px;
+}
+
 .patterns-right-content {
   --transform: rotate3d(1, 0, 0, 0deg);
   --shadow: 0px 62.5px 125px -25px rgba(50, 50, 93, 0.5),
@@ -49,14 +65,14 @@
   perspective: 1500px;
   z-index: 1;
 }
-.saveTimeOnReviews .feature .imageContainer {
+.save-time-on-reviews .feature .image-container {
   border-radius: 8px;
   -webkit-transform: var(--transform);
   transform: var(--transform);
   -webkit-box-shadow: var(--shadow);
   box-shadow: var(--shadow);
 }
-.saveTimeOnReviews .feature .imageContainer:after {
+.save-time-on-reviews .feature .image-container:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -78,23 +94,23 @@
   );
   border-radius: 8px;
 }
-.saveTimeOnReviews .feature .imageContainer img {
+.save-time-on-reviews .feature .image-container img {
   width: 100%;
 }
-.saveTimeOnReviews .feature {
+.save-time-on-reviews .feature {
   position: relative;
 }
-.saveTimeOnReviews .networks .networksContent {
+.save-time-on-reviews .networks .networks-content {
   padding: 80px 15px;
   display: grid;
   grid: auto/auto;
   grid-gap: 40px;
   position: relative;
 }
-.networksRightContent .imageContainer img {
+.networks-right-content .image-container img {
   max-width: 800px;
 }
-.saveTimeOnReviews .networks:before {
+.save-time-on-reviews .networks:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -107,25 +123,25 @@
   z-index: -1;
 }
 @media (min-width: 670px) {
-  .saveTimeOnReviews {
+  .save-time-on-reviews {
     padding-top: 120px;
   }
-  .saveTimeOnReviewsTitle h3 {
+  .save-time-on-reviews-title h3 {
     font-size: 42px;
     line-height: 52px;
   }
-  .saveTimeOnReviewsTitle p {
+  .save-time-on-reviews-title p {
     font-size: 24px;
     line-height: 36px;
   }
-  .saveTimeOnReviews .patterns .patternsContent {
+  .save-time-on-reviews .patterns .patterns-content {
     grid: auto/40% 1fr;
     grid-gap: 60px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
-  .saveTimeOnReviews .feature h3 {
+  .save-time-on-reviews .feature h3 {
     font-size: 21px;
     line-height: 32px;
   }
@@ -135,10 +151,10 @@
       17.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
     --lighting-angle: 290deg;
   }
-  .saveTimeOnReviews .feature .imageContainer img {
+  .save-time-on-reviews .feature .image-container img {
     width: auto;
   }
-  .saveTimeOnReviews .networks .networksContent {
+  .save-time-on-reviews .networks .networks-content {
     grid: auto/1fr 40%;
     grid-gap: 60px;
     -webkit-box-pack: end;
@@ -148,12 +164,12 @@
     -ms-flex-align: center;
     align-items: center;
   }
-  .saveTimeOnReviews .networks .networksLeftContent {
+  .save-time-on-reviews .networks .networks-left-content {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
   }
-  .networksRightContent {
+  .networks-right-content {
     --transform: rotate3d(0.342, 0.94, 0, 15deg);
     --shadow: -29.4px 62.5px 125px -25px rgba(50, 50, 93, 0.5),
       -17.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
