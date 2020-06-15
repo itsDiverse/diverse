@@ -1,5 +1,5 @@
 import React from "react"
-import "./module3.module.css"
+import "./Module3.module.css"
 
 export default props => (
   <div styleName="content-wrapper">
