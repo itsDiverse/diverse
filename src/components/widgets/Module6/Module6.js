@@ -40,7 +40,7 @@ export default props => (
                 <figure styleName="icon incorporation"></figure>
               </div>
               <p>
-                Your company is formed in Delaware
+                Your company is formed in Delaware - USA
                 <span styleName="step-no">Step 3</span>
               </p>
             </li>

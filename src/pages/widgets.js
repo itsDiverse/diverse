@@ -2,7 +2,6 @@ import React from "react"
 import { ContentHeader } from "../components/widgets/ContentHeader"
 import { QuadBox } from "../components/widgets/QuadBox"
 import { Module1 } from "../components/widgets/Module1"
-import { Module1a } from "../components/widgets/Module1a"
 import { Module2 } from "../components/widgets/Module2"
 import { Module3 } from "../components/widgets/Module3"
 import { Module4 } from "../components/widgets/Module4"
@@ -41,9 +40,6 @@ export default () => (
       image6="https://picsum.photos/200/300"
       image7="https://picsum.photos/200/300"
     ></Module1>
-    <hr></hr>
-    <h1>Module1a</h1>
-    <Module1a />
     <hr></hr>
     <h1>Module2</h1>
     <Module2 />

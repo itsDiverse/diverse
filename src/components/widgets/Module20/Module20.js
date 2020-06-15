@@ -1,5 +1,7 @@
 import React from "react"
 import "./Module20.module.css"
+import payments from "./images/related-payments.jpg"
+import session from "./images/session.jpg"
 
 export default props => (
   <div styleName="content-wrapper">
@@ -28,7 +30,7 @@ export default props => (
             </div>
             <div styleName="patterns-right-content">
               <div styleName="image-container">
-                <img src="images/related-payments.jpg" />
+                <img src={payments} />
               </div>
             </div>
           </div>
@@ -52,7 +54,7 @@ export default props => (
             </div>
             <div styleName="networks-right-content">
               <div styleName="image-container">
-                <img src="images/session.jpg"></img>
+                <img src={session}></img>
               </div>
             </div>
           </div>

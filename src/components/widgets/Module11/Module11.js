@@ -1,12 +1,15 @@
 import React from "react"
 import style from "./Module11.module.css"
+import sharing from "./images/sharing.svg"
+import lyft from "./images/lyft.png"
+import route from "./images/route.svg"
 
 export default props => (
   <div styleName="content-wrapper">
     <div styleName="container-lg">
       <div styleName="b2c-marketplaces">
         <div styleName="marketplaces-title-section">
-          <img src="./images/sharing.svg" />
+          <img src={sharing} />
           <h3>B2C marketplaces</h3>
           <p>
             Marketplaces connect consumers with what they want: rides, food,
@@ -26,12 +29,7 @@ export default props => (
               <div styleName="marketplaces-quote Quote--lyft">
                 <h2>
                   <a href="#">
-                    <img
-                      src="./images/lyft.png"
-                      width="64"
-                      height="46"
-                      alt="Lyft logo"
-                    />
+                    <img src={lyft} width="64" height="46" alt="Lyft logo" />
                   </a>
                 </h2>
                 <p>
@@ -51,12 +49,7 @@ export default props => (
       <div styleName="marketplaces-gallery-bottom-content">
         <div styleName="marketplaces-gallery-bottom-content-left">
           <figure styleName="marketplaces-gallery-routing">
-            <img
-              src="./images/route.svg"
-              width="72"
-              height="72"
-              alt="3 arrows spreading"
-            />
+            <img src={route} width="72" height="72" alt="3 arrows spreading" />
           </figure>
           <p>
             Payments for marketplaces used to be hard: accounting for seller

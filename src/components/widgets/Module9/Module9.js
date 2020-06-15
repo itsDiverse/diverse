@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./Module9.module.css"
+import "./Module9.module.css"
 
 export default props => (
   <div styleName="contentWrapper">
