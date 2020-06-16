@@ -28,10 +28,16 @@ import { Module22 } from "../components/widgets/Module22"
 export default () => (
   <>
     <h1>ContentHeader</h1>
-    <ContentHeader />
+    <ContentHeader
+      heading="Hey how are you doing?"
+      descrition="this is a description that comes under the title"
+      button1title="button 1"
+      button2title="button 2"
+    />
     <hr></hr>
     <h1>Module1</h1>
     <Module1
+      theme={{ containerLg: { opacity: 0.9 } }}
       image1="https://picsum.photos/200/300"
       image2="https://picsum.photos/200/300"
       image3="https://picsum.photos/200/300"

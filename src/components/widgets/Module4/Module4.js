@@ -100,12 +100,12 @@ export default props => {
                         <source src="sample.mp4" type="video/mp4" />
                       </video>
                     </div>
-                    <div className={style.fraudteamsVideoControls}>
+                    <div className={"fraudteamsVideoControls"}>
                       <button
                         className={[
-                          style.fraudTeamsVideoToggle,
-                          style.jsToggle,
-                          style.playbuttonVisible,
+                          "fraudTeamsVideoToggle",
+                          "jsToggle",
+                          "playbuttonVisible",
                         ].join(" ")}
                         data-play="Play video"
                         data-pause="Pause video"
