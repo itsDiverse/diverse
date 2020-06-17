@@ -1,96 +1,738 @@
 import React from "react"
-import "./Module21.module.css"
+//import "./Module21.module.css"
+
+import { StyledContentWrapper } from "./Module21.styles"
 
 export default props => (
-  <div styleName="content-wrapper">
-  <div styleName="intelligent-revenue-section">
-    <div styleName="container-lg">
-      <div styleName="intelligent-revenue ">
-        <div styleName="intelligent-revenue-left">
-          <div styleName="intelligent-revenue-left-content">
-            <h2>Intelligent revenue optimization</h2>
-            <p>Stripe helps you reduce declines and errors by optimizing authorization rates. Increase revenue with built-in features like automated retries, synchronous card updates, and smart network messaging. Take advantage of direct integrations into the card networks for faster feature implementation, access to raw response codes, and a unified API. You can also set up custom rules paired with machine learning to dynamically apply 3D Secure 2—protecting against fraudsters while reducing friction for your customers.</p>
-            <a href="#" styleName="intelligent-link">See how businesses increase revenues by 6.7% with Stripe</a>
-          </div>
-        </div>
-        <div styleName="intelligent-revenue-right">
-          <div styleName="intelligent-line"><svg width="2px" height="995px" viewBox="0 0 2 995" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><path d="M1,1 L1,1001" stroke="#87BBFD" stroke-width="2" stroke-dasharray="2 8"></path></svg></div>
-          <div styleName="intelligent-checklist">
-            <div styleName="checklist-icon">
-              <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><title>incorporation</title><desc>Created with Sketch.</desc><g id="incorporation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="incorporation-copy" transform="translate(1.000000, 0.000000)"><rect id="Rectangle-path" fill="#6772E5" fill-rule="nonzero" x="6.75" y="27.75" width="22.5" height="1.5" rx="0.75"></rect><path d="M0,26.25 L3.75,30" id="Shape" stroke="#6772E5" stroke-width="2" stroke-linecap="round"></path><path d="M3.75,26.25 L0,30" id="Shape" stroke="#6772E5" stroke-width="2" stroke-linecap="round"></path><path d="M25.6575,5.7975 C25.6575,5.7975 29.5575,8.6175 26.3325,11.85 C23.1075,15.0825 20.49,14.79 18.1875,17.0925 C15.885,19.395 17.0625,21.87 17.0625,21.87" id="Shape" stroke="#6772E5" stroke-width="2" stroke-linecap="round"></path><path d="M13.299,0.92187868 C13.299,-0.73497557 14.6421458,-2.07812132 16.299,-2.07812132 C17.9558542,-2.07812132 19.299,-0.73497557 19.299,0.92187868 L19.299,22.6718787 L13.299,22.6718787 L13.299,0.92187868 Z M16.299,29.4218787 L13.299,22.6718787 L19.299,22.6718787 L16.299,29.4218787 Z" id="Shape" fill="#87BBFD" fill-rule="nonzero" transform="translate(16.299000, 13.671879) rotate(45.000000) translate(-16.299000, -13.671879) "></path><polygon id="Rectangle-path" fill="#6772E5" fill-rule="nonzero" transform="translate(10.463379, 19.505379) rotate(45.000000) translate(-10.463379, -19.505379) " points="7.46337868 18.7553787 13.4633787 18.7553787 13.4633787 20.2553787 7.46337868 20.2553787"></polygon><polygon id="Rectangle-path" fill="#6772E5" fill-rule="nonzero" transform="translate(22.662970, 7.312902) rotate(45.000000) translate(-22.662970, -7.312902) " points="19.6629697 6.56290165 25.6629697 6.56290165 25.6629697 8.06290165 19.6629697 8.06290165"></polygon></g></g></svg>
+  <StyledContentWrapper theme={props.theme}>
+    <div className="content-wrapper">
+      <div className="intelligent-revenue-section">
+        <div className="container-lg">
+          <div className="intelligent-revenue ">
+            <div className="intelligent-revenue-left">
+              <div className="intelligent-revenue-left-content">
+                <h2>Intelligent revenue optimization</h2>
+                <p>
+                  Stripe helps you reduce declines and errors by optimizing
+                  authorization rates. Increase revenue with built-in features
+                  like automated retries, synchronous card updates, and smart
+                  network messaging. Take advantage of direct integrations into
+                  the card networks for faster feature implementation, access to
+                  raw response codes, and a unified API. You can also set up
+                  custom rules paired with machine learning to dynamically apply
+                  3D Secure 2—protecting against fraudsters while reducing
+                  friction for your customers.
+                </p>
+                <a href="#" className="intelligent-link">
+                  See how businesses increase revenues by 6.7% with Stripe
+                </a>
+              </div>
             </div>
-            <div styleName="checklist-content">
-              <h3>Optimized business setup</h3>
-              <ul>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>MID assignment</span></li>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>MCC assignment</span></li>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Local acquiring</span></li>
-              </ul>
-            </div>
-          </div>
+            <div className="intelligent-revenue-right">
+              <div className="intelligent-line">
+                <svg
+                  width="2px"
+                  height="995px"
+                  viewBox="0 0 2 995"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M1,1 L1,1001"
+                    stroke="#87BBFD"
+                    stroke-width="2"
+                    stroke-dasharray="2 8"
+                  ></path>
+                </svg>
+              </div>
+              <div className="intelligent-checklist">
+                <div className="checklist-icon">
+                  <svg
+                    width="32px"
+                    height="32px"
+                    viewBox="0 0 32 32"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>incorporation</title>
+                    <desc>Created with Sketch.</desc>
+                    <g
+                      id="incorporation"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="incorporation-copy"
+                        transform="translate(1.000000, 0.000000)"
+                      >
+                        <rect
+                          id="Rectangle-path"
+                          fill="#6772E5"
+                          fill-rule="nonzero"
+                          x="6.75"
+                          y="27.75"
+                          width="22.5"
+                          height="1.5"
+                          rx="0.75"
+                        ></rect>
+                        <path
+                          d="M0,26.25 L3.75,30"
+                          id="Shape"
+                          stroke="#6772E5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        ></path>
+                        <path
+                          d="M3.75,26.25 L0,30"
+                          id="Shape"
+                          stroke="#6772E5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        ></path>
+                        <path
+                          d="M25.6575,5.7975 C25.6575,5.7975 29.5575,8.6175 26.3325,11.85 C23.1075,15.0825 20.49,14.79 18.1875,17.0925 C15.885,19.395 17.0625,21.87 17.0625,21.87"
+                          id="Shape"
+                          stroke="#6772E5"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        ></path>
+                        <path
+                          d="M13.299,0.92187868 C13.299,-0.73497557 14.6421458,-2.07812132 16.299,-2.07812132 C17.9558542,-2.07812132 19.299,-0.73497557 19.299,0.92187868 L19.299,22.6718787 L13.299,22.6718787 L13.299,0.92187868 Z M16.299,29.4218787 L13.299,22.6718787 L19.299,22.6718787 L16.299,29.4218787 Z"
+                          id="Shape"
+                          fill="#87BBFD"
+                          fill-rule="nonzero"
+                          transform="translate(16.299000, 13.671879) rotate(45.000000) translate(-16.299000, -13.671879) "
+                        ></path>
+                        <polygon
+                          id="Rectangle-path"
+                          fill="#6772E5"
+                          fill-rule="nonzero"
+                          transform="translate(10.463379, 19.505379) rotate(45.000000) translate(-10.463379, -19.505379) "
+                          points="7.46337868 18.7553787 13.4633787 18.7553787 13.4633787 20.2553787 7.46337868 20.2553787"
+                        ></polygon>
+                        <polygon
+                          id="Rectangle-path"
+                          fill="#6772E5"
+                          fill-rule="nonzero"
+                          transform="translate(22.662970, 7.312902) rotate(45.000000) translate(-22.662970, -7.312902) "
+                          points="19.6629697 6.56290165 25.6629697 6.56290165 25.6629697 8.06290165 19.6629697 8.06290165"
+                        ></polygon>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div className="checklist-content">
+                  <h3>Optimized business setup</h3>
+                  <ul>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>MID assignment</span>
+                    </li>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>MCC assignment</span>
+                    </li>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Local acquiring</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-          <div styleName="intelligent-checklist">
-            <div styleName="checklist-icon">
-              <svg width="32px" height="36px" viewBox="0 0 32 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><title>protection</title><desc>Created with Sketch.</desc><g id="protection" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="payments-icons" transform="translate(1.000000, 0.000000)" fill-rule="nonzero"><path d="M21.4337143,14.5714286 L21.4337143,10.4914286 C21.3930337,6.96691572 18.524319,4.13112129 14.9995714,4.13112129 C11.4748238,4.13112129 8.60610919,6.96691572 8.56542857,10.4914286 L8.56542857,14.5714286 L4.28571429,14.5714286 L4.28571429,10.7142857 C4.28571429,4.79742857 9.08228571,0 15,0 C20.9177143,0 25.7142857,4.79742857 25.7142857,10.7142857 L25.7142857,14.5714286 L21.4337143,14.5714286 Z" id="Shape" fill="#6772E5"></path><path d="M12,23.1428571 C12,24.4114286 12.69,25.5171429 13.7142857,26.1085714 L13.7142857,29.1428571 C13.7142857,30.089631 14.4817976,30.8571429 15.4285714,30.8571429 L15.4285714,36 L3.42857143,36 C1.53502371,36 0,34.4649763 0,32.5714286 L0,18 C0,16.1064523 1.53502371,14.5714286 3.42857143,14.5714286 L15.4285714,14.5714286 L15.4285714,19.7142857 C13.5350237,19.7142857 12,21.2493094 12,23.1428571 Z" id="Shape" fill="#87BBFD"></path><path d="M26.5714286,36 L15.4285714,36 L15.4285714,30.8571429 C16.3753453,30.8571429 17.1428571,30.089631 17.1428571,29.1428571 L17.1428571,26.1085714 C18.2038685,25.4980408 18.8576572,24.3669864 18.8571429,23.1428571 C18.8571429,21.2493094 17.3221191,19.7142857 15.4285714,19.7142857 L15.4285714,14.5714286 L26.5714286,14.5714286 C28.4649763,14.5714286 30,16.1064523 30,18 L30,32.5714286 C30,34.4649763 28.4649763,36 26.5714286,36 Z" id="Shape" fill="#6772E5"></path></g></g></svg>
-            </div>
-            <div styleName="checklist-content">
-              <h3>Authentication, validation, and fraud protection</h3>
-              <ul>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Dynamic 3D Secure</span></li>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Dynamic $0/1 validations</span></li>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Industry-leading ML fraud protection</span></li>
-              </ul>
+              <div className="intelligent-checklist">
+                <div className="checklist-icon">
+                  <svg
+                    width="32px"
+                    height="36px"
+                    viewBox="0 0 32 36"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>protection</title>
+                    <desc>Created with Sketch.</desc>
+                    <g
+                      id="protection"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="payments-icons"
+                        transform="translate(1.000000, 0.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <path
+                          d="M21.4337143,14.5714286 L21.4337143,10.4914286 C21.3930337,6.96691572 18.524319,4.13112129 14.9995714,4.13112129 C11.4748238,4.13112129 8.60610919,6.96691572 8.56542857,10.4914286 L8.56542857,14.5714286 L4.28571429,14.5714286 L4.28571429,10.7142857 C4.28571429,4.79742857 9.08228571,0 15,0 C20.9177143,0 25.7142857,4.79742857 25.7142857,10.7142857 L25.7142857,14.5714286 L21.4337143,14.5714286 Z"
+                          id="Shape"
+                          fill="#6772E5"
+                        ></path>
+                        <path
+                          d="M12,23.1428571 C12,24.4114286 12.69,25.5171429 13.7142857,26.1085714 L13.7142857,29.1428571 C13.7142857,30.089631 14.4817976,30.8571429 15.4285714,30.8571429 L15.4285714,36 L3.42857143,36 C1.53502371,36 0,34.4649763 0,32.5714286 L0,18 C0,16.1064523 1.53502371,14.5714286 3.42857143,14.5714286 L15.4285714,14.5714286 L15.4285714,19.7142857 C13.5350237,19.7142857 12,21.2493094 12,23.1428571 Z"
+                          id="Shape"
+                          fill="#87BBFD"
+                        ></path>
+                        <path
+                          d="M26.5714286,36 L15.4285714,36 L15.4285714,30.8571429 C16.3753453,30.8571429 17.1428571,30.089631 17.1428571,29.1428571 L17.1428571,26.1085714 C18.2038685,25.4980408 18.8576572,24.3669864 18.8571429,23.1428571 C18.8571429,21.2493094 17.3221191,19.7142857 15.4285714,19.7142857 L15.4285714,14.5714286 L26.5714286,14.5714286 C28.4649763,14.5714286 30,16.1064523 30,18 L30,32.5714286 C30,34.4649763 28.4649763,36 26.5714286,36 Z"
+                          id="Shape"
+                          fill="#6772E5"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div className="checklist-content">
+                  <h3>Authentication, validation, and fraud protection</h3>
+                  <ul>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Dynamic 3D Secure</span>
+                    </li>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Dynamic $0/1 validations</span>
+                    </li>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Industry-leading ML fraud protection</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="intelligent-checklist">
+                <div className="checklist-icon">
+                  <svg
+                    width="32px"
+                    height="32px"
+                    viewBox="0 0 32 32"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>card-management</title>
+                    <desc>Created with Sketch.</desc>
+                    <g
+                      id="card-management"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="Group"
+                        transform="translate(0.000000, 4.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <path
+                          d="M3.40425532,6.80851064 C3.40425532,5.68043966 4.31873753,4.76595745 5.44680851,4.76595745 L28.5957447,4.76595745 C29.7238156,4.76595745 30.6382979,5.68043966 30.6382979,6.80851064 L30.6382979,21.106383 C30.6382979,22.2344539 29.7238156,23.1489362 28.5957447,23.1489362 L5.44680851,23.1489362 C4.31873753,23.1489362 3.40425532,22.2344539 3.40425532,21.106383 L3.40425532,6.80851064 Z M3.40425532,8.85106383 L3.40425532,11.6902128 L30.6382979,11.6902128 L30.6382979,8.85106383 L3.40425532,8.85106383 Z"
+                          id="Shape"
+                          fill="#6772E5"
+                          transform="translate(17.021277, 13.957447) rotate(8.000000) translate(-17.021277, -13.957447) "
+                        ></path>
+                        <rect
+                          id="Rectangle-path"
+                          fill="#87BBFD"
+                          x="0"
+                          y="0"
+                          width="27.2340426"
+                          height="18.3829787"
+                          rx="3"
+                        ></rect>
+                        <path
+                          d="M2.72340426,3.40425532 C2.72340426,3.02823166 3.02823166,2.72340426 3.40425532,2.72340426 L7.4893617,2.72340426 C7.86538533,2.72340426 8.17021277,3.02823166 8.17021277,3.40425532 L8.17021277,7.4893617 C8.17021277,7.86538533 7.86538533,8.17021277 7.4893617,8.17021277 L3.40425532,8.17021277 C3.02823166,8.17021277 2.72340426,7.86538533 2.72340426,7.4893617 L2.72340426,3.40425532 Z"
+                          id="Shape"
+                          fill="#32325D"
+                        ></path>
+                        <path
+                          d="M19.7446809,13.6170213 C19.7446809,13.2409977 20.0495083,12.9361702 20.4255319,12.9361702 L23.1489362,12.9361702 C23.5249598,12.9361702 23.8297872,13.2409977 23.8297872,13.6170213 C23.8297872,13.9930449 23.5249598,14.2978723 23.1489362,14.2978723 L20.4255319,14.2978723 C20.0495083,14.2978723 19.7446809,13.9930449 19.7446809,13.6170213 Z M14.2978723,13.6170213 C14.2978723,13.2409977 14.6026998,12.9361702 14.9787234,12.9361702 L17.7021277,12.9361702 C18.0781513,12.9361702 18.3829787,13.2409977 18.3829787,13.6170213 C18.3829787,13.9930449 18.0781513,14.2978723 17.7021277,14.2978723 L14.9787234,14.2978723 C14.6026998,14.2978723 14.2978723,13.9930449 14.2978723,13.6170213 Z M8.85106383,13.6170213 C8.85106383,13.2409977 9.15589127,12.9361702 9.53191489,12.9361702 L12.2553191,12.9361702 C12.6313428,12.9361702 12.9361702,13.2409977 12.9361702,13.6170213 C12.9361702,13.9930449 12.6313428,14.2978723 12.2553191,14.2978723 L9.53191489,14.2978723 C9.15589127,14.2978723 8.85106383,13.9930449 8.85106383,13.6170213 Z M3.40425532,13.6170213 C3.40425532,13.2409977 3.70908272,12.9361702 4.08510638,12.9361702 L6.80851064,12.9361702 C7.18453426,12.9361702 7.4893617,13.2409977 7.4893617,13.6170213 C7.4893617,13.9930449 7.18453426,14.2978723 6.80851064,14.2978723 L4.08510638,14.2978723 C3.70908272,14.2978723 3.40425532,13.9930449 3.40425532,13.6170213 Z"
+                          id="Shape"
+                          fill="#32325D"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div className="checklist-content">
+                  <h3>Automated card management</h3>
+                  <ul>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Tokenization service</span>
+                    </li>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Batch card account updater</span>
+                    </li>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Synchronous card account updater</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="intelligent-checklist">
+                <div className="checklist-icon">
+                  <svg
+                    width="32px"
+                    height="32px"
+                    viewBox="0 0 32 32"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>messaging</title>
+                    <desc>Created with Sketch.</desc>
+                    <g
+                      id="messaging"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="community"
+                        transform="translate(0.000000, 3.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <path
+                          d="M17.8,23.6333333 C14.3067265,26.5704238 9.33438433,26.9667117 5.42,24.62 L0.453333333,26.2666667 C0.106666667,26.3866667 -0.08,26.2 0.0333333333,25.8466667 L1.69333333,20.88 C-0.225789844,17.6534796 -0.320893953,13.6590646 1.44249948,10.3448661 C3.2058929,7.03066762 6.57181323,4.87776807 10.32,4.66666667 C8.06820948,8.05068306 7.61480492,12.3224081 9.10606189,16.1037148 C10.5973189,19.8850215 13.8444953,22.6973258 17.8,23.6333333 L17.8,23.6333333 Z"
+                          id="Shape"
+                          fill="#6772E5"
+                        ></path>
+                        <path
+                          d="M29.9666667,16.9 C32.7381441,12.2454542 31.6093933,6.25550932 27.3339384,2.92889404 C23.0584835,-0.397721243 16.9748588,-0.019529756 13.1443312,3.81099787 C9.31380358,7.6415255 8.93561209,13.7251502 12.2622274,18.0006051 C15.5888427,22.27606 21.5787875,23.4048108 26.2333333,20.6333333 L31.2066667,22.2933333 C31.5533333,22.4066667 31.74,22.22 31.6266667,21.8733333 L29.9666667,16.9 L29.9666667,16.9 Z"
+                          id="Shape"
+                          fill="#87BBFD"
+                        ></path>
+                        <path
+                          d="M16.5266667,13.0533333 C16.1003297,13.0533333 15.7063781,12.8258853 15.4932096,12.4566667 C15.2800412,12.0874481 15.2800412,11.6325519 15.4932096,11.2633333 C15.7063781,10.8941147 16.1003297,10.6666667 16.5266667,10.6666667 C17.1857264,10.6666667 17.7199999,11.2009402 17.7199999,11.86 C17.7199999,12.5190598 17.1857264,13.0533333 16.5266667,13.0533333 Z M20.5266667,13.0533333 C20.1003297,13.0533333 19.7063781,12.8258853 19.4932096,12.4566667 C19.2800412,12.0874481 19.2800412,11.6325519 19.4932096,11.2633333 C19.7063781,10.8941147 20.1003297,10.6666667 20.5266667,10.6666667 C21.1857264,10.6666667 21.7199999,11.2009402 21.7199999,11.86 C21.7199999,12.5190598 21.1857264,13.0533333 20.5266667,13.0533333 Z M24.5266667,13.0533333 C24.1003297,13.0533333 23.7063781,12.8258853 23.4932096,12.4566667 C23.2800412,12.0874481 23.2800412,11.6325519 23.4932096,11.2633333 C23.7063781,10.8941147 24.1003297,10.6666667 24.5266667,10.6666667 C25.1857264,10.6666667 25.7199999,11.2009402 25.7199999,11.86 C25.7199999,12.5190598 25.1857264,13.0533333 24.5266667,13.0533333 Z"
+                          id="Dots"
+                          fill="#32325d"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+
+                <div className="checklist-content">
+                  <h3>Smart network messaging</h3>
+                  <ul>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>BIN level formatting</span>
+                    </li>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Stored credentials optimization</span>
+                    </li>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Issuer data sharing</span>
+                    </li>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Incrementals</span>
+                    </li>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Overcaptures</span>
+                    </li>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Partials</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="intelligent-checklist">
+                <div className="checklist-icon">
+                  <svg
+                    width="32px"
+                    height="32px"
+                    viewBox="0 0 32 32"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>machine-learning</title>
+                    <desc>Created with Sketch.</desc>
+                    <g
+                      id="machine-learning"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g id="fast" fill-rule="nonzero">
+                        <path
+                          d="M25.7333333,4.13259253 C30.0832476,7.71361027 32.1763291,13.3538852 31.2155598,18.9056745 C30.2547904,24.4574638 26.3880315,29.0663538 21.0876942,30.9773396 C15.7873569,32.8883253 9.86915665,31.8073084 5.58666667,28.1459259 C-0.949371135,22.557837 -1.76240998,12.7470442 3.76459105,6.15926868 C9.29159208,-0.428506868 19.094391,-1.33284169 25.7333333,4.13259253 Z M24.4333333,9.39259253 C24.6066667,9.18592586 24.6933333,8.9192592 24.66,8.64592586 C24.6333333,8.3792592 24.5,8.1192592 24.2933333,7.94592586 C24.0868883,7.76638677 23.8173209,7.67667482 23.5444606,7.69670127 C23.2716002,7.71672771 23.0180196,7.84483585 22.84,8.05259253 C22.48,8.4792592 22.5466667,9.1192592 22.9866667,9.49259253 C23.4266667,9.86592586 24.0733333,9.8192592 24.44,9.39259253 L24.4333333,9.39259253 Z M25.4,22.6792592 C25.0143449,22.3486684 24.4684984,22.2804376 24.0133333,22.5059259 C23.5633169,22.7340169 23.3027092,23.2180027 23.36,23.7192592 C23.4133333,24.2192592 23.7666667,24.6525925 24.2533333,24.8125925 C24.74,24.9659259 25.2666667,24.8125925 25.5866667,24.4325925 C26.02,23.9125925 25.94,23.1259259 25.4,22.6792592 Z M27.3333333,12.8592592 C27.1333333,12.3259259 26.54,12.0392592 26.0133333,12.2259259 C25.7592567,12.315942 25.5522797,12.5047176 25.4393221,12.7494591 C25.3263645,12.9942007 25.3169934,13.274179 25.4133333,13.5259259 C25.6133333,14.0592592 26.2133333,14.3459259 26.74,14.1592592 C26.9940766,14.0692431 27.2010536,13.8804674 27.3140112,13.6357259 C27.4269689,13.3909844 27.4363399,13.111006 27.34,12.8592592 L27.3333333,12.8592592 Z M26.7333333,20.1259259 C27.1411853,20.2094214 27.5581002,20.0315023 27.78,19.6792592 C28,19.3325925 27.98,18.8792592 27.74,18.5459259 C27.5,18.1992592 27.0733333,18.0259259 26.6733333,18.1125925 C26.26,18.1925925 25.9533333,18.5125925 25.8866667,18.9259259 C25.8,19.4792592 26.18,20.0125925 26.74,20.1259259 L26.7333333,20.1259259 Z M13.36,4.5392592 C13.0933333,4.31259253 12.7066667,4.3192592 12.46,4.5392592 C12.2066667,4.77259253 12.1666667,5.15259253 12.3666667,5.4392592 C12.5666667,5.7192592 12.9466667,5.8192592 13.2466667,5.66592586 C13.5510073,5.51109049 13.6891552,5.1513303 13.5666667,4.83259253 C13.5265881,4.71911398 13.4576617,4.61802194 13.3666667,4.5392592 L13.36,4.5392592 Z M19.2666667,5.3792592 C19.3272191,5.00275693 19.0752652,4.64705727 18.7,4.5792592 C18.4268887,4.52302775 18.1476333,4.64270866 18,4.8792592 C17.8533333,5.10592586 17.8666667,5.41259253 18.0266667,5.6392592 C18.1933333,5.86592586 18.4733333,5.97259253 18.74,5.9192592 C19.0066667,5.86592586 19.22,5.65259253 19.26,5.38592586 L19.26,5.3792592 L19.2666667,5.3792592 Z M7.58666667,6.36592586 L7.3,6.62592586 C4.57289182,9.14129192 3.09661997,12.7331467 3.26666667,16.4392592 C3.32,16.9725925 3.33333333,17.5525925 3.44666667,18.0792592 L3.6,18.8925925 L3.83333333,19.6925925 C3.9,19.9659259 4,20.2259259 4.11333333,20.4925925 C4.22,20.7592592 4.31333333,21.0259259 4.43333333,21.2792592 C4.7,21.7792592 4.93333333,22.3059259 5.26,22.7725925 C6.46162405,24.6921542 8.15295824,26.256926 10.16,27.3059259 C10.64,27.5525925 11.1266667,27.7592592 11.6133333,27.9592592 C12.1066667,28.1059259 12.58,28.3192592 13.08,28.4059259 C13.56,28.5125925 14.0333333,28.6392592 14.5,28.6725925 C14.96,28.7325925 15.4266667,28.7925925 15.8333333,28.7992592 C17.7920855,28.8600336 19.7396291,28.481914 21.5333333,27.6925925 C21.9025078,27.5377774 22.1610462,27.1977702 22.2115596,26.8006482 C22.262073,26.4035262 22.0968873,26.0096217 21.7782263,25.7673148 C21.4595652,25.5250079 21.0358411,25.4711108 20.6666667,25.6259259 L20.6333333,25.6459259 L20.5933333,25.6592592 L20.28,25.8059259 C19.5075094,26.1452463 18.7005991,26.4000601 17.8733333,26.5659259 C17.2933333,26.6725925 16.6066667,26.7525925 15.8866667,26.7592592 C15.4933333,26.7659259 15.1333333,26.7259259 14.7266667,26.6925925 C14.3266667,26.6792592 13.9266667,26.5859259 13.5066667,26.5125925 C13.0866667,26.4525925 12.68,26.2859259 12.2466667,26.1792592 C11.8333333,26.0192592 11.4066667,25.8592592 10.9866667,25.6592592 C9.21649424,24.8146151 7.702601,23.5146915 6.6,21.8925925 C6.29333333,21.4925925 6.08,21.0392592 5.82666667,20.6059259 C5.71333333,20.3859259 5.62666667,20.1525925 5.52,19.9259259 C5.41256505,19.7023817 5.32338545,19.4705147 5.25333333,19.2325925 L5.01333333,18.5259259 L4.84666667,17.8125925 C4.71333333,17.3325925 4.71333333,16.8792592 4.64,16.4192592 C4.60666667,15.9525925 4.60666667,15.3925925 4.60666667,14.9925925 C4.65486976,13.7196196 4.9186091,12.46404 5.38666667,11.2792592 C6.0153709,9.6801763 6.99500834,8.24261532 8.25333333,7.07259253 C8.42925553,6.88496638 8.42880792,6.59284388 8.25231156,6.40575773 C8.07581519,6.21867158 7.78421396,6.20122231 7.58666667,6.36592586 Z"
+                          id="Base"
+                          fill="#87BBFD"
+                          transform="translate(15.771793, 16.232963) scale(-1, 1) rotate(-180.000000) translate(-15.771793, -16.232963) "
+                        ></path>
+                        <path
+                          d="M16.8666667,10.5333333 L16.1533333,14.9266667 L19.2466667,15.06 L19.3466667,15.06 C19.6,15.1066667 19.8133333,15.26 19.9333333,15.4866667 C20.0466667,15.72 20.0466667,15.9866667 19.9333333,16.22 L16.0533333,23.66 C15.9188866,23.922199 15.6139451,24.0479665 15.3337504,23.9567789 C15.0535558,23.8655913 14.8810437,23.5844395 14.9266667,23.2933333 L15.6466667,18.8933333 L12.5466667,18.7466667 L12.4533333,18.7466667 C12.2,18.7 11.9866667,18.5466667 11.8666667,18.32 C11.7491338,18.0896835 11.7491338,17.8169832 11.8666667,17.5866667 L15.74,10.16 C15.8676049,9.8848773 16.1804472,9.74823337 16.4689962,9.84158746 C16.7575452,9.93494155 16.9310629,10.2289372 16.8733333,10.5266667 L16.8666667,10.5333333 Z"
+                          id="Lightning-Bolt"
+                          fill="#6772E5"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div className="checklist-content">
+                  <h3>Machine-learning powered retries</h3>
+                  <ul>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>ISO message adjustment</span>
+                    </li>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Data healing</span>
+                    </li>
+                    <li>
+                      <span className="check-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="23"
+                          height="23"
+                          viewBox="0 0 23 23"
+                        >
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              fill="#24b47e"
+                              d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"
+                            ></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span>Smart dunning for subscriptions</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div styleName="intelligent-checklist">
-            <div styleName="checklist-icon">
-              <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><title>card-management</title><desc>Created with Sketch.</desc><g id="card-management" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group" transform="translate(0.000000, 4.000000)" fill-rule="nonzero"><path d="M3.40425532,6.80851064 C3.40425532,5.68043966 4.31873753,4.76595745 5.44680851,4.76595745 L28.5957447,4.76595745 C29.7238156,4.76595745 30.6382979,5.68043966 30.6382979,6.80851064 L30.6382979,21.106383 C30.6382979,22.2344539 29.7238156,23.1489362 28.5957447,23.1489362 L5.44680851,23.1489362 C4.31873753,23.1489362 3.40425532,22.2344539 3.40425532,21.106383 L3.40425532,6.80851064 Z M3.40425532,8.85106383 L3.40425532,11.6902128 L30.6382979,11.6902128 L30.6382979,8.85106383 L3.40425532,8.85106383 Z" id="Shape" fill="#6772E5" transform="translate(17.021277, 13.957447) rotate(8.000000) translate(-17.021277, -13.957447) "></path><rect id="Rectangle-path" fill="#87BBFD" x="0" y="0" width="27.2340426" height="18.3829787" rx="3"></rect><path d="M2.72340426,3.40425532 C2.72340426,3.02823166 3.02823166,2.72340426 3.40425532,2.72340426 L7.4893617,2.72340426 C7.86538533,2.72340426 8.17021277,3.02823166 8.17021277,3.40425532 L8.17021277,7.4893617 C8.17021277,7.86538533 7.86538533,8.17021277 7.4893617,8.17021277 L3.40425532,8.17021277 C3.02823166,8.17021277 2.72340426,7.86538533 2.72340426,7.4893617 L2.72340426,3.40425532 Z" id="Shape" fill="#32325D"></path><path d="M19.7446809,13.6170213 C19.7446809,13.2409977 20.0495083,12.9361702 20.4255319,12.9361702 L23.1489362,12.9361702 C23.5249598,12.9361702 23.8297872,13.2409977 23.8297872,13.6170213 C23.8297872,13.9930449 23.5249598,14.2978723 23.1489362,14.2978723 L20.4255319,14.2978723 C20.0495083,14.2978723 19.7446809,13.9930449 19.7446809,13.6170213 Z M14.2978723,13.6170213 C14.2978723,13.2409977 14.6026998,12.9361702 14.9787234,12.9361702 L17.7021277,12.9361702 C18.0781513,12.9361702 18.3829787,13.2409977 18.3829787,13.6170213 C18.3829787,13.9930449 18.0781513,14.2978723 17.7021277,14.2978723 L14.9787234,14.2978723 C14.6026998,14.2978723 14.2978723,13.9930449 14.2978723,13.6170213 Z M8.85106383,13.6170213 C8.85106383,13.2409977 9.15589127,12.9361702 9.53191489,12.9361702 L12.2553191,12.9361702 C12.6313428,12.9361702 12.9361702,13.2409977 12.9361702,13.6170213 C12.9361702,13.9930449 12.6313428,14.2978723 12.2553191,14.2978723 L9.53191489,14.2978723 C9.15589127,14.2978723 8.85106383,13.9930449 8.85106383,13.6170213 Z M3.40425532,13.6170213 C3.40425532,13.2409977 3.70908272,12.9361702 4.08510638,12.9361702 L6.80851064,12.9361702 C7.18453426,12.9361702 7.4893617,13.2409977 7.4893617,13.6170213 C7.4893617,13.9930449 7.18453426,14.2978723 6.80851064,14.2978723 L4.08510638,14.2978723 C3.70908272,14.2978723 3.40425532,13.9930449 3.40425532,13.6170213 Z" id="Shape" fill="#32325D"></path></g></g></svg>
-            </div>
-            <div styleName="checklist-content">
-              <h3>Automated card management</h3>
-              <ul>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Tokenization service</span></li>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Batch card account updater</span></li>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Synchronous card account updater</span></li>
-              </ul>
-            </div>
-          </div>
-
-          <div styleName="intelligent-checklist">
-            <div styleName="checklist-icon">
-              <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><title>messaging</title><desc>Created with Sketch.</desc><g id="messaging" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="community" transform="translate(0.000000, 3.000000)" fill-rule="nonzero"><path d="M17.8,23.6333333 C14.3067265,26.5704238 9.33438433,26.9667117 5.42,24.62 L0.453333333,26.2666667 C0.106666667,26.3866667 -0.08,26.2 0.0333333333,25.8466667 L1.69333333,20.88 C-0.225789844,17.6534796 -0.320893953,13.6590646 1.44249948,10.3448661 C3.2058929,7.03066762 6.57181323,4.87776807 10.32,4.66666667 C8.06820948,8.05068306 7.61480492,12.3224081 9.10606189,16.1037148 C10.5973189,19.8850215 13.8444953,22.6973258 17.8,23.6333333 L17.8,23.6333333 Z" id="Shape" fill="#6772E5"></path><path d="M29.9666667,16.9 C32.7381441,12.2454542 31.6093933,6.25550932 27.3339384,2.92889404 C23.0584835,-0.397721243 16.9748588,-0.019529756 13.1443312,3.81099787 C9.31380358,7.6415255 8.93561209,13.7251502 12.2622274,18.0006051 C15.5888427,22.27606 21.5787875,23.4048108 26.2333333,20.6333333 L31.2066667,22.2933333 C31.5533333,22.4066667 31.74,22.22 31.6266667,21.8733333 L29.9666667,16.9 L29.9666667,16.9 Z" id="Shape" fill="#87BBFD"></path><path d="M16.5266667,13.0533333 C16.1003297,13.0533333 15.7063781,12.8258853 15.4932096,12.4566667 C15.2800412,12.0874481 15.2800412,11.6325519 15.4932096,11.2633333 C15.7063781,10.8941147 16.1003297,10.6666667 16.5266667,10.6666667 C17.1857264,10.6666667 17.7199999,11.2009402 17.7199999,11.86 C17.7199999,12.5190598 17.1857264,13.0533333 16.5266667,13.0533333 Z M20.5266667,13.0533333 C20.1003297,13.0533333 19.7063781,12.8258853 19.4932096,12.4566667 C19.2800412,12.0874481 19.2800412,11.6325519 19.4932096,11.2633333 C19.7063781,10.8941147 20.1003297,10.6666667 20.5266667,10.6666667 C21.1857264,10.6666667 21.7199999,11.2009402 21.7199999,11.86 C21.7199999,12.5190598 21.1857264,13.0533333 20.5266667,13.0533333 Z M24.5266667,13.0533333 C24.1003297,13.0533333 23.7063781,12.8258853 23.4932096,12.4566667 C23.2800412,12.0874481 23.2800412,11.6325519 23.4932096,11.2633333 C23.7063781,10.8941147 24.1003297,10.6666667 24.5266667,10.6666667 C25.1857264,10.6666667 25.7199999,11.2009402 25.7199999,11.86 C25.7199999,12.5190598 25.1857264,13.0533333 24.5266667,13.0533333 Z" id="Dots" fill="#32325d"></path></g></g></svg>
-            </div>
-
-            <div styleName="checklist-content">
-              <h3>Smart network messaging</h3>
-              <ul>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>BIN level formatting</span></li>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Stored credentials optimization</span></li>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Issuer data sharing</span></li>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Incrementals</span></li>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Overcaptures</span></li>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Partials</span></li>
-              </ul>
-            </div>
-          </div>
-          <div styleName="intelligent-checklist">
-            <div styleName="checklist-icon">
-              <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><title>machine-learning</title><desc>Created with Sketch.</desc><g id="machine-learning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="fast" fill-rule="nonzero"><path d="M25.7333333,4.13259253 C30.0832476,7.71361027 32.1763291,13.3538852 31.2155598,18.9056745 C30.2547904,24.4574638 26.3880315,29.0663538 21.0876942,30.9773396 C15.7873569,32.8883253 9.86915665,31.8073084 5.58666667,28.1459259 C-0.949371135,22.557837 -1.76240998,12.7470442 3.76459105,6.15926868 C9.29159208,-0.428506868 19.094391,-1.33284169 25.7333333,4.13259253 Z M24.4333333,9.39259253 C24.6066667,9.18592586 24.6933333,8.9192592 24.66,8.64592586 C24.6333333,8.3792592 24.5,8.1192592 24.2933333,7.94592586 C24.0868883,7.76638677 23.8173209,7.67667482 23.5444606,7.69670127 C23.2716002,7.71672771 23.0180196,7.84483585 22.84,8.05259253 C22.48,8.4792592 22.5466667,9.1192592 22.9866667,9.49259253 C23.4266667,9.86592586 24.0733333,9.8192592 24.44,9.39259253 L24.4333333,9.39259253 Z M25.4,22.6792592 C25.0143449,22.3486684 24.4684984,22.2804376 24.0133333,22.5059259 C23.5633169,22.7340169 23.3027092,23.2180027 23.36,23.7192592 C23.4133333,24.2192592 23.7666667,24.6525925 24.2533333,24.8125925 C24.74,24.9659259 25.2666667,24.8125925 25.5866667,24.4325925 C26.02,23.9125925 25.94,23.1259259 25.4,22.6792592 Z M27.3333333,12.8592592 C27.1333333,12.3259259 26.54,12.0392592 26.0133333,12.2259259 C25.7592567,12.315942 25.5522797,12.5047176 25.4393221,12.7494591 C25.3263645,12.9942007 25.3169934,13.274179 25.4133333,13.5259259 C25.6133333,14.0592592 26.2133333,14.3459259 26.74,14.1592592 C26.9940766,14.0692431 27.2010536,13.8804674 27.3140112,13.6357259 C27.4269689,13.3909844 27.4363399,13.111006 27.34,12.8592592 L27.3333333,12.8592592 Z M26.7333333,20.1259259 C27.1411853,20.2094214 27.5581002,20.0315023 27.78,19.6792592 C28,19.3325925 27.98,18.8792592 27.74,18.5459259 C27.5,18.1992592 27.0733333,18.0259259 26.6733333,18.1125925 C26.26,18.1925925 25.9533333,18.5125925 25.8866667,18.9259259 C25.8,19.4792592 26.18,20.0125925 26.74,20.1259259 L26.7333333,20.1259259 Z M13.36,4.5392592 C13.0933333,4.31259253 12.7066667,4.3192592 12.46,4.5392592 C12.2066667,4.77259253 12.1666667,5.15259253 12.3666667,5.4392592 C12.5666667,5.7192592 12.9466667,5.8192592 13.2466667,5.66592586 C13.5510073,5.51109049 13.6891552,5.1513303 13.5666667,4.83259253 C13.5265881,4.71911398 13.4576617,4.61802194 13.3666667,4.5392592 L13.36,4.5392592 Z M19.2666667,5.3792592 C19.3272191,5.00275693 19.0752652,4.64705727 18.7,4.5792592 C18.4268887,4.52302775 18.1476333,4.64270866 18,4.8792592 C17.8533333,5.10592586 17.8666667,5.41259253 18.0266667,5.6392592 C18.1933333,5.86592586 18.4733333,5.97259253 18.74,5.9192592 C19.0066667,5.86592586 19.22,5.65259253 19.26,5.38592586 L19.26,5.3792592 L19.2666667,5.3792592 Z M7.58666667,6.36592586 L7.3,6.62592586 C4.57289182,9.14129192 3.09661997,12.7331467 3.26666667,16.4392592 C3.32,16.9725925 3.33333333,17.5525925 3.44666667,18.0792592 L3.6,18.8925925 L3.83333333,19.6925925 C3.9,19.9659259 4,20.2259259 4.11333333,20.4925925 C4.22,20.7592592 4.31333333,21.0259259 4.43333333,21.2792592 C4.7,21.7792592 4.93333333,22.3059259 5.26,22.7725925 C6.46162405,24.6921542 8.15295824,26.256926 10.16,27.3059259 C10.64,27.5525925 11.1266667,27.7592592 11.6133333,27.9592592 C12.1066667,28.1059259 12.58,28.3192592 13.08,28.4059259 C13.56,28.5125925 14.0333333,28.6392592 14.5,28.6725925 C14.96,28.7325925 15.4266667,28.7925925 15.8333333,28.7992592 C17.7920855,28.8600336 19.7396291,28.481914 21.5333333,27.6925925 C21.9025078,27.5377774 22.1610462,27.1977702 22.2115596,26.8006482 C22.262073,26.4035262 22.0968873,26.0096217 21.7782263,25.7673148 C21.4595652,25.5250079 21.0358411,25.4711108 20.6666667,25.6259259 L20.6333333,25.6459259 L20.5933333,25.6592592 L20.28,25.8059259 C19.5075094,26.1452463 18.7005991,26.4000601 17.8733333,26.5659259 C17.2933333,26.6725925 16.6066667,26.7525925 15.8866667,26.7592592 C15.4933333,26.7659259 15.1333333,26.7259259 14.7266667,26.6925925 C14.3266667,26.6792592 13.9266667,26.5859259 13.5066667,26.5125925 C13.0866667,26.4525925 12.68,26.2859259 12.2466667,26.1792592 C11.8333333,26.0192592 11.4066667,25.8592592 10.9866667,25.6592592 C9.21649424,24.8146151 7.702601,23.5146915 6.6,21.8925925 C6.29333333,21.4925925 6.08,21.0392592 5.82666667,20.6059259 C5.71333333,20.3859259 5.62666667,20.1525925 5.52,19.9259259 C5.41256505,19.7023817 5.32338545,19.4705147 5.25333333,19.2325925 L5.01333333,18.5259259 L4.84666667,17.8125925 C4.71333333,17.3325925 4.71333333,16.8792592 4.64,16.4192592 C4.60666667,15.9525925 4.60666667,15.3925925 4.60666667,14.9925925 C4.65486976,13.7196196 4.9186091,12.46404 5.38666667,11.2792592 C6.0153709,9.6801763 6.99500834,8.24261532 8.25333333,7.07259253 C8.42925553,6.88496638 8.42880792,6.59284388 8.25231156,6.40575773 C8.07581519,6.21867158 7.78421396,6.20122231 7.58666667,6.36592586 Z" id="Base" fill="#87BBFD" transform="translate(15.771793, 16.232963) scale(-1, 1) rotate(-180.000000) translate(-15.771793, -16.232963) "></path><path d="M16.8666667,10.5333333 L16.1533333,14.9266667 L19.2466667,15.06 L19.3466667,15.06 C19.6,15.1066667 19.8133333,15.26 19.9333333,15.4866667 C20.0466667,15.72 20.0466667,15.9866667 19.9333333,16.22 L16.0533333,23.66 C15.9188866,23.922199 15.6139451,24.0479665 15.3337504,23.9567789 C15.0535558,23.8655913 14.8810437,23.5844395 14.9266667,23.2933333 L15.6466667,18.8933333 L12.5466667,18.7466667 L12.4533333,18.7466667 C12.2,18.7 11.9866667,18.5466667 11.8666667,18.32 C11.7491338,18.0896835 11.7491338,17.8169832 11.8666667,17.5866667 L15.74,10.16 C15.8676049,9.8848773 16.1804472,9.74823337 16.4689962,9.84158746 C16.7575452,9.93494155 16.9310629,10.2289372 16.8733333,10.5266667 L16.8666667,10.5333333 Z" id="Lightning-Bolt" fill="#6772E5"></path></g></g></svg>
-            </div>
-            <div styleName="checklist-content">
-              <h3>Machine-learning powered retries</h3>
-              <ul>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>ISO message adjustment</span></li>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Data healing</span></li>
-                <li><span styleName="check-icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g fill="none" fill-rule="evenodd"><path fill="#24b47e" d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"></path><path fill="#fff" d="M17.0468285,6.28269446 L9.74682854,13.7526945 L7.76682854,11.5126945 C6.89682854,10.7626945 5.53682854,11.6426945 6.15682854,12.7626945 L8.50682854,16.7426945 C8.87682854,17.2426945 9.74682854,17.7426945 10.6068285,16.7426945 C10.9768285,16.2426945 18.0368285,7.40269446 18.0368285,7.40269446 C18.9068285,6.40269446 17.7868285,5.53269446 17.0468285,6.28269446 Z"></path></g></svg></span><span>Smart dunning for subscriptions</span></li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </StyledContentWrapper>
 )

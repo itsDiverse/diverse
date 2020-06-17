@@ -1,13 +1,15 @@
 import React from "react"
-import style from "./Module8.module.css"
+//import style from "./Module8.module.css"
 import AnimatedModule from "../AnimatedModule"
 
+import { StyledContentWrapper } from "./Module8.styles"
+
 export default props => (
-  <>
-    <div className={"contentWrapper"}>
-      <section className={style.oneTimeToLifetimeCustomer}>
-        <div className={"containerLg"}>
-          <div className={style.textCenter}>
+  <StyledContentWrapper theme={props.theme}>
+    <div className="content-wrapper">
+      <section className="one-time-to-lifetime-customer">
+        <div className="container-lg">
+          <div className="text-center lifetime-customer-intro">
             <svg
               width="72"
               height="72"
@@ -26,35 +28,30 @@ export default props => (
                 ></path>
               </g>
             </svg>
-            <h2 className={style.sectionTitle}>
+            <h2 className="section-title">
               From one-time order to lifetime customer
             </h2>
-            <p className={style.sectionDesc}>
+            <p className="section-desc">
               Automate every part of recurring relationships—from managing
               customer events to retrying failed payments at the ideal time.
             </p>
           </div>
         </div>
-        <div className={style.onetimeLifetimeFirstSection}>
-          <div className={style.onetimeLifetimeFirstSectionLeft}>
-            <div className={style.onetimeLifetimeLeftSection}>
-              <div className={style.onetimeLifetimeLeftContent}>
+        <div className="container-lg onetime-lifetime-first-section">
+          <div className="onetime-lifetime-first-section-left">
+            <div className="onetime-lifetime-left-section">
+              <div className="onetime-lifetime-left-content">
                 <span>
-                  "We recovered{" "}
-                  <span
-                    className={style.medium}
-                    style={{ color: props.textColor1 }}
-                  >
-                    12% of revenue
-                  </span>{" "}
+                  “We recovered{" "}
+                  <span className="medium color-green">12% of revenue</span>{" "}
                   through{" "}
-                  <span className={style.medium}>
+                  <span className="medium">
                     <b>Stripe Billing’s automatic card updater</b>
                   </span>{" "}
-                  in 2017."
+                  in 2017.”
                 </span>
               </div>
-              <div className={style.onetimeLifetimeLeftFooter}>
+              <div className="onetime-lifetime-left-footer">
                 <svg
                   width="166"
                   height="39"
@@ -67,7 +64,7 @@ export default props => (
                   </g>
                 </svg>
               </div>
-              <div className={style.onetimeLifetimeLeftQuotes}>
+              <div className="onetime-lifetime-left-quotes">
                 <svg
                   width="19"
                   height="14"
@@ -83,20 +80,17 @@ export default props => (
               </div>
             </div>
           </div>
-          <div className={style.onetimeLifetimeFirstSectionRight}>
-            <h4
-              className={style.uppercaseTitle}
-              style={{ color: props.textColor2 }}
-            >
+          <div className="onetime-lifetime-first-section-right">
+            <h4 className="color-slate UppercaseTitle">
               Reduce declined payments by up to 45%
             </h4>
-            <p className={style.titleDesc}>
+            <p className="title-desc">
               Nearly a quarter of churn is caused by missed payments or declined
               cards. In 2017, Stripe’s recovery tools reduced payment declines
               for users by 45% on average and increased revenue by 10% on
               average.
             </p>
-            <ul className={style.onetimeLifetimeList}>
+            <ul className="onetime-lifetime-list">
               <li>
                 <div>
                   <svg
@@ -116,8 +110,8 @@ export default props => (
                   </svg>
                 </div>
                 <div>
-                  <h5 className={style.titleH5}>Smart retry logic</h5>
-                  <p className={style.textDesc}>
+                  <h5 className="title-h5">Smart retry logic</h5>
+                  <p className="text-desc">
                     Stripe uses machine learning algorithms that train on data
                     from across the Stripe network to optimize retry logic and
                     minimize failed payments.
@@ -142,10 +136,10 @@ export default props => (
                   </svg>
                 </div>
                 <div>
-                  <h5 className={style.titleH5}>
+                  <h5 className="title-h5">
                     Payment reminders and overdue notices
                   </h5>
-                  <p className={style.textDesc}>
+                  <p className="text-desc">
                     Maximize your chances of getting paid with prebuilt email
                     reminders for missed or overdue payments.
                   </p>
@@ -154,20 +148,17 @@ export default props => (
             </ul>
           </div>
         </div>
-        <div className={style.onetimeLifetimeSecondSection}>
+        <div className="container-lg onetime-lifetime-second-section">
           <div>
-            <h4
-              className={style.uppercaseTitle}
-              style={{ color: props.textColor2 }}
-            >
+            <h4 className="color-slate UppercaseTitle">
               Optimize the customer lifecycle
             </h4>
-            <p className={style.titleDesc}>
+            <p className="title-desc">
               Use Stripe as a system of record for the customer lifecycle:
               manage important events such as automatically provisioning
               services for new subscribers or sending reminders for renewals.
             </p>
-            <ul className={style.onetimeLifetimeList}>
+            <ul className="onetime-lifetime-list">
               <li>
                 <div>
                   <svg
@@ -186,8 +177,8 @@ export default props => (
                   </svg>
                 </div>
                 <div>
-                  <h5 className={style.titleH5}>Webhooks</h5>
-                  <p className={style.textDesc}>
+                  <h5 className="title-h5">Webhooks</h5>
+                  <p className="text-desc">
                     Automatically notify other systems of lifecycle events,
                     including new subscriptions, payments, or cancellations.
                   </p>
@@ -211,8 +202,8 @@ export default props => (
                   </svg>
                 </div>
                 <div>
-                  <h5 className={style.titleH5}>Billing proration</h5>
-                  <p className={style.textDesc}>
+                  <h5 className="title-h5">Billing proration</h5>
+                  <p className="text-desc">
                     Stripe automatically prorates billing when any plan changes
                     occur.
                   </p>
@@ -237,8 +228,8 @@ export default props => (
                   </svg>
                 </div>
                 <div>
-                  <h5 className={style.titleH5}>Renewal rules</h5>
-                  <p className={style.textDesc}>
+                  <h5 className="title-h5">Renewal rules</h5>
+                  <p className="text-desc">
                     Configure rules to automatically or manually renew
                     customers’ subscriptions.
                   </p>
@@ -247,12 +238,11 @@ export default props => (
             </ul>
           </div>
           <div>
-            {/* <div id="target" className={style.notifications}>  */}
             <AnimatedModule />
-            {/* </div> */}
+            <div id="target" className="notifications"></div>
           </div>
         </div>
       </section>
     </div>
-  </>
+  </StyledContentWrapper>
 )

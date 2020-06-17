@@ -9,7 +9,7 @@ export const StyledContentWrapper = styled.div`
         flex-grow: 1;
         font-size: 20px;
       }
-      .container-lg {
+      .containerLg {
         max-width: 1040px;
         margin: 0 auto;
         padding: 0px;

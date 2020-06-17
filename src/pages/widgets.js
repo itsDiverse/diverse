@@ -25,6 +25,10 @@ import { Module20 } from "../components/widgets/Module20"
 import { Module21 } from "../components/widgets/Module21"
 import { Module22 } from "../components/widgets/Module22"
 
+//import images
+import lyftImg from "../images/Module11/lyft.jpg"
+import lyftVertImg from "../images/Module11/lyft-vert.svg"
+
 export default () => (
   <>
     <h1>ContentHeader</h1>
@@ -51,52 +55,46 @@ export default () => (
     <Module2 />
     <hr></hr>
     <h1>Module3</h1>
-    <Module3 />
+    <Module3 theme={{ containerLg: { opacity: 0.2 } }}></Module3>
     <hr></hr>
     <h1>Module4</h1>
     <Module4 />
     <hr></hr>
     <h1>Module5</h1>
-    <Module5
-      image1="https://picsum.photos/200/300"
-      image2="https://picsum.photos/200/300"
-      image3="https://picsum.photos/200/300"
-      image4="https://picsum.photos/200/300"
-      image5="https://picsum.photos/200/300"
-      image6="https://picsum.photos/200/300"
-      image7="https://picsum.photos/200/300"
-    ></Module5>
+    <Module5 theme={{ containerLg: { opacity: 0.1 } }}></Module5>
     <hr></hr>
     <h1>Module6</h1>
-    <Module6 />
+    <Module6 theme={{ containerLg: { opacity: 0.1 } }}></Module6>
     <hr></hr>
     <h1>Module7</h1>
-    <Module7 />
+    <Module7 theme={{ containerLg: { opacity: 0.1 } }}></Module7>
     <hr></hr>
     <h1>Module8</h1>
-    <Module8 />
+    <Module8 theme={{ containerLg: { opacity: 0.9 } }}></Module8>
     <hr></hr>
     <h1>Module9</h1>
-    <Module9 />
+    <Module9 theme={{ containerLg: { opacity: 0.1 } }}></Module9>
     <hr></hr>
     <h1>Module10</h1>
-    <Module10 />
+    <Module10 theme={{ containerLg: { opacity: 0.1 } }}></Module10>
     <hr></hr>
     <h1>Module11</h1>
-    <Module11 />
+    <Module11 theme={{ containerLg: { opacity: 0.1 } }}></Module11>
     <hr></hr>
     <h1>Module11a</h1>
-    <Module11a />
+    <Module11a
+      theme={{ containerLg: { opacity: 0.1 } }}
+      images={{ img1: lyftImg, img2: lyftVertImg }}
+    ></Module11a>
     <hr></hr>
     <h1>Module12</h1>
-    <Module12 />
+    <Module12 theme={{ containerXl: { opacity: 0.9 } }}></Module12>
     <hr></hr>
-
     <h1>Module14</h1>
-    <Module14 />
+    <Module14 theme={{ containerLg: { opacity: 0.1 } }}></Module14>
     <hr></hr>
     <h1>Module15</h1>
-    <Module15 />
+    <Module15 theme={{ containerXl: { opacity: 0.1 } }}></Module15>
     <hr></hr>
     <h1>Module16</h1>
     <Module16 />
@@ -105,16 +103,16 @@ export default () => (
     <Module17 />
     <hr></hr>
     <h1>Module18</h1>
-    <Module18 />
+    <Module18 theme={{ containerLg: { opacity: 0.1 } }}></Module18>
     <hr></hr>
     <h1>Module19</h1>
     <Module19 />
     <hr></hr>
     <h1>Module20</h1>
-    <Module20 />
+    <Module20 theme={{ containerLg: { opacity: 0.1 } }}></Module20>
     <hr></hr>
     <h1>Module21</h1>
-    <Module21 />
+    <Module21 theme={{ containerLg: { opacity: 0.1 } }}></Module21>
     <hr></hr>
     <h1>Module22</h1>
     <Module22 />

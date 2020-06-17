@@ -1,61 +1,63 @@
 import React from "react"
-import "./Module6.module.css"
+//import "./Module6.module.css"
+
+import { StyledContentWrapper } from "./Module6.styles.js"
 
 export default props => (
-  <>
-    <div styleName="content-wrapper">
-      <div styleName="process-section">
-        <div styleName="container-lg">
-          <div styleName="process-content-section">
-            <div styleName="process-content-title">
-              <h2 styleName="section-title uppertext">What’s the process?</h2>
-              <p styleName="section-desc">
+  <StyledContentWrapper theme={props.theme}>
+    <div className="content-wrapper">
+      <div className="process-section">
+        <div className="container-lg">
+          <div className="process-content-section">
+            <div className="process-content-title">
+              <h2 className="section-title uppertext">What’s the process?</h2>
+              <p className="section-desc">
                 With Stripe Atlas, your company can be set up within days. We
                 help with all the paperwork.
               </p>
             </div>
           </div>
-          <ul styleName="timeline">
-            <li styleName="line"></li>
-            <li styleName="timeline-step">
-              <div styleName="icon-container submit">
-                <figure styleName="icon submit"></figure>
+          <ul className="timeline">
+            <li className="line"></li>
+            <li className="timeline-step">
+              <div className="icon-container submit">
+                <figure className="icon submit"></figure>
               </div>
               <p>
                 Submit your application
-                <span styleName="step-no">Step 1</span>
+                <span className="step-no">Step 1</span>
               </p>
             </li>
-            <li styleName="timeline-step sign-documents">
-              <div styleName="icon-container documents-bank-account">
-                <figure styleName="icon documents"></figure>
+            <li className="timeline-step sign-documents">
+              <div className="icon-container documents-bank-account">
+                <figure className="icon documents"></figure>
               </div>
               <p>
                 Sign documents and access your bank account
-                <span styleName="step-no">Step 2</span>
+                <span className="step-no">Step 2</span>
               </p>
             </li>
-            <li styleName="timeline-step">
-              <div styleName="icon-container incorporation">
-                <figure styleName="icon incorporation"></figure>
+            <li className="timeline-step">
+              <div className="icon-container incorporation">
+                <figure className="icon incorporation"></figure>
               </div>
               <p>
                 Your company is formed in Delaware - USA
-                <span styleName="step-no">Step 3</span>
+                <span className="step-no">Step 3</span>
               </p>
             </li>
-            <li styleName="timeline-step">
-              <div styleName="icon-container tax-id">
-                <figure styleName="icon tax-id"></figure>
+            <li className="timeline-step">
+              <div className="icon-container tax-id">
+                <figure className="icon tax-id"></figure>
               </div>
               <p>
                 Receive a tax ID number from the IRS
-                <span styleName="step-no">Step 4</span>
+                <span className="step-no">Step 4</span>
               </p>
             </li>
           </ul>
         </div>
       </div>
     </div>
-  </>
+  </StyledContentWrapper>
 )
