@@ -79,7 +79,7 @@ export const StyledContentWrapper = styled.div`
       }
       .marketplaces-gallery-photo {
         background-color: #a19273;
-        background-image: url(${props.images.img1});
+        background-image: url(${props.images.background});
         width: 100%;
         min-height: 370px;
         background-size: cover;
@@ -145,7 +145,7 @@ export const StyledContentWrapper = styled.div`
         display: block;
         width: 100%;
         height: 95px;
-        background: url(${props.images.img2});
+        background: url(${props.images.backgroundAfter});
         background-size: 100% 100%;
         position: absolute;
         top: -95px;
@@ -218,7 +218,7 @@ export const StyledContentWrapper = styled.div`
         .marketplaces-quote:after {
           width: 206px;
           height: 100%;
-          background: url();
+          background: url(${props.images.backgroundAfter2});
           background-size: 100% 100%;
           left: auto;
           right: -80px;

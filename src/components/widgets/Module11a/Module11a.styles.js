@@ -81,7 +81,7 @@ export const StyledContentWrapper = styled.div`
       }
       .marketplaces-gallery-photo {
         background-color: #a19273;
-        background-image: url(${charityWaterImg});
+        background-image: url(${props.images.m11aBanner});
         width: 100%;
         min-height: 370px;
         background-size: cover;
@@ -147,7 +147,7 @@ export const StyledContentWrapper = styled.div`
         display: block;
         width: 100%;
         height: 95px;
-        background: url(./images/charity-water-vert.svg);
+        background: url(${props.images.m11aBannerShadow});
         background-size: 100% 100%;
         position: absolute;
         top: -95px;
@@ -223,7 +223,7 @@ export const StyledContentWrapper = styled.div`
         .marketplaces-quote:after {
           width: 206px;
           height: 100%;
-          background: url(./images/charity-water.svg);
+          background: url(${props.images.m11aBannerShadow2});
           background-size: 100% 100%;
           z-index: -1;
           left: -129px;

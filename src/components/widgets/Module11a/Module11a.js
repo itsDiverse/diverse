@@ -1,18 +1,15 @@
 import React from "react"
 //import "./Module11a.module.css"
-import sharing from "./images/sharing.svg"
-import charityWater from "./images/charity-water.png"
-import route from "./images/route.svg"
 
 import { StyledContentWrapper } from "./Module11a.styles"
 
 export default props => (
-  <StyledContentWrapper theme={props.theme}>
+  <StyledContentWrapper theme={props.theme} images={props.images}>
     <div className="content-wrapper">
       <div className="container-lg">
         <div className="b2c-marketplaces">
           <div className="marketplaces-title-section">
-            <img src={sharing} />
+            <img src={props.images.m11aIcon1} />
             <h3>B2C marketplaces</h3>
             <p>
               Marketplaces connect consumers with what they want: rides, food,
@@ -33,7 +30,7 @@ export default props => (
                   <h2>
                     <a href="#">
                       <img
-                        src={charityWater}
+                        src={props.images.m11aBannerLogo}
                         width="237"
                         height="30"
                         alt="Lyft logo"
@@ -59,7 +56,7 @@ export default props => (
           <div className="marketplaces-gallery-bottom-content-left">
             <figure className="marketplaces-gallery-routing">
               <img
-                src={route}
+                src={props.images.m11aIcon2}
                 width="72"
                 height="72"
                 alt="3 arrows spreading"
