@@ -84,4 +84,24 @@ export const theme = {
       secondaryHoverOpacity: "",
     },
   },
+  //--------------------------------Module 6
+  module6: {
+    buttons: {
+      primary: "",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+      primaryHover: "",
+      primaryHoverOpacity: "",
+      secondaryHover: "",
+      secondaryHoverOpacity: "",
+    },
+
+    colors: {
+      primary: "#FFF",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+    },
+  },
 }

@@ -1,17 +1,15 @@
 import React from "react"
 //import "./Module7.module.css"
 import { StyledContentWrapper } from "./Module7.styles"
-import complianceImg from "./images/compliance.svg"
-import internationalImg from "./images/international-support.svg"
-import platformImg from "./images/platform-management.svg"
+import { data } from "../../../data"
 
 export default props => (
-  <StyledContentWrapper theme={props.theme}>
+  <StyledContentWrapper>
     <div className="content-wrapper">
       <div className="compliance-section">
         <div className="container-lg">
           <div className="compliance-title">
-            <img src={complianceImg} />
+            <img src={data.module7.images.complianceImg} />
             <h2 className="uppercase-text">COMPLIANCE</h2>
           </div>
           <div className="compliance-content-wrapper">
@@ -61,7 +59,7 @@ export default props => (
           </div>
           <div className="platform-management-section">
             <div className="platform-management-left-content">
-              <img src={platformImg} />
+              <img src={data.module7.images.platformImg} />
               <h2 className="uppercase-text">Platform management</h2>
               <p>
                 If you’re managing payouts for large numbers of people, you need
@@ -223,7 +221,7 @@ export default props => (
           </div>
           <div className="international-support">
             <div className="international-support-left-content">
-              <img src={internationalImg} />
+              <img src={data.module7.images.internationalImg} />
               <h2 className="uppercase-text">INTERNATIONAL SUPPORT</h2>
               <p className="common-BodyText">
                 Expanding internationally typically requires significant

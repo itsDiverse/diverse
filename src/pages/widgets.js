@@ -25,13 +25,6 @@ import { Module20 } from "../components/widgets/Module20"
 import { Module21 } from "../components/widgets/Module21"
 import { Module22 } from "../components/widgets/Module22"
 
-//import images Module6+++++++++++++++
-import m6Icon1 from "../images/Module6/submit.svg"
-import m6Icon2 from "../images/Module6/documents.svg"
-import m6Icon3 from "../images/Module6/incorporation.svg"
-import m6Icon4 from "../images/Module6/tax-id.svg"
-//++++++++++++++++++++++++++++++++++++
-
 //import images Module 11 ++++++++++
 import m11Banner from "../images/Module11/lyft.jpg"
 import m11BannerShadow from "../images/Module11/lyft-vert.svg"
@@ -71,37 +64,7 @@ export default () => (
     <Module5 />
     <hr></hr>
     <h1>Module6</h1>
-    <Module6
-      theme={{
-        buttons: {
-          primary: "",
-          primaryOpacity: "",
-          secondary: "",
-          secondaryOpacity: "",
-          primaryHover: "",
-          primaryHoverOpacity: "",
-          secondaryHover: "",
-          secondaryHoverOpacity: "",
-        },
-      }}
-      images={{
-        m6Icon1,
-        m6Icon2,
-        m6Icon3,
-        m6Icon4,
-      }}
-      colors={{
-        primary: "",
-        primaryOpacity: "",
-        secondary: "",
-        secondaryOpacity: "",
-      }}
-      title="WHAT'S THE PROCESSS"
-      subtitle=""
-      bodytext=""
-      background=""
-      line=""
-    ></Module6>
+    <Module6 />
     <hr></hr>
     <h1>Module7</h1>
     <Module7 theme={{ containerLg: { opacity: 1 } }}></Module7>

@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components"
-
+import { theme } from "../../../theme"
+import { data } from "../../../data"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
@@ -99,21 +100,21 @@ export const StyledContentWrapper = styled.div`
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: ${theme.module6.colors.primary};
         background-position: 50%;
         background-repeat: no-repeat;
       }
       .timeline .timeline-step .icon.submit {
-        background-image: url(${props.images.m6Icon1});
+        background-image: url(${data.module6.icons.m6Icon1});
       }
       .timeline .timeline-step .icon.documents {
-        background-image: url(${props.images.m6Icon2});
+        background-image: url(${data.module6.icons.m6Icon2});
       }
       .timeline .timeline-step .icon.incorporation {
-        background-image: url(${props.images.m6Icon3});
+        background-image: url(${data.module6.icons.m6Icon3});
       }
       .timeline .timeline-step .icon.tax-id {
-        background-image: url(${props.images.m6Icon4});
+        background-image: url(${data.module6.icons.m6Icon4});
       }
       .step-no {
       }

@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components"
 import LawerImg from "./images/lawyer-friendly-checkmark.svg"
 import dashboardImg from "./images/dashboard-chrome.svg"
-import flagIconsImg from "./images/flagicons.svg"
+import flagIconsImg from "./images/flagIcons.svg"
 
 export const StyledContentWrapper = styled.div`
   ${props =>

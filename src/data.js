@@ -24,6 +24,22 @@ import m1aLogo6 from "./images/Module1/shopify.svg"
 import m1aLogo7 from "./images/Module1/unicef.svg"
 //++++++++++++++++++++++++++++++++++++
 
+//import images Module 6 +++++++++++++
+import m6Icon1 from "./images/Module6/submit.svg"
+import m6Icon2 from "./images/Module6/documents.svg"
+import m6Icon3 from "./images/Module6/incorporation.svg"
+import m6Icon4 from "./images/Module6/tax-id.svg"
+//++++++++++++++++++++++++++++++++++++
+
+//import images Module 7 +++++++++++++
+import LawerImg from "./images/Module7/lawyer-friendly-checkmark.svg"
+import dashboardImg from "./images/Module7/dashboard-chrome.svg"
+import flagIconsImg from "./images/Module7/flagIcons.svg"
+import complianceImg from "./images/Module7/compliance.svg"
+import internationalImg from "./images/Module7/international-support.svg"
+import platformImg from "./images/Module7/platform-management.svg"
+//++++++++++++++++++++++++++++++++++++
+
 export const data = {
   //-------------------------------------Template
   title: "",
@@ -118,5 +134,35 @@ export const data = {
     subheading: "",
     bodytext: "",
     background: "",
+  },
+  //----------------------------------Module 6
+  module6: {
+    title: "WHAT'S THE PROCESSS",
+    subtitle:
+      "With Stripe Atlas, your company can be set up within days. We help with all the paperwork",
+    bodytext: "",
+    background: "",
+    line: "",
+    icons: {
+      m6Icon1,
+      m6Icon2,
+      m6Icon3,
+      m6Icon4,
+    },
+  },
+  //----------------------------------Module 7
+  module7: {
+    title: "",
+    bodytext: "",
+    background: "",
+
+    images: {
+      LawerImg,
+      dashboardImg,
+      flagIconsImg,
+      complianceImg,
+      internationalImg,
+      platformImg,
+    },
   },
 }
