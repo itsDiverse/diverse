@@ -28,13 +28,8 @@ export default props => (
                 ></path>
               </g>
             </svg>
-            <h2 className="section-title">
-              From one-time order to lifetime customer
-            </h2>
-            <p className="section-desc">
-              Automate every part of recurring relationships—from managing
-              customer events to retrying failed payments at the ideal time.
-            </p>
+            <h2 className="section-title">{props.data.title}</h2>
+            <p className="section-desc">{props.data.subtitle}</p>
           </div>
         </div>
         <div className="container-lg onetime-lifetime-first-section">

@@ -120,4 +120,13 @@ export const theme = {
       line: "",
     },
   },
+  //----------------------------------Module8
+  module8: {
+    colors: {
+      primary: "#32325d",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+    },
+  },
 }

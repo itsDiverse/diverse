@@ -3,6 +3,15 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      * {
+        font-family: Helvetica;
+        margin: 0px;
+        padding: 0px;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
       .one-time-to-lifetime-customer {
         background-color: #f6f9fc;
         padding: 140px 0;
@@ -12,7 +21,6 @@ export const StyledContentWrapper = styled.div`
         margin: 0 auto;
         padding: 0px;
         width: 100%;
-        opacity: ${props.theme.containerLg.opacity};
       }
       .text-center {
         text-align: center;
@@ -21,7 +29,7 @@ export const StyledContentWrapper = styled.div`
         margin: 25px 0 18px;
         font-size: 42px;
         line-height: 52px;
-        color: #32325d;
+        color: ${props.theme.colors.primary};
         font-weight: 400;
       }
       .section-desc {

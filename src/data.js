@@ -76,4 +76,14 @@ export const data = {
     bodytext: "",
     background: "",
   },
+  //----------------------------------Module 8
+  module8: {
+    title: "Lorem ipsum dolor sit amet",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    heading: "",
+    subheading: "",
+    bodytext: "",
+    background: "",
+  },
 }

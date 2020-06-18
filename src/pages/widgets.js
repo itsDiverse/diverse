@@ -71,7 +71,11 @@ export default () => (
     />
     <hr></hr>
     <h1>Module3</h1>
-    <Module3 theme={theme.module3} data={data.module3} />
+    <Module3
+      theme={theme.module3}
+      data={data.module3}
+      images={images.module3}
+    />
     <hr></hr>
     <h1>Module4</h1>
     <Module4
@@ -82,7 +86,11 @@ export default () => (
     />
     <hr></hr>
     <h1>Module5</h1>
-    <Module5 theme={theme.module5} data={data.module5} />
+    <Module5
+      theme={theme.module5}
+      data={data.module5}
+      images={images.module5}
+    />
     <hr></hr>
     <h1>Module6</h1>
     <Module6
@@ -99,7 +107,11 @@ export default () => (
     />
     <hr></hr>
     <h1>Module8</h1>
-    <Module8 theme={{ containerLg: { opacity: 1 } }}></Module8>
+    <Module8
+      theme={theme.module8}
+      data={data.module8}
+      images={images.module8}
+    />
     <hr></hr>
     <h1>Module9</h1>
     <Module9 theme={{ containerLg: { opacity: 1 } }}></Module9>
