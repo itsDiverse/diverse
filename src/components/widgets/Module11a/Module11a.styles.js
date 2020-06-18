@@ -1,7 +1,4 @@
 import styled, { css } from "styled-components"
-import charityWaterImg from "./images/charity-water.jpg"
-import lyftVertImg from "./images/lyft-vert.svg"
-import lyftSvg from "./images/lyft.svg"
 
 export const StyledContentWrapper = styled.div`
   ${props =>

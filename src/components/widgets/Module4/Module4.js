@@ -1,14 +1,19 @@
 import React, { useEffect } from "react"
-import style from "./Module4.module.css"
+//import style from "./Module4.module.css"
 import $ from "jquery"
+
+import { data } from "../../../data"
+import { StyledContentWrapper } from "./Module4.styles"
 
 export default props => {
   useEffect(() => {
     $(document).ready(function() {
-      $(".fraudteamsVideoToggle").on("click", function(e) {
-        $(".fraudteamsVideoToggle").toggleClass("fraudteamsVideoTogglePlaying")
-        $(".powerfulToolsSection").toggleClass("fraudteamsVideoPlaying")
-        $(".powerfulToolsWrapper").toggleClass("visible")
+      $(".fraudteams_video_toggle").on("click", function(e) {
+        $(".fraudteams_video_toggle").toggleClass(
+          "fraudteams_video_toggle--playing"
+        )
+        $(".powerfultoolssection").toggleClass("fraudteams--video-playing")
+        $(".powerful-tools-wrapper").toggleClass("visible")
         var video = document.getElementById("Video1")
         if (video.paused) {
           video.play()
@@ -17,131 +22,120 @@ export default props => {
         }
         e.preventDefault()
       })
-      $(".fraudteamsVideoToggle").hover(function() {
-        $(".HelmTooltip").toggleClass("HelmTooltipShown")
+      $(".fraudteams_video_toggle").hover(function() {
+        $(".Helm-Tooltip").toggleClass("Helm-Tooltip--shown")
       })
       $(document).click(function(e) {
         if ($(e.target).is(".visible")) {
           var video = document.getElementById("Video1")
           video.pause()
-          $(".fraudteamsVideo").addClass("video_plaing")
-          $(".powerfulToolsWrapper").toggleClass("visible")
-          $(".fraudTeamsVideoToggle").toggleClass(
-            "fraudTeamsVideoTogglePlaying"
+          $(".fraudteams_video").addClass("video_plaing")
+          $(".powerful-tools-wrapper").toggleClass("visible")
+          $(".fraudteams_video_toggle").toggleClass(
+            "fraudteams_video_toggle--playing"
           )
-          $(".powerfulToolsSection").toggleClass("fraudTeamsVideoPlaying")
+          $(".powerfultoolssection").toggleClass("fraudteams--video-playing")
         }
       })
     })
   }, [])
   return (
-    <div
-      className={[style.contentWrapper, style.powerfulToolsWrapper].join(" ")}
-    >
-      <div className={style.containerLg}>
-        <div className={style.powerfulToolsSection}>
-          <div className={style.powerfulToolsSection}>
-            <div className={style.powerfulTitleSection}>
-              <h2>Powerful tools for fraud professionals</h2>
-              <p>
-                Radar for Fraud Teams helps you fine-tune how Radar operates,
-                get fraud insights on suspicious charges, and assess your fraud
-                management performance from a unified dashboard.
-              </p>
-              <div className={style.powerfulToolsBtn}>
-                <a
-                  href="#"
-                  className={[
-                    style.commonButton,
-                    style.getStartedBtn,
-                    style.commonLink,
-                  ].join(" ")}
-                >
-                  Get Started
-                </a>
-                <a
-                  href="#"
-                  className={[
-                    style.commonButton,
-                    style.contactSalesBtn,
-                    style.commonLink,
-                  ].join(" ")}
-                >
-                  Contact Sales
-                </a>
+    <StyledContentWrapper title={props.title} colors={props.colors}>
+      <div className="content-wrapper powerful-tools-wrapper">
+        <div className="container-lg">
+          <div className="powerfultoolssection">
+            <div className="powerful-tools-section">
+              <div className="powerful-title-section">
+                <h2>Powerful tools for fraud professionals</h2>
+                <p>
+                  Radar for Fraud Teams helps you fine-tune how Radar operates,
+                  get fraud insights on suspicious charges, and assess your
+                  fraud management performance from a unified dashboard.
+                </p>
+                <div className="powerful-tools-btn">
+                  <a
+                    href="#"
+                    className="common-button get_started_btn common-Link"
+                  >
+                    Get Started
+                  </a>
+                  <a
+                    href="#"
+                    className="common-button contact_sales_btn common-Link"
+                  >
+                    Contact Sales
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className={style.fraudTeamsMedia}>
-              <div className={style.fraudteamsVideoContainer}>
-                <div className={style.fraudTeamsVideo}>
-                  <div className={style.fraudVideo}>
-                    <video
-                      muted=""
-                      playsinline=""
-                      autoplay=""
-                      webkit-playsinline=""
-                      loop=""
-                      id="demovideo"
-                      poster="images/video-poster.jpg"
-                      preload="metadata"
-                    >
-                      <source src="samplevideo.mp4" type="video/mp4" />
-                      <source src="samplevideo.mp4" type="video/ogg" />
-                    </video>
-                    <div className={style.actualVideo}>
+              <div className="fraud-teams-media">
+                <div className="fraudteams_video-container">
+                  <div className="fraudteams_video">
+                    <div className="fraud-Video">
                       <video
-                        className={style.jsActualVideo}
+                        muted=""
+                        playsinline=""
+                        autoplay=""
+                        webkit-playsinline=""
+                        loop=""
+                        id="demovideo"
+                        poster="images/video-poster.jpg"
+                        preload="metadata"
+                      >
+                        <source
+                          src={data.module4.video.sample}
+                          type="video/mp4"
+                        ></source>
+                        <source
+                          src={data.module4.video.sample}
+                          type="video/ogg"
+                        ></source>
+                      </video>
+                    </div>
+                    <div className="actualVideo">
+                      <video
+                        className="js-actual-video"
                         id="Video1"
                         poster=""
                         controls
-                        style={{ opacity: 0 }}
+                        className="opacity: 0"
                       >
-                        <source src="sample.mp4" type="video/webm" />
-                        <source src="sample.mp4" type="video/mp4" />
+                        <source
+                          src={data.module4.video.sample}
+                          type="video/webm"
+                        ></source>
+                        <source
+                          src={data.module4.video.sample}
+                          type="video/mp4"
+                        ></source>
                       </video>
                     </div>
-                    <div className={"fraudteamsVideoControls"}>
+                    <div className="fraudteams_video_controls">
                       <button
-                        className={[
-                          "fraudTeamsVideoToggle",
-                          "jsToggle",
-                          "playbuttonVisible",
-                        ].join(" ")}
+                        className="fraudteams_video_toggle js-toggle playbutton-visible"
                         data-play="Play video"
                         data-pause="Pause video"
                       >
-                        <div
-                          className={[
-                            style.jsPlayPulse,
-                            style.Hero__pulse,
-                          ].join(" ")}
-                        ></div>
-                        <div className={style.Hero__tooltipPlay}>
-                          <div className={style.HelmTooltip}>
-                            <div className={style.Tooltip}>
-                              <div className={style.Tooltip__icon}></div>
+                        <div className="js-play-pulse Hero__pulse"></div>
+                        <div className="Hero__tooltip--play">
+                          <div className="Helm-Tooltip">
+                            <div className="Tooltip">
+                              <div className="Tooltip__icon "></div>
                               <p
-                                className={[
-                                  style.commonBodyText,
-                                  style.Helm__textSlate1,
-                                  style.Tooltip__content,
-                                ].join(" ")}
+                                className-name="Tooltip__content"
+                                className="common-BodyText Helm__text--slate1 Tooltip__content"
                               >
                                 Hear from our cofounders and COO
                               </p>
-                              <div
-                                x-arrow=""
-                                className={style.Tooltip__arrow}
-                              ></div>
+                              <div x-arrow="" className="Tooltip__arrow"></div>
                             </div>
                           </div>
                         </div>
-                        <span className={style.video_controlsIcon}>
+                        <span className="video_controls-icon">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 32 32"
                             fill="#555abf"
-                            className={style.iconPlay}
+                            className="icon--play"
                           >
                             <path d="M7.74,31.44C5.67,32.69,4,31.74,4,29.32V2.67C4,.25,5.68-.7,7.74.55L29.56,13.73c2.07,1.25,2.06,3.28,0,4.52Z"></path>
                           </svg>
@@ -155,6 +149,6 @@ export default props => {
           </div>
         </div>
       </div>
-    </div>
+    </StyledContentWrapper>
   )
 }

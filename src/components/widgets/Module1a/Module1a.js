@@ -1,39 +1,63 @@
 import React from "react"
-import style from "./Module1a.module.css"
+//import style from "./Module1a.module.css"
+import { data } from "../../../data"
+import { StyledContentWrapper } from "./Module1a.styles"
 
 export default props => (
-  <>
-    <div className={"contentWrapper"}>
-      <section className={["containerLg", style.logoSection].join(" ")}>
+  <StyledContentWrapper>
+    <div className="content-wrapper">
+      <section className="container-lg logo-section">
         <ul>
-          <li>
-            <img src={props.image1} alt={props.image1alt} />
+          <li title="Logo1">
+            <img
+              src={data.module1a.images.m1aLogo1}
+              alt={data.module1a.imagesAlt.logo1Alt}
+            />
           </li>
-          <li>
-            <img src={props.image2} alt={props.image2alt} />
+          <li title="Logo2">
+            <img
+              src={data.module1a.images.m1aLogo2}
+              alt={data.module1a.imagesAlt.logo2Alt}
+            />
           </li>
-          <li>
-            <img src={props.image3} alt={props.image3alt} />
+          <li title="Logo3">
+            <img
+              src={data.module1a.images.m1aLogo3}
+              alt={data.module1a.imagesAlt.logo3Alt}
+            />
           </li>
-          <li>
-            <img src={props.image4} alt={props.image4alt} />
+          <li title="Logo4">
+            <img
+              src={data.module1a.images.m1aLogo4}
+              alt={data.module1a.imagesAlt.logo4Alt}
+            />
           </li>
-          <li>
-            <img src={props.image5} alt={props.image5alt} />
+          <li title="Logo5">
+            <img
+              src={data.module1a.images.m1aLogo5}
+              alt={data.module1a.imagesAlt.logo5Alt}
+            />
           </li>
-          <li>
-            <img src={props.image6} alt={props.image6alt} />
+          <li title="Logo6">
+            <img
+              src={data.module1a.images.m1aLogo6}
+              alt={data.module1a.imagesAlt.logo6Alt}
+            />
           </li>
-          <li>
-            <img src={props.image7} alt={props.image7alt} />
+          <li title="Logo7">
+            <img
+              src={data.module1a.images.m1aLogo7}
+              alt={data.module1a.imagesAlt.logo7Alt}
+            />
           </li>
         </ul>
         <a href="#">
-          <span className={[style.commonodyText, style.linkArrow].join(" ")}>
-            {props.text}
+          <span className="common-BodyText link-arrow">
+            Millions of tech-forward businesses use Stripe to power
+            theirpayments
           </span>
         </a>
       </section>
     </div>
-  </>
+  </StyledContentWrapper>
 )

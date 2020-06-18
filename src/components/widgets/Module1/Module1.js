@@ -1,40 +1,55 @@
 import React from "react"
 //import "./Module1.module.css"
-import amazon from "./images/amazon.svg"
-import booking from "./images/booking_com.svg"
-import docusign from "./images/docusign.svg"
-import instacart from "./images/instacart.svg"
-import peleton from "./images/peleton.svg"
-import shopify from "./images/shopify.svg"
-import unicef from "./images/unicef.svg"
 
+import { data } from "../../../data"
 import { StyledContentWrapper } from "./Module1.styles"
 
 export default props => (
-  <StyledContentWrapper theme={props.theme}>
+  <StyledContentWrapper>
     <div className="content-wrapper">
       <section className="container-lg logo-section">
         <ul>
           <li title="Amazon">
-            <img src={amazon} alt="Amazon" />
+            <img
+              src={data.module1.images.m1Logo1}
+              alt={data.module1.imagesAlt.logo1Alt}
+            />
           </li>
           <li title="Booking com">
-            <img src={booking} alt="Booking com" />
+            <img
+              src={data.module1.images.m1Logo2}
+              alt={data.module1.imagesAlt.logo2Alt}
+            />
           </li>
           <li title="Docusign">
-            <img src={docusign} alt="Docusign" />
+            <img
+              src={data.module1.images.m1Logo3}
+              alt={data.module1.imagesAlt.logo3Alt}
+            />
           </li>
           <li title="Instacart">
-            <img src={instacart} alt="Instacart" />
+            <img
+              src={data.module1.images.m1Logo4}
+              alt={data.module1.imagesAlt.logo4Alt}
+            />
           </li>
           <li title="Peleton">
-            <img src={peleton} alt="Peleton" />
+            <img
+              src={data.module1.images.m1Logo5}
+              alt={data.module1.imagesAlt.logo5Alt}
+            />
           </li>
           <li title="Shopify">
-            <img src={shopify} alt="Shopify" />
+            <img
+              src={data.module1.images.m1Logo6}
+              alt={data.module1.imagesAlt.logo6Alt}
+            />
           </li>
           <li title="Unicef">
-            <img src={unicef} alt="Unicef" />
+            <img
+              src={data.module1.images.m1Logo7}
+              alt={data.module1.imagesAlt.logo7Alt}
+            />
           </li>
         </ul>
       </section>

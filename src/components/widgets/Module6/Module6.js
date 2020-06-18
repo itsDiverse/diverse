@@ -4,13 +4,13 @@ import React from "react"
 import { StyledContentWrapper } from "./Module6.styles.js"
 
 export default props => (
-  <StyledContentWrapper theme={props.theme}>
+  <StyledContentWrapper theme={props.theme} images={props.images}>
     <div className="content-wrapper">
       <div className="process-section">
         <div className="container-lg">
           <div className="process-content-section">
             <div className="process-content-title">
-              <h2 className="section-title uppertext">What’s the process?</h2>
+              <h2 className="section-title uppertext">{props.title}</h2>
               <p className="section-desc">
                 With Stripe Atlas, your company can be set up within days. We
                 help with all the paperwork.

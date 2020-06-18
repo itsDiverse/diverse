@@ -1,7 +1,7 @@
 import React from "react"
-import { ContentHeader } from "../components/widgets/ContentHeader"
 import { QuadBox } from "../components/widgets/QuadBox"
 import { Module1 } from "../components/widgets/Module1"
+import { Module1a } from "../components/widgets/Module1a"
 import { Module2 } from "../components/widgets/Module2"
 import { Module3 } from "../components/widgets/Module3"
 import { Module4 } from "../components/widgets/Module4"
@@ -25,60 +25,83 @@ import { Module20 } from "../components/widgets/Module20"
 import { Module21 } from "../components/widgets/Module21"
 import { Module22 } from "../components/widgets/Module22"
 
+//import images Module6+++++++++++++++
+import m6Icon1 from "../images/Module6/submit.svg"
+import m6Icon2 from "../images/Module6/documents.svg"
+import m6Icon3 from "../images/Module6/incorporation.svg"
+import m6Icon4 from "../images/Module6/tax-id.svg"
+//++++++++++++++++++++++++++++++++++++
+
 //import images Module 11 ++++++++++
-import background from "../images/Module11/lyft.jpg"
-import backgroundAfter from "../images/Module11/lyft-vert.svg"
-import backgroundAfter2 from "../images/Module11/lyft.svg"
-import iconFirst from "../images/Module11/sharing.svg"
-import iconSecond from "../images/Module11/route.svg"
-import bannerLogo from "../images/Module11/lyft.png"
+import m11Banner from "../images/Module11/lyft.jpg"
+import m11BannerShadow from "../images/Module11/lyft-vert.svg"
+import m11BannerShadow2 from "../images/Module11/lyft.svg"
+import m11Icon1 from "../images/Module11/sharing.svg"
+import m11Icon2 from "../images/Module11/route.svg"
+import m11BannerLogo from "../images/Module11/lyft.png"
 //++++++++++++++++++++++++++++++++++
 
-//import images Module 11a +++++++++++
+//import images Module 11a ++++++++++
 import m11aIcon1 from "../images/Module11a/sharing.svg"
 import m11aBanner from "../images/Module11a/charity-water.jpg"
-import m11aBannerLogo from "../images/Module11a/lyft.svg"
+import m11aBannerLogo from "../images/Module11a/charity-water.png"
 import m11aBannerShadow2 from "../images/Module11a/charity-water.svg"
 import m11aBannerShadow from "../images/Module11a/charity-water-vert.svg"
 import m11aIcon2 from "../images/Module11a/route.svg"
+//import { theme } from "../theme"
 //++++++++++++++++++++++++++++++++++
 
 export default () => (
   <>
-    <h1>ContentHeader</h1>
-    <ContentHeader
-      heading="Hey how are you doing?"
-      descrition="this is a description that comes under the title"
-      button1title="button 1"
-      button2title="button 2"
-    />
-    <hr></hr>
     <h1>Module1</h1>
-    <Module1
-      theme={{ containerLg: { opacity: 1 } }}
-      image1="https://picsum.photos/200/300"
-      image2="https://picsum.photos/200/300"
-      image3="https://picsum.photos/200/300"
-      image4="https://picsum.photos/200/300"
-      image5="https://picsum.photos/200/300"
-      image6="https://picsum.photos/200/300"
-      image7="https://picsum.photos/200/300"
-    ></Module1>
+    <Module1 />
+    <hr></hr>
+    <Module1a />
     <hr></hr>
     <h1>Module2</h1>
     <Module2 />
     <hr></hr>
     <h1>Module3</h1>
-    <Module3 theme={{ containerLg: { opacity: 0.2 } }}></Module3>
+    <Module3 />
     <hr></hr>
     <h1>Module4</h1>
     <Module4 />
     <hr></hr>
     <h1>Module5</h1>
-    <Module5 theme={{ containerLg: { opacity: 1 } }}></Module5>
+    <Module5 />
     <hr></hr>
     <h1>Module6</h1>
-    <Module6 theme={{ containerLg: { opacity: 1 } }}></Module6>
+    <Module6
+      theme={{
+        buttons: {
+          primary: "",
+          primaryOpacity: "",
+          secondary: "",
+          secondaryOpacity: "",
+          primaryHover: "",
+          primaryHoverOpacity: "",
+          secondaryHover: "",
+          secondaryHoverOpacity: "",
+        },
+      }}
+      images={{
+        m6Icon1,
+        m6Icon2,
+        m6Icon3,
+        m6Icon4,
+      }}
+      colors={{
+        primary: "",
+        primaryOpacity: "",
+        secondary: "",
+        secondaryOpacity: "",
+      }}
+      title="WHAT'S THE PROCESSS"
+      subtitle=""
+      bodytext=""
+      background=""
+      line=""
+    ></Module6>
     <hr></hr>
     <h1>Module7</h1>
     <Module7 theme={{ containerLg: { opacity: 1 } }}></Module7>
@@ -96,12 +119,12 @@ export default () => (
     <Module11
       theme={{ containerLg: { opacity: 1 } }}
       images={{
-        iconFirst,
-        iconSecond,
-        background,
-        backgroundAfter,
-        backgroundAfter2,
-        bannerLogo,
+        m11Icon1,
+        m11Icon2,
+        m11Banner,
+        m11BannerShadow,
+        m11BannerShadow2,
+        m11BannerLogo,
       }}
     ></Module11>
     <hr></hr>
@@ -109,12 +132,12 @@ export default () => (
     <Module11a
       theme={{ containerLg: { opacity: 1 } }}
       images={{
-        banner: m11aBanner,
-        bannerLogo: m11aBannerLogo,
-        bannerShadow: m11aBannerShadow,
-        bannerShadow2: m11aBannerShadow2,
-        icon1: m11aIcon1,
-        icon2: m11aIcon2,
+        m11aIcon1,
+        m11aIcon2,
+        m11aBanner,
+        m11aBannerShadow,
+        m11aBannerShadow2,
+        m11aBannerLogo,
       }}
     ></Module11a>
     <hr></hr>

@@ -1,8 +1,4 @@
 import React from "react"
-//import style from "./Module11.module.css"
-//import sharing from "./images/sharing.svg"
-//import lyft from "./images/lyft.png"
-//import route from "./images/route.svg"
 
 import { StyledContentWrapper } from "./Module11.styles"
 
@@ -12,7 +8,7 @@ export default props => (
       <div className="container-lg">
         <div className="b2c-marketplaces">
           <div className="marketplaces-title-section">
-            <img src={props.images.iconFirst} />
+            <img src={props.images.m11Icon1} />
             <h3>B2C marketplaces</h3>
             <p>
               Marketplaces connect consumers with what they want: rides, food,
@@ -33,7 +29,7 @@ export default props => (
                   <h2>
                     <a href="#">
                       <img
-                        src={props.images.bannerLogo}
+                        src={props.images.m11BannerLogo}
                         width="64"
                         height="46"
                         alt="Lyft logo"
@@ -58,7 +54,7 @@ export default props => (
           <div className="marketplaces-gallery-bottom-content-left">
             <figure className="marketplaces-gallery-routing">
               <img
-                src={props.images.iconSecond}
+                src={props.images.m11Icon2}
                 width="72"
                 height="72"
                 alt="3 arrows spreading"

@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components"
+import { theme } from "../../../theme"
 
 export const StyledContentWrapper = styled.div`
   ${props =>
@@ -19,7 +20,7 @@ export const StyledContentWrapper = styled.div`
         margin: 0 auto;
         padding: 0px;
         width: 100%;
-        opacity: ${props.theme.containerLg.opacity};
+        opacity: 1;
       }
       .footer-with-card-section {
         padding: 1px;
@@ -81,7 +82,7 @@ export const StyledContentWrapper = styled.div`
       }
       .link-arrow:after {
         font: normal 16px StripeIcons;
-        content: "2192";
+        //content: "2192";
         padding-left: 5px;
       }
       .footer-cards-wrapper h3 {
@@ -92,7 +93,7 @@ export const StyledContentWrapper = styled.div`
         letter-spacing: 0.025em;
         margin: 0 0 5px;
         white-space: normal;
-        color: #217ab7;
+        color: ${theme.module5.colors.primary};
       }
       .footer-cards-wrapper p {
         font-weight: 400;
@@ -180,7 +181,7 @@ export const StyledContentWrapper = styled.div`
         cursor: pointer;
       }
       .get-in-touch-btn .btn-left {
-        background-color: #3ecf8e;
+        background-color: ${theme.module5.buttons.primary};
         color: #fff;
       }
       .get-in-touch-btn .btn-default:hover {

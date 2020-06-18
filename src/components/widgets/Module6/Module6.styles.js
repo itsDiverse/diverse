@@ -1,12 +1,15 @@
 import styled, { css } from "styled-components"
-import documentsImg from "./images/documents.svg"
-import incorporationImg from "./images/incorporation.svg"
-import submitImg from "./images/submit.svg"
-import taxImg from "./images/tax-id.svg"
 
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      ol,
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -17,7 +20,6 @@ export const StyledContentWrapper = styled.div`
         margin: 0 auto;
         padding: 0px;
         width: 100%;
-        opacity: ${props.theme.containerLg.opacity};
       }
       .uppertext {
         text-transform: uppercase;
@@ -102,16 +104,16 @@ export const StyledContentWrapper = styled.div`
         background-repeat: no-repeat;
       }
       .timeline .timeline-step .icon.submit {
-        background-image: url(${submitImg});
+        background-image: url(${props.images.m6Icon1});
       }
       .timeline .timeline-step .icon.documents {
-        background-image: url(${documentsImg});
+        background-image: url(${props.images.m6Icon2});
       }
       .timeline .timeline-step .icon.incorporation {
-        background-image: url(${incorporationImg});
+        background-image: url(${props.images.m6Icon3});
       }
       .timeline .timeline-step .icon.tax-id {
-        background-image: url(${taxImg});
+        background-image: url(${props.images.m6Icon4});
       }
       .step-no {
       }

@@ -4,7 +4,7 @@ import React from "react"
 import { StyledContentWrapper } from "./Module3.styles"
 
 export default props => (
-  <StyledContentWrapper theme={props.theme}>
+  <StyledContentWrapper theme={props.theme} colors={props.colors}>
     <div className="content-wrapper">
       <section className="container-lg">
         <div className="corporate-card-section">
