@@ -1,8 +1,10 @@
 import styled, { css } from "styled-components"
-import { theme } from "../../../theme"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      * {
+        font-family: Helvetica;
+      }
       body {
         background: #fff;
         min-height: 100%;
@@ -56,14 +58,14 @@ export const StyledContentWrapper = styled.div`
         font-weight: 500;
         font-size: 19px;
         line-height: 32px;
-        color: ${theme.module3.colors.primary};
+        color: "#32325d";
         margin-bottom: 8px;
       }
       .corporate-card-content p {
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: ${theme.module3.colors.primary};
+        color: ${props.theme.colors.primary};
         margin-bottom: 8px;
       }
       .corporate-card-column {

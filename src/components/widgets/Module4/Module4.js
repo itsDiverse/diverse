@@ -2,7 +2,6 @@ import React, { useEffect } from "react"
 //import style from "./Module4.module.css"
 import $ from "jquery"
 
-import { data } from "../../../data"
 import { StyledContentWrapper } from "./Module4.styles"
 
 export default props => {
@@ -40,7 +39,7 @@ export default props => {
     })
   }, [])
   return (
-    <StyledContentWrapper title={props.title} colors={props.colors}>
+    <StyledContentWrapper theme={props.theme}>
       <div className="content-wrapper powerful-tools-wrapper">
         <div className="container-lg">
           <div className="powerfultoolssection">
@@ -81,14 +80,8 @@ export default props => {
                         poster="images/video-poster.jpg"
                         preload="metadata"
                       >
-                        <source
-                          src={data.module4.video.sample}
-                          type="video/mp4"
-                        ></source>
-                        <source
-                          src={data.module4.video.sample}
-                          type="video/ogg"
-                        ></source>
+                        <source src={props.sample} type="video/mp4"></source>
+                        <source src={props.sample} type="video/ogg"></source>
                       </video>
                     </div>
                     <div className="actualVideo">
@@ -99,14 +92,8 @@ export default props => {
                         controls
                         className="opacity: 0"
                       >
-                        <source
-                          src={data.module4.video.sample}
-                          type="video/webm"
-                        ></source>
-                        <source
-                          src={data.module4.video.sample}
-                          type="video/mp4"
-                        ></source>
+                        <source src={props.sample} type="video/webm"></source>
+                        <source src={props.sample} type="video/mp4"></source>
                       </video>
                     </div>
                     <div className="fraudteams_video_controls">

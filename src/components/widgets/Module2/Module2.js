@@ -1,8 +1,6 @@
 import React, { useEffect } from "react"
 //import style from "./Module2.module.css"
 import $ from "jquery"
-import { data } from "../../../data"
-
 import { StyledContentWrapper } from "./Module2.styles"
 
 export default props => {
@@ -69,7 +67,7 @@ export default props => {
     })
   }, [])
   return (
-    <StyledContentWrapper>
+    <StyledContentWrapper videos={props.videos}>
       <div className="content-wrapper">
         <div className="container-xl">
           <section className="feedback" data-visible-quote="0">
@@ -139,7 +137,7 @@ export default props => {
                     local pizza experience possible.
                   </p>
                   <p className="common-UppercaseText">
-                    {data.module2.nameSlide1}
+                    {props.data.nameSlide1}
                   </p>
                   <p className="common-text">Product Manager</p>
                 </li>
@@ -150,7 +148,7 @@ export default props => {
                     customers.
                   </p>
                   <p className="common-UppercaseText">
-                    {data.module2.nameSlide2}
+                    {props.data.nameSlide2}
                   </p>
                   <p className="common-text">VP of Engineering</p>
                 </li>
@@ -163,7 +161,7 @@ export default props => {
                     from&nbsp;bad.
                   </p>
                   <p className="common-UppercaseText">
-                    {data.module2.nameSlide3}
+                    {props.data.nameSlide3}
                   </p>
                   <p className="common-text">Product Lead, Risk Team</p>
                 </li>
@@ -175,7 +173,7 @@ export default props => {
                     detection&nbsp;arsenal.
                   </p>
                   <p className="common-UppercaseText">
-                    {data.module2.nameSlide4}
+                    {props.data.nameSlide4}
                   </p>
                   <p className="common-text">Head of Risk and Compliance</p>
                 </li>
@@ -185,7 +183,7 @@ export default props => {
                     fraudulent donations over just a two-month&nbsp;span.
                   </p>
                   <p className="common-UppercaseText">
-                    {data.module2.nameSlide5}
+                    {props.data.nameSlide5}
                   </p>
                   <p className="common-text">Co-founder</p>
                 </li>
@@ -291,22 +289,10 @@ export default props => {
 
       <div className="video-container">
         <video controls="" id="Video1">
-          <source
-            src={data.module2.video.sampleVideo}
-            type="video/mp4"
-          ></source>
-          <source
-            src={data.module2.video.sampleVideo}
-            type="video/ogv"
-          ></source>
-          <source
-            src={data.module2.video.sampleVideo}
-            type="video/mp4"
-          ></source>
-          <source
-            src={data.module2.video.sampleVideo}
-            type="video/ogv"
-          ></source>
+          <source src={props.videos.sampleVideo} type="video/mp4"></source>
+          <source src={props.videos.sampleVideo} type="video/ogv"></source>
+          <source src={props.videos.sampleVideo} type="video/mp4"></source>
+          <source src={props.videos.sampleVideo} type="video/ogv"></source>
         </video>
       </div>
     </StyledContentWrapper>

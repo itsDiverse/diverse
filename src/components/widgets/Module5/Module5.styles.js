@@ -1,9 +1,18 @@
 import styled, { css } from "styled-components"
-import { theme } from "../../../theme"
 
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      * {
+        font-family: Helvetica;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -93,7 +102,7 @@ export const StyledContentWrapper = styled.div`
         letter-spacing: 0.025em;
         margin: 0 0 5px;
         white-space: normal;
-        color: ${theme.module5.colors.primary};
+        color: ${props.theme.colors.primary};
       }
       .footer-cards-wrapper p {
         font-weight: 400;
@@ -181,7 +190,7 @@ export const StyledContentWrapper = styled.div`
         cursor: pointer;
       }
       .get-in-touch-btn .btn-left {
-        background-color: ${theme.module5.buttons.primary};
+        background-color: #32325d;
         color: #fff;
       }
       .get-in-touch-btn .btn-default:hover {

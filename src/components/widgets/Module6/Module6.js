@@ -1,18 +1,17 @@
 import React from "react"
 //import "./Module6.module.css"
-import { data } from "../../../data"
 
 import { StyledContentWrapper } from "./Module6.styles.js"
 
 export default props => (
-  <StyledContentWrapper>
+  <StyledContentWrapper images={props.images}>
     <div className="content-wrapper">
       <div className="process-section">
         <div className="container-lg">
           <div className="process-content-section">
             <div className="process-content-title">
-              <h2 className="section-title uppertext">{data.module6.title}</h2>
-              <p className="section-desc">{data.module6.subtitle}</p>
+              <h2 className="section-title uppertext">{props.data.title}</h2>
+              <p className="section-desc">{props.data.subtitle}</p>
             </div>
           </div>
           <ul className="timeline">

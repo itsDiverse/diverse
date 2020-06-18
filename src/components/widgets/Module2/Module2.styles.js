@@ -1,10 +1,11 @@
 import styled, { css } from "styled-components"
-import { theme } from "../../../theme"
-import { data } from "../../../data"
 
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      * {
+        font-family: Helvetica;
+      }
       body {
         background: #fff;
         min-height: 100%;
@@ -73,7 +74,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 500;
         font-size: 19px;
         line-height: 32px;
-        color: ${theme.module2.colors.primary};
+        color: #32325d;
       }
       .common-UppercaseText {
         font-size: 17px;
@@ -156,7 +157,7 @@ export const StyledContentWrapper = styled.div`
         margin-left: -36px;
         border-radius: 50%;
         cursor: pointer;
-        background-image: url(${data.module2.video.playIcon});
+        background-image: url(${props.videos.playIcon});
         background-position: 50%;
         background-repeat: no-repeat;
         padding: 0;

@@ -1,9 +1,8 @@
 import React from "react"
 import { StyledContentWrapper } from "./Module5.styles"
-import { data } from "../../../data"
 
 export default props => (
-  <StyledContentWrapper>
+  <StyledContentWrapper theme={props.theme}>
     <div className="content-wrapper">
       <div className="footer-with-card-section-wrapper">
         <section className="footer-with-card-section">
@@ -46,7 +45,7 @@ export default props => (
                       </g>
                     </svg>
                   </span>
-                  <h3 className="link-arrow">{data.module5.titleLeft}</h3>
+                  <h3 className="link-arrow">{props.data.titleLeft}</h3>
                   <p>
                     You can use Connect Payouts through the Dashboard or via the
                     API.
@@ -95,7 +94,7 @@ export default props => (
                       </g>
                     </svg>
                   </span>
-                  <h3 className="link-arrow">{data.module5.titleRight}</h3>
+                  <h3 className="link-arrow">{props.data.titleRight}</h3>
                   <p>
                     Starting at 0.25% of payout volume; per-account fee may
                     apply.

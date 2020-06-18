@@ -1,9 +1,32 @@
 import styled, { css } from "styled-components"
-import { theme } from "../../../theme"
-import { data } from "../../../data"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      * {
+        font-family: Helvetica;
+      }
+      body {
+        background: #fff;
+        min-height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 62.5%;
+        font-family: Helvetica;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        -webkit-font-feature-settings: "pnum";
+        font-feature-settings: "pnum";
+        font-variant-numeric: proportional-nums;
+      }
       ol,
       ul {
         list-style: none;
@@ -100,21 +123,21 @@ export const StyledContentWrapper = styled.div`
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        background-color: ${theme.module6.colors.primary};
+        background-color: #fff;
         background-position: 50%;
         background-repeat: no-repeat;
       }
       .timeline .timeline-step .icon.submit {
-        background-image: url(${data.module6.icons.m6Icon1});
+        background-image: url(${props.images.m6Icon1});
       }
       .timeline .timeline-step .icon.documents {
-        background-image: url(${data.module6.icons.m6Icon2});
+        background-image: url(${props.images.m6Icon2});
       }
       .timeline .timeline-step .icon.incorporation {
-        background-image: url(${data.module6.icons.m6Icon3});
+        background-image: url(${props.images.m6Icon3});
       }
       .timeline .timeline-step .icon.tax-id {
-        background-image: url(${data.module6.icons.m6Icon4});
+        background-image: url(${props.images.m6Icon4});
       }
       .step-no {
       }

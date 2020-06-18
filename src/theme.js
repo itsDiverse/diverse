@@ -104,4 +104,20 @@ export const theme = {
       secondaryOpacity: "",
     },
   },
+  //----------------------------------Module 7
+  module7: {
+    colors: {
+      primary: "",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+
+      heading: "",
+      bodytext: "",
+      background: "",
+      textBoxBackground: "",
+      textBoxTitle: "",
+      line: "",
+    },
+  },
 }

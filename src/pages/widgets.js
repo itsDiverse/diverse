@@ -41,33 +41,62 @@ import m11aBannerLogo from "../images/Module11a/charity-water.png"
 import m11aBannerShadow2 from "../images/Module11a/charity-water.svg"
 import m11aBannerShadow from "../images/Module11a/charity-water-vert.svg"
 import m11aIcon2 from "../images/Module11a/route.svg"
-//import { theme } from "../theme"
+
 //++++++++++++++++++++++++++++++++++
+import { theme } from "../theme"
+import { data } from "../data"
+import { images } from "../images"
+import { videos } from "../videos"
 
 export default () => (
   <>
     <h1>Module1</h1>
-    <Module1 />
+    <Module1
+      theme={theme.module1}
+      data={data.module1}
+      images={images.module1}
+    />
     <hr></hr>
-    <Module1a />
+    <Module1a
+      data={data.module1a}
+      theme={theme.module1a}
+      images={images.module1a}
+    />
     <hr></hr>
     <h1>Module2</h1>
-    <Module2 />
+    <Module2
+      theme={theme.module2}
+      data={data.module2}
+      videos={videos.module2}
+    />
     <hr></hr>
     <h1>Module3</h1>
-    <Module3 />
+    <Module3 theme={theme.module3} data={data.module3} />
     <hr></hr>
     <h1>Module4</h1>
-    <Module4 />
+    <Module4
+      theme={theme.module4}
+      data={data.module4}
+      images={images.module4}
+      videos={videos.module4}
+    />
     <hr></hr>
     <h1>Module5</h1>
-    <Module5 />
+    <Module5 theme={theme.module5} data={data.module5} />
     <hr></hr>
     <h1>Module6</h1>
-    <Module6 />
+    <Module6
+      theme={theme.module6}
+      data={data.module6}
+      images={images.module6}
+    />
     <hr></hr>
     <h1>Module7</h1>
-    <Module7 />
+    <Module7
+      theme={theme.module7}
+      data={data.module7}
+      images={images.module7}
+    />
     <hr></hr>
     <h1>Module8</h1>
     <Module8 theme={{ containerLg: { opacity: 1 } }}></Module8>

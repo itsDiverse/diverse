@@ -1,8 +1,10 @@
 import styled, { css } from "styled-components"
-import { theme } from "../../../theme"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      * {
+        font-family: Helvetica;
+      }
       body {
         background: #fff;
         min-height: 100%;
@@ -64,7 +66,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 34px;
         line-height: 44px;
-        color: ${theme.module4.colors.primary};
+        color: ${props.theme.colors.primary};
         margin-bottom: 24px;
         font-weight: 400;
       }

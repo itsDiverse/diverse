@@ -1,8 +1,17 @@
 import styled, { css } from "styled-components"
-import { data } from "../../../data"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      * {
+        font-family: Helvetica;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -94,7 +103,7 @@ export const StyledContentWrapper = styled.div`
         color: #525f7f;
       }
       .compliance-right-content ul li:after {
-        content: url(${data.module7.images.lawerImg});
+        content: url(${props.images.lawerImg});
         position: absolute;
         top: 3px;
         left: 0;
@@ -235,7 +244,7 @@ export const StyledContentWrapper = styled.div`
         -webkit-transform-origin: 50% 0;
         transform-origin: 50% 0;
         font-size: 15px;
-        background: url(${data.module7.images.dashboardImg}) no-repeat;
+        background: url(${props.images.dashboardImg}) no-repeat;
         background-size: 100% 550px;
       }
       .platform-management-section .dashboard-connected-accounts * {
@@ -467,7 +476,7 @@ export const StyledContentWrapper = styled.div`
       .common-FlagIcon:before {
         content: "";
         display: inline-block;
-        background-image: url(${data.module7.images.flagIconsImg});
+        background-image: url(${props.images.flagIconsImg});
         width: 21px;
         height: 15px;
         margin-right: 12px;
