@@ -1,8 +1,5 @@
 import styled, { css } from "styled-components"
-import LawerImg from "./images/lawyer-friendly-checkmark.svg"
-import dashboardImg from "./images/dashboard-chrome.svg"
-import flagIconsImg from "./images/flagIcons.svg"
-
+import { data } from "../../../data"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
@@ -97,7 +94,7 @@ export const StyledContentWrapper = styled.div`
         color: #525f7f;
       }
       .compliance-right-content ul li:after {
-        content: url(${LawerImg});
+        content: url(${data.module7.images.lawerImg});
         position: absolute;
         top: 3px;
         left: 0;
@@ -238,7 +235,7 @@ export const StyledContentWrapper = styled.div`
         -webkit-transform-origin: 50% 0;
         transform-origin: 50% 0;
         font-size: 15px;
-        background: url(${dashboardImg}) no-repeat;
+        background: url(${data.module7.images.dashboardImg}) no-repeat;
         background-size: 100% 550px;
       }
       .platform-management-section .dashboard-connected-accounts * {
@@ -470,7 +467,7 @@ export const StyledContentWrapper = styled.div`
       .common-FlagIcon:before {
         content: "";
         display: inline-block;
-        background-image: url(${flagIconsImg});
+        background-image: url(${data.module7.images.flagIconsImg});
         width: 21px;
         height: 15px;
         margin-right: 12px;

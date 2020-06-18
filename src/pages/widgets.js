@@ -67,7 +67,7 @@ export default () => (
     <Module6 />
     <hr></hr>
     <h1>Module7</h1>
-    <Module7 theme={{ containerLg: { opacity: 1 } }}></Module7>
+    <Module7 />
     <hr></hr>
     <h1>Module8</h1>
     <Module8 theme={{ containerLg: { opacity: 1 } }}></Module8>
