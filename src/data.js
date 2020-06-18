@@ -31,7 +31,19 @@ export const data = {
     logoBackground: "",
   },
   //----------------------------------Module 3
+  module3: {
+    title1: "Lorem Ipsum1",
+    text1:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
 
+    title2: "Lorem Ipsum2",
+    text2:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+
+    title3: "Lorem Ipsum3",
+    text3:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+  },
   //----------------------------------Module 4
   module4: {
     title: "",

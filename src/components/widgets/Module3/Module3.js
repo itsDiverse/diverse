@@ -30,12 +30,8 @@ export default props => (
               </svg>
             </div>
             <div className="corporate-card-content">
-              <h3>Get started instantly</h3>
-              <p>
-                All you need to apply is a Stripe account—no paperwork or
-                personal guarantee required. Get up and running with a virtual
-                card in minutes.
-              </p>
+              <h3>{props.data.title1}</h3>
+              <p>{props.data.text1}</p>
             </div>
           </div>
           <div className="corporate-card-column">
@@ -59,11 +55,8 @@ export default props => (
               </svg>
             </div>
             <div className="corporate-card-content">
-              <h3>Credit limits that grow with you</h3>
-              <p>
-                Your credit limit is determined by your payment processing and
-                bank history. As your business grows, your credit line can too.
-              </p>
+              <h3>{props.data.title2}</h3>
+              <p>{props.data.text2}</p>
             </div>
           </div>
           <div className="corporate-card-column">
@@ -109,11 +102,8 @@ export default props => (
               </svg>
             </div>
             <div className="corporate-card-content">
-              <h3>Branded with your logo</h3>
-              <p>
-                Upload your logo right from the Dashboard to make your corporate
-                card look and feel like your brand.
-              </p>
+              <h3>{props.data.title3}</h3>
+              <p>{props.data.text3}</p>
             </div>
           </div>
         </div>
