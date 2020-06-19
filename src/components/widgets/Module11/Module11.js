@@ -3,13 +3,13 @@ import React from "react"
 import { StyledContentWrapper } from "./Module11.styles"
 
 export default props => (
-  <StyledContentWrapper theme={props.theme} images={props.images}>
+  <StyledContentWrapper images={props.images} theme={props.theme}>
     <div className="content-wrapper">
       <div className="container-lg">
         <div className="b2c-marketplaces">
           <div className="marketplaces-title-section">
-            <img src={props.images.m11Icon1} />
-            <h3>B2C marketplaces</h3>
+            <img src={props.images.m11Icon1}></img>
+            <h3>{props.data.title}</h3>
             <p>
               Marketplaces connect consumers with what they want: rides, food,
               accommodation, and more. Your payments should meet the same high
@@ -30,10 +30,8 @@ export default props => (
                     <a href="#">
                       <img
                         src={props.images.m11BannerLogo}
-                        width="64"
-                        height="46"
                         alt="Lyft logo"
-                      />
+                      ></img>
                     </a>
                   </h2>
                   <p>
@@ -58,7 +56,7 @@ export default props => (
                 width="72"
                 height="72"
                 alt="3 arrows spreading"
-              />
+              ></img>
             </figure>
             <p>
               Payments for marketplaces used to be hard: accounting for seller

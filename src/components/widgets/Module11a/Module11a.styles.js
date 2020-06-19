@@ -3,14 +3,20 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
-      /*added classes to make it work*/
-      .Quote--lyft {
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Helvetica;
+        font-weight: lighter;
       }
-      .marketplaces-gallery-bottom-content-left {
+
+      ol,
+      ul {
+        list-style: none;
       }
-      .marketplaces-gallery-routing {
-      }
-      /*regular styles*/
+      a {
+        text-decoration: none;
+    
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -21,7 +27,6 @@ export const StyledContentWrapper = styled.div`
         margin: 0 auto;
         padding: 0px;
         width: 100%;
-        opacity: ${props.theme.containerLg.opacity};
       }
       .container-xl {
         max-width: 1160px;
@@ -77,7 +82,7 @@ export const StyledContentWrapper = styled.div`
         margin: 30px 0 60px;
       }
       .marketplaces-gallery-photo {
-        background-color: #a19273;
+        background-color: ${props.theme.backgroundMarketplaceGallery};
         background-image: url(${props.images.m11aBanner});
         width: 100%;
         min-height: 370px;

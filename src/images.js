@@ -34,6 +34,24 @@ import internationalImg from "./images/Module7/international-support.svg"
 import platformImg from "./images/Module7/platform-management.svg"
 //++++++++++++++++++++++++++++++++++++
 
+//import images Module 11 ++++++++++
+import m11Banner from "./images/Module11/lyft.jpg"
+import m11BannerShadow from "./images/Module11/lyft-vert.svg"
+import m11BannerShadow2 from "./images/Module11/lyft.svg"
+import m11BannerLogo from "./images/Module11/lyft.png"
+import m11Icon1 from "./images/Module11/sharing.svg"
+import m11Icon2 from "./images/Module11/route.svg"
+//++++++++++++++++++++++++++++++++++
+
+//import images Module 11a ++++++++++
+import m11aBanner from "./images/Module11a/charity-water.jpg"
+import m11aBannerShadow from "./images/Module11a/charity-water-vert.svg"
+import m11aBannerShadow2 from "./images/Module11a/charity-water.svg"
+import m11aBannerLogo from "./images/Module11a/charity-water.png"
+import m11aIcon2 from "./images/Module11a/route.svg"
+import m11aIcon1 from "./images/Module11a/sharing.svg"
+//++++++++++++++++++++++++++++++++++
+
 export const images = {
   //-------------------------------------Template
   title: "",
@@ -101,5 +119,26 @@ export const images = {
     complianceImg,
     internationalImg,
     platformImg,
+  },
+  //----------------------------------Module 8
+  //----------------------------------Module 9
+  //----------------------------------Module 10
+  //----------------------------------Module 11
+  module11: {
+    m11Icon1,
+    m11Icon2,
+    m11Banner,
+    m11BannerShadow,
+    m11BannerShadow2,
+    m11BannerLogo,
+  },
+  //----------------------------------Module 11a
+  module11a: {
+    m11aIcon1,
+    m11aIcon2,
+    m11aBanner,
+    m11aBannerShadow,
+    m11aBannerShadow2,
+    m11aBannerLogo,
   },
 }

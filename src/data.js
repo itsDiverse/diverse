@@ -105,4 +105,20 @@ export const data = {
     boxTitle: "",
     BoxText: "",
   },
+  //----------------------------------Module 11
+  module11: {
+    title: "Lorem Ipsum",
+    subtitle: "",
+    bodytext: "",
+    boxTitle: "",
+    boxText: "",
+  },
+  //----------------------------------Module 11a
+  module11a: {
+    title: "B2C marketplacess",
+    subtitle: "",
+    bodytext: "",
+    boxTitle: "",
+    boxText: "",
+  },
 }

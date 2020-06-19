@@ -74,7 +74,7 @@ export const theme = {
     },
 
     buttons: {
-      primary: "#6772e5",
+      primary: "#3ecf8e",
       primaryOpacity: "",
       secondary: "",
       secondaryOpacity: "",
@@ -154,5 +154,21 @@ export const theme = {
       primaryHoverOpacity: "",
       boxBackground: "",
     },
+  },
+  //-------------------------------------Module11
+  module11: {
+    background: "",
+    boxBackground1: "",
+    boxBackground1opacity: "",
+    boxBackground2: "",
+    boxBackground2opacity: "",
+  },
+  //-------------------------------------Module11a
+  module11a: {
+    backgroundMarketplaceGallery: "#a19273",
+    boxBackground1: "",
+    boxBackground1opacity: "",
+    boxBackground2: "",
+    boxBackground2opacity: "",
   },
 }

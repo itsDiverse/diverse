@@ -7,7 +7,7 @@ export const StyledContentWrapper = styled.div`
         margin: 0px;
         padding: 0px;
         font-family: Helvetica;
-        font-weight: 1200;
+        font-weight: lighter;
       }
       body {
         background: #fff;

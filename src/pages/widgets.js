@@ -25,24 +25,6 @@ import { Module20 } from "../components/widgets/Module20"
 import { Module21 } from "../components/widgets/Module21"
 import { Module22 } from "../components/widgets/Module22"
 
-//import images Module 11 ++++++++++
-import m11Banner from "../images/Module11/lyft.jpg"
-import m11BannerShadow from "../images/Module11/lyft-vert.svg"
-import m11BannerShadow2 from "../images/Module11/lyft.svg"
-import m11Icon1 from "../images/Module11/sharing.svg"
-import m11Icon2 from "../images/Module11/route.svg"
-import m11BannerLogo from "../images/Module11/lyft.png"
-//++++++++++++++++++++++++++++++++++
-
-//import images Module 11a ++++++++++
-import m11aIcon1 from "../images/Module11a/sharing.svg"
-import m11aBanner from "../images/Module11a/charity-water.jpg"
-import m11aBannerLogo from "../images/Module11a/charity-water.png"
-import m11aBannerShadow2 from "../images/Module11a/charity-water.svg"
-import m11aBannerShadow from "../images/Module11a/charity-water-vert.svg"
-import m11aIcon2 from "../images/Module11a/route.svg"
-
-//++++++++++++++++++++++++++++++++++
 import { theme } from "../theme"
 import { data } from "../data"
 import { images } from "../images"
@@ -129,29 +111,17 @@ export default () => (
     <hr></hr>
     <h1>Module11</h1>
     <Module11
-      theme={{ containerLg: { opacity: 1 } }}
-      images={{
-        m11Icon1,
-        m11Icon2,
-        m11Banner,
-        m11BannerShadow,
-        m11BannerShadow2,
-        m11BannerLogo,
-      }}
-    ></Module11>
+      theme={theme.module11}
+      data={data.module11}
+      images={images.module11}
+    />
     <hr></hr>
     <h1>Module11a</h1>
     <Module11a
-      theme={{ containerLg: { opacity: 1 } }}
-      images={{
-        m11aIcon1,
-        m11aIcon2,
-        m11aBanner,
-        m11aBannerShadow,
-        m11aBannerShadow2,
-        m11aBannerLogo,
-      }}
-    ></Module11a>
+      theme={theme.module11a}
+      data={data.module11a}
+      images={images.module11a}
+    />
     <hr></hr>
     <h1>Module12</h1>
     <Module12 theme={{ containerXl: { opacity: 1 } }}></Module12>

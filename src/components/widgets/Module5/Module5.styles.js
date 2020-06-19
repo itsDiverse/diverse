@@ -190,7 +190,7 @@ export const StyledContentWrapper = styled.div`
         cursor: pointer;
       }
       .get-in-touch-btn .btn-left {
-        background-color: #32325d;
+        background-color: ${props.theme.buttons.primary};
         color: #fff;
       }
       .get-in-touch-btn .btn-default:hover {

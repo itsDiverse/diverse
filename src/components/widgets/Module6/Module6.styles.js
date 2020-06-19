@@ -3,6 +3,8 @@ export const StyledContentWrapper = styled.div`
   ${props =>
     css`
       * {
+        margin: 0px;
+        padding: 0px;
         font-family: Helvetica;
       }
       body {
@@ -16,7 +18,7 @@ export const StyledContentWrapper = styled.div`
         -ms-flex-direction: column;
         flex-direction: column;
         font-size: 62.5%;
-        font-family: Helvetica;
+        font-family: Camphor, Open Sans, Segoe UI, sans-serif;
         font-weight: 400;
         font-style: normal;
         -webkit-text-size-adjust: 100%;
@@ -33,6 +35,9 @@ export const StyledContentWrapper = styled.div`
       }
       a {
         text-decoration: none;
+      }
+      html[lang="ja"] body {
+        font-family: Camphor, Meiryo, Hiragino Sans, sans-serif;
       }
       .content-wrapper {
         -webkit-box-flex: 1;
@@ -72,9 +77,6 @@ export const StyledContentWrapper = styled.div`
         margin: 0 auto;
         text-align: center;
       }
-      .section-title .uppertext {
-        font-weight: 600;
-      }
       .timeline {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -85,9 +87,6 @@ export const StyledContentWrapper = styled.div`
         flex-direction: column;
         position: relative;
         margin-top: 70px;
-      }
-      .line {
-        padding: 1px;
       }
       .timeline .line {
         background-color: #e6ebf1;
@@ -106,11 +105,6 @@ export const StyledContentWrapper = styled.div`
         align-items: center;
         position: relative;
       }
-      .icon-container .submit,
-      .icon .submit {
-        padding: 1px;
-      }
-
       .timeline .timeline-step .icon-container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -128,16 +122,16 @@ export const StyledContentWrapper = styled.div`
         background-repeat: no-repeat;
       }
       .timeline .timeline-step .icon.submit {
-        background-image: url(${props.images.m6Icon1});
+        background-image: url(images/submit.svg);
       }
       .timeline .timeline-step .icon.documents {
-        background-image: url(${props.images.m6Icon2});
+        background-image: url(images/documents.svg);
       }
       .timeline .timeline-step .icon.incorporation {
-        background-image: url(${props.images.m6Icon3});
+        background-image: url(images/incorporation.svg);
       }
       .timeline .timeline-step .icon.tax-id {
-        background-image: url(${props.images.m6Icon4});
+        background-image: url(images/tax-id.svg);
       }
       .step-no {
       }
@@ -146,9 +140,6 @@ export const StyledContentWrapper = styled.div`
         font-size: 16px;
         line-height: 28px;
         color: #525f7f;
-      }
-      .documents-bank-account {
-        padding: 1px;
       }
       .timeline-step .step-no {
         display: inline-block;
@@ -169,10 +160,6 @@ export const StyledContentWrapper = styled.div`
       .process-section .container-lg {
         padding: 0 20px;
       }
-      .process-content-section {
-        padding: 1px;
-      }
-
       @media (min-width: 670px) {
         .section-desc {
           font-size: 24px;

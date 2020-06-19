@@ -3,15 +3,41 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
-      /*added styles to make it work */
-      .Quote--lyft {
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Helvetica;
+        font-weight: lighter;
       }
-      .marketplaces-gallery-bottom-content-left {
+      body {
+        background: #fff;
+        min-height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 62.5%;
+        font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        -webkit-font-feature-settings: "pnum";
+        font-feature-settings: "pnum";
+        font-variant-numeric: proportional-nums;
       }
-      .marketplaces-gallery-routing {
+      ol,
+      ul {
+        list-style: none;
       }
-      /*regular styles */
-
+      a {
+        text-decoration: none;
+      }
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -22,7 +48,6 @@ export const StyledContentWrapper = styled.div`
         margin: 0 auto;
         padding: 0px;
         width: 100%;
-        opacity: ${props.theme.containerLg.opacity};
       }
       .container-xl {
         max-width: 1160px;
@@ -145,7 +170,7 @@ export const StyledContentWrapper = styled.div`
         display: block;
         width: 100%;
         height: 95px;
-        background: url(${props.images.m11BannerShadow});
+        background: url({props.images.m11BannerShadow});
         background-size: 100% 100%;
         position: absolute;
         top: -95px;
