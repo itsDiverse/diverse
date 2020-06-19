@@ -18,6 +18,10 @@ import m1aLogo6 from "./images/Module1/shopify.svg"
 import m1aLogo7 from "./images/Module1/unicef.svg"
 //++++++++++++++++++++++++++++++++++++
 
+import m3Icon1 from "./images/Module6/submit.svg"
+import m3Icon2 from "./images/Module6/documents.svg"
+import m3Icon3 from "./images/Module6/incorporation.svg"
+
 //import images Module 6 +++++++++++++
 import m6Icon1 from "./images/Module6/submit.svg"
 import m6Icon2 from "./images/Module6/documents.svg"
@@ -48,8 +52,9 @@ import m11aBanner from "./images/Module11a/charity-water.jpg"
 import m11aBannerShadow from "./images/Module11a/charity-water-vert.svg"
 import m11aBannerShadow2 from "./images/Module11a/charity-water.svg"
 import m11aBannerLogo from "./images/Module11a/charity-water.png"
-import m11aIcon2 from "./images/Module11a/route.svg"
 import m11aIcon1 from "./images/Module11a/sharing.svg"
+import m11aIcon2 from "./images/Module11a/route.svg"
+
 //++++++++++++++++++++++++++++++++++
 
 export const images = {
@@ -99,7 +104,15 @@ export const images = {
   //----------------------------------Module 2
 
   //----------------------------------Module 3
+  module3: {
+    m3Icon1,
+    m3Icon2,
+    m3Icon3,
 
+    m3Icon1alt: "alt text 1",
+    m3Icon2alt: "alt text 2",
+    m3Icon3alt: "alt text 3",
+  },
   //----------------------------------Module 4
 
   //----------------------------------Module 5
@@ -125,20 +138,20 @@ export const images = {
   //----------------------------------Module 10
   //----------------------------------Module 11
   module11: {
-    m11Icon1,
-    m11Icon2,
     m11Banner,
     m11BannerShadow,
     m11BannerShadow2,
     m11BannerLogo,
+    m11Icon1,
+    m11Icon2,
   },
   //----------------------------------Module 11a
   module11a: {
-    m11aIcon1,
-    m11aIcon2,
     m11aBanner,
     m11aBannerShadow,
     m11aBannerShadow2,
     m11aBannerLogo,
+    m11aIcon1,
+    m11aIcon2,
   },
 }
