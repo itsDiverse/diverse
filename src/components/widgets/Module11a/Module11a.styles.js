@@ -16,7 +16,7 @@ export const StyledContentWrapper = styled.div`
       }
       a {
         text-decoration: none;
-    
+      }
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
