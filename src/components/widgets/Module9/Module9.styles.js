@@ -3,44 +3,64 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
-      /*added classses to work*/
-      .diagramInfraContent {
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Helvetica;
       }
-      .diagramContent {
+      body {
+        background: #fff;
+        min-height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 62.5%;
+        font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        -webkit-font-feature-settings: "pnum";
+        font-feature-settings: "pnum";
+        font-variant-numeric: proportional-nums;
       }
-      .jsDiagram {
+      ol,
+      ul {
+        list-style: none;
       }
-      .diagramPlatformsContent {
+      a {
+        text-decoration: none;
       }
-      .jsDiagramExplanation {
-      }
-
-      /*regular styles */
-      .contentWrapper {
+      .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
         flex-grow: 1;
       }
-      .containerLg {
+      .container-lg {
         max-width: 1040px;
         margin: 0 auto;
         padding: 0px;
         width: 100%;
-        opacity: ${props.theme.containerLg.opacity};
       }
-      .paymentsStackSection {
+      .payments-stack-section {
         background-color: #fff;
         padding: 60px 0;
         position: relative;
       }
-      .sectionTitle {
+      .section-title {
         margin: 25px 0 18px;
         font-size: 42px;
         line-height: 52px;
-        color: #32325d;
+        color: ${props.theme.colors.primary};
         font-weight: 400;
       }
-      .sectionDesc {
+      .section-desc {
         margin-bottom: 70px;
         max-width: 800px;
         margin-left: auto;
@@ -50,20 +70,20 @@ export const StyledContentWrapper = styled.div`
         color: #424770;
         font-weight: 300;
       }
-      .paymentsStackSectionIntro {
+      .payments-stack-section-intro {
         text-align: center;
         padding: 0 20px;
       }
-      .diagramApps {
-        grid-area: diagramApps;
+      .diagram-apps {
+        grid-area: diagram-apps;
         grid-template-columns: repeat(4, 1fr);
       }
-      .diagramProduct svg {
+      .diagram-product svg {
         width: 25px;
         height: 25px;
         transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       }
-      .diagramProduct {
+      .diagram-product {
         border-radius: 8px;
         background-color: #c4f0ff;
         text-align: center;
@@ -76,7 +96,7 @@ export const StyledContentWrapper = styled.div`
         border: 2px solid;
         transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       }
-      .diagramSection {
+      .diagram-section {
         display: grid;
         min-height: 80px;
         background-color: #fff;
@@ -88,124 +108,122 @@ export const StyledContentWrapper = styled.div`
         box-shadow: 0 7px 14px 0 rgba(50, 50, 93, 0.1),
           0 3px 6px 0 rgba(0, 0, 0, 0.07);
       }
-      .diagramProductRadar {
+      .diagram-product-radar {
         background-color: #db78dd;
         border-color: #db78dd;
       }
-      .diagramProductSigma {
+      .diagram-product-sigma {
         background-color: #a688e7;
         border-color: #a688e7;
       }
-      .diagramProductBilling {
+      .diagram-product-billing {
         background-color: #3ecf8e;
         border-color: #3ecf8e;
       }
-      .diagramProductAtlas {
+      .diagram-product-atlas {
         background-color: #f0b64b;
         border-color: #f0b64b;
       }
-      .diagramProduct span {
+      .diagram-product span {
         display: block;
         margin: 8px 0 0;
         font-size: 15px;
         font-weight: 600;
       }
-      .platformFiagram {
+      .platform-diagram {
         margin: 60px 0 0;
       }
-
       .diagram {
         position: relative;
         display: grid;
         gap: 20px 0;
         grid-gap: 20px 0;
         grid-template-rows: repeat(6, auto);
-        grid-template-areas: "diagramApps diagramAppsContent diagramPlatforms diagramPlatformsContent diagramInfra diagramInfraContent";
+        grid-template-areas: "diagram-apps" "diagram-apps-content" "diagram-platforms" "diagram-platforms-content" "diagram-infra" "diagram-infra-content";
         padding: 0 20px;
       }
-
-      .diagramTitle {
+      .diagram-title {
         color: #32325d;
         margin: 0 0 4px;
       }
-      .uppercaseText {
+      .uppercase-text {
         font-size: 17px;
         line-height: 28px;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.025em;
       }
-      .diagramDesc {
+      .diagram-desc {
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
         color: #525f7f;
       }
-      .diagramProductPayments {
+      .diagram-product-payments {
         background-color: #818bf0;
         border-color: #818bf0;
       }
-      .diagramProductConnect {
+      .diagram-product-connect {
         background-color: #45b2e8;
         border-color: #45b2e8;
       }
-      .diagramPlatforms {
+      .diagram-platforms {
         grid-area: diagram-platforms;
         grid-template-columns: repeat(2, 1fr);
       }
-      .diagramInfra {
+      .diagram-infra {
         position: relative;
-        grid-area: diagramInfra;
+        grid-area: diagram-infra;
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: 1fr 1fr;
       }
-      .diagramInfraService {
+      .diagram-infra-service {
         border: 2px dashed #7795f8;
         border-radius: 8px;
         opacity: 0.5;
       }
-      .diagramInfraService:first-child {
+      .diagram-infra-service:first-child {
         grid-row: 1;
         grid-column: 1 / span 2;
       }
-      .diagramInfraService:nth-child(2) {
+      .diagram-infra-service:nth-child(2) {
         grid-row: 2;
         grid-column: 1 / span 2;
       }
-      .diagramInfraService:nth-child(3) {
+      .diagram-infra-service:nth-child(3) {
         grid-row: 1 / span 2;
         grid-column: 3;
       }
-      .diagramInfraService:nth-child(4) {
+      .diagram-infra-service:nth-child(4) {
         grid-row: 1;
         grid-column: 4 / span 3;
       }
-      .diagramInfraService:nth-child(5) {
+      .diagram-infra-service:nth-child(5) {
         grid-row: 2;
         grid-column: 4;
       }
-      .diagramInfraService:nth-child(6) {
+      .diagram-infra-service:nth-child(6) {
         grid-row: 2;
         grid-column: 5 / span 2;
       }
-      .diagramInfraService:nth-child(7) {
+      .diagram-infra-service:nth-child(7) {
         grid-row: 1;
         grid-column: 7 / span 3;
       }
-      .diagramInfraService:nth-child(8) {
+      .diagram-infra-service:nth-child(8) {
         grid-row: 2;
         grid-column: 7 / span 1;
       }
-      .diagramInfraService:nth-child(9) {
+      .diagram-infra-service:nth-child(9) {
         grid-row: 2;
         grid-column: 8 / span 2;
       }
-      .diagramInfraService:nth-child(10) {
+      .diagram-infra-service:nth-child(10) {
         grid-row: 1 / span 2;
         grid-column: 10;
       }
-      .diagramInfra:after {
+      .diagram-infra:after {
         content: "";
         position: absolute;
         width: calc(100% + 60px);
@@ -340,11 +358,11 @@ export const StyledContentWrapper = styled.div`
         -webkit-animation-name: leftten;
         animation-name: leftten;
       }
-      .animated.delay03s {
+      .animated.delay-03s {
         -webkit-animation-delay: 0.05s;
         animation-delay: 0.05s;
       }
-      .animated.delay06s {
+      .animated.delay-06s {
         -webkit-animation-delay: 0.1s;
         animation-delay: 0.1s;
       }
@@ -409,21 +427,21 @@ export const StyledContentWrapper = styled.div`
       }
 
       @media (min-width: 670px) {
-        .paymentsStackSection {
+        .payments-stack-section {
           background-color: #fff;
           padding: 80px 0 100px;
         }
-        .diagramSection {
+        .diagram-section {
           min-height: 104px;
         }
-        .diagramProduct svg {
+        .diagram-product svg {
           width: 40px;
           height: 40px;
         }
       }
 
       @media (min-width: 880px) {
-        .diagramSection {
+        .diagram-section {
           min-height: 104px;
           border-radius: 18px;
           padding: 15px;
@@ -436,25 +454,24 @@ export const StyledContentWrapper = styled.div`
           grid-gap: 30px 75px;
           grid-template-rows: 1fr 1fr 1fr;
           grid-template-columns: 2fr 1fr;
-          grid-template-areas: "diagramApps diagramAppsContent diagramPlatforms diagramPlatformsContent diagramInfra diagramInfraContent";
+          grid-template-areas: "diagram-apps diagram-apps-content" "diagram-platforms diagram-platforms-content" "diagram-infra diagram-infra-content";
         }
-
-        .diagramInfraService {
+        .diagram-infra-service {
           border-radius: 10px;
         }
-        .diagramInfra:after {
+        .diagram-infra:after {
           display: block;
         }
       }
       @media (max-width: 767px) {
-        .sectioTitle {
+        .section-title {
           font-size: 32px;
         }
-        .sectionDesc {
+        .section-desc {
           font-size: 21px;
           line-height: 32px;
         }
-        .diagramProduct span {
+        .diagram-product span {
           font-size: 13px;
         }
       }

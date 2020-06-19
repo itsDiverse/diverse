@@ -3,6 +3,11 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Helvetica;
+      }
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;

@@ -86,4 +86,23 @@ export const data = {
     bodytext: "",
     background: "",
   },
+  //----------------------------------Module 9
+  module9: {
+    title: "Lorem ipsum dolor sit amet",
+    subtitle: "",
+    heading: "",
+    bodytext: "",
+    background: "",
+  },
+  //----------------------------------Module 10
+  module10: {
+    title: "Lorem ipsum dolor sit amet",
+    subtitle: "",
+    heading: "",
+    subheading: "",
+    bodytext: "",
+    background: "",
+    boxTitle: "",
+    BoxText: "",
+  },
 }

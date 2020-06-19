@@ -3,19 +3,41 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
-      *missing classes */ .rooted-content-left {
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Helvetica;
+        font-weight: 1200;
       }
-      .rooted-content-right {
+      body {
+        background: #fff;
+        min-height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 62.5%;
+        font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        -webkit-font-feature-settings: "pnum";
+        font-feature-settings: "pnum";
+        font-variant-numeric: proportional-nums;
       }
-      .rooted-box-documentation {
+      ol,
+      ul {
+        list-style: none;
       }
-      .rooted-box-oss {
+      a {
+        text-decoration: none;
       }
-      .rooted-box-works-with {
-      }
-      .anchorBottom {
-      }
-
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -26,7 +48,6 @@ export const StyledContentWrapper = styled.div`
         margin: 0 auto;
         padding: 0px;
         width: 100%;
-        opacity: ${props.theme.containerLg.opacity};
       }
       .solutions-rooted-section {
         position: relative;
@@ -35,7 +56,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 34px;
         line-height: 44px;
-        color: #32325d;
+        color: ${props.theme.colors.primary};
       }
       .section-intro {
         text-align: center;
@@ -100,7 +121,7 @@ export const StyledContentWrapper = styled.div`
         position: relative;
         height: 200px;
         background-color: #fa9a91;
-        background-image: url(./images/increment-callout-v2.jpg);
+        background-image: url(images/increment-callout-v2.jpg);
         background-size: 120%;
         background-position: top;
         margin: -30px -30px 25px;

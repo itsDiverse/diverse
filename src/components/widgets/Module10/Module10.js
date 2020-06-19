@@ -5,21 +5,19 @@ import { StyledContentWrapper } from "./Module10.styles"
 
 export default props => (
   <StyledContentWrapper theme={props.theme}>
-    <div className="content-wrapper">
-      <div className="solutions-rooted-section">
-        <div className="container-lg">
-          <div className="section-intro">
-            <h2 className="section-title">
-              Solutions rooted in code and design
-            </h2>
-            <p className="section-desc">
+    <div class="content-wrapper">
+      <div class="solutions-rooted-section">
+        <div class="container-lg">
+          <div class="section-intro">
+            <h2 class="section-title">{props.data.title}</h2>
+            <p class="section-desc">
               As the world’s fastest-advancing developer platform, Stripe gives
               businesses the tools and technology to build better.
             </p>
           </div>
-          <div className="solutions-rooted-content">
-            <div className="rooted-content-left">
-              <div className="rooted-box rooted-box-documentation">
+          <div class="solutions-rooted-content">
+            <div class="rooted-content-left">
+              <div class="rooted-box rooted-box-documentation">
                 <figure aria-hidden="true">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -39,16 +37,16 @@ export default props => (
                     </g>
                   </svg>
                 </figure>
-                <h4 className="rooted-title">Industry-leading documentation</h4>
-                <p className="rooted-desc">
-                  <a href="#" className="common-link">
+                <h4 class="rooted-title">Industry-leading documentation</h4>
+                <p class="rooted-desc">
+                  <a href="#" class="common-link">
                     Our documentation
                   </a>{" "}
                   and extensive Client libraries contain everything a business
                   needs to build a custom integration in a fraction of the time.
                 </p>
               </div>
-              <div className="rooted-box rooted-box-oss">
+              <div class="rooted-box rooted-box-oss">
                 <figure aria-hidden="true">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -73,19 +71,19 @@ export default props => (
                     </g>
                   </svg>
                 </figure>
-                <h4 className="rooted-title">
+                <h4 class="rooted-title">
                   Support for the developer community
                 </h4>
-                <p className="rooted-desc">
+                <p class="rooted-desc">
                   We actively contribute to{" "}
-                  <a href="#" className="common-link">
+                  <a href="#" class="common-link">
                     open-source projects
                   </a>
                   —giving back to the community through development, patches,
                   and sponsorships.
                 </p>
               </div>
-              <div className="rooted-box rooted-box-works-with">
+              <div class="rooted-box rooted-box-works-with">
                 <figure aria-hidden="true">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -109,10 +107,10 @@ export default props => (
                     </g>
                   </svg>
                 </figure>
-                <h4 className="rooted-title">Thriving partner ecosystem</h4>
-                <p className="rooted-desc">
+                <h4 class="rooted-title">Thriving partner ecosystem</h4>
+                <p class="rooted-desc">
                   Our{" "}
-                  <a href="#" className="common-link">
+                  <a href="#" class="common-link">
                     Works with Stripe
                   </a>{" "}
                   library offers hundreds of third-party integrations to help
@@ -121,14 +119,12 @@ export default props => (
                 </p>
               </div>
             </div>
-            <div className="rooted-content-right">
-              <aside className="engineering-scale common-Card">
-                <div className="cover"></div>
-                <h2 className="engineering-scale-title">
-                  Engineering at scale
-                </h2>
-                <p className="engineering-scale-desc">
-                  We publish <span className="u-italic">Increment</span>, an
+            <div class="rooted-content-right">
+              <aside class="engineering-scale common-Card">
+                <div class="cover"></div>
+                <h2 class="engineering-scale-title">Engineering at scale</h2>
+                <p class="engineering-scale-desc">
+                  We publish <span class="u-italic">Increment</span>, an
                   engineering magazine dedicated to sharing insights and
                   practical advice for building and operating software systems
                   at scale.
@@ -136,7 +132,7 @@ export default props => (
                 <a
                   href="#"
                   target="_blank"
-                  className="btn-engineering btn-common"
+                  class="btn-engineering btn-common"
                   data-analytics-action="visit_increment"
                   data-analytics-source="increment_cta"
                 >
@@ -146,19 +142,19 @@ export default props => (
             </div>
           </div>
         </div>
-        <div className="common-Grid anchorBottom">
-          <div className="backgroundContainer">
-            <div className="grid">
-              <div className="background"></div>
+        <div class="common-Grid anchorBottom">
+          <div class="backgroundContainer">
+            <div class="grid">
+              <div class="background"></div>
             </div>
           </div>
-          <div className="backgroundlineContainer">
-            <div className="grid">
-              <div className="linebg"></div>
-              <div className="linebg"></div>
-              <div className="linebg"></div>
-              <div className="linebg"></div>
-              <div className="linebg"></div>
+          <div class="backgroundlineContainer">
+            <div class="grid">
+              <div class="linebg"></div>
+              <div class="linebg"></div>
+              <div class="linebg"></div>
+              <div class="linebg"></div>
+              <div class="linebg"></div>
             </div>
           </div>
         </div>

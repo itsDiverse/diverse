@@ -129,4 +129,30 @@ export const theme = {
       secondaryOpacity: "",
     },
   },
+  //----------------------------------Module9
+  module9: {
+    colors: {
+      primary: "#32325d",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+    },
+  },
+  //----------------------------------Module 10
+  module10: {
+    colors: {
+      primary: "#32325d",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+    },
+
+    buttons: {
+      primary: "",
+      primaryOpacity: "",
+      primaryHover: "",
+      primaryHoverOpacity: "",
+      boxBackground: "",
+    },
+  },
 }
