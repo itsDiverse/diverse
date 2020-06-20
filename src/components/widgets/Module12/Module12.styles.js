@@ -1,9 +1,41 @@
 import styled, { css } from "styled-components"
-import logos from "./images/content-logos.png"
 
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background: #fff;
+        min-height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 62.5%;
+        font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        -webkit-font-feature-settings: "pnum";
+        font-feature-settings: "pnum";
+        font-variant-numeric: proportional-nums;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -14,7 +46,6 @@ export const StyledContentWrapper = styled.div`
         margin: 0 auto;
         padding: 0px;
         width: 100%;
-        opacity: ${props.theme.containerXl.opacity};
       }
       .section-logos-wrapper {
         padding: 0 20px;
@@ -43,7 +74,7 @@ export const StyledContentWrapper = styled.div`
       }
       .section-logos-wrapper span {
         background-size: 1146px 1030px;
-        background-image: url(${logos});
+        background-image: url(${props.images.contentLogos});
       }
       .Logo-opentable {
         background-position: -184px -737px;
@@ -105,7 +136,7 @@ export const StyledContentWrapper = styled.div`
         (-webkit-min-device-pixel-ratio: 1.25),
         (min-resolution: 120dpi) {
         .section-logos-wrapper span {
-          background-image: url(images/content-logos@2x.png);
+          background-image: url(${props.images.contentLogos2x});
         }
       }
       @media (max-width: 880px) {

@@ -122,16 +122,16 @@ export const StyledContentWrapper = styled.div`
         background-repeat: no-repeat;
       }
       .timeline .timeline-step .icon.submit {
-        background-image: url(images/submit.svg);
+        background-image: url(${props.images.m6Icon1});
       }
       .timeline .timeline-step .icon.documents {
-        background-image: url(images/documents.svg);
+        background-image: url(${props.images.m6Icon2});
       }
       .timeline .timeline-step .icon.incorporation {
-        background-image: url(images/incorporation.svg);
+        background-image: url(${props.images.m6Icon3});
       }
       .timeline .timeline-step .icon.tax-id {
-        background-image: url(images/tax-id.svg);
+        background-image: url(${props.images.m6Icon4});
       }
       .step-no {
       }

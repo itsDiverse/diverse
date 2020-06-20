@@ -124,7 +124,18 @@ export default () => (
     />
     <hr></hr>
     <h1>Module12</h1>
-    <Module12 theme={{ containerXl: { opacity: 1 } }}></Module12>
+    <Module12
+      theme={theme.module12}
+      data={data.module12}
+      images={images.module12}
+    />
+    <hr></hr>
+    <h1>Module13</h1>
+    <Module13
+      theme={theme.module13}
+      data={data.module13}
+      images={images.module13}
+    />
     <hr></hr>
     <h1>Module14</h1>
     <Module14 theme={{ containerLg: { opacity: 1 } }}></Module14>

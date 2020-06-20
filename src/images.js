@@ -18,9 +18,10 @@ import m1aLogo6 from "./images/Module1/shopify.svg"
 import m1aLogo7 from "./images/Module1/unicef.svg"
 //++++++++++++++++++++++++++++++++++++
 
-import m3Icon1 from "./images/Module6/submit.svg"
-import m3Icon2 from "./images/Module6/documents.svg"
-import m3Icon3 from "./images/Module6/incorporation.svg"
+//import images Module 3 +++++++++++++
+import m3Icon1 from "./images/Module3/submit.svg"
+import m3Icon2 from "./images/Module3/documents.svg"
+import m3Icon3 from "./images/Module3/incorporation.svg"
 
 //import images Module 6 +++++++++++++
 import m6Icon1 from "./images/Module6/submit.svg"
@@ -54,7 +55,17 @@ import m11aBannerShadow2 from "./images/Module11a/charity-water.svg"
 import m11aBannerLogo from "./images/Module11a/charity-water.png"
 import m11aIcon1 from "./images/Module11a/sharing.svg"
 import m11aIcon2 from "./images/Module11a/route.svg"
+//++++++++++++++++++++++++++++++++++
 
+//import images Module 12 ++++++++++
+import contentLogos from "./images/Module12/content-logos.png"
+import contentLogos2x from "./images/Module12/content-logos@2x.png"
+//++++++++++++++++++++++++++++++++++
+
+//import images Module 13 ++++++++++
+import icon from "./images/Module13/icon.svg"
+import productIcon from "./images/Module13/product-icon.svg"
+import productNavIcon from "./images/Module13/product-nav-icon.svg"
 //++++++++++++++++++++++++++++++++++
 
 export const images = {
@@ -153,5 +164,16 @@ export const images = {
     m11aBannerLogo,
     m11aIcon1,
     m11aIcon2,
+  },
+  //----------------------------------Module 12
+  module12: {
+    contentLogos,
+    contentLogos2x,
+  },
+  //----------------------------------Module 13
+  module13: {
+    icon,
+    productIcon,
+    productNavIcon,
   },
 }

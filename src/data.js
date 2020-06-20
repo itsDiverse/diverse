@@ -121,4 +121,11 @@ export const data = {
     boxTitle: "",
     boxText: "",
   },
+  //----------------------------------Module 12
+  //----------------------------------Module 13
+  module13: {
+    title: "Lorem Ipsum",
+    bodytext: "",
+    line: "",
+  },
 }

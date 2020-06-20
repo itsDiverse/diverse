@@ -4,7 +4,7 @@ import React from "react"
 import { StyledContentWrapper } from "./Module12.styles"
 
 export default props => (
-  <StyledContentWrapper theme={props.theme}>
+  <StyledContentWrapper theme={props.theme} images={props.images}>
     <div class="content-wrapper">
       <div class="section-logos">
         <div class="container-xl">

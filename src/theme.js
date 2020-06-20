@@ -171,4 +171,25 @@ export const theme = {
     boxBackground2: "",
     boxBackground2opacity: "",
   },
+  //-------------------------------------Module12
+  //-------------------------------------Module 13
+  module13: {
+    colors: {
+      primary: "",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+    },
+
+    buttons: {
+      primary: "",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+      primaryHover: "",
+      primaryHoverOpacity: "",
+      secondaryHover: "",
+      secondaryHoverOpacity: "",
+    },
+  },
 }
