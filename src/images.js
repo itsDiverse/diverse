@@ -91,6 +91,12 @@ import imgRight from "./images/Module20/related-payments.jpg"
 import imgLeft from "./images/Module20/session.jpg"
 //++++++++++++++++++++++++++++++++++
 
+//import images Module 22+++++++++++
+import sliderImg1 from "./images/Module22/slider-img-1.jpg"
+import sliderImg2 from "./images/Module22/slider-img-2.jpg"
+import sliderImg3 from "./images/Module22/slider-img-3.jpg"
+//++++++++++++++++++++++++++++++++++
+
 export const images = {
   //-------------------------------------Template
   title: "",
@@ -221,5 +227,11 @@ export const images = {
   module20: {
     imgRight,
     imgLeft,
+  },
+  //----------------------------------Module 22
+  module22: {
+    sliderImg1,
+    sliderImg2,
+    sliderImg3,
   },
 }

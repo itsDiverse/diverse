@@ -3,6 +3,18 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Helvetica;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -13,7 +25,6 @@ export const StyledContentWrapper = styled.div`
         margin: 0 auto;
         padding: 0px;
         width: 100%;
-        opacity: ${props.theme.containerLg.opacity};
       }
       .intelligent-revenue-section {
         position: relative;

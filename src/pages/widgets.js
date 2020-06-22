@@ -183,12 +183,18 @@ export default () => (
     />
     <hr></hr>
     <h1>Module21</h1>
-    <Module21 theme={{ containerLg: { opacity: 1 } }}></Module21>
+    <Module21
+      theme={theme.module21}
+      data={data.module21}
+      images={images.module21}
+    ></Module21>
     <hr></hr>
     <h1>Module22</h1>
-    <Module22 />
+    <Module22
+      theme={theme.module22}
+      data={data.module22}
+      images={images.module22}
+    />
     <hr></hr>
-    <h1>QuadBox</h1>
-    <QuadBox />
   </>
 )

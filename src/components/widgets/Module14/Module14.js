@@ -4,7 +4,7 @@ import React from "react"
 import { StyledContentWrapper } from "./Module14.styles"
 
 export default props => (
-  <StyledContentWrapper theme={props.theme}>
+  <StyledContentWrapper theme={props.theme} images={props.images}>
     <div className="content-wrapper">
       <div className="going-about-20-minutes">
         <div className="container-lg">

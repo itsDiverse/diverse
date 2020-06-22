@@ -4,7 +4,10 @@ export const StyledContentWrapper = styled.div`
   ${props =>
     css`
       * {
+        margin: 0px;
+        padding: 0px;
         font-family: Helvetica;
+        width: 100%;
       }
       /* Added class to  make it work*/
       .country-IN {
@@ -114,10 +117,10 @@ export const StyledContentWrapper = styled.div`
         background-size: 100% 100%;
       }
       .going-about-20-minutes .devices-dashboard .laptop .device {
-        background-image: url(./images/laptop-device.jpg);
+      background-image: url(${props.images.laptopDevice});
       }
       .going-about-20-minutes .devices-dashboard .laptop .controls {
-        background-image: url(./images/laptop-controls.svg);
+        background-image: url(${props.images.laptopControls}));
       }
       .going-about-20-minutes .devices-dashboard .screen {
         -webkit-transform-origin: 0 0;
@@ -135,8 +138,8 @@ export const StyledContentWrapper = styled.div`
       .going-about-20-minutes .devices-dashboard .ground .shadow {
       }
       .going-about-20-minutes .devices-dashboard .laptop {
-        -webkit-mask: url(./images/laptop-mask.svg);
-        mask: url(/./images/laptop-mask.svg);
+        -webkit-mask: url(${props.images.laptopDevice});
+        mask: url(${props.images.laptopDevice});
       }
       .going-about-20-minutes .devices-dashboard .laptop .screen {
         width: 720px;
@@ -180,7 +183,7 @@ export const StyledContentWrapper = styled.div`
         );
         -webkit-box-shadow: 1px 1px 4px rgba(107, 124, 147, 0.5);
         box-shadow: 1px 1px 4px rgba(107, 124, 147, 0.5);
-        background: url(./images/laptop-screen.jpg) 0 0/100% 100%;
+        background: url(${props.images.laptopScreen}) 0 0/100% 100%;
       }
       .going-about-20-minutes .devices-dashboard {
         display: none;

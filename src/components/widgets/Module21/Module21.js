@@ -1,5 +1,4 @@
 import React from "react"
-//import "./Module21.module.css"
 
 import { StyledContentWrapper } from "./Module21.styles"
 
@@ -11,7 +10,7 @@ export default props => (
           <div className="intelligent-revenue ">
             <div className="intelligent-revenue-left">
               <div className="intelligent-revenue-left-content">
-                <h2>Intelligent revenue optimization</h2>
+                <h2>{props.data.title}</h2>
                 <p>
                   Stripe helps you reduce declines and errors by optimizing
                   authorization rates. Increase revenue with built-in features

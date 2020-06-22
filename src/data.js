@@ -184,4 +184,13 @@ export const data = {
     background: "",
   },
   //-------------------------------------Module 21
+  module21: {
+    title: "Intelligent revenue optimizationn",
+    subtitle: "",
+    heading: "",
+    subheading: "",
+    background: "",
+    dots: "",
+  },
+  //-------------------------------------Module 22
 }

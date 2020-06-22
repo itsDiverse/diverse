@@ -300,4 +300,24 @@ export const theme = {
     },
   },
   //-------------------------------------Module 21
+  module21: {
+    colors: {
+      primary: "",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+    },
+  },
+  //-------------------------------------Module 22
+  module22: {
+    colors: {
+      primary: "",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+      title: "",
+      bodytext: "",
+      background: "",
+    },
+  },
 }
