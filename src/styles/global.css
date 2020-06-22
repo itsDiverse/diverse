@@ -1,3 +1,9 @@
-body {
- 
+@font-face {
+  font-family: "NovaReg";
+  src: url("../fonts/ProximaNova-Regular-webfont.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "NovaLight";
+  src: url("../fonts/ProximaNova-Light-webfont.woff2") format("woff");
 }

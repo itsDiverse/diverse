@@ -1,9 +1,11 @@
 import styled, { css } from "styled-components"
+import "../../../styles/global.css"
+
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
       * {
-        font-family: Helvetica;
+        font-family: NovaLight;
       }
       body {
         background: #fff;
@@ -16,7 +18,7 @@ export const StyledContentWrapper = styled.div`
         -ms-flex-direction: column;
         flex-direction: column;
         font-size: 62.5%;
-        font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+        font-family: NovaReg;
         font-weight: 400;
         font-style: normal;
         -webkit-text-size-adjust: 100%;
