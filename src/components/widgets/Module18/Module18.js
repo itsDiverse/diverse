@@ -26,7 +26,7 @@ export default props => (
                 ></path>
               </svg>
             </span>
-            <h2>Minimize regulatory and compliance overhead</h2>
+            <h2>{props.data.title}</h2>
           </div>
           <div className="regulatory-compliance-checklist">
             <div className="check-list checklist-left">

@@ -1,7 +1,4 @@
 import React from "react"
-import "./Module20.module.css"
-import payments from "./images/related-payments.jpg"
-import session from "./images/session.jpg"
 
 import { StyledContentWrapper } from "./Module20.styles"
 
@@ -11,7 +8,7 @@ export default props => (
       <div className="save-time-on-reviews">
         <div className="container-lg">
           <div className="save-time-on-reviews-title">
-            <h3>Save time on manual reviews</h3>
+            <h3>{props.data.title}</h3>
             <p>
               Improve your ability to detect fraud patterns and take action
               quickly. Stripe’s optimized workflows slash the time it takes to
@@ -33,7 +30,7 @@ export default props => (
               </div>
               <div className="patterns-right-content">
                 <div className="image-container">
-                  <img src={payments} />
+                  <img src={props.images.imgRight}></img>
                 </div>
               </div>
             </div>
@@ -57,7 +54,7 @@ export default props => (
               </div>
               <div className="networks-right-content">
                 <div className="image-container">
-                  <img src={session}></img>
+                  <img src={props.images.imgLeft}></img>
                 </div>
               </div>
             </div>

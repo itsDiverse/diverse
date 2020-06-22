@@ -3,6 +3,9 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      * {
+        font-family: Helvetica;
+      }
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -13,7 +16,6 @@ export const StyledContentWrapper = styled.div`
         margin: 0 auto;
         padding: 0px;
         width: 100%;
-        opacity: ${props.theme.containerLg.opacity};
       }
 
       .regulatory-compliance-section {
@@ -57,7 +59,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 34px;
         line-height: 44px;
-        color: #32325d;
+        color: ${props.theme.colors.primary};
       }
       .regulatory-compliance-checklist {
         display: flex;

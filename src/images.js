@@ -76,6 +76,21 @@ import laptopMask from "./images/Module14/laptop-mask.svg"
 import laptopScreen from "./images/Module14/laptop-screen.jpg"
 //++++++++++++++++++++++++++++++++++
 
+//import images Module 17+++++++++++
+import dots from "./images/Module17/dots.svg"
+import sales from "./images/Module17/sales.svg"
+//++++++++++++++++++++++++++++++++++
+
+//import images Module 19+++++++++++
+import dots19 from "./images/Module19/dots19.svg"
+import sales19 from "./images/Module19/sales19.svg"
+//++++++++++++++++++++++++++++++++++
+
+//import images Module 20+++++++++++
+import imgRight from "./images/Module20/related-payments.jpg"
+import imgLeft from "./images/Module20/session.jpg"
+//++++++++++++++++++++++++++++++++++
+
 export const images = {
   //-------------------------------------Template
   title: "",
@@ -191,5 +206,20 @@ export const images = {
     laptopDevice,
     laptopMask,
     laptopScreen,
+  },
+  //----------------------------------Module 17
+  module17: {
+    dots,
+    sales,
+  },
+  //----------------------------------Module 19
+  module19: {
+    dots19,
+    sales19,
+  },
+  //----------------------------------Module 20
+  module20: {
+    imgRight,
+    imgLeft,
   },
 }

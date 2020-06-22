@@ -211,9 +211,93 @@ export const theme = {
     },
   },
   //-------------------------------------Module 16
+  module16: {
+    colors: {
+      primary: "",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+    },
+
+    buttons: {
+      primary: "",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+      primaryHover: "",
+      primaryHoverOpacity: "",
+      secondaryHover: "",
+      secondaryHoverOpacity: "",
+    },
+  },
   //-------------------------------------Module 17
+  module17: {
+    colors: {
+      primary: "#32325d",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+    },
+
+    buttons: {
+      primary: "",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+      primaryHover: "",
+      primaryHoverOpacity: "",
+      secondaryHover: "",
+      secondaryHoverOpacity: "",
+    },
+  },
   //-------------------------------------Module 18
+  module18: {
+    colors: {
+      primary: "#32325d",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+    },
+  },
   //-------------------------------------Module 19
+  module19: {
+    colors: {
+      primary: "",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+    },
+
+    buttons: {
+      primary: "",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+      primaryHover: "",
+      primaryHoverOpacity: "",
+      secondaryHover: "",
+      secondaryHoverOpacity: "",
+    },
+  },
   //-------------------------------------Module 20
+  module20: {
+    colors: {
+      primary: "",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+    },
+
+    buttons: {
+      primary: "",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+      primaryHover: "",
+      primaryHoverOpacity: "",
+      secondaryHover: "",
+      secondaryHoverOpacity: "",
+    },
+  },
   //-------------------------------------Module 21
 }

@@ -152,19 +152,35 @@ export default () => (
     />
     <hr></hr>
     <h1>Module16</h1>
-    <Module16 />
+    <Module16
+      theme={theme.module16}
+      data={data.module16}
+      images={images.module16}
+    />
     <hr></hr>
     <h1>Module17</h1>
-    <Module17 />
+    <Module17
+      theme={theme.module17}
+      data={data.module17}
+      images={images.module17}
+    />
     <hr></hr>
     <h1>Module18</h1>
-    <Module18 theme={{ containerLg: { opacity: 1 } }}></Module18>
+    <Module18
+      theme={theme.module18}
+      data={data.module18}
+      images={images.module18}
+    />
     <hr></hr>
     <h1>Module19</h1>
     <Module19 />
     <hr></hr>
     <h1>Module20</h1>
-    <Module20 theme={{ containerLg: { opacity: 1 } }}></Module20>
+    <Module20
+      theme={theme.module20}
+      data={data.module20}
+      images={images.module20}
+    />
     <hr></hr>
     <h1>Module21</h1>
     <Module21 theme={{ containerLg: { opacity: 1 } }}></Module21>

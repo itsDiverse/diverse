@@ -143,9 +143,45 @@ export const data = {
     background: "",
   },
   //-------------------------------------Module 16
+  module16: {
+    title: "",
+    subtitle: "",
+    background: "",
+  },
   //-------------------------------------Module 17
+  module17: {
+    title: "Lorem ipsum dolor sit amet,  consectetur adipiscing elit",
+    heading: "",
+    bodytext: "",
+    background: "",
+    circleBackground: "",
+  },
   //-------------------------------------Module 18
+  module18: {
+    title: "Lorem ipsum dolor sit amet, consectetur ",
+    subtitle: "",
+    bodytext: "",
+    background: "",
+  },
+
   //-------------------------------------Module 19
+  module19: {
+    title: "",
+    subtitle: "",
+    heading: "",
+    subheading: "",
+    bodytext: "",
+    background: "",
+    boxBackground: "",
+    circleBackground: "",
+  },
   //-------------------------------------Module 20
+  module20: {
+    title: "Mi sit amet mauris commodo",
+    subtitle: "",
+    heading: "",
+    bodytext: "",
+    background: "",
+  },
   //-------------------------------------Module 21
 }

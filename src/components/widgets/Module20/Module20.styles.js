@@ -7,6 +7,43 @@ export const StyledContentWrapper = styled.div`
         margin: 0px;
         padding: 0px;
         font-family: Helvetica;
+        max-width: 100%;
+      }
+      body {
+        background: #fff;
+        min-height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 62.5%;
+        font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        -webkit-font-feature-settings: "pnum";
+        font-feature-settings: "pnum";
+        font-variant-numeric: proportional-nums;
+      }
+      :root {
+        overflow-x: hidden;
+        height: 100%;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      html[lang="ja"] body {
+        font-family: Camphor, Meiryo, Hiragino Sans, sans-serif;
       }
       .content-wrapper {
         -webkit-box-flex: 1;
@@ -18,7 +55,6 @@ export const StyledContentWrapper = styled.div`
         margin: 0 auto;
         padding: 0px;
         width: 100%;
-        opacity: ${props.theme.containerLg.opacity};
       }
       .save-time-on-reviews-title {
         text-align: center;
@@ -62,11 +98,6 @@ export const StyledContentWrapper = styled.div`
         line-height: 28px;
         color: #525f7f;
       }
-
-      .patterns-left-content {
-        padding: 1px;
-      }
-
       .patterns-right-content {
         --transform: rotate3d(1, 0, 0, 0deg);
         --shadow: 0px 62.5px 125px -25px rgba(50, 50, 93, 0.5),
@@ -161,6 +192,7 @@ export const StyledContentWrapper = styled.div`
           --shadow: 29.4px 62.5px 125px -25px rgba(50, 50, 93, 0.5),
             17.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
           --lighting-angle: 290deg;
+          width: 100%;
         }
         .save-time-on-reviews .feature .image-container img {
           width: auto;
