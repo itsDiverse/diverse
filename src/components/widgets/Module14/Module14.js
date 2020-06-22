@@ -10,7 +10,7 @@ export default props => (
         <div className="container-lg">
           <div className="going-about-20-minutes-box">
             <div className="left-box-content about-minutes-title">
-              <h2>Get going in about 20 minutes</h2>
+              <h2>{props.data.title}</h2>
               <p>
                 We guide you through the essentials and handle the rest. Fill
                 out a bit of information, which takes about 20 minutes, and then

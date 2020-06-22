@@ -3,6 +3,16 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      * {
+        font-family: Helvetica;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -13,7 +23,6 @@ export const StyledContentWrapper = styled.div`
         margin: 0 auto;
         padding: 0px;
         width: 100%;
-        opacity: ${props.theme.containerXl.opacity};
       }
       .callout-card {
         display: -webkit-box;
@@ -49,7 +58,7 @@ export const StyledContentWrapper = styled.div`
       .callout-content span {
         font-size: 26px;
         line-height: 42px;
-        color: #525f7f;
+        color: ${props.theme.colors.primary};
         font-weight: 400;
       }
       .callout-content span a {

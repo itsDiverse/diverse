@@ -68,6 +68,14 @@ import productIcon from "./images/Module13/product-icon.svg"
 import productNavIcon from "./images/Module13/product-nav-icon.svg"
 //++++++++++++++++++++++++++++++++++
 
+//import images Module 14 ++++++++++
+import groundShadow from "./images/Module14/ground-shadow.png"
+import laptopControls from "./images/Module14/laptop-controls.svg"
+import laptopDevice from "./images/Module14/laptop-device.jpg"
+import laptopMask from "./images/Module14/laptop-mask.svg"
+import laptopScreen from "./images/Module14/laptop-screen.jpg"
+//++++++++++++++++++++++++++++++++++
+
 export const images = {
   //-------------------------------------Template
   title: "",
@@ -175,5 +183,13 @@ export const images = {
     icon,
     productIcon,
     productNavIcon,
+  },
+  //----------------------------------Module 14
+  module14: {
+    groundShadow,
+    laptopControls,
+    laptopDevice,
+    laptopMask,
+    laptopScreen,
   },
 }

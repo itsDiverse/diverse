@@ -192,4 +192,28 @@ export const theme = {
       secondaryHoverOpacity: "",
     },
   },
+  //-------------------------------------Module 14
+  module14: {
+    colors: {
+      primary: "#32325d",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+    },
+  },
+  //-------------------------------------Module 15
+  module15: {
+    colors: {
+      primary: "#525f7f",
+      primaryOpacity: "",
+      secondary: "",
+      secondaryOpacity: "",
+    },
+  },
+  //-------------------------------------Module 16
+  //-------------------------------------Module 17
+  //-------------------------------------Module 18
+  //-------------------------------------Module 19
+  //-------------------------------------Module 20
+  //-------------------------------------Module 21
 }
