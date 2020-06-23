@@ -59,7 +59,7 @@ export const StyledContentWrapper = styled.div`
         background-color: #f6f9fc;
       }
       .section-title {
-        color: #32325d;
+        color: ${props.theme.colors.title};
         margin-bottom: 20px;
         font-weight: 600;
         line-height: 32px;
@@ -70,7 +70,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 300;
         font-size: 21px;
         line-height: 32px;
-        color: #424770;
+        color: ${props.theme.colors.subtitle};
       }
       .process-content-title {
         max-width: 820px;
@@ -139,7 +139,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.text};
       }
       .timeline-step .step-no {
         display: inline-block;
@@ -151,8 +151,8 @@ export const StyledContentWrapper = styled.div`
         font-weight: 600;
         border-radius: 12px;
         text-transform: uppercase;
-        color: #fff;
-        background-color: #e39f48;
+        color: ${props.theme.colors.stepsText};
+        background-color: ${props.theme.colors.stepsBackground};
       }
       .timeline .timeline-step + .timeline-step {
         margin-top: 40px;

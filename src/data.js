@@ -110,10 +110,18 @@ export const data = {
   module6: {
     title: "WHAT'S THE PROCESSS",
     subtitle:
-      "With Stripe Atlas, your company can be set up within days. We help with all the paperwork",
-    bodytext: "",
-    background: "",
-    line: "",
+      "Wth Stripe Atlas, your company can be set up within days. We help with all the paperwork",
+
+    //TimeLine
+    text1: "Submit your application",
+    text2: "Sign documents and access your bank account",
+    text3: "Your company is formed in Delaware",
+    text4: "Receive a tax ID number from the IRS",
+
+    step1: "Step 1",
+    step2: "Step 2",
+    step3: "Step 3",
+    step4: "Step 4",
   },
   //----------------------------------Module 7
   module7: {

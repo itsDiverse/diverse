@@ -80,22 +80,12 @@ export const theme = {
   },
   //--------------------------------Module 6
   module6: {
-    buttons: {
-      primary: "",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
-      primaryHover: "",
-      primaryHoverOpacity: "",
-      secondaryHover: "",
-      secondaryHoverOpacity: "",
-    },
-
     colors: {
-      primary: "#FFF",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
+      title: "#32325d",
+      subtitle: "#424770",
+      text: "#525f7f",
+      stepsText: "#fff",
+      stepsBackground: "#e39f48",
     },
   },
   //----------------------------------Module 7

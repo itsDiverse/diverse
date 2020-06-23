@@ -4,17 +4,14 @@ import React from "react"
 import { StyledContentWrapper } from "./Module6.styles.js"
 
 export default props => (
-  <StyledContentWrapper images={props.images}>
+  <StyledContentWrapper theme={props.theme} images={props.images}>
     <div class="content-wrapper">
       <div class="process-section">
         <div class="container-lg">
           <div class="process-content-section">
             <div class="process-content-title">
-              <h2 class="section-title uppertext">What’s the process?</h2>
-              <p class="section-desc">
-                With Stripe Atlas, your company can be set up within days. We
-                help with all the paperwork.
-              </p>
+              <h2 class="section-title uppertext">{props.data.title}</h2>
+              <p class="section-desc">{props.data.subtitle}</p>
             </div>
           </div>
           <ul class="timeline">
@@ -24,8 +21,9 @@ export default props => (
                 <figure class="icon submit"></figure>
               </div>
               <p>
-                Submit your application<br></br>
-                <span class="step-no">Step 1</span>
+                {props.data.text1}
+                <br></br>
+                <span class="step-no">{props.data.step1}</span>
               </p>
             </li>
             <li class="timeline-step sign-documents">
@@ -33,8 +31,9 @@ export default props => (
                 <figure class="icon documents"></figure>
               </div>
               <p>
-                Sign documents and access your bank account<br></br>
-                <span class="step-no">Step 2</span>
+                {props.data.text2}
+                <br></br>
+                <span class="step-no">{props.data.step2}</span>
               </p>
             </li>
             <li class="timeline-step">
@@ -42,9 +41,9 @@ export default props => (
                 <figure class="icon incorporation"></figure>
               </div>
               <p>
-                Your company is formed in Delaware
+                {props.data.text3}
                 <br></br>
-                <span class="step-no">Step 3</span>
+                <span class="step-no">{props.data.step3}</span>
               </p>
             </li>
             <li class="timeline-step">
@@ -52,8 +51,9 @@ export default props => (
                 <figure class="icon tax-id"></figure>
               </div>
               <p>
-                Receive a tax ID number from the IRS<br></br>
-                <span class="step-no">Step 4</span>
+                {props.data.text4}
+                <br></br>
+                <span class="step-no">{props.data.step4}</span>
               </p>
             </li>
           </ul>
