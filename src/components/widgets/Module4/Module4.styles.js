@@ -3,7 +3,7 @@ export const StyledContentWrapper = styled.div`
   ${props =>
     css`
       * {
-        font-family: Helvetica;
+        font-family: NovaReg;
       }
       body {
         background: #fff;
@@ -66,7 +66,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 34px;
         line-height: 44px;
-        color: ${props.theme.colors.primary};
+        color: ${props.theme.colors.title};
         margin-bottom: 24px;
         font-weight: 400;
       }
@@ -74,7 +74,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 19px;
         line-height: 32px;
-        color: #525f7f;
+        color: ${props.theme.colors.text};
       }
       .powerful-tools-btn .common-button {
         white-space: nowrap;
@@ -86,13 +86,13 @@ export const StyledContentWrapper = styled.div`
           0 1px 3px rgba(0, 0, 0, 0.08);
         box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
           0 1px 3px rgba(0, 0, 0, 0.08);
-        background: #fff;
+        background: ${props.theme.buttons.colorRight};
         border-radius: 4px;
         font-size: 15px;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.025em;
-        color: #6772e5;
+        color: ${props.theme.buttons.textRight};
         text-decoration: none;
         -webkit-transition: all 0.15s ease;
         transition: all 0.15s ease;
@@ -103,8 +103,8 @@ export const StyledContentWrapper = styled.div`
       .powerful-tools-btn .get_started_btn {
         margin: 10px 20px;
         margin-left: 0px;
-        background: #8f6ed5;
-        color: #fff;
+        background: ${props.theme.buttons.colorLeft};
+        color: ${props.theme.buttons.textLeft};
       }
       .powerful-tools-btn .common-button:hover {
         -webkit-transform: translateY(-1px);

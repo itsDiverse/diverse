@@ -50,6 +50,7 @@ export default () => (
       theme={theme.module2}
       data={data.module2}
       videos={videos.module2}
+      images={images.module2}
     />
     <hr></hr>
     <h1>Module3</h1>

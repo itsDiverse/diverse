@@ -4,7 +4,31 @@ export const StyledContentWrapper = styled.div`
   ${props =>
     css`
       * {
-        font-family: Helvetica;
+        margin: 0px;
+        padding: 0px;
+        font-family: NovaReg;
+      }
+      body {
+        background: #fff;
+        min-height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 62.5%;
+        font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        -webkit-font-feature-settings: "pnum";
+        font-feature-settings: "pnum";
+        font-variant-numeric: proportional-nums;
       }
       ol,
       ul {
@@ -29,16 +53,7 @@ export const StyledContentWrapper = styled.div`
         margin: 0 auto;
         padding: 0px;
         width: 100%;
-        opacity: 1;
       }
-      .footer-with-card-section {
-        padding: 1px;
-      }
-      .hover-strokeDark {
-      }
-      .Helm__stroke--cyan3 {
-      }
-
       .footer-with-card-section-wrapper {
         background: transparent;
         overflow: hidden;
@@ -52,7 +67,7 @@ export const StyledContentWrapper = styled.div`
         left: 0;
         right: 0;
         top: 600px;
-        height: 6000px;
+
         background: #f6f9fc;
         -webkit-transform: skew(0, -12deg);
         transform: skew(0, -12deg);
@@ -91,7 +106,7 @@ export const StyledContentWrapper = styled.div`
       }
       .link-arrow:after {
         font: normal 16px StripeIcons;
-        //content: "2192";
+        content: "";
         padding-left: 5px;
       }
       .footer-cards-wrapper h3 {
@@ -102,13 +117,13 @@ export const StyledContentWrapper = styled.div`
         letter-spacing: 0.025em;
         margin: 0 0 5px;
         white-space: normal;
-        color: ${props.theme.colors.primary};
+        color: ${props.theme.colors.boxTitle};
       }
       .footer-cards-wrapper p {
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.boxText};
         margin: 5px 0 0;
       }
       .footer-cards-icon svg {
@@ -118,23 +133,23 @@ export const StyledContentWrapper = styled.div`
         height: 100%;
       }
       .Helm__fill--cyan6 {
-        fill: #68d4f8;
+        fill: ${props.theme.colors.boxIconFill1};
       }
       .Helm__fill--cyan3 {
-        fill: #217ab7;
+        fill: ${props.theme.colors.boxIconFill2};
       }
       .footer-cards-wrapper:hover {
         box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
           0 18px 36px -18px rgba(0, 0, 0, 0.3),
           0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-        color: #32325d !important;
+        color: ${props.theme.colors.boxIconHover} !important;
         transform: translateY(-2px);
       }
       .footer-cards-wrapper:hover svg .hover-fillDark {
-        fill: #32325d;
+        fill: ${props.theme.colors.boxIconHoverDark};
       }
       .footer-cards-wrapper:hover svg .hover-fillLight {
-        fill: #8898aa;
+        fill: ${props.theme.colors.boxIconHoverLight};
       }
       .footer-cards-wrapper svg .hover-fillDark,
       .footer-cards-wrapper svg .hover-fillLight {
@@ -150,7 +165,7 @@ export const StyledContentWrapper = styled.div`
       }
       .get-in-touch-content h2 {
         font-weight: 300;
-        color: #6772e5;
+        color: ${props.theme.colors.title};
         display: block;
         font-size: 30px;
         line-height: 45px;
@@ -160,7 +175,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 30px;
         line-height: 45px;
-        color: #32325d;
+        color: ${props.theme.colors.subtitle};
         margin: 0 0 0.75em;
       }
       .get-in-touch-btn .btn-default {
@@ -185,13 +200,13 @@ export const StyledContentWrapper = styled.div`
         transition: all 0.15s ease;
         flex-shrink: 0;
         margin: 10px;
-        color: #6772e5;
-        background: #fff;
+        color: ${props.theme.buttons.textRight};
+        background: ${props.theme.buttons.colorRight};
         cursor: pointer;
       }
       .get-in-touch-btn .btn-left {
-        background-color: ${props.theme.buttons.primary};
-        color: #fff;
+        background-color: ${props.theme.buttons.colorLeft};
+        color: ${props.theme.buttons.textLeft};
       }
       .get-in-touch-btn .btn-default:hover {
         -webkit-transform: translateY(-1px);
@@ -211,7 +226,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.text};
         position: relative;
       }
       .get-in-touch-content,

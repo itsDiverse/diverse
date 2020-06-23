@@ -18,10 +18,19 @@ import m1aLogo6 from "./images/Module1/shopify.svg"
 import m1aLogo7 from "./images/Module1/unicef.svg"
 //++++++++++++++++++++++++++++++++++++
 
+//import images Module2 +++++++++++++
+import m2Logo1 from "./images/Module2/amazon.svg"
+import m2Logo2 from "./images/Module2/booking_com.svg"
+import m2Logo3 from "./images/Module2/docusign.svg"
+import m2Logo4 from "./images/Module2/instacart.svg"
+import m2Logo5 from "./images/Module2/peleton.svg"
+//++++++++++++++++++++++++++++++++++++
+
 //import images Module 3 +++++++++++++
 import m3Icon1 from "./images/Module3/submit.svg"
 import m3Icon2 from "./images/Module3/documents.svg"
 import m3Icon3 from "./images/Module3/incorporation.svg"
+//++++++++++++++++++++++++++++++++++++
 
 //import images Module 6 +++++++++++++
 import m6Icon1 from "./images/Module6/submit.svg"
@@ -142,6 +151,19 @@ export const images = {
     logo7Alt: "",
   },
   //----------------------------------Module 2
+  module2: {
+    m2Logo1,
+    m2Logo2,
+    m2Logo3,
+    m2Logo4,
+    m2Logo5,
+
+    m2logo1Alt: "Amazonn",
+    m2logo2Alt: "",
+    m2logo3Alt: "",
+    m2logo4Alt: "",
+    m2logo5Alt: "",
+  },
 
   //----------------------------------Module 3
   module3: {

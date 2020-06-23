@@ -67,7 +67,7 @@ export default props => {
     })
   }, [])
   return (
-    <StyledContentWrapper videos={props.videos}>
+    <StyledContentWrapper videos={props.videos} theme={props.theme}>
       <div className="content-wrapper">
         <div className="container-xl">
           <section className="feedback" data-visible-quote="0">
@@ -130,62 +130,39 @@ export default props => {
               </ul>
               <ul className="quotes">
                 <li>
-                  <p className="common-title">
-                    Radar cut our fraud rates by over 70% without any
-                    configuration, saving our pizzerias thousands of dollars
-                    every month and allowing us to focus on delivering the best
-                    local pizza experience possible.
-                  </p>
+                  <p className="common-title">{props.data.title1}</p>
                   <p className="common-UppercaseText">
-                    {props.data.nameSlide1}
+                    {props.data.uppercaseText1}
                   </p>
-                  <p className="common-text">Product Manager</p>
+                  <p className="common-text">{props.data.text1}</p>
                 </li>
                 <li>
-                  <p className="common-title">
-                    Radar dramatically reduced manual review work and saved
-                    Teespring creators from shipping t-shirts to fraudulent
-                    customers.
-                  </p>
+                  <p className="common-title">{props.data.title2}</p>
                   <p className="common-UppercaseText">
-                    {props.data.nameSlide2}
+                    {props.data.uppercaseText2}
                   </p>
-                  <p className="common-text">VP of Engineering</p>
+                  <p className="common-text">{props.data.text2}</p>
                 </li>
                 <li>
-                  <p className="common-title">
-                    Our team protects the Postmates platform from fraud while
-                    still providing a great customer experience. Radar hums in
-                    the background on every transaction and Radar’s models have
-                    been very helpful for separating good transactions
-                    from&nbsp;bad.
-                  </p>
+                  <p className="common-title">{props.data.title3}</p>
                   <p className="common-UppercaseText">
-                    {props.data.nameSlide3}
+                    {props.data.uppercaseText3}
                   </p>
-                  <p className="common-text">Product Lead, Risk Team</p>
+                  <p className="common-text">{props.data.text3}</p>
                 </li>
                 <li>
-                  <p className="common-title">
-                    Radar’s related payments feature helped our fraud team
-                    quickly spot a nuanced fraud ring and avoid significant
-                    potential loss. It’s been a great asset in our fraud
-                    detection&nbsp;arsenal.
-                  </p>
+                  <p className="common-title">{props.data.title4}</p>
                   <p className="common-UppercaseText">
-                    {props.data.nameSlide4}
+                    {props.data.uppercaseText4}
                   </p>
-                  <p className="common-text">Head of Risk and Compliance</p>
+                  <p className="common-text">{props.data.text4}</p>
                 </li>
                 <li>
-                  <p className="common-title">
-                    Radar automatically helped Watsi prevent more than $40M in
-                    fraudulent donations over just a two-month&nbsp;span.
-                  </p>
+                  <p className="common-title">{props.data.title5}</p>
                   <p className="common-UppercaseText">
-                    {props.data.nameSlide5}
+                    {props.data.uppercaseText5}
                   </p>
-                  <p className="common-text">Co-founder</p>
+                  <p className="common-text">{props.data.text5}</p>
                 </li>
               </ul>
               <div className="common-button nav previous">

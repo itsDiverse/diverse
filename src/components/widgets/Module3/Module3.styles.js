@@ -5,7 +5,7 @@ export const StyledContentWrapper = styled.div`
   ${props =>
     css`
       * {
-        font-family: NovaLight;
+        font-family: NovaReg;
       }
       body {
         background: #fff;
@@ -18,7 +18,7 @@ export const StyledContentWrapper = styled.div`
         -ms-flex-direction: column;
         flex-direction: column;
         font-size: 62.5%;
-        font-family: NovaReg;
+        font-family: Camphor, Open Sans, Segoe UI, sans-serif;
         font-weight: 400;
         font-style: normal;
         -webkit-text-size-adjust: 100%;
@@ -60,14 +60,14 @@ export const StyledContentWrapper = styled.div`
         font-weight: 500;
         font-size: 19px;
         line-height: 32px;
-        color: "#32325d";
+        color: ${props.theme.colors.title};
         margin-bottom: 8px;
       }
       .corporate-card-content p {
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: ${props.theme.colors.primary};
+        color: ${props.theme.colors.cardText};
         margin-bottom: 8px;
       }
       .corporate-card-column {

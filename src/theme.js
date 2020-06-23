@@ -20,68 +20,62 @@ export const theme = {
   //-------------------------------------Module 2
   module2: {
     colors: {
-      primary: "#32325d",
-      secondary: "",
-    },
-
-    buttons: {
-      primary: "",
-      secondary: "",
-      primaryHover: "",
-      secondaryHover: "",
+      title: "#32325d",
+      uppercaseText: "#32325d",
+      text: "#32325d",
     },
   },
   //----------------------------------Module 3
   module3: {
     colors: {
-      primary: "#32325d",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
-      title: "",
-      bodyText: "",
-      background: "",
+      title: "#32325d",
+      cardText: "#32325d",
     },
   },
   //----------------------------------Module 4
   module4: {
     colors: {
-      primary: "#32325d",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
+      title: "#32325d",
+      text: "#32325d",
     },
 
     buttons: {
-      primary: "",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
-      primaryHover: "",
-      primaryHoverOpacity: "",
-      secondaryHover: "",
-      secondaryHoverOpacity: "",
+      //Left
+      colorLeft: "#8f6ed5",
+      textLeft: "#fff",
+
+      //Right
+      colorRight: "#fff",
+      textRight: "#32325d",
     },
   },
   //--------------------------------Module 5
 
   module5: {
     colors: {
-      primary: "#32325d",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
+      boxTitle: "#217ab7",
+      boxText: "#525f7f",
+      //Icon
+      boxIconFill1: "#68d4f8",
+      boxIconFill2: "#217ab7",
+      boxIconHover: "#32325d",
+      boxIconHoverDark: "#32325d",
+      boxIconHoverLight: "#8898aa",
+
+      //GetInTouch Section
+      title: "#6772e5",
+      subtitle: "#32325d;",
+      text: "#525f7f",
     },
 
     buttons: {
-      primary: "#3ecf8e",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
-      primaryHover: "",
-      primaryHoverOpacity: "",
-      secondaryHover: "",
-      secondaryHoverOpacity: "",
+      //Left
+      colorLeft: "#3ecf8e",
+      textLeft: "#fff",
+
+      //Right
+      colorRight: "#fff",
+      textRight: "#6772e5",
     },
   },
   //--------------------------------Module 6

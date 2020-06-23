@@ -45,24 +45,20 @@ export default props => {
           <div className="powerfultoolssection">
             <div className="powerful-tools-section">
               <div className="powerful-title-section">
-                <h2>Powerful tools for fraud professionals</h2>
-                <p>
-                  Radar for Fraud Teams helps you fine-tune how Radar operates,
-                  get fraud insights on suspicious charges, and assess your
-                  fraud management performance from a unified dashboard.
-                </p>
+                <h2>{props.data.title}</h2>
+                <p>{props.data.text}</p>
                 <div className="powerful-tools-btn">
                   <a
-                    href="#"
                     className="common-button get_started_btn common-Link"
+                    href={props.data.linkLeft}
                   >
-                    Get Started
+                    {props.data.textLeft}
                   </a>
                   <a
-                    href="#"
+                    href={props.data.linkRight}
                     className="common-button contact_sales_btn common-Link"
                   >
-                    Contact Sales
+                    {props.data.textRight}
                   </a>
                 </div>
               </div>
@@ -80,8 +76,14 @@ export default props => {
                         poster="images/video-poster.jpg"
                         preload="metadata"
                       >
-                        <source src={props.sample} type="video/mp4"></source>
-                        <source src={props.sample} type="video/ogg"></source>
+                        <source
+                          src={props.videos.sample}
+                          type="video/mp4"
+                        ></source>
+                        <source
+                          src={props.videos.sample}
+                          type="video/ogg"
+                        ></source>
                       </video>
                     </div>
                     <div className="actualVideo">
@@ -92,8 +94,14 @@ export default props => {
                         controls
                         className="opacity: 0"
                       >
-                        <source src={props.sample} type="video/webm"></source>
-                        <source src={props.sample} type="video/mp4"></source>
+                        <source
+                          src={props.videos.sample}
+                          type="video/webm"
+                        ></source>
+                        <source
+                          src={props.videos.sample}
+                          type="video/mp4"
+                        ></source>
                       </video>
                     </div>
                     <div className="fraudteams_video_controls">

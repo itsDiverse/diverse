@@ -4,7 +4,7 @@ export const StyledContentWrapper = styled.div`
   ${props =>
     css`
       * {
-        font-family: Helvetica;
+        font-family: NovaReg;
       }
       body {
         background: #fff;
@@ -74,7 +74,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 500;
         font-size: 19px;
         line-height: 32px;
-        color: #32325d;
+        color: ${props.theme.colors.title};
       }
       .common-UppercaseText {
         font-size: 17px;
@@ -87,7 +87,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.text};
       }
       .common-button {
         white-space: nowrap;
@@ -254,7 +254,7 @@ export const StyledContentWrapper = styled.div`
       }
       section.feedback .quotes .common-UppercaseText {
         margin-top: 20px;
-        color: #32325d;
+        color: ${props.theme.colors.uppercaseText};
       }
       section.feedback .logos {
         display: -webkit-box;

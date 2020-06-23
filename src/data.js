@@ -16,19 +16,40 @@ export const data = {
   },
   //-------------------------------------Module 2
   module2: {
-    nameSlide1: "Fin CUANTO? ",
-    nameSlide2: "Lee Edwards",
-    nameSlide3: "Jeff Fong",
-    nameSlide4: "Alison Cleggett",
-    nameSlide5: "Thomas Bukowski",
-    title: "",
-    subtitle: "",
-    heading: "",
-    subheading: "",
-    bodytext: "",
-    background: "",
-    arrowBackground: "",
-    logoBackground: "",
+    //SlideOne
+    title1: `Radarr cut our fraud rates by over 70% without any
+      configuration saving our pizzerias thousands of dollars
+      every month and allowing us to focus on delivering the best
+      local pizza experience possible.`,
+    uppercaseText1: "Fin CUANTO?? ",
+    text1: "Product Managerr",
+
+    //Slide2
+    title2: `Radar dramatically reduced manual review work and saved
+    Teespring creators from shipping t-shirts to fraudulent
+    customers.`,
+    uppercaseText2: "Lee Edwards",
+    text2: "VP of Engineering",
+
+    //Slide3
+    title3: `Our team protects the Postmates platform from fraud while
+    still providing a great customer experience. Radar hums in
+    the background on every transaction and Radar’s models have
+    been very helpful for separating good transactions
+    from bad.`,
+    uppercaseText3: "Jeff Fong",
+    text3: "Product Lead, Risk Team",
+
+    //Slide4
+    title4: `Radar’s related payments feature helped our fraud team quickly spot a nuanced fraud ring and avoid significant potential loss. It’s been a great asset in our fraud detection arsenal.`,
+    uppercaseText4: "Alison Cleggett",
+    text4: "Head of Risk and Compliance",
+
+    //Slide5
+    title5: `Radar automatically helped Watsi prevent more than $40M in
+    fraudulent donations over just a two-month span.`,
+    uppercaseText5: "Thomas Bukowski",
+    text5: "Co-founder",
   },
   //----------------------------------Module 3
   module3: {
@@ -46,20 +67,44 @@ export const data = {
   },
   //----------------------------------Module 4
   module4: {
-    title: "",
-    bodytext: "",
-    background: "",
+    title: "Powerful tools for fraud professionalss",
+    text: `Radar for Fraud Teams helps you fine-tune how Radar operates,
+    get fraud insights on suspicious charges, and assess your
+    fraud management performance from a unified dashboardd.`,
+
+    //Buttons
+    textLeft: "Get Started",
+    linkLeft: "https://www.w3schools.com",
+
+    textRight: "Contact Sales",
+    linkRight: "https://www.w3schools.com",
   },
   //----------------------------------Module 5
   module5: {
+    //BoxLeft
     titleLeft: "This is the Imported Title",
-    titleRight: "Imported Title",
-    title: "HHHHHHH",
-    subtitle: "",
-    heading: "",
-    subheading: "",
-    bodytext: "",
-    background: "",
+    textLeft: `You can use Connect Payouts through the Dashboard or via the
+    API.`,
+    linkLeft: "https://www.w3schools.com",
+
+    //BoxRight
+    titleRight: "Pricing",
+    textRight: `Starting at 0.25% of payout volume; per-account fee may
+    apply.`,
+    linkRight: "https://www.w3schools.com",
+
+    //GetInTouch Section
+    title: "Ready to get started?",
+    subtitle: "Get in touch or create an account",
+    text: "Connect Payouts is available for platforms based in Hawaii.",
+
+    //ButtonLeft
+    buttonLeft: "Contact Sales",
+    buttonLinkLeft: "http://www.bakdel.site",
+
+    //ButtonRight
+    buttonRight: "Create Account",
+    buttonLinkRight: "https://www.w3schools.com",
   },
   //----------------------------------Module 6
   module6: {
