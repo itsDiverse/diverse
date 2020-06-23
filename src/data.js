@@ -125,9 +125,121 @@ export const data = {
   },
   //----------------------------------Module 7
   module7: {
-    title: "",
-    bodytext: "",
-    background: "",
+    //Section1
+    title1: "Compliancee",
+
+    //-------------------------LeftContent
+    bulletList: {
+      title: "Lawyer friendly",
+      item1: "Dynamic risk-based KYC/AML checks for all recipients",
+      item2: "API-based OFAC and sanctions screening",
+      item3: "IRS tax threshold tracking and 1099 support",
+      item4: "Card industry blacklist filtering",
+      item5: "Licensed money transmission from U.S. states &amp; UK FCA",
+      item6: "Screening for bad actors using data from the Stripe Network",
+    },
+
+    //-------------------------RightContent
+    paragraph1: {
+      text: {
+        //Text before link
+        before: "If you’re running a multi-sided ",
+        link1: {
+          url: "https://www.w3schools.com",
+          text: "marketplace",
+        },
+        //Text in between links
+        between: "or",
+        link2: {
+          url: "https://www.w3schools.com",
+          text: "platform",
+        },
+        //Text after links
+        after:
+          ", there’s no doubt you’re wrestling with payments compliance issues such as card network rules, money transmission, KYC, and tax reporting. Connect makes these burdens easier to manage by shifting some of the most onerous obligations to Stripe, letting you stay focused on your product and spend less time on compliance related tasks.",
+      },
+    },
+    paragraph2: {
+      text: `Under the hood, Connect is powered by secure credit card data
+      tokenization to help you meet PCI obligations, contains
+      monitoring and verification systems to help you with KYC needs
+      and tax obligations, and leverages Stripe’s money transmission
+      licenses in the U.S. as well as European e-money
+      authorization.`,
+    },
+
+    //Section2
+    //-------------------------LeftContent
+    title2: "Its going great!",
+    paragraph3: "Vamos carajo!",
+    paragraph4: `Easily track the flow of funds from a customer to a recipient,
+    with full records of all transactions in Stripe—we provide the
+    ledger. Optional application fees let you specify your earnings
+    and Stripe nets everything out. In the U.S., Connect includes
+    gross earnings tracking and automated 1099 form generation and
+    delivery.`,
+    //-------------------------RightContent-Laptop
+    leftMenu: {
+      companyName: "Kosa Commerce",
+      //<ul>
+      l1: "Home",
+      l2: "Payments",
+      l3: "Transfers",
+      l4: "Customers",
+      //<ul>
+      l5: "Radar",
+      l6: "Subscriptions",
+      l7: "Connect",
+      l8: "Products",
+      //<ul>
+      l9: "Webhooks",
+      l10: "API",
+      l11: "View Test Data",
+      //<ul>
+      l12: "Beta Settings",
+      l13: "Business Settings",
+    },
+    topMenu: {
+      li1: "Connected accounts",
+      li2: "Connect transfers",
+      li3: "Collected fees",
+      li4: "Recipients",
+    },
+    boxTop: {
+      title: "Accounts with upcoming verification due dates",
+      li1: "Sublime Succulents",
+      code1: "acct_19RLGo12b5oAamm",
+      //----------------------------
+      li2: "Owen's Pet Supplies",
+      code2: "acct_20R0sAPMvcY781",
+      //----------------------------
+      li3: "Burgundy Wine Shop",
+      code3: "acct_6690dsOLPalQ8i",
+      //----------------------------
+      li4: "Amy Carolyn Jewelr",
+      code4: "acct_320dqoPaYOxn3c",
+
+      state: "Upcoming due",
+    },
+    boxBottom: {
+      title: "Recently connected accounts",
+      li1: "Michael’s Hardware",
+      code1: "acct_426klopma25kaa",
+      //----------------------------
+      li2: "Saper Travel Agency",
+      code2: "acct_325LSOmq250gNA",
+      //----------------------------
+      li3: "Nelson Interior Design",
+      code3: "acct_104KvnwQYOP341",
+
+      state1: "Verified",
+      state2: "Unverified",
+    },
+
+    //Section3
+    //-------------------------LeftContent-Box
+
+    //-------------------------RightContent
   },
   //----------------------------------Module 8
   module8: {

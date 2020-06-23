@@ -40,12 +40,12 @@ import m6Icon4 from "./images/Module6/tax-id.svg"
 //++++++++++++++++++++++++++++++++++++
 
 //import images Module 7 +++++++++++++
-import lawerImg from "./images/Module7/lawyer-friendly-checkmark.svg"
+import checkList from "./images/Module7/lawyer-friendly-checkmark.svg"
 import dashboardImg from "./images/Module7/dashboard-chrome.svg"
 import flagIconsImg from "./images/Module7/flagIcons.svg"
-import complianceImg from "./images/Module7/compliance.svg"
+import section1Title from "./images/Module7/compliance.svg"
 import internationalImg from "./images/Module7/international-support.svg"
-import platformImg from "./images/Module7/platform-management.svg"
+import section2Title from "./images/Module7/platform-management.svg"
 //++++++++++++++++++++++++++++++++++++
 
 //import images Module 11 ++++++++++
@@ -188,12 +188,22 @@ export const images = {
   },
   //----------------------------------Module 7
   module7: {
-    lawerImg,
+    section1Title,
+    checkList,
+
+    section2Title,
     dashboardImg,
+
     flagIconsImg,
-    complianceImg,
+
     internationalImg,
-    platformImg,
+
+    section1TitleAlt: "",
+    checkListAlt: "",
+    section2TitleAlt: "",
+    section4TitleAlt: "",
+    section5TitleAlt: "",
+    section6TitleAlt: "",
   },
   //----------------------------------Module 8
   //----------------------------------Module 9

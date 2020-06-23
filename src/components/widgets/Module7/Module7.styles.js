@@ -103,7 +103,7 @@ export const StyledContentWrapper = styled.div`
         color: #525f7f;
       }
       .compliance-right-content ul li:after {
-        content: url(${props.images.lawerImg});
+        content: url(${props.images.checkList});
         position: absolute;
         top: 3px;
         left: 0;
@@ -268,7 +268,8 @@ export const StyledContentWrapper = styled.div`
         font-weight: 500;
       }
       .connected-accounts-nav ul {
-        margin: 29px 0 0 32px;
+        margin-top: 24px;
+        padding-bottom: 17px;
       }
       .connected-accounts-nav li + li {
         margin-top: 15px;
