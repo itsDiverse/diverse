@@ -32,6 +32,11 @@ import m3Icon2 from "./images/Module3/documents.svg"
 import m3Icon3 from "./images/Module3/incorporation.svg"
 //++++++++++++++++++++++++++++++++++++
 
+//import images Module 5 +++++++++++++
+import m5Image1 from "./images/Module5/img1.svg"
+import m5Image2 from "./images/Module5/img2.svg"
+//++++++++++++++++++++++++++++++++++++
+
 //import images Module 6 +++++++++++++
 import m6Icon1 from "./images/Module6/submit.svg"
 import m6Icon2 from "./images/Module6/documents.svg"
@@ -179,7 +184,10 @@ export const images = {
   //----------------------------------Module 4
 
   //----------------------------------Module 5
-
+  module5: {
+    m5Image1,
+    m5Image2,
+  },
   //----------------------------------Module 6
   module6: {
     m6Icon1,

@@ -149,7 +149,7 @@ export const StyledContentWrapper = styled.div`
         fill: ${props.theme.colors.boxIconHoverDark};
       }
       .footer-cards-wrapper:hover svg .hover-fillLight {
-        fill: ${props.theme.colors.boxIconHoverLight};
+        fill: ${props.theme.colors.boxIconHover};
       }
       .footer-cards-wrapper svg .hover-fillDark,
       .footer-cards-wrapper svg .hover-fillLight {
