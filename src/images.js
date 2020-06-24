@@ -45,13 +45,13 @@ import m6Icon4 from "./images/Module6/tax-id.svg"
 //++++++++++++++++++++++++++++++++++++
 
 //import images Module 7 +++++++++++++
+import section1Title from "./images/Module7/compliance.svg"
 import checkList from "./images/Module7/lawyer-friendly-checkmark.svg"
+import section2Title from "./images/Module7/platform-management.svg"
+import section3Title from "./images/Module7/international-support.svg"
+import backgroundImg from "./images/Module7/background-image.jpg"
 import dashboardImg from "./images/Module7/dashboard-chrome.svg"
 import flagIconsImg from "./images/Module7/flagIcons.svg"
-import section1Title from "./images/Module7/compliance.svg"
-import section3Title from "./images/Module7/international-support.svg"
-import section2Title from "./images/Module7/platform-management.svg"
-import backgroundImg from "./images/Module7/background-image.jpg"
 //++++++++++++++++++++++++++++++++++++
 
 //import images Module 11 ++++++++++

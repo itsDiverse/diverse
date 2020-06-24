@@ -91,17 +91,9 @@ export const theme = {
   //----------------------------------Module 7
   module7: {
     colors: {
-      primary: "",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
-
-      heading: "",
-      bodytext: "",
-      background: "",
-      textBoxBackground: "",
-      textBoxTitle: "",
-      line: "",
+      title: "#32325d",
+      text: "#525f7f",
+      titleLeftBox: "#57c3f0",
     },
   },
   //----------------------------------Module8

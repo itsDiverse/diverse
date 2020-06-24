@@ -49,7 +49,7 @@ export const StyledContentWrapper = styled.div`
       .compliance-title h2 {
         font-size: 20px;
         line-height: 32px;
-        color: #32325d;
+        color: ${props.theme.colors.title};
       }
       .compliance-content-wrapper {
         padding: 0 20px;
@@ -61,7 +61,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.text};
         margin-top: 1em;
       }
       .compliance-left-content p:first-child {
@@ -86,7 +86,7 @@ export const StyledContentWrapper = styled.div`
       }
       .compliance-right-content h3 {
         margin-bottom: 18px;
-        color: #57c3f0;
+        color: ${props.theme.colors.titleLeftBox};
         font-weight: 600;
         text-transform: uppercase;
         font-size: 15px;
@@ -100,7 +100,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.text};
       }
       .compliance-right-content ul li:after {
         content: url(${props.images.checkList});
@@ -125,7 +125,7 @@ export const StyledContentWrapper = styled.div`
       }
       .platform-management-left-content h2 {
         margin-bottom: 20px;
-        color: #32325d;
+        color: ${props.theme.colors.title};
         font-size: 20px;
         line-height: 32px;
         font-weight: 600;
@@ -136,7 +136,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.text};
         margin-top: 1em;
       }
       .platform-management-left-content p:first-child {
@@ -536,11 +536,11 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.text};
       }
       .international-support .international-support-left-content h2 {
         margin-bottom: 20px;
-        color: #32325d;
+        color: ${props.theme.colors.title};
         font-size: 20px;
         line-height: 32px;
         font-weight: 600;
