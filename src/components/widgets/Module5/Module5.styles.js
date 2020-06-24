@@ -57,8 +57,8 @@ export const StyledContentWrapper = styled.div`
       .footer-with-card-section-wrapper {
         background: transparent;
         overflow: hidden;
-        padding-top: 500px;
-        margin-top: -480px;
+        //padding-top: 500px;
+        //margin-top: -480px;
         position: relative;
       }
       .footer-with-card-section-wrapper:before {
@@ -261,6 +261,7 @@ export const StyledContentWrapper = styled.div`
           display: flex;
           flex-direction: column;
           justify-content: center;
+          padding-top: 30px;
         }
       }
       @media (max-width: 990px) {
@@ -269,6 +270,9 @@ export const StyledContentWrapper = styled.div`
         }
       }
       @media (max-width: 767px) {
+        .footer-with-card-section-wrapper {
+          padding-top: 130px;
+        }
         .footer-cards {
           display: block;
         }

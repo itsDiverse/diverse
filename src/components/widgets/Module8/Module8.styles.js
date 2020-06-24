@@ -29,7 +29,7 @@ export const StyledContentWrapper = styled.div`
         margin: 25px 0 18px;
         font-size: 42px;
         line-height: 52px;
-        color: ${props.theme.colors.primary};
+        color: ${props.theme.colors.titles};
         font-weight: 400;
       }
       .section-desc {
@@ -102,12 +102,12 @@ export const StyledContentWrapper = styled.div`
       .onetime-lifetime-left-content .medium {
         font-weight: 500;
       }
-      .color-green {
-        color: #3ecf8e;
+      .color-medium {
+        color: ${props.data.leftBox.text.color.color};
       }
       .onetime-lifetime-left-footer {
         padding: 3.5em 1em;
-        background-color: #ff9b7c;
+        background-color: ${props.theme.colors.secondary};
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -145,7 +145,7 @@ export const StyledContentWrapper = styled.div`
         align-items: center;
       }
       .color-slate {
-        color: #32325d;
+        color: ${props.theme.colors.titles};
       }
       .UppercaseTitle {
         font-size: 21px;
@@ -159,7 +159,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 19px;
         line-height: 32px;
-        color: #525f7f;
+        color: ${props.theme.colors.texts};
       }
       .onetime-lifetime-list {
         font-size: 16px;
@@ -174,7 +174,7 @@ export const StyledContentWrapper = styled.div`
         margin-right: 1em;
       }
       .title-h5 {
-        color: #32325d;
+        color: ${props.theme.colors.titles};
         margin-bottom: 0.2em;
         font-weight: 500;
         font-size: 19px;
@@ -184,7 +184,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.texts};
       }
       .onetime-lifetime-second-section {
         margin: 120px auto 0;

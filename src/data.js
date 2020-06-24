@@ -6,17 +6,25 @@ export const data = {
   subheading: "",
   bodytext: "",
   background: "",
+
   //-------------------------------------Module1a
   module1: {
     title: "",
   },
+
   //-------------------------------------Module1a
   module1a: {
     title: "",
   },
+
   //-------------------------------------Module 2
   module2: {
     //SlideOne
+    slide1: {
+      title: "",
+      uppercaseText: "",
+      text: "",
+    },
     title1: `Radarr cut our fraud rates by over 70% without any
       configuration saving our pizzerias thousands of dollars
       every month and allowing us to focus on delivering the best
@@ -51,6 +59,7 @@ export const data = {
     uppercaseText5: "Thomas Bukowski",
     text5: "Co-founder",
   },
+
   //----------------------------------Module 3
   module3: {
     title1: "Lorem Ipsum1",
@@ -65,6 +74,7 @@ export const data = {
     text3:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
   },
+
   //----------------------------------Module 4
   module4: {
     title: "Powerful tools for fraud professionalss",
@@ -79,6 +89,7 @@ export const data = {
     textRight: "Contact Sales",
     linkRight: "https://www.w3schools.com",
   },
+
   //----------------------------------Module 5
   module5: {
     //BoxLeft
@@ -106,6 +117,7 @@ export const data = {
     buttonRight: "Create Account",
     buttonLinkRight: "https://www.w3schools.com",
   },
+
   //----------------------------------Module 6
   module6: {
     title: "WHAT'S THE PROCESSS",
@@ -123,6 +135,7 @@ export const data = {
     step3: "Step 3",
     step4: "Step 4",
   },
+
   //----------------------------------Module 7
   module7: {
     //Section1
@@ -272,15 +285,57 @@ export const data = {
     },
     //-------------------------LeftContent-Box
   },
+
   //----------------------------------Module 8
   module8: {
     title: "Lorem ipsum dolor sit amet",
     subtitle:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    heading: "",
-    subheading: "",
-    bodytext: "",
-    background: "",
+    //-------------------------TopLeftContent-Box
+    leftBox: {
+      text: {
+        //Text with color
+        before: "“We recovered",
+        color: {
+          color: "#3ecf8e",
+          text: "12% of revenue",
+          after: "through",
+        },
+        bold: "Stripe Billing’s automatic card updater",
+        after: "in 2017.",
+      },
+    },
+    //-------------------------TopRightContent
+    rightText: {
+      title: "Reduce declined payments by up to 40%",
+      text: `Nearly a quarter of churn is caused by missed payments or declined
+        cards. In 2017, Stripe’s recovery tools reduced payment declines
+        for users by 45% on average and increased revenue by 10% on
+        average.`,
+      title2: "Smart retry logic",
+      text2: `Stripe uses machine learning algorithms that train on data
+        from across the Stripe network to optimize retry logic and
+        minimize failed payments.`,
+      title3: " Payment reminders and overdue notices",
+      text3: `Maximize your chances of getting paid with prebuilt email
+        reminders for missed or overdue payments.`,
+    },
+    //-------------------------BottomLeftContent
+    leftText: {
+      title: "Optimize the customer lifecycle",
+      text: `Use Stripe as a system of record for the customer lifecycle:
+        manage important events such as automatically provisioning
+        services for new subscribers or sending reminders for renewals.`,
+      title2: "Webhooks",
+      text2: `Automatically notify other systems of lifecycle events,
+        including new subscriptions, payments, or cancellations.`,
+      title3: "Billing proration",
+      text3: `Stripe automatically prorates billing when any plan changes
+      occur.`,
+      title4: "Renewal rules",
+      text4: `Configure rules to automatically or manually renew
+      customers’ subscriptions..`,
+    },
   },
   //----------------------------------Module 9
   module9: {

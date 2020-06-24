@@ -54,6 +54,11 @@ import dashboardImg from "./images/Module7/dashboard-chrome.svg"
 import flagIconsImg from "./images/Module7/flagIcons.svg"
 //++++++++++++++++++++++++++++++++++++
 
+//import images Module 8 +++++++++++++
+import titleImg from "./images/Module8/img1.svg"
+import logoBox from "./images/Module8/docusign.svg"
+//++++++++++++++++++++++++++++++++++++
+
 //import images Module 11 ++++++++++
 import m11Banner from "./images/Module11/lyft.jpg"
 import m11BannerShadow from "./images/Module11/lyft-vert.svg"
@@ -214,6 +219,12 @@ export const images = {
     dashboardImg,
   },
   //----------------------------------Module 8
+  module8: {
+    titleImg,
+    titleImgAlt: "logo",
+    logoBox,
+    logoBoxAlt: "",
+  },
   //----------------------------------Module 9
   //----------------------------------Module 10
   //----------------------------------Module 11
