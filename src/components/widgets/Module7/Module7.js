@@ -218,32 +218,26 @@ export default props => (
           </div>
           <div className="international-support">
             <div className="international-support-left-content">
-              <img src={props.images.internationalImg} />
-              <h2 className="uppercase-text">INTERNATIONAL SUPPORT</h2>
+              <img
+                src={props.images.section3Title}
+                alt={props.images.section3TitleAlt}
+              />
+              <h2 className="uppercase-text">{props.data.title3}</h2>
               <p className="common-BodyText">
-                Expanding internationally typically requires significant
-                resources, time and money. With Connect, you can swiftly expand
-                internationally anywhere Stripe operates, without establishing
-                separate local subsidiaries. This includes credit card
-                processing capabilities in over 30 countries, with charges
-                processed centrally or locally in the recipient’s country, which
-                saves money on fees and improves decline rates. Accept payments
-                in 135+ currencies, pay out in 15+ currencies and present the
-                most relevant payment methods in checkout flows to further
-                optimize conversion rate. All of Connect’s capabilities are
-                supported by Stripe’s core payment functionality, used by
-                millions of businesses and available in over 25 countries.
-                Stripe has 14 global offices, so we can support{" "}
-                <a href="#" className="common-Link">
-                  marketplaces
+                {props.data.text.before}{" "}
+                <a href={props.data.text.link1.url} className="common-Link">
+                  {props.data.text.link1.text}
                 </a>{" "}
-                and{" "}
-                <a href="#" className="common-Link">
-                  platforms
+                {props.data.text.between1}{" "}
+                <a href={props.data.text.link2.url} className="common-Link">
+                  {props.data.text.link2.text}
                 </a>{" "}
-                all over the world.
-                <a href="#features-list" className="js-features-list-trigger">
-                  See the full list of Connect features
+                {props.data.text.between2}
+                <a
+                  href={props.data.text.link3.url}
+                  className="js-features-list-trigger"
+                >
+                  {props.data.text.link3.text}
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
                     <path d="M6 4V0H4v4H0v2h4v4h2V6h4V4H6z"></path>
                   </svg>
@@ -251,110 +245,7 @@ export default props => (
               </p>
             </div>
             <div className="international-support-right-content">
-              <aside>
-                <h2>Bank networks</h2>
-                <ul className="bank-networks">
-                  <li
-                    title="U.S."
-                    className="common-FlagIcon common-FlagIcon--us"
-                  >
-                    ACH
-                  </li>
-                  <li
-                    title="SG"
-                    className="common-FlagIcon common-FlagIcon--sg"
-                  >
-                    GIRO, FAST
-                  </li>
-                  <li
-                    title="GB"
-                    className="common-FlagIcon common-FlagIcon--gb"
-                  >
-                    Bacs, FPS
-                  </li>
-                  <li
-                    title="JP"
-                    className="common-FlagIcon common-FlagIcon--jp"
-                  >
-                    Zengin
-                  </li>
-                </ul>
-
-                <p>Single Euro Payments Area (SEPA)</p>
-                <ul className="flag-list">
-                  <li
-                    title="BE"
-                    className="common-FlagIcon common-FlagIcon--be"
-                  ></li>
-                  <li
-                    title="FI"
-                    className="common-FlagIcon common-FlagIcon--fi"
-                  ></li>
-                  <li
-                    title="FR"
-                    className="common-FlagIcon common-FlagIcon--fr"
-                  ></li>
-                  <li
-                    title="DE"
-                    className="common-FlagIcon common-FlagIcon--de"
-                  ></li>
-                  <li
-                    title="IE"
-                    className="common-FlagIcon common-FlagIcon--ie"
-                  ></li>
-                  <li
-                    title="IT"
-                    className="common-FlagIcon common-FlagIcon--it"
-                  ></li>
-                  <li
-                    title="NL"
-                    className="common-FlagIcon common-FlagIcon--nl"
-                  ></li>
-                  <li
-                    title="PT"
-                    className="common-FlagIcon common-FlagIcon--pt"
-                  ></li>
-                  <li
-                    title="ES"
-                    className="common-FlagIcon common-FlagIcon--es"
-                  ></li>
-                </ul>
-
-                <h2>Instant debit card payouts</h2>
-                <p title="U.S." className="common-FlagIcon common-FlagIcon--us">
-                  Live
-                </p>
-                <ul className="flag-list">
-                  <li
-                    title="CA"
-                    className="common-FlagIcon common-FlagIcon--ca"
-                  ></li>
-                  <li
-                    title="SG"
-                    className="common-FlagIcon common-FlagIcon--sg"
-                  ></li>
-                  <li>Coming soon</li>
-                </ul>
-
-                <h2>Settlement currencies</h2>
-                <ul className="settlement-currencies">
-                  <li>EUR</li>
-                  <li>USD</li>
-                  <li>NOK</li>
-                  <li>HKD</li>
-                  <li>CHF</li>
-                  <li>MXN</li>
-                  <li>GBP</li>
-                  <li>DKK</li>
-                  <li>SEK</li>
-                  <li>NZD</li>
-                  <li>BRL</li>
-                  <li>AUD</li>
-                  <li>CAD</li>
-                  <li>JPY</li>
-                  <li>SGD</li>
-                </ul>
-              </aside>
+              <aside className="img-aside"></aside>
             </div>
           </div>
         </div>

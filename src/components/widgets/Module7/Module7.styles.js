@@ -400,6 +400,9 @@ export const StyledContentWrapper = styled.div`
       .international-support a:hover {
         color: #45b2e8;
       }
+      .img-aside {
+        background-image: url(${props.images.backgroundImg});
+      }
       .international-support aside {
         font-size: 15px;
         color: #6b7c93;
@@ -411,6 +414,7 @@ export const StyledContentWrapper = styled.div`
           0 -6px 16px -6px rgba(0, 0, 0, 0.025);
         border-radius: 8px;
         margin-top: 1.5em;
+        height: 550px;
       }
       .international-support aside > * {
         padding: 0 22px;

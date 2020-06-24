@@ -44,8 +44,9 @@ import checkList from "./images/Module7/lawyer-friendly-checkmark.svg"
 import dashboardImg from "./images/Module7/dashboard-chrome.svg"
 import flagIconsImg from "./images/Module7/flagIcons.svg"
 import section1Title from "./images/Module7/compliance.svg"
-import internationalImg from "./images/Module7/international-support.svg"
+import section3Title from "./images/Module7/international-support.svg"
 import section2Title from "./images/Module7/platform-management.svg"
+import backgroundImg from "./images/Module7/background-image.jpg"
 //++++++++++++++++++++++++++++++++++++
 
 //import images Module 11 ++++++++++
@@ -188,22 +189,21 @@ export const images = {
   },
   //----------------------------------Module 7
   module7: {
+    //Section1
     section1Title,
-    checkList,
-
-    section2Title,
-    dashboardImg,
-
-    flagIconsImg,
-
-    internationalImg,
-
     section1TitleAlt: "",
+    checkList,
     checkListAlt: "",
+    //Section2
+    section2Title,
     section2TitleAlt: "",
-    section4TitleAlt: "",
-    section5TitleAlt: "",
-    section6TitleAlt: "",
+    //Section3
+    section3Title,
+    section3TitleAlt: "",
+    backgroundImg,
+    //Styles.js
+    flagIconsImg,
+    dashboardImg,
   },
   //----------------------------------Module 8
   //----------------------------------Module 9
