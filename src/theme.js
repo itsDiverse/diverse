@@ -107,10 +107,9 @@ export const theme = {
   //----------------------------------Module9
   module9: {
     colors: {
-      primary: "#32325d",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
+      titles: "#32325d",
+      subtitle: "#424770",
+      texts: "#525f7f",
     },
   },
   //----------------------------------Module 10

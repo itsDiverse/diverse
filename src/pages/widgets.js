@@ -32,7 +32,7 @@ import { videos } from "../videos"
 
 export default () => (
   <>
-    <h1>Module1</h1>
+    <h1>#1</h1>
     <Module1
       theme={theme.module1}
       data={data.module1}
@@ -45,7 +45,7 @@ export default () => (
       images={images.module1a}
     />
     <hr></hr>
-    <h1>Module2</h1>
+    <h1>#2</h1>
     <Module2
       theme={theme.module2}
       data={data.module2}
@@ -53,14 +53,14 @@ export default () => (
       images={images.module2}
     />
     <hr></hr>
-    <h1>Module3</h1>
+    <h1>#3</h1>
     <Module3
       theme={theme.module3}
       data={data.module3}
       images={images.module3}
     />
     <hr></hr>
-    <h1>Module4</h1>
+    <h1>#4</h1>
     <Module4
       theme={theme.module4}
       data={data.module4}
@@ -68,35 +68,35 @@ export default () => (
       videos={videos.module4}
     />
     <hr></hr>
-    <h1>Module5</h1>
+    <h1>#5</h1>
     <Module5
       theme={theme.module5}
       data={data.module5}
       images={images.module5}
     />
     <hr></hr>
-    <h1>Module6</h1>
+    <h1>#6</h1>
     <Module6
       theme={theme.module6}
       data={data.module6}
       images={images.module6}
     />
     <hr></hr>
-    <h1>Module7</h1>
+    <h1>#7</h1>
     <Module7
       theme={theme.module7}
       data={data.module7}
       images={images.module7}
     />
     <hr></hr>
-    <h1>Module8</h1>
+    <h1>#8</h1>
     <Module8
       theme={theme.module8}
       data={data.module8}
       images={images.module8}
     />
     <hr></hr>
-    <h1>Module9</h1>
+    <h1>#9</h1>
     <Module9
       theme={theme.module9}
       data={data.module9}

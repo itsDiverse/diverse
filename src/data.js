@@ -340,10 +340,26 @@ export const data = {
   //----------------------------------Module 9
   module9: {
     title: "Lorem ipsum dolor sit amet",
-    subtitle: "",
-    heading: "",
-    bodytext: "",
-    background: "",
+    subtitle:
+      "Stripe combines a payments platform with applications that put revenue data at the heart of business operations.",
+
+    //--------Links Left Images
+    link1: "http://www.google.com",
+    link2: "",
+    link3: "",
+
+    //--------Right Section
+    title1: "Applications",
+    text1: `Sitting atop our payments platform are applications to manage
+    revenue, prevent fraud, and expand internationally.`,
+
+    title2: "Payments platform",
+    text2: `At our core is a powerful payments engine that makes moving
+    money easy.`,
+
+    title3: "Infrastructure",
+    text3: `Our cloud-based infrastructure provides reliability,
+    scalability, and security.`,
   },
   //----------------------------------Module 10
   module10: {

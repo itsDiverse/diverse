@@ -57,7 +57,7 @@ export const StyledContentWrapper = styled.div`
         margin: 25px 0 18px;
         font-size: 42px;
         line-height: 52px;
-        color: ${props.theme.colors.primary};
+        color: ${props.theme.colors.titles};
         font-weight: 400;
       }
       .section-desc {
@@ -67,7 +67,7 @@ export const StyledContentWrapper = styled.div`
         margin-right: auto;
         font-size: 24px;
         line-height: 36px;
-        color: #424770;
+        color: ${props.theme.colors.subtitle};
         font-weight: 300;
       }
       .payments-stack-section-intro {
@@ -97,7 +97,7 @@ export const StyledContentWrapper = styled.div`
         transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       }
       .diagram-section {
-        display: grid;
+        display: flex;
         min-height: 80px;
         background-color: #fff;
         border-radius: 10px;
@@ -109,8 +109,10 @@ export const StyledContentWrapper = styled.div`
           0 3px 6px 0 rgba(0, 0, 0, 0.07);
       }
       .diagram-product-radar {
-        background-color: #db78dd;
-        border-color: #db78dd;
+        background-image: url(${props.images.image1});
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 100%;
       }
       .diagram-product-sigma {
         background-color: #a688e7;
@@ -143,7 +145,7 @@ export const StyledContentWrapper = styled.div`
         padding: 0 20px;
       }
       .diagram-title {
-        color: #32325d;
+        color: ${props.theme.colors.titles};
         margin: 0 0 4px;
       }
       .uppercase-text {
@@ -157,15 +159,19 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.texts};
       }
       .diagram-product-payments {
-        background-color: #818bf0;
-        border-color: #818bf0;
+        background-image: url(${props.images.image2});
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 100%;
       }
       .diagram-product-connect {
-        background-color: #45b2e8;
-        border-color: #45b2e8;
+        background-image: url(${props.images.image3});
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 100%;
       }
       .diagram-platforms {
         grid-area: diagram-platforms;
@@ -174,7 +180,7 @@ export const StyledContentWrapper = styled.div`
       .diagram-infra {
         position: relative;
         grid-area: diagram-infra;
-        display: grid;
+        display: flex;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: 1fr 1fr;
       }

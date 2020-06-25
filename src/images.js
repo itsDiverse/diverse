@@ -59,6 +59,12 @@ import titleImg from "./images/Module8/img1.svg"
 import logoBox from "./images/Module8/docusign.svg"
 //++++++++++++++++++++++++++++++++++++
 
+//import images Module 9 +++++++++++++
+import image1 from "./images/Module9/image1.png"
+import image2 from "./images/Module9/image2.png"
+import image3 from "./images/Module9/image3.png"
+//++++++++++++++++++++++++++++++++++++
+
 //import images Module 11 ++++++++++
 import m11Banner from "./images/Module11/lyft.jpg"
 import m11BannerShadow from "./images/Module11/lyft-vert.svg"
@@ -226,6 +232,14 @@ export const images = {
     logoBoxAlt: "",
   },
   //----------------------------------Module 9
+  module9: {
+    image1,
+    image1Alt: "",
+    image2,
+    image2Alt: "",
+    image3,
+    image3Alt: "",
+  },
   //----------------------------------Module 10
   //----------------------------------Module 11
   module11: {
