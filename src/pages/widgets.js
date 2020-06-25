@@ -110,14 +110,14 @@ export default () => (
       images={images.module10}
     />
     <hr></hr>
-    <h1>Module11</h1>
+    <h1>#11</h1>
     <Module11
       theme={theme.module11}
       data={data.module11}
       images={images.module11}
     />
     <hr></hr>
-    <h1>Module11a</h1>
+    <h1>#11a</h1>
     <Module11a
       theme={theme.module11a}
       data={data.module11a}

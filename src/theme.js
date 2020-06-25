@@ -132,19 +132,26 @@ export const theme = {
   },
   //-------------------------------------Module11
   module11: {
-    background: "",
-    boxBackground1: "",
-    boxBackground1opacity: "",
-    boxBackground2: "",
-    boxBackground2opacity: "",
+    colors: {
+      title: "#24b47e",
+      subtitle: "#424770",
+      textBox: "#fff",
+      backgroundBox: "#eb268d",
+      text: "#525f7f",
+      links: "#6772e5",
+    },
   },
   //-------------------------------------Module11a
   module11a: {
-    backgroundMarketplaceGallery: "#a19273",
-    boxBackground1: "",
-    boxBackground1opacity: "",
-    boxBackground2: "",
-    boxBackground2opacity: "",
+    backgroundMarketplaceGallery: "green",
+    colors: {
+      title: "#24b47e",
+      subtitle: "#424770",
+      textBox: "#fff",
+      backgroundBox: "#eab504",
+      text: "#525f7f",
+      links: "#6772e5",
+    },
   },
   //-------------------------------------Module12
   //-------------------------------------Module 13

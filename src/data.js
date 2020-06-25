@@ -414,19 +414,71 @@ export const data = {
   },
   //----------------------------------Module 11
   module11: {
-    title: "Lorem Ipsum",
-    subtitle: "",
-    bodytext: "",
-    boxTitle: "",
-    boxText: "",
+    title: "B2C marketplacess",
+    subtitle: `Marketplaces connect consumers with what they want: rides, food,
+    accommodation, and more. Your payments should meet the same high
+    standards as your product experience: with just a tap, Stripe
+    helps sellers on your marketplace get paid.`,
+
+    //-------------------LeftSection
+    linkBoxLogo: "http://www.google.com",
+    textBox: `With over 700,000 drivers providing nearly one million rides
+    per day, Lyft uses Stripe to power payments at scale. Lyft
+    also partnered with Stripe to build Express Pay, a
+    first-of-its-kind feature that allows drivers to cash out
+    whenever they want, instantly.`,
+    //-------------------Bottom Section
+    textLeft: {
+      before: `Nostisi eiusmod. Quis duis qui in commodo. Ipsum nostrud adipisicing laboris esse amet velit voluptate quis amet. Lorem excepteur ea ex est non proident est adipisicing ipsum ea voluptate incididunt incididunt.`,
+      link: {
+        url: "http://www.google.com",
+        text: "Stripe Connect",
+      },
+      after: `to provide all the tools you need to run a multi-sided
+      marketplace.`,
+    },
+
+    textRight: `
+    Integrating Connect means always having access to state-of-the-art
+    technology. Attract and retain more sellers with instant payouts,
+    accept payments across all channels, and expand to 30+ countries
+    with a single integration.`,
+    linkEnd: {
+      url: "http://www.google.com",
+      text: "Learn more about Stripe for marketplaces",
+    },
   },
   //----------------------------------Module 11a
   module11a: {
-    title: "B2C marketplacess",
-    subtitle: "",
-    bodytext: "",
-    boxTitle: "",
-    boxText: "",
+    title: "Lorem Ipsum",
+    subtitle: `Marketplaces connect consumers with what they want: rides, food,
+    accommodation, and more. Your payments should meet the same high
+    standards as your product experience: with just a tap, Stripe
+    helps sellers on your marketplace get paid.`,
+
+    //-------------------LeftSection
+    linkBoxLogo: "http://www.google.com",
+    textBox: `Excepteur  velit. Ut nostrud labore consequat enim officia aute reprehenderit proident sint cupidatat esse laboris. Id ipsum esse et Lorem reprehenderit aliquip culpa minim veniam non cupidatat est velit cillum..`,
+    //-------------------Bottom Section
+    textLeft: {
+      before: `Nostisi eiusmod. Quis duis qui in commodo. Ipsum nostrud adipisicing laboris esse amet velit voluptate quis amet. Lorem excepteur ea ex est non proident est adipisicing ipsum ea voluptate incididunt incididunt.`,
+      link: {
+        url: "http://www.google.com",
+        text: "Stripe Connect",
+      },
+      after: `to provide all the tools you need to run a multi-sided
+      marketplace.`,
+    },
+
+    textRight: `
+    Integrating Connect means always having access to state-of-the-art
+    technology. Attract and retain more sellers with instant payouts,
+    accept payments across all channels, and expand to 30+ countries
+    with a single integrationn.`,
+    linkEnd: {
+      url: "http://www.google.com",
+      text: "Learn more about Stripe for marketplaces",
+    },
   },
   //----------------------------------Module 12
   //----------------------------------Module 13

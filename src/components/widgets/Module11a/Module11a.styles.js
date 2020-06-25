@@ -46,7 +46,7 @@ export const StyledContentWrapper = styled.div`
         vertical-align: middle;
       }
       .marketplaces-title-section h3 {
-        color: #24b47e;
+        color: ${props.theme.colors.title};
         text-align: center;
         width: 100%;
         font-size: 20px;
@@ -62,7 +62,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 300;
         font-size: 21px;
         line-height: 32px;
-        color: #424770;
+        color: ${props.theme.colors.subtitle};
         max-width: 760px;
         margin-left: auto;
         margin-right: auto;
@@ -119,7 +119,7 @@ export const StyledContentWrapper = styled.div`
         padding: 40px;
         position: relative;
         z-index: 5;
-        color: #fff;
+        color: ${props.theme.colors.textBox};
       }
       .marketplaces-quote h2 {
         margin: 0 0 10px -2px;
@@ -134,7 +134,7 @@ export const StyledContentWrapper = styled.div`
       .marketplaces-quote:before {
         content: "";
         display: block;
-        background: #eab504;
+        background: ${props.theme.colors.backgroundBox};
         position: absolute;
         top: 0;
         bottom: 0;
@@ -173,11 +173,11 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.text};
         margin: 0 0 1em;
       }
       .common-link {
-        color: #6772e5;
+        color: ${props.theme.colors.links};
         font-weight: 500;
         -webkit-transition: color 0.1s ease;
         transition: color 0.1s ease;
@@ -196,7 +196,7 @@ export const StyledContentWrapper = styled.div`
       }
       .link-arrow:after {
         font: normal 16px StripeIcons;
-        content: "2192";
+        content: "";
         padding-left: 5px;
       }
       .marketplaces-quote-wrapper {

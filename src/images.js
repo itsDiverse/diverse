@@ -260,8 +260,11 @@ export const images = {
     m11BannerShadow,
     m11BannerShadow2,
     m11BannerLogo,
+    m11BannerLogoAlt: "lyft logo",
     m11Icon1,
+    m11Icon1Alt: "",
     m11Icon2,
+    m11Icon2Alt: "3 arrows spreading",
   },
   //----------------------------------Module 11a
   module11a: {
