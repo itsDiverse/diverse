@@ -102,13 +102,13 @@ export const StyledContentWrapper = styled.div`
       }
       .listing-card-box:after {
         height: 2px;
-        background-color: #f6f9fc;
+        background-color: "red";
         transform-origin: left center;
         transition: transform 0.1s cubic-bezier(0.215, 0.61, 0.355, 1);
       }
       .listing-card-box:hover:before {
         transform: scale(1);
-        opacity: 1;
+        opacity: 0;
       }
       .listing-card-box:hover:after {
         transform: scaleX(0);
@@ -118,10 +118,10 @@ export const StyledContentWrapper = styled.div`
         margin: 0 0 6px;
         font-weight: 500;
         font-size: 19px;
-        color: #32325d;
+        color: ${props.theme.colors.titles};
       }
       .listing-card-content p {
-        color: #525f7f;
+        color: ${props.theme.colors.texts};
         font-size: 15px;
         line-height: 24px;
         display: flex;
@@ -132,9 +132,9 @@ export const StyledContentWrapper = styled.div`
         margin: 14px 0 0;
       }
       .listing-card-badges .listing-card-badge {
-        background-color: transparent;
-        border: 1px solid #aab7c4;
-        color: #aab7c4;
+        background-color: ${props.theme.buttons.background};
+        border: 1px solid ${props.theme.buttons.border};
+        color: ${props.theme.buttons.text};
         padding: 1px 6px;
         margin: 0 8px 8px 0;
         display: inline-block;

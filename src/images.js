@@ -96,9 +96,9 @@ import contentLogos2x from "./images/Module12/content-logos@2x.png"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 13 ++++++++++
-import icon from "./images/Module13/icon.svg"
-import productIcon from "./images/Module13/product-icon.svg"
-import productNavIcon from "./images/Module13/product-nav-icon.svg"
+import imageBox1 from "./images/Module13/icon.svg"
+import imageBox2 from "./images/Module13/product-icon.svg"
+import imageBox3 from "./images/Module13/product-nav-icon.svg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 14 ++++++++++
@@ -272,8 +272,11 @@ export const images = {
     m11aBannerShadow,
     m11aBannerShadow2,
     m11aBannerLogo,
+    m11aBannerLogoAlt: "charity water logo",
     m11aIcon1,
+    m11aIcon1Alt: "",
     m11aIcon2,
+    m11aIcon2Alt: "",
   },
   //----------------------------------Module 12
   module12: {
@@ -282,9 +285,12 @@ export const images = {
   },
   //----------------------------------Module 13
   module13: {
-    icon,
-    productIcon,
-    productNavIcon,
+    imageBox1,
+    imageBox1Alt: "",
+    imageBox2,
+    imageBox2Alt: "",
+    imageBox3,
+    imageBox3Alt: "",
   },
   //----------------------------------Module 14
   module14: {

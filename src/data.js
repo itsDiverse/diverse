@@ -483,9 +483,27 @@ export const data = {
   //----------------------------------Module 12
   //----------------------------------Module 13
   module13: {
-    title: "Lorem Ipsum",
-    bodytext: "",
-    line: "",
+    box1: {
+      url: "#",
+      title: "Qui excepteur",
+      text: "Create and manage recurring invoices and subscriptions.",
+      btnLeft: "SCA-Ready",
+      btnRight: "Popular",
+    },
+    box2: {
+      url: "#",
+      title: "Radar",
+      text: "Create and manage recurring invoices and subscriptions.",
+      btnLeft: "",
+      btnRight: "Popular",
+    },
+    box3: {
+      url: "#",
+      title: "Sigma",
+      text: "Create and manage recurring invoices and subscriptions.",
+      btnLeft: "",
+      btnRight: "Popular",
+    },
   },
   //----------------------------------Module 14
   module14: {

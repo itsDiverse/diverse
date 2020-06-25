@@ -9,163 +9,57 @@ export default props => (
         <div className="container-lg">
           <div className="listing-card-wrapper">
             <div className="listing-card-box">
-              <a href="#">
+              <a href={props.data.box1.url}>
                 <img
-                  src={props.images.productNavIcon}
+                  src={props.images.imageBox1}
+                  alt={props.images.imageBox3Alt}
                   className="listing-card-logo"
                 ></img>
                 <div className="listing-card-content">
-                  <h3>{props.data.title}</h3>
-                  <p>Create and manage recurring invoices and subscriptions.</p>
+                  <h3>{props.data.box1.title}</h3>
+                  <p>{props.data.box1.text}</p>
                   <div className="listing-card-badges">
                     <div className="background-green text-white listing-card-badge">
-                      SCA-Ready
+                      {props.data.box1.btnLeft}
                     </div>
                     <div className="background-green text-white listing-card-badge">
-                      Popular
+                      {props.data.box1.btnRight}
                     </div>
                   </div>
                 </div>
               </a>
             </div>
             <div className="listing-card-box">
-              <a href="#">
+              <a href={props.data.box2.url}>
                 <img
-                  src={props.images.productIcon}
+                  src={props.images.imageBox2}
+                  alt={props.images.imageBox3Alt}
                   className="listing-card-logo"
                 ></img>
                 <div className="listing-card-content">
-                  <h3>Radar</h3>
-                  <p>Fight fraud with the strength of the Stripe network.</p>
+                  <h3>{props.data.box2.title}</h3>
+                  <p>{props.data.box2.text}</p>
                   <div className="listing-card-badges">
                     <div className="background-green text-white listing-card-badge">
-                      Popular
+                      {props.data.box2.btnRight}
                     </div>
                   </div>
                 </div>
               </a>
             </div>
             <div className="listing-card-box">
-              <a href="#">
+              <a href={props.data.box3.url}>
                 <img
-                  src={props.images.icon}
+                  src={props.images.imageBox3}
+                  alt={props.images.imageBox3Alt}
                   className="listing-card-logo"
                 ></img>
                 <div className="listing-card-content">
-                  <h3>Sigma</h3>
-                  <p>Your business data at your fingertips.</p>
+                  <h3>{props.data.box3.title}</h3>
+                  <p>{props.data.box3.text}</p>
                   <div className="listing-card-badges">
                     <div className="background-green text-white listing-card-badge">
-                      Popular
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div className="listing-card-box">
-              <a href="#">
-                <img
-                  src={props.images.productNavIcon}
-                  className="listing-card-logo"
-                ></img>
-                <div className="listing-card-content">
-                  <h3>{props.data.title}</h3>
-                  <p>Create and manage recurring invoices and subscriptions.</p>
-                  <div className="listing-card-badges">
-                    <div className="background-green text-white listing-card-badge">
-                      SCA-Ready
-                    </div>
-                    <div className="background-green text-white listing-card-badge">
-                      Popular
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className="listing-card-box">
-              <a href="#">
-                <img
-                  src={props.images.productIcon}
-                  className="listing-card-logo"
-                ></img>
-                <div className="listing-card-content">
-                  <h3>Radar</h3>
-                  <p>Fight fraud with the strength of the Stripe network.</p>
-                  <div className="listing-card-badges">
-                    <div className="background-green text-white listing-card-badge">
-                      Popular
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className="listing-card-box">
-              <a href="#">
-                <img
-                  src={props.images.icon}
-                  className="listing-card-logo"
-                ></img>
-                <div className="listing-card-content">
-                  <h3>Sigma</h3>
-                  <p>Your business data at your fingertips.</p>
-                  <div className="listing-card-badges">
-                    <div className="background-green text-white listing-card-badge">
-                      Popular
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className="listing-card-box">
-              <a href="#">
-                <img
-                  src={props.images.productNavIcon}
-                  className="listing-card-logo"
-                ></img>
-                <div className="listing-card-content">
-                  <h3>{props.data.title}</h3>
-                  <p>Create and manage recurring invoices and subscriptions.</p>
-                  <div className="listing-card-badges">
-                    <div className="background-green text-white listing-card-badge">
-                      SCA-Ready
-                    </div>
-                    <div className="background-green text-white listing-card-badge">
-                      Popular
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className="listing-card-box">
-              <a href="#">
-                <img
-                  src={props.images.productIcon}
-                  className="listing-card-logo"
-                ></img>
-                <div className="listing-card-content">
-                  <h3>Radar</h3>
-                  <p>Fight fraud with the strength of the Stripe network.</p>
-                  <div className="listing-card-badges">
-                    <div className="background-green text-white listing-card-badge">
-                      Popular
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className="listing-card-box">
-              <a href="#">
-                <img
-                  src={props.images.icon}
-                  className="listing-card-logo"
-                ></img>
-                <div className="listing-card-content">
-                  <h3>Sigma</h3>
-                  <p>Your business data at your fingertips.</p>
-                  <div className="listing-card-badges">
-                    <div className="background-green text-white listing-card-badge">
-                      Popular
+                      {props.data.box3.btnRight}
                     </div>
                   </div>
                 </div>

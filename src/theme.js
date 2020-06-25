@@ -157,21 +157,14 @@ export const theme = {
   //-------------------------------------Module 13
   module13: {
     colors: {
-      primary: "",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
+      titles: "#32325d",
+      texts: "#525f7f",
     },
 
     buttons: {
-      primary: "",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
-      primaryHover: "",
-      primaryHoverOpacity: "",
-      secondaryHover: "",
-      secondaryHoverOpacity: "",
+      text: "#aab7c4",
+      background: "transparent",
+      border: "#aab7c4",
     },
   },
   //-------------------------------------Module 14
