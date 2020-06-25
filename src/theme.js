@@ -115,18 +115,19 @@ export const theme = {
   //----------------------------------Module 10
   module10: {
     colors: {
-      primary: "#32325d",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
+      titles: "#32325d",
+      subtitle: "#424770",
+      texts: "#525f7f",
+      topBackgroundBoxRight: "#fa9a91",
+      links: "#6772e5",
+      boxTitle: "#424770",
     },
 
-    buttons: {
-      primary: "",
-      primaryOpacity: "",
-      primaryHover: "",
-      primaryHoverOpacity: "",
-      boxBackground: "",
+    button: {
+      text: "#fff",
+      background: "#6772e5",
+      hoverText: "#fff",
+      hoverBackground: "#7795f8",
     },
   },
   //-------------------------------------Module11

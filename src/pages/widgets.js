@@ -103,7 +103,7 @@ export default () => (
       images={images.module9}
     />
     <hr></hr>
-    <h1>Module10</h1>
+    <h1>#10</h1>
     <Module10
       theme={theme.module10}
       data={data.module10}

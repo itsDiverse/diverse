@@ -56,7 +56,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 34px;
         line-height: 44px;
-        color: ${props.theme.colors.primary};
+        color: ${props.theme.colors.titles};
       }
       .section-intro {
         text-align: center;
@@ -68,7 +68,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 300;
         font-size: 21px;
         line-height: 32px;
-        color: #424770;
+        color: ${props.theme.colors.subtitle};
       }
       .solutions-rooted-content {
         display: grid;
@@ -96,16 +96,16 @@ export const StyledContentWrapper = styled.div`
         font-weight: 500;
         font-size: 19px;
         line-height: 32px;
-        color: #32325d;
+        color: ${props.theme.colors.titles};
       }
       .rooted-desc {
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.texts};
       }
       .common-link {
-        color: #6772e5;
+        color: ${props.theme.colors.links};
         font-weight: 500;
         -webkit-transition: color 0.1s ease;
         transition: color 0.1s ease;
@@ -120,8 +120,8 @@ export const StyledContentWrapper = styled.div`
       .engineering-scale .cover {
         position: relative;
         height: 200px;
-        background-color: #fa9a91;
-        background-image: url(images/increment-callout-v2.jpg);
+        background-color: ${props.theme.colors.topBackgroundBoxRight};
+        background-image: url(${props.images.imageBox});
         background-size: 120%;
         background-position: top;
         margin: -30px -30px 25px;
@@ -147,13 +147,13 @@ export const StyledContentWrapper = styled.div`
         font-weight: 300;
         font-size: 21px;
         line-height: 32px;
-        color: #424770;
+        color: ${props.theme.colors.boxTitle};
       }
       .engineering-scale-desc {
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.texts};
       }
       .btn-common {
         white-space: nowrap;
@@ -177,8 +177,8 @@ export const StyledContentWrapper = styled.div`
         transition: all 0.15s ease;
       }
       .btn-engineering {
-        color: #fff;
-        background: #6772e5;
+        color: ${props.theme.button.text};
+        background-color: ${props.theme.button.background};
         margin: 25px 0 0;
       }
       .btn-engineering:hover {
@@ -196,8 +196,8 @@ export const StyledContentWrapper = styled.div`
           0 3px 6px rgba(0, 0, 0, 0.08);
       }
       .btn-common:hover {
-        color: #fff;
-        background-color: #7795f8;
+        color: ${props.theme.button.hoverText};
+        background-color: ${props.theme.button.hoverBackground};
       }
       .engineering-scale .cover:after {
         content: "";

@@ -364,13 +364,53 @@ export const data = {
   //----------------------------------Module 10
   module10: {
     title: "Lorem ipsum dolor sit amet",
-    subtitle: "",
-    heading: "",
-    subheading: "",
-    bodytext: "",
-    background: "",
-    boxTitle: "",
-    BoxText: "",
+    subtitle: `As the world’s fastest-advancing developer platform, Stripe gives
+    businesses the tools and technology to build better.`,
+    //------------------Left Section
+    title1: "Industry-leading documentation",
+    text1: {
+      link: {
+        before: "Holaaa",
+        url: "http://www.google.com",
+        text: "Our documentation",
+        after: `and extensive Client libraries contain everything a business
+        needs to build a custom integration in a fraction of the time.`,
+      },
+    },
+    title2: "Support for the developer community",
+    text2: {
+      link: {
+        before: "We actively contribute to",
+        url: "http://www.google.com",
+        text: "open-source projects",
+        after: `—giving back to the community through development, patches,
+        and sponsorshipss.`,
+      },
+    },
+    title3: "Labore aliqua elit ad consectetur",
+    text3: {
+      link: {
+        before: "We actively contribute to",
+        url: "http://www.google.com",
+        text: "open-source projects",
+        after: `—giving back to the community through development, patches,
+        and sponsorshipss.`,
+      },
+    },
+    //------------------Right Section
+    box: {
+      title: "Engineering at scale",
+      text: {
+        before: "We publish",
+        italic: "Increment",
+        after: `, an
+        engineering magazine dedicated to sharing insights and
+        practical advice for building and operating software systems
+        at scale.`,
+        button: "Visit increment",
+        link: "http://www.google.com",
+      },
+    },
   },
   //----------------------------------Module 11
   module11: {

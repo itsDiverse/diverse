@@ -65,6 +65,13 @@ import image2 from "./images/Module9/image2.png"
 import image3 from "./images/Module9/image3.png"
 //++++++++++++++++++++++++++++++++++++
 
+//import images Module 10 +++++++++++++
+import icon1 from "./images/Module10/icon1.svg"
+import icon2 from "./images/Module10/icon2.svg"
+import icon3 from "./images/Module10/icon3.png"
+import imageBox from "./images/Module10/image-box.jpg"
+//++++++++++++++++++++++++++++++++++++
+
 //import images Module 11 ++++++++++
 import m11Banner from "./images/Module11/lyft.jpg"
 import m11BannerShadow from "./images/Module11/lyft-vert.svg"
@@ -241,6 +248,12 @@ export const images = {
     image3Alt: "",
   },
   //----------------------------------Module 10
+  module10: {
+    icon1,
+    icon2,
+    icon3,
+    imageBox,
+  },
   //----------------------------------Module 11
   module11: {
     m11Banner,
