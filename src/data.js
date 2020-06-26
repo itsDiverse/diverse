@@ -543,16 +543,18 @@ export const data = {
       paperwork, and apply for your Tax ID number. Our goal is to
       have you in business within a few days.`,
     },
-
-    heading: "",
-    bodytext: "",
-    background: "",
   },
   //-------------------------------------Module 15
   module15: {
-    title: "Lorem Ipsum",
-    subtitle: "",
-    background: "",
+    text: {
+      before: "",
+      link: {
+        url: "http://www.google.com",
+        text: "Lorem Ipsum",
+      },
+      after:
+        "shows that, on average, businesses using Stripe attribute a 6.7% increase in revenue to the Stripe platform.",
+    },
   },
   //-------------------------------------Module 16
   module16: {

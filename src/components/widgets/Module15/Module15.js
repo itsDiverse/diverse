@@ -142,9 +142,11 @@ export default props => (
             </svg>
             <div className="callout-content">
               <span>
-                <a href="#">{props.data.title}</a> shows that, on average,
-                businesses using Stripe attribute a{" "}
-                <em>6.7% increase in revenue</em> to the Stripe platform.
+                {props.data.text.before}
+                <a href={props.data.text.link.url}>
+                  {props.data.text.link.text}
+                </a>{" "}
+                {props.data.text.after}{" "}
               </span>
             </div>
           </div>

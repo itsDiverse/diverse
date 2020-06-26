@@ -58,11 +58,11 @@ export const StyledContentWrapper = styled.div`
       .callout-content span {
         font-size: 26px;
         line-height: 42px;
-        color: ${props.theme.colors.primary};
+        color: ${props.theme.colors.text};
         font-weight: 400;
       }
       .callout-content span a {
-        color: #6772e5;
+        color: ${props.theme.colors.link};
         font-weight: 500;
         -webkit-transition: color 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         transition: color 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
