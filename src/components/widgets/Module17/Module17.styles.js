@@ -147,14 +147,14 @@ export const StyledContentWrapper = styled.div`
         fill: #6772e5;
       }
       .services-box .services-title {
-        color: #32325d;
+        color: ${props.theme.colors.boxTitle};
         font-weight: 500;
         font-size: 19px;
         line-height: 32px;
         margin-bottom: 15px;
       }
       .services-box .services-desc {
-        color: #6b7c93;
+        color: ${props.theme.colors.boxText};
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
@@ -257,13 +257,13 @@ export const StyledContentWrapper = styled.div`
         letter-spacing: 0.025em;
       }
       .text-blue {
-        color: #6772e5;
+        color: ${props.theme.colors.boxFooter};
       }
       .text-green {
         color: #24b47e;
       }
       .services-footer .services-footer-text:after {
-        content: "279C";
+        content: "";
         padding-left: 5px;
         font: normal 16px StripeIcons;
         display: inline-block;
@@ -298,6 +298,14 @@ export const StyledContentWrapper = styled.div`
         max-width: 750px;
         text-align: center;
       }
+      .img-icon-top {
+        height: 72px;
+        width: 72px;
+      }
+      .img-icon-bottom {
+        height: 30px;
+        width: 30px;
+      }
       .services-section-title-content span {
         overflow: hidden;
         background-color: #c4f0ff;
@@ -314,7 +322,7 @@ export const StyledContentWrapper = styled.div`
         transform: translateX(-10%);
       }
       .services-section-title-content h2 {
-        color: ${props.theme.colors.primary};
+        color: ${props.theme.colors.title};
         font-weight: 400;
         font-size: 34px;
         line-height: 44px;

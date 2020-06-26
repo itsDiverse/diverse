@@ -121,6 +121,13 @@ import icon from "./images/Module16/icon.svg"
 //import images Module 17+++++++++++
 import dots from "./images/Module17/dots.svg"
 import sales from "./images/Module17/sales.svg"
+import iconTitle from "./images/Module17/icon.svg"
+import iconTop1 from "./images/Module17/icon-top.svg"
+import iconBottom1 from "./images/Module17/icon-bottom.svg"
+import iconTop2 from "./images/Module17/icon-top.svg"
+import iconBottom2 from "./images/Module17/icon-bottom.svg"
+import iconTop3 from "./images/Module17/icon-top.svg"
+import iconBottom3 from "./images/Module17/icon-bottom.svg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 19+++++++++++
@@ -322,6 +329,26 @@ export const images = {
   },
   //----------------------------------Module 17
   module17: {
+    iconTitle,
+    iconAlt: "",
+    box1: {
+      iconTop1,
+      iconTop1Alt: "",
+      iconBottom1,
+      iconBottom1Alt: "",
+    },
+    box2: {
+      iconTop2,
+      iconTop2Alt: "",
+      iconBottom2,
+      iconBottom2Alt: "",
+    },
+    box3: {
+      iconTop3,
+      iconTop3Alt: "",
+      iconBottom3,
+      iconBottom3Alt: "",
+    },
     dots,
     sales,
   },

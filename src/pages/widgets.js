@@ -145,21 +145,21 @@ export default () => (
       images={images.module14}
     />
     <hr></hr>
-    <h1>Module15</h1>
+    <h1>#15</h1>
     <Module15
       theme={theme.module15}
       data={data.module15}
       images={images.module15}
     />
     <hr></hr>
-    <h1>Module16</h1>
+    <h1>#16</h1>
     <Module16
       theme={theme.module16}
       data={data.module16}
       images={images.module16}
     />
     <hr></hr>
-    <h1>Module17</h1>
+    <h1>#17</h1>
     <Module17
       theme={theme.module17}
       data={data.module17}

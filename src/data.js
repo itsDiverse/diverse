@@ -582,10 +582,30 @@ export const data = {
   //-------------------------------------Module 17
   module17: {
     title: "Lorem ipsum dolor sit amet,  consectetur adipiscing elit",
-    heading: "",
-    bodytext: "",
-    background: "",
-    circleBackground: "",
+    box1: {
+      link: "#",
+      title: "Lorem Ipsum",
+      text: `Extend your platform with a customized point-of-sale
+      system so customers can accept in-person payments as
+      well as online.`,
+      footer: "Stripe Terminal",
+    },
+    box2: {
+      link: "#",
+      title: "Add Suscriptions",
+      text: `Extend your platform with a customized point-of-sale
+      system so customers can accept in-person payments as
+      well as online.`,
+      footer: "Stripe Terminal",
+    },
+    box3: {
+      link: "http://www.google.com",
+      title: "Suppor for invoices",
+      text: `Extend your platform with a customized point-of-sale
+      system so customers can accept in-person payments as
+      well as online.`,
+      footer: "Stripe Terminall",
+    },
   },
   //-------------------------------------Module 18
   module18: {

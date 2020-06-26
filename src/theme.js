@@ -212,21 +212,10 @@ export const theme = {
   //-------------------------------------Module 17
   module17: {
     colors: {
-      primary: "#32325d",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
-    },
-
-    buttons: {
-      primary: "",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
-      primaryHover: "",
-      primaryHoverOpacity: "",
-      secondaryHover: "",
-      secondaryHoverOpacity: "",
+      title: "#32325d",
+      boxTitle: "#32325d",
+      boxText: "#6b7c93",
+      boxFooter: " #6772e5",
     },
   },
   //-------------------------------------Module 18

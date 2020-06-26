@@ -33,7 +33,7 @@ export default props => (
               <a href={props.data.box2.url}>
                 <img
                   src={props.images.imageBox2}
-                  alt={props.images.imageBox3Alt}
+                  alt={props.images.imageBox2Alt}
                   className="listing-card-logo"
                 ></img>
                 <div className="listing-card-content">
