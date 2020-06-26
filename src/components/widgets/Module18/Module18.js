@@ -10,27 +10,17 @@ export default props => (
         <div className="container-lg">
           <div className="regulatory-compliance-title">
             <span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                <rect width="48" height="48" className="fill-none"></rect>
-                <path
-                  d="M24,5s7,5,15,5V21c0,16-13,22-15,22S9,37,9,21V10C17,10,24,5,24,5Z"
-                  className="fill-purple"
-                ></path>
-                <path
-                  d="M24,5s7,5,15,5V21c0,16-13,22-15,22Z"
-                  className="fill-blue"
-                ></path>
-                <path
-                  d="M23.16,25.55l-2.66-2c-.84-.72-1.95,0-1.35,1l2.8,3.91a1.22,1.22,0,0,0,2.05,0l6.7-9.09c.83-1-.25-1.8-1-1.08Z"
-                  className="fill-fff"
-                ></path>
-              </svg>
+              <img
+                className="img-icon-top"
+                src={props.images.iconTitle18}
+                alt={props.images.iconTitle18Alt}
+              />
             </span>
             <h2>{props.data.title}</h2>
           </div>
           <div className="regulatory-compliance-checklist">
             <div className="check-list checklist-left">
-              <h3>Get help meeting regulatory requirements</h3>
+              <h3>{props.data.left.title}</h3>
               <ul>
                 <li>
                   <span>
@@ -52,7 +42,7 @@ export default props => (
                       </g>
                     </svg>
                   </span>
-                  <span>API-based sanction screening</span>
+                  <span>{props.data.left.li1}</span>
                 </li>
                 <li>
                   <span>
@@ -74,7 +64,7 @@ export default props => (
                       </g>
                     </svg>
                   </span>
-                  <span>Know Your Customer (KYC) checks</span>
+                  <span>{props.data.left.li2}</span>
                 </li>
                 <li>
                   <span>
@@ -96,7 +86,7 @@ export default props => (
                       </g>
                     </svg>
                   </span>
-                  <span>Risk-based ID checks</span>
+                  <span>{props.data.left.li3}</span>
                 </li>
                 <li>
                   <span>
@@ -118,7 +108,7 @@ export default props => (
                       </g>
                     </svg>
                   </span>
-                  <span>Card industry blacklist filtering</span>
+                  <span>{props.data.left.li4}</span>
                 </li>
                 <li>
                   <span>
@@ -140,18 +130,12 @@ export default props => (
                       </g>
                     </svg>
                   </span>
-                  <span>
-                    Rely on Stripe’s financial and regulatory{" "}
-                    <a href="#" className="common-link">
-                      licenses
-                    </a>{" "}
-                    worldwide.
-                  </span>
+                  <span>{props.data.left.li5}</span>
                 </li>
               </ul>
             </div>
             <div className="check-list checklist-right">
-              <h3>Move money and pay out compliantly</h3>
+              <h3>{props.data.right.title}</h3>
               <ul>
                 <li>
                   <span>
@@ -173,7 +157,7 @@ export default props => (
                       </g>
                     </svg>
                   </span>
-                  <span>Securely collect bank information</span>
+                  <span>{props.data.right.li1}</span>
                 </li>
                 <li>
                   <span>
@@ -195,7 +179,7 @@ export default props => (
                       </g>
                     </svg>
                   </span>
-                  <span>Control payout timing</span>
+                  <span>{props.data.right.li2}</span>
                 </li>
                 <li>
                   <span>
@@ -217,7 +201,7 @@ export default props => (
                       </g>
                     </svg>
                   </span>
-                  <span>Support multi-party payments</span>
+                  <span>{props.data.right.li3}</span>
                 </li>
                 <li>
                   <span>
@@ -239,7 +223,7 @@ export default props => (
                       </g>
                     </svg>
                   </span>
-                  <span>Automate PCI compliance</span>
+                  <span>{props.data.right.li4}</span>
                 </li>
                 <li>
                   <span>
@@ -261,9 +245,7 @@ export default props => (
                       </g>
                     </svg>
                   </span>
-                  <span>
-                    1099 reporting support (IRS tax threshold tracking)
-                  </span>
+                  <span>{props.data.right.li5}</span>
                 </li>
                 <li>
                   <span>
@@ -285,7 +267,7 @@ export default props => (
                       </g>
                     </svg>
                   </span>
-                  <span>Set custom statement descriptors</span>
+                  <span>{props.data.right.li6}</span>
                 </li>
               </ul>
             </div>

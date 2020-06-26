@@ -221,10 +221,8 @@ export const theme = {
   //-------------------------------------Module 18
   module18: {
     colors: {
-      primary: "#32325d",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
+      titles: "#32325d",
+      li: "#525f7f",
     },
   },
   //-------------------------------------Module 19

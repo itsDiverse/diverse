@@ -610,9 +610,24 @@ export const data = {
   //-------------------------------------Module 18
   module18: {
     title: "Lorem ipsum dolor sit amet, consectetur ",
-    subtitle: "",
-    bodytext: "",
-    background: "",
+    //----------------LeftSection
+    left: {
+      title: "Get help meeting regulatory requirements",
+      li1: "Ut eu proident in quis nisi.",
+      li2: "Pariatur amet in eiusmod dolor quis mollit nisi.",
+      li3: "Amet incididunt eiusmod cupidatat ea.",
+      li4: "Dolore quis ex magna voluptate mollit adipisicing.",
+      li5: "Consequat nostrud nisi laborum proident minim aoluptate in",
+    },
+    right: {
+      title: "Move money and pay out compliant",
+      li1: "Ris in proident ea reprehenderit sint ipsum.",
+      li2: "Pariatur eu ullaui ullamco doloro mollit.",
+      li3: "Tempor et cillum ad adipisicingniam laboris.",
+      li4: "Id deserunt ad consectetur est mollit.",
+      li5: "Sunt id ipsum laborum voluptate qui ullamco.",
+      li6: "Sunt id ipsum laborum voluptatum eu sunt incididunt",
+    },
   },
 
   //-------------------------------------Module 19

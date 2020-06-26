@@ -59,7 +59,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 34px;
         line-height: 44px;
-        color: ${props.theme.colors.primary};
+        color: ${props.theme.colors.titles};
       }
       .regulatory-compliance-checklist {
         display: flex;
@@ -73,7 +73,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 500;
         font-size: 19px;
         line-height: 32px;
-        color: #32325d;
+        color: ${props.theme.colors.titles};
       }
       .regulatory-compliance-checklist .check-list ul {
         list-style: none;
@@ -85,7 +85,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.li};
         position: relative;
         display: flex;
       }
@@ -116,6 +116,11 @@ export const StyledContentWrapper = styled.div`
 
       .checklist-right {
         padding: 1px;
+      }
+
+      .img-icon-top {
+        height: 72px;
+        width: 72px;
       }
 
       @media (min-width: 670px) {
