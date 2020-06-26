@@ -558,9 +558,26 @@ export const data = {
   },
   //-------------------------------------Module 16
   module16: {
-    title: "",
-    subtitle: "",
-    background: "",
+    topTitle: "Capital",
+    topSpan: "US only",
+
+    title: {
+      first: "Get funding",
+      second: "to",
+      third: "manage cash flows",
+    },
+    subtitle: `Stripe Capital provides access to fast, flexible financing
+    for you to grow your business.`,
+    button: {
+      left: {
+        url: "",
+        text: "Start today",
+      },
+      right: {
+        url: "",
+        text: "Learn moree",
+      },
+    },
   },
   //-------------------------------------Module 17
   module17: {

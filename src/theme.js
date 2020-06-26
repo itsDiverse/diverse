@@ -186,21 +186,27 @@ export const theme = {
   //-------------------------------------Module 16
   module16: {
     colors: {
-      primary: "",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
+      topTitle: "#6772e5",
+      span: {
+        background: "#6772e5",
+        text: "#fff",
+      },
+      title: {
+        first: "#32325d",
+        second: "#6772e5",
+      },
+      subtitle: "#424770",
     },
 
     buttons: {
-      primary: "",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
-      primaryHover: "",
-      primaryHoverOpacity: "",
-      secondaryHover: "",
-      secondaryHoverOpacity: "",
+      left: {
+        background: "#6772e5",
+        color: "#fff",
+      },
+      right: {
+        background: "#fff",
+        color: "#6772e5",
+      },
     },
   },
   //-------------------------------------Module 17

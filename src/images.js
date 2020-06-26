@@ -114,6 +114,10 @@ import m14Icon4 from "./images/Module14/twitterIcon.svg"
 import m14Icon5 from "./images/Module14/twitterIcon.svg"
 //++++++++++++++++++++++++++++++++++
 
+//import images Module 16+++++++++++
+import icon from "./images/Module16/icon.svg"
+//++++++++++++++++++++++++++++++++++
+
 //import images Module 17+++++++++++
 import dots from "./images/Module17/dots.svg"
 import sales from "./images/Module17/sales.svg"
@@ -309,6 +313,12 @@ export const images = {
     m14Icon3,
     m14Icon4,
     m14Icon5,
+  },
+  //----------------------------------Module 15
+  //----------------------------------Module 16
+  module16: {
+    icon,
+    iconAlt: "",
   },
   //----------------------------------Module 17
   module17: {

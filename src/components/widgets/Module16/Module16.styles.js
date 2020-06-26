@@ -75,6 +75,10 @@ export const StyledContentWrapper = styled.div`
         width: 100%;
         height: 100%;
       }
+      .img-icon {
+        height: 48px;
+        width: 48px;
+      }
       .get-funding-title-section {
         display: flex;
         justify-content: flex-start;
@@ -87,7 +91,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.025em;
-        color: #6772e5;
+        color: ${props.theme.colors.topTitle};
       }
       .get-funding-title-section span.background-blue {
         display: inline-block;
@@ -98,14 +102,14 @@ export const StyledContentWrapper = styled.div`
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.03rem;
-        background-color: #6772e5;
-        color: #fff;
+        background-color: ${props.theme.colors.span.background};
+        color: ${props.theme.colors.span.text};
       }
       .common-text {
         font-weight: 300;
         font-size: 21px;
         line-height: 32px;
-        color: #424770;
+        color: ${props.theme.colors.subtitle};
       }
       .get-funding-content-bottom {
         margin-top: 16px;
@@ -120,13 +124,13 @@ export const StyledContentWrapper = styled.div`
           0 1px 3px rgba(0, 0, 0, 0.08);
         box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
           0 1px 3px rgba(0, 0, 0, 0.08);
-        background: #fff;
+        background: ${props.theme.buttons.right.background};
         border-radius: 4px;
         font-size: 15px;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.025em;
-        color: #6772e5;
+        color: ${props.theme.buttons.right.color};
         text-decoration: none;
         -webkit-transition: all 0.15s ease;
         transition: all 0.15s ease;
@@ -150,20 +154,20 @@ export const StyledContentWrapper = styled.div`
           0 3px 6px rgba(0, 0, 0, 0.08);
       }
       .get-funding-content-bottom-btn a.start_now {
-        background-color: #6772e5;
-        color: #fff;
+        background-color: ${props.theme.buttons.left.background};
+        color: ${props.theme.buttons.left.color};
       }
       .get-funding-content-bottom-btn {
         margin-top: 30px;
       }
       .get-funding-text-rotate h2 {
-        color: #32325d;
+        color: ${props.theme.colors.title.second};
         font-weight: 400;
         font-size: 28px;
         line-height: 40px;
       }
       .get-funding-text-rotate h2 span {
-        color: #6772e5;
+        color: ${props.theme.colors.title.first};
       }
       @media (min-width: 375px) {
         .get-funding-text-rotate h2 {
