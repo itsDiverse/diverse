@@ -508,7 +508,42 @@ export const data = {
   //----------------------------------Module 14
   module14: {
     title: "Lorem Ipsum",
-    subtitle: "",
+    subtitle: "We guide you through the essentials and handle the rest.",
+    text: {
+      title1: "Form a legal entity",
+      paragraph1: `Set up your new company as a C Corporation in the state of
+      Delaware. We’ll create the legal documents, file the
+      paperwork, and apply for your Tax ID number. Our goal is to
+      have you in business within a few days.`,
+
+      title2: "Integrate your bank account",
+      paragraph2: `Choose one of our banking partners to set up a U.S. business
+      bank account. Start conducting business with your Stripe
+      Atlas company, without ever having to visit a branch in
+      person.`,
+
+      title3: "Stripe account",
+      paragraph3: `Activate your Stripe account to start accepting payments
+      from customers in 100+ currencies. You can also take
+      advantage of a range of Stripe’s other products, including`,
+      link: {
+        url: "#",
+        text: "Holaaa",
+      },
+
+      title4: "Form a legal entity",
+      paragraph4: `Set up your new company as a C Corporation in the state of
+      Delaware. We’ll create the legal documents, file the
+      paperwork, and apply for your Tax ID number. Our goal is to
+      have you in business within a few days.`,
+
+      title5: "Form a legal entity",
+      paragraph5: `Set up your new company as a C Corporation in the state of
+      Delaware. We’ll create the legal documents, file the
+      paperwork, and apply for your Tax ID number. Our goal is to
+      have you in business within a few days.`,
+    },
+
     heading: "",
     bodytext: "",
     background: "",

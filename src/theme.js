@@ -170,10 +170,10 @@ export const theme = {
   //-------------------------------------Module 14
   module14: {
     colors: {
-      primary: "#32325d",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
+      titles: "#32325d",
+      subtitle: "#424770",
+      texts: "#525f7f",
+      link: "#6772e5",
     },
   },
   //-------------------------------------Module 15

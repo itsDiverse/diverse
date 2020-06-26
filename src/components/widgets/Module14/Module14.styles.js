@@ -34,7 +34,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 34px;
         line-height: 44px;
-        color: ${props.theme.colors.primary};
+        color: ${props.theme.colors.titles};
         margin-bottom: 20px;
         padding: 0 20px;
       }
@@ -88,20 +88,20 @@ export const StyledContentWrapper = styled.div`
         font-weight: 500;
         font-size: 19px;
         line-height: 32px;
-        color: #32325d;
+        color: ${props.theme.colors.titles};
         margin-bottom: 10px;
       }
       .going-about-20-minutes-box .about-minutes-box-list li p {
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.texts};
       }
       .going-about-20-minutes-box .left-box-content ul {
         margin-top: 40px;
       }
       .going-about-20-minutes-box .about-minutes-box-list li .common-link {
-        color: #6772e5;
+        color: ${props.theme.colors.link};
         font-weight: 500;
         -webkit-transition: color 0.1s ease;
         transition: color 0.1s ease;

@@ -131,14 +131,14 @@ export default () => (
       images={images.module12}
     />
     <hr></hr>
-    <h1>Module13</h1>
+    <h1>#13</h1>
     <Module13
       theme={theme.module13}
       data={data.module13}
       images={images.module13}
     />
     <hr></hr>
-    <h1>Module14</h1>
+    <h1>#14</h1>
     <Module14
       theme={theme.module14}
       data={data.module14}
