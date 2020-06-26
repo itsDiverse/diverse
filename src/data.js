@@ -644,10 +644,27 @@ export const data = {
   //-------------------------------------Module 20
   module20: {
     title: "Mi sit amet mauris commodo",
-    subtitle: "",
-    heading: "",
-    bodytext: "",
-    background: "",
+    subtitle: `Improve your ability to detect fraud patterns and take action
+    quickly. Stripe’s optimized workflows slash the time it takes to
+    review payments.`,
+    //----------------------LeftSection
+    left: {
+      title: "BUST HIDDEN NETWORKS OF FRAUDSTERS",
+      text: `Prevent common fraud patterns like card testing by evaluating
+      payments holistically rather than in isolation. We use device
+      fingerprinting and identity resolution to help you catch
+      repeat fraudsterss.`,
+    },
+    right: {
+      title: "CATCH SOPHISTICATED FRAUDSTERS WITH ADVANCED FRAUD INSIGHTS",
+      text: `Fraudulent purchases often look atypical in comparison to
+      legitimate ones. Our fraud insights make it easy to perform
+      manual reviews. For example, you can compare the geolocated IP
+      address and the credit card address, or look at how behavioral
+      information like time to checkout compares with legitimate
+      buyers for your busines.`,
+    },
+    //----------------------RightSection
   },
   //-------------------------------------Module 21
   module21: {

@@ -65,7 +65,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 34px;
         line-height: 44px;
-        color: #32325d;
+        color: ${props.theme.colors.titles};
         margin: 0 auto;
       }
       .save-time-on-reviews-title p {
@@ -74,7 +74,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 300;
         font-size: 21px;
         line-height: 32px;
-        color: #424770;
+        color: ${props.theme.colors.subtitle};
       }
       .save-time-on-reviews .patterns .patterns-content {
         display: grid;
@@ -84,7 +84,7 @@ export const StyledContentWrapper = styled.div`
         padding: 0 15px;
       }
       .save-time-on-reviews .feature h3 {
-        color: #32325d;
+        color: ${props.theme.colors.titles};
         margin-bottom: 12px;
         font-size: 20px;
         line-height: 32px;
@@ -96,7 +96,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.textDesc};
       }
       .patterns-right-content {
         --transform: rotate3d(1, 0, 0, 0deg);

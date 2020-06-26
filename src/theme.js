@@ -233,36 +233,13 @@ export const theme = {
       secondary: "",
       secondaryOpacity: "",
     },
-
-    buttons: {
-      primary: "",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
-      primaryHover: "",
-      primaryHoverOpacity: "",
-      secondaryHover: "",
-      secondaryHoverOpacity: "",
-    },
   },
   //-------------------------------------Module 20
   module20: {
     colors: {
-      primary: "",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
-    },
-
-    buttons: {
-      primary: "",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
-      primaryHover: "",
-      primaryHoverOpacity: "",
-      secondaryHover: "",
-      secondaryHoverOpacity: "",
+      titles: "#32325d",
+      subtitle: "#424770",
+      textDesc: "#525f7f",
     },
   },
   //-------------------------------------Module 21

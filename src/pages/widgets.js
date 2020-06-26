@@ -176,7 +176,7 @@ export default () => (
     <h1>Module19</h1>
     <Module19 />
     <hr></hr>
-    <h1>Module20</h1>
+    <h1>#20</h1>
     <Module20
       theme={theme.module20}
       data={data.module20}

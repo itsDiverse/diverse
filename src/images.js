@@ -369,7 +369,9 @@ export const images = {
   //----------------------------------Module 20
   module20: {
     imgRight,
+    imgRightAlt: "",
     imgLeft,
+    imgLeftAlt: "",
   },
   //----------------------------------Module 22
   module22: {
