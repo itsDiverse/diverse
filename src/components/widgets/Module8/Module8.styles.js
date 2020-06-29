@@ -43,12 +43,6 @@ export const StyledContentWrapper = styled.div`
         font-weight: 300;
       }
 
-      .image-right-content {
-        border-radius: 10px;
-        width: 100%;
-        height: 100%;
-      }
-
       @media only screen and (min-width: 880px) {
         .onetime-lifetime-second-section {
           grid-template-columns: 0.45fr 0.55fr;
@@ -149,6 +143,27 @@ export const StyledContentWrapper = styled.div`
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+      }
+      .right-section {
+        position: relative;
+        border-radius: 14px;
+        -webkit-box-shadow: -1px -1px 5px 0 rgba(26, 26, 67, 0.05),
+          -12px 20px 125px -25px rgba(50, 50, 93, 0.5),
+          -18px 20px 75px -37.5px rgba(0, 0, 0, 0.6);
+        box-shadow: -1px -1px 5px 0 rgba(26, 26, 67, 0.05),
+          -12px 20px 125px -25px rgba(50, 50, 93, 0.8),
+          -18px 20px 75px -37.5px rgba(0, 0, 0, 0.6);
+        font-size: 16px;
+        margin: 50px;
+      }
+      .img-container {
+        height: 520px;
+        width: 100%;
+      }
+      .img-container img {
+        height: 100%;
+        width: 100%;
+        border-radius: 14px;
       }
       .color-slate {
         color: ${props.theme.colors.titles};
@@ -266,6 +281,10 @@ export const StyledContentWrapper = styled.div`
           grid-gap: 30px 0;
           gap: 30px 0;
           grid-template-rows: repeat(2, auto);
+        }
+
+        .right-section {
+          margin: 0;
         }
       }
       @media only screen and (max-width: 767px) {

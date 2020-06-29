@@ -225,13 +225,13 @@ export default props => (
               </li>
             </ul>
           </div>
-          <div>
-            <img
-              className="image-right-content"
-              src={props.images.rightImage}
-              alt={props.images.rightImageAlt}
-            />
-            <div id="target" className="notifications"></div>
+          <div className="right-section">
+            <div className="img-container">
+              <img
+                src={props.images.rightImage}
+                alt={props.images.rightImageAlt}
+              />
+            </div>
           </div>
         </div>
       </section>
