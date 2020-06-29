@@ -1,6 +1,4 @@
 import React from "react"
-//import style from "./Module8.module.css"
-import AnimatedModule from "../AnimatedModule"
 
 import { StyledContentWrapper } from "./Module8.styles"
 
@@ -228,7 +226,11 @@ export default props => (
             </ul>
           </div>
           <div>
-            <AnimatedModule />
+            <img
+              className="image-right-content"
+              src={props.images.rightImage}
+              alt={props.images.rightImageAlt}
+            />
             <div id="target" className="notifications"></div>
           </div>
         </div>

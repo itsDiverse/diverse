@@ -43,6 +43,12 @@ export const StyledContentWrapper = styled.div`
         font-weight: 300;
       }
 
+      .image-right-content {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+      }
+
       @media only screen and (min-width: 880px) {
         .onetime-lifetime-second-section {
           grid-template-columns: 0.45fr 0.55fr;
