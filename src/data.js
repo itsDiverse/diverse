@@ -669,11 +669,54 @@ export const data = {
   //-------------------------------------Module 21
   module21: {
     title: "Intelligent revenue optimizationn",
-    subtitle: "",
-    heading: "",
-    subheading: "",
-    background: "",
-    dots: "",
+    subtitle: `Stripe helps you reduce declines and errors by optimizing
+    authorization rates. Increase revenue with built-in features
+    like automated retries, synchronous card updates, and smart
+    network messaging. Take advantage of direct integrations into
+    the card networks for faster feature implementation, access to
+    raw response codes, and a unified API. You can also set up
+    custom rules paired with machine learning to dynamically apply
+    3D Secure 2—protecting against fraudsters while reducing
+    friction for your customers.`,
+
+    link: {
+      url: "#",
+      text: "See how businesses increase revenues by 6.7% with Stripee",
+    },
+    //-------------------- Right Section
+    checkList1: {
+      title: "Optimized business setup",
+      item1: "MID assignment",
+      item2: "MCC assignment",
+      item3: "Local acquiringg",
+    },
+    checkList2: {
+      title: "Authentication, validation, and fraud protection",
+      item1: "Dynamic 3D Secure",
+      item2: "Dynamic $0/1 validations",
+      item3: "Industry-leading ML fraud protection",
+    },
+    checkList3: {
+      title: "Automated card management",
+      item1: "Lorem IpsumLorem cupidatat aute.",
+      item2: "Industry-leading ML fraud protection",
+      item3: "Dynamic $0/1 validations",
+    },
+    checkList4: {
+      title: "Smart network messaging",
+      item1: "Lorem IpsumLorem cupidatat autn.",
+      item2: "BIN level formatting",
+      item3: "Stored credentials optimization",
+      item4: "Issuer data sharing",
+      item5: "Partials90-",
+      item6: "Issuer data sharing",
+    },
+    checkList5: {
+      title: "Automated card management",
+      item1: "Lorem IpsumLorem cupidatat .",
+      item2: "Industry-leading ML fraud protection",
+      item3: "Dynamic $0/1 validations",
+    },
   },
   //-------------------------------------Module 22
 }

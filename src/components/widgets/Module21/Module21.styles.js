@@ -29,7 +29,7 @@ export const StyledContentWrapper = styled.div`
       .intelligent-revenue-section {
         position: relative;
         padding: 50px 0;
-        background-color: #32325d;
+        background-color: ${props.theme.colors.background};
       }
       .intelligent-revenue {
         display: flex;
@@ -45,17 +45,17 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 34px;
         line-height: 1.4;
-        color: #fff;
+        color: ${props.theme.colors.title};
       }
       .intelligent-revenue-left p {
         margin: 20px 0;
         font-weight: 400;
         font-size: 19px;
         line-height: 32px;
-        color: #fff;
+        color: ${props.theme.colors.subtitle};
       }
       .intelligent-revenue-left .intelligent-link {
-        color: #9cdbff;
+        color: ${props.theme.colors.link};
         font-size: 19px;
         line-height: 32px;
         font-weight: 500;
@@ -65,11 +65,11 @@ export const StyledContentWrapper = styled.div`
         margin-bottom: 20px;
       }
       .intelligent-revenue-left .intelligent-link:hover {
-        color: #fff;
+        color: ${props.theme.colors.linkHover};
       }
       .intelligent-revenue-left .intelligent-link:after {
         font: normal 16px StripeIcons;
-        content: "2192";
+        content: "";
         padding-left: 5px;
       }
       .intelligent-revenue-right {
@@ -113,7 +113,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 500;
         font-size: 17px;
         line-height: 32px;
-        color: #fff;
+        color: ${props.theme.colors.checkListH3};
       }
       .checklist-content ul {
         list-style: none;
@@ -138,7 +138,7 @@ export const StyledContentWrapper = styled.div`
       }
       .checklist-content ul li span {
         font-size: 15px;
-        color: #ecfaff;
+        color: ${props.theme.colors.checkListSpan};
         font-weight: 400;
         line-height: 28px;
       }

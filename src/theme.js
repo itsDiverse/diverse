@@ -245,10 +245,14 @@ export const theme = {
   //-------------------------------------Module 21
   module21: {
     colors: {
-      primary: "",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
+      background: "#32325d",
+      title: " #fff",
+      subtitle: "#fff",
+      link: "#9cdbff",
+      linkHover: "#fff",
+      //---------------Right Section
+      checkListH3: "#fff",
+      checkListSpan: "#ecfaff",
     },
   },
   //-------------------------------------Module 22

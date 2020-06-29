@@ -144,6 +144,14 @@ import imgRight from "./images/Module20/related-payments.jpg"
 import imgLeft from "./images/Module20/session.jpg"
 //++++++++++++++++++++++++++++++++++
 
+//import images Module 21+++++++++++
+import checkListIcon1 from "./images/Module21/icon1.svg"
+import checkListIcon2 from "./images/Module21/icon2.svg"
+import checkListIcon3 from "./images/Module21/icon3.png"
+import checkListIcon4 from "./images/Module21/icon4.svg"
+import checkListIcon5 from "./images/Module21/icon5.png"
+//++++++++++++++++++++++++++++++++++
+
 //import images Module 22+++++++++++
 import sliderImg1 from "./images/Module22/slider-img-1.jpg"
 import sliderImg2 from "./images/Module22/slider-img-2.jpg"
@@ -372,6 +380,14 @@ export const images = {
     imgRightAlt: "",
     imgLeft,
     imgLeftAlt: "",
+  },
+  //----------------------------------Module 21
+  module21: {
+    checkListIcon1,
+    checkListIcon2,
+    checkListIcon3,
+    checkListIcon4,
+    checkListIcon5,
   },
   //----------------------------------Module 22
   module22: {
