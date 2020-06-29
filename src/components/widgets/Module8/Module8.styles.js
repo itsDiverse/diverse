@@ -259,7 +259,8 @@ export const StyledContentWrapper = styled.div`
           display: grid;
         }
         .onetime-lifetime-second-section > div:last-child {
-          grid-row: 1;
+          grid-row: 3;
+          margin: 30px;
         }
         .onetime-lifetime-second-section > div:first-child {
           grid-row: 2;
@@ -282,9 +283,12 @@ export const StyledContentWrapper = styled.div`
           gap: 30px 0;
           grid-template-rows: repeat(2, auto);
         }
-
         .right-section {
           margin: 0;
+        }
+        .img-container {
+          height: 320px;
+          width: 100%;
         }
       }
       @media only screen and (max-width: 767px) {
