@@ -8,21 +8,16 @@ export default props => (
       <section className="one-time-to-lifetime-customer">
         <div className="container-lg">
           <div className="text-center lifetime-customer-intro">
-            <svg
-              width="72"
-              height="72"
-              viewBox="0 0 72 72"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g fill="none" fill-rule="evenodd">
-                <image
-                  href={props.images.titleImg}
-                  alt={props.images.titleImgAlt}
-                  height="70"
-                  width="70"
-                ></image>
-              </g>
-            </svg>
+            {props.theme.heading ? (
+              <img
+                src={props.images.titleImg}
+                alt={props.images.titleImgAlt}
+                height="70"
+                width="70"
+              />
+            ) : (
+              ""
+            )}
             <h2 className="section-title">{props.data.title}</h2>
             <p className="section-desc">{props.data.subtitle}</p>
           </div>
@@ -225,7 +220,7 @@ export default props => (
               </li>
             </ul>
           </div>
-          <div className="right-section">
+          <div className="second-right-section">
             <div className="img-container">
               <img
                 src={props.images.rightImage}

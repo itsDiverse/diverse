@@ -98,11 +98,18 @@ export const theme = {
   },
   //----------------------------------Module8
   module8: {
+    heading: true,
     colors: {
       titles: "#32325d",
       texts: "#525f7f",
       secondary: "#ff9b7c",
+      shadow: true,
+      shadowColor: "rgba(50, 50, 93, 0.9)",
     },
+    skewFirstSection: true,
+    skewSecondSection: true,
+    reverseOrderFirstSection: false,
+    reverseOrderSecondSection: false,
   },
   //----------------------------------Module9
   module9: {

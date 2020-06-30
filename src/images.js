@@ -262,6 +262,7 @@ export const images = {
   },
   //----------------------------------Module 8
   module8: {
+    heading: true,
     titleImg,
     titleImgAlt: "logo",
     logoBox,
