@@ -362,6 +362,9 @@ export const StyledContentWrapper = styled.div`
           grid-gap: 0 40px;
           gap: 0 40px;
         }
+        .rooted-content-left {
+          order: ${props => (props.theme.reverseOrder ? "1" : "0")};
+        }
         .engineering-scale-title {
           font-size: 24px;
           line-height: 36px;
@@ -408,7 +411,7 @@ export const StyledContentWrapper = styled.div`
       }
       @media (min-width: 1040px) {
         .solutions-rooted-content {
-          margin: 50px 0 -150px;
+          margin: 50px 0 50px;
           grid-gap: 0 150px;
           gap: 0 150px;
         }

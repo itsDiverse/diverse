@@ -7,10 +7,12 @@ export default props => (
     <div class="content-wrapper">
       <div class="solutions-rooted-section">
         <div class="container-lg">
-          <div class="section-intro">
-            <h2 class="section-title">{props.data.title}</h2>
-            <p class="section-desc">{props.data.subtitle}</p>
-          </div>
+          {props.theme.heading && (
+            <div class="section-intro">
+              <h2 class="section-title">{props.data.title}</h2>
+              <p class="section-desc">{props.data.subtitle}</p>
+            </div>
+          )}
           <div class="solutions-rooted-content">
             <div class="rooted-content-left">
               <div class="rooted-box rooted-box-documentation">
@@ -106,22 +108,24 @@ export default props => (
             </div>
           </div>
         </div>
-        <div class="common-Grid anchorBottom">
-          <div class="backgroundContainer">
-            <div class="grid">
-              <div class="background"></div>
+        {props.theme.background && (
+          <div class="common-Grid anchorBottom">
+            <div class="backgroundContainer">
+              <div class="grid">
+                <div class="background"></div>
+              </div>
+            </div>
+            <div class="backgroundlineContainer">
+              <div class="grid">
+                <div class="linebg"></div>
+                <div class="linebg"></div>
+                <div class="linebg"></div>
+                <div class="linebg"></div>
+                <div class="linebg"></div>
+              </div>
             </div>
           </div>
-          <div class="backgroundlineContainer">
-            <div class="grid">
-              <div class="linebg"></div>
-              <div class="linebg"></div>
-              <div class="linebg"></div>
-              <div class="linebg"></div>
-              <div class="linebg"></div>
-            </div>
-          </div>
-        </div>
+        )}
       </div>
     </div>
   </StyledContentWrapper>

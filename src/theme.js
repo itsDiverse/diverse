@@ -90,32 +90,34 @@ export const theme = {
   },
   //----------------------------------Module 7
   module7: {
+    reverseOrderFirstSection: false,
+
     colors: {
       title: "#32325d",
       text: "#525f7f",
       titleLeftBox: "#57c3f0",
-      shadow: true,
       shadowColor: "rgba(50, 50, 93, 0.9)",
+      shadow: true,
     },
     borderBottom: false,
-    reverseOrderFirstSection: false,
   },
 
   module7a: {
+    reverseOrderThirdSection: true,
     colors: {
       title: "#32325d",
       text: "#525f7f",
       titleLeftBox: "#57c3f0",
-      shadow: true,
       shadowColor: "rgba(50, 50, 93, 0.9)",
+      shadow: true,
     },
-    borderTop: false,
-    reverseOrderThirdSection: true,
     skew: false,
     skewImage: ".312rad",
+    borderTop: false,
   },
 
   module7b: {
+    reverseOrderSecondSection: false,
     colors: {
       title: "#32325d",
       text: "#525f7f",
@@ -124,12 +126,13 @@ export const theme = {
       shadowColor: "rgba(50, 50, 93, 0.9)",
       shadowOpacity: "0.5",
     },
-    reverseOrderSecondSection: false,
     skew: false,
     skewImage: ".312rad",
   },
   //----------------------------------Module8
   module8: {
+    reverseOrderFirstSection: false,
+    reverseOrderSecondSection: false,
     heading: false,
     colors: {
       titles: "#32325d",
@@ -140,8 +143,6 @@ export const theme = {
     },
     skewFirstSection: true,
     skewSecondSection: true,
-    reverseOrderFirstSection: false,
-    reverseOrderSecondSection: false,
   },
   //----------------------------------Module9
   module9: {
@@ -153,6 +154,10 @@ export const theme = {
   },
   //----------------------------------Module 10
   module10: {
+    heading: false,
+    background: false,
+    reverseOrder: false,
+
     colors: {
       titles: "#32325d",
       subtitle: "#424770",
