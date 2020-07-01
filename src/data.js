@@ -180,8 +180,43 @@ export const data = {
       licenses in the U.S. as well as European e-money
       authorization.`,
     },
-
-    //Section2
+  },
+  module7a: {
+    title3: "Internation Supportt",
+    //-------------------------RightContent
+    text: {
+      before: `Expanding internationally typically requires significant
+        resources, time and money. With Connect, you can swiftly expand
+        internationally anywhere Stripe operates, without establishing
+        separate local subsidiaries. This includes credit card
+        processing capabilities in over 30 countries, with charges
+        processed centrally or locally in the recipient’s country, which
+        saves money on fees and improves decline rates. Accept payments
+        in 135+ currencies, pay out in 15+ currencies and present the
+        most relevant payment methods in checkout flows to further
+        optimize conversion rate. All of Connect’s capabilities are
+        supported by Stripe’s core payment functionality, used by
+        millions of businesses and available in over 25 countries.
+        Stripe has 14 global offices, so we can support.`,
+      link1: {
+        url: "http://www.google.com",
+        text: "marketplaces",
+      },
+      between1: "and",
+      link2: {
+        url: "http://www.google.com",
+        text: "platforms",
+      },
+      between2: "all over the world.",
+      link3: {
+        url: "#features-list",
+        text: "See the full list of Connect features",
+      },
+      after: "",
+    },
+    //-------------------------LeftContent-Box
+  },
+  module7b: {
     //-------------------------LeftContent
     title2: "Platform management",
     paragraph3:
@@ -249,41 +284,6 @@ export const data = {
       state1: "Verified",
       state2: "Unverified",
     },
-
-    //Section3
-    title3: "Internation Support",
-    //-------------------------RightContent
-    text: {
-      before: `Expanding internationally typically requires significant
-        resources, time and money. With Connect, you can swiftly expand
-        internationally anywhere Stripe operates, without establishing
-        separate local subsidiaries. This includes credit card
-        processing capabilities in over 30 countries, with charges
-        processed centrally or locally in the recipient’s country, which
-        saves money on fees and improves decline rates. Accept payments
-        in 135+ currencies, pay out in 15+ currencies and present the
-        most relevant payment methods in checkout flows to further
-        optimize conversion rate. All of Connect’s capabilities are
-        supported by Stripe’s core payment functionality, used by
-        millions of businesses and available in over 25 countries.
-        Stripe has 14 global offices, so we can support.`,
-      link1: {
-        url: "http://www.google.com",
-        text: "marketplaces",
-      },
-      between1: "and",
-      link2: {
-        url: "http://www.google.com",
-        text: "platforms",
-      },
-      between2: "all over the world.",
-      link3: {
-        url: "#features-list",
-        text: "See the full list of Connect features",
-      },
-      after: "",
-    },
-    //-------------------------LeftContent-Box
   },
 
   //----------------------------------Module 8

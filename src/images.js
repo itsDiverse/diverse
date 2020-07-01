@@ -250,18 +250,22 @@ export const images = {
     section1TitleAlt: "",
     checkList,
     checkListAlt: "",
-    //Section2
+
+    //Styles.js
+    flagIconsImg,
+    dashboardImg,
+  },
+  module7a: {
+    section3Title,
+    section3TitleAlt: "",
+    backgroundImg,
+  },
+
+  module7b: {
     section2Title,
     section2TitleAlt: "",
     section2ImageRight,
     section2ImageRightAlt: "",
-    //Section3
-    section3Title,
-    section3TitleAlt: "",
-    backgroundImg,
-    //Styles.js
-    flagIconsImg,
-    dashboardImg,
   },
   //----------------------------------Module 8
   module8: {

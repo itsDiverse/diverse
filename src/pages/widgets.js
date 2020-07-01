@@ -8,6 +8,8 @@ import { Module4 } from "../components/widgets/Module4"
 import { Module5 } from "../components/widgets/Module5"
 import { Module6 } from "../components/widgets/Module6"
 import { Module7 } from "../components/widgets/Module7"
+import { Module7a } from "../components/widgets/Module7a"
+import { Module7b } from "../components/widgets/Module7b"
 import { Module8 } from "../components/widgets/Module8"
 import { Module9 } from "../components/widgets/Module9"
 import { Module10 } from "../components/widgets/Module10"
@@ -87,6 +89,16 @@ export default () => (
       theme={theme.module7}
       data={data.module7}
       images={images.module7}
+    />
+    <Module7a
+      theme={theme.module7a}
+      data={data.module7a}
+      images={images.module7a}
+    />
+    <Module7b
+      theme={theme.module7b}
+      data={data.module7b}
+      images={images.module7b}
     />
     <hr></hr>
     <h1>#8</h1>

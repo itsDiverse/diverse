@@ -94,15 +94,43 @@ export const theme = {
       title: "#32325d",
       text: "#525f7f",
       titleLeftBox: "#57c3f0",
+      shadow: true,
+      shadowColor: "rgba(50, 50, 93, 0.9)",
     },
-
+    borderBottom: false,
     reverseOrderFirstSection: false,
+  },
+
+  module7a: {
+    colors: {
+      title: "#32325d",
+      text: "#525f7f",
+      titleLeftBox: "#57c3f0",
+      shadow: true,
+      shadowColor: "rgba(50, 50, 93, 0.9)",
+    },
+    borderTop: false,
+    reverseOrderThirdSection: true,
+    skew: false,
+    skewImage: ".312rad",
+  },
+
+  module7b: {
+    colors: {
+      title: "#32325d",
+      text: "#525f7f",
+      titleLeftBox: "#57c3f0",
+      shadow: true,
+      shadowColor: "rgba(50, 50, 93, 0.9)",
+      shadowOpacity: "0.5",
+    },
     reverseOrderSecondSection: false,
-    reverseOrderThirdSection: false,
+    skew: false,
+    skewImage: ".312rad",
   },
   //----------------------------------Module8
   module8: {
-    heading: true,
+    heading: false,
     colors: {
       titles: "#32325d",
       texts: "#525f7f",
