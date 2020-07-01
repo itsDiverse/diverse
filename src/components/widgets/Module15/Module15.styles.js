@@ -3,9 +3,6 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
-      * {
-        font-family: Helvetica;
-      }
       ol,
       ul {
         list-style: none;
@@ -37,17 +34,19 @@ export const StyledContentWrapper = styled.div`
         background-color: #fff;
         border-radius: 8px;
         padding: 30px;
-        -webkit-box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-          0 18px 36px -18px rgba(0, 0, 0, 0.3),
-          0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-        box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-          0 18px 36px -18px rgba(0, 0, 0, 0.3),
-          0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+        -webkit-box-shadow: ${props =>
+          props.theme.colors.shadow
+            ? `0 30px 60px -12px  ${props.theme.colors.shadowColor}`
+            : "none"};
+        box-shadow: ${props =>
+          props.theme.colors.shadow
+            ? `0 30px 60px -12px ${props.theme.colors.shadowColor}`
+            : "none"};
       }
       .idc-callout {
         position: relative;
         z-index: 2;
-        padding-bottom: 20px;
+        padding-bottom: 60px;
         padding-top: 40px;
       }
       .callout-content {

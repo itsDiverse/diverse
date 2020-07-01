@@ -151,23 +151,25 @@ export default props => (
             </div>
           </div>
         </div>
-        <div className="common-idc-grid">
-          <div className="backgroundContainer">
-            <div className="grid">
-              <div className="background"></div>
+        {props.theme.background && (
+          <div className="common-idc-grid">
+            <div className="backgroundContainer">
+              <div className="grid">
+                <div className="background"></div>
+              </div>
+            </div>
+            <div className="idcbgContainer">
+              <div className="grid">
+                <span className="idcbg"></span>
+                <span className="idcbg"></span>
+                <span className="idcbg"></span>
+                <span className="idcbg"></span>
+                <span className="idcbg"></span>
+                <span className="idcbg"></span>
+              </div>
             </div>
           </div>
-          <div className="idcbgContainer">
-            <div className="grid">
-              <span className="idcbg"></span>
-              <span className="idcbg"></span>
-              <span className="idcbg"></span>
-              <span className="idcbg"></span>
-              <span className="idcbg"></span>
-              <span className="idcbg"></span>
-            </div>
-          </div>
-        </div>
+        )}
       </div>
     </div>
   </StyledContentWrapper>

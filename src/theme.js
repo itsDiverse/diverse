@@ -222,9 +222,12 @@ export const theme = {
   },
   //-------------------------------------Module 15
   module15: {
+    background: false,
     colors: {
       link: "#6772e5",
       text: "#525f7f",
+      shadowColor: "rgba(50, 50, 93, 0.5)",
+      shadow: true,
     },
   },
   //-------------------------------------Module 16
