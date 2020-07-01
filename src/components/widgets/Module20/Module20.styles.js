@@ -104,6 +104,7 @@ export const StyledContentWrapper = styled.div`
         -webkit-perspective: 1500px;
         perspective: 1500px;
         z-index: 1;
+        order: ${props => (props.theme.shiftContentFirst ? "-1" : "1")};
       }
       .save-time-on-reviews .feature .image-container {
         border-radius: 8px;
@@ -127,15 +128,16 @@ export const StyledContentWrapper = styled.div`
           color-stop(hsla(0, 0%, 100%, 0)),
           to(hsla(0, 0%, 100%, 0.35))
         );
-        background: linear-gradient(
+        /*background: linear-gradient(
           var(--lighting-angle),
           hsla(0, 0%, 100%, 0),
           hsla(0, 0%, 100%, 0.35)
-        );
+        );*/
         border-radius: 8px;
       }
       .save-time-on-reviews .feature .image-container img {
         width: 100%;
+        margin-bottom: -5px;
       }
       .save-time-on-reviews .feature {
         position: relative;
@@ -187,13 +189,16 @@ export const StyledContentWrapper = styled.div`
         }
         .patterns-right-content {
           --transform: rotate3d(0.342, -0.94, 0, 15deg);
-          --shadow: 29.4px 62.5px 125px -25px rgba(50, 50, 93, 0.5),
+          --shadow: ${props =>
+              props.theme.colors.shadow
+                ? `29.4px 62.5px 125px -25px ${props.theme.colors.shadowColor}`
+                : "none"},
             17.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
           --lighting-angle: 290deg;
           width: 100%;
         }
         .save-time-on-reviews .feature .image-container img {
-          width: auto;
+          width: ${props => (props.theme.shiftContentFirst ? "100%" : "auto")};
         }
         .save-time-on-reviews .networks .networks-content {
           grid: auto/1fr 40%;
@@ -208,13 +213,17 @@ export const StyledContentWrapper = styled.div`
         .save-time-on-reviews .networks .networks-left-content {
           -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
-          order: 2;
+          order: ${props => (props.theme.shiftContentSecond ? "0" : "2")};
         }
         .networks-right-content {
           --transform: rotate3d(0.342, 0.94, 0, 15deg);
-          --shadow: -29.4px 62.5px 125px -25px rgba(50, 50, 93, 0.5),
-            -17.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
+          --shadow: ${props =>
+              props.theme.colors.shadow
+                ? `29.4px 62.5px 125px -25px ${props.theme.colors.shadowColor}`
+                : "none"},
+            17.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
           --lighting-angle: 70deg;
+          width: 100%;
         }
       }
     `}

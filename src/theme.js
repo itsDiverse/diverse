@@ -275,11 +275,16 @@ export const theme = {
   },
   //-------------------------------------Module 20
   module20: {
+    heading: true,
     colors: {
       titles: "#32325d",
       subtitle: "#424770",
       textDesc: "#525f7f",
+      shadow: true,
+      shadowColor: "rgba(50, 50, 93, 0.5)",
     },
+    shiftContentFirst: false,
+    shiftContentSecond: false,
   },
   //-------------------------------------Module 21
   module21: {

@@ -7,10 +7,12 @@ export default props => (
     <div className="content-wrapper">
       <div className="save-time-on-reviews">
         <div className="container-lg">
-          <div className="save-time-on-reviews-title">
-            <h3>{props.data.title}</h3>
-            <p>{props.data.subtitle}</p>
-          </div>
+          {props.theme.heading && (
+            <div className="save-time-on-reviews-title">
+              <h3>{props.data.title}</h3>
+              <p>{props.data.subtitle}</p>
+            </div>
+          )}
         </div>
         <div className="feature patterns">
           <div className="container-lg">
