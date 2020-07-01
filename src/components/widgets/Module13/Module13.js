@@ -19,12 +19,16 @@ export default props => (
                   <h3>{props.data.box1.title}</h3>
                   <p>{props.data.box1.text}</p>
                   <div className="listing-card-badges">
-                    <div className="background-green text-white listing-card-badge">
-                      {props.data.box1.btnLeft}
-                    </div>
-                    <div className="background-green text-white listing-card-badge">
-                      {props.data.box1.btnRight}
-                    </div>
+                    {props.data.box1.btnLeft && (
+                      <div className="background-green text-white listing-card-badge">
+                        {props.data.box1.btnLeft}
+                      </div>
+                    )}
+                    {props.data.box1.btnRight && (
+                      <div className="background-green text-white listing-card-badge">
+                        {props.data.box1.btnRight}
+                      </div>
+                    )}
                   </div>
                 </div>
               </a>
@@ -40,9 +44,16 @@ export default props => (
                   <h3>{props.data.box2.title}</h3>
                   <p>{props.data.box2.text}</p>
                   <div className="listing-card-badges">
-                    <div className="background-green text-white listing-card-badge">
-                      {props.data.box2.btnRight}
-                    </div>
+                    {props.data.box2.btnLeft && (
+                      <div className="background-green text-white listing-card-badge">
+                        {props.data.box2.btnLeft}
+                      </div>
+                    )}
+                    {props.data.box2.btnRight && (
+                      <div className="background-green text-white listing-card-badge">
+                        {props.data.box2.btnRight}
+                      </div>
+                    )}
                   </div>
                 </div>
               </a>
@@ -58,9 +69,16 @@ export default props => (
                   <h3>{props.data.box3.title}</h3>
                   <p>{props.data.box3.text}</p>
                   <div className="listing-card-badges">
-                    <div className="background-green text-white listing-card-badge">
-                      {props.data.box3.btnRight}
-                    </div>
+                    {props.data.box3.btnLeft && (
+                      <div className="background-green text-white listing-card-badge">
+                        {props.data.box3.btnLeft}
+                      </div>
+                    )}
+                    {props.data.box3.btnRight && (
+                      <div className="background-green text-white listing-card-badge">
+                        {props.data.box3.btnRight}
+                      </div>
+                    )}
                   </div>
                 </div>
               </a>
