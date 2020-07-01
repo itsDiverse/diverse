@@ -52,8 +52,7 @@ export const StyledContentWrapper = styled.div`
         padding: 0 20px;
       }
       .compliance-content {
-        border-bottom: ${props =>
-          props.theme.borderBottom ? "2px solid #f2f6fa" : "none"};
+        border-bottom: 2px solid #f2f6fa;
       }
       .compliance-left-content p {
         font-weight: 400;
@@ -109,6 +108,7 @@ export const StyledContentWrapper = styled.div`
       }
       .platform-management-right-content {
         padding: 1px;
+
         order: ${props => (props.theme.reverseOrderSecondSection ? "-1" : "0")};
       }
       .compliance-right-content li + li {
@@ -158,11 +158,17 @@ export const StyledContentWrapper = styled.div`
         left: 17px;
         right: 17px;
         top: 40px;
-        sheight: 390px;
-        opacity: 0.3;
+        height: 390px;
+        opacity: ${props =>
+          props.theme.colors.shadow
+            ? `${props.theme.colors.shadowOpacity}`
+            : "0"};
         background: ${props.theme.colors.shadowColor};
         -webkit-filter: blur(30px);
         filter: blur(30px);
+        transform: skew(
+          ${props => (props.theme.skew ? `${props.theme.skewImage}` : "0")}
+        );
       }
       .platform-management-section .laptop .lid {
         width: 100%;
@@ -188,6 +194,9 @@ export const StyledContentWrapper = styled.div`
         right: 17px;
         border-radius: 8px;
         background-image: url(${props.images.section2ImageRight});
+        transform: skew(
+          ${props => (props.theme.skew ? `${props.theme.skewImage}` : "0")}
+        );
       }
       .platform-management-section .laptop .chassis {
         width: 100%;
@@ -412,8 +421,8 @@ export const StyledContentWrapper = styled.div`
       }
       .international-support aside h2:not(:first-child) {
         margin-top: 21px;
+        border-top: 2px solid #f1f6fa;
       }
-
       .international-support aside ul {
         display: grid;
       }
@@ -550,6 +559,7 @@ export const StyledContentWrapper = styled.div`
           -webkit-transform: none;
           transform: none;
           left: calc(50% - 292px);
+          top: 0px;
         }
         .international-support aside {
           margin: 0;
@@ -620,13 +630,14 @@ export const StyledContentWrapper = styled.div`
           grid: auto/1fr auto;
           grid-gap: 0 70px;
           padding: 0 20px;
-          padding-top: 80px;
+          padding-top: 120px;
+          padding-bottom: 80px;
         }
         .compliance-content {
           display: grid;
           grid: auto/1fr 1fr;
           grid-gap: 35px;
-          padding-bottom: 0px;
+          padding-bottom: 80px;
         }
       }
       @media (max-width: 880px) {
@@ -634,10 +645,11 @@ export const StyledContentWrapper = styled.div`
           padding-bottom: 50px;
         }
         .compliance-content-wrapper {
-          margin-bottom: 0px;
+          margin-bottom: 50px;
         }
         .platform-management-section {
           padding: 0 20px;
+          margin-top: 50px;
         }
         .platform-management-left-content img {
           margin: 0 auto;
@@ -658,6 +670,7 @@ export const StyledContentWrapper = styled.div`
           margin-left: auto;
           margin-right: auto;
         }
+
         .connected-accounts-nav ul {
           margin-top: 24px;
         }

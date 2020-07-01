@@ -52,8 +52,7 @@ export const StyledContentWrapper = styled.div`
         padding: 0 20px;
       }
       .compliance-content {
-        border-bottom: ${props =>
-          props.theme.borderBottom ? "2px solid #f2f6fa" : "none"};
+        border-bottom: 2px solid #f2f6fa;
       }
       .compliance-left-content p {
         font-weight: 400;
@@ -158,7 +157,7 @@ export const StyledContentWrapper = styled.div`
         left: 17px;
         right: 17px;
         top: 40px;
-        sheight: 390px;
+        height: 390px;
         opacity: 0.3;
         background: ${props.theme.colors.shadowColor};
         -webkit-filter: blur(30px);
@@ -358,7 +357,7 @@ export const StyledContentWrapper = styled.div`
         display: block;
         height: 2px;
         margin-bottom: 50px;
-        background: #f2f6fa;
+        background: ${props => (props.theme.borderTop ? "#f2f6fa" : "none")};
       }
       .international-support .common-UppercaseTitle {
         text-align: center;
@@ -390,14 +389,18 @@ export const StyledContentWrapper = styled.div`
         -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
           0 8px 16px -8px rgba(0, 0, 0, 0.3),
           0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-        box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-          0 8px 16px -8px rgba(0, 0, 0, 0.3),
-          0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+        box-shadow: ${props =>
+          props.theme.colors.shadow
+            ? `0 13px 27px -5px ${props.theme.colors.shadowColor}`
+            : "none"};
         border-radius: 8px;
         margin-top: 1.5em;
         height: 450px;
         width: 300px;
         background-image: url(${props.images.backgroundImg});
+        transform: skew(
+          ${props => (props.theme.skew ? `${props.theme.skewImage}` : "0")}
+        );
       }
       .international-support aside > * {
         padding: 0 22px;
@@ -412,8 +415,8 @@ export const StyledContentWrapper = styled.div`
       }
       .international-support aside h2:not(:first-child) {
         margin-top: 21px;
+        border-top: 2px solid #f1f6fa;
       }
-
       .international-support aside ul {
         display: grid;
       }
@@ -550,6 +553,10 @@ export const StyledContentWrapper = styled.div`
           -webkit-transform: none;
           transform: none;
           left: calc(50% - 292px);
+          top: 0px;
+        }
+        .platform-management-section {
+          margin-bottom: 50px;
         }
         .international-support aside {
           margin: 0;
@@ -563,7 +570,6 @@ export const StyledContentWrapper = styled.div`
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
-          margin-top: 140px;
         }
         .international-support:before {
           grid-column-end: span 2;
@@ -626,7 +632,7 @@ export const StyledContentWrapper = styled.div`
           display: grid;
           grid: auto/1fr 1fr;
           grid-gap: 35px;
-          padding-bottom: 0px;
+          padding-bottom: 80px;
         }
       }
       @media (max-width: 880px) {
@@ -634,7 +640,7 @@ export const StyledContentWrapper = styled.div`
           padding-bottom: 50px;
         }
         .compliance-content-wrapper {
-          margin-bottom: 0px;
+          margin-bottom: 50px;
         }
         .platform-management-section {
           padding: 0 20px;
@@ -655,8 +661,12 @@ export const StyledContentWrapper = styled.div`
           text-align: center;
         }
         .international-support img {
+          margin: auto;
+        }
+        .international-support aside {
           margin-left: auto;
           margin-right: auto;
+          margin-bottom: 50px;
         }
         .connected-accounts-nav ul {
           margin-top: 24px;

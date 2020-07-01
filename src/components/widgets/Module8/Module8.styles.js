@@ -4,7 +4,6 @@ export const StyledContentWrapper = styled.div`
   ${props =>
     css`
       * {
-        font-family: Helvetica;
         margin: 0px;
         padding: 0px;
       }

@@ -7,20 +7,18 @@ export default props => (
     <div className="content-wrapper">
       <section className="one-time-to-lifetime-customer">
         <div className="container-lg">
-          <div className="text-center lifetime-customer-intro">
-            {props.theme.heading ? (
+          {props.theme.heading && (
+            <div className="text-center lifetime-customer-intro">
               <img
                 src={props.images.titleImg}
                 alt={props.images.titleImgAlt}
                 height="70"
                 width="70"
               />
-            ) : (
-              ""
-            )}
-            <h2 className="section-title">{props.data.title}</h2>
-            <p className="section-desc">{props.data.subtitle}</p>
-          </div>
+              <h2 className="section-title">{props.data.title}</h2>
+              <p className="section-desc">{props.data.subtitle}</p>
+            </div>
+          )}
         </div>
         <div className="container-lg onetime-lifetime-first-section">
           <div className="onetime-lifetime-first-section-left">

@@ -95,6 +95,10 @@ export const theme = {
       text: "#525f7f",
       titleLeftBox: "#57c3f0",
     },
+
+    reverseOrderFirstSection: false,
+    reverseOrderSecondSection: false,
+    reverseOrderThirdSection: false,
   },
   //----------------------------------Module8
   module8: {

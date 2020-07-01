@@ -48,6 +48,7 @@ import m6Icon4 from "./images/Module6/tax-id.svg"
 import section1Title from "./images/Module7/compliance.svg"
 import checkList from "./images/Module7/lawyer-friendly-checkmark.svg"
 import section2Title from "./images/Module7/platform-management.svg"
+import section2ImageRight from "./images/Module7/imageRight.png"
 import section3Title from "./images/Module7/international-support.svg"
 import backgroundImg from "./images/Module7/background-image.jpg"
 import dashboardImg from "./images/Module7/dashboard-chrome.svg"
@@ -252,6 +253,8 @@ export const images = {
     //Section2
     section2Title,
     section2TitleAlt: "",
+    section2ImageRight,
+    section2ImageRightAlt: "",
     //Section3
     section3Title,
     section3TitleAlt: "",
@@ -262,7 +265,6 @@ export const images = {
   },
   //----------------------------------Module 8
   module8: {
-    heading: true,
     titleImg,
     titleImgAlt: "logo",
     logoBox,

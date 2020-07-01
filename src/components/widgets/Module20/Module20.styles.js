@@ -6,8 +6,6 @@ export const StyledContentWrapper = styled.div`
       * {
         margin: 0px;
         padding: 0px;
-        font-family: Helvetica;
-        max-width: 100%;
       }
       body {
         background: #fff;
