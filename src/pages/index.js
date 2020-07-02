@@ -2,6 +2,7 @@ import React from "react"
 
 import { Layout } from "../components"
 import {
+  Module2,
   Module7,
   Module7a,
   Module7b,
@@ -21,6 +22,12 @@ import { videos } from "../videos"
 
 export default props => (
   <Layout>
+    <Module2
+      theme={theme.module2}
+      data={data.module2}
+      images={images.module2}
+      videos={videos.module2}
+    />
     <Module7
       theme={theme.module7}
       data={data.module7}

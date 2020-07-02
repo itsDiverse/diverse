@@ -167,6 +167,7 @@ export const StyledContentWrapper = styled.div`
         display: grid;
         grid: auto/repeat(5, 100%);
         overflow: hidden;
+        margin: 0;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         -webkit-transition: background-color var(--transition-duration)
@@ -348,9 +349,12 @@ export const StyledContentWrapper = styled.div`
         background-color: #6bf;
       }
       section.feedback .feedbacklogo .video.teespring {
-        background-image: url(images/teespring-video-cover.jpg);
+        background-image: url(${props.images.placeHolderImg});
         background-size: cover;
-        background-position: 50%;
+        background-position: 75%;
+      }
+      .li-video {
+        width: 100%;
       }
       .video-container {
         --transition-duration: 0.35s;
@@ -396,10 +400,10 @@ export const StyledContentWrapper = styled.div`
       }
 
       .video-container video {
-        max-width: 100%;
-        max-height: 100%;
+        width: calc(80% + 2px) !important;
+        height: auto !important;
         background-color: #000;
-        border-radius: 8px;
+        border-radius: 20px;
         -webkit-box-shadow: 0 62.5px 125px -25px rgba(50, 50, 93, 0.5),
           0 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
         box-shadow: 0 62.5px 125px -25px rgba(50, 50, 93, 0.5),
@@ -443,7 +447,7 @@ export const StyledContentWrapper = styled.div`
           grid: auto/5fr 8fr;
         }
         section.feedback .feedbacklogo li {
-          padding: 0 70px 0 30px;
+          padding: 0 80px 0 0px;
         }
         section.feedback .feedbacklogo li > svg {
           max-height: 100px;
@@ -484,7 +488,7 @@ export const StyledContentWrapper = styled.div`
         (-webkit-min-device-pixel-ratio: 1.25),
         (min-resolution: 120dpi) {
         section.feedback .feedbacklogo .video.teespring {
-          background-image: url(images/teespring-video-cover@2x.jpg);
+          background-image: url(${props.images.placeHolderImg});
         }
       }
       @media (max-width: 1200px) {

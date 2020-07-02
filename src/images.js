@@ -24,6 +24,7 @@ import m2Logo2 from "./images/Module2/booking_com.svg"
 import m2Logo3 from "./images/Module2/docusign.svg"
 import m2Logo4 from "./images/Module2/instacart.svg"
 import m2Logo5 from "./images/Module2/peleton.svg"
+import placeHolderImg from "./images/Module2/imagePlaceHolder.png"
 //++++++++++++++++++++++++++++++++++++
 
 //import images Module 3 +++++++++++++
@@ -211,6 +212,8 @@ export const images = {
     m2Logo3,
     m2Logo4,
     m2Logo5,
+    placeHolderImg,
+    placeHolderImgAlt: "",
 
     m2logo1Alt: "Amazonn",
     m2logo2Alt: "",
