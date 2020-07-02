@@ -176,25 +176,31 @@ export const theme = {
   },
   //-------------------------------------Module11
   module11: {
+    overlayBox: true,
+    overlay: false,
     colors: {
       title: "#24b47e",
       subtitle: "#424770",
       textBox: "#fff",
-      backgroundBox: "#eb268d",
       text: "#525f7f",
       links: "#6772e5",
+      //overlayBox
+      backgroundBox: "#eb268d",
     },
   },
   //-------------------------------------Module11a
   module11a: {
-    backgroundMarketplaceGallery: "green",
+    overlayBox: true,
+    overlay: false,
+    backgroundMarketplaceGallery: "#eab504",
     colors: {
       title: "#24b47e",
       subtitle: "#424770",
       textBox: "#fff",
-      backgroundBox: "#eab504",
       text: "#525f7f",
       links: "#6772e5",
+      //overlayBox
+      backgroundBox: "#eab504",
     },
   },
   //-------------------------------------Module12

@@ -134,7 +134,8 @@ export const StyledContentWrapper = styled.div`
       .marketplaces-quote:before {
         content: "";
         display: block;
-        background: ${props.theme.colors.backgroundBox};
+        background: ${props =>
+          props.theme.overlayBox ? `${props.theme.colors.backgroundBox}` : ""};
         position: absolute;
         top: 0;
         bottom: 0;
@@ -143,14 +144,16 @@ export const StyledContentWrapper = styled.div`
         z-index: -1;
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
+        width: ${props => (props.theme.overlayBox ? `100%` : "")};
       }
       .marketplaces-quote:after {
         content: "";
         display: block;
         width: 100%;
         height: 95px;
-        background: url(${props.images.m11aBannerShadow});
-        background-size: 100% 100%;
+        background: url(${props =>
+          props.theme.overlay ? `${props.images.m11aBannerShadow}` : ""});
+        background-size: ${props => (props.theme.overlay ? `100% 100%` : "")};
         position: absolute;
         top: -95px;
         left: 0;
@@ -225,8 +228,9 @@ export const StyledContentWrapper = styled.div`
         .marketplaces-quote:after {
           width: 206px;
           height: 100%;
-          background: url(${props.images.m11aBannerShadow2});
-          background-size: 100% 100%;
+          background: url(${props =>
+            props.theme.overlay ? `${props.images.m11aBannerShadow2}` : ""});
+          background-size: ${props => (props.theme.overlay ? `100% 100%` : "")};
           z-index: -1;
           left: -129px;
           top: 0;
@@ -235,7 +239,7 @@ export const StyledContentWrapper = styled.div`
         }
         .marketplaces-quote:before {
           opacity: 0.9216;
-          left: 76px;
+          left: ${props => (props.theme.overlayBox ? "0" : "-129px")};
         }
         .marketplaces-gallery-content .marketplaces-quote-wrapper {
           flex-basis: 50%;

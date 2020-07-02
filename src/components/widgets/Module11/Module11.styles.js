@@ -104,7 +104,7 @@ export const StyledContentWrapper = styled.div`
       }
       .marketplaces-gallery-photo {
         background-color: #a19273;
-        background-image: url(${props.images.m11Banner});
+        background-image: url("${props.images.m11Banner}");
         width: 100%;
         min-height: 370px;
         background-size: cover;
@@ -155,7 +155,8 @@ export const StyledContentWrapper = styled.div`
       .marketplaces-quote:before {
         content: "";
         display: block;
-        background: ${props.theme.colors.backgroundBox};
+        background: ${props =>
+          props.theme.overlayBox ? `${props.theme.colors.backgroundBox}` : ""};
         position: absolute;
         top: 0;
         bottom: 0;
@@ -164,14 +165,16 @@ export const StyledContentWrapper = styled.div`
         z-index: -1;
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
+        width:${props => (props.theme.overlayBox ? `100%` : "")};
       }
       .marketplaces-quote:after {
         content: "";
         display: block;
         width: 100%;
         height: 95px;
-        background: url(${props.images.m11BannerShadow});
-        background-size: 100% 100%;
+        background: url(${props =>
+          props.theme.overlay ? `${props.images.m11BannerShadow}` : ""});
+        background-size: ${props => (props.theme.overlay ? `100% 100%` : "")};
         position: absolute;
         top: -95px;
         left: 0;
@@ -243,8 +246,9 @@ export const StyledContentWrapper = styled.div`
         .marketplaces-quote:after {
           width: 206px;
           height: 100%;
-          background: url(${props.images.m11BannerShadow2});
-          background-size: 100% 100%;
+          background: url(${props =>
+            props.theme.overlay ? `${props.images.m11BannerShadow2}` : ""});
+          background-size: ${props => (props.theme.overlay ? `100% 100%` : "")};
           left: auto;
           right: -80px;
           top: 0;

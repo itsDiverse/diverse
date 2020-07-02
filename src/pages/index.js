@@ -8,6 +8,8 @@ import {
   Module8,
   Module20,
   Module10,
+  Module11,
+  Module11a,
   Module13,
   Module15,
 } from "../components/widgets"
@@ -43,6 +45,17 @@ export default props => (
       theme={theme.module10}
       data={data.module10}
       images={images.module10}
+    />
+    <Module11
+      theme={theme.module11}
+      data={data.module11}
+      images={images.module11}
+    />
+    s
+    <Module11a
+      theme={theme.module11a}
+      data={data.module11a}
+      images={images.module11a}
     />
     <Module13
       theme={theme.module13}
