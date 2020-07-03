@@ -9,7 +9,6 @@ import { DigitalMarketingDropdown } from "./DropdownContents/DigitalMarketing.js
 //import { WritingAndTranslationDropdown } from "./DropdownContents/WritingAndTranslation.js"
 import { ProgrammingAndTechDropdown } from "./DropdownContents/ProgrammingAndTech.js"
 import { VideoAndAnimationDropdown } from "./DropdownContents/VideoAndAnimation"
-import { GenericDropdownContainer } from "./DropdownContents/GenericDropdownContainer"
 
 const navbarConfig = [
   {

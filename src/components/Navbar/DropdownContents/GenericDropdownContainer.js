@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import { IconDesktopMarketing } from "../../Icons"
 
@@ -8,8 +9,10 @@ import {
   Heading,
   ListSection,
   ListPrimary,
+  ListItemsRow,
   DropdownButton,
   DropdownTitle,
+  DropdownSubtitle
 } from "./Components.js"
 
 export const GenericDropdownContainer = ({
@@ -17,22 +20,18 @@ export const GenericDropdownContainer = ({
   subtitle,
   buttonText,
   items,
+  columns
 }) => {
   return (
     <DropdownEl>
       <DropdownSection>
         <ListPrimary>
-          <li>
-            <IconDesktopMarketing />
-          </li>
-          <li>
-            <DropdownTitle>{title}</DropdownTitle>
-          </li>
-          <li>{subtitle}</li>
-          <li>
-            <DropdownButton>{buttonText}</DropdownButton>
-          </li>
+          <IconDesktopMarketing />
+          <DropdownTitle>{title}</DropdownTitle>
+          <DropdownSubtitle>{subtitle}</DropdownSubtitle>
+          <DropdownButton>{buttonText}</DropdownButton>
         </ListPrimary>
+        <ListItemsRow columns={columns}>
         {items.map(item => (
           <ListSection>
             <li>
@@ -43,6 +42,7 @@ export const GenericDropdownContainer = ({
             ))}
           </ListSection>
         ))}
+        </ListItemsRow>
       </DropdownSection>
     </DropdownEl>
   )

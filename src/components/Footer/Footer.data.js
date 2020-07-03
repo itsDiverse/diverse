@@ -1,6 +1,66 @@
 export const footerData = [
+  
+  /// Diferent section here
+
+  {
+    title: "Marketing & Writing",
+    url: "/",
+    subtitle: "Bring your vision to life with the assistance of one of our artists.",
+    buttonText: "All Marketing & Writing Services ",
+    items: [
+      {
+        title: "Writing Services",
+        url: "/",
+        items: [
+          { title: "Website Content", url: "" },
+          { title: "Email Copy", url: "" },
+          { title: "Press Releases", url: "" },
+          { title: "Business Names & Slogans", url: "" },
+          { title: "Sales Copy", url: "" },
+          { title: "Articles & Blog Posts", url: "" },
+          { title: "Social Media Copy", url: "" },
+          { title: "Proofreading & Editing", url: "" },
+          { title: "Scriptwriting", url: "" },
+          { title: "Creative Writing", url: "" },
+        ],
+      },
+      {
+        title: "Research & Strategy",
+        url: "/",
+        items: [
+          { title: "Marketing Strategy", url: "" },
+          { title: "Domain Research", url: "" },
+        ],
+      },
+      {
+        title: "Social & Content",
+        url: "/",
+        items: [
+          { title: "Social Media Marketing", url: "/web-mobile" },
+          { title: "Influencer Marketing", url: "/social-media" },
+          { title: "Content Marketing", url: "/banner-ads" },
+          { title: "Email Marketing", url: "/social-media" },
+          { title: "Video Marketing", url: "/banner-ads" },
+        ],
+      },
+      {
+        title: "Search",
+        url: "/",
+        items: [
+          { title: "SEO/SEM", url: "" },
+          { title: "PPC", url: "" },
+          { title: "Web Analytics", url: "" },
+          { title: "Reputation Management", url: "" },
+        ],
+      },
+    ],
+  },
+  //Diferent section here
   {
     title: "Graphics & Design",
+    subtitle:
+      "Bring Your vision to life with the assistance of one of out artists.",
+    buttonText: "All Graphics & Design Services",
     url: "/",
     items: [
       {
@@ -61,75 +121,34 @@ export const footerData = [
     ],
   },
 
-  /// Diferent section here
-
-  {
-    title: "Marketing & Writing",
-    url: "/",
-    items: [
-      {
-        title: "Social & Content",
-        url: "/",
-        items: [
-          { title: "Social Media Marketing", url: "/web-mobile" },
-          { title: "Influencer Marketing", url: "/social-media" },
-          { title: "Content Marketing", url: "/banner-ads" },
-          { title: "Email Marketing", url: "/social-media" },
-          { title: "Video Marketing", url: "/banner-ads" },
-        ],
-      },
-      {
-        title: "Search",
-        url: "/",
-        items: [
-          { title: "SEO/SEM", url: "" },
-          { title: "PPC", url: "" },
-          { title: "Web Analytics", url: "" },
-          { title: "Reputation Management", url: "" },
-        ],
-      },
-      {
-        title: "Research & Strategy",
-        url: "/",
-        items: [
-          { title: "Marketing Strategy", url: "" },
-          { title: "Domain Research", url: "" },
-        ],
-      },
-
-      {
-        title: "Writing Services",
-        url: "/",
-        items: [
-          { title: "Website Content", url: "" },
-          { title: "Email Copy", url: "" },
-          { title: "Press Releases", url: "" },
-          { title: "Business Names & Slogans", url: "" },
-          { title: "Sales Copy", url: "" },
-          { title: "Articles & Blog Posts", url: "" },
-          { title: "Social Media Copy", url: "" },
-          { title: "Proofreading & Editing", url: "" },
-          { title: "Scriptwriting", url: "" },
-          { title: "Creative Writing", url: "" },
-        ],
-      },
-    ],
-  },
 
   //Other section here
   {
     title: "Video & Animation",
     url: "/",
+    subtitle:
+      "Bring Your vision to life with the assistance of one of out artists.",
+    buttonText: "All Video & Animation Services",
     items: [
       {
         title: "Animation",
         url: "/",
         items: [
-          { title: "Whiteboard & Animation Explainers", url: "/web-mobile" },
+          { title: "Animation Explainers", url: "/" },
           { title: "Animated GIFs", url: "/social-media" },
           { title: "Logo Animation", url: "/banner-ads" },
           { title: "3D Product Animation", url: "/social-media" },
           { title: "Character Animation", url: "/banner-ads" },
+        ],
+      },
+      {
+        title: "Editing and Post Production",
+        url: "/",
+        items: [
+          { title: "Video Editing", url: "" },
+          { title: "Subtitles & Captions", url: "" },
+          { title: "Visual Effects", url: "" },
+          { title: "Intros & Outros", url: "" },
         ],
       },
       {
@@ -154,6 +173,9 @@ export const footerData = [
   //Other section here
   {
     title: "Programming & Tech",
+    subtitle:
+      "Bring Your vision to life with the assistance of one of out artists.",
+    buttonText: "All Programming & Tech Services",
     url: "/",
     items: [
       {
@@ -167,11 +189,7 @@ export const footerData = [
           { title: "E-Commerce Development", url: "/banner-ads" },
         ],
       },
-      {
-        title: "Testing & Support",
-        url: "/",
-        items: [{ title: "QA User Testing", url: "" }],
-      },
+     
       {
         title: "Software Development",
         url: "/",
@@ -179,6 +197,7 @@ export const footerData = [
           { title: "Mobile Apps", url: "" },
           { title: "Desktop Applications", url: "" },
           { title: "Chatbots", url: "" },
+          { title: "QA User Testing", url: "" },
         ],
       },
       {
