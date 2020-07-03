@@ -1,6 +1,6 @@
 import React from "react"
 
-import { footerData } from "../../footer/Footer.data"
+import { footerData } from "../../Footer/Footer.data"
 import { GenericDropdownContainer } from "./GenericDropdownContainer"
 
 export const GraphicsAndDesignDropdown = () => {
