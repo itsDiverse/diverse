@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const DropdownEl = styled.div`
   display: flex;
+  flex-direction: column;
 `
 
 export const DropdownSection = styled.div`
@@ -26,10 +27,19 @@ export const Logo = styled.img`
 export const DropdownTitle = styled.h1`
   font-style: normal;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 27px;
   color: #195bb6;
+  
 `
+
+export const DropdownSubtitle = styled.p`
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #707070;
+`;
 
 export const DropdownButton = styled.div`
   padding: 0.75rem;
@@ -37,41 +47,60 @@ export const DropdownButton = styled.div`
   margin: 1.5rem 0;
   font-style: normal;
   font-weight: bold;
-  font-size: 11.5px;
+  font-size: 13.5px;
   line-height: 16px;
   text-align: center;
-  color: #195bb6;
+  color: #195BB6;
   background: #ffffff;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
 `
 
-export const ListPrimary = styled.ul`
+export const ListPrimary = styled.div`
   background: #f5f5f5;
-  padding: 1rem;
-  margin-right: 3rem;
+  padding: 30px;
   list-style-type: none;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
-
   color: #707070;
 `
 
 export const ListSection = styled.ul`
-  padding: 2rem;
-  padding-left: 0;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+  display: table;   
   list-style-type: none;
+  padding: 10px;
+  
   li {
-    display: flex;
     white-space: nowrap;
-    color: #707070;
+    color: #707070c2;
     cursor: pointer;
-    font-size: 12px;
-
+    font-size: 14px;
+    padding: 3px 0px;
+    font-weight: 100;
     &:hover {
       text-decoration: underline;
     }
   }
+
+  h3 {
+    color:#545353;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: bolder;
+    font-size: 15px;
+    line-height: 18px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 `
+export const  ListItemsRow = styled.div`
+  column-count: ${({columns}) => columns ? columns : 2};
+  padding: 30px 50px;
+`;
