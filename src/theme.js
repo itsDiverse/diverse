@@ -131,7 +131,7 @@ export const theme = {
   },
   //----------------------------------Module8
   module8: {
-    heading: false,
+    heading: true,
     reverseOrderFirstSection: false,
     reverseOrderSecondSection: false,
     //-----LeftContentBox
