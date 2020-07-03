@@ -23,8 +23,7 @@ export const StyledContentWrapper = styled.div`
       .compliance-section {
         position: relative;
         z-index: 1;
-        padding-bottom: 15px;
-        padding-top: 140px;
+        padding: 50px 0px;
       }
       .uppercase-text {
         font-weight: 600;

@@ -22,46 +22,63 @@ export default props => (
         </div>
         <div className="container-lg onetime-lifetime-first-section">
           <div className="onetime-lifetime-first-section-left">
-            <div className="onetime-lifetime-left-section">
-              <div className="onetime-lifetime-left-content">
-                <span>
-                  {props.data.leftBox.text.before}{" "}
-                  <span className="medium color-medium">
-                    {props.data.leftBox.text.color.text}
-                  </span>{" "}
-                  {props.data.leftBox.text.color.after}{" "}
-                  <span className="medium">
-                    <b>{props.data.leftBox.text.bold}</b>
-                  </span>{" "}
-                  {props.data.leftBox.text.after}
-                </span>
+            {props.theme.contentImage && (
+              <div className="onetime-lifetime-left-section">
+                <div className="onetime-lifetime-left-content">
+                  <img
+                    src={props.images.imageBoxLeft}
+                    width="100%"
+                    alt={props.images.imageBoxLeftAlt}
+                  ></img>
+                </div>
               </div>
-              <div className="onetime-lifetime-left-footer">
-                <svg width="166" height="70" xmlns="http://www.w3.org/2000/svg">
-                  <g fill="#FFF" fill-rule="nonzero">
-                    <image
-                      href={props.images.logoBox}
-                      height="70"
-                      width="166"
-                    />
-                  </g>
-                </svg>
+            )}
+            {props.theme.contentBox && (
+              <div className="onetime-lifetime-left-section">
+                <div className="onetime-lifetime-left-content">
+                  <span>
+                    {props.data.leftBox.text.before}{" "}
+                    <span className="medium color-medium">
+                      {props.data.leftBox.text.color.text}
+                    </span>{" "}
+                    {props.data.leftBox.text.color.after}{" "}
+                    <span className="medium">
+                      <b>{props.data.leftBox.text.bold}</b>
+                    </span>{" "}
+                    {props.data.leftBox.text.after}
+                  </span>
+                </div>
+                <div className="onetime-lifetime-left-footer">
+                  <svg
+                    width="166"
+                    height="70"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g fill="#FFF" fill-rule="nonzero">
+                      <image
+                        href={props.images.logoBox}
+                        height="70"
+                        width="166"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div className="onetime-lifetime-left-quotes">
+                  <svg
+                    width="19"
+                    height="14"
+                    viewBox="0 0 19 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.72 0v2.272c-1.203 0-2.324.382-3.36 1.146-1.038.764-1.556 1.676-1.556 2.736 0 .631.256.947.768.947.115 0 .346-.044.691-.133a4.4 4.4 0 0 1 .865-.113c.704 0 1.366.28 1.987.842.621.562.932 1.335.932 2.32 0 .96-.32 1.783-.96 2.471-.64.688-1.518 1.032-2.632 1.032-1.331 0-2.407-.495-3.226-1.486C.41 11.043 0 9.664 0 7.896 0 5.46.752 3.55 2.257 2.168 3.76.786 5.582.063 7.72 0zm10.544 0v2.272c-1.14 0-2.244.376-3.313 1.127-1.07.751-1.604 1.67-1.604 2.755 0 .631.256.947.768.947.116 0 .346-.044.692-.133a4.4 4.4 0 0 1 .864-.113c.742 0 1.415.29 2.016.87.602.581.903 1.345.903 2.292 0 .96-.32 1.783-.96 2.471-.64.688-1.517 1.032-2.631 1.032-1.332 0-2.407-.495-3.227-1.486-.819-.991-1.229-2.37-1.229-4.138 0-2.436.752-4.346 2.257-5.728C14.304.786 16.125.063 18.264 0z"
+                      fill={props.theme.colors.secondary}
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
               </div>
-              <div className="onetime-lifetime-left-quotes">
-                <svg
-                  width="19"
-                  height="14"
-                  viewBox="0 0 19 14"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.72 0v2.272c-1.203 0-2.324.382-3.36 1.146-1.038.764-1.556 1.676-1.556 2.736 0 .631.256.947.768.947.115 0 .346-.044.691-.133a4.4 4.4 0 0 1 .865-.113c.704 0 1.366.28 1.987.842.621.562.932 1.335.932 2.32 0 .96-.32 1.783-.96 2.471-.64.688-1.518 1.032-2.632 1.032-1.331 0-2.407-.495-3.226-1.486C.41 11.043 0 9.664 0 7.896 0 5.46.752 3.55 2.257 2.168 3.76.786 5.582.063 7.72 0zm10.544 0v2.272c-1.14 0-2.244.376-3.313 1.127-1.07.751-1.604 1.67-1.604 2.755 0 .631.256.947.768.947.116 0 .346-.044.692-.133a4.4 4.4 0 0 1 .864-.113c.742 0 1.415.29 2.016.87.602.581.903 1.345.903 2.292 0 .96-.32 1.783-.96 2.471-.64.688-1.517 1.032-2.631 1.032-1.332 0-2.407-.495-3.227-1.486-.819-.991-1.229-2.37-1.229-4.138 0-2.436.752-4.346 2.257-5.728C14.304.786 16.125.063 18.264 0z"
-                    fill={props.theme.colors.secondary}
-                    fill-rule="evenodd"
-                  ></path>
-                </svg>
-              </div>
-            </div>
+            )}
           </div>
           <div className="onetime-lifetime-first-section-right">
             <h4 className="color-slate UppercaseTitle">

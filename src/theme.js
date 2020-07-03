@@ -131,9 +131,13 @@ export const theme = {
   },
   //----------------------------------Module8
   module8: {
+    heading: false,
     reverseOrderFirstSection: false,
     reverseOrderSecondSection: false,
-    heading: false,
+    //-----LeftContentBox
+    contentBox: false,
+    contentImage: true,
+
     colors: {
       titles: "#32325d",
       texts: "#525f7f",

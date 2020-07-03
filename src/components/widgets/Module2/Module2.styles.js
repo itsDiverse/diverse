@@ -49,7 +49,7 @@ export const StyledContentWrapper = styled.div`
       .container-xl {
         max-width: 1160px;
         margin: 0 auto;
-        padding: 0px 20px;
+        padding: 50px 0px;
         width: 100%;
       }
       section.feedback {
@@ -431,7 +431,7 @@ export const StyledContentWrapper = styled.div`
           position: absolute;
           width: 100%;
           height: 100%;
-          top: 0;
+          top: 1px;
           left: 100%;
           -webkit-transform: skewX(-12deg);
           transform: skewX(-12deg);

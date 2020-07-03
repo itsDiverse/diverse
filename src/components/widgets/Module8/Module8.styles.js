@@ -98,13 +98,19 @@ export const StyledContentWrapper = styled.div`
       .onetime-lifetime-left-content {
         font-size: 1.625em;
         line-height: 1.5;
-        padding: 2.4em 1.9em;
+        padding: ${props => (props.theme.contentImage ? "0" : "2.4em 1.9em")};
         color: #424770;
         background-color: #fff;
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
         font-weight: 300;
       }
+      .onetime-lifetime-left-content img {
+        max-height: 500px;
+        margin-bottom: -14px;
+        border-radius: 8px;
+      }
+
       .onetime-lifetime-left-content span {
         font-size: 25px;
       }
@@ -190,7 +196,7 @@ export const StyledContentWrapper = styled.div`
       .img-container img {
         height: 100%;
         width: 100%;
-        border-radius: 14px;
+        border-radius: 8px;
       }
       .color-slate {
         color: ${props.theme.colors.titles};
@@ -274,7 +280,7 @@ export const StyledContentWrapper = styled.div`
       }
       @media only screen and (max-width: 990px) {
         .onetime-lifetime-left-content {
-          padding: 1.4em 1.9em;
+          padding: ${props => (props.theme.contentImage ? "0" : "1.4em 1.9em")};
         }
         .onetime-lifetime-left-content span {
           font-size: 20px;
@@ -287,7 +293,7 @@ export const StyledContentWrapper = styled.div`
         }
         .onetime-lifetime-second-section > div:last-child {
           grid-row: 3;
-          margin: 30px;
+          margin: 0px;
         }
         .onetime-lifetime-second-section > div:first-child {
           grid-row: 2;
@@ -310,11 +316,11 @@ export const StyledContentWrapper = styled.div`
           gap: 30px 0;
           grid-template-rows: repeat(2, auto);
         }
-        .right-section {
+        .second-right-section {
           margin: 0;
         }
         .img-container {
-          height: 320px;
+          max-height: 500px;
           width: 100%;
         }
       }

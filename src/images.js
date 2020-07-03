@@ -60,6 +60,8 @@ import flagIconsImg from "./images/Module7/flagIcons.svg"
 import titleImg from "./images/Module8/img1.svg"
 import logoBox from "./images/Module8/docusign.svg"
 import rightImage from "./images/Module8/imgRight.png"
+import imageBox from "./images/Module8/imgRight.png"
+import imageBoxLeft from "./images/Module8/imageBox.jpg"
 //++++++++++++++++++++++++++++++++++++
 
 //import images Module 9 ++++++++++++
@@ -72,7 +74,6 @@ import image3 from "./images/Module9/image3.png"
 import icon1 from "./images/Module10/icon1.svg"
 import icon2 from "./images/Module10/icon2.svg"
 import icon3 from "./images/Module10/icon3.png"
-import imageBox from "./images/Module10/image-box.jpg"
 //++++++++++++++++++++++++++++++++++++
 
 //import images Module 11 ++++++++++
@@ -272,10 +273,14 @@ export const images = {
   },
   //----------------------------------Module 8
   module8: {
+    //------------BoxContent
     titleImg,
     titleImgAlt: "logo",
     logoBox,
     logoBoxAlt: "",
+    //------------ImageBox
+    imageBoxLeft,
+    imageBoxLeftAlt: "",
     rightImage,
     rightImageAlt: "",
   },
