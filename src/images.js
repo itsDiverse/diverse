@@ -1,4 +1,12 @@
 //import images Module 1 ++++++++++++
+import diverseLogo from "./images/QuadBox/diverseLogo.svg"
+import imageQuadBox1 from "./images/QuadBox/box1.svg"
+import imageQuadBox2 from "./images/QuadBox/box2.svg"
+import imageQuadBox3 from "./images/QuadBox/box3.svg"
+import imageQuadBox4 from "./images/QuadBox/box4.svg"
+//++++++++++++++++++++++++++++++++++++
+
+//import images Module 1 ++++++++++++
 import m1Logo1 from "./images/Module1/amazon.svg"
 import m1Logo2 from "./images/Module1/booking_com.svg"
 import m1Logo3 from "./images/Module1/docusign.svg"
@@ -170,6 +178,18 @@ export const images = {
   subheading: "",
   bodytext: "",
   background: "",
+  //-------------------------------------QuadBox
+  quadBox: {
+    diverseLogo,
+    imageQuadBox1,
+    imageQuadBox1Alt: "",
+    imageQuadBox2,
+    imageQuadBox2Alt: "",
+    imageQuadBox3,
+    imageQuadBox3Alt: "",
+    imageQuadBox4,
+    imageQuadBox4Alt: "",
+  },
   //-------------------------------------Module1
   module1: {
     m1Logo1,

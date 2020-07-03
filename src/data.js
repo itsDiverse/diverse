@@ -7,7 +7,32 @@ export const data = {
   bodytext: "",
   background: "",
 
-  //-------------------------------------Module1a
+  //-------------------------------------QuadBox
+  quadBox: {
+    title: "Lorem Ipsum",
+    subtitle: "Excepteur laboris est commodo velit vol",
+    box1: {
+      title: "Box1",
+      text: `We develop multi-channel sales processes to help businesses
+      attract, close, and retain customers.`,
+    },
+    box2: {
+      title: "Box2",
+      text: `We develop multi-channel sales processes to help businesses
+      attract, close, and retain customers.`,
+    },
+    box3: {
+      title: "Box3",
+      text: `We develop multi-channel sales processes to help businesses
+      attract, close, and retain customers.`,
+    },
+    box4: {
+      title: "Box4",
+      text: `We develop multi-channel sales processes to help businesses
+      attract, close, and retain customers.`,
+    },
+  },
+  //-------------------------------------Module1
   module1: {
     title: "",
   },

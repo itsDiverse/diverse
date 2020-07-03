@@ -1,93 +1,94 @@
 import React from "react"
-import style from "./QuadBox.module.css"
+import { StyledContentWrapper } from "./QuadBox.styles"
 
 export default props => (
-  <>
-    <div className={style.wrapper}>
-      <div className={style.contentContainer}>
-        <div className={style.headerBox}>
-          <img
-            src={props.headingImage}
-            alt="Diverse Company Logo"
-            width="60px"
-          />
-          <h2 className={style.heading}>{props.heading}</h2>
-          <h3 className={style.heading}>{props.blurb}</h3>
-        </div>
+  <StyledContentWrapper data={props.data} theme={props.theme}>
+    <div className="wrapper">
+      <div className="contentContainer">
+        {props.theme.heading && (
+          <div className="headerBox">
+            {props.theme.headingLogo && (
+              <img
+                src={props.images.diverseLogo}
+                alt="Diverse Company Logo"
+                width="200px"
+              />
+            )}
+            <h2 className="heading">{props.data.title}</h2>
+            <h3 className="heading">{props.data.subtitle}</h3>
+          </div>
+        )}
 
-        <div
-          className={style.quadBoxContainer}
-          style={{ gridTemplateRows: props.boxHeight }}
-        >
-          <div className={style.quadBox}>
-            <div className={style.quadBoxLeft}>
-              <span
-                className={style.quadBoxLeftSkew}
-                style={{ backgroundColor: props.box1Color }}
-              ></span>
-              <span className={style.imageContainer}>
-                <img src={props.image1} alt="Diverse Company Logo" />
+        <div className="quadBoxContainer">
+          <div className="quadBox">
+            <div className="quadBoxLeft">
+              <span className="quadBoxLeftSkew"></span>
+              <span className="imageContainer">
+                <img
+                  src={props.images.imageQuadBox1}
+                  alt="Diverse Company Logo"
+                />
               </span>
             </div>
 
-            <div className={style.quadBoxText}>
-              <h1>{props.box1title}</h1>
-              <p>{props.box1blurb}</p>
+            <div className="quadBoxText">
+              <h1>{props.data.box1.title}</h1>
+              <p>{props.data.box1.text}</p>
             </div>
           </div>
 
-          <div className={style.quadBox}>
-            <div className={style.quadBoxLeft}>
-              <span
-                className={style.quadBoxLeftSkew}
-                style={{ backgroundColor: props.box2Color }}
-              ></span>
-              <span className={style.imageContainer}>
-                <img src={props.image2} alt="Diverse Company Logo" />
+          <div className="quadBox">
+            <div className="quadBoxLeft">
+              <span className="quadBoxLeftSkew"></span>
+              <span className="imageContainer">
+                <img
+                  src={props.images.imageQuadBox2}
+                  alt="Diverse Company Logo"
+                />
               </span>
             </div>
 
-            <div className={style.quadBoxText}>
-              <h1>{props.box2title}</h1>
-              <p>{props.box2blurb}</p>
+            <div className="quadBoxText">
+              <h1>{props.data.box2.title}</h1>
+              <p>{props.data.box2.text}</p>
             </div>
           </div>
 
-          <div className={style.quadBox}>
-            <div className={style.quadBoxLeft}>
-              <span
-                className={style.quadBoxLeftSkew}
-                style={{ backgroundColor: props.box3Color }}
-              ></span>
-              <span className={style.imageContainer}>
-                <img src={props.image3} alt="Diverse Company Logo" />
+          <div className="quadBox">
+            <div className="quadBoxLeft">
+              <span className="quadBoxLeftSkew"></span>
+              <span className="imageContainer">
+                <img
+                  src={props.images.imageQuadBox3}
+                  alt="Diverse Company Logo"
+                />
               </span>
             </div>
 
-            <div className={style.quadBoxText}>
-              <h1>{props.box3title}</h1>
-              <p>{props.box3blurb}</p>
+            <div className="quadBoxText">
+              <h1>{props.data.box3.title}</h1>
+              <p>{props.data.box3.text}</p>
             </div>
           </div>
 
-          <div className={style.quadBox}>
-            <div className={style.quadBoxLeft}>
-              <span
-                className={style.quadBoxLeftSkew}
-                style={{ backgroundColor: props.box4Color }}
-              ></span>
-              <span className={style.imageContainer}>
-                <img src={props.image4} alt="Diverse Company Logo" />
+          <div className="quadBox">
+            <div className="quadBoxLeft">
+              <span className="quadBoxLeftSkew"></span>
+              <span className="imageContainer">
+                <img
+                  src={props.images.imageQuadBox4}
+                  alt="Diverse Company Logo"
+                />
               </span>
             </div>
 
-            <div className={style.quadBoxText}>
-              <h1>{props.box4title}</h1>
-              <p>{props.box4blurb}</p>
+            <div className="quadBoxText">
+              <h1>{props.data.box4.title}</h1>
+              <p>{props.data.box4.text}</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </>
+  </StyledContentWrapper>
 )

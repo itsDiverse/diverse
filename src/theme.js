@@ -17,6 +17,21 @@ export const theme = {
       secondaryHoverOpacity: "",
     },
   },
+  //-------------------------------------QuadBox
+  quadBox: {
+    heading: true,
+    headingLogo: true,
+    colors: {
+      title: "",
+      subtitle: "",
+      boxTitle: "rgb(94, 94, 94)",
+      boxText: " rgb(134, 134, 134)",
+      background: "#fff",
+      backgroundBox: "#ffffff",
+      backgroundLeftSkew: "#30212114",
+    },
+    shadow: true,
+  },
   //-------------------------------------Module 2
   module2: {
     colors: {

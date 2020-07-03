@@ -2,6 +2,7 @@ import React from "react"
 
 import { Layout } from "../components"
 import {
+  QuadBox,
   Module2,
   Module7,
   Module7a,
@@ -22,6 +23,11 @@ import { videos } from "../videos"
 
 export default props => (
   <Layout>
+    <QuadBox
+      images={images.quadBox}
+      data={data.quadBox}
+      theme={theme.quadBox}
+    />
     <Module2
       theme={theme.module2}
       data={data.module2}

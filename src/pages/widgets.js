@@ -34,6 +34,12 @@ import { videos } from "../videos"
 
 export default () => (
   <>
+    <h1>QuadBox</h1>
+    <QuadBox
+      images={images.quadBox}
+      data={data.quadBox}
+      theme={theme.quadBox}
+    />
     <h1>#1</h1>
     <Module1
       theme={theme.module1}
