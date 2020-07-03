@@ -77,8 +77,6 @@ class AnimatedNavbar extends Component {
       this.state.activeIndices.length - 1
     ]
 
-    currentIndex = 1
-
     const prevIndex =
       this.state.activeIndices.length > 1 &&
       this.state.activeIndices[this.state.activeIndices.length - 2]
