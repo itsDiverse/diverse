@@ -14,11 +14,24 @@ const NavbarItemTitle = styled.span`
   /* position above the dropdown, otherwise the dropdown will cover up the bottom sliver of the buttons */
   position: relative;
   z-index: 2;
+  font-family: NovaReg;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14.5px;
+  line-height: 18px;
+  /* identical to box height */
+
+text-align: center;
+
+color: #969696;
   &:hover,
   &:focus {
-    opacity: 0.7;
-    outline: none;
+    color: #616161;
   }
+  &:active{
+    color: #616161;
+  }
+
 `
 
 const DropdownSlot = styled.div`

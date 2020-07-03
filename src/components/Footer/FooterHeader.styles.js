@@ -31,8 +31,8 @@ export const StyledRow = styled.div`
 export const StyledDropdDownContent = styled.div`
   display: flex;
   flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+
   animation: ${fadeinout} 1s linear forwards;
   a {
     cursor: pointer;
@@ -42,7 +42,11 @@ export const StyledDropdDownContent = styled.div`
   }
 `
 
-export const StyledSection = styled.div``
+export const StyledSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`
 
 export const StyledSectionTitle = styled(props => <Link {...props} />)`
   padding: 5px 0px;
@@ -50,35 +54,41 @@ export const StyledSectionTitle = styled(props => <Link {...props} />)`
   font-size: 17px;
   line-height: 21px;
   color: #195bb6;
-  padding: 5px 0px;
+  padding: 20px 0px 11px 0px;
 `
 
-export const StyledSectionColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+export const StyledSectionRow = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
 `
 
 export const StyledSubsection = styled.div`
-  padding: 8px 0px;
+  padding-top: 5px;
 `
 
 export const StyledSubsectionTitle = styled(props => <Link {...props} />)`
+  font-family: NovaBold;
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
   line-height: 16px;
   color: #707070;
-  padding: 5px 0px;
 `
 
-export const StyledSubsectionItems = styled.div``
+export const StyledSubsectionItems = styled.div`
+  padding-top: 3px;
+  column-count: ${({ elements }) =>
+    elements > 5 ? Math.ceil(elements / 5) : 1};
+`
 
 export const StyledItemTitle = styled(props => <Link {...props} />)`
   display: flex;
   flex: 1;
+  font-family: NovaReg;
+  font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 11px;
+  line-height: 18px;
   color: #707070;
-  padding: 5px 0px;
 `

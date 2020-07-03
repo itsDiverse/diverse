@@ -8,6 +8,21 @@
   src: url("../fonts/ProximaNova-Light-webfont.woff2") format("woff");
 }
 
+@font-face {
+  font-family: "NovaBlack";
+  src: url("../fonts/ProximaNova-Black-webfont.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "NovaBold";
+  src: url("../fonts/ProximaNova-Bold-webfont.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "NovaSemi";
+  src: url("../fonts/ProximaNova-Semibold-webfont.woff2") format("woff");
+}
+
 body {
   font-family: "NovaReg"
 }

@@ -8,7 +8,7 @@ import {
   StyledSectionTitle,
   StyledSubsection,
   StyledSubsectionItems,
-  StyledSectionColumn,
+  StyledSectionRow,
   StyledItemTitle,
   StyledSubsectionTitle,
 } from "./FooterHeader.styles"
@@ -43,20 +43,20 @@ export const FooterHeader = () => {
           {footerData.map(section => (
             <StyledSection>
               <StyledSectionTitle>{section.title}</StyledSectionTitle>
-              <StyledSectionColumn>
+              <StyledSectionRow elements={section.items.length}>
                 {section.items.map(subsection => (
                   <StyledSubsection>
                     <StyledSubsectionTitle>
                       {subsection.title}
                     </StyledSubsectionTitle>
-                    <StyledSubsectionItems>
+                    <StyledSubsectionItems elements={subsection.items.length}>
                       {subsection.items.map(item => (
                         <StyledItemTitle>{item.title}</StyledItemTitle>
                       ))}
                     </StyledSubsectionItems>
                   </StyledSubsection>
                 ))}
-              </StyledSectionColumn>
+              </StyledSectionRow>
             </StyledSection>
           ))}
         </StyledDropdDownContent>

@@ -6,13 +6,14 @@ import { IconDesktopMarketing } from "../../Icons"
 import {
   DropdownEl,
   DropdownSection,
-  Heading,
+  ListItem,
+  ListItemTitle,
   ListSection,
   ListPrimary,
   ListItemsRow,
   DropdownButton,
   DropdownTitle,
-  DropdownSubtitle
+  DropdownSubtitle,
 } from "./Components.js"
 
 export const GenericDropdownContainer = ({
@@ -20,7 +21,7 @@ export const GenericDropdownContainer = ({
   subtitle,
   buttonText,
   items,
-  columns
+  columns,
 }) => {
   return (
     <DropdownEl>
@@ -29,19 +30,17 @@ export const GenericDropdownContainer = ({
           <IconDesktopMarketing />
           <DropdownTitle>{title}</DropdownTitle>
           <DropdownSubtitle>{subtitle}</DropdownSubtitle>
-          <DropdownButton>{buttonText}</DropdownButton>
+          <DropdownButton href="/">{buttonText}</DropdownButton>
         </ListPrimary>
         <ListItemsRow columns={columns}>
-        {items.map(item => (
-          <ListSection>
-            <li>
-              <Heading>{item.title}</Heading>
-            </li>
-            {item.items.map(subitem => (
-              <li>{subitem.title}</li>
-            ))}
-          </ListSection>
-        ))}
+          {items.map(item => (
+            <ListSection>
+              <ListItemTitle>{item.title}</ListItemTitle>
+              {item.items.map(subitem => (
+                <ListItem>{subitem.title}</ListItem>
+              ))}
+            </ListSection>
+          ))}
         </ListItemsRow>
       </DropdownSection>
     </DropdownEl>
