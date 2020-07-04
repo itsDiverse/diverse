@@ -73,6 +73,17 @@ export const StyledSectionSubtitle = styled(props => <Link {...props} />)`
   a {
     text-decoration: none;
   }
+
+  > label {
+    background: #195bb6;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 9px;
+    border: none;
+    display: inline;
+  }
 `
 
 export const StyledSectionSubtitleSmall = styled.p`

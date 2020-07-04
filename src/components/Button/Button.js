@@ -9,7 +9,9 @@ export const Button = styled.button`
   align-items: center;
   font-size: 13.5px;
   border: none;
+  display: ${({ inline }) => (inline ? "inline" : "block")};
 `
+
 export const SquaredButton = styled.button`
   background: ${({ primary }) => (primary ? "#195BB6;" : "#EBEDF0;")};
   color: ${({ primary }) => (primary ? "#FFF;" : "#4B4B4B;")};

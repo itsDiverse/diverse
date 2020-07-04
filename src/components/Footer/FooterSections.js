@@ -31,7 +31,9 @@ export const FooterSections = () => (
           <StyledSectionTitle>COMPANY</StyledSectionTitle>
           <StyledSectionSubtitle to="/">About Us</StyledSectionSubtitle>
           <StyledSectionSubtitle to="/">Free Proposal</StyledSectionSubtitle>
-          <StyledSectionSubtitle to="/">Careers</StyledSectionSubtitle>
+          <StyledSectionSubtitle to="/">
+            Careers <label>HIRING</label>
+          </StyledSectionSubtitle>
           <StyledSectionSubtitle to="/">Privacy Policy</StyledSectionSubtitle>
           <StyledSectionSubtitle to="/">Terms</StyledSectionSubtitle>
         </StyledSectionColumns>
