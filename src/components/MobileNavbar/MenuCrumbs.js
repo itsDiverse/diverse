@@ -12,7 +12,7 @@ import { VideoCTA } from "../VideoCTA"
 const MenuCrumbsHome = () => (
   <StyledMenuCrumbsHome>
     <StyledMenuCrumbsHeaderRow>
-      <VideoCTA icon />
+      <VideoCTA icon noAction />
     </StyledMenuCrumbsHeaderRow>
     <StyledMenuCrumbsHeaderRow>
       <IconPhone color={"#195bb6"} size={20} />

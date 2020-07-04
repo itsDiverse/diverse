@@ -4,7 +4,6 @@ export const StyledMenuCrumbs = styled.div`
   display: flex;
   background: rgb(229, 236, 241);
   overflow-y: scroll;
-  flex: 1 1 90px;
 `
 
 export const StyledMenuCrumbsItem = styled.div`
@@ -29,7 +28,7 @@ export const StyledMenuCrumbsHome = styled.div`
   flex-direction: row;
   justify-content: space-between;
   text-transform: uppercase;
-  padding: 20px 30px;
+  padding: 2px 30px;
 `
 export const StyledMenuHeaderText = styled.div`
   text-transform: uppercase;

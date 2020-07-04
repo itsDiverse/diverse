@@ -20,7 +20,6 @@ export const StyledMenuFooter = styled.div`
 
 export const StyledMenuHeader = styled.div`
   display: flex;
-  flex: 1 1 90px;
   flex-direction: row;
   width: max-content;
   padding: 8px 32px;

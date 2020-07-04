@@ -24,5 +24,7 @@
 }
 
 body {
-  font-family: "NovaReg"
+  font-family: "NovaReg";
+  margin: 0;
+  padding: 0;
 }

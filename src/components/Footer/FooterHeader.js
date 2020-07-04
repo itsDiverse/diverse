@@ -16,10 +16,12 @@ import {
 import { VideoCTA } from "../VideoCTA"
 import { footerData } from "./Footer.data"
 
+import { IconMore } from "../Icons"
+
 const OurServicesDropdown = ({ expanded, onSetExpanded }) => (
   <div onClick={onSetExpanded}>
-    {expanded ? "-" : "+"} OUR SERVICES - We combine services to make sales
-    processes.
+    {expanded ? "-" : <IconMore />} OUR SERVICES - We combine services to make
+    sales processes.
   </div>
 )
 
