@@ -283,8 +283,11 @@ export const theme = {
   },
   //-------------------------------------Module16v
   module16v: {
-    video: true,
-    image: false,
+    centerLayout: false,
+    video: false,
+    image: true,
+    shadow: true,
+    shadowColor: "rgba(50, 50, 93, 0.9)",
     colors: {
       topTitle: "#6772e5",
       span: {
@@ -343,7 +346,7 @@ export const theme = {
       subtitle: "#424770",
       textDesc: "#525f7f",
       shadow: true,
-      shadowColor: "rgba(50, 50, 93, 0.5)",
+      shadowColor: "rgba(50, 50, 93, 0.9)",
     },
     shiftContentFirst: false,
     shiftContentSecond: false,

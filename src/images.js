@@ -145,6 +145,7 @@ import icon from "./images/Module16/icon.svg"
 //import images Module 16+++++++++++
 import icon16v from "./images/Module16v/icon.svg"
 import videoPoster from "./images/Module16v/video-poster.jpg"
+import image16v from "./images/Module16v/image.jpg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 17+++++++++++
@@ -420,6 +421,8 @@ export const images = {
     icon16vAlt: "",
     videoPoster,
     videoPosterAlt: "",
+    image16v,
+    image16vAlt: "",
   },
   //----------------------------------Module 17
   module17: {

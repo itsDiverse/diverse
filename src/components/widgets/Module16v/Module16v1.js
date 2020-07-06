@@ -93,8 +93,8 @@ export default props => {
                     <div className="fraud-Video">
                       {props.theme.image && (
                         <img
-                          src="http://picsum.photos/200/300"
-                          alt="picsum"
+                          src={props.images.image16v}
+                          alt={props.images.image16vAlt}
                           width="100%"
                           height="500px"
                         ></img>

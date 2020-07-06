@@ -143,6 +143,10 @@ export const StyledContentWrapper = styled.div`
         width: 100%;
         border-radius: 8px;
       }
+      .fraud-Video {
+        height: ${props => (props.theme.image ? "500px" : "")};
+        width: ${props => (props.theme.image ? "100%" : "")};
+      }
       @media (min-width: 670px) {
         .powerful-tools-section {
           display: grid;
@@ -246,6 +250,10 @@ export const StyledContentWrapper = styled.div`
         transition: transform 400ms cubic-bezier(0.645, 0, 0.355, 1),
           width 400ms cubic-bezier(0.645, 0, 0.355, 1);
         pointer-events: auto;
+        box-shadow: ${props =>
+          props.theme.shadow
+            ? `29.4px 62.5px 125px -25px ${props.theme.shadowColor}`
+            : "none"};
       }
       .fraudteams_video video {
         width: var(--video-width);

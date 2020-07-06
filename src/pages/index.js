@@ -26,23 +26,17 @@ import { videos } from "../videos"
 
 export default props => (
   <Layout>
-    <Module4
-      theme={theme.module4}
-      data={data.module4}
-      images={images.module4}
-      videos={videos.module4}
+    <Module16
+      theme={theme.module16}
+      data={data.module16}
+      images={images.module16}
+      videos={videos.module16}
     />
     <Module16v
       theme={theme.module16v}
       data={data.module16v}
       images={images.module16v}
       videos={videos.module4}
-    />
-    <Module16
-      theme={theme.module16}
-      data={data.module16}
-      images={images.module16}
-      videos={videos.module16}
     />
     <QuadBox
       images={images.quadBox}
