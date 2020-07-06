@@ -281,6 +281,35 @@ export const theme = {
       },
     },
   },
+  //-------------------------------------Module16v
+  module16v: {
+    video: true,
+    image: false,
+    colors: {
+      topTitle: "#6772e5",
+      span: {
+        background: "#6772e5",
+        text: "#fff",
+      },
+      title: {
+        first: "#32325d",
+        second: "#6772e5",
+      },
+      subtitle: "#424770",
+    },
+
+    buttons: {
+      display: true,
+      left: {
+        background: "#6772e5",
+        color: "#fff",
+      },
+      right: {
+        background: "#fff",
+        color: "#6772e5",
+      },
+    },
+  },
   //-------------------------------------Module 17
   module17: {
     colors: {

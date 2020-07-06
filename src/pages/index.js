@@ -4,6 +4,7 @@ import { Layout } from "../components"
 import {
   QuadBox,
   Module2,
+  Module4,
   Module7,
   Module7a,
   Module7b,
@@ -14,6 +15,8 @@ import {
   Module11a,
   Module13,
   Module15,
+  Module16,
+  Module16v,
 } from "../components/widgets"
 
 import { theme } from "../theme"
@@ -23,6 +26,24 @@ import { videos } from "../videos"
 
 export default props => (
   <Layout>
+    <Module4
+      theme={theme.module4}
+      data={data.module4}
+      images={images.module4}
+      videos={videos.module4}
+    />
+    <Module16v
+      theme={theme.module16v}
+      data={data.module16v}
+      images={images.module16v}
+      videos={videos.module4}
+    />
+    <Module16
+      theme={theme.module16}
+      data={data.module16}
+      images={images.module16}
+      videos={videos.module16}
+    />
     <QuadBox
       images={images.quadBox}
       data={data.quadBox}

@@ -42,6 +42,10 @@ import m3Icon3 from "./images/Module3/incorporation.svg"
 //++++++++++++++++++++++++++++++++++++
 
 //import images Module 5 +++++++++++++
+import posterVideo from "./images/Module4/video-poster.jpg"
+//++++++++++++++++++++++++++++++++++++
+
+//import images Module 5 +++++++++++++
 import m5Image1 from "./images/Module5/img1.svg"
 import m5Image2 from "./images/Module5/img2.svg"
 //++++++++++++++++++++++++++++++++++++
@@ -137,6 +141,10 @@ import m14Icon5 from "./images/Module14/twitterIcon.svg"
 
 //import images Module 16+++++++++++
 import icon from "./images/Module16/icon.svg"
+//++++++++++++++++++++++++++++++++++
+//import images Module 16+++++++++++
+import icon16v from "./images/Module16v/icon.svg"
+import videoPoster from "./images/Module16v/video-poster.jpg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 17+++++++++++
@@ -263,7 +271,9 @@ export const images = {
     m3Icon3alt: "alt text 3",
   },
   //----------------------------------Module 4
-
+  module4: {
+    posterVideo,
+  },
   //----------------------------------Module 5
   module5: {
     m5Image1,
@@ -403,6 +413,13 @@ export const images = {
   module16: {
     icon,
     iconAlt: "",
+  },
+  //----------------------------------Module 16
+  module16v: {
+    icon16v,
+    icon16vAlt: "",
+    videoPoster,
+    videoPosterAlt: "",
   },
   //----------------------------------Module 17
   module17: {
