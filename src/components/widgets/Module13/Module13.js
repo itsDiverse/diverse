@@ -83,6 +83,249 @@ export default props => (
                 </div>
               </a>
             </div>
+            {props.data.box4.title && (
+              <div className="listing-card-box">
+                <a href={props.data.box4.url}>
+                  <img
+                    src={props.images.imageBox4}
+                    alt={props.images.imageBox4Alt}
+                    className="listing-card-logo"
+                  ></img>
+                  <div className="listing-card-content">
+                    <h3>{props.data.box4.title}</h3>
+                    <p>{props.data.box4.text}</p>
+                    <div className="listing-card-badges">
+                      {props.data.box4.btnLeft && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box4.btnLeft}
+                        </div>
+                      )}
+                      {props.data.box4.btnRight && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box4.btnRight}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              </div>
+            )}
+            {props.data.box5.title && (
+              <div className="listing-card-box">
+                <a href={props.data.box5.url}>
+                  <img
+                    src={props.images.imageBox5}
+                    alt={props.images.imageBox5Alt}
+                    className="listing-card-logo"
+                  ></img>
+                  <div className="listing-card-content">
+                    <h3>{props.data.box5.title}</h3>
+                    <p>{props.data.box5.text}</p>
+                    <div className="listing-card-badges">
+                      {props.data.box5.btnLeft && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box5.btnLeft}
+                        </div>
+                      )}
+                      {props.data.box5.btnRight && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box5.btnRight}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              </div>
+            )}
+            {props.data.box6.title && (
+              <div className="listing-card-box">
+                <a href={props.data.box6.url}>
+                  <img
+                    src={props.images.imageBox6}
+                    alt={props.images.imageBox6Alt}
+                    className="listing-card-logo"
+                  ></img>
+                  <div className="listing-card-content">
+                    <h3>{props.data.box6.title}</h3>
+                    <p>{props.data.box6.text}</p>
+                    <div className="listing-card-badges">
+                      {props.data.box6.btnLeft && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box6.btnLeft}
+                        </div>
+                      )}
+                      {props.data.box6.btnRight && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box6.btnRight}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              </div>
+            )}
+            {props.data.box7.title && (
+              <div className="listing-card-box">
+                <a href={props.data.box7.url}>
+                  <img
+                    src={props.images.imageBox7}
+                    alt={props.images.imageBox7Alt}
+                    className="listing-card-logo"
+                  ></img>
+                  <div className="listing-card-content">
+                    <h3>{props.data.box7.title}</h3>
+                    <p>{props.data.box7.text}</p>
+                    <div className="listing-card-badges">
+                      {props.data.box7.btnLeft && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box7.btnLeft}
+                        </div>
+                      )}
+                      {props.data.box7.btnRight && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box7.btnRight}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              </div>
+            )}
+            {props.data.box8.title && (
+              <div className="listing-card-box">
+                <a href={props.data.box8.url}>
+                  <img
+                    src={props.images.imageBox8}
+                    alt={props.images.imageBox8Alt}
+                    className="listing-card-logo"
+                  ></img>
+                  <div className="listing-card-content">
+                    <h3>{props.data.box8.title}</h3>
+                    <p>{props.data.box8.text}</p>
+                    <div className="listing-card-badges">
+                      {props.data.box8.btnLeft && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box8.btnLeft}
+                        </div>
+                      )}
+                      {props.data.box8.btnRight && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box8.btnRight}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              </div>
+            )}
+            {props.data.box9.title && (
+              <div className="listing-card-box">
+                <a href={props.data.box9.url}>
+                  <img
+                    src={props.images.imageBox9}
+                    alt={props.images.imageBox9Alt}
+                    className="listing-card-logo"
+                  ></img>
+                  <div className="listing-card-content">
+                    <h3>{props.data.box9.title}</h3>
+                    <p>{props.data.box9.text}</p>
+                    <div className="listing-card-badges">
+                      {props.data.box9.btnLeft && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box9.btnLeft}
+                        </div>
+                      )}
+                      {props.data.box9.btnRight && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box9.btnRight}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              </div>
+            )}
+            {props.data.box10.title && (
+              <div className="listing-card-box">
+                <a href={props.data.box10.url}>
+                  <img
+                    src={props.images.imageBox10}
+                    alt={props.images.imageBox10Alt}
+                    className="listing-card-logo"
+                  ></img>
+                  <div className="listing-card-content">
+                    <h3>{props.data.box10.title}</h3>
+                    <p>{props.data.box10.text}</p>
+                    <div className="listing-card-badges">
+                      {props.data.box10.btnLeft && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box10.btnLeft}
+                        </div>
+                      )}
+                      {props.data.box10.btnRight && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box10.btnRight}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              </div>
+            )}
+            {props.data.box11.title && (
+              <div className="listing-card-box">
+                <a href={props.data.box11.url}>
+                  <img
+                    src={props.images.imageBox11}
+                    alt={props.images.imageBox11Alt}
+                    className="listing-card-logo"
+                  ></img>
+                  <div className="listing-card-content">
+                    <h3>{props.data.box11.title}</h3>
+                    <p>{props.data.box11.text}</p>
+                    <div className="listing-card-badges">
+                      {props.data.box11.btnLeft && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box11.btnLeft}
+                        </div>
+                      )}
+                      {props.data.box11.btnRight && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box11.btnRight}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              </div>
+            )}
+            {props.data.box12.title && (
+              <div className="listing-card-box">
+                <a href={props.data.box12.url}>
+                  <img
+                    src={props.images.imageBox12}
+                    alt={props.images.imageBox12Alt}
+                    className="listing-card-logo"
+                  ></img>
+                  <div className="listing-card-content">
+                    <h3>{props.data.box12.title}</h3>
+                    <p>{props.data.box12.text}</p>
+                    <div className="listing-card-badges">
+                      {props.data.box12.btnLeft && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box12.btnLeft}
+                        </div>
+                      )}
+                      {props.data.box12.btnRight && (
+                        <div className="background-green text-white listing-card-badge">
+                          {props.data.box12.btnRight}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>

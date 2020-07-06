@@ -111,6 +111,15 @@ import contentLogos2x from "./images/Module12/content-logos@2x.png"
 import imageBox1 from "./images/Module13/icon.svg"
 import imageBox2 from "./images/Module13/product-icon.svg"
 import imageBox3 from "./images/Module13/product-nav-icon.svg"
+import imageBox4 from "./images/Module13/icon.svg"
+import imageBox5 from "./images/Module13/product-icon.svg"
+import imageBox6 from "./images/Module13/product-nav-icon.svg"
+import imageBox7 from "./images/Module13/icon.svg"
+import imageBox8 from "./images/Module13/product-icon.svg"
+import imageBox9 from "./images/Module13/product-nav-icon.svg"
+import imageBox10 from "./images/Module13/icon.svg"
+import imageBox11 from "./images/Module13/product-icon.svg"
+import imageBox12 from "./images/Module13/product-nav-icon.svg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 14 ++++++++++
@@ -357,6 +366,24 @@ export const images = {
     imageBox2Alt: "",
     imageBox3,
     imageBox3Alt: "",
+    imageBox4,
+    imageBox4Alt: "",
+    imageBox5,
+    imageBox5Alt: "",
+    imageBox6,
+    imageBox6Alt: "",
+    imageBox7,
+    imageBox7Alt: "",
+    imageBox8,
+    imageBox8Alt: "",
+    imageBox9,
+    imageBox9Alt: "",
+    imageBox10,
+    imageBox10Alt: "",
+    imageBox11,
+    imageBox11Alt: "",
+    imageBox12,
+    imageBox12Alt: "",
   },
   //----------------------------------Module 14
   module14: {
