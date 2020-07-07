@@ -3,9 +3,6 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
-      * {
-        font-family: NovaReg;
-      }
       body {
         background: #fff;
         min-height: 100%;
@@ -511,6 +508,26 @@ export const StyledContentWrapper = styled.div`
       @media (max-width: 767px) {
         .video-container {
           height: 100%;
+          padding: 0;
+        }
+        .content-wrapper {
+          background-image: none;
+          margin-top: -80px;
+        }
+        section.feedback .quotes li {
+          padding: 0px 60px 0px 9px;
+        }
+        .feedbacklogo {
+          padding-left: 0;
+        }
+        section.feedback .quotes {
+          text-align: left;
+        }
+        section.feedback .feedbacklogo .video.teespring {
+          margin-left: 35px;
+        }
+        .video-container video {
+          width: 100% !important;
         }
       }
     `}

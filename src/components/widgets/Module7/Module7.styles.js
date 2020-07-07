@@ -643,7 +643,7 @@ export const StyledContentWrapper = styled.div`
       }
       @media (max-width: 880px) {
         .compliance-content {
-          padding-bottom: 50px;
+          padding-bottom: 20px;
         }
         .compliance-content-wrapper {
           margin-bottom: 0px;
@@ -659,12 +659,11 @@ export const StyledContentWrapper = styled.div`
           text-align: center;
         }
         .compliance-section {
-          padding-top: 80px;
+          padding-top: 0px 0px;
         }
       }
       @media (max-width: 767px) {
         .international-support .international-support-left-content h2 {
-          text-align: center;
         }
         .international-support img {
           margin-left: auto;
@@ -672,6 +671,18 @@ export const StyledContentWrapper = styled.div`
         }
         .connected-accounts-nav ul {
           margin-top: 24px;
+        }
+        .content-wrapper {
+          background-image: none;
+        }
+        .compliance-right-content h3 {
+          text-align: center;
+        }
+        .compliance-right-content ul {
+          padding-left: 0;
+        }
+        .compliance-section {
+          padding: 0px 0px;
         }
       }
     `}

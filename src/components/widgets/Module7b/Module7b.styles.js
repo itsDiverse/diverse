@@ -2,6 +2,10 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
+      * {
+        margin: 0;
+        padding: 0;
+      }
       ol,
       ul {
         list-style: none;
@@ -206,7 +210,9 @@ export const StyledContentWrapper = styled.div`
         left: 17px;
         right: 17px;
         border-radius: 8px;
+        height: 400px;
         background-image: url(${props.images.section2ImageRight});
+        background-size: 100% 100%;
         transform: skew(
           ${props => (props.theme.skew ? `${props.theme.skewImage}` : "0")}
         );
@@ -619,7 +625,7 @@ export const StyledContentWrapper = styled.div`
         }
         .platform-management-section .laptop {
           left: 0;
-          margin: 0;
+          margin-top: 40px;
         }
         .platform-management-section .laptop .shadow {
           will-change: transform;
@@ -643,7 +649,7 @@ export const StyledContentWrapper = styled.div`
           grid: auto/1fr auto;
           grid-gap: 0 70px;
           padding: 0 20px;
-          padding-top: 120px;
+          padding-top: 80px;
           padding-bottom: 80px;
         }
         .compliance-content {
@@ -674,6 +680,11 @@ export const StyledContentWrapper = styled.div`
         .compliance-section {
           padding-top: 80px;
         }
+        .platform-management-section .laptop {
+          left: 0;
+          margin-top: 0px;
+          top: 0;
+        }
       }
       @media (max-width: 767px) {
         .international-support .international-support-left-content h2 {
@@ -686,6 +697,14 @@ export const StyledContentWrapper = styled.div`
 
         .connected-accounts-nav ul {
           margin-top: 24px;
+        }
+        .content-wrapper {
+          background-image: none;
+        }
+        .platform-management-section .laptop {
+          left: 0;
+          margin-top: 0px;
+          top: 0;
         }
       }
     `}

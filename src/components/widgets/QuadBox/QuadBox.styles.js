@@ -128,6 +128,9 @@ export const StyledContentWrapper = styled.div`
           padding: 20px;
           grid-template-rows: auto;
         }
+        .wrapper {
+          background-image: none;
+        }
       }
 
       @media only screen and (max-width: 768px) {
@@ -135,6 +138,12 @@ export const StyledContentWrapper = styled.div`
           grid-template-columns: auto;
           padding: 20px;
           grid-template-rows: auto;
+          background-image: "none";
+        }
+        .wrapper {
+          background-image: none;
+          padding-top: 0px;
+          padding-bottom: 0px;
         }
 
         .quadBox {

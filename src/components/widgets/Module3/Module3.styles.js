@@ -4,9 +4,6 @@ import "../../../styles/global.css"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
-      * {
-        font-family: NovaReg;
-      }
       body {
         background: #fff;
         min-height: 100%;
@@ -97,6 +94,9 @@ export const StyledContentWrapper = styled.div`
         .corporate-card-section {
           grid-column-gap: 32px;
           grid-row-gap: 32px;
+        }
+        .content-wrapper {
+          background-image: none;
         }
       }
     `}

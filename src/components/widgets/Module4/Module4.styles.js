@@ -616,6 +616,9 @@ export const StyledContentWrapper = styled.div`
         .fraud-teams-media {
           left: 0px;
         }
+        .content-wrapper {
+          background-image: none;
+        }
       }
     `}
 `
