@@ -19,7 +19,7 @@ export const theme = {
   },
   //-------------------------------------QuadBox
   quadBox: {
-    heading: true,
+    heading: false,
     headingLogo: true,
     //---------------------LayoutBackground
     background: "#fff",

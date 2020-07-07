@@ -6,7 +6,6 @@ export const StyledContentWrapper = styled.div`
       * {
         margin: 0px;
         padding: 0px;
-        font-family: NovaReg;
       }
       body {
         background: #fff;
@@ -282,8 +281,11 @@ export const StyledContentWrapper = styled.div`
         }
       }
       @media (max-width: 767px) {
+        .content-wrapper {
+          background-image: none;
+        }
         .footer-with-card-section-wrapper {
-          padding-top: 130px;
+          padding-top: 0px;
         }
         .footer-cards {
           display: block;

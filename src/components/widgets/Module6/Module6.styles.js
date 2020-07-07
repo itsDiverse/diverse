@@ -5,7 +5,6 @@ export const StyledContentWrapper = styled.div`
       * {
         margin: 0px;
         padding: 0px;
-        font-family: Helvetica;
       }
       body {
         background: #fff;
@@ -55,7 +54,7 @@ export const StyledContentWrapper = styled.div`
       }
       .process-section {
         position: relative;
-        padding: 120px 0px;
+        padding: 80px 0px;
         background-color: ${props.theme.background};
         background-image: ${props =>
           props.theme.backgroundImage
@@ -169,9 +168,7 @@ export const StyledContentWrapper = styled.div`
       .timeline .timeline-step + .timeline-step {
         margin-top: 40px;
       }
-      .process-section .container-lg {
-        padding: 0 20px;
-      }
+
       @media (min-width: 670px) {
         .section-desc {
           font-size: 24px;
@@ -219,6 +216,12 @@ export const StyledContentWrapper = styled.div`
       @media (max-width: 670px) {
         .container-lg {
           width: auto;
+        }
+        .process-section {
+          background-image: none;
+        }
+        .process-section .container-lg {
+          padding: 0 20px;
         }
       }
     `}

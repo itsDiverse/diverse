@@ -68,14 +68,6 @@ export default () => (
       images={images.module3}
     />
     <hr></hr>
-    <h1>#4</h1>
-    <Module4
-      theme={theme.module4}
-      data={data.module4}
-      images={images.module4}
-      videos={videos.module4}
-    />
-    <hr></hr>
     <h1>#5</h1>
     <Module5
       theme={theme.module5}
@@ -149,20 +141,6 @@ export default () => (
       images={images.module13}
     />
     <hr></hr>
-    <h1>#14</h1>
-    <Module14
-      theme={theme.module14}
-      data={data.module14}
-      images={images.module14}
-    />
-    <hr></hr>
-    <h1>#15</h1>
-    <Module15
-      theme={theme.module15}
-      data={data.module15}
-      images={images.module15}
-    />
-    <hr></hr>
     <h1>#16</h1>
     <Module16
       theme={theme.module16}
@@ -184,29 +162,11 @@ export default () => (
       images={images.module18}
     />
     <hr></hr>
-    <h1>Module19</h1>
-    <Module19 />
-    <hr></hr>
-    <h1>#20</h1>
-    <Module20
-      theme={theme.module20}
-      data={data.module20}
-      images={images.module20}
-    />
-    <hr></hr>
     <h1>#21</h1>
     <Module21
       theme={theme.module21}
       data={data.module21}
       images={images.module21}
     ></Module21>
-    <hr></hr>
-    <h1>Module22</h1>
-    <Module22
-      theme={theme.module22}
-      data={data.module22}
-      images={images.module22}
-    />
-    <hr></hr>
   </>
 )

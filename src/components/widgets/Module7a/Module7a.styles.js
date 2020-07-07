@@ -30,7 +30,7 @@ export const StyledContentWrapper = styled.div`
       .container-lg {
         max-width: 1040px;
         margin: 0 auto;
-        padding: 0px;
+        padding: 1px;
         width: 100%;
       }
       .compliance-section {
@@ -362,7 +362,7 @@ export const StyledContentWrapper = styled.div`
       }
 
       .international-support {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         padding: 0 20px;
       }
       .international-support:before {
@@ -577,7 +577,7 @@ export const StyledContentWrapper = styled.div`
         .international-support {
           --gutter: 30px;
           display: grid;
-          grid-template-rows: 120px auto;
+          grid-template-rows: 45px auto;
           grid-template-columns: auto 1fr;
           grid-gap: 0 var(--gutter);
           -webkit-box-align: center;
@@ -622,7 +622,7 @@ export const StyledContentWrapper = styled.div`
         }
         .international-support {
           --gutter: 41px;
-          grid-template-rows: 200px auto;
+          grid-template-rows: 40px auto;
           margin-top: 0;
         }
         .international-support .common-BodyText {
@@ -680,9 +680,14 @@ export const StyledContentWrapper = styled.div`
           margin-left: auto;
           margin-right: auto;
           margin-bottom: 50px;
+          width: 100%;
+          background-repeat: no-repeat;
         }
         .connected-accounts-nav ul {
           margin-top: 24px;
+        }
+        .content-wrapper {
+          background-image: none;
         }
       }
     `}
