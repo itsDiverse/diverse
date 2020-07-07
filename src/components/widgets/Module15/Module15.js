@@ -151,7 +151,7 @@ export default props => (
             </div>
           </div>
         </div>
-        {props.theme.background && (
+        {props.theme.backgroundLayout && (
           <div className="common-idc-grid">
             <div className="backgroundContainer">
               <div className="grid">

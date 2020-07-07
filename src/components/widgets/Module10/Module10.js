@@ -108,7 +108,7 @@ export default props => (
             </div>
           </div>
         </div>
-        {props.theme.background && (
+        {props.theme.backgroundLayout && (
           <div class="common-Grid anchorBottom">
             <div class="backgroundContainer">
               <div class="grid">

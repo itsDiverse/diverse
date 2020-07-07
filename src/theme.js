@@ -21,12 +21,20 @@ export const theme = {
   quadBox: {
     heading: true,
     headingLogo: true,
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       title: "",
       subtitle: "",
       boxTitle: "rgb(94, 94, 94)",
       boxText: " rgb(134, 134, 134)",
-      background: "#fff",
+      //----------------------BoxContent
       backgroundBox: "#ffffff",
       backgroundLeftSkew: "#30212114",
     },
@@ -34,6 +42,14 @@ export const theme = {
   },
   //-------------------------------------Module 2
   module2: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       title: "#32325d",
       uppercaseText: "#32325d",
@@ -42,6 +58,14 @@ export const theme = {
   },
   //----------------------------------Module 3
   module3: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       title: "#32325d",
       cardText: "#32325d",
@@ -49,6 +73,14 @@ export const theme = {
   },
   //----------------------------------Module 4
   module4: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       title: "#32325d",
       text: "#32325d",
@@ -65,8 +97,15 @@ export const theme = {
     },
   },
   //--------------------------------Module 5
-
   module5: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       boxTitle: "#217ab7",
       boxText: "#525f7f",
@@ -95,6 +134,14 @@ export const theme = {
   },
   //--------------------------------Module 6
   module6: {
+    //---------------------LayoutBackground
+    background: "#f6f9fc",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       title: "#32325d",
       subtitle: "#424770",
@@ -106,7 +153,14 @@ export const theme = {
   //----------------------------------Module 7
   module7: {
     reverseOrderFirstSection: false,
-
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       title: "#32325d",
       text: "#525f7f",
@@ -119,6 +173,14 @@ export const theme = {
 
   module7a: {
     reverseOrderThirdSection: true,
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       title: "#32325d",
       text: "#525f7f",
@@ -133,6 +195,14 @@ export const theme = {
 
   module7b: {
     reverseOrderSecondSection: false,
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       title: "#32325d",
       text: "#525f7f",
@@ -149,6 +219,14 @@ export const theme = {
     heading: true,
     reverseOrderFirstSection: false,
     reverseOrderSecondSection: false,
+    //---------------------Layout
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     //-----LeftContentBox
     contentBox: false,
     contentImage: true,
@@ -165,6 +243,14 @@ export const theme = {
   },
   //----------------------------------Module9
   module9: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       titles: "#32325d",
       subtitle: "#424770",
@@ -173,8 +259,16 @@ export const theme = {
   },
   //----------------------------------Module 10
   module10: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     heading: false,
-    background: false,
+    backgroundLayout: false,
     reverseOrder: false,
 
     colors: {
@@ -195,6 +289,14 @@ export const theme = {
   },
   //-------------------------------------Module11
   module11: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     overlayBox: true,
     overlay: false,
     colors: {
@@ -209,6 +311,14 @@ export const theme = {
   },
   //-------------------------------------Module11a
   module11a: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     overlayBox: true,
     overlay: false,
     backgroundMarketplaceGallery: "#eab504",
@@ -225,6 +335,14 @@ export const theme = {
   //-------------------------------------Module12
   //-------------------------------------Module 13
   module13: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       titles: "#32325d",
       texts: "#525f7f",
@@ -238,6 +356,14 @@ export const theme = {
   },
   //-------------------------------------Module 14
   module14: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       titles: "#32325d",
       subtitle: "#424770",
@@ -247,7 +373,15 @@ export const theme = {
   },
   //-------------------------------------Module 15
   module15: {
-    background: false,
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
+    backgroundLayout: false,
     colors: {
       link: "#6772e5",
       text: "#525f7f",
@@ -257,6 +391,7 @@ export const theme = {
   },
   //-------------------------------------Module 16
   module16: {
+    //---------------------------
     colors: {
       topTitle: "#6772e5",
       span: {
@@ -283,6 +418,14 @@ export const theme = {
   },
   //-------------------------------------Module16v
   module16v: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     centerLayout: false,
     video: false,
     image: true,
@@ -315,6 +458,14 @@ export const theme = {
   },
   //-------------------------------------Module 17
   module17: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       title: "#32325d",
       boxTitle: "#32325d",
@@ -324,6 +475,14 @@ export const theme = {
   },
   //-------------------------------------Module 18
   module18: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       titles: "#32325d",
       li: "#525f7f",
@@ -331,6 +490,14 @@ export const theme = {
   },
   //-------------------------------------Module 19
   module19: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       primary: "",
       primaryOpacity: "",
@@ -341,6 +508,14 @@ export const theme = {
   //-------------------------------------Module 20
   module20: {
     heading: true,
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       titles: "#32325d",
       subtitle: "#424770",
@@ -353,8 +528,16 @@ export const theme = {
   },
   //-------------------------------------Module 21
   module21: {
+    //---------------------LayoutBackground
+    background: "#32325d",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+
+    //---------------------------
     colors: {
-      background: "#32325d",
       title: " #fff",
       subtitle: "#fff",
       link: "#9cdbff",
@@ -366,6 +549,14 @@ export const theme = {
   },
   //-------------------------------------Module 22
   module22: {
+    //---------------------LayoutBackground
+    background: "#fff",
+    backgroundImage: true,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     colors: {
       primary: "",
       primaryOpacity: "",
