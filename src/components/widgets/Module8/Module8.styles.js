@@ -14,6 +14,18 @@ export const StyledContentWrapper = styled.div`
       .one-time-to-lifetime-customer {
         background-color: #f6f9fc;
         padding: 140px 0;
+        background-image: ${props =>
+          props.theme.backgroundImage
+            ? `linear-gradient(
+          to bottom,
+          ${props.theme.backgroundGradient}
+        ),
+        url("http://picsum.photos/800/600")`
+            : "none"};
+        background-repeat: no-repeat;
+        background-position: ${props.theme.backgroundPosition};
+        background-size: ${props.theme.backgroundSize};
+        background-blend-mode: ${props.theme.blendMode};
       }
       .container-lg {
         max-width: 1040px;

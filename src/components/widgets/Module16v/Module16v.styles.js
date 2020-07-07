@@ -3,7 +3,8 @@ export const StyledContentWrapper = styled.div`
   ${props =>
     css`
       * {
-        font-family: NovaReg;
+        margin: 0;
+        padding: 0;
       }
       body {
         background: #fff;
@@ -43,6 +44,7 @@ export const StyledContentWrapper = styled.div`
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
         flex-grow: 1;
+        background-color: ${props.theme.background};
         background-image: ${props =>
           props.theme.backgroundImage
             ? `linear-gradient(
@@ -154,6 +156,10 @@ export const StyledContentWrapper = styled.div`
         width: 100%;
         border-radius: 8px;
       }
+      .fraud-Video {
+        height: ${props => (props.theme.image ? "500px" : "")};
+        width: ${props => (props.theme.image ? "100%" : "")};
+      }
       @media (min-width: 670px) {
         .powerful-tools-section {
           display: grid;
@@ -257,6 +263,10 @@ export const StyledContentWrapper = styled.div`
         transition: transform 400ms cubic-bezier(0.645, 0, 0.355, 1),
           width 400ms cubic-bezier(0.645, 0, 0.355, 1);
         pointer-events: auto;
+        box-shadow: ${props =>
+          props.theme.shadow
+            ? `29.4px 62.5px 125px -25px ${props.theme.shadowColor}`
+            : "none"};
       }
       .fraudteams_video video {
         width: var(--video-width);
@@ -615,6 +625,170 @@ export const StyledContentWrapper = styled.div`
         }
         .fraud-teams-media {
           left: 0px;
+        }
+      }
+      .get-funding-section {
+        padding: 150px 20px 160px;
+        margin: 0 auto 120px;
+        background-color: #f6f9fc;
+      }
+      .get-funding-content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .get-funding-content-wrapper .get-funding-content {
+        flex-basis: 100%;
+      }
+      .get-funding-title-section figure {
+        margin-right: 16px;
+      }
+      .get-funding-title-section figure span {
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        width: 48px;
+      }
+      .get-funding-title-section figure span svg {
+        width: 100%;
+        height: 100%;
+      }
+      .img-icon {
+        height: 48px;
+        width: 48px;
+      }
+      .get-funding-title-section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .get-funding-title-section h2 {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: ${props.theme.colors.topTitle};
+      }
+      .get-funding-title-section span.background-blue {
+        display: inline-block;
+        padding: 4px 8px 3px;
+        border-radius: 50px;
+        font-size: 11px;
+        line-height: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.03rem;
+        background-color: ${props.theme.colors.span.background};
+        color: ${props.theme.colors.span.text};
+      }
+      .common-text {
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 32px;
+        color: ${props.theme.colors.subtitle};
+      }
+      .get-funding-content-bottom {
+        margin-top: 16px;
+      }
+      .get-funding-content-bottom-btn a {
+        white-space: nowrap;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 14px;
+        -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+          0 1px 3px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+          0 1px 3px rgba(0, 0, 0, 0.08);
+        background: ${props.theme.buttons.right.background};
+        border-radius: 4px;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: ${props.theme.buttons.right.color};
+        text-decoration: none;
+        -webkit-transition: all 0.15s ease;
+        transition: all 0.15s ease;
+      }
+      .get-funding-content-bottom-btn a:first-child {
+        margin: 10px 20px 12px 0;
+      }
+      .get-funding-content-bottom-btn a:hover {
+        color: #7795f8;
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+        -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+          0 8px 16px -8px rgba(0, 0, 0, 0.3),
+          0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+        box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+          0 8px 16px -8px rgba(0, 0, 0, 0.3),
+          0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+        -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+          0 3px 6px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+          0 3px 6px rgba(0, 0, 0, 0.08);
+      }
+      .get-funding-content-bottom-btn a.start_now {
+        background-color: ${props.theme.buttons.left.background};
+        color: ${props.theme.buttons.left.color};
+      }
+      .get-funding-content-bottom-btn {
+        margin-top: 30px;
+      }
+      .get-funding-text-rotate h2 {
+        color: ${props.theme.colors.title.second};
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 40px;
+      }
+      .get-funding-text-rotate h2 span {
+        color: ${props.theme.colors.title.first};
+      }
+      .video-display {
+        xflex-basis: 46%;
+        transform: skew(0.1rad);
+      }
+      .video-display-content {
+        height: 100%;
+        width: 100%;
+        background-color: green;
+      }
+      @media (min-width: 375px) {
+        .get-funding-text-rotate h2 {
+          font-size: 35px;
+          line-height: 48px;
+        }
+      }
+      @media (min-width: 420px) {
+        .get-funding-title-section span.background-blue {
+          margin-left: 16px;
+        }
+      }
+      @media (min-width: 670px) {
+        .get-funding-content-wrapper .get-funding-content {
+          flex-basis: 80%;
+        }
+        .common-text {
+          font-size: 24px;
+          line-height: 36px;
+        }
+        .get-funding-text-rotate h2 {
+          font-size: 53px;
+          line-height: 68px;
+        }
+      }
+      @media (min-width: 880px) {
+        .get-funding-content-wrapper .get-funding-content {
+          flex-basis: 54%;
+        }
+      }
+      @media (min-width: 1040px) {
+        .get-funding-title-section figure {
+          margin-left: -20px;
         }
       }
     `}

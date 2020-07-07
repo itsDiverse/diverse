@@ -73,7 +73,7 @@ export default props => {
                         webkit-playsinline=""
                         loop=""
                         id="demovideo"
-                        poster="images/video-poster.jpg"
+                        poster=""
                         preload="metadata"
                       >
                         <source
@@ -90,7 +90,7 @@ export default props => {
                       <video
                         className="js-actual-video"
                         id="Video1"
-                        poster=""
+                        poster={props.images.posterVideo}
                         controls
                         className="opacity: 0"
                       >

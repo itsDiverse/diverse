@@ -42,6 +42,10 @@ import m3Icon3 from "./images/Module3/incorporation.svg"
 //++++++++++++++++++++++++++++++++++++
 
 //import images Module 5 +++++++++++++
+import posterVideo from "./images/Module4/video-poster.jpg"
+//++++++++++++++++++++++++++++++++++++
+
+//import images Module 5 +++++++++++++
 import m5Image1 from "./images/Module5/img1.svg"
 import m5Image2 from "./images/Module5/img2.svg"
 //++++++++++++++++++++++++++++++++++++
@@ -111,6 +115,15 @@ import contentLogos2x from "./images/Module12/content-logos@2x.png"
 import imageBox1 from "./images/Module13/icon.svg"
 import imageBox2 from "./images/Module13/product-icon.svg"
 import imageBox3 from "./images/Module13/product-nav-icon.svg"
+import imageBox4 from "./images/Module13/icon.svg"
+import imageBox5 from "./images/Module13/product-icon.svg"
+import imageBox6 from "./images/Module13/product-nav-icon.svg"
+import imageBox7 from "./images/Module13/icon.svg"
+import imageBox8 from "./images/Module13/product-icon.svg"
+import imageBox9 from "./images/Module13/product-nav-icon.svg"
+import imageBox10 from "./images/Module13/icon.svg"
+import imageBox11 from "./images/Module13/product-icon.svg"
+import imageBox12 from "./images/Module13/product-nav-icon.svg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 14 ++++++++++
@@ -128,6 +141,11 @@ import m14Icon5 from "./images/Module14/twitterIcon.svg"
 
 //import images Module 16+++++++++++
 import icon from "./images/Module16/icon.svg"
+//++++++++++++++++++++++++++++++++++
+//import images Module 16+++++++++++
+import icon16v from "./images/Module16v/icon.svg"
+import videoPoster from "./images/Module16v/video-poster.jpg"
+import image16v from "./images/Module16v/image.jpg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 17+++++++++++
@@ -254,7 +272,9 @@ export const images = {
     m3Icon3alt: "alt text 3",
   },
   //----------------------------------Module 4
-
+  module4: {
+    posterVideo,
+  },
   //----------------------------------Module 5
   module5: {
     m5Image1,
@@ -357,6 +377,24 @@ export const images = {
     imageBox2Alt: "",
     imageBox3,
     imageBox3Alt: "",
+    imageBox4,
+    imageBox4Alt: "",
+    imageBox5,
+    imageBox5Alt: "",
+    imageBox6,
+    imageBox6Alt: "",
+    imageBox7,
+    imageBox7Alt: "",
+    imageBox8,
+    imageBox8Alt: "",
+    imageBox9,
+    imageBox9Alt: "",
+    imageBox10,
+    imageBox10Alt: "",
+    imageBox11,
+    imageBox11Alt: "",
+    imageBox12,
+    imageBox12Alt: "",
   },
   //----------------------------------Module 14
   module14: {
@@ -376,6 +414,15 @@ export const images = {
   module16: {
     icon,
     iconAlt: "",
+  },
+  //----------------------------------Module 16
+  module16v: {
+    icon16v,
+    icon16vAlt: "",
+    videoPoster,
+    videoPosterAlt: "",
+    image16v,
+    image16vAlt: "",
   },
   //----------------------------------Module 17
   module17: {

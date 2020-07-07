@@ -4,9 +4,21 @@ export const StyledContentWrapper = styled.div`
   ${props =>
     css`
       .wrapper {
-        background-color: ${props.theme.colors.background};
+        background-color: ${props.theme.background};
         padding-top: 80px;
         padding-bottom: 80px;
+        background-image: ${props =>
+          props.theme.backgroundImage
+            ? `linear-gradient(
+          to bottom,
+          ${props.theme.backgroundGradient}
+        ),
+        url("http://picsum.photos/800/600")`
+            : "none"};
+        background-repeat: no-repeat;
+        background-position: ${props.theme.backgroundPosition};
+        background-size: ${props.theme.backgroundSize};
+        background-blend-mode: ${props.theme.blendMode};
       }
 
       .quadBoxContainer {

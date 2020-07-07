@@ -49,9 +49,21 @@ export const StyledContentWrapper = styled.div`
         width: 100%;
       }
       .payments-stack-section {
-        background-color: #fff;
         padding: 60px 0;
         position: relative;
+        background-color: ${props.theme.background};
+        background-image: ${props =>
+          props.theme.backgroundImage
+            ? `linear-gradient(
+          to bottom,
+          ${props.theme.backgroundGradient}
+        ),
+        url("http://picsum.photos/800/600")`
+            : "none"};
+        background-repeat: no-repeat;
+        background-position: ${props.theme.backgroundPosition};
+        background-size: ${props.theme.backgroundSize};
+        background-blend-mode: ${props.theme.blendMode};
       }
       .section-title {
         margin: 25px 0 18px;

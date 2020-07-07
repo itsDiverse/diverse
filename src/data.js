@@ -529,6 +529,69 @@ export const data = {
       btnLeft: "SCA-Ready",
       btnRight: "Popular",
     },
+    box4: {
+      url: "#",
+      title: "Hey!",
+      text: "Create and manage recurring invoices and subscriptions.",
+      btnLeft: "",
+      btnRight: "",
+    },
+    box5: {
+      url: "#",
+      title: "Lorem",
+      text: "Create and manage recurring invoices and subscriptions.",
+      btnLeft: "SCA-Ready",
+      btnRight: "",
+    },
+    box6: {
+      url: "#",
+      title: "Ipsum",
+      text: "Create and manage recurring invoices and subscriptions.",
+      btnLeft: "SCA-Ready",
+      btnRight: "Popular",
+    },
+    box7: {
+      url: "#",
+      title: "Create",
+      text: "Create and manage recurring invoices and subscriptions.",
+      btnLeft: "SCA-Ready",
+      btnRight: "",
+    },
+    box8: {
+      url: "#",
+      title: "Invoice",
+      text: "Create and manage recurring invoices and subscriptions.",
+      btnLeft: "SCA-Ready",
+      btnRight: "Popular",
+    },
+    box9: {
+      url: "#",
+      title: "Sigma",
+      text: "Create and manage recurring invoices and subscriptions.",
+      btnLeft: "",
+      btnRight: "Popular",
+    },
+    box10: {
+      url: "#",
+      title: "Prets",
+      text: "Create and manage recurring invoices and subscriptions.",
+      btnLeft: "SCA-Ready",
+      btnRight: "Popular",
+    },
+    box11: {
+      url: "#",
+      title: "Integrating",
+      text: "Create and manage recurring invoices and subscriptions.",
+      btnLeft: "SCA-Ready",
+      btnRight: "Popular",
+    },
+    box12: {
+      url: "#",
+      title: "Qui",
+      text: "Create and manage recurring invoices and subscriptions.",
+      btnLeft: "SCA-Ready",
+      btnRight: "",
+    },
   },
   //----------------------------------Module 14
   module14: {
@@ -583,6 +646,29 @@ export const data = {
   },
   //-------------------------------------Module 16
   module16: {
+    topTitle: "Capital",
+    topSpan: "US only",
+
+    title: {
+      first: "Get funding",
+      second: "to",
+      third: "manage cash flows",
+    },
+    subtitle: `Stripe Capital provides access to fast, flexible financing
+    for you to grow your business.`,
+    button: {
+      left: {
+        url: "",
+        text: "Start today",
+      },
+      right: {
+        url: "",
+        text: "Learn moree",
+      },
+    },
+  },
+  //-------------------------------------Module 16v
+  module16v: {
     topTitle: "Capital",
     topSpan: "US only",
 

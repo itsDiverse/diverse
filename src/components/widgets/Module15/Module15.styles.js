@@ -14,6 +14,19 @@ export const StyledContentWrapper = styled.div`
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
         flex-grow: 1;
+        background-color: ${props.theme.background};
+        background-image: ${props =>
+          props.theme.backgroundImage
+            ? `linear-gradient(
+          to bottom,
+          ${props.theme.backgroundGradient}
+        ),
+        url("http://picsum.photos/800/600")`
+            : "none"};
+        background-repeat: no-repeat;
+        background-position: ${props.theme.backgroundPosition};
+        background-size: ${props.theme.backgroundSize};
+        background-blend-mode: ${props.theme.blendMode};
       }
       .container-xl {
         max-width: 1160px;

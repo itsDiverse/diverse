@@ -6,7 +6,6 @@ export const StyledContentWrapper = styled.div`
       * {
         margin: 0px;
         padding: 0px;
-        font-family: Helvetica;
       }
       body {
         background: #fff;
@@ -41,6 +40,19 @@ export const StyledContentWrapper = styled.div`
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
         flex-grow: 1;
+        background-color: ${props.theme.background};
+        background-image: ${props =>
+          props.theme.backgroundImage
+            ? `linear-gradient(
+          to bottom,
+          ${props.theme.backgroundGradient}
+        ),
+        url("http://picsum.photos/800/600")`
+            : "none"};
+        background-repeat: no-repeat;
+        background-position: ${props.theme.backgroundPosition};
+        background-size: ${props.theme.backgroundSize};
+        background-blend-mode: ${props.theme.blendMode};
       }
       .container-lg {
         max-width: 1040px;
@@ -168,6 +180,15 @@ export const StyledContentWrapper = styled.div`
       }
       .get-funding-text-rotate h2 span {
         color: ${props.theme.colors.title.first};
+      }
+      .video-display {
+        xflex-basis: 46%;
+        transform: skew(0.1rad);
+      }
+      .video-display-content {
+        height: 100%;
+        width: 100%;
+        background-color: green;
       }
       @media (min-width: 375px) {
         .get-funding-text-rotate h2 {
