@@ -26,12 +26,6 @@ import { videos } from "../videos"
 
 export default props => (
   <Layout>
-    <Module16
-      theme={theme.module16}
-      data={data.module16}
-      images={images.module16}
-      videos={videos.module16}
-    />
     <Module16v
       theme={theme.module16v}
       data={data.module16v}
