@@ -42,46 +42,10 @@ export default props => (
       data={data.module7}
       images={images.module7}
     />
-    <Module8
-      theme={theme.module8}
-      data={data.module8}
-      images={images.module8}
-    />
-    <Module7b
-      theme={theme.module7b}
-      data={data.module7b}
-      images={images.module7b}
-    />
     <Module20
       theme={theme.module20}
       data={data.module20}
       images={images.module20}
-    />
-    <Module10
-      theme={theme.module10}
-      data={data.module10}
-      images={images.module10}
-    />
-    <Module11
-      theme={theme.module11}
-      data={data.module11}
-      images={images.module11}
-    />
-    s
-    <Module11a
-      theme={theme.module11a}
-      data={data.module11a}
-      images={images.module11a}
-    />
-    <Module13
-      theme={theme.module13}
-      data={data.module13}
-      images={images.module13}
-    />
-    <Module15
-      theme={theme.module15}
-      data={data.module15}
-      images={images.module15}
     />
     <Module7a
       theme={theme.module7a}

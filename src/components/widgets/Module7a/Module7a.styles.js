@@ -681,12 +681,15 @@ export const StyledContentWrapper = styled.div`
           margin-right: auto;
           margin-bottom: 50px;
           width: 100%;
+          height: 360px;
+          background-size: 100%;
           background-repeat: no-repeat;
         }
         .connected-accounts-nav ul {
           margin-top: 24px;
         }
         .content-wrapper {
+          overflow-x: hidden;
           background-image: none;
         }
       }

@@ -238,8 +238,8 @@ export const theme = {
       shadow: true,
       shadowColor: "rgba(50, 50, 93, 0.9)",
     },
-    skewFirstSection: true,
-    skewSecondSection: true,
+    skewFirstSection: false,
+    skewSecondSection: false,
   },
   //----------------------------------Module9
   module9: {

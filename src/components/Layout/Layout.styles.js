@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const StyledLayoutWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 `
 
 export const StyledLayoutMain = styled.div`
@@ -18,6 +19,7 @@ export const StyledLayoutMain = styled.div`
     width: 1400px;  
     padding: 20px; 
     margin: auto; 
+    
   }
 }
 `

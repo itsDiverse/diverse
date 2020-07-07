@@ -55,9 +55,9 @@ export const StyledContentWrapper = styled.div`
       }
 
       .quadBox {
-        box-shadow: ${props.theme.shadow
-            ? `0 6px 12px -2px rgba(50, 50, 93, 0.25)`
-            : "none"},
+        box-shadow: ${
+          props.theme.shadow ? `0 6px 12px -2px rgba(50, 50, 93, 0.25)` : "none"
+        },
           0 3px 7px -3px rgba(0, 0, 0, 0.3);
         border-radius: 8px;
         display: flex;
@@ -178,6 +178,8 @@ export const StyledContentWrapper = styled.div`
           width: 100%;
           align-self: center;
         }
+        .quadBoxText p {
+          padding: 5px;
       }
     `}
 `

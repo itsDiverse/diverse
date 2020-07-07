@@ -88,15 +88,12 @@ export default () => (
       data={data.module7}
       images={images.module7}
     />
+    <hr></hr>
+    <h1>#7a</h1>
     <Module7a
       theme={theme.module7a}
       data={data.module7a}
       images={images.module7a}
-    />
-    <Module7b
-      theme={theme.module7b}
-      data={data.module7b}
-      images={images.module7b}
     />
     <hr></hr>
     <h1>#8</h1>

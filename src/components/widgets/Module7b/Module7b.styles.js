@@ -5,6 +5,7 @@ export const StyledContentWrapper = styled.div`
       * {
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
       }
       ol,
       ul {

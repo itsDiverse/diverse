@@ -13,7 +13,7 @@ export const StyledContentWrapper = styled.div`
       }
       .one-time-to-lifetime-customer {
         background-color: #f6f9fc;
-        padding: 140px 0;
+        padding: 40px 0;
         background-image: ${props =>
           props.theme.backgroundImage
             ? `linear-gradient(
@@ -325,7 +325,7 @@ export const StyledContentWrapper = styled.div`
           -ms-flex-align: center;
           align-items: center;
           grid-gap: 30px 0;
-          gap: 30px 0;
+          gap: 0px 0;
           grid-template-rows: repeat(2, auto);
         }
         .second-right-section {
@@ -352,6 +352,16 @@ export const StyledContentWrapper = styled.div`
         }
         .onetime-lifetime-second-section {
           margin: 50px auto 0;
+        }
+        .UppercaseTitle {
+          padding-top: 10px;
+        }
+        .section-desc {
+          margin-bottom: 30px;
+        }
+        .one-time-to-lifetime-customer {
+          background-image: none;
+          padding: 50px 0px;
         }
       }
     `}
