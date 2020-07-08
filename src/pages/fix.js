@@ -69,6 +69,13 @@ export default () => (
       images={images.module15}
     />
     <hr></hr>
+    <h1>#16</h1>
+    <Module16
+      theme={theme.module16}
+      data={data.module16}
+      images={images.module16}
+    />
+    <hr></hr>
     <h1>Module19</h1>
     <Module19 />
     <hr></hr>

@@ -339,10 +339,10 @@ export const theme = {
     //---------------------LayoutBackground
     background: "#fff",
     backgroundImage: false,
-    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundGradient: `rgba(63,94,251,1) 0%, rgba(219,130,148,1)`,
     backgroundPosition: "center top",
     backgroundSize: "100% 100%",
-    blendMode: `screen, difference, lighten`,
+    blendMode: ``,
     //---------------------------
     colors: {
       titles: "#32325d",

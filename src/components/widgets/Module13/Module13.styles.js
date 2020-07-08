@@ -53,6 +53,7 @@ export const StyledContentWrapper = styled.div`
         background-position: ${props.theme.backgroundPosition};
         background-size: ${props.theme.backgroundSize};
         background-blend-mode: ${props.theme.blendMode};
+        padding-top: 50px;
       }
       .container-lg {
         max-width: 1040px;
@@ -180,6 +181,9 @@ export const StyledContentWrapper = styled.div`
       @media (max-width: 767px) {
         .listing-card-wrapper .listing-card-box {
           z-index: 5;
+        }
+        .content-wrapper {
+          background-image: none;
         }
       }
     `}
