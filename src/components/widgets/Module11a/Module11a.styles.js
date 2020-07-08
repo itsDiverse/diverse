@@ -6,8 +6,6 @@ export const StyledContentWrapper = styled.div`
       * {
         margin: 0px;
         padding: 0px;
-        font-family: Helvetica;
-        font-weight: lighter;
       }
 
       ol,
@@ -140,7 +138,7 @@ export const StyledContentWrapper = styled.div`
       .marketplaces-quote p {
         position: relative;
         font-style: italic;
-        font-size: 2.1em;
+        font-size: 25px;
         line-height: 1.6em;
         margin-bottom: 0;
       }
@@ -267,9 +265,20 @@ export const StyledContentWrapper = styled.div`
           justify-content: space-around;
         }
       }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .marketplaces-quote p {
+          font-size: 20px;
+        }
+      }
       @media (max-width: 767px) {
         .b2c-marketplaces {
           margin-top: 50px;
+        }
+        .content-wrapper {
+          background-image: none;
+        }
+        .marketplaces-quote p {
+          font-size: 100%;
         }
       }
     `}

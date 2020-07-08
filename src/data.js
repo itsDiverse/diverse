@@ -447,7 +447,7 @@ export const data = {
     //-------------------LeftSection
     linkBoxLogo: "http://www.google.com",
     textBox: `With over 700,000 drivers providing nearly one million rides
-    per day, Lyft uses Stripe to power payments at scale. Lyft
+    per day, Lyft uses Sndards as your prodndards as your product experience: with just a tap, Striuct experience: with just a tap, Stritripe to power payments at scale. Lyft
     also partnered with Stripe to build Express Pay, a
     first-of-its-kind feature that allows drivers to cash out
     whenever they want, instantly.`,
@@ -482,7 +482,7 @@ export const data = {
 
     //-------------------LeftSection
     linkBoxLogo: "http://www.google.com",
-    textBox: `Excepteur  velit. Ut nostrud labore consequat enim officia aute reprehenderit proident sint cupidatat esse laboris. Id ipsum esse et Lorem reprehenderit aliquip culpa minim veniam non cupidatat est velit cillum..`,
+    textBox: `Excepteur  velit. Ut nostrud labore consequat enim officia aute reprehteur  velit. Ut nostrud labore consequat enim officia aute reprehenderit proident sint cupidatat esse laboris. Id ipsum esse et Lorem reprehenderit aliquip culpa minim veniam non cupidatat est velit cillum..`,
     //-------------------Bottom Section
     textLeft: {
       before: `Nostisi eiusmod. Quis duis qui in commodo. Ipsum nostrud adipisicing laboris esse amet velit voluptate quis amet. Lorem excepteur ea ex est non proident est adipisicing ipsum ea voluptate incididunt incididunt.`,
