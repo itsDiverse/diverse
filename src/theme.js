@@ -216,7 +216,7 @@ export const theme = {
   },
   //----------------------------------Module8
   module8: {
-    heading: true,
+    heading: false,
     reverseOrderFirstSection: false,
     reverseOrderSecondSection: false,
     //---------------------Layout
@@ -260,6 +260,9 @@ export const theme = {
   },
   //----------------------------------Module 10
   module10: {
+    heading: false,
+    backgroundLayout: false,
+    reverseOrder: false,
     //---------------------LayoutBackground
     background: "#fff",
     backgroundImage: false,
@@ -268,9 +271,6 @@ export const theme = {
     backgroundSize: "100% 100%",
     blendMode: `screen, difference, lighten`,
     //---------------------------
-    heading: false,
-    backgroundLayout: false,
-    reverseOrder: false,
 
     colors: {
       titles: "#32325d",

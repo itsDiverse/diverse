@@ -37,20 +37,5 @@ export default props => (
       images={images.module2}
       videos={videos.module2}
     />
-    <Module7
-      theme={theme.module7}
-      data={data.module7}
-      images={images.module7}
-    />
-    <Module20
-      theme={theme.module20}
-      data={data.module20}
-      images={images.module20}
-    />
-    <Module7a
-      theme={theme.module7a}
-      data={data.module7a}
-      images={images.module7a}
-    />
   </Layout>
 )

@@ -388,9 +388,8 @@ export const data = {
   },
   //----------------------------------Module 10
   module10: {
-    title: "Lorem ipsum dolor sit amet",
-    subtitle: `As the world’s fastest-advancing developer platform, Stripe gives
-    businesses the tools and technology to build better.`,
+    title: "Lorem ipsum dolor",
+    subtitle: `As the world’s libraries contain everything`,
     //------------------Left Section
     title1: "Industry-leading documentation",
     text1: {

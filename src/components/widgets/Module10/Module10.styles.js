@@ -6,8 +6,6 @@ export const StyledContentWrapper = styled.div`
       * {
         margin: 0px;
         padding: 0px;
-        font-family: Helvetica;
-        font-weight: lighter;
       }
       body {
         background: #fff;
@@ -135,7 +133,7 @@ export const StyledContentWrapper = styled.div`
         height: 200px;
         background-color: ${props.theme.colors.topBackgroundBoxRight};
         background-image: url(${props.images.imageBox});
-        background-size: 120%;
+        background-size: 100% 100%;
         background-position: top;
         margin: -30px -30px 25px;
         border-top-left-radius: 4px;
@@ -355,7 +353,7 @@ export const StyledContentWrapper = styled.div`
       }
       @media (min-width: 670px) {
         .solutions-rooted-section {
-          padding: 80px 0 100px;
+          padding: 80px 0 80px;
         }
         .section-intro .section-title {
           margin: 25px 0 18px;
@@ -394,7 +392,7 @@ export const StyledContentWrapper = styled.div`
       }
       @media (min-width: 880px) {
         .solutions-rooted-section {
-          padding: 80px 0 120px;
+          padding: 80px 0 80px;
         }
         .solutions-rooted-content {
           margin: 50px 0 -100px;
@@ -412,7 +410,7 @@ export const StyledContentWrapper = styled.div`
       }
       @media (min-width: 1040px) {
         .solutions-rooted-section {
-          padding: 80px 0 160px;
+          padding: 80px 0 80px;
         }
         .common-Grid .backgroundContainer .grid {
           --gutter-column-width: var(--content-column-width);
@@ -433,6 +431,12 @@ export const StyledContentWrapper = styled.div`
         .section-title {
           font-size: 30px;
         }
+        .content-wrapper {
+          background-image: none;
+        }
+      }
+      .solutions-rooted-content {
+        margin: 60px 0 50px;
       }
     `}
 `
