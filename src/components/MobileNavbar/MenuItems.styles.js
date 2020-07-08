@@ -4,7 +4,7 @@ export const StyledMenuItems = styled.div`
   margin: 0px 35px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex: 1 1;
 `
 
 export const StyledMenuItem = styled.div`

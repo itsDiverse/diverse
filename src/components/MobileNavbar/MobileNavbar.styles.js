@@ -3,12 +3,12 @@ import styled from "styled-components"
 export const StyledMenu = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 1 1 100%;
+  flex: 1 1;
 `
 
 export const MobileNavBar = styled.div`
   display: flex;
-  flex: 1 0 0 80px;
+  flex: 1 1 60px;
   flex-direction: row;
   box-shadow: 0 1px 4px 1px #eee;
   padding: 10px 20px;

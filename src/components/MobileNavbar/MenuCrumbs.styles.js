@@ -24,7 +24,7 @@ export const StyledMenuCrumbsItem = styled.div`
 `
 export const StyledMenuCrumbsHome = styled.div`
   display: flex;
-  flex: 1;
+  flex: 1 0 50px;
   flex-direction: row;
   justify-content: space-between;
   text-transform: uppercase;

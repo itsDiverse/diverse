@@ -8,14 +8,11 @@ export const StyledMenu = styled.div`
   animation: ${fadeinout} 1s linear forwards;
   padding: 0px;
   margin: 0px;
-  justify-content: space-between;
-  flex: 1 1 100%;
+  flex: 1 1;
 `
 
 export const StyledMenuFooter = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 100px;
+  height: 70px;
 `
 
 export const StyledMenuHeader = styled.div`
