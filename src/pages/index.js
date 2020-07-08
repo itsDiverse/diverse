@@ -51,6 +51,6 @@ export default props => (
       theme={theme.module7a}
       data={data.module7a}
       images={images.module7a}
-    />{" "}
+    />
   </Layout>
 )
