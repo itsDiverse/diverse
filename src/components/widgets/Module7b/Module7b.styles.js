@@ -2,11 +2,6 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
-      * {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-      }
       ol,
       ul {
         list-style: none;
@@ -31,6 +26,7 @@ export const StyledContentWrapper = styled.div`
         background-position: ${props.theme.backgroundPosition};
         background-size: ${props.theme.backgroundSize};
         background-blend-mode: ${props.theme.blendMode};
+        overflow-x: hidden;
       }
       .container-lg {
         max-width: 1040px;

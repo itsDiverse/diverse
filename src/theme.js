@@ -243,6 +243,7 @@ export const theme = {
   },
   //----------------------------------Module9
   module9: {
+    heading: false,
     //---------------------LayoutBackground
     background: "#fff",
     backgroundImage: false,

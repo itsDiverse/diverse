@@ -8,10 +8,12 @@ export default props => (
     <div className="content-wrapper">
       <div className="payments-stack-section">
         <div className="container-lg">
-          <div className="payments-stack-section-intro">
-            <h2 className="section-title">{props.data.title}</h2>
-            <p className="section-desc">{props.data.subtitle}</p>
-          </div>
+          {props.theme.heading && (
+            <div className="payments-stack-section-intro">
+              <h2 className="section-title">{props.data.title}</h2>
+              <p className="section-desc">{props.data.subtitle}</p>
+            </div>
+          )}
           <div className="platform-diagram diagram">
             <div className="diagram-apps diagram-section animated fadeInLeft ">
               <a

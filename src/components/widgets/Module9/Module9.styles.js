@@ -3,11 +3,6 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
-      * {
-        margin: 0px;
-        padding: 0px;
-        font-family: Helvetica;
-      }
       body {
         background: #fff;
         min-height: 100%;
@@ -123,6 +118,7 @@ export const StyledContentWrapper = styled.div`
       .diagram-product-radar {
         background-image: url(${props.images.image1});
         background-repeat: no-repeat;
+        background-size: 100% 100%;
         height: 150px;
         width: 100%;
       }
@@ -145,7 +141,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 600;
       }
       .platform-diagram {
-        margin: 60px 0 0;
+        margin: ${props => (props.theme.heading ? `60px 0 0` : `0px 0 0`)};
       }
       .diagram {
         position: relative;
@@ -176,12 +172,14 @@ export const StyledContentWrapper = styled.div`
       .diagram-product-payments {
         background-image: url(${props.images.image2});
         background-repeat: no-repeat;
+        background-size: 100% 100%;
         height: 150px;
         width: 100%;
       }
       .diagram-product-connect {
         background-image: url(${props.images.image3});
         background-repeat: no-repeat;
+        background-size: 100% 100%;
         height: 150px;
         width: 100%;
       }
@@ -491,6 +489,10 @@ export const StyledContentWrapper = styled.div`
         }
         .diagram-product span {
           font-size: 13px;
+        }
+        .payments-stack-section {
+          background-image: none;
+          padding: 30px 0;
         }
       }
     `}
