@@ -532,7 +532,7 @@ export const theme = {
   //-------------------------------------Module 21
   module21: {
     //---------------------LayoutBackground
-    background: "#32325d",
+    background: "white-smoke",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -541,13 +541,13 @@ export const theme = {
 
     //---------------------------
     colors: {
-      title: " #fff",
-      subtitle: "#fff",
+      title: " #32325d",
+      subtitle: "#32325d",
       link: "#9cdbff",
-      linkHover: "#fff",
+      linkHover: "#32325d",
       //---------------Right Section
-      checkListH3: "#fff",
-      checkListSpan: "#ecfaff",
+      checkListH3: "#32325d",
+      checkListSpan: "#32325d",
     },
   },
   //-------------------------------------Module 22

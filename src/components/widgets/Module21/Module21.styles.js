@@ -6,7 +6,6 @@ export const StyledContentWrapper = styled.div`
       * {
         margin: 0px;
         padding: 0px;
-        font-family: Helvetica;
       }
       ol,
       ul {
@@ -106,7 +105,7 @@ export const StyledContentWrapper = styled.div`
         height: calc(32px * 2);
         transform: translate(calc(32px * -1), calc(32px * -1));
         border-radius: 50%;
-        background-color: #32325d;
+        background-color: ${props.theme.background};
         content: "";
       }
       .intelligent-checklist .checklist-icon svg {
@@ -171,7 +170,7 @@ export const StyledContentWrapper = styled.div`
       }
       @media (min-width: 670px) {
         .intelligent-revenue-section {
-          padding: 100px 0;
+          padding: 50px 0;
         }
         .intelligent-revenue {
           display: grid;
@@ -198,6 +197,14 @@ export const StyledContentWrapper = styled.div`
       @media (max-width: 320px) {
         .intelligent-checklist {
           margin: 20px 0;
+        }
+      }
+      @media (max-width: 768px) {
+        .intelligent-revenue-section {
+          padding: 25px 0;
+        }
+        .content-wrapper {
+          background-image: none;
         }
       }
     `}
