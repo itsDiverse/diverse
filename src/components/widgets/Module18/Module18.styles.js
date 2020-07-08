@@ -3,9 +3,6 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
-      * {
-        font-family: Helvetica;
-      }
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -35,9 +32,9 @@ export const StyledContentWrapper = styled.div`
         padding: 1px;
       }
       .regulatory-compliance-title {
-        padding: 80px 20px 0;
+        padding: 50px 20px 0;
         max-width: 700px;
-        margin: 0 auto 60px;
+        margin: 0 auto 30px;
         text-align: center;
       }
       .regulatory-compliance-title svg {
@@ -152,9 +149,24 @@ export const StyledContentWrapper = styled.div`
         .checklist-left {
           margin-bottom: 30px;
         }
-        .regulatory-compliance-checklist {
-          padding: 0 40px;
+        .checklist-left ul {
+          padding-left: 10px;
         }
+        .checklist-right ul {
+          padding-left: 10px;
+        }
+        .regulatory-compliance-checklist {
+          padding: 0 20px;
+        }
+        .content-wrapper {
+          background-image: none;
+        }
+        .regulatory-compliance-title {
+          padding: 0;
+        }
+        .regulatory-compliance-checklist .check-list h3 {
+          font-weight: 500;
+          font-size: 21px;
       }
     `}
 `

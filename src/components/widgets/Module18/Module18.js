@@ -8,16 +8,18 @@ export default props => (
     <div className="content-wrapper">
       <div className="regulatory-compliance-section">
         <div className="container-lg">
-          <div className="regulatory-compliance-title">
-            <span>
-              <img
-                className="img-icon-top"
-                src={props.images.iconTitle18}
-                alt={props.images.iconTitle18Alt}
-              />
-            </span>
-            <h2>{props.data.title}</h2>
-          </div>
+          {props.theme.heading && (
+            <div className="regulatory-compliance-title">
+              <span>
+                <img
+                  className="img-icon-top"
+                  src={props.images.iconTitle18}
+                  alt={props.images.iconTitle18Alt}
+                />
+              </span>
+              <h2>{props.data.title}</h2>
+            </div>
+          )}
           <div className="regulatory-compliance-checklist">
             <div className="check-list checklist-left">
               <h3>{props.data.left.title}</h3>

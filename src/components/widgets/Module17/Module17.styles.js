@@ -3,11 +3,6 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
-      * {
-        margin: 0px;
-        padding: 0px;
-        font-family: Helvetica;
-      }
       body {
         background: #fff;
         min-height: 100%;
@@ -84,12 +79,12 @@ export const StyledContentWrapper = styled.div`
       .container-lg {
         max-width: 1040px;
         margin: 0 auto;
-        padding: 0px;
+        padding-bottom: 50px;
         width: 100%;
       }
 
       .services-section {
-        margin: 80px 0px;
+        margin: 10px 0px;
       }
       .services-section {
         -webkit-box-pack: justify;
@@ -392,6 +387,9 @@ export const StyledContentWrapper = styled.div`
       @media (max-width: 767px) {
         .services-content-wrapper {
           padding: 50px 30px 80px;
+        }
+        .content-wrapper {
+          background-image: none;
         }
       }
     `}

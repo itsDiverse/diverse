@@ -12,16 +12,18 @@ export default props => (
         <div className="services-section-title">
           <div className="container-lg">
             <div className="row">
-              <div className="services-section-title-content">
-                <span>
-                  <img
-                    className="img-icon-top"
-                    src={props.images.iconTitle}
-                    alt={props.images.iconTitleAlt}
-                  />
-                </span>
-                <h2>{props.data.title}</h2>
-              </div>
+              {props.theme.heading && (
+                <div className="services-section-title-content">
+                  <span>
+                    <img
+                      className="img-icon-top"
+                      src={props.images.iconTitle}
+                      alt={props.images.iconTitleAlt}
+                    />
+                  </span>
+                  <h2>{props.data.title}</h2>
+                </div>
+              )}
             </div>
           </div>
         </div>
