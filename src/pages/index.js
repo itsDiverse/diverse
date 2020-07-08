@@ -17,6 +17,7 @@ import {
   Module15,
   Module16,
   Module16v,
+  Module19,
 } from "../components/widgets"
 
 import { theme } from "../theme"
@@ -36,6 +37,11 @@ export default props => (
       data={data.module2}
       images={images.module2}
       videos={videos.module2}
+    />
+    <Module19
+      images={images.module19}
+      data={data.module19}
+      theme={theme.module19}
     />
   </Layout>
 )

@@ -167,6 +167,9 @@ import iconTitle18 from "./images/Module18/icon-top.svg"
 //import images Module 19+++++++++++
 import dots19 from "./images/Module19/dots19.svg"
 import sales19 from "./images/Module19/sales19.svg"
+import imgBox1 from "./images/Module19/imgBox1.svg"
+import imgBox2 from "./images/Module19/imgBox2.svg"
+import imgBox3 from "./images/Module19/imgBox3.svg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 20+++++++++++
@@ -458,6 +461,12 @@ export const images = {
   module19: {
     dots19,
     sales19,
+    imgBox1,
+    imgBox1Alt: "",
+    imgBox2,
+    imgBox2Alt: "",
+    imgBox3,
+    imgBox3Alt: "",
   },
   //----------------------------------Module 20
   module20: {

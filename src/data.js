@@ -742,14 +742,42 @@ export const data = {
 
   //-------------------------------------Module 19
   module19: {
-    title: "",
-    subtitle: "",
-    heading: "",
-    subheading: "",
-    bodytext: "",
-    background: "",
-    boxBackground: "",
-    circleBackground: "",
+    title: "Aloha!",
+    subtitle:
+      " Get in touce’d love to talk about how we ch and let us know how we can help.",
+    box1: {
+      title: "Sales",
+      text: " We’d love to talk about how we can work together.",
+      footerText: "Contact sales",
+      link: "http://www.google.com",
+    },
+    box2: {
+      title: "Help Support",
+      text: "We’re here to help with any questions or code.",
+      footerText: "Get support",
+      link: "",
+    },
+    box3: {
+      title: "Media Press",
+      text: "Get Stripe news, company info, and media resources.",
+      footerText: "Visit newsroom",
+      link: "",
+    },
+    //--------------BottomSection
+    leftContent: {
+      title: "Join us on IRC",
+      text: `If you have technical questions, chat live with developers in`,
+      textStrong: "diverse freenode",
+    },
+    rightContent: {
+      title: "General communication",
+      text: `For general queries, including partnership opportunities, please
+      email`,
+      link: {
+        url: "mailto:info@diverse.com",
+        text: "info@diverse.com",
+      },
+    },
   },
   //-------------------------------------Module 20
   module20: {

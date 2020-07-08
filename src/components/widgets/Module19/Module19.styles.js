@@ -3,18 +3,92 @@ import styled, { css } from "styled-components"
 export const StyledContentWrapper = styled.div`
   ${props =>
     css`
-      * {
-        margin: 0px;
-        padding: 0px;
-        font-family: Helvetica;
+      body {
+        background: #fff;
+        min-height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 62.5%;
+        font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        -webkit-font-feature-settings: "pnum";
+        font-feature-settings: "pnum";
+        font-variant-numeric: proportional-nums;
       }
-      .backgroundContainer {
+      ol,
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      button {
+        border: none;
+        outline: none;
+        background: none;
+        font-family: inherit;
+      }
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      main,
+      menu,
+      nav,
+      section,
+      summary {
+        display: block;
+      }
+      h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+      }
+      .content-wrapper {
+        padding: 20px 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        background-image: ${props =>
+          props.theme.backgroundImage
+            ? `linear-gradient(
+          to bottom,
+          ${props.theme.backgroundGradient}
+        ),
+        url("http://picsum.photos/800/600")`
+            : "none"};
+        background-repeat: no-repeat;
+        background-position: ${props.theme.backgroundPosition};
+        background-size: ${props.theme.backgroundSize};
+        background-blend-mode: ${props.theme.blendMode};
+        background-color: ${props.theme.background};
+      }
+      .container-lg {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0px;
+        width: 100%;
+      }
+      .background-container {
         position: absolute;
         width: 100%;
         overflow: hidden;
         height: 620px;
       }
-      .backgroundLarge {
+      .background-large {
         display: block;
         bottom: 45%;
         -webkit-transform: skew(0, -12deg);
@@ -24,18 +98,18 @@ export const StyledContentWrapper = styled.div`
         left: 0;
         right: 0;
       }
-      .backgroundPart {
+      .background-part {
         position: absolute;
         height: 50px;
         top: auto;
       }
-      .backgroundPart.bp1 {
+      .background-part.bp1 {
         background-color: #6772e5;
         bottom: 0;
         left: 0;
         right: calc(100% - 35px);
       }
-      .backgroundPart.bp2 {
+      .background-part.bp2 {
         background-image: -webkit-gradient(
           linear,
           left top,
@@ -54,27 +128,27 @@ export const StyledContentWrapper = styled.div`
         left: 355px;
         right: 600px;
       }
-      .backgroundPart.bp3 {
+      .background-part.bp3 {
         background: #9cdbff;
         bottom: 0;
         left: calc(50% + 260px);
         right: 0;
       }
-      .backgroundPart.bp4 {
+      .background-part.bp4 {
         opacity: 0.16;
         background: #9cdbff;
         bottom: -50px;
         left: 0;
         right: calc(50% + 475px);
       }
-      .backgroundPart.bp5 {
+      .background-part.bp5 {
         background-color: rgba(0, 0, 0, 0.14);
         mix-blend-mode: soft-light;
         bottom: 200px;
         right: 0;
         width: 100px;
       }
-      .backgroundPart.bp6 {
+      .background-part.bp6 {
         background-image: -webkit-gradient(
           linear,
           right top,
@@ -97,7 +171,7 @@ export const StyledContentWrapper = styled.div`
         -webkit-animation: none;
         animation: none;
       }
-      .backgroundPart.bp7 {
+      .background-part.bp7 {
         opacity: 0;
         -webkit-animation: backgroundpart-7 5s infinite;
         animation: backgroundpart-7 5s infinite;
@@ -148,7 +222,7 @@ export const StyledContentWrapper = styled.div`
           opacity: 0;
         }
       }
-      .backgroundPart.bp8 {
+      .background-part.bp8 {
         -webkit-animation: backgroundpart-8 7s infinite;
         animation: backgroundpart-8 7s infinite;
         -webkit-animation-timing-function: ease-in;
@@ -198,7 +272,7 @@ export const StyledContentWrapper = styled.div`
         }
       }
 
-      .backgroundPart.bp9 {
+      .background-part.bp9 {
         background-image: -webkit-gradient(
           linear,
           right top,
@@ -265,7 +339,7 @@ export const StyledContentWrapper = styled.div`
           opacity: 0;
         }
       }
-      .backgroundPart.bp10 {
+      .background-part.bp10 {
         background-image: -webkit-gradient(
           linear,
           right top,
@@ -288,7 +362,7 @@ export const StyledContentWrapper = styled.div`
         -webkit-animation: none;
         animation: none;
       }
-      .backgroundPart.bp11 {
+      .background-part.bp11 {
         opacity: 0.12;
         background-image: -webkit-gradient(
           linear,
@@ -303,7 +377,7 @@ export const StyledContentWrapper = styled.div`
         left: calc(50% - 430px);
         right: calc(50% + 200px);
       }
-      .backgroundPart.bp12 {
+      .background-part.bp12 {
         background-image: -webkit-gradient(
           linear,
           right top,
@@ -326,7 +400,7 @@ export const StyledContentWrapper = styled.div`
         -webkit-animation: none;
         animation: none;
       }
-      .backgroundPart.bp13 {
+      .background-part.bp13 {
         background-image: -webkit-gradient(
           linear,
           right top,
@@ -357,21 +431,21 @@ export const StyledContentWrapper = styled.div`
         height: 5000px;
         margin-bottom: 50px;
       }
-      .backgroundPart.below {
+      .background-part.below {
         bottom: 0;
         left: calc(100% - 112px);
         right: calc(50% - 312px);
         background-color: #ecfaff;
         display: none;
       }
-      .backgroundLarge .dots {
+      .background-large .dots {
         position: absolute;
         height: 200px;
         width: 290px;
         top: auto;
         bottom: -50px;
         left: calc(100% - 150px);
-        background: url(../../../images/template/dots.svg);
+        background: url(images/dots.svg);
         background-size: auto;
         -webkit-transform: skew(0, 12deg) rotate(90deg);
         transform: skew(0, 12deg) rotate(90deg);
@@ -385,36 +459,36 @@ export const StyledContentWrapper = styled.div`
         padding: 0px;
         width: 100%;
       }
-      .bannerContainer {
+      .banner-container {
         position: relative;
         padding: 0;
         text-align: center;
       }
-      .bannerWrapper {
-        padding-top: 50px;
+      .banner-wrapper {
+        padding-top: 0px;
         text-align: center;
         margin: 0;
         padding-left: 10px;
         padding-right: 10px;
-        min-height: 200px;
+        min-height: 170px;
       }
-      .bannerTitle {
-        color: #fff;
+      .banner-title {
+        color: ${props.theme.colors.title};
         margin-bottom: 20px;
         font-weight: 400;
         font-size: 34px;
         line-height: 44px;
       }
-      .bannerIntro {
-        color: #fff;
+      .banner-intro {
+        color: ${props.theme.colors.subtitle};
         font-weight: 300;
         font-size: 21px;
         line-height: 32px;
       }
-      .servicesAection {
-        margin-top: 0;
+      .services-section {
+        margin-top: ${props => (props.theme.heading ? "0" : "40px")};
       }
-      .servicesSection {
+      .services-section {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
@@ -424,27 +498,27 @@ export const StyledContentWrapper = styled.div`
         min-width: 100%;
         padding: 0;
       }
-      .servicesBox {
+      .services-box {
         border-radius: 8px;
         position: relative;
         background-color: #fff;
         transition: transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
         transform: translateY(0);
         display: block;
-        -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+        -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.2),
           0 5px 15px rgba(0, 0, 0, 0.07);
-        box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+        box-shadow: 0 15px 35px rgba(50, 50, 93, 0.2),
           0 5px 15px rgba(0, 0, 0, 0.07);
       }
-      .servicesBox:hover .servicesFooter .servicesFooterText {
-        color: #32325d;
+      .services-box:hover .services-footer .services-footer-text {
+        color: ${props.theme.colors.linkHover};
       }
-      .servicesInnercontainer {
+      .services-innercontainer {
         height: 100%;
         display: flex;
       }
 
-      .servicesIcon {
+      .services-icon {
         --container-size: 80px;
         position: absolute;
         z-index: 1;
@@ -462,26 +536,26 @@ export const StyledContentWrapper = styled.div`
         box-shadow: 0 2px 5px rgba(50, 50, 93, 0.1),
           0 1px 1.5px rgba(0, 0, 0, 0.07);
       }
-      .blueFill {
+      .blue-fill {
         fill: #87bbfd;
       }
-      .purpelFill {
+      .purpel-fill {
         fill: #6772e5;
       }
-      .servicesBox .services-title {
-        color: #32325d;
+      .services-box .services-title {
+        color: ${props.theme.colors.titleBox};
         font-weight: 500;
         font-size: 19px;
         line-height: 32px;
         margin-bottom: 15px;
       }
-      .servicesBox .servicesDesc {
-        color: #6b7c93;
+      .services-box .services-desc {
+        color: ${props.theme.colors.textBox};
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
       }
-      .servicesFooter {
+      .services-footer {
         background-color: #fff;
         padding-top: 10px;
         padding-bottom: 20px;
@@ -489,24 +563,24 @@ export const StyledContentWrapper = styled.div`
         width: 100%;
         background-color: transparent;
       }
-      .servicesLink {
+      .services-link {
         color: #6772e5;
         font-weight: 500;
         -webkit-transition: color 0.1s ease;
         transition: color 0.1s ease;
         cursor: pointer;
       }
-      .servicesLink:after {
+      .services-link:after {
         font: normal 16px StripeIcons;
-        content: "\2192";
+        content: "";
         padding-left: 5px;
       }
-      .servicesSection .row {
+      .services-section .row {
         display: grid;
         grid-template-rows: auto;
         grid-gap: 40px 0;
       }
-      .servicesIcon span {
+      .services-icon span {
         background-color: transparent;
         height: 48px;
         width: 48px;
@@ -517,18 +591,18 @@ export const StyledContentWrapper = styled.div`
         max-width: 60%;
         max-height: 56%;
       }
-      .servicesContentWrapper {
+      .services-content-wrapper {
         overflow: hidden;
         padding: 50px 30px 80px;
         border-radius: 8px;
         position: relative;
         text-align: center;
       }
-      .servicesIcon span svg {
+      .services-icon span svg {
         width: 100%;
         height: 100%;
       }
-      .servicesFooter {
+      .services-footer {
         position: absolute;
         bottom: 0;
         left: 0px;
@@ -542,19 +616,19 @@ export const StyledContentWrapper = styled.div`
         align-items: center;
         justify-content: center;
       }
-      .backgroundTransparent {
+      .background-transparent {
         background-color: transparent;
       }
-      .servicesFooterIcon {
+      .services-footer-icon {
         width: 28px;
         height: 28px;
         margin: 0 10px 0 0;
       }
-      .servicesFooterIcon svg {
+      .services-footer-icon svg {
         width: 100%;
         height: 100%;
       }
-      .servicesBox:hover {
+      .services-box:hover {
         transform: translateY(-2px);
         z-index: 2;
         -webkit-box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1),
@@ -562,80 +636,79 @@ export const StyledContentWrapper = styled.div`
         box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1),
           0 8px 15px rgba(0, 0, 0, 0.07);
       }
-      .servicesBox:hover:before {
+      .services-box:hover:before {
         opacity: 0;
       }
-      .servicesBox:hover:after {
+      .services-box:hover:after {
         opacity: 1;
       }
-      .servicesFooter .servicesFooterText {
+      .services-footer .services-footer-text {
         font-size: 17px;
         line-height: 28px;
         font-weight: 400;
         letter-spacing: 0.025em;
       }
-      .textBlue {
-        color: #6772e5;
+      .text-blue {
+        color: ${props.theme.colors.linkBox};
       }
-      .textGreen {
+      .text-green {
         color: #24b47e;
       }
-      .servicesFooter .servicesFooterText:after {
-        content: "279C";
+      .services-footer .services-footer-text:after {
+        content: "";
         padding-left: 5px;
         font: normal 16px StripeIcons;
         display: inline-block;
         transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
       }
-      .servicesContent {
+      .services-content {
         transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
         transform: translateY(0);
       }
 
-      .innerCol {
+      .inner-col {
         position: relative;
         text-align: left;
         margin-bottom: 30px;
         margin-top: -10px;
         padding-left: 30px;
-        background-color: #f6f9fc;
         padding-right: 20px;
       }
-      .innerColWrapper {
+      .inner-col-wrapper {
         padding-top: 40px;
         padding-bottom: 40px;
       }
-      .innerColWrapper:first-of-type {
+      .inner-col-wrapper:first-of-type {
         border-bottom: 1px solid #e6ebf1;
       }
-      .joinUsTitle {
+      .join-us-title {
         font-weight: 500;
         font-size: 19px;
         line-height: 32px;
-        color: #32325d;
+        color: ${props.theme.colors.innerTitle};
       }
 
-      .joinUsDesc {
+      .join-us-desc {
         font-weight: 400;
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.innerText};
       }
-      .mailLink {
-        color: #6772e5;
+      .mail-link {
+        color: ${props.theme.colors.innerLink};
         font-weight: 500;
         -webkit-transition: color 0.1s ease;
         transition: color 0.1s ease;
         cursor: pointer;
       }
-      .joinUsDesc strong {
+      .join-us-desc strong {
         font-size: 17px;
         line-height: 28px;
-        color: #525f7f;
+        color: ${props.theme.colors.innerStrong};
       }
 
       @media only screen and (max-width: 1100px) {
-        .containerLg {
+        .container-lg {
           width: calc(100% - 60px);
         }
         .container {
@@ -643,14 +716,14 @@ export const StyledContentWrapper = styled.div`
         }
       }
       @media (min-width: 670px) {
-        .backgroundContainer {
+        .background-container {
           height: 900px;
         }
 
-        .backgroundPart.bp1 {
+        .background-part.bp1 {
           right: calc(100% - 355px);
         }
-        .backgroundPart.bp6 {
+        .background-part.bp6 {
           -webkit-animation: backgroundpart-8 5s infinite;
           animation: backgroundpart-8 5s infinite;
           -webkit-animation-timing-function: ease-in;
@@ -660,7 +733,7 @@ export const StyledContentWrapper = styled.div`
           opacity: 0;
           will-change: transfrom, opacity;
         }
-        .backgroundPart.bp7 {
+        .background-part.bp7 {
           opacity: 0;
           -webkit-animation: animate-stripe-7 5s infinite;
           animation: animate-stripe-7 5s infinite;
@@ -670,7 +743,7 @@ export const StyledContentWrapper = styled.div`
           animation-delay: 1s;
           will-change: transfrom, opacity;
         }
-        .backgroundPart.bp8 {
+        .background-part.bp8 {
           background-image: -webkit-gradient(
             linear,
             right top,
@@ -693,7 +766,7 @@ export const StyledContentWrapper = styled.div`
           -webkit-animation: none;
           animation: none;
         }
-        .backgroundPart.bp10 {
+        .background-part.bp10 {
           opacity: 0;
           -webkit-animation: animate-stripe-10 6s infinite;
           animation: animate-stripe-10 6s infinite;
@@ -701,7 +774,7 @@ export const StyledContentWrapper = styled.div`
           animation-timing-function: ease-in;
           will-change: transfrom, opacity;
         }
-        .backgroundPart.bp12 {
+        .background-part.bp12 {
           -webkit-animation: backgroundpart-8 5s infinite;
           animation: backgroundpart-8 5s infinite;
           -webkit-animation-timing-function: ease-in;
@@ -711,7 +784,7 @@ export const StyledContentWrapper = styled.div`
           opacity: 0;
           will-change: transfrom, opacity;
         }
-        .backgroundPart.bp13 {
+        .background-part.bp13 {
           -webkit-animation: backgroundpart-8 5s infinite;
           animation: backgroundpart-8 5s infinite;
           -webkit-animation-timing-function: ease-in;
@@ -721,14 +794,14 @@ export const StyledContentWrapper = styled.div`
           opacity: 0;
           will-change: transfrom, opacity;
         }
-        .backgroundPart.below {
+        .background-part.below {
           display: block;
           bottom: -50px;
           left: calc(100% - 440px);
           right: calc(50% - 572px);
           background-color: #ecfaff;
         }
-        .backgroundLarge .dots {
+        .background-large .dots {
           opacity: 1;
           position: absolute;
           height: 200px;
@@ -736,35 +809,35 @@ export const StyledContentWrapper = styled.div`
           top: auto;
           bottom: 50px;
           left: calc(100% - 450px);
-          background: url(../../../images/template/dots.svg);
+          background: url(images/dots.svg);
           background-size: auto;
           -webkit-transform: skew(0, 12deg) rotate(-12deg);
           transform: skew(0, 12deg) rotate(-12deg);
         }
 
-        .bannerTitle {
+        .banner-title {
           font-size: 42px;
           line-height: 52px;
         }
-        .bannerIntro {
+        .banner-intro {
           font-size: 24px;
           line-height: 36px;
         }
 
-        .servicesSection .row {
+        .services-section .row {
           grid-template-columns: repeat(3, 1fr);
           grid-gap: 50px 20px;
         }
-        .servicesIcon {
+        .services-icon {
           --container-size: 100px;
         }
-        .servicesContentWrapper {
+        .services-content-wrapper {
           padding: 90px 40px 75px;
         }
-        .innerCol {
+        .inner-col {
           -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
-          margin-bottom: 70px;
+          margin-bottom: 50px;
           margin-top: 40px;
           display: -webkit-box;
           display: -ms-flexbox;
@@ -773,53 +846,61 @@ export const StyledContentWrapper = styled.div`
           -webkit-box-pack: center;
           -ms-flex-pack: center;
           justify-content: center;
-          background-color: transparent;
           padding-left: 0;
           padding-right: 0;
+          background-color: #0000000a;
         }
-        .innerColWrapper:first-of-type {
+        .inner-col-wrapper:first-of-type {
           border-right: 1px solid #e6ebf1;
           border-bottom: none;
         }
-        .innerColWrapper {
+        .inner-col-wrapper {
           padding-left: 40px;
           padding-right: 40px;
           max-width: 470px;
         }
       }
       @media (min-width: 880px) {
-        .servicesSection .row {
+        .services-section .row {
           grid-template-columns: repeat(3, 1fr);
         }
       }
       @media (max-width: 1024px) {
-        .servicesContentWrapper {
+        .services-content-wrapper {
           padding: 90px 30px 80px;
         }
-        .servicesFooter {
+        .services-footer {
           transform: translateY(0);
           opacity: 1;
         }
-        .servicesFooter .servicesFooterText {
+        .services-footer .services-footer-text {
           font-size: 15px;
         }
       }
       @media (max-width: 767px) {
-        .joinUsSection {
+        .join-us-section {
           margin-top: 60px;
         }
-        .servicesBox {
-          box-shadow: none;
+        .services-box {
         }
-        .servicesFooter {
-          background-color: #fff;
+        .services-footer {
+          background-color: #f6f9fc;
         }
-        .servicesContentWrapper {
+        .services-content-wrapper {
           width: 100%;
         }
-        .servicesIcon {
+        .services-icon {
           background-color: #f6f9fc;
-          box-shadow: none;
+        }
+        .inner-col {
+          background-color: #0000000c;
+        }
+        .content-wrapper {
+          background-image: none;
+        }
+        .banner-container {
+          padding-top: ${props =>
+            props.theme.backgroundLayout ? "50px" : "0"};
         }
       }
     `}

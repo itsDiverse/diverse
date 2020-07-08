@@ -493,6 +493,8 @@ export const theme = {
   },
   //-------------------------------------Module 19
   module19: {
+    heading: true,
+    backgroundLayout: false,
     //---------------------LayoutBackground
     background: "#fff",
     backgroundImage: false,
@@ -502,10 +504,18 @@ export const theme = {
     blendMode: `screen, difference, lighten`,
     //---------------------------
     colors: {
-      primary: "",
-      primaryOpacity: "",
-      secondary: "",
-      secondaryOpacity: "",
+      title: "rgb(57, 57, 102)",
+      subtitle: "rgb(57, 57, 102)",
+      //--------------------Boxes
+      titleBox: "#32325d",
+      textBox: "#6b7c93",
+      linkBox: "#6772e5",
+      linkHover: "#32325d",
+      //-------------------BottomSection
+      innerTitle: "#32325d",
+      innerText: "#525f7f",
+      innerStrong: "#525f7f",
+      innerLink: "#6772e5",
     },
   },
   //-------------------------------------Module 20
