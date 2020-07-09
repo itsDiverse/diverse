@@ -1,9 +1,10 @@
 import React from "react"
+
 import { Layout } from "../components"
+import { Module3b } from "../components/widgets"
 
 export default props => (
   <Layout>
-    <h1>Lorem Title</h1>
-    <h2>Lorem Title</h2>
+    <Module3b />
   </Layout>
 )
