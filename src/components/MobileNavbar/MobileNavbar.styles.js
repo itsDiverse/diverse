@@ -1,12 +1,12 @@
 import styled from "styled-components"
 
-export const StyledMenu = styled.div`
+export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   flex: 1 1;
 `
 
-export const MobileNavBar = styled.div`
+export const MobileNavBar = styled.nav`
   display: flex;
   flex-direction: row;
   box-shadow: 0 1px 4px 1px #eee;
