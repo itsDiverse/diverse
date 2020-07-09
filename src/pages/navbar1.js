@@ -1,11 +1,12 @@
 import React from "react"
 import { Layout } from "../components"
-import { StyledContentWrapper } from "../styles/navbarFix.styles.js"
+
+const titleStyle = {
+  color: "green",
+}
 
 export default props => (
   <Layout>
-    <StyledContentWrapper>
-      <h1 className="title">Lorem Title</h1>
-    </StyledContentWrapper>
+    <h1 style={titleStyle}>Lorem Title</h1>
   </Layout>
 )
