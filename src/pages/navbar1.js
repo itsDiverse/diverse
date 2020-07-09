@@ -1,9 +1,11 @@
 import React from "react"
 import { Layout } from "../components"
-import "../styles/navbarFix.css"
+import { StyledContentWrapper } from "../styles/navbarFix.styles.js"
 
 export default props => (
   <Layout>
-    <h1 className="title">Lorem Title</h1>
+    <StyledContentWrapper>
+      <h1 className="title">Lorem Title</h1>
+    </StyledContentWrapper>
   </Layout>
 )
