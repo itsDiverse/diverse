@@ -493,7 +493,7 @@ export const theme = {
   },
   //-------------------------------------Module 19
   module19: {
-    heading: true,
+    heading: false,
     backgroundLayout: false,
     //---------------------LayoutBackground
     background: "#fff",
