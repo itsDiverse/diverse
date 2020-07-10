@@ -10,8 +10,13 @@ export default props => (
         <div className="container-lg">
           <div className="going-about-20-minutes-box">
             <div className="left-box-content about-minutes-title">
-              <h2>{props.data.title}</h2>
-              <p>{props.data.subtitle}</p>
+              {props.theme.heading && (
+                <div>
+                  <h2>{props.data.title}</h2>
+                  <p>{props.data.subtitle}</p>
+                </div>
+              )}
+
               <ul className="about-minutes-box-list">
                 <li>
                   <figure className="icon">
@@ -33,16 +38,7 @@ export default props => (
               </ul>
             </div>
             <div className="right-box-content">
-              <figure className="devices-dashboard loaded">
-                <div className="ground">
-                  <div className="shadow"></div>
-                </div>
-                <div className="laptop">
-                  <div className="device"></div>
-                  <div className="controls"></div>
-                  <div className="screen country-IN"></div>
-                </div>
-              </figure>
+              <img src={props.images.m14imgRight} alt=""></img>
             </div>
           </div>
           <div className="going-about-20-minutes-box">

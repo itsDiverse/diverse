@@ -127,16 +127,12 @@ import imageBox12 from "./images/Module13/product-nav-icon.svg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 14 ++++++++++
-import groundShadow from "./images/Module14/ground-shadow.png"
-import laptopControls from "./images/Module14/laptop-controls.svg"
-import laptopDevice from "./images/Module14/laptop-device.jpg"
-import laptopMask from "./images/Module14/laptop-mask.svg"
-import laptopScreen from "./images/Module14/laptop-screen.jpg"
-import m14Icon1 from "./images/Module14/twitterIcon.svg"
-import m14Icon2 from "./images/Module14/twitterIcon.svg"
-import m14Icon3 from "./images/Module14/twitterIcon.svg"
-import m14Icon4 from "./images/Module14/twitterIcon.svg"
-import m14Icon5 from "./images/Module14/twitterIcon.svg"
+import m14imgRight from "./images/Module14/imgRight.png"
+import m14Icon1 from "./images/Module14/icon1.png"
+import m14Icon2 from "./images/Module14/icon2.png"
+import m14Icon3 from "./images/Module14/icon1.png"
+import m14Icon4 from "./images/Module14/icon1.png"
+import m14Icon5 from "./images/Module14/icon2.png"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 16+++++++++++
@@ -401,11 +397,7 @@ export const images = {
   },
   //----------------------------------Module 14
   module14: {
-    groundShadow,
-    laptopControls,
-    laptopDevice,
-    laptopMask,
-    laptopScreen,
+    m14imgRight,
     m14Icon1,
     m14Icon2,
     m14Icon3,

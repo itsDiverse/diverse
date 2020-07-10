@@ -1,7 +1,13 @@
 import React from "react"
 
 import { Layout } from "../components"
-import { QuadBox, Module13, Module9, Module19 } from "../components/widgets"
+import {
+  QuadBox,
+  Module13,
+  Module14,
+  Module9,
+  Module19,
+} from "../components/widgets"
 
 import { theme } from "../theme"
 import { data } from "../data"
@@ -14,6 +20,11 @@ export default props => (
       images={images.module9}
       data={data.module9}
       theme={theme.module9}
+    />
+    <Module14
+      theme={theme.module14}
+      data={data.module14}
+      images={images.module14}
     />
     <Module13
       images={images.module13}

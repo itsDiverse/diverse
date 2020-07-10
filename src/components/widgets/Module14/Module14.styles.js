@@ -6,8 +6,6 @@ export const StyledContentWrapper = styled.div`
       * {
         margin: 0px;
         padding: 0px;
-        font-family: Helvetica;
-        width: 100%;
       }
       /* Added class to  make it work*/
       .country-IN {
@@ -40,8 +38,8 @@ export const StyledContentWrapper = styled.div`
       }
       .going-about-20-minutes {
         position: relative;
-        padding: 0 0 120px;
-        margin-top: 150px;
+        padding: 0 0 80px;
+        margin-top: 80px;
       }
       .going-about-20-minutes-box .left-box-content h2 {
         font-weight: 400;
@@ -80,6 +78,18 @@ export const StyledContentWrapper = styled.div`
         -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
         position: relative;
+      }
+
+      .right-box-content {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+      }
+      .right-box-content img {
+        height:350px;
+        width:320px;
+        border-radius: 8px;
+        box-shadow: rgba(57, 57, 102, 0.5) 0px 15px 35px, rgba(24, 26, 27, 0.07) 0px 5px 15px;
       }
       .going-about-20-minutes-box .about-minutes-box-list {
         list-style: none;
@@ -237,6 +247,7 @@ export const StyledContentWrapper = styled.div`
           -ms-flex-pack: justify;
           justify-content: space-between;
         }
+        
       }
       @media (min-width: 1040px) {
         .going-about-20-minutes-box .about-minutes-box-list {
@@ -249,6 +260,21 @@ export const StyledContentWrapper = styled.div`
         }
         .going-about-20-minutes-box .about-minutes-box-list li {
           padding-left: 50px;
+        }
+      }
+      @media (max-width: 768px) {
+
+        .right-box-content img {
+        border-radius: 8px;
+
+        }
+        .going-about-20-minutes {
+          margin:auto;
+          padding: 5px;
+          padding-top: 40px;
+        }
+        .going-about-20-minutes-box .left-box-content ul {
+          margin-top:5px;
         }
       }
     `}

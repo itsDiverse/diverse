@@ -243,7 +243,7 @@ export const theme = {
   },
   //----------------------------------Module9
   module9: {
-    heading: false,
+    heading: true,
     //---------------------LayoutBackground
     background: "#fff",
     backgroundImage: false,
@@ -357,6 +357,7 @@ export const theme = {
   },
   //-------------------------------------Module 14
   module14: {
+    heading: true,
     //---------------------LayoutBackground
     background: "#fff",
     backgroundImage: false,
