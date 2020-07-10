@@ -596,6 +596,7 @@ export const StyledContentWrapper = styled.div`
 
         .international-support-right-content {
           padding: 1px;
+          padding-top: 70px;
         }
 
         .international-support .common-UppercaseTitle {
@@ -691,6 +692,10 @@ export const StyledContentWrapper = styled.div`
         .content-wrapper {
           overflow-x: hidden;
           background-image: none;
+        }
+        .international-support-right-content {
+          padding: 1px;
+          padding-top: 0;
         }
       }
     `}
