@@ -2,7 +2,7 @@ import React from "react"
 
 import { Layout } from "../components"
 import {
-  QuadBox,
+  Module16v,
   Module13,
   Module14,
   Module15,
@@ -17,6 +17,12 @@ import { videos } from "../videos"
 
 export default props => (
   <Layout>
+    <Module16v
+      theme={theme.module16v}
+      data={data.module16v}
+      images={images.module16v}
+      videos={videos.module4}
+    />
     <Module9
       images={images.module9}
       data={data.module9}

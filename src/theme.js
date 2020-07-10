@@ -420,7 +420,7 @@ export const theme = {
   },
   //-------------------------------------Module16v
   module16v: {
-    shadow: true,
+    shadow: false,
     colors: {
       topTitle: "#6772e5",
       span: {
