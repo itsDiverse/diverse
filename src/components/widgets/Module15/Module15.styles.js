@@ -46,7 +46,7 @@ export const StyledContentWrapper = styled.div`
         position: relative;
         background-color: #fff;
         border-radius: 8px;
-        padding: 30px;
+        padding-top: 0px;
         -webkit-box-shadow: ${props =>
           props.theme.colors.shadow
             ? `0 30px 60px -12px  ${props.theme.colors.shadowColor}`
@@ -56,6 +56,15 @@ export const StyledContentWrapper = styled.div`
             ? `0 30px 60px -12px ${props.theme.colors.shadowColor}`
             : "none"};
       }
+
+      .callout-card img {
+        height: 250px;
+        border-radius: 8px;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin: 0 auto;
+      }
+
       .idc-callout {
         position: relative;
         z-index: 2;
@@ -244,7 +253,7 @@ export const StyledContentWrapper = styled.div`
           -webkit-box-direction: normal;
           -ms-flex-direction: row;
           flex-direction: row;
-          padding-top: 25px;
+          padding-top: 10px;
           padding-bottom: 0;
         }
         .callout-card svg {

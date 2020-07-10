@@ -41,13 +41,13 @@ import m3Icon2 from "./images/Module3/documents.svg"
 import m3Icon3 from "./images/Module3/incorporation.svg"
 //++++++++++++++++++++++++++++++++++++
 
-//import images Module 5 +++++++++++++
+//import images Module 4 +++++++++++++
 import posterVideo from "./images/Module4/video-poster.jpg"
 //++++++++++++++++++++++++++++++++++++
 
 //import images Module 5 +++++++++++++
-import m5Image1 from "./images/Module5/img1.svg"
-import m5Image2 from "./images/Module5/img2.svg"
+import m5Image1 from "./images/Module5/img1.png"
+import m5Image2 from "./images/Module5/img2.png"
 //++++++++++++++++++++++++++++++++++++
 
 //import images Module 6 +++++++++++++
@@ -135,10 +135,14 @@ import m14Icon4 from "./images/Module14/icon1.png"
 import m14Icon5 from "./images/Module14/icon2.png"
 //++++++++++++++++++++++++++++++++++
 
+//import images Module 15 ++++++++++
+import m15Image from "./images/Module15/img15.png"
+//++++++++++++++++++++++++++++++++++
+
 //import images Module 16+++++++++++
 import icon from "./images/Module16/icon.svg"
 //++++++++++++++++++++++++++++++++++
-//import images Module 16+++++++++++
+//import images Module 16v+++++++++++
 import icon16v from "./images/Module16v/icon.svg"
 import videoPoster from "./images/Module16v/video-poster.jpg"
 import image16v from "./images/Module16v/image.jpg"
@@ -405,6 +409,10 @@ export const images = {
     m14Icon5,
   },
   //----------------------------------Module 15
+  module15: {
+    m15Image,
+    m15ImageAlt: "",
+  },
   //----------------------------------Module 16
   module16: {
     icon,

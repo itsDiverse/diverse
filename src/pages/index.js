@@ -5,6 +5,7 @@ import {
   QuadBox,
   Module13,
   Module14,
+  Module15,
   Module9,
   Module19,
 } from "../components/widgets"
@@ -20,6 +21,11 @@ export default props => (
       images={images.module9}
       data={data.module9}
       theme={theme.module9}
+    />
+    <Module15
+      theme={theme.module15}
+      data={data.module15}
+      images={images.module15}
     />
     <Module14
       theme={theme.module14}
