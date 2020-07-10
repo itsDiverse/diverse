@@ -618,17 +618,11 @@ export const data = {
         text: "Holaaa",
       },
 
-      title4: "Form a legal entity",
-      paragraph4: `Set up your new company as a C Corporation in the state of
-      Delaware. We’ll create the legal documents, file the
-      paperwork, and apply for your Tax ID number. Our goal is to
-      have you in business within a few days.`,
+      title4: "",
+      paragraph4: ``,
 
-      title5: "Form a legal entity",
-      paragraph5: `Set up your new company as a C Corporation in the state of
-      Delaware. We’ll create the legal documents, file the
-      paperwork, and apply for your Tax ID number. Our goal is to
-      have you in business within a few days.`,
+      title5: "",
+      paragraph5: ``,
     },
   },
   //-------------------------------------Module 15
@@ -749,7 +743,7 @@ export const data = {
       title: "Sales",
       text: " We’d love to talk about how we can work together.",
       footerText: "Contact sales",
-      link: "http://www.google.com",
+      link: "ah de ",
     },
     box2: {
       title: "Help Support",
