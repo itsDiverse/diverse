@@ -266,11 +266,10 @@ export const StyledContentWrapper = styled.div`
 
         .right-box-content img {
         border-radius: 8px;
-
+          width:300px
         }
         .going-about-20-minutes {
           margin:auto;
-          padding: 5px;
           padding-top: 40px;
         }
         .going-about-20-minutes-box .left-box-content ul {
