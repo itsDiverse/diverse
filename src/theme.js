@@ -429,8 +429,8 @@ export const theme = {
     blendMode: `screen, difference, lighten`,
     //---------------------------
     centerLayout: false,
-    video: false,
-    image: true,
+    video: true,
+    image: false,
     shadow: true,
     shadowColor: "rgba(50, 50, 93, 0.9)",
     colors: {
