@@ -611,7 +611,7 @@ export const data = {
 
       title3: "Stripe account",
       paragraph3: `Activate your Stripe account to start accepting payments
-      from customers in 100+ currencies. You can also take
+      in 100+ currencies. You can also take
       advantage of a range of Stripe’s other products, including`,
       link: {
         url: "#",

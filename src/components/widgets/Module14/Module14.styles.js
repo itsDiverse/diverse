@@ -121,7 +121,7 @@ export const StyledContentWrapper = styled.div`
         color: ${props.theme.colors.texts};
       }
       .going-about-20-minutes-box .left-box-content ul {
-        margin-top: 40px;
+        margin-top: 10px;
       }
       .going-about-20-minutes-box .about-minutes-box-list li .common-link {
         color: ${props.theme.colors.link};
@@ -252,6 +252,8 @@ export const StyledContentWrapper = styled.div`
       @media (min-width: 1040px) {
         .going-about-20-minutes-box .about-minutes-box-list {
           margin-left: 45px;
+          padding-top:20px;
+
         }
         .going-about-20-minutes-box .about-minutes-box-list .icon {
           position: absolute;
@@ -266,7 +268,7 @@ export const StyledContentWrapper = styled.div`
 
         .right-box-content img {
         border-radius: 8px;
-          width:300px
+          width:340px
         }
         .going-about-20-minutes {
           margin:auto;
