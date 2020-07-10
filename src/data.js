@@ -206,23 +206,26 @@ export const data = {
       authorization.`,
     },
   },
+  //---------------------------Module7a
   module7a: {
     title3: "Internation Supportt",
     //-------------------------RightContent
     text: {
-      before: `Expanding internationally typically requires significant
+      p1: `Expanding internationally typically requires significant
         resources, time and money. With Connect, you can swiftly expand
         internationally anywhere Stripe operates, without establishing
-        separate local subsidiaries. This includes credit card
+        separate local subsidiaries. 
+        `,
+      p2: `This includes credit card
         processing capabilities in over 30 countries, with charges
-        processed centrally or locally in the recipient’s country, which
-        saves money on fees and improves decline rates. Accept payments
-        in 135+ currencies, pay out in 15+ currencies and present the
-        most relevant payment methods in checkout flows to further
-        optimize conversion rate. All of Connect’s capabilities are
-        supported by Stripe’s core payment functionality, used by
-        millions of businesses and available in over 25 countries.
-        Stripe has 14 global offices, so we can support.`,
+        processed centrally or locally 1407 global offices, so we can support 135+ currencies, pay out in 15+ currencies and present the
+        most relevant optimize conversion rate. All of Connect’s capabilities are
+        supported by Stripe’s core payment in the recipient’s country, which
+        saves money on fees and improves decline rates. Accept payments.`,
+
+      p3: `Imillions of businesses and available in over 25 countries.
+        Stripe has 1407 global offices, so we can sup. Connect’s capabilities are
+        supported by Stripe’s core payment functionality, used by`,
       link1: {
         url: "http://www.google.com",
         text: "marketplaces",
@@ -235,12 +238,12 @@ export const data = {
       between2: "all over the world.",
       link3: {
         url: "#features-list",
-        text: "See the full list of Connect features",
+        text: " See the full list of Connect features.",
       },
-      after: "",
+      after: ``,
     },
-    //-------------------------LeftContent-Box
   },
+  //----------------------------Module7b
   module7b: {
     //-------------------------LeftContent
     title2: "Platform management",

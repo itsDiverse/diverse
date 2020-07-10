@@ -13,7 +13,9 @@ export default props => (
             />
             <h2 className="uppercase-text">{props.data.title3}</h2>
             <p className="common-BodyText">
-              {props.data.text.before}{" "}
+              {props.data.text.p1}
+              <p>{props.data.text.p2}</p>
+              {props.data.text.p3}
               <a href={props.data.text.link1.url} className="common-Link">
                 {props.data.text.link1.text}
               </a>{" "}
@@ -27,10 +29,9 @@ export default props => (
                 className="js-features-list-trigger"
               >
                 {props.data.text.link3.text}
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
-                  <path d="M6 4V0H4v4H0v2h4v4h2V6h4V4H6z"></path>
-                </svg>
-              </a>
+              </a>{" "}
+              <br />
+              {props.data.text.after}
             </p>
           </div>
           <div className="international-support-right-content">
