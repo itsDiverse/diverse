@@ -420,19 +420,7 @@ export const theme = {
   },
   //-------------------------------------Module16v
   module16v: {
-    //---------------------LayoutBackground
-    background: "#fff",
-    backgroundImage: false,
-    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
-    backgroundPosition: "center top",
-    backgroundSize: "100% 100%",
-    blendMode: `screen, difference, lighten`,
-    //---------------------------
-    centerLayout: false,
-    video: true,
-    image: false,
     shadow: true,
-    shadowColor: "rgba(50, 50, 93, 0.9)",
     colors: {
       topTitle: "#6772e5",
       span: {
