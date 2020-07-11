@@ -37,6 +37,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
+        host: "/",
         policy: [{ userAgent: "*", disallow: "/" }],
       },
     },
