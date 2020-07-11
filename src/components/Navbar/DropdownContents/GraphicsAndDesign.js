@@ -11,6 +11,7 @@ export const GraphicsAndDesignDropdown = () => {
       subtitle={graphicsData.subtitle}
       buttonText={graphicsData.buttonText}
       items={graphicsData.items}
+      video={graphicsData.video}
     />
   )
 }

@@ -11,6 +11,7 @@ export const VideoAndAnimationDropdown = () => {
       subtitle={graphicsData.subtitle}
       buttonText={graphicsData.buttonText}
       items={graphicsData.items}
+      video={graphicsData.video}
     />
   )
 }

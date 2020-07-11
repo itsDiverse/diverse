@@ -111,3 +111,5 @@ export const ListItemsRow = styled.div`
   column-count: ${({ columns }) => (columns ? columns : 2)};
   padding: 30px 50px;
 `
+
+export const DropDownVideoPlayer = styled.video``

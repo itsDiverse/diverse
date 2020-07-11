@@ -1,12 +1,13 @@
 export const footerData = [
-  
   /// Diferent section here
 
   {
     title: "Marketing & Writing",
     url: "/",
-    subtitle: "Bring your vision to life with the assistance of one of our artists.",
+    subtitle:
+      "Bring your vision to life with the assistance of one of our artists.",
     buttonText: "All Marketing & Writing Services ",
+    video: "marketing",
     items: [
       {
         title: "Writing Services",
@@ -62,6 +63,7 @@ export const footerData = [
       "Bring Your vision to life with the assistance of one of out artists.",
     buttonText: "All Graphics & Design Services",
     url: "/",
+    video: "graphics",
     items: [
       {
         title: "Web & Mobile",
@@ -121,7 +123,6 @@ export const footerData = [
     ],
   },
 
-
   //Other section here
   {
     title: "Video & Animation",
@@ -129,6 +130,7 @@ export const footerData = [
     subtitle:
       "Bring Your vision to life with the assistance of one of out artists.",
     buttonText: "All Video & Animation Services",
+    video: "animation",
     items: [
       {
         title: "Animation",
@@ -177,6 +179,7 @@ export const footerData = [
       "Bring Your vision to life with the assistance of one of out artists.",
     buttonText: "All Programming & Tech Services",
     url: "/",
+    video: "programming",
     items: [
       {
         title: "Websites",
@@ -189,7 +192,7 @@ export const footerData = [
           { title: "E-Commerce Development", url: "/banner-ads" },
         ],
       },
-     
+
       {
         title: "Software Development",
         url: "/",

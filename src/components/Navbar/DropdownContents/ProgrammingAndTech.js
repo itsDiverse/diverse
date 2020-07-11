@@ -12,6 +12,7 @@ export const ProgrammingAndTechDropdown = () => {
       buttonText={programmingData.buttonText}
       items={programmingData.items}
       columns={1}
+      video={programmingData.video}
     />
   )
 }

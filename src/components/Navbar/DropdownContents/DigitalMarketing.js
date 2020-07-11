@@ -11,6 +11,7 @@ export const DigitalMarketingDropdown = () => {
       subtitle={marketingData.subtitle}
       buttonText={marketingData.buttonText}
       items={marketingData.items}
+      video={marketingData.video}
     />
   )
 }
