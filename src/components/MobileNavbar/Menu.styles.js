@@ -8,7 +8,7 @@ export const StyledMenu = styled.div`
   animation: ${fadeinout} 1s linear forwards;
   padding: 0px;
   margin: 0px;
-  flex: 1 1;
+  flex: 1 1 88vh;
 `
 
 export const StyledMenuFooter = styled.div`

@@ -24,7 +24,7 @@ const MenuCrumbsHome = () => (
 const MenuCrumbs = ({ crumbs, onClickCrumbs, selectedMenu }) => {
   return (
     <StyledMenuCrumbs>
-      {selectedMenu === "" ? (
+      {selectedMenu === "Home" ? (
         <MenuCrumbsHome />
       ) : (
         crumbs &&

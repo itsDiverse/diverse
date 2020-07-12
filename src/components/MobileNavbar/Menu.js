@@ -10,9 +10,9 @@ import { menu } from "./menuData"
 
 const Menu = () => {
   const [crumbs, setCrumbs] = React.useState([{ title: "Home", menu: menu }])
-  const [selectedMenu, setSelectedMenu] = React.useState("")
-  const [headerMenu, setHeaderMenu] = React.useState("")
-  const [actualMenu, setActualMenu] = React.useState(menu)
+  const [selectedMenu, setSelectedMenu] = React.useState("Home")
+  const [headerMenu, setHeaderMenu] = React.useState("Home")
+  const [actualMenu, setActualMenu] = React.useState(menu.items)
 
   const navigate = (menuItem, crumbing = true) => {
     let newMenu = menuItem.items
@@ -44,7 +44,9 @@ const Menu = () => {
         onClickCrumbs={onClickCrumbs}
         selectedMenu={selectedMenu}
       ></MenuCrumbs>
-      {headerMenu !== "" && <StyledMenuHeader>{headerMenu}</StyledMenuHeader>}
+      {headerMenu !== "Home" && (
+        <StyledMenuHeader>{headerMenu}</StyledMenuHeader>
+      )}
       <MenuItems
         menu={actualMenu}
         onClickMenu={menuItem => navigate(menuItem)}
