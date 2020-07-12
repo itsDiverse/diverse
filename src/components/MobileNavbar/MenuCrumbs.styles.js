@@ -1,9 +1,11 @@
 import styled from "styled-components"
 
 export const StyledMenuCrumbs = styled.div`
-  display: flex;
   background: rgb(229, 236, 241);
   overflow-y: scroll;
+  overflow-x: hidden;
+  height: 50px;
+  white-space: nowrap;
 `
 
 export const StyledMenuCrumbsItem = styled.div`
@@ -11,12 +13,13 @@ export const StyledMenuCrumbsItem = styled.div`
   font-size: 12.5px;
   font-weight: 800;
   font-family: sans-serif;
-  display: flex;
   color: #195bb6;
+  display: inline-block;
 
   &:last-child {
     font-weight: 400;
   }
+
   &:not(:last-child):after {
     margin-left: 5px;
     content: " > ";
