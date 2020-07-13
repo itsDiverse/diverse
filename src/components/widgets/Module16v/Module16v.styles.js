@@ -146,6 +146,12 @@ export const StyledContentWrapper = styled.div`
         width: 100%;
         border-radius: 8px;
       }
+      .fraud-Video img {
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        height: 500px;
+      }
       @media (min-width: 670px) {
         .powerful-tools-section {
           display: grid;
@@ -254,6 +260,10 @@ export const StyledContentWrapper = styled.div`
         width: var(--video-width);
         transform-style: preserve-3d;
       }
+      .fraudteams_video img {
+        width: var(--video-width);
+        transform-style: preserve-3d;
+      }
       .fraudteams_video .fraudteams_video_controls-bottom {
         transition: opacity 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
         opacity: 0;
@@ -280,7 +290,20 @@ export const StyledContentWrapper = styled.div`
           20.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6)`
             : "none"};
       }
+      .fraud-Video img {
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: ${props =>
+          props.theme.shadow
+            ? `34.3px 62.5px 125px -25px rgba(50, 50, 93, 0.5),
+          20.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6)`
+            : "none"};
+      }
       .fraud-Video video::-webkit-media-text-track-container {
+        transform: translateY(-40px);
+      }
+      .fraud-Video img::-webkit-media-text-track-container {
         transform: translateY(-40px);
       }
       .fraudteams_video_controls {
@@ -518,6 +541,9 @@ export const StyledContentWrapper = styled.div`
         .fraud-Video video::-webkit-media-text-track-container {
           transform: translateY(-80px);
         }
+        .fraud-Video img::-webkit-media-text-track-container {
+          transform: translateY(-80px);
+        }
         body:not(.keyboard-navigation)
           .fraud-Video--controls-out
           video::-webkit-media-text-track-container {
@@ -547,7 +573,7 @@ export const StyledContentWrapper = styled.div`
           --viewport-width: 1040px;
         }
         .fraudteams_video {
-          width: 800px;
+          width: ${props.theme.rightContentWidth};
           display: inline;
         }
       }
@@ -560,6 +586,7 @@ export const StyledContentWrapper = styled.div`
         .Helm-Tooltip {
           transform: translate3d(-140px, -70px, 0px);
         }
+        margin-top: 100px;
       }
       @media (max-width: 660px) {
         .Helm-Tooltip {
@@ -584,6 +611,11 @@ export const StyledContentWrapper = styled.div`
         }
         .fraud-Video video {
           border-radius: 0px;
+        }
+        .fraud-Video img {
+          border-radius: 0px;
+          height: 300px;
+          margin-top: 100px;
         }
         .powerful-tools-section {
           padding: 0px;
@@ -614,6 +646,11 @@ export const StyledContentWrapper = styled.div`
         }
         .container-lg {
           height: 700px;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .fraud-Video img {
+          margin-top: 200px;
         }
       }
     `}
