@@ -1,5 +1,4 @@
 import React, { useEffect } from "react"
-//import style from "./Module4.module.css"
 import $ from "jquery"
 
 import { StyledContentWrapper } from "./Module4.styles"
@@ -45,20 +44,24 @@ export default props => {
           <div className="powerfultoolssection">
             <div className="powerful-tools-section">
               <div className="powerful-title-section">
-                <h2>{props.data.title}</h2>
-                <p>{props.data.text}</p>
+                <h2>Powerful tools for fraud professionals</h2>
+                <p>
+                  Radar for Fraud Teams helps you fine-tune how Radar operates,
+                  get fraud insights on suspicious charges, and assess your
+                  fraud management performance from a unified dashboard.
+                </p>
                 <div className="powerful-tools-btn">
                   <a
+                    href="#"
                     className="common-button get_started_btn common-Link"
-                    href={props.data.linkLeft}
                   >
-                    {props.data.textLeft}
+                    Get Started
                   </a>
                   <a
-                    href={props.data.linkRight}
+                    href="#"
                     className="common-button contact_sales_btn common-Link"
                   >
-                    {props.data.textRight}
+                    Contact Sales
                   </a>
                 </div>
               </div>
@@ -77,65 +80,66 @@ export default props => {
                         preload="metadata"
                       >
                         <source
-                          src={props.videos.sample}
+                          src={props.videos.sampleVideo}
                           type="video/mp4"
-                        ></source>
+                        />
                         <source
-                          src={props.videos.sample}
+                          src={props.videos.sampleVideo}
                           type="video/ogg"
-                        ></source>
+                        />
                       </video>
-                    </div>
-                    <div className="actualVideo">
-                      <video
-                        className="js-actual-video"
-                        id="Video1"
-                        poster={props.images.posterVideo}
-                        controls
-                        className="opacity: 0"
-                      >
-                        <source
-                          src={props.videos.sample}
-                          type="video/webm"
-                        ></source>
-                        <source
-                          src={props.videos.sample}
-                          type="video/mp4"
-                        ></source>
-                      </video>
-                    </div>
-                    <div className="fraudteams_video_controls">
-                      <button
-                        className="fraudteams_video_toggle js-toggle playbutton-visible"
-                        data-play="Play video"
-                        data-pause="Pause video"
-                      >
-                        <div className="js-play-pulse Hero__pulse"></div>
-                        <div className="Hero__tooltip--play">
-                          <div className="Helm-Tooltip">
-                            <div className="Tooltip">
-                              <div className="Tooltip__icon "></div>
-                              <p
-                                className-name="Tooltip__content"
-                                className="common-BodyText Helm__text--slate1 Tooltip__content"
-                              >
-                                Hear from our cofounders and COO
-                              </p>
-                              <div x-arrow="" className="Tooltip__arrow"></div>
+                      <div className="actualVideo">
+                        <video
+                          className="js-actual-video"
+                          id="Video1"
+                          poster=""
+                        >
+                          <source
+                            src={props.videos.sampleVideo}
+                            type="video/webm"
+                          />
+                          <source
+                            src={props.videos.sampleVideo}
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div className="fraudteams_video_controls">
+                        <button
+                          className="fraudteams_video_toggle js-toggle playbutton-visible"
+                          data-play="Play video"
+                          data-pause="Pause video"
+                        >
+                          <div className="js-play-pulse Hero__pulse"></div>
+                          <div className="Hero__tooltip--play">
+                            <div className="Helm-Tooltip">
+                              <div className="Tooltip">
+                                <div className="Tooltip__icon"></div>
+                                <p
+                                  className-name="Tooltip__content"
+                                  className="common-BodyText Helm__text--slate1 Tooltip__content"
+                                >
+                                  Hear from our cofounders and COO
+                                </p>
+                                <div
+                                  x-arrow=""
+                                  className="Tooltip__arrow"
+                                ></div>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <span className="video_controls-icon">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 32 32"
-                            fill="#555abf"
-                            className="icon--play"
-                          >
-                            <path d="M7.74,31.44C5.67,32.69,4,31.74,4,29.32V2.67C4,.25,5.68-.7,7.74.55L29.56,13.73c2.07,1.25,2.06,3.28,0,4.52Z"></path>
-                          </svg>
-                        </span>
-                      </button>
+                          <span className="video_controls-icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 32 32"
+                              fill="#555abf"
+                              className="icon--play"
+                            >
+                              <path d="M7.74,31.44C5.67,32.69,4,31.74,4,29.32V2.67C4,.25,5.68-.7,7.74.55L29.56,13.73c2.07,1.25,2.06,3.28,0,4.52Z"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>

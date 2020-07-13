@@ -594,6 +594,9 @@ export const StyledContentWrapper = styled.div`
         }
       }
       @media (max-width: 767px) {
+        .powerful-tools-wrapper {
+          padding-top: 0px;
+        }
         .fraudteams_video {
           width: 100%;
           transform: none;

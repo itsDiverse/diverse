@@ -665,26 +665,17 @@ export const data = {
   },
   //-------------------------------------Module 16v
   module16v: {
-    topTitle: "Capital",
-    topSpan: "US only",
+    title: "Powerful tools for fraud professionals",
+    text: `Radar for Fraud Teams helps you fine-tune how Radar operates,
+    get fraud insights on suspicious charges, and assess your
+    fraud management performance from a unified dashboardd.`,
 
-    title: {
-      first: "Get funding",
-      second: "to",
-      third: "manage cash flows",
-    },
-    subtitle: `Stripe Capital provides access to fast, flexible financing
-    for you to grow your business.`,
-    button: {
-      left: {
-        url: "",
-        text: "Start today",
-      },
-      right: {
-        url: "",
-        text: "Learn moree",
-      },
-    },
+    //Buttons
+    textLeft: "Get Started",
+    linkLeft: "https://www.w3schools.com",
+
+    textRight: "Contact Sale",
+    linkRight: "https://www.w3schools.com",
   },
   //-------------------------------------Module 17
   module17: {

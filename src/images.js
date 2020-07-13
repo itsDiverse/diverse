@@ -418,7 +418,7 @@ export const images = {
     icon,
     iconAlt: "",
   },
-  //----------------------------------Module 16
+  //----------------------------------Module 16v
   module16v: {
     icon16v,
     icon16vAlt: "",

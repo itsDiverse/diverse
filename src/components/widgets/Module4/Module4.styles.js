@@ -3,7 +3,8 @@ export const StyledContentWrapper = styled.div`
   ${props =>
     css`
       * {
-        font-family: NovaReg;
+        margin: 0px;
+        padding: 0px;
       }
       body {
         background: #fff;
@@ -39,22 +40,13 @@ export const StyledContentWrapper = styled.div`
       a {
         text-decoration: none;
       }
+      html[lang="ja"] body {
+        font-family: Camphor, Meiryo, Hiragino Sans, sans-serif;
+      }
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
         flex-grow: 1;
-        background-image: ${props =>
-          props.theme.backgroundImage
-            ? `linear-gradient(
-          to bottom,
-          ${props.theme.backgroundGradient}
-        ),
-        url("http://picsum.photos/800/600")`
-            : "none"};
-        background-repeat: no-repeat;
-        background-position: ${props.theme.backgroundPosition};
-        background-size: ${props.theme.backgroundSize};
-        background-blend-mode: ${props.theme.blendMode};
       }
       .container-lg {
         max-width: 1040px;
@@ -78,7 +70,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 34px;
         line-height: 44px;
-        color: ${props.theme.colors.title};
+        color: #32325d;
         margin-bottom: 24px;
         font-weight: 400;
       }
@@ -86,7 +78,7 @@ export const StyledContentWrapper = styled.div`
         font-weight: 400;
         font-size: 19px;
         line-height: 32px;
-        color: ${props.theme.colors.text};
+        color: #525f7f;
       }
       .powerful-tools-btn .common-button {
         white-space: nowrap;
@@ -98,13 +90,13 @@ export const StyledContentWrapper = styled.div`
           0 1px 3px rgba(0, 0, 0, 0.08);
         box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
           0 1px 3px rgba(0, 0, 0, 0.08);
-        background: ${props.theme.buttons.colorRight};
+        background: #fff;
         border-radius: 4px;
         font-size: 15px;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.025em;
-        color: ${props.theme.buttons.textRight};
+        color: #6772e5;
         text-decoration: none;
         -webkit-transition: all 0.15s ease;
         transition: all 0.15s ease;
@@ -115,8 +107,8 @@ export const StyledContentWrapper = styled.div`
       .powerful-tools-btn .get_started_btn {
         margin: 10px 20px;
         margin-left: 0px;
-        background: ${props.theme.buttons.colorLeft};
-        color: ${props.theme.buttons.textLeft};
+        background: #8f6ed5;
+        color: #fff;
       }
       .powerful-tools-btn .common-button:hover {
         -webkit-transform: translateY(-1px);
@@ -478,8 +470,8 @@ export const StyledContentWrapper = styled.div`
         box-shadow: none;
       }
       .powerful-tools-wrapper.visible {
-        background-color: rgba(82, 95, 127, 0.35);
-        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        background-color: rgba(82, 95, 127, 0.85);
+        transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.74);
         z-index: 501;
         position: fixed;
         top: 0;
@@ -605,6 +597,7 @@ export const StyledContentWrapper = styled.div`
         }
         .fraudteams_video-container {
           --viewport-width: 100%;
+          margin-top: -30px;
         }
         .fraudteams--video-playing {
           transform: scale(1);
@@ -616,8 +609,8 @@ export const StyledContentWrapper = styled.div`
         .fraud-teams-media {
           left: 0px;
         }
-        .content-wrapper {
-          background-image: none;
+        .container-lg {
+          height: 700px;
         }
       }
     `}

@@ -34,27 +34,6 @@ import { videos } from "../videos"
 
 export default () => (
   <>
-    <h1>#16v</h1>
-    <Module16v
-      theme={theme.module16v}
-      data={data.module16v}
-      images={images.module16v}
-      videos={videos.module4}
-    />
-    <hr></hr>
-    <h1>#4</h1>
-    <Module4
-      theme={theme.module4}
-      data={data.module4}
-      images={images.module4}
-      videos={videos.module4}
-    />
-    <hr></hr>
-    <Module7b
-      theme={theme.module7b}
-      data={data.module7b}
-      images={images.module7b}
-    />
     <hr></hr>
     <h1>#20</h1>
     <Module20

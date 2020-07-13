@@ -9,25 +9,25 @@ export default props => (
         <div className="powerfultoolssection">
           <div className="powerful-tools-section">
             <div className="powerful-title-section">
-              <h2>Lorem Ipsum performance</h2>
-              <p>
-                Radar for Fraud Teams helps you fine-tune how Radar operates,
-                get fraud insights on suspicious charges, and assess your fraud
-                management performance from a unified dashboard.
-              </p>
+              <h2>{props.data.title}</h2>
+              <p>{props.data.text}</p>
               <div className="powerful-tools-btn">
-                <a
-                  href="#"
-                  className="common-button get_started_btn common-Link"
-                >
-                  Get Started
-                </a>
-                <a
-                  href="#"
-                  className="common-button contact_sales_btn common-Link"
-                >
-                  Contact Sales
-                </a>
+                {props.data.textLeft && (
+                  <a
+                    href={props.data.linkLeft}
+                    className="common-button get_started_btn common-Link"
+                  >
+                    {props.data.textLeft}
+                  </a>
+                )}
+                {props.data.textRight && (
+                  <a
+                    href={props.data.linkRight}
+                    className="common-button contact_sales_btn common-Link"
+                  >
+                    {props.data.textRight}
+                  </a>
+                )}
               </div>
             </div>
             <div className="fraud-teams-media">
@@ -55,7 +55,10 @@ export default props => (
                         ></source>
                       </video>
                     ) : (
-                      <img src="http://picsum.photos/500/700" alt=""></img>
+                      <img
+                        src={props.images.image16v}
+                        alt={props.images.image16vAlt}
+                      ></img>
                     )}
                     <div className="actualVideo">
                       {props.theme.video ? (
@@ -63,7 +66,7 @@ export default props => (
                           className="js-actual-video"
                           id="Video1"
                           poster=""
-                          autoplay="true"
+                          autoplay=""
                           loop
                         >
                           <source
@@ -78,7 +81,8 @@ export default props => (
                       ) : (
                         <img
                           className="js-actual-video"
-                          src="http://picsum.photos/500/700"
+                          src={props.images.image16v}
+                          alt={props.images.image16vAlt}
                         ></img>
                       )}
                     </div>

@@ -420,7 +420,7 @@ export const theme = {
   },
   //-------------------------------------Module16v
   module16v: {
-    video: false,
+    video: true,
     shadow: false,
     rightContentWidth: "700px",
     colors: {
