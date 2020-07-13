@@ -600,6 +600,7 @@ export const StyledContentWrapper = styled.div`
         }
         .fraudteams_video-container {
           --viewport-width: 100%;
+          margin-top: -50px;
         }
         .fraudteams--video-playing {
           transform: scale(1);
@@ -610,6 +611,9 @@ export const StyledContentWrapper = styled.div`
         }
         .fraud-teams-media {
           left: 0px;
+        }
+        .container-lg {
+          height: 700px;
         }
       }
     `}
