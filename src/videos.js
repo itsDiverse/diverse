@@ -19,4 +19,11 @@ export const videos = {
     sample,
     sample2,
   },
+  //----------------------------------Module 16v
+  module16v: {
+    sampleVideo,
+    playIcon,
+    sample,
+    sample2,
+  },
 }
