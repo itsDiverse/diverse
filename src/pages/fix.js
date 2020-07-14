@@ -34,11 +34,17 @@ import { videos } from "../videos"
 
 export default () => (
   <>
-    <h1>Module22</h1>
-    <Module22
-      theme={theme.module22}
-      data={data.module22}
-      images={images.module22}
+    <Module16v
+      theme={theme.module16v}
+      data={data.module16v}
+      images={images.module16v}
+      videos={videos.module16v}
+    />
+    <h1>Module15</h1>
+    <Module15
+      theme={theme.module15}
+      data={data.module15}
+      images={images.module15}
     />
   </>
 )

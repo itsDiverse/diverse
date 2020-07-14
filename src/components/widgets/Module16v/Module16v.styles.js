@@ -285,10 +285,7 @@ export const StyledContentWrapper = styled.div`
         width: 100%;
         border-radius: 8px;
         box-shadow: ${props =>
-          props.theme.shadow
-            ? `34.3px 62.5px 125px -25px rgba(50, 50, 93, 0.5),
-          20.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6)`
-            : "none"};
+          props.theme.shadow ? `${props.theme.shadowColor}` : "none"};
       }
       .fraud-Video img {
         display: block;
@@ -650,10 +647,10 @@ export const StyledContentWrapper = styled.div`
         .container-lg {
           height: 700px;
         }
-      }
-      @media (min-width: 768px) and (max-width: 1024px) {
-        .fraud-Video img {
-          margin-top: 200px;
+        @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) {
+          .fraudteams_video-container {
+            --viewport-width: 100%;
+            margin-top: -200px;
         }
       }
     `}

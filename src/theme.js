@@ -421,7 +421,9 @@ export const theme = {
   //-------------------------------------Module16v
   module16v: {
     video: true,
-    shadow: false,
+    shadow: true,
+    shadowColor: `34.3px 62.5px 125px -25px rgba(50, 50, 93, 0.1),
+    20.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6)`,
     rightContentWidth: "700px",
     colors: {
       topTitle: "#6772e5",
@@ -555,7 +557,7 @@ export const theme = {
   module22: {
     //---------------------LayoutBackground
     background: "#fff",
-    backgroundImage: true,
+    backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
     backgroundSize: "100% 100%",
