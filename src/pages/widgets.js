@@ -15,11 +15,10 @@ import { Module9 } from "../components/widgets/Module9"
 import { Module10 } from "../components/widgets/Module10"
 import { Module11 } from "../components/widgets/Module11"
 import { Module11a } from "../components/widgets/Module11a"
-import { Module12 } from "../components/widgets/Module12"
 import { Module13 } from "../components/widgets/Module13"
 import { Module14 } from "../components/widgets/Module14"
 import { Module15 } from "../components/widgets/Module15"
-import { Module16 } from "../components/widgets/Module16"
+import { Module16v } from "../components/widgets/Module16v"
 import { Module17 } from "../components/widgets/Module17"
 import { Module18 } from "../components/widgets/Module18"
 import { Module19 } from "../components/widgets/Module19"
@@ -164,6 +163,14 @@ export default () => (
       images={images.module15}
     />
     <hr></hr>
+    <h1>#16v</h1>
+    <Module16v
+      theme={theme.module16v}
+      data={data.module16v}
+      images={images.module16v}
+      videos={videos.module4}
+    />
+    <hr></hr>
     <h1>#17</h1>
     <Module17
       theme={theme.module17}
@@ -182,6 +189,13 @@ export default () => (
       images={images.module19}
       data={data.module19}
       theme={theme.module19}
+    />
+    <hr></hr>
+    <h1>#20</h1>
+    <Module20
+      theme={theme.module20}
+      data={data.module20}
+      images={images.module20}
     />
     <hr></hr>
     <h1>#21</h1>

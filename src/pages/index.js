@@ -1,14 +1,7 @@
 import React from "react"
 
 import { Layout } from "../components"
-import {
-  Module16v,
-  Module13,
-  Module14,
-  Module15,
-  Module9,
-  Module19,
-} from "../components/widgets"
+import { Module20, Module14, Module15, Module9 } from "../components/widgets"
 
 import { theme } from "../theme"
 import { data } from "../data"
@@ -17,6 +10,11 @@ import { videos } from "../videos"
 
 export default props => (
   <Layout>
+    <Module20
+      theme={theme.module20}
+      data={data.module20}
+      images={images.module20}
+    />
     <Module9
       images={images.module9}
       data={data.module9}
@@ -27,26 +25,11 @@ export default props => (
       data={data.module15}
       images={images.module15}
     />
-    <Module16v
-      theme={theme.module16v}
-      data={data.module16v}
-      images={images.module16v}
-      videos={videos.module4}
-    />
+
     <Module14
       theme={theme.module14}
       data={data.module14}
       images={images.module14}
-    />
-    <Module13
-      images={images.module13}
-      data={data.module13}
-      theme={theme.module13}
-    />
-    <Module19
-      images={images.module19}
-      data={data.module19}
-      theme={theme.module19}
     />
   </Layout>
 )
