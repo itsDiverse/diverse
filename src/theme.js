@@ -424,7 +424,8 @@ export const theme = {
     shadow: true,
     shadowColor: `34.3px 62.5px 125px -25px rgba(50, 50, 93, 0.1),
     20.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6)`,
-    rightContentWidth: "700px",
+    skew: "0.01rad",
+    reverseSectionOrder: true,
     colors: {
       topTitle: "#6772e5",
       span: {
