@@ -1,21 +1,20 @@
 import React, { useEffect, useState } from "react"
-import { CSSTransition } from "react-transition-group"
+import Typing from "react-typing-animation"
 
 import { StyledContentWrapper } from "./Module16.styles"
 
 const AnimatedText = ({ texts, className }) => {
-  const [index, setIndex] = useState(0)
-  const [actualText, setText] = useState(texts[index] || "go coding")
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex(Math.floor(Math.random() * texts.length))
-      setText(texts[index])
-    }, 2000)
-    return () => clearTimeout(timer)
-  }, [index, texts])
-
-  return <h2 className={className}>{actualText}</h2>
+  return (
+    <Typing loop speed={50}>
+      {texts.map(text => (
+        <>
+          <span>{text}</span>
+          <Typing.Delay ms={Math.ceil(Math.random() * 1000)} />
+          <Typing.Backspace count={text.length} />
+        </>
+      ))}
+    </Typing>
+  )
 }
 
 export default props => {
@@ -42,18 +41,10 @@ export default props => {
                 <div class="get-funding-text-rotate">
                   <h2>{props.data.title.first}</h2>
                   <h2>
-                    <CSSTransition
-                      timeout={{ enter: 100, exit: 400 }}
-                      classNames="fade"
-                      transitionName="example"
-                      transitionEnterTimeout={100}
-                      transitionLeaveTimeout={100}
-                    >
-                      <AnimatedText
-                        className="rotate"
-                        texts={props.data.texts}
-                      ></AnimatedText>
-                    </CSSTransition>
+                    <AnimatedText
+                      className="rotate"
+                      texts={props.data.texts}
+                    ></AnimatedText>
                   </h2>
                 </div>
                 <div class="get-funding-content-bottom">

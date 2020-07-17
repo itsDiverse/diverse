@@ -25,7 +25,7 @@
     "react-flip-toolkit": "^7.0.10",
     "react-helmet": "^5.2.1",
     "react-responsive": "^8.1.0",
-    "react-transition-group": "^4.4.1",
+    "react-typing-animation": "^1.6.2",
     "styled-components": "^4.4.1",
     "typography": "^0.16.19"
   },
