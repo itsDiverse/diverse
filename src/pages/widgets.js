@@ -18,6 +18,7 @@ import { Module11a } from "../components/widgets/Module11a"
 import { Module13 } from "../components/widgets/Module13"
 import { Module14 } from "../components/widgets/Module14"
 import { Module15 } from "../components/widgets/Module15"
+import { Module16 } from "../components/widgets/Module16"
 import { Module16v } from "../components/widgets/Module16v"
 import { Module17 } from "../components/widgets/Module17"
 import { Module18 } from "../components/widgets/Module18"
@@ -161,6 +162,14 @@ export default () => (
       theme={theme.module15}
       data={data.module15}
       images={images.module15}
+    />
+    <hr></hr>
+    <h1>#16</h1>
+    <Module16
+      theme={theme.module16}
+      data={data.module16}
+      images={images.module16}
+      videos={videos.module16}
     />
     <hr></hr>
     <h1>#16v</h1>

@@ -60,7 +60,12 @@ export const StyledContentWrapper = styled.div`
         padding: 0px;
         width: 100%;
       }
+      .content-sections{ 
+       
+      }
       .get-funding-section {
+        display: flex;
+        flex: 1;
         padding: 150px 20px 160px;
         margin: 0 auto 120px;
         background-color: #f6f9fc;
@@ -68,9 +73,19 @@ export const StyledContentWrapper = styled.div`
       .get-funding-content-wrapper {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        flex: 1;
+        @media (min-width: 670px) {
+          flex-direction: row;
+        }
+      
       }
       .get-funding-content-wrapper .get-funding-content {
-        flex-basis: 100%;
+        flex: 1;
+      }
+      .get-funding-content-wrapper .get-funding-content-media {
+        flex: 1;
+        background: red;
       }
       .get-funding-title-section figure {
         margin-right: 16px;
@@ -178,9 +193,30 @@ export const StyledContentWrapper = styled.div`
         font-size: 28px;
         line-height: 40px;
       }
-      .get-funding-text-rotate h2 span {
+     
+      .get-funding-text-rotate  .rotate {
         color: ${props.theme.colors.title.first};
+        transition: opacity 1s easin;
       }
+
+      .example-enter {
+        opacity: 0.01;
+      }
+      
+      .example-enter.example-enter-active {
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+      }
+      
+      .example-leave {
+        opacity: 1;
+      }
+      
+      .example-leave.example-leave-active {
+        opacity: 0.01;
+        transition: opacity 300ms ease-in;
+      }
+
       .video-display {
         xflex-basis: 46%;
         transform: skew(0.1rad);
@@ -223,6 +259,12 @@ export const StyledContentWrapper = styled.div`
         .get-funding-title-section figure {
           margin-left: -20px;
         }
+      }
+
+      .media-section {
+        display: flex;
+        flex: 1;
+        background: "red";
       }
     `}
 `

@@ -30,64 +30,32 @@ export default props => (
                 )}
               </div>
             </div>
-            <div className="fraud-teams-media">
-              <div className="fraudteams_video-container">
-                <div className="fraudteams_video">
-                  <div className="fraud-Video">
-                    {props.theme.video ? (
-                      <video
-                        muted=""
-                        playsinline=""
-                        autoplay=""
-                        webkit-playsinline=""
-                        loop=""
-                        id="demovideo"
-                        poster=""
-                        preload="metadata"
-                      >
-                        <source
-                          src={props.videos.sample2}
-                          type="video/mp4"
-                        ></source>
-                        <source
-                          src={props.videos.sample2}
-                          type="video/ogg"
-                        ></source>
-                      </video>
-                    ) : (
-                      <img
-                        src={props.images.image16v}
-                        alt={props.images.image16vAlt}
-                      ></img>
-                    )}
-                    <div className="actualVideo">
-                      {props.theme.video ? (
-                        <video
-                          className="js-actual-video"
-                          id="Video1"
-                          poster=""
-                          autoplay=""
-                          loop
-                        >
-                          <source
-                            src={props.videos.sample2}
-                            type="video/webm"
-                          ></source>
-                          <source
-                            src={props.videos.sample2}
-                            type="video/mp4"
-                          ></source>
-                        </video>
-                      ) : (
-                        <img
-                          className="js-actual-video"
-                          src={props.images.image16v}
-                          alt={props.images.image16vAlt}
-                        ></img>
-                      )}
-                    </div>
-                  </div>
-                </div>
+            <div className="video-container">
+              <div className="actualVideo">
+                {props.theme.video ? (
+                  <video
+                    className="js-actual-video"
+                    id="Video1"
+                    poster=""
+                    autoplay=""
+                    loop
+                  >
+                    <source
+                      src={props.videos.sample2}
+                      type="video/webm"
+                    ></source>
+                    <source
+                      src={props.videos.sample2}
+                      type="video/mp4"
+                    ></source>
+                  </video>
+                ) : (
+                  <img
+                    className="js-actual-video"
+                    src={props.images.image16v}
+                    alt={props.images.image16vAlt}
+                  ></img>
+                )}
               </div>
             </div>
           </div>

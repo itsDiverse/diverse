@@ -646,10 +646,9 @@ export const data = {
     topSpan: "US only",
 
     title: {
-      first: "Get funding",
-      second: "to",
-      third: "manage cash flows",
+      first: "First phrase to",
     },
+    texts: ["go climbing", "go fishing", "go biking", "go coding", "go eating"],
     subtitle: `Stripe Capital provides access to fast, flexible financing
     for you to grow your business.`,
     button: {

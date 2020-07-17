@@ -1,37 +1,24 @@
-import React, { useEffect } from "react"
-import $ from "jquery"
+import React, { useEffect, useState } from "react"
+import { CSSTransition } from "react-transition-group"
 
 import { StyledContentWrapper } from "./Module16.styles"
 
-export default props => {
-  useEffect(() => {
-    if ($) {
-      /*
-      TODO: dynamo is a jquery plugin lets find a way to use it. 
-      $("#container1").dynamo({
-        speed: 500,
-        delay: 3000,
-        lines: ["for your", "to", "for your", "to"],
-        callback: function() {
-          console.log("callback works!")
-        },
-      })
-      $("#container2").dynamo({
-        speed: 500,
-        delay: 3000,
-        lines: [
-          "marketing campaign",
-          "expand your inventory",
-          "next hire",
-          "manage cash flows",
-        ],
-        callback: function() {
-          console.log("callback works!")
-        },
-      })*/
-    }
-  }, [])
+const AnimatedText = ({ texts, className }) => {
+  const [index, setIndex] = useState(0)
+  const [actualText, setText] = useState(texts[index] || "go coding")
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex(Math.floor(Math.random() * texts.length))
+      setText(texts[index])
+    }, 2000)
+    return () => clearTimeout(timer)
+  }, [index, texts])
+
+  return <h2 className={className}>{actualText}</h2>
+}
+
+export default props => {
   return (
     <StyledContentWrapper theme={props.theme} data={props.data}>
       <div class="content-wrapper">
@@ -53,12 +40,20 @@ export default props => {
                   <span class="background-blue">{props.data.topSpan}</span>
                 </div>
                 <div class="get-funding-text-rotate">
+                  <h2>{props.data.title.first}</h2>
                   <h2>
-                    {props.data.title.first}{" "}
-                    <span id="container1">{props.data.title.second}</span>
-                  </h2>
-                  <h2>
-                    <span id="container2">{props.data.title.third}</span>
+                    <CSSTransition
+                      timeout={{ enter: 100, exit: 400 }}
+                      classNames="fade"
+                      transitionName="example"
+                      transitionEnterTimeout={100}
+                      transitionLeaveTimeout={100}
+                    >
+                      <AnimatedText
+                        className="rotate"
+                        texts={props.data.texts}
+                      ></AnimatedText>
+                    </CSSTransition>
                   </h2>
                 </div>
                 <div class="get-funding-content-bottom">
@@ -73,6 +68,7 @@ export default props => {
                   </div>
                 </div>
               </div>
+              <div class="get-funding-content-media">video or image</div>
             </div>
           </div>
         </div>
