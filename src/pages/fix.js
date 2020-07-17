@@ -19,7 +19,7 @@ import { Module12 } from "../components/widgets/Module12"
 import { Module13 } from "../components/widgets/Module13"
 import { Module14 } from "../components/widgets/Module14"
 import { Module15 } from "../components/widgets/Module15"
-import { Module16v } from "../components/widgets/Module16v"
+import { Module16 } from "../components/widgets/Module16"
 import { Module17 } from "../components/widgets/Module17"
 import { Module18 } from "../components/widgets/Module18"
 import { Module19 } from "../components/widgets/Module19"
@@ -34,17 +34,11 @@ import { videos } from "../videos"
 
 export default () => (
   <>
-    <Module16v
-      theme={theme.module16v}
-      data={data.module16v}
-      images={images.module16v}
-      videos={videos.module16v}
-    />
-    <h1>Module15</h1>
-    <Module15
-      theme={theme.module15}
-      data={data.module15}
-      images={images.module15}
+    <Module16
+      theme={theme.module16}
+      data={data.module16}
+      images={images.module16}
+      videos={videos.module16}
     />
   </>
 )

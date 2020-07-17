@@ -38,6 +38,7 @@ export default props => (
                     id="Video1"
                     poster=""
                     autoplay=""
+                    muted
                     loop
                   >
                     <source
