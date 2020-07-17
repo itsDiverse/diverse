@@ -1,9 +1,23 @@
 import React from "react"
-
+import Sky from "react-sky"
+import myImage from "../../../images/triangle.png"
+import myImage2 from "../../../images/square.png"
+import myImage3 from "../../../images/circle.png"
 import { StyledContentWrapper } from "./Module16v.styles"
 
 export default props => (
   <StyledContentWrapper theme={props.theme}>
+    <Sky
+      images={{
+        0: myImage,
+        1: myImage2,
+        2: myImage3,
+      }}
+      how={10} /* Pass the number of images Sky will render chosing randomly */
+      time={20} /* time of animation */
+      size={"25px"} /* size of the rendered images */
+      background={""} /* color of background */
+    />
     <div className="content-wrapper powerful-tools-wrapper">
       <div className="container-lg">
         <div className="powerfultoolssection">
