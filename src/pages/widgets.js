@@ -201,11 +201,7 @@ export default () => (
     />
     <hr></hr>
     <h1>#20</h1>
-    <Module20
-      theme={theme.module20}
-      data={data.module20}
-      images={images.module20}
-    />
+
     <hr></hr>
     <h1>#21</h1>
     <Module21

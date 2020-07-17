@@ -132,7 +132,8 @@ export const StyledContentWrapper = styled.div`
       }
       .js-actual-video {
         border-radius: 8px;
-        box-shadow: ${props.theme.shadowColor};
+        box-shadow: ${props =>
+          props.theme.shadow ? `${props.theme.shadowColor}` : "none"};
         transform: skew(${props.theme.skew});
       }
       .actualVideo img {

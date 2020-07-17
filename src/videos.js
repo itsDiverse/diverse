@@ -1,6 +1,6 @@
 //import videos ++++++++++++
 import sample from "./videos/sample.mp4"
-import sample2 from "./videos/A_Web_Programming_02_1.mp4"
+import sample2 from "./videos/A_Web_Programming_1.mp4"
 import sampleVideo from "./videos/samplevideo.mp4"
 import playIcon from "./images/Module2/play.svg"
 //++++++++++++++++++++++++++++++++++++
