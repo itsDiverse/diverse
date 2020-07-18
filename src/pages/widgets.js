@@ -25,7 +25,6 @@ import { Module18 } from "../components/widgets/Module18"
 import { Module19 } from "../components/widgets/Module19"
 import { Module20 } from "../components/widgets/Module20"
 import { Module21 } from "../components/widgets/Module21"
-import { Module22 } from "../components/widgets/Module22"
 
 import { theme } from "../theme"
 import { data } from "../data"
