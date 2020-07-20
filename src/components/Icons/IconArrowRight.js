@@ -11,7 +11,7 @@ export const IconArrowRight = () => (
     <path
       d="M1.4001 1L5.6001 4.62963L1.4001 8"
       stroke="#969696"
-      stroke-width="1.5"
+      strokeWidth="1.5"
     />
   </svg>
 )

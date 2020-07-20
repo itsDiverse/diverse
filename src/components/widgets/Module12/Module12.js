@@ -10,42 +10,42 @@ export default props => (
         <div class="container-xl">
           <div class="section-logos-wrapper">
             <div>
-              <a href="#">
+              <a href="https://www.w3schools.com/">
                 <span class="Logo-opentable">OpenTable</span>
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="https://www.w3schools.com/">
                 <span class="Logo-blueapron">Blue Apron</span>
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="https://www.w3schools.com/">
                 <span class="Logo-goodeggs">Good Eggs</span>
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="https://www.w3schools.com/">
                 <span class="Logo-under-armour">Under Armour</span>
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="https://www.w3schools.com/">
                 <span class="Logo-target">Target</span>
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="https://www.w3schools.com/">
                 <span class="Logo-warby-parker">Warby Parker</span>
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="https://www.w3schools.com/">
                 <span class="Logo-wish">Wish</span>
               </a>
             </div>
             <div>
-              <a href="#">
+              <a href="https://www.w3schools.com/">
                 <span class="Logo-shopstyle">ShopStyle</span>
               </a>
             </div>

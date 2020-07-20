@@ -45,19 +45,19 @@ export const MobileFooterSections = () => (
     <DropDown icon_expand="+" icon_expanded="-" title="OUR COMPANY">
       <StyledDropDownItemsContainer>
         <StyledDropDownItem>
-          <Link>About Us</Link>
+          <Link to="/">About Us</Link>
         </StyledDropDownItem>
         <StyledDropDownItem>
-          <Link>Privacy Policy</Link>
+          <Link to="/">Privacy Policy</Link>
         </StyledDropDownItem>
         <StyledDropDownItem>
-          <Link>Free Proposal</Link>
+          <Link to="/">Free Proposal</Link>
         </StyledDropDownItem>
         <StyledDropDownItem>
-          <Link>Terms</Link>
+          <Link to="/">Terms</Link>
         </StyledDropDownItem>
         <StyledDropDownItem>
-          <Link>Careers</Link>
+          <Link to="/">Careers</Link>
         </StyledDropDownItem>
       </StyledDropDownItemsContainer>
     </DropDown>
@@ -65,13 +65,13 @@ export const MobileFooterSections = () => (
     <DropDown icon_expand="+" icon_expanded="-" title="RESOURCES">
       <StyledDropDownItemsContainer>
         <StyledDropDownItem>
-          <Link>FAQs</Link>
+          <Link to="/">FAQs</Link>
         </StyledDropDownItem>
         <StyledDropDownItem>
-          <Link>Blog</Link>
+          <Link to="/">Blog</Link>
         </StyledDropDownItem>
         <StyledDropDownItem>
-          <Link>Client Login</Link>
+          <Link to="/">Client Login</Link>
         </StyledDropDownItem>
       </StyledDropDownItemsContainer>
     </DropDown>

@@ -42,18 +42,20 @@ export const FooterHeader = () => {
 
       <StyledDropwdownArea visible={expanded}>
         <StyledDropdDownContent>
-          {footerData.map(section => (
-            <StyledSection>
+          {footerData.map((section, index) => (
+            <StyledSection key={`section-${index}`}>
               <StyledSectionTitle>{section.title}</StyledSectionTitle>
               <StyledSectionRow elements={section.items.length}>
-                {section.items.map(subsection => (
-                  <StyledSubsection>
+                {section.items.map((subsection, index) => (
+                  <StyledSubsection key={`section-${index}`}>
                     <StyledSubsectionTitle>
                       {subsection.title}
                     </StyledSubsectionTitle>
                     <StyledSubsectionItems elements={subsection.items.length}>
-                      {subsection.items.map(item => (
-                        <StyledItemTitle>{item.title}</StyledItemTitle>
+                      {subsection.items.map((item, index) => (
+                        <StyledItemTitle key={`section-${index}`}>
+                          {item.title}
+                        </StyledItemTitle>
                       ))}
                     </StyledSubsectionItems>
                   </StyledSubsection>

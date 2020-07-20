@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import Typing from "react-typing-animation"
 
 import { StyledContentWrapper } from "./Module16.styles"

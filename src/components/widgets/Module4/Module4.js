@@ -52,13 +52,13 @@ export default props => {
                 </p>
                 <div className="powerful-tools-btn">
                   <a
-                    href="#"
+                    href={props.data.linkLeft}
                     className="common-button get_started_btn common-Link"
                   >
                     Get Started
                   </a>
                   <a
-                    href="#"
+                    href={props.data.linkRight}
                     className="common-button contact_sales_btn common-Link"
                   >
                     Contact Sales

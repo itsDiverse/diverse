@@ -8,9 +8,9 @@ import art4 from "../../images/art4.png"
 
 export const FooterCerts = () => (
   <StyledCerts>
-    <img src={art4} />
-    <img src={art3} />
-    <img src={art2} />
-    <img src={art1} />
+    <img src={art4} alt="" />
+    <img src={art3} alt="" />
+    <img src={art2} alt="" />
+    <img src={art1} alt="" />
   </StyledCerts>
 )

@@ -48,7 +48,7 @@ export const StyledSection = styled.div`
   flex: 1;
 `
 
-export const StyledSectionTitle = styled(props => <Link {...props} />)`
+export const StyledSectionTitle = styled(props => <Link to="/" {...props} />)`
   padding: 5px 0px;
   font-weight: bold;
   font-size: 17px;
@@ -67,7 +67,9 @@ export const StyledSubsection = styled.div`
   padding-top: 5px;
 `
 
-export const StyledSubsectionTitle = styled(props => <Link {...props} />)`
+export const StyledSubsectionTitle = styled(props => (
+  <Link to="/" {...props} />
+))`
   font-family: NovaBold;
   font-style: normal;
   font-weight: bold;
@@ -82,7 +84,7 @@ export const StyledSubsectionItems = styled.div`
     elements > 5 ? Math.ceil(elements / 5) : 1};
 `
 
-export const StyledItemTitle = styled(props => <Link {...props} />)`
+export const StyledItemTitle = styled(props => <Link to="/" {...props} />)`
   display: flex;
   flex: 1;
   font-family: NovaReg;

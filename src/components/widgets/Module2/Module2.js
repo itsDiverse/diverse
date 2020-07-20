@@ -6,7 +6,7 @@ export default props => {
   useEffect(() => {
     $(document).ready(function() {
       var $slides = $(".logos li") //Save repeated selector result.
-      var slideslength = $slides.length
+      //var slideslength = $slides.length
       var length = $slides.length - 1 //size is deprecated
       var curren = 0
       var setzero = 0

@@ -37,7 +37,7 @@ export default props => (
                     className="js-actual-video"
                     id="Video1"
                     poster=""
-                    autoplay=""
+                    autoPlay=""
                     muted
                     loop
                   >

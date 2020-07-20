@@ -15,7 +15,7 @@ import imageQuadBox4 from "../images/QuadBox/box4.svg"
 import titleImg from "../images/Module8/img1.svg"
 import logoBox from "../images/Module8/docusign.svg"
 import rightImage from "../images/Module8/imgRight.png"
-import imageBox from "../images/Module8/imgRight.png"
+//import imageBox from "../images/Module8/imgRight.png"
 import imageBoxLeft from "../images/Module8/imageBox.jpg"
 //++++++++++++++++++++++++++++++++++++
 

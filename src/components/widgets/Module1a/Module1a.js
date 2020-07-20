@@ -29,7 +29,7 @@ export default props => (
             <img src={props.images.m1aLogo7} alt={props.images.logo7Alt} />
           </li>
         </ul>
-        <a href="#">
+        <a href={props.data.link}>
           <span className="common-BodyText link-arrow">
             Millions of tech-forward businesses use Stripe to power
             theirpayments

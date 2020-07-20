@@ -23,7 +23,6 @@ import { Module16v } from "../components/widgets/Module16v"
 import { Module17 } from "../components/widgets/Module17"
 import { Module18 } from "../components/widgets/Module18"
 import { Module19 } from "../components/widgets/Module19"
-import { Module20 } from "../components/widgets/Module20"
 import { Module21 } from "../components/widgets/Module21"
 
 import { theme } from "../theme"

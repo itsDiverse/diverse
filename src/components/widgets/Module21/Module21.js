@@ -30,7 +30,7 @@ export default props => (
                   <path
                     d="M1,1 L1,1001"
                     stroke="#87BBFD"
-                    stroke-width="2"
+                    strokeWidth="2"
                     stroke-dasharray="2 8"
                   ></path>
                 </svg>
@@ -50,7 +50,7 @@ export default props => (
                     <g
                       id="incorporation"
                       stroke="none"
-                      stroke-width="1"
+                      strokeWidth="1"
                       fill="none"
                       fill-rule="evenodd"
                     >
@@ -155,7 +155,7 @@ export default props => (
                     <g
                       id="protection"
                       stroke="none"
-                      stroke-width="1"
+                      strokeWidth="1"
                       fill="none"
                       fill-rule="evenodd"
                     >
@@ -261,7 +261,7 @@ export default props => (
                     <g
                       id="card-management"
                       stroke="none"
-                      stroke-width="1"
+                      strokeWidth="1"
                       fill="none"
                       fill-rule="evenodd"
                     >
@@ -367,7 +367,7 @@ export default props => (
                     <g
                       id="messaging"
                       stroke="none"
-                      stroke-width="1"
+                      strokeWidth="1"
                       fill="none"
                       fill-rule="evenodd"
                     >
@@ -539,7 +539,7 @@ export default props => (
                     <g
                       id="machine-learning"
                       stroke="none"
-                      stroke-width="1"
+                      strokeWidth="1"
                       fill="none"
                       fill-rule="evenodd"
                     >

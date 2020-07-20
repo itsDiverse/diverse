@@ -54,10 +54,12 @@ export const GenericDropdownContainer = ({
           <DropdownButton href="/">{buttonText}</DropdownButton>
         </ListPrimary>
         <ListItemsRow columns={columns}>
-          {items.map(item => (
-            <ListSection>
-              <ListItemTitle>{item.title}</ListItemTitle>
-              {item.items.map(subitem => (
+          {items.map((item, index) => (
+            <ListSection key={`section-${index}`}>
+              <ListItemTitle key={`section-${index}`}>
+                {item.title}
+              </ListItemTitle>
+              {item.items.map((subitem, index) => (
                 <ListItem>{subitem.title}</ListItem>
               ))}
             </ListSection>

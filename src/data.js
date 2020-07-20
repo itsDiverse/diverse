@@ -40,6 +40,7 @@ export const data = {
   //-------------------------------------Module1a
   module1a: {
     title: "",
+    link: "https://www.w3schools.com/",
   },
 
   //-------------------------------------Module 2
@@ -373,8 +374,8 @@ export const data = {
 
     //--------Links Left Images
     link1: "http://www.google.com",
-    link2: "",
-    link3: "",
+    link2: "http://www.google.com",
+    link3: "http://www.google.com",
 
     //--------Right Section
     title1: "Applications",
@@ -844,4 +845,10 @@ export const data = {
     },
   },
   //-------------------------------------Module 22
+  module22: {
+    link1: "",
+    link2: "",
+    link3: "",
+    link4: "",
+  },
 }

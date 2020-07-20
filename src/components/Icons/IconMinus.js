@@ -8,6 +8,6 @@ export const IconMinus = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M0 4.5H9M4.5 9L4.5 0" stroke="#707070" stroke-width="2.3" />
+    <path d="M0 4.5H9M4.5 9L4.5 0" stroke="#707070" strokeWidth="2.3" />
   </svg>
 )

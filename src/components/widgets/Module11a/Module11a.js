@@ -26,7 +26,7 @@ export default props => (
               <div className="marketplaces-quote-wrapper">
                 <div className="marketplaces-quote Quote--lyft">
                   <h2>
-                    <a href="#">
+                    <a href={props.data.linkBoxLogo}>
                       <img
                         src={props.images.m11aBannerLogo}
                         alt={props.images.m11aBannerLogoAlt}

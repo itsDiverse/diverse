@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 import { StyledContentWrapper } from "./Module22.styles"
 
@@ -29,7 +29,10 @@ export default props => (
                   </div>
                 </div>
                 <div className="web_nav_content">
-                  <img src={props.images.sliderImg1}></img>
+                  <img
+                    src={props.images.sliderImg1}
+                    alt={props.images.sliderImg1Alt}
+                  ></img>
                 </div>
               </div>
             </div>
@@ -54,7 +57,10 @@ export default props => (
                   </div>
                 </div>
                 <div className="web_nav_content">
-                  <img src={props.images.sliderImg2}></img>
+                  <img
+                    src={props.images.sliderImg2}
+                    alt={props.images.sliderImg2Alt}
+                  ></img>
                 </div>
               </div>
             </div>
@@ -79,7 +85,10 @@ export default props => (
                   </div>
                 </div>
                 <div className="web_nav_content">
-                  <img src={props.images.sliderImg3}></img>
+                  <img
+                    src={props.images.sliderImg3}
+                    alt={props.images.sliderImg3Alt}
+                  ></img>
                 </div>
               </div>
             </div>
@@ -96,12 +105,12 @@ export default props => (
                 <div className="slider_nav_content_paragraph">
                   <p className="text-p-desc">
                     Onboard your customers quickly with{" "}
-                    <a className="link-a" href="#">
+                    <a className="link-a" href={props.data.link1}>
                       Stripe Connect
                     </a>
                     . We help collect bank information, verify IDs, and offer
                     underwriting and{" "}
-                    <a className="link-a" href="#">
+                    <a className="link-a" href={props.data.link2}>
                       KYC
                     </a>{" "}
                     support.
@@ -118,7 +127,7 @@ export default props => (
                   <p className="text-p-desc">
                     Let your customers accept credit and debit cards, ACH, and
                     dozens of popular payment methods like Apple Pay with{" "}
-                    <a className="link-a" href="#">
+                    <a className="link-a" href={props.data.link3}>
                       Stripe Payments
                     </a>
                     .
@@ -134,7 +143,7 @@ export default props => (
                 <div className="slider_nav_content_paragraph">
                   <p className="text-p-desc">
                     Give your customers access to Stripe’s{" "}
-                    <a className="link-a" href="#">
+                    <a className="link-a" href={props.data.link4}>
                       full-featured dashboard
                     </a>{" "}
                     or build your own customized reporting experience inside
