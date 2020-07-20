@@ -453,7 +453,7 @@ export const StyledContentWrapper = styled.div`
           border-bottom-left-radius: 8px;
         }
         section.feedback .common-feedbackbox {
-          grid: auto/5fr 8fr;
+          grid: auto/7fr 8fr;
         }
         section.feedback .feedbacklogo li {
           padding: 0 80px 0 0px;
