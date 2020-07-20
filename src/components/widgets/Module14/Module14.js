@@ -24,7 +24,7 @@ export default props => (
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 48 48"
                       >
-                        <g fill="none" fill-rule="evenodd">
+                        <g fill="none" fillRule="evenodd">
                           <g>
                             <image
                               href={props.images.m14Icon1}
@@ -55,7 +55,7 @@ export default props => (
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 48 48"
                       >
-                        <g fill="none" fill-rule="evenodd">
+                        <g fill="none" fillRule="evenodd">
                           <g>
                             <image
                               href={props.images.m14Icon2}
@@ -81,7 +81,7 @@ export default props => (
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 48 48"
                       >
-                        <g fill="none" fill-rule="evenodd">
+                        <g fill="none" fillRule="evenodd">
                           <g>
                             <image
                               href={props.images.m14Icon3}
@@ -139,7 +139,7 @@ export default props => (
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 48 48"
                       >
-                        <g fill="none" fill-rule="evenodd">
+                        <g fill="none" fillRule="evenodd">
                           <g>
                             <image
                               href={props.images.m14Icon5}

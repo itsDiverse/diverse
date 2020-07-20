@@ -486,7 +486,10 @@ export const images = {
   //----------------------------------Module 22
   module22: {
     sliderImg1,
+    sliderImg1Alt: "",
     sliderImg2,
+    sliderImg2Alt: "",
     sliderImg3,
+    sliderImg3Alt: "",
   },
 }

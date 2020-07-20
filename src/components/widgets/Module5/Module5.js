@@ -15,7 +15,7 @@ export default props => (
                       viewBox="0 0 111 111"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g fill="none" fill-rule="evenodd">
+                      <g fill="none" fillRule="evenodd">
                         <image
                           href={props.images.m5Image1}
                           height="110"
@@ -35,7 +35,7 @@ export default props => (
                       viewBox="0 0 111 111"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g fill="none" fill-rule="evenodd">
+                      <g fill="none" fillRule="evenodd">
                         <image
                           href={props.images.m5Image2}
                           height="110"

@@ -14,7 +14,9 @@ export default props => (
             <h2 className="uppercase-text">{props.data.title3}</h2>
             <p className="common-BodyText">
               {props.data.text.p1}
-              <p>{props.data.text.p2}</p>
+              <br />
+              <br />
+              {props.data.text.p2}
               {props.data.text.p3}
               <a href={props.data.text.link1.url} className="common-Link">
                 {props.data.text.link1.text}

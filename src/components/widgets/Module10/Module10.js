@@ -5,18 +5,18 @@ import { StyledContentWrapper } from "./Module10.styles"
 
 export default props => (
   <StyledContentWrapper theme={props.theme} images={props.images}>
-    <div class="content-wrapper">
-      <div class="solutions-rooted-section">
-        <div class="container-lg">
+    <div className="content-wrapper">
+      <div className="solutions-rooted-section">
+        <div className="container-lg">
           {props.theme.heading && (
-            <div class="section-intro">
-              <h2 class="section-title">{props.data.title}</h2>
-              <p class="section-desc">{props.data.subtitle}</p>
+            <div className="section-intro">
+              <h2 className="section-title">{props.data.title}</h2>
+              <p className="section-desc">{props.data.subtitle}</p>
             </div>
           )}
-          <div class="solutions-rooted-content">
-            <div class="rooted-content-left">
-              <div class="rooted-box rooted-box-documentation">
+          <div className="solutions-rooted-content">
+            <div className="rooted-content-left">
+              <div className="rooted-box rooted-box-documentation">
                 <figure aria-hidden="true">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -29,16 +29,16 @@ export default props => (
                     </g>
                   </svg>
                 </figure>
-                <h4 class="rooted-title">{props.data.title1}</h4>
-                <p class="rooted-desc">
+                <h4 className="rooted-title">{props.data.title1}</h4>
+                <p className="rooted-desc">
                   {props.data.text1.link.before}{" "}
-                  <a href={props.data.text1.link.url} class="common-link">
+                  <a href={props.data.text1.link.url} className="common-link">
                     {props.data.text1.link.text}
                   </a>{" "}
                   {props.data.text1.link.after}
                 </p>
               </div>
-              <div class="rooted-box rooted-box-oss">
+              <div className="rooted-box rooted-box-oss">
                 <figure aria-hidden="true">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -48,23 +48,23 @@ export default props => (
                   >
                     <g
                       fill="none"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       transform="translate(-.488 .268)"
                     >
                       <image href={props.images.icon2} height="20" width="23" />
                     </g>
                   </svg>
                 </figure>
-                <h4 class="rooted-title">{props.data.title2}</h4>
-                <p class="rooted-desc">
+                <h4 className="rooted-title">{props.data.title2}</h4>
+                <p className="rooted-desc">
                   {props.data.text2.link.before}{" "}
-                  <a href={props.data.text2.link.url} class="common-link">
+                  <a href={props.data.text2.link.url} className="common-link">
                     {props.data.text2.link.text}
                   </a>
                   {props.data.text2.link.after}
                 </p>
               </div>
-              <div class="rooted-box rooted-box-works-with">
+              <div className="rooted-box rooted-box-works-with">
                 <figure aria-hidden="true">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -77,29 +77,31 @@ export default props => (
                     </g>
                   </svg>
                 </figure>
-                <h4 class="rooted-title">{props.data.title3}</h4>
-                <p class="rooted-desc">
+                <h4 className="rooted-title">{props.data.title3}</h4>
+                <p className="rooted-desc">
                   {props.data.text3.link.before}{" "}
-                  <a href={props.data.text3.link.url} class="common-link">
+                  <a href={props.data.text3.link.url} className="common-link">
                     {props.data.text3.link.text}
                   </a>{" "}
                   {props.data.text3.link.after}
                 </p>
               </div>
             </div>
-            <div class="rooted-content-right">
-              <aside class="engineering-scale common-Card">
-                <div class="cover"></div>
-                <h2 class="engineering-scale-title">{props.data.box.title}</h2>
-                <p class="engineering-scale-desc">
+            <div className="rooted-content-right">
+              <aside className="engineering-scale common-Card">
+                <div className="cover"></div>
+                <h2 className="engineering-scale-title">
+                  {props.data.box.title}
+                </h2>
+                <p className="engineering-scale-desc">
                   {props.data.box.text.before}{" "}
-                  <span class="u-italic">{props.data.box.text.italic}</span>
+                  <span className="u-italic">{props.data.box.text.italic}</span>
                   {props.data.box.text.after}
                 </p>
                 <a
-                  href={props.data.box.text.button.link}
+                  href={props.data.box.text.link}
                   target="_blank"
-                  class="btn-engineering btn-common"
+                  className="btn-engineering btn-common"
                   data-analytics-action="visit_increment"
                   data-analytics-source="increment_cta"
                 >
@@ -110,19 +112,19 @@ export default props => (
           </div>
         </div>
         {props.theme.backgroundLayout && (
-          <div class="common-Grid anchorBottom">
-            <div class="backgroundContainer">
-              <div class="grid">
-                <div class="background"></div>
+          <div className="common-Grid anchorBottom">
+            <div className="backgroundContainer">
+              <div className="grid">
+                <div className="background"></div>
               </div>
             </div>
-            <div class="backgroundlineContainer">
-              <div class="grid">
-                <div class="linebg"></div>
-                <div class="linebg"></div>
-                <div class="linebg"></div>
-                <div class="linebg"></div>
-                <div class="linebg"></div>
+            <div className="backgroundlineContainer">
+              <div className="grid">
+                <div className="linebg"></div>
+                <div className="linebg"></div>
+                <div className="linebg"></div>
+                <div className="linebg"></div>
+                <div className="linebg"></div>
               </div>
             </div>
           </div>

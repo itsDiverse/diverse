@@ -71,8 +71,8 @@ export default props => {
                     <div className="fraud-Video">
                       <video
                         muted=""
-                        playsinline=""
-                        autoplay=""
+                        playsInline=""
+                        autoPlay=""
                         webkit-playsinline=""
                         loop=""
                         id="demovideo"
@@ -115,10 +115,7 @@ export default props => {
                             <div className="Helm-Tooltip">
                               <div className="Tooltip">
                                 <div className="Tooltip__icon"></div>
-                                <p
-                                  className-name="Tooltip__content"
-                                  className="common-BodyText Helm__text--slate1 Tooltip__content"
-                                >
+                                <p className="common-BodyText Helm__text--slate1 Tooltip__content">
                                   Hear from our cofounders and COO
                                 </p>
                                 <div

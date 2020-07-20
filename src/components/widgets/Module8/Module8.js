@@ -54,7 +54,7 @@ export default props => (
                     height="70"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g fill="#FFF" fill-rule="nonzero">
+                    <g fill="#FFF" fillRule="nonzero">
                       <image
                         href={props.images.logoBox}
                         height="70"
@@ -73,7 +73,7 @@ export default props => (
                     <path
                       d="M7.72 0v2.272c-1.203 0-2.324.382-3.36 1.146-1.038.764-1.556 1.676-1.556 2.736 0 .631.256.947.768.947.115 0 .346-.044.691-.133a4.4 4.4 0 0 1 .865-.113c.704 0 1.366.28 1.987.842.621.562.932 1.335.932 2.32 0 .96-.32 1.783-.96 2.471-.64.688-1.518 1.032-2.632 1.032-1.331 0-2.407-.495-3.226-1.486C.41 11.043 0 9.664 0 7.896 0 5.46.752 3.55 2.257 2.168 3.76.786 5.582.063 7.72 0zm10.544 0v2.272c-1.14 0-2.244.376-3.313 1.127-1.07.751-1.604 1.67-1.604 2.755 0 .631.256.947.768.947.116 0 .346-.044.692-.133a4.4 4.4 0 0 1 .864-.113c.742 0 1.415.29 2.016.87.602.581.903 1.345.903 2.292 0 .96-.32 1.783-.96 2.471-.64.688-1.517 1.032-2.631 1.032-1.332 0-2.407-.495-3.227-1.486-.819-.991-1.229-2.37-1.229-4.138 0-2.436.752-4.346 2.257-5.728C14.304.786 16.125.063 18.264 0z"
                       fill={props.theme.colors.secondary}
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     ></path>
                   </svg>
                 </div>
@@ -94,7 +94,7 @@ export default props => (
                     viewBox="0 0 28 28"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g fill="none" fill-rule="evenodd">
+                    <g fill="none" fillRule="evenodd">
                       <circle
                         fill={props.theme.colors.secondary}
                         cx="14"
@@ -104,7 +104,7 @@ export default props => (
                       <path
                         d="M9.396 9.066c2.282-1.852 4.966-2.606 7.637-1.38 2.436 1.12 4.137 3.477 4.453 5.966 0 .002-1.997.024-2.001 0-.323-1.82-1.45-3.424-3.172-4.242-1.972-.937-3.926-.412-5.667.907l1.336 1.426a.508.508 0 0 1-.359.867H7.218a.704.704 0 0 1-.704-.703v-4.4a.509.509 0 0 1 .869-.359l2.013 1.918zm11.258 12.758a.51.51 0 0 0 .869-.36v-4.4a.704.704 0 0 0-.704-.703h-4.406a.51.51 0 0 0-.359.868l1.714 1.711a5.851 5.851 0 0 1-6.044.621 5.91 5.91 0 0 1-3.245-4.241c-.002-.01-2.002-.001-2.002 0 0 1.909 2.125 4.861 4.527 5.965a7.723 7.723 0 0 0 8.09-1.02l1.56 1.559z"
                         fill="#FFF"
-                        fill-rule="nonzero"
+                        fillRule="nonzero"
                       ></path>
                     </g>
                   </svg>
@@ -122,7 +122,7 @@ export default props => (
                     viewBox="0 0 28 28"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g fill="none" fill-rule="evenodd">
+                    <g fill="none" fillRule="evenodd">
                       <circle
                         cx="14"
                         cy="14"
@@ -159,7 +159,7 @@ export default props => (
                     viewBox="0 0 28 28"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g fill="none" fill-rule="evenodd">
+                    <g fill="none" fillRule="evenodd">
                       <circle
                         fill={props.theme.colors.secondary}
                         cx="14"
@@ -186,7 +186,7 @@ export default props => (
                     viewBox="0 0 29 28"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g fill="none" fill-rule="evenodd">
+                    <g fill="none" fillRule="evenodd">
                       <circle
                         fill={props.theme.colors.secondary}
                         cx="14.5"
@@ -213,7 +213,7 @@ export default props => (
                     viewBox="0 0 28 28"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g fill="none" fill-rule="evenodd">
+                    <g fill="none" fillRule="evenodd">
                       <circle
                         fill={props.theme.colors.secondary}
                         cx="14"
@@ -223,7 +223,7 @@ export default props => (
                       <path
                         d="M9.396 9.066c2.282-1.852 4.966-2.606 7.637-1.38 2.436 1.12 4.137 3.477 4.453 5.966 0 .002-1.997.024-2.001 0-.323-1.82-1.45-3.424-3.172-4.242-1.972-.937-3.926-.412-5.667.907l1.336 1.426a.508.508 0 0 1-.359.867H7.218a.704.704 0 0 1-.704-.703v-4.4a.509.509 0 0 1 .869-.359l2.013 1.918zm11.258 12.758a.51.51 0 0 0 .869-.36v-4.4a.704.704 0 0 0-.704-.703h-4.406a.51.51 0 0 0-.359.868l1.714 1.711a5.851 5.851 0 0 1-6.044.621 5.91 5.91 0 0 1-3.245-4.241c-.002-.01-2.002-.001-2.002 0 0 1.909 2.125 4.861 4.527 5.965a7.723 7.723 0 0 0 8.09-1.02l1.56 1.559z"
                         fill="#FFF"
-                        fill-rule="nonzero"
+                        fillRule="nonzero"
                       ></path>
                     </g>
                   </svg>

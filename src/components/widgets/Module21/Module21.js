@@ -31,7 +31,7 @@ export default props => (
                     d="M1,1 L1,1001"
                     stroke="#87BBFD"
                     strokeWidth="2"
-                    stroke-dasharray="2 8"
+                    strokeDasharray="2 8"
                   ></path>
                 </svg>
               </div>
@@ -52,7 +52,7 @@ export default props => (
                       stroke="none"
                       strokeWidth="1"
                       fill="none"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     >
                       <g
                         id="incorporation-copy"
@@ -78,7 +78,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -100,7 +100,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -122,7 +122,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -157,12 +157,12 @@ export default props => (
                       stroke="none"
                       strokeWidth="1"
                       fill="none"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     >
                       <g
                         id="payments-icons"
                         transform="translate(1.000000, 0.000000)"
-                        fill-rule="nonzero"
+                        fillRule="nonzero"
                       >
                         <image
                           href={props.images.checkListIcon2}
@@ -184,7 +184,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -206,7 +206,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -228,7 +228,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -263,12 +263,12 @@ export default props => (
                       stroke="none"
                       strokeWidth="1"
                       fill="none"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     >
                       <g
                         id="Group"
                         transform="translate(0.000000, 4.000000)"
-                        fill-rule="nonzero"
+                        fillRule="nonzero"
                       >
                         <image
                           href={props.images.checkListIcon3}
@@ -290,7 +290,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -312,7 +312,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -334,7 +334,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -369,12 +369,12 @@ export default props => (
                       stroke="none"
                       strokeWidth="1"
                       fill="none"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     >
                       <g
                         id="community"
                         transform="translate(0.000000, 3.000000)"
-                        fill-rule="nonzero"
+                        fillRule="nonzero"
                       >
                         <image
                           href={props.images.checkListIcon4}
@@ -397,7 +397,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -419,7 +419,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -441,7 +441,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -463,7 +463,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -485,7 +485,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -507,7 +507,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -541,9 +541,9 @@ export default props => (
                       stroke="none"
                       strokeWidth="1"
                       fill="none"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     >
-                      <g id="fast" fill-rule="nonzero">
+                      <g id="fast" fillRule="nonzero">
                         <image
                           href={props.images.checkListIcon5}
                           height="29px"
@@ -564,7 +564,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -586,7 +586,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
@@ -608,7 +608,7 @@ export default props => (
                           height="23"
                           viewBox="0 0 23 23"
                         >
-                          <g fill="none" fill-rule="evenodd">
+                          <g fill="none" fillRule="evenodd">
                             <path
                               fill="#24b47e"
                               d="M11.5,23 C5.14872538,23 7.77806814e-16,17.8512746 0,11.5 C-7.77806814e-16,5.14872538 5.14872538,1.16671022e-15 11.5,0 C17.8512746,3.88903407e-16 23,5.14872538 23,11.5 C23,17.8512746 17.8512746,23 11.5,23 Z"
