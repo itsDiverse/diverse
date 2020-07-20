@@ -325,7 +325,7 @@ export const StyledContentWrapper = styled.div`
         fill: #525f7f;
       }
       section.feedback[data-visible-quote="1"] .feedbacklogo {
-        background-color: #000;
+        background-color: #fff;
       }
       section.feedback[data-visible-quote="2"] .common-feedbackbox li {
         -webkit-transform: translateX(-200%);
