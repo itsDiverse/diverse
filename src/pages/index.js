@@ -16,7 +16,7 @@ export default props => (
         data={data.module16v}
         images={images.module16v}
         videos={videos.module16v}
-      />
+      ></Module16v>
       <Module15
         theme={theme.module15}
         data={data.module15}
