@@ -399,7 +399,7 @@ export const StyledContentWrapper = styled.div`
       }
 
       .video-container.visible {
-        background-color: rgba(82, 95, 127, 0.35);
+        background-color: ${props.theme.backgroundVideoContainer};
       }
 
       .video-container.visible video {

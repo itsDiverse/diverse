@@ -4,7 +4,6 @@ import { Module1 } from "../components/widgets/Module1"
 import { Module1a } from "../components/widgets/Module1a"
 import { Module2 } from "../components/widgets/Module2"
 import { Module3 } from "../components/widgets/Module3"
-import { Module4 } from "../components/widgets/Module4"
 import { Module5 } from "../components/widgets/Module5"
 import { Module6 } from "../components/widgets/Module6"
 import { Module7 } from "../components/widgets/Module7"
@@ -66,14 +65,7 @@ export default () => (
       images={images.module3}
     />
     <hr></hr>
-    <h1>#4</h1>
-    <Module4
-      theme={theme.module4}
-      data={data.module4}
-      images={images.module4}
-      videos={videos.module4}
-    />
-    <hr></hr>
+
     <h1>#5</h1>
     <Module5
       theme={theme.module5}
@@ -191,11 +183,11 @@ export default () => (
     />
     <hr></hr>
     <h1>#20</h1>
-    <Module20
+    {/* <Module20
       theme={theme.module20}
       data={data.module20}
       images={images.module20}
-    ></Module20>
+    ></Module20> */}
     <hr></hr>
     <h1>#21</h1>
     <Module21

@@ -42,6 +42,7 @@ export const theme = {
   },
   //-------------------------------------Module 2
   module2: {
+    backgroundVideoContainer: "rgba(170,183,196,.75)",
     //---------------------LayoutBackground
     background: "#fff",
     backgroundImage: false,
