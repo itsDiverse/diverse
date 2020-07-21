@@ -22,7 +22,7 @@ export const theme = {
     heading: false,
     headingLogo: true,
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -44,7 +44,7 @@ export const theme = {
   module2: {
     backgroundVideoContainer: "rgba(170,183,196,.75)",
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -60,7 +60,7 @@ export const theme = {
   //----------------------------------Module 3
   module3: {
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -75,7 +75,7 @@ export const theme = {
   //----------------------------------Module 4
   module4: {
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -100,7 +100,7 @@ export const theme = {
   //--------------------------------Module 5
   module5: {
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -155,7 +155,7 @@ export const theme = {
   module7: {
     reverseOrderFirstSection: false,
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -175,7 +175,7 @@ export const theme = {
   module7a: {
     reverseOrderThirdSection: true,
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -197,7 +197,7 @@ export const theme = {
   module7b: {
     reverseOrderSecondSection: false,
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -246,7 +246,7 @@ export const theme = {
   module9: {
     heading: true,
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -265,7 +265,7 @@ export const theme = {
     backgroundLayout: false,
     reverseOrder: false,
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -292,7 +292,7 @@ export const theme = {
   //-------------------------------------Module11
   module11: {
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -314,7 +314,7 @@ export const theme = {
   //-------------------------------------Module11a
   module11a: {
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -338,7 +338,7 @@ export const theme = {
   //-------------------------------------Module 13
   module13: {
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,1) 0%, rgba(219,130,148,1)`,
     backgroundPosition: "center top",
@@ -360,7 +360,7 @@ export const theme = {
   module14: {
     heading: true,
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -377,7 +377,7 @@ export const theme = {
   //-------------------------------------Module 15
   module15: {
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -421,33 +421,36 @@ export const theme = {
   },
   //-------------------------------------Module16v
   module16v: {
+    //---------------------LayoutBackground
+    background: "transparent",
+    backgroundImage: false,
+    backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
+    backgroundPosition: "center top",
+    backgroundSize: "100% 100%",
+    blendMode: `screen, difference, lighten`,
+    //---------------------------
     video: true,
     shadow: true,
     shadowColor: `34.3px 62.5px 125px -25px rgba(50, 50, 93, 0.1),
     20.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6)`,
     skew: "0.01rad",
     reverseSectionOrder: true,
+
     colors: {
-      topTitle: "#6772e5",
-      span: {
-        background: "#6772e5",
-        text: "#fff",
-      },
-      title: {
-        first: "#32325d",
-        second: "#6772e5",
-      },
-      subtitle: "#424770",
+      title: "#32325d",
+      text: "#525f7f",
     },
 
     buttons: {
       display: true,
       left: {
-        background: "#6772e5",
+        background: "#8f6ed5",
+        hover: "#a78ce9",
         color: "#fff",
       },
       right: {
         background: "#fff",
+        hover: "",
         color: "#6772e5",
       },
     },
@@ -456,7 +459,7 @@ export const theme = {
   module17: {
     heading: false,
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -474,7 +477,7 @@ export const theme = {
   module18: {
     heading: false,
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -491,7 +494,7 @@ export const theme = {
     heading: false,
     backgroundLayout: false,
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -517,7 +520,7 @@ export const theme = {
   module20: {
     heading: true,
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
@@ -558,7 +561,7 @@ export const theme = {
   //-------------------------------------Module 22
   module22: {
     //---------------------LayoutBackground
-    background: "#fff",
+    background: "transparent",
     backgroundImage: false,
     backgroundGradient: `rgba(63,94,251,0.5) 0%, rgba(219,130,148,0.5)`,
     backgroundPosition: "center top",
