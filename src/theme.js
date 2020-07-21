@@ -444,14 +444,14 @@ export const theme = {
     buttons: {
       display: true,
       left: {
-        background: "#8f6ed5",
+        background: "#8461D1",
         hover: "#a78ce9",
         color: "#fff",
       },
       right: {
         background: "#fff",
         hover: "",
-        color: "#6772e5",
+        color: "#5561E2",
       },
     },
   },

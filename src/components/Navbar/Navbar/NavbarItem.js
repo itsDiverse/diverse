@@ -21,17 +21,16 @@ const NavbarItemTitle = styled.span`
   line-height: 18px;
   /* identical to box height */
 
-text-align: center;
+  text-align: center;
 
-color: #969696;
+  color: #757575;
   &:hover,
   &:focus {
     color: #616161;
   }
-  &:active{
+  &:active {
     color: #616161;
   }
-
 `
 
 const DropdownSlot = styled.div`
@@ -46,6 +45,7 @@ const DropdownSlot = styled.div`
 
 const NavbarItemEl = styled.li`
   position: relative;
+  
   
   // ${DropdownSlot}:nth-child(1) ${DropdownBackground} {
   //   left: 200px;

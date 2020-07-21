@@ -19,7 +19,7 @@ const SignIn = styled.button`
   line-height: 18px;
   /* identical to box height */
   text-align: center;
-  color: #969696;
+  color: #757575;
   cursor: pointer;
   background: none;
   border: none;
