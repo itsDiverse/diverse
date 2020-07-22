@@ -2,6 +2,7 @@ import React from "react"
 
 import { Layout, AnimatedBackground } from "../components"
 import { Module16v, Module15, Module9 } from "../components/widgets"
+import SEO from "../components/seo"
 
 import { theme } from "../theme"
 import { data } from "../data"
@@ -11,6 +12,7 @@ import { videos } from "../videos"
 export default props => (
   <AnimatedBackground>
     <Layout>
+      <SEO title="Index" />
       <Module16v
         theme={theme.module16v}
         data={data.module16v}

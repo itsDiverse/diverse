@@ -35,7 +35,7 @@ export default props => (
                 {props.theme.video ? (
                   <video
                     className="js-actual-video"
-                    id="Video1"
+                    id="Video16v"
                     poster=""
                     autoPlay
                     muted

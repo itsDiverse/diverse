@@ -23,6 +23,8 @@ import { Module18 } from "../components/widgets/Module18"
 import { Module19 } from "../components/widgets/Module19"
 import { Module21 } from "../components/widgets/Module21"
 
+import SEO from "../components/seo"
+
 import { theme } from "../theme"
 import { data } from "../data"
 import { images } from "../images"
@@ -30,6 +32,7 @@ import { videos } from "../videos"
 
 export default () => (
   <>
+    <SEO title="Widgets" />
     <h1>QuadBox</h1>
     <QuadBox
       images={images.quadBox}

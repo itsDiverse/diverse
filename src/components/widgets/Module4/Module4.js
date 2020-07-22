@@ -91,7 +91,7 @@ export default props => {
                       <div className="actualVideo">
                         <video
                           className="js-actual-video"
-                          id="Video1"
+                          id="Video4"
                           poster=""
                         >
                           <source

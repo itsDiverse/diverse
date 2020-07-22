@@ -268,7 +268,7 @@ export default props => {
       </div>
 
       <div className="video-container">
-        <video controls="" id="Video1">
+        <video controls="" id="Video2">
           <source src={props.videos.sampleVideo} type="video/mp4"></source>
           <source src={props.videos.sampleVideo} type="video/ogv"></source>
           <source src={props.videos.sampleVideo} type="video/mp4"></source>

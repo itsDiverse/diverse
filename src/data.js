@@ -1,6 +1,6 @@
 export const data = {
   //-------------------------------------Template
-  title: "",
+  title: "index",
   subtitle: "",
   heading: "",
   subheading: "",

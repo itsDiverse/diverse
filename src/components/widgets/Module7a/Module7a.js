@@ -37,7 +37,7 @@ export default props => (
             </p>
           </div>
           <div className="international-support-right-content">
-            <aside></aside>
+            <aside aria-label="image right"></aside>
           </div>
         </div>
       </div>
