@@ -175,7 +175,7 @@ export const data = {
       item3: "IRS tax threshold tracking and 1099 support",
       item4: "Card industry blacklist filtering",
       item5: "Licensed money transmission from U.S. states &amp; UK FCA",
-      item6: "Screening for bad actors using data from the Stripe Network",
+      item6: "",
     },
 
     //-------------------------RightContent

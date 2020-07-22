@@ -39,12 +39,24 @@ export default props => (
               <div className="compliance-right-content">
                 <h3>{props.data.bulletList.title}</h3>
                 <ul>
-                  <li>{props.data.bulletList.item1}</li>
-                  <li>{props.data.bulletList.item2}</li>
-                  <li>{props.data.bulletList.item3}</li>
-                  <li>{props.data.bulletList.item4}</li>
-                  <li>{props.data.bulletList.item5}</li>
-                  <li>{props.data.bulletList.item6}</li>
+                  {props.data.bulletList.item1 && (
+                    <li>{props.data.bulletList.item1}</li>
+                  )}
+                  {props.data.bulletList.item2 && (
+                    <li>{props.data.bulletList.item2}</li>
+                  )}
+                  {props.data.bulletList.item3 && (
+                    <li>{props.data.bulletList.item3}</li>
+                  )}
+                  {props.data.bulletList.item4 && (
+                    <li>{props.data.bulletList.item4}</li>
+                  )}
+                  {props.data.bulletList.item5 && (
+                    <li>{props.data.bulletList.item5}</li>
+                  )}
+                  {props.data.bulletList.item6 && (
+                    <li>{props.data.bulletList.item6}</li>
+                  )}
                 </ul>
               </div>
             </div>
