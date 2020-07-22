@@ -206,9 +206,6 @@
   position: absolute;
   left: -10px;
 }
-html[lang="ja"] .feedback .quotes .commonTitle:before {
-  left: -20px;
-}
 .feedback .quotes .commonTitle:after {
   content: close-quote;
   position: absolute;

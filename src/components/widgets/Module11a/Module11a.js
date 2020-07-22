@@ -11,7 +11,7 @@ export default props => (
           <div className="marketplaces-title-section">
             <img
               src={props.images.m11aIcon1}
-              alt={props.images.m11aIconAlt}
+              alt={props.images.m11aIcon1Alt}
             ></img>
             <h3>{props.data.title}</h3>
             <p>{props.data.subtitle}</p>
@@ -48,7 +48,7 @@ export default props => (
                 src={props.images.m11aIcon2}
                 width="72"
                 height="72"
-                alt="3 arrows spreading"
+                alt={props.images.m11aIcon2Alt}
               ></img>
             </figure>
             <p>

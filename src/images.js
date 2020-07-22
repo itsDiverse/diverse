@@ -351,7 +351,7 @@ export const images = {
     m11BannerLogo,
     m11BannerLogoAlt: "lyft logo",
     m11Icon1,
-    m11Icon1Alt: "",
+    m11Icon1Alt: "icon1",
     m11Icon2,
     m11Icon2Alt: "3 arrows spreading",
   },
@@ -363,9 +363,9 @@ export const images = {
     m11aBannerLogo,
     m11aBannerLogoAlt: "charity water logo",
     m11aIcon1,
-    m11aIcon1Alt: "",
+    m11aIcon1Alt: "icon1",
     m11aIcon2,
-    m11aIcon2Alt: "",
+    m11aIcon2Alt: "icon3 arrows",
   },
   //----------------------------------Module 12
   module12: {
@@ -430,24 +430,24 @@ export const images = {
   //----------------------------------Module 17
   module17: {
     iconTitle,
-    iconAlt: "",
+    iconAlt: "icon",
     box1: {
       iconTop1,
-      iconTop1Alt: "",
+      iconTop1Alt: "icon",
       iconBottom1,
-      iconBottom1Alt: "",
+      iconBottom1Alt: "icon",
     },
     box2: {
       iconTop2,
-      iconTop2Alt: "",
+      iconTop2Alt: "icon",
       iconBottom2,
-      iconBottom2Alt: "",
+      iconBottom2Alt: "icon",
     },
     box3: {
       iconTop3,
-      iconTop3Alt: "",
+      iconTop3Alt: "icon",
       iconBottom3,
-      iconBottom3Alt: "",
+      iconBottom3Alt: "icon",
     },
     dots,
     sales,

@@ -35,9 +35,7 @@ export const StyledContentWrapper = styled.div`
       a {
         text-decoration: none;
       }
-      html[lang="ja"] body {
-        font-family: Camphor, Meiryo, Hiragino Sans, sans-serif;
-      }
+
       .content-wrapper {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;

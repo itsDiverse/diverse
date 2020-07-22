@@ -10,7 +10,7 @@ export default props => (
           <div className="marketplaces-title-section">
             <img
               src={props.images.m11Icon1}
-              alt={props.images.m11IconAlt}
+              alt={props.images.m11Icon1Alt}
             ></img>
             <h3>{props.data.title}</h3>
             <p>{props.data.subtitle}</p>
@@ -47,7 +47,7 @@ export default props => (
                 src={props.images.m11Icon2}
                 width="72"
                 height="72"
-                alt={props.images.Icon2Alt}
+                alt={props.images.m11Icon2Alt}
               ></img>
             </figure>
             <p>
@@ -66,7 +66,7 @@ export default props => (
                   className="link-arrow common-link"
                   href={props.data.linkEnd.url}
                 >
-                  {props.data.linkEnd.text}
+                  {props.data.linkEnd.text}/
                 </a>
               </li>
             </ul>

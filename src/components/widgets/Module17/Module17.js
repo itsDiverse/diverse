@@ -54,7 +54,7 @@ export default props => (
                           <img
                             className="img-icon-bottom"
                             src={props.images.box1.iconBottom1}
-                            alt={props.images.box1.iconButtom1Alt}
+                            alt={props.images.box1.iconBottom1Alt}
                           />
                         </span>
                         <span className="services-footer-text text-blue">
@@ -89,7 +89,7 @@ export default props => (
                           <img
                             className="img-icon-bottom"
                             src={props.images.box2.iconBottom2}
-                            alt={props.images.box2.iconButtom2Alt}
+                            alt={props.images.box2.iconBottom2Alt}
                           />
                         </span>
                         <span className="services-footer-text text-blue">
@@ -124,7 +124,7 @@ export default props => (
                           <img
                             className="img-icon-bottom"
                             src={props.images.box3.iconBottom3}
-                            alt={props.images.box3.iconButtom3Alt}
+                            alt={props.images.box3.iconBottom3Alt}
                           />
                         </span>
                         <span className="services-footer-text text-blue">

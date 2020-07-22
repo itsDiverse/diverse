@@ -20,7 +20,7 @@ export default props => (
               <a
                 href={props.data.link1}
                 className="diagram-product diagram-product-radar"
-              ></a>
+              />
             </div>
             <div className="diagram-apps-content diagram-content animated fadeInRight">
               <h4 className="uppercase-text diagram-title">
@@ -32,7 +32,7 @@ export default props => (
               <a
                 href={props.data.link2}
                 className="diagram-product diagram-product-payments"
-              ></a>
+              />
             </div>
             <div className="diagram-platforms-content diagram-content animated delay-06s right15 fadeInRight">
               <h4 className="uppercase-text diagram-title">
@@ -44,7 +44,7 @@ export default props => (
               <a
                 href={props.data.link3}
                 className="diagram-product diagram-product-connect"
-              ></a>
+              />
             </div>
             <div className="diagram-infra-content diagram-content js-diagram-explanation animated fadeInRight delay-03s right10">
               <h4 className="uppercase-text diagram-title">

@@ -255,9 +255,6 @@ export const StyledContentWrapper = styled.div`
         position: absolute;
         left: -10px;
       }
-      html[lang="ja"] section.feedback .quotes .common-title:before {
-        left: -20px;
-      }
       section.feedback .quotes .common-title:after {
         content: close-quote;
         position: absolute;
