@@ -20,7 +20,7 @@ export default props => (
               <a
                 href={props.data.link1}
                 className="diagram-product diagram-product-radar"
-                aria-hidden="true"
+                aria-label="link to image"
                 tabIndex="-1"
               />
             </div>
@@ -34,7 +34,7 @@ export default props => (
               <a
                 href={props.data.link2}
                 className="diagram-product diagram-product-payments"
-                aria-hidden="true"
+                aria-label="link to image"
                 tabIndex="-1"
               />
             </div>
@@ -48,7 +48,7 @@ export default props => (
               <a
                 href={props.data.link3}
                 className="diagram-product diagram-product-connect"
-                aria-hidden="true"
+                aria-label="link to image"
                 tabIndex="-1"
               />
             </div>
