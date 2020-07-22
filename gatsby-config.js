@@ -9,6 +9,12 @@ module.exports = {
     author: `@itsDiverse`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-html-attributes`,
+      options: {
+        lang: `en`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
