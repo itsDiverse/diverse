@@ -13,22 +13,24 @@ export default props => (
   <AnimatedBackground>
     <Layout>
       <SEO title="Index" />
-      <Module16v
-        theme={theme.module16v}
-        data={data.module16v}
-        images={images.module16v}
-        videos={videos.module16v}
-      ></Module16v>
-      <Module15
-        theme={theme.module15}
-        data={data.module15}
-        images={images.module15}
-      />
-      <Module9
-        theme={theme.module9}
-        data={data.module9}
-        images={images.module9}
-      />
+      <main>
+        <Module16v
+          theme={theme.module16v}
+          data={data.module16v}
+          images={images.module16v}
+          videos={videos.module16v}
+        ></Module16v>
+        <Module15
+          theme={theme.module15}
+          data={data.module15}
+          images={images.module15}
+        />
+        <Module9
+          theme={theme.module9}
+          data={data.module9}
+          images={images.module9}
+        />
+      </main>
     </Layout>
   </AnimatedBackground>
 )

@@ -33,7 +33,7 @@ export const theme = {
       title: "",
       subtitle: "",
       boxTitle: "rgb(94, 94, 94)",
-      boxText: " rgb(134, 134, 134)",
+      boxText: " rgb(117, 117, 117)",
       //----------------------BoxContent
       backgroundBox: "#ffffff",
       backgroundLeftSkew: "#30212114",
@@ -118,19 +118,19 @@ export const theme = {
       boxIconHoverLight: "#8898aa",
 
       //GetInTouch Section
-      title: "#6772e5",
+      title: "#5965E3",
       subtitle: "#32325d;",
       text: "#525f7f",
     },
 
     buttons: {
       //Left
-      colorLeft: "#3ecf8e",
+      colorLeft: "#218355",
       textLeft: "#fff",
 
       //Right
       colorRight: "#fff",
-      textRight: "#6772e5",
+      textRight: "#5965E3",
     },
   },
   //--------------------------------Module 6
@@ -278,13 +278,13 @@ export const theme = {
       subtitle: "#424770",
       texts: "#525f7f",
       topBackgroundBoxRight: "#fa9a91",
-      links: "#6772e5",
+      links: "#5965E3",
       boxTitle: "#424770",
     },
 
     button: {
       text: "#fff",
-      background: "#6772e5",
+      background: "#5965E3",
       hoverText: "#fff",
       hoverBackground: "#7795f8",
     },
@@ -306,7 +306,7 @@ export const theme = {
       subtitle: "#424770",
       textBox: "#fff",
       text: "#525f7f",
-      links: "#6772e5",
+      links: "#5965E3",
       //overlayBox
       backgroundBox: "#eb268d",
     },
@@ -329,7 +329,7 @@ export const theme = {
       subtitle: "#424770",
       textBox: "#fff",
       text: "#525f7f",
-      links: "#6772e5",
+      links: "#5965E3",
       //overlayBox
       backgroundBox: "green",
     },
@@ -371,7 +371,7 @@ export const theme = {
       titles: "#32325d",
       subtitle: "#424770",
       texts: "#525f7f",
-      link: "#6772e5",
+      link: "#5965E3",
     },
   },
   //-------------------------------------Module 15
@@ -386,7 +386,7 @@ export const theme = {
     //---------------------------
     backgroundLayout: false,
     colors: {
-      link: "#6772e5",
+      link: "#5965E3",
       text: "#525f7f",
       shadowColor: "rgba(50, 50, 93, 0.5)",
       shadow: true,
@@ -396,26 +396,26 @@ export const theme = {
   module16: {
     //---------------------------
     colors: {
-      topTitle: "#6772e5",
+      topTitle: "#5965E3",
       span: {
-        background: "#6772e5",
+        background: "#5965E3",
         text: "#fff",
       },
       title: {
         first: "#32325d",
-        second: "#6772e5",
+        second: "#5965E3",
       },
       subtitle: "#424770",
     },
 
     buttons: {
       left: {
-        background: "#6772e5",
+        background: "#5965E3",
         color: "#fff",
       },
       right: {
         background: "#fff",
-        color: "#6772e5",
+        color: "#5965E3",
       },
     },
   },
@@ -470,7 +470,7 @@ export const theme = {
       title: "#32325d",
       boxTitle: "#32325d",
       boxText: "#6b7c93",
-      boxFooter: " #6772e5",
+      boxFooter: " #5965E3",
     },
   },
   //-------------------------------------Module 18
@@ -507,13 +507,13 @@ export const theme = {
       //--------------------Boxes
       titleBox: "#32325d",
       textBox: "#6b7c93",
-      linkBox: "#6772e5",
+      linkBox: "#5965E3",
       linkHover: "#32325d",
       //-------------------BottomSection
       innerTitle: "#32325d",
       innerText: "#525f7f",
       innerStrong: "#525f7f",
-      innerLink: "#6772e5",
+      innerLink: "#5965E3",
     },
   },
   //-------------------------------------Module 20

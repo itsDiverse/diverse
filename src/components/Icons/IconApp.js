@@ -8,8 +8,8 @@ export const IconApp = ({ size }) => (
     height={size}
   >
     <title>Asset 3</title>
-    <g id="Layer_2" data-name="Layer 2">
-      <g id="Layer_1-2" data-name="Layer 1">
+    <g data-name="Layer 2">
+      <g data-name="Layer 1">
         <polygon
           fill="#bde0f7"
           points="88.86 154.02 44.41 128.32 44.38 179.66 88.86 154.02"

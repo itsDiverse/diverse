@@ -374,8 +374,13 @@ export const data = {
 
     //--------Links Left Images
     link1: "http://www.google.com",
+    description1: "link to first image",
+
     link2: "",
+    description2: "description of second image",
+
     link3: "",
+    description3: "third image link",
 
     //--------Right Section
     title1: "Applications",
