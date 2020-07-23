@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const DropdownEl = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 `
 
 export const DropdownSection = styled.div`
@@ -39,6 +40,7 @@ export const DropdownSubtitle = styled.p`
   font-size: 14px;
   line-height: 17px;
   color: #707070;
+  text-align: center;
 `
 
 export const DropdownButton = styled.button`
@@ -58,8 +60,11 @@ export const DropdownButton = styled.button`
 `
 
 export const ListPrimary = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #f5f5f5;
-  padding: 30px;
   list-style-type: none;
   font-style: normal;
   font-weight: normal;
