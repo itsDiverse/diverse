@@ -455,7 +455,7 @@ export const images = {
   //----------------------------------Module 18
   module18: {
     iconTitle18,
-    iconTitle18Alt: "",
+    iconTitle18Alt: " ",
   },
   //----------------------------------Module 19
   module19: {
