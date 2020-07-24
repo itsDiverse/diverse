@@ -99,6 +99,7 @@ export const theme = {
   },
   //--------------------------------Module 5
   module5: {
+    boxesDisplay: false,
     //---------------------LayoutBackground
     background: "transparent",
     backgroundImage: false,
