@@ -53,31 +53,33 @@ export default props => (
             </div>
           </section>
         )}
-        <section className="get-in-touch-section">
-          <div className="container-lg">
-            <div className="get-in-touch-content-wrapper">
-              <div className="get-in-touch-content">
-                <h2>{props.data.title}</h2>
-                <h3>{props.data.subtitle}</h3>
+        {props.theme.footerDisplay && (
+          <section className="get-in-touch-section">
+            <div className="container-lg">
+              <div className="get-in-touch-content-wrapper">
+                <div className="get-in-touch-content">
+                  <h2>{props.data.title}</h2>
+                  <h3>{props.data.subtitle}</h3>
+                </div>
+                <div className="get-in-touch-btn">
+                  <a
+                    className="btn-left btn-default"
+                    href={props.data.buttonLinkLeft}
+                  >
+                    {props.data.buttonLeft}
+                  </a>
+                  <a
+                    className="btn-right btn-default"
+                    href={props.data.buttonLinkRight}
+                  >
+                    {props.data.buttonRight}
+                  </a>
+                </div>
               </div>
-              <div className="get-in-touch-btn">
-                <a
-                  className="btn-left btn-default"
-                  href={props.data.buttonLinkLeft}
-                >
-                  {props.data.buttonLeft}
-                </a>
-                <a
-                  className="btn-right btn-default"
-                  href={props.data.buttonLinkRight}
-                >
-                  {props.data.buttonRight}
-                </a>
-              </div>
+              <p>{props.data.text}</p>
             </div>
-            <p>{props.data.text}</p>
-          </div>
-        </section>
+          </section>
+        )}
       </div>
     </div>
   </StyledContentWrapper>
