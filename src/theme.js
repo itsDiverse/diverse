@@ -100,7 +100,7 @@ export const theme = {
   //--------------------------------Module 5
   module5: {
     boxesDisplay: true,
-    footerDisplay: false,
+    footerDisplay: true,
     //---------------------LayoutBackground
     background: "transparent",
     backgroundImage: false,

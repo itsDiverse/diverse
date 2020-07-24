@@ -380,7 +380,7 @@ export const data = {
     description2: "description of second image",
 
     link3: "",
-    description3: "third image link",
+    description3: "third image link ",
 
     //--------Right Section
     title1: "Applications",

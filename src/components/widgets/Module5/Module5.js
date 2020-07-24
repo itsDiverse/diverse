@@ -62,18 +62,22 @@ export default props => (
                   <h3>{props.data.subtitle}</h3>
                 </div>
                 <div className="get-in-touch-btn">
-                  <a
-                    className="btn-left btn-default"
-                    href={props.data.buttonLinkLeft}
-                  >
-                    {props.data.buttonLeft}
-                  </a>
-                  <a
-                    className="btn-right btn-default"
-                    href={props.data.buttonLinkRight}
-                  >
-                    {props.data.buttonRight}
-                  </a>
+                  {props.data.buttonLeft && (
+                    <a
+                      className="btn-left btn-default"
+                      href={props.data.buttonLinkLeft}
+                    >
+                      {props.data.buttonLeft}
+                    </a>
+                  )}
+                  {props.data.buttonRight && (
+                    <a
+                      className="btn-right btn-default"
+                      href={props.data.buttonLinkRight}
+                    >
+                      {props.data.buttonRight}
+                    </a>
+                  )}
                 </div>
               </div>
               <p>{props.data.text}</p>
