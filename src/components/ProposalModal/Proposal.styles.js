@@ -58,7 +58,6 @@ export const StyledProposalForm = styled.div`
 export const StyledProposalLabel = styled.label`
   color: #ffffff;
   text-align: center;
-  font-family: Proxima Nova;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -73,7 +72,7 @@ export const StyledProposalSelect = styled.select`
   margin-top: 10px;
   margin-bottom: 15px;
   padding-left: 5px;
-  font-family: Proxima Nova;
+
   font-size: 12.5px;
   line-height: 15px;
   color: #858585;
