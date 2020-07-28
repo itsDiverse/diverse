@@ -5,13 +5,14 @@ export const StyledContentWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   background-color: #e5e5e5;
-  font-family: NovaReg;
   background-image: linear-gradient(
     180deg,
     #e5e5e5 37%,
     #e5e5e5 50%,
     #ffffff 100%
   );
+  font-family: Helvetica;
+  font-style: normal;
 `
 
 export const StyledProposalContainer = styled.div`
@@ -59,10 +60,8 @@ export const StyledProposalForm = styled.div`
 export const StyledProposalLabel = styled.label`
   color: #ffffff;
   text-align: center;
-  font-style: normal;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 14px;
-  line-height: 17px;
   padding-bottom: 10px;
 `
 
@@ -102,12 +101,10 @@ export const StyledProposalInput = styled.input`
 export const StyledProposalButton = styled.button`
   width: 239px;
   height: 46.4px;
-  left: 601px;
   background: #0c67e4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
   border-radius: 7px;
   border-style: none;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -121,7 +118,6 @@ export const StyledProposalTextContainer = styled.div`
 `
 
 export const StyledProposalText = styled.p`
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
