@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 export const StyledContentWrapper = styled.div`
-margin:0;
-padding: 0; 
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -13,6 +13,8 @@ padding: 0;
     #e5e5e5 50%,
     #ffffff 100%
   );
+  font-family: Helvetica;
+  font-style: normal;
 `
 
 export const StyledProposalContainer = styled.div`
@@ -63,8 +65,6 @@ export const StyledProposalLabel = styled.label`
   font-weight: bold;
   font-size: 14px;
   padding-bottom: 10px;
-  font-family: Helvetica;
-  font-style: normal;
 `
 
 export const StyledProposalSelect = styled.select`
