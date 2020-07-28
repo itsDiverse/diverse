@@ -5,6 +5,7 @@ export const StyledContentWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   background-color: #e5e5e5;
+  font-family: NovaReg;
   background-image: linear-gradient(
     180deg,
     #e5e5e5 37%,
