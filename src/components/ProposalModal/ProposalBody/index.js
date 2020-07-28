@@ -1,0 +1,1 @@
+export { ProposalBody } from "./ProposalBody";
