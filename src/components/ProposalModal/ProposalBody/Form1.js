@@ -1,16 +1,22 @@
-import React from "react";
+import React from "react"
+import {
+  StyledProposalForm,
+  StyledProposalSelect,
+  StyledProposalLabel,
+  StyledProposalButton,
+} from "../Proposal.styles"
 
 export const Form1 = ({
   onSubmit,
   goals,
   setGoals,
   advertise,
-  setAdvertise
+  setAdvertise,
 }) => (
-  <div>
-    <label>
+  <StyledProposalForm>
+    <StyledProposalLabel>
       What are your goals?
-      <select
+      <StyledProposalSelect
         defaultValue={goals}
         onChange={event => setGoals(event.target.value)}
       >
@@ -19,11 +25,11 @@ export const Form1 = ({
         </option>
         <option value="goal1">Goal 1</option>
         <option value="goal2">Goal 2</option>
-      </select>
-    </label>
-    <label>
+      </StyledProposalSelect>
+    </StyledProposalLabel>
+    <StyledProposalLabel>
       Where do you advertise?
-      <select
+      <StyledProposalSelect
         defaultValue={advertise}
         onChange={event => setAdvertise(event.target.value)}
       >
@@ -32,13 +38,13 @@ export const Form1 = ({
         </option>
         <option value="ad1">advertise 1</option>
         <option value="ad2">advertise 2</option>
-      </select>
-    </label>
-    <button
+      </StyledProposalSelect>
+    </StyledProposalLabel>
+    <StyledProposalButton
       disabled={goals === "choose" || advertise === "choose"}
       onClick={onSubmit}
     >
-      Continue
-    </button>
-  </div>
-);
+      CONTINUE
+    </StyledProposalButton>
+  </StyledProposalForm>
+)

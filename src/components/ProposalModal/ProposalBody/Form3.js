@@ -1,4 +1,10 @@
-import React from "react";
+import React from "react"
+import {
+  StyledProposalForm,
+  StyledProposalLabel,
+  StyledProposalButton,
+  StyledProposalInput,
+} from "../Proposal.styles"
 export const Form3 = ({
   onSubmit,
   web,
@@ -8,41 +14,43 @@ export const Form3 = ({
   email,
   setEmail,
   number,
-  setNumber
+  setNumber,
 }) => (
-  <div>
-    <label>
-      Web
-      <input
+  <StyledProposalForm>
+    <StyledProposalLabel>
+      What’s your website?
+      <StyledProposalInput
         type="text"
         value={web}
         onChange={event => setWeb(event.target.value)}
       />
-    </label>
-    <label>
-      Name
-      <input
+    </StyledProposalLabel>
+    <StyledProposalLabel>
+      What’s your Name?
+      <StyledProposalInput
         type="text"
         value={name}
         onChange={event => setName(event.target.value)}
       />
-    </label>
-    <label>
-      Email
-      <input
+    </StyledProposalLabel>
+    <StyledProposalLabel>
+      What’s your Email?
+      <StyledProposalInput
         type="text"
         value={email}
         onChange={event => setEmail(event.target.value)}
       />
-    </label>
-    <label>
-      Number
-      <input
+    </StyledProposalLabel>
+    <StyledProposalLabel>
+      What’s your number?
+      <StyledProposalInput
         type="text"
         value={number}
         onChange={event => setNumber(event.target.value)}
       />
-    </label>
-    <button onClick={onSubmit}>Send My Free Proposal</button>
-  </div>
-);
+    </StyledProposalLabel>
+    <StyledProposalButton onClick={onSubmit}>
+      SEND MY FREE PROPOSAL
+    </StyledProposalButton>
+  </StyledProposalForm>
+)

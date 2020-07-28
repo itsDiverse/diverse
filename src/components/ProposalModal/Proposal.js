@@ -1,13 +1,22 @@
-import React from "react";
-import { ProposalHeader } from "./ProposalHeader";
-import { ProposalBody } from "./ProposalBody";
+import React from "react"
+import { ProposalHeader } from "./ProposalHeader"
+import { ProposalBody } from "./ProposalBody"
+import {
+  StyledContentWrapper,
+  StyledProposalContainer,
+  StyledProposalContent,
+} from "./Proposal.styles"
 
 export const Proposal = () => {
-  const [step, setStep] = React.useState(1);
+  const [step, setStep] = React.useState(1)
   return (
-    <div>
-      <ProposalHeader step={step} />
-      <ProposalBody step={step} setStep={setStep} />
-    </div>
-  );
-};
+    <StyledContentWrapper>
+      <StyledProposalContainer>
+        <StyledProposalContent>
+          <ProposalHeader step={step} />
+          <ProposalBody step={step} setStep={setStep} />
+        </StyledProposalContent>
+      </StyledProposalContainer>
+    </StyledContentWrapper>
+  )
+}
