@@ -1,6 +1,7 @@
 import React from "react"
 import { ProposalHeader } from "./ProposalHeader"
 import { ProposalBody } from "./ProposalBody"
+import { ProposalFooter } from "./ProposalFooter"
 import {
   StyledContentWrapper,
   StyledProposalContainer,
@@ -16,6 +17,7 @@ export const Proposal = () => {
           <ProposalHeader step={step} />
           <ProposalBody step={step} setStep={setStep} />
         </StyledProposalContent>
+        <ProposalFooter step={step} />
       </StyledProposalContainer>
     </StyledContentWrapper>
   )

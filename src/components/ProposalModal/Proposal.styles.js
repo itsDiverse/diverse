@@ -19,7 +19,8 @@ export const StyledContentWrapper = styled.div`
 
 export const StyledProposalContainer = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 770px;
   height: 645px;
   margin-top: 40px;
@@ -125,4 +126,69 @@ export const StyledProposalText = styled.p`
   line-height: 22px;
   text-align: center;
   color: #ffffff;
+`
+
+export const StyledProposalFooter = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+`
+export const StyledFooterContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+`
+export const StyledFooterContent = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+`
+export const StyledFooterSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5px;
+`
+
+export const StyledFooterTitle = styled.p`
+  color: white;
+  text-align: center;
+`
+
+export const StyledFooterText = styled.p`
+  color: white;
+  margin: 0;
+  font-style: italic;
+`
+
+export const StyledSectionDescription = styled.p`
+  padding: 2px;
+  color: white;
+`
+export const StyledFooterCardSection = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+export const StyledFooterCardSectionImg = styled.div``
+
+export const StyledFooterCardSectionText = styled.p`
+  color: white;
+  font-weight: 100;
+  align-self: center;
+`
+
+export const StyledCallNowContainer = styled.div`
+  width: 230px;
+  height: 254px;
+  left: 802px;
+  top: 351px;
+
+  background: #ffffff;
+  border: 9px solid #ededed;
+  border-radius: 11px;
 `
