@@ -3,6 +3,7 @@ import { Form1 } from "./Form1"
 import { Form2 } from "./Form2"
 import { Form3 } from "./Form3"
 import { Form4 } from "./Form4"
+import { Footer3 } from "../ProposalFooter/Footer3"
 import { StyledProposalBody } from "../Proposal.styles"
 
 export const ProposalBody = ({ step, setStep }) => {
@@ -38,17 +39,20 @@ export const ProposalBody = ({ step, setStep }) => {
         />
       )}
       {step === 3 && (
-        <Form3
-          web={web}
-          setWeb={setWeb}
-          email={email}
-          setEmail={setEmail}
-          name={name}
-          setName={setName}
-          number={number}
-          setNumber={setNumber}
-          onSubmit={() => setStep(4)}
-        />
+        <>
+          <Form3
+            web={web}
+            setWeb={setWeb}
+            email={email}
+            setEmail={setEmail}
+            name={name}
+            setName={setName}
+            number={number}
+            setNumber={setNumber}
+            onSubmit={() => setStep(4)}
+          />
+          <Footer3 />
+        </>
       )}
       {step === 4 && <Form4 onSubmit={() => setStep(1)} />}
     </StyledProposalBody>

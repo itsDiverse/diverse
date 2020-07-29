@@ -8,6 +8,5 @@ export const ProposalFooter = ({ step }) => (
   <StyledProposalFooter>
     {step === 1 && <Footer1 />}
     {step === 2 && <Footer2 />}
-    {step === 3 && <Footer3 />}
   </StyledProposalFooter>
 )

@@ -1,4 +1,5 @@
 import React from "react"
+import { Footer3 } from "../ProposalFooter/Footer3"
 import {
   StyledProposalForm,
   StyledProposalLabel,

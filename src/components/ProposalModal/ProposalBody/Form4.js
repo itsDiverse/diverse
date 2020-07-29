@@ -6,20 +6,16 @@ import {
   StyledProposalTextContainer,
 } from "../Proposal.styles"
 export const Form4 = ({ onSubmit }) => (
-  <div>
-    <StyledProposalForm>
-      <StyledProposalTextContainer>
-        <StyledProposalText>
-          Thanks for your proposal request.
-        </StyledProposalText>
-        <StyledProposalText>
-          We will review your information and send your proposal to the provided
-          email address.{" "}
-        </StyledProposalText>
-      </StyledProposalTextContainer>
-      <StyledProposalButton style={{ marginTop: "50px" }} onClick={onSubmit}>
-        CLOSE WINDOW
-      </StyledProposalButton>
-    </StyledProposalForm>
-  </div>
+  <StyledProposalForm>
+    <StyledProposalTextContainer>
+      <StyledProposalText>Thanks for your proposal request.</StyledProposalText>
+      <StyledProposalText>
+        We will review your information and send your proposal to the provided
+        email address.{" "}
+      </StyledProposalText>
+    </StyledProposalTextContainer>
+    <StyledProposalButton style={{ marginTop: "50px" }} onClick={onSubmit}>
+      CLOSE WINDOW
+    </StyledProposalButton>
+  </StyledProposalForm>
 )

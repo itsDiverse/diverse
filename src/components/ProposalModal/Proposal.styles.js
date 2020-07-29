@@ -15,6 +15,10 @@ export const StyledContentWrapper = styled.div`
   );
   font-family: Helvetica;
   font-style: normal;
+  @media (max-width: 768px) {
+    height: 100%;
+    background: linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%);
+  }
 `
 
 export const StyledProposalContainer = styled.div`
@@ -28,6 +32,11 @@ export const StyledProposalContainer = styled.div`
   background: linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%);
   box-shadow: 0px 4px 55px 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+  @media (max-width: 768px) {
+    height: 100%;
+    border-radius: 0px;
+    margin: 0;
+  }
 `
 export const StyledProposalContent = styled.div`
   display: flex;
@@ -42,14 +51,19 @@ export const StyledProposalHeader = styled.div`
   align-items: center;
   width: 100%;
   height: 77px;
+  padding-top: 30px;
 `
 
 export const StyledProposalBody = styled.div`
   display: flex;
-  flex-direction: column;
-  left: 584px;
-  top: 281px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 2rem;
+  width: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const StyledProposalForm = styled.div`
@@ -118,6 +132,10 @@ export const StyledProposalButton = styled.button`
 export const StyledProposalTextContainer = styled.div`
   width: 364px;
   height: 88px;
+  @media (max-width: 768px) {
+    height: 100%;
+    width: 100%;
+  }
 `
 
 export const StyledProposalText = styled.p`
@@ -145,6 +163,9 @@ export const StyledFooterContent = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 export const StyledFooterSection = styled.div`
   display: flex;
@@ -183,12 +204,17 @@ export const StyledFooterCardSectionText = styled.p`
 `
 
 export const StyledCallNowContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   width: 230px;
   height: 254px;
-  left: 802px;
-  top: 351px;
-
+  text-align: center;
   background: #ffffff;
   border: 9px solid #ededed;
   border-radius: 11px;
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
 `

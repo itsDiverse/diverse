@@ -13,10 +13,8 @@ export const Proposal = () => {
   return (
     <StyledContentWrapper>
       <StyledProposalContainer>
-        <StyledProposalContent>
-          <ProposalHeader step={step} />
-          <ProposalBody step={step} setStep={setStep} />
-        </StyledProposalContent>
+        <ProposalHeader step={step} />
+        <ProposalBody step={step} setStep={setStep} />
         <ProposalFooter step={step} />
       </StyledProposalContainer>
     </StyledContentWrapper>
