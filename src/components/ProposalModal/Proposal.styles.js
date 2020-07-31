@@ -32,6 +32,7 @@ export const StyledProposalContainer = styled.div`
   box-shadow: 0px 4px 55px 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   @media (max-width: 768px) {
+    border-radius: 10px;
     padding-bottom: 20px;
     height: fit-content;
     margin-left: 5px;
