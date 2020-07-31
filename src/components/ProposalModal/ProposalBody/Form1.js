@@ -5,7 +5,7 @@ import {
   StyledProposalLabel,
   StyledProposalButton,
 } from "../Proposal.styles"
-
+import IndexPage from "./Select"
 export const Form1 = ({
   onSubmit,
   goals,
@@ -16,16 +16,7 @@ export const Form1 = ({
   <StyledProposalForm>
     <StyledProposalLabel>
       What are your goals?
-      <StyledProposalSelect
-        defaultValue={goals}
-        onChange={event => setGoals(event.target.value)}
-      >
-        <option value="choose" disabled>
-          choose
-        </option>
-        <option value="goal1">Goal 1</option>
-        <option value="goal2">Goal 2</option>
-      </StyledProposalSelect>
+      <IndexPage />
     </StyledProposalLabel>
     <StyledProposalLabel>
       Where do you advertise?
