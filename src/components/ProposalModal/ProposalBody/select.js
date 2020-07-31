@@ -2,34 +2,54 @@ import React from "react"
 
 import Select from "react-select"
 
-const customStyle = {}
-
 const options = [
-  { value: "chocolate", label: "Chocolate" },
-  { value: "strawberry", label: "Strawberry" },
-  { value: "vanilla", label: "Vanilla" },
+  { value: "pedro", label: "Option1" },
+  { value: "strawberry", label: "Option2" },
+  { value: "vanilla", label: "Option3" },
+  { value: "vanillperaa", label: "Option4" },
 ]
-class IndexPage extends React.Component {
-  state = {
-    selectedOption: null,
-  }
-  handleChange = selectedOption => {
-    this.setState({ selectedOption })
-    console.log(`Option selected:`, selectedOption)
-  }
-  render() {
-    const { selectedOption } = this.state
 
-    return (
-      <div style={{ width: "273px" }}>
-        <Select
-          styles={customStyle}
-          value={selectedOption}
-          onChange={this.handleChange}
-          options={options}
-        />
-      </div>
-    )
-  }
+const customStyles = {
+  menuList: (provided, state) => ({
+    ...provided,
+    paddingTop: 0,
+    paddingBottom: 0,
+    borderRadius: "3px",
+  }),
+  option: (styles, state) => ({
+    ...styles,
+    padding: 20,
+    height: "100% !important",
+    fontWeight: 100,
+    color: state.isSelected ? "#FFF" : styles.color,
+    backgroundColor: state.isSelected ? "#0c67e4" : styles.color,
+    borderBottom: "0.5px solid rgba(0, 0, 0, 0.125)",
+    "&:hover": {
+      color: "#FFF",
+      backgroundColor: "#5691e2",
+    },
+  }),
+  control: (styles, state) => ({
+    ...styles,
+    padding: 10,
+    marginTop: "5%",
+    marginBottom: "5%",
+  }),
 }
-export default IndexPage
+
+const SelectOwn = () => (
+  <div
+    style={{
+      fontWeight: "bold",
+      height: "100%",
+      width: "273px",
+      color: "grey",
+      marginTop: 0,
+      paddingTop: 0,
+    }}
+  >
+    <Select autoFocus={true} options={options} styles={customStyles} />
+  </div>
+)
+
+export default SelectOwn

@@ -5,7 +5,6 @@ import { ProposalFooter } from "./ProposalFooter"
 import {
   StyledContentWrapper,
   StyledProposalContainer,
-  StyledProposalContent,
 } from "./Proposal.styles"
 
 export const Proposal = () => {
