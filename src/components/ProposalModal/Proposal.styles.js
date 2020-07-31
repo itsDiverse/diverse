@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+import { Field } from "formik"
 
 export const StyledContentWrapper = styled.div`
   margin: 0;
@@ -19,7 +20,6 @@ export const StyledContentWrapper = styled.div`
     height: 100%;
   }
 `
-
 export const StyledProposalContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -100,7 +100,7 @@ export const StyledProposalSelect = styled.select`
   box-sizing: border-box;
   border-radius: 2px;
 `
-export const StyledProposalInput = styled.input`
+export const StyledProposalInput = styled(Field)`
   display: block;
   height: 53px;
   width: 273px;
@@ -115,6 +115,69 @@ export const StyledProposalInput = styled.input`
   border: 1px solid #195bb6;
   box-sizing: border-box;
   border-radius: 2px;
+
+  &:focus,
+  &:active {
+    box-shadow: rgb(210, 213, 217) 0px 0px 2px 1px,
+      rgb(227, 230, 232) 0px 0px 0px 3px;
+    border: 1px solid rgb(26, 33, 43);
+    outline: none;
+  }
+
+  /* Autocomplete styles in Chrome*/
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    background-color: white;
+    border: 1px solid lightgrey;
+    box-shadow: 0 0 0px 1000px #fff inset;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: black;
+  }
+
+  ${({ valid }) =>
+    valid &&
+    css`
+      border: 1px solid rgb(0, 156, 38);
+
+      &:focus,
+      &:active {
+        border: 1px solid rgb(0, 156, 38);
+        box-shadow: rgb(106, 237, 97) 0px 0px 2px 1px,
+          rgb(177, 247, 160) 0px 0px 0px 3px;
+        outline: none;
+      }
+
+      /* Autocomplete styles in Chrome*/
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus {
+        border: 1px solid rgb(0, 156, 38);
+      }
+    `}
+
+  ${({ error }) =>
+    error &&
+    css`
+      border: 1px solid rgb(191, 49, 12);
+      outline: none;
+
+      &:focus,
+      &:active {
+        box-shadow: rgb(244, 129, 116) 0px 0px 2px 1px,
+          rgb(251, 178, 174) 0px 0px 0px 3px;
+        border: 1px solid rgb(191, 49, 12);
+        outline: none;
+      }
+
+      /* Autocomplete styles in Chrome*/
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus {
+        border: 1px solid rgb(191, 49, 12);
+      }
+    `}
 `
 
 export const StyledProposalButton = styled.button`
