@@ -22,11 +22,11 @@ const customStyles = {
     height: "100% !important",
     fontWeight: 100,
     color: state.isSelected ? "#FFF" : styles.color,
-    backgroundColor: state.isSelected ? "#0c67e4" : styles.color,
+    backgroundColor: state.isSelected ? "#5691e2" : styles.color,
     borderBottom: "0.5px solid rgba(0, 0, 0, 0.125)",
     "&:hover": {
       color: "#FFF",
-      backgroundColor: "#5691e2",
+      backgroundColor: "#0c67e4",
     },
   }),
   control: (styles, state) => ({
@@ -48,7 +48,13 @@ const SelectOwn = () => (
       paddingTop: 0,
     }}
   >
-    <Select autoFocus={true} options={options} styles={customStyles} />
+    <Select
+      class="required"
+      placeholder="Select..."
+      autoFocus={true}
+      options={options}
+      styles={customStyles}
+    />
   </div>
 )
 

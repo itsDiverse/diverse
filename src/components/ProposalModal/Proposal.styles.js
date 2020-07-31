@@ -17,7 +17,6 @@ export const StyledContentWrapper = styled.div`
   font-style: normal;
   @media (max-width: 768px) {
     height: 100%;
-    background: linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%);
   }
 `
 
@@ -33,9 +32,10 @@ export const StyledProposalContainer = styled.div`
   box-shadow: 0px 4px 55px 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   @media (max-width: 768px) {
-    height: 100%;
-    border-radius: 0px;
-    margin: 0;
+    padding-bottom: 20px;
+    height: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 `
 export const StyledProposalContent = styled.div`
@@ -63,6 +63,7 @@ export const StyledProposalBody = styled.div`
   width: 100%;
   @media (max-width: 768px) {
     flex-direction: column;
+    height: 100%;
   }
 `
 
@@ -77,7 +78,7 @@ export const StyledProposalForm = styled.div`
 export const StyledProposalLabel = styled.label`
   color: #ffffff;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
   padding-bottom: 10px;
 `
@@ -130,16 +131,14 @@ export const StyledProposalButton = styled.button`
 `
 
 export const StyledProposalTextContainer = styled.div`
-  width: 364px;
-  height: 88px;
   @media (max-width: 768px) {
-    height: 100%;
+    margin-top: -50px;
     width: 100%;
   }
 `
 
 export const StyledProposalText = styled.p`
-  font-weight: bold;
+  font-weight: 100;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
@@ -158,6 +157,9 @@ export const StyledFooterContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 export const StyledFooterContent = styled.div`
   display: flex;
@@ -178,6 +180,7 @@ export const StyledFooterSection = styled.div`
 export const StyledFooterTitle = styled.p`
   color: white;
   text-align: center;
+  font-weight: 100;
 `
 
 export const StyledFooterText = styled.p`
