@@ -139,13 +139,13 @@ export const StyledProposalInput = styled(Field)`
   ${({ valid }) =>
     valid &&
     css`
-      border: 1px solid rgb(0, 156, 38);
+      border: 1px solid rgb(12, 103, 228);
 
       &:focus,
       &:active {
-        border: 1px solid rgb(0, 156, 38);
-        box-shadow: rgb(106, 237, 97) 0px 0px 2px 1px,
-          rgb(177, 247, 160) 0px 0px 0px 3px;
+        border: 1px solid rgbrgb(12, 103, 228);
+        box-shadow: rgb(12, 103, 228) 0px 0px 2px 1px,
+          rgb(12, 103, 228) 0px 0px 0px 3px;
         outline: none;
       }
 
@@ -153,7 +153,7 @@ export const StyledProposalInput = styled(Field)`
       &:-webkit-autofill,
       &:-webkit-autofill:hover,
       &:-webkit-autofill:focus {
-        border: 1px solid rgb(0, 156, 38);
+        border: 1px solid rgb(12, 103, 228);
       }
     `}
 

@@ -5,12 +5,13 @@ import {
   StyledProposalButton,
   StyledProposalInput,
 } from "../Proposal.styles"
-import { Formik, Field, Form, ErrorMessage } from "formik"
+import { Formik, ErrorMessage } from "formik"
 import * as Yup from "yup"
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
 const FormSchema = Yup.object().shape({
+  website: Yup.string().min(2, "*Too Short!"),
   name: Yup.string()
     .min(2, "*Too Short!")
     .max(70, "*Too Long!")
@@ -30,13 +31,15 @@ export const Form3 = () => (
       number: "",
     }}
     validationSchema={FormSchema}
-    onSubmit={async values => {
-      await new Promise(r => setTimeout(r, 500))
-      alert(JSON.stringify(values, null, 2))
+    onSubmit={(values, actions, setStep) => {
+      setTimeout(() => {
+        alert(JSON.stringify(values, true, 2))
+        actions.setSubmitting(false)
+      }, 1000)
     }}
   >
     {({ values, errors, touched, handleChange, handleBlur, handleSubmit }) => (
-      <StyledProposalForm onSubmit={handleSubmit}>
+      <StyledProposalForm>
         <StyledProposalLabel>
           What’s your website?
           <StyledProposalInput
@@ -44,8 +47,9 @@ export const Form3 = () => (
             name="website"
             onChange={handleChange}
             onBlur={handleBlur}
+            valid={touched.name && !errors.name}
+            error={touched.name && errors.name}
           />
-          <ErrorMessage name="website" />
         </StyledProposalLabel>
         <StyledProposalLabel>
           What’s your name?
