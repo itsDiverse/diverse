@@ -1,92 +1,95 @@
 import React from "react"
-import { Formik, Field, Form, ErrorMessage } from "formik"
-
 import {
   StyledProposalForm,
   StyledProposalLabel,
   StyledProposalButton,
   StyledProposalInput,
 } from "../Proposal.styles"
+import { Formik, Field, Form, ErrorMessage } from "formik"
+import * as Yup from "yup"
+
+const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
+
+const FormSchema = Yup.object().shape({
+  name: Yup.string()
+    .min(2, "*Too Short!")
+    .max(70, "*Too Long!")
+    .required(""),
+  email: Yup.string()
+    .email("*Invalid email")
+    .required("*Required"),
+  number: Yup.string().matches(phoneRegExp, "Phone number is not valid"),
+})
+
 export const Form3 = () => (
   <Formik
-    initialValues={{ email: "", password: "" }}
-    validate={values => {
-      const errors = {}
-      if (!values.email) {
-        errors.email = "*Required"
-      } else if (
-        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-      ) {
-        errors.email = "Invalid email address"
-      }
-      return errors
+    initialValues={{
+      website: "",
+      name: "",
+      email: "",
+      number: "",
     }}
-    onSubmit={(values, { setSubmitting }) => {
-      setTimeout(() => {
-        alert(JSON.stringify(values, null, 2))
-        setSubmitting(false)
-      }, 400)
+    validationSchema={FormSchema}
+    onSubmit={async values => {
+      await new Promise(r => setTimeout(r, 500))
+      alert(JSON.stringify(values, null, 2))
     }}
   >
-    {({
-      values,
-      errors,
-      touched,
-      handleChange,
-      handleBlur,
-      handleSubmit,
-      isSubmitting,
-      /* and other goodies */
-    }) => (
+    {({ values, errors, touched, handleChange, handleBlur, handleSubmit }) => (
       <StyledProposalForm onSubmit={handleSubmit}>
         <StyledProposalLabel>
           What’s your website?
           <StyledProposalInput
-            type="text"
-            name="text"
-            value={values.name}
-            onBlur={handleBlur}
+            type="url"
+            name="website"
             onChange={handleChange}
+            onBlur={handleBlur}
           />
-          {errors.text && touched.text && errors.text}
+          <ErrorMessage name="website" />
         </StyledProposalLabel>
         <StyledProposalLabel>
-          What’s your Name?
+          What’s your name?
           <StyledProposalInput
             type="text"
-            name="text"
-            value={values.name}
-            onBlur={handleBlur}
+            name="name"
             onChange={handleChange}
+            onBlur={handleBlur}
+            valid={touched.name && !errors.name}
+            error={touched.name && errors.name}
           />
-          {errors.text && touched.text && errors.text}
+          <div style={{ fontSize: "10px", marginTop: "-10px" }}>
+            <ErrorMessage name="name" />
+          </div>
         </StyledProposalLabel>
         <StyledProposalLabel>
-          What’s your Email?
+          What’s your email?
           <StyledProposalInput
             type="email"
             name="email"
             onChange={handleChange}
             onBlur={handleBlur}
-            value={values.email}
+            valid={touched.email && !errors.email}
+            error={touched.email && errors.email}
           />
-          <div style={{ marginTop: "-10px", fontSize: "10px", color: "white" }}>
-            {errors.email && touched.email && errors.email}
+          <div style={{ fontSize: "10px", marginTop: "-10px" }}>
+            <ErrorMessage name="email" />
           </div>
         </StyledProposalLabel>
-
         <StyledProposalLabel>
           What’s your number?
           <StyledProposalInput
             type="number"
             name="number"
-            value={values.number}
-            onBlur={handleBlur}
             onChange={handleChange}
+            onBlur={handleBlur}
+            valid={touched.number && !errors.number}
+            error={touched.number && errors.number}
           />
-          {errors.number && touched.number && errors.number}
+          <div style={{ fontSize: "10px", marginTop: "-10px" }}>
+            <ErrorMessage name="number" />
+          </div>
         </StyledProposalLabel>
-        <StyledProposalButton type="submit" disabled={isSubmitting}>
+        <StyledProposalButton type="submit" onClick={handleSubmit}>
           SEND MY FREE PROPOSAL
         </StyledProposalButton>
       </StyledProposalForm>
