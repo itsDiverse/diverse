@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+import { Field } from "formik"
 
 export const StyledContentWrapper = styled.div`
   margin: 0;
@@ -17,10 +18,8 @@ export const StyledContentWrapper = styled.div`
   font-style: normal;
   @media (max-width: 768px) {
     height: 100%;
-    background: linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%);
   }
 `
-
 export const StyledProposalContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -33,9 +32,11 @@ export const StyledProposalContainer = styled.div`
   box-shadow: 0px 4px 55px 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   @media (max-width: 768px) {
-    height: 100%;
-    border-radius: 0px;
-    margin: 0;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    height: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 `
 export const StyledProposalContent = styled.div`
@@ -63,6 +64,7 @@ export const StyledProposalBody = styled.div`
   width: 100%;
   @media (max-width: 768px) {
     flex-direction: column;
+    height: 100%;
   }
 `
 
@@ -77,7 +79,7 @@ export const StyledProposalForm = styled.div`
 export const StyledProposalLabel = styled.label`
   color: #ffffff;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
   padding-bottom: 10px;
 `
@@ -98,7 +100,7 @@ export const StyledProposalSelect = styled.select`
   box-sizing: border-box;
   border-radius: 2px;
 `
-export const StyledProposalInput = styled.input`
+export const StyledProposalInput = styled(Field)`
   display: block;
   height: 53px;
   width: 273px;
@@ -113,6 +115,69 @@ export const StyledProposalInput = styled.input`
   border: 1px solid #195bb6;
   box-sizing: border-box;
   border-radius: 2px;
+
+  &:focus,
+  &:active {
+    box-shadow: rgb(210, 213, 217) 0px 0px 2px 1px,
+      rgb(227, 230, 232) 0px 0px 0px 3px;
+    border: 1px solid rgb(26, 33, 43);
+    outline: none;
+  }
+
+  /* Autocomplete styles in Chrome*/
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    background-color: white;
+    border: 1px solid lightgrey;
+    box-shadow: 0 0 0px 1000px #fff inset;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: black;
+  }
+
+  ${({ valid }) =>
+    valid &&
+    css`
+      border: 1px solid rgb(12, 103, 228);
+
+      &:focus,
+      &:active {
+        border: 1px solid rgbrgb(12, 103, 228);
+        box-shadow: rgb(12, 103, 228) 0px 0px 2px 1px,
+          rgb(12, 103, 228) 0px 0px 0px 3px;
+        outline: none;
+      }
+
+      /* Autocomplete styles in Chrome*/
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus {
+        border: 1px solid rgb(12, 103, 228);
+      }
+    `}
+
+  ${({ error }) =>
+    error &&
+    css`
+      border: 1px solid rgb(191, 49, 12);
+      outline: none;
+
+      &:focus,
+      &:active {
+        box-shadow: rgb(244, 129, 116) 0px 0px 2px 1px,
+          rgb(251, 178, 174) 0px 0px 0px 3px;
+        border: 1px solid rgb(191, 49, 12);
+        outline: none;
+      }
+
+      /* Autocomplete styles in Chrome*/
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus {
+        border: 1px solid rgb(191, 49, 12);
+      }
+    `}
 `
 
 export const StyledProposalButton = styled.button`
@@ -130,16 +195,14 @@ export const StyledProposalButton = styled.button`
 `
 
 export const StyledProposalTextContainer = styled.div`
-  width: 364px;
-  height: 88px;
   @media (max-width: 768px) {
-    height: 100%;
+    margin-top: -50px;
     width: 100%;
   }
 `
 
 export const StyledProposalText = styled.p`
-  font-weight: bold;
+  font-weight: 100;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
@@ -158,6 +221,9 @@ export const StyledFooterContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 export const StyledFooterContent = styled.div`
   display: flex;
@@ -178,6 +244,7 @@ export const StyledFooterSection = styled.div`
 export const StyledFooterTitle = styled.p`
   color: white;
   text-align: center;
+  font-weight: 100;
 `
 
 export const StyledFooterText = styled.p`
