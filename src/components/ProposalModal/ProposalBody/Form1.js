@@ -4,7 +4,7 @@ import {
   StyledProposalLabel,
   StyledProposalButton,
 } from "../Proposal.styles"
-import SelectOwn from "./Select"
+import SelectOwn from "./select"
 
 export const Form1 = ({
   onSubmit,
