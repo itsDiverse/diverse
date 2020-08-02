@@ -16,6 +16,12 @@ const customStyles = {
     paddingBottom: 0,
     borderRadius: "3px",
   }),
+  control: (styles, state) => ({
+    ...styles,
+    padding: 10,
+    marginTop: "5%",
+    marginBottom: "5%",
+  }),
   option: (styles, state) => ({
     ...styles,
     padding: 20,
@@ -28,12 +34,6 @@ const customStyles = {
       color: "#FFF",
       backgroundColor: "#0c67e4",
     },
-  }),
-  control: (styles, state) => ({
-    ...styles,
-    padding: 10,
-    marginTop: "5%",
-    marginBottom: "5%",
   }),
 }
 
