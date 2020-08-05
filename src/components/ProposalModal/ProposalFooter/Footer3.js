@@ -19,44 +19,44 @@ export const Footer3 = () => (
       <path
         d="M16.6765 8.3977L2.98497 19.8714C1.61013 21.0235 1.4308 23.0706 2.58443 24.4437L26.6059 53.0344C27.7595 54.4074 29.8092 54.5865 31.1841 53.4344L44.8756 41.9607C46.2504 40.8086 46.4297 38.7615 45.2761 37.3884L21.2546 8.79772C20.101 7.42466 18.0513 7.24556 16.6765 8.3977Z"
         stroke="#0C67E4"
-        stroke-width="1.3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M16.8096 14.9673L12.6826 17.5474"
         stroke="#0C67E4"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M34 14L35 8"
         stroke="#0C67E4"
-        stroke-width="1.3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M35.625 4.61453L36 1.5"
         stroke="#0C67E4"
-        stroke-width="1.3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M36.5 19.7057L44 13.5"
         stroke="#0C67E4"
-        stroke-width="1.3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-dasharray="9.22 9.22"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeDasharray="9.22 9.22"
       />
       <path
         d="M42 24L54 26"
         stroke="#0C67E4"
-        stroke-width="1.3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         opacity="0.36"
@@ -124,7 +124,7 @@ export const Footer3 = () => (
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <line y1="1.5" x2="38" y2="1.5" stroke="#0C67E4" stroke-width="3" />
+      <line y1="1.5" x2="38" y2="1.5" stroke="#0C67E4" strokeWidth="3" />
     </svg>
 
     <div style={{ fontWeight: "normal", fontSize: "14px", color: "#1D4D87" }}>
@@ -156,7 +156,12 @@ export const Footer3 = () => (
         color: "#0C67E4",
       }}
     >
-      (833) 348-3773{" "}
+      <a
+        href="tel:8333483773"
+        style={{ textDecoration: "none", color: "rgb(12, 103, 228)" }}
+      >
+        (833) 348-3773
+      </a>{" "}
     </div>
   </StyledCallNowContainer>
 )

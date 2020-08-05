@@ -3,7 +3,6 @@ import {
   StyledFooterContainer,
   StyledFooterContent,
   StyledFooterTitle,
-  StyledFooterText,
   StyledFooterCardSection,
   StyledFooterCardSectionImg,
   StyledFooterCardSectionText,

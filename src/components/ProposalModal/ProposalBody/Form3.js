@@ -4,6 +4,7 @@ import {
   StyledProposalLabel,
   StyledProposalButton,
   StyledProposalInput,
+  ErrorValidation,
 } from "../Proposal.styles"
 import { Formik, ErrorMessage } from "formik"
 import * as Yup from "yup"
@@ -11,7 +12,6 @@ import * as Yup from "yup"
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
 const FormSchema = Yup.object().shape({
-  website: Yup.string().min(2, "*Too Short!"),
   name: Yup.string()
     .min(2, "*Too Short!")
     .max(70, "*Too Long!")
@@ -22,7 +22,7 @@ const FormSchema = Yup.object().shape({
   number: Yup.string().matches(phoneRegExp, "Phone number is not valid"),
 })
 
-export const Form3 = () => (
+export const Form3 = ({ setStep, formData, setFormData }) => (
   <Formik
     initialValues={{
       website: "",
@@ -31,26 +31,25 @@ export const Form3 = () => (
       number: "",
     }}
     validationSchema={FormSchema}
-    onSubmit={(values, actions, setStep) => {
-      setTimeout(() => {
-        alert(JSON.stringify(values, true, 2))
-        actions.setSubmitting(false)
-      }, 1000)
+    onSubmit={(values, actions) => {
+      setFormData({ ...formData, ...values })
+      setStep(4)
     }}
   >
-    {({ values, errors, touched, handleChange, handleBlur, handleSubmit }) => (
+    {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
       <StyledProposalForm>
         <StyledProposalLabel>
           What’s your website?
           <StyledProposalInput
-            type="url"
+            type="string"
             name="website"
             onChange={handleChange}
             onBlur={handleBlur}
-            valid={touched.name && !errors.name}
-            error={touched.name && errors.name}
           />
         </StyledProposalLabel>
+        <ErrorValidation>
+          <ErrorMessage name="website" />
+        </ErrorValidation>
         <StyledProposalLabel>
           What’s your name?
           <StyledProposalInput
@@ -58,13 +57,12 @@ export const Form3 = () => (
             name="name"
             onChange={handleChange}
             onBlur={handleBlur}
-            valid={touched.name && !errors.name}
             error={touched.name && errors.name}
           />
-          <div style={{ fontSize: "10px", marginTop: "-10px" }}>
-            <ErrorMessage name="name" />
-          </div>
         </StyledProposalLabel>
+        <ErrorValidation>
+          <ErrorMessage name="name" />
+        </ErrorValidation>
         <StyledProposalLabel>
           What’s your email?
           <StyledProposalInput
@@ -72,13 +70,12 @@ export const Form3 = () => (
             name="email"
             onChange={handleChange}
             onBlur={handleBlur}
-            valid={touched.email && !errors.email}
             error={touched.email && errors.email}
           />
-          <div style={{ fontSize: "10px", marginTop: "-10px" }}>
-            <ErrorMessage name="email" />
-          </div>
         </StyledProposalLabel>
+        <ErrorValidation>
+          <ErrorMessage name="email" />
+        </ErrorValidation>
         <StyledProposalLabel>
           What’s your number?
           <StyledProposalInput
@@ -86,13 +83,11 @@ export const Form3 = () => (
             name="number"
             onChange={handleChange}
             onBlur={handleBlur}
-            valid={touched.number && !errors.number}
-            error={touched.number && errors.number}
           />
-          <div style={{ fontSize: "10px", marginTop: "-10px" }}>
-            <ErrorMessage name="number" />
-          </div>
         </StyledProposalLabel>
+        <ErrorValidation>
+          <ErrorMessage name="number" />
+        </ErrorValidation>
         <StyledProposalButton type="submit" onClick={handleSubmit}>
           SEND MY FREE PROPOSAL
         </StyledProposalButton>

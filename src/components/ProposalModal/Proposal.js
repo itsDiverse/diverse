@@ -9,11 +9,18 @@ import {
 
 export const Proposal = () => {
   const [step, setStep] = React.useState(1)
+  const [formData, setFormData] = React.useState({})
+
   return (
     <StyledContentWrapper>
       <StyledProposalContainer>
-        <ProposalHeader step={step} />
-        <ProposalBody step={step} setStep={setStep} />
+        {step !== 4 && <ProposalHeader step={step} setStep={setStep} />}
+        <ProposalBody
+          step={step}
+          setStep={setStep}
+          setFormData={setFormData}
+          formData={formData}
+        />
         <ProposalFooter step={step} />
       </StyledProposalContainer>
     </StyledContentWrapper>

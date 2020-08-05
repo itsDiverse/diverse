@@ -2,13 +2,6 @@ import React from "react"
 
 import Select from "react-select"
 
-const options = [
-  { value: "pedro", label: "Option1" },
-  { value: "strawberry", label: "Option2" },
-  { value: "vanilla", label: "Option3" },
-  { value: "vanillperaa", label: "Option4" },
-]
-
 const customStyles = {
   menuList: (provided, state) => ({
     ...provided,
@@ -37,7 +30,7 @@ const customStyles = {
   }),
 }
 
-const SelectOwn = () => (
+const SelectOwn = props => (
   <div
     style={{
       fontWeight: "bold",
@@ -48,13 +41,7 @@ const SelectOwn = () => (
       paddingTop: 0,
     }}
   >
-    <Select
-      class="required"
-      placeholder="Select..."
-      autoFocus={true}
-      options={options}
-      styles={customStyles}
-    />
+    <Select class="required" styles={customStyles} {...props} />
   </div>
 )
 

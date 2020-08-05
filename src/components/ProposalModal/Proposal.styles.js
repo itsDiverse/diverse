@@ -6,6 +6,7 @@ export const StyledContentWrapper = styled.div`
   padding: 0;
   display: flex;
   justify-content: center;
+
   height: 100vh;
   background-color: #e5e5e5;
   background-image: linear-gradient(
@@ -24,6 +25,7 @@ export const StyledProposalContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 770px;
   height: 645px;
   margin-top: 40px;
@@ -81,7 +83,7 @@ export const StyledProposalLabel = styled.label`
   text-align: center;
   font-weight: 500;
   font-size: 14px;
-  padding-bottom: 10px;
+  padding-bottom: 2px;
 `
 
 export const StyledProposalSelect = styled.select`
@@ -100,6 +102,14 @@ export const StyledProposalSelect = styled.select`
   box-sizing: border-box;
   border-radius: 2px;
 `
+export const ErrorValidation = styled.div`
+  color: white;
+  font-size: 10px;
+  font-style: italic;
+  height: 20px;
+  margin-top: -10px;
+`
+
 export const StyledProposalInput = styled(Field)`
   display: block;
   height: 53px;
@@ -180,23 +190,51 @@ export const StyledProposalInput = styled(Field)`
     `}
 `
 
+export const StyledSelectWrapper = styled.div`
+  ${({ error }) =>
+    error &&
+    css`
+      border: 1px solid rgb(191, 49, 12);
+      outline: none;
+
+      &:focus,
+      &:active {
+        box-shadow: rgb(244, 129, 116) 0px 0px 2px 1px,
+          rgb(251, 178, 174) 0px 0px 0px 3px;
+        border: 1px solid rgb(191, 49, 12);
+        outline: none;
+      }
+
+      /* Autocomplete styles in Chrome*/
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus {
+        border: 1px solid rgb(191, 49, 12);
+      }
+    `}
+`
+
 export const StyledProposalButton = styled.button`
+  cursor: pointer;
   width: 239px;
   height: 46.4px;
   background: #0c67e4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
   border-radius: 7px;
   border-style: none;
+  outline: none;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-
   color: #ffffff;
+  :hover {
+    background: #0c59e4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  }
 `
 
 export const StyledProposalTextContainer = styled.div`
   @media (max-width: 768px) {
-    margin-top: -50px;
     width: 100%;
   }
 `
