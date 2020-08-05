@@ -79,7 +79,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
         <StyledProposalLabel>
           What’s your number?
           <StyledProposalInput
-            type="number"
+            type="string"
             name="number"
             onChange={handleChange}
             onBlur={handleBlur}

@@ -101,6 +101,9 @@ export const StyledProposalSelect = styled.select`
   border: 1px solid #195bb6;
   box-sizing: border-box;
   border-radius: 2px;
+  & .select-placeholder {
+    color: green;
+  }
 `
 export const ErrorValidation = styled.div`
   color: white;
@@ -145,6 +148,10 @@ export const StyledProposalInput = styled(Field)`
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: black;
   }
+  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 
   ${({ valid }) =>
     valid &&

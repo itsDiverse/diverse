@@ -14,6 +14,7 @@ const customStyles = {
     padding: 10,
     marginTop: "5%",
     marginBottom: "5%",
+    color: "red",
   }),
   option: (styles, state) => ({
     ...styles,
@@ -28,6 +29,9 @@ const customStyles = {
       backgroundColor: "#0c67e4",
     },
   }),
+  placeholder: (styles, state) => ({
+    color: "#555555",
+  }),
 }
 
 const SelectOwn = props => (
@@ -36,7 +40,7 @@ const SelectOwn = props => (
       fontWeight: "bold",
       height: "100%",
       width: "273px",
-      color: "grey",
+      color: "#555555",
       marginTop: 0,
       paddingTop: 0,
     }}
