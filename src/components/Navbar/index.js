@@ -100,7 +100,21 @@ class AnimatedNavbar extends Component {
                 title={n.title}
                 index={index}
                 onMouseEnter={this.onMouseEnter}
-              ></NavbarItem>
+              >
+                <div>
+                  {currentIndex === index && (
+                    <DropdownContainer
+                      direction={direction}
+                      animatingOut={this.state.animatingOut}
+                      className={n.className}
+                      duration={duration}
+                    >
+                      <CurrentDropdown />
+                      {PrevDropdown && <PrevDropdown />}
+                    </DropdownContainer>
+                  )}
+                </div>
+              </NavbarItem>
             )
           })}
         </Navbar>
