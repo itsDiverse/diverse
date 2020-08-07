@@ -57,6 +57,7 @@ export const Form2 = ({ setStep, formData, setFormData }) => (
             onChange={option => setFieldValue("sell", option)}
             onBlur={handleBlur}
             options={optionsSell}
+            autofocus
           />
         </StyledProposalLabel>
         <ErrorValidation>

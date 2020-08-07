@@ -13,7 +13,6 @@ import MobileNavbar from "./MobileNavbar"
 const Wrapper = styled.nav`
   position: fixed;
   left: 0;
-  margin-top: 15px;
   box-sizing: border-box;
   z-index: 3;
   width: 100%;
@@ -21,7 +20,7 @@ const Wrapper = styled.nav`
   font-size: ${rem(15)};
   font-weight: 500;
   background: white;
-  transition: background 300ms ease-out;
+  transition: background 400ms ease-out;
   color: #555555;
 
   a {
@@ -30,11 +29,11 @@ const Wrapper = styled.nav`
 `
 
 const NormalNavbar = styled.div`
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 0 ${rem(20)};
-
   ${mobile(css`
     display: none;
   `)}
@@ -109,6 +108,7 @@ class NavBar extends PureComponent {
               <NavLinks />
               <EndWrapper>
                 <Link
+                  tabIndex="-1"
                   to="/modalPopUp"
                   state={{
                     modal: true,

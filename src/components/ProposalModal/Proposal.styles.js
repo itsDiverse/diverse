@@ -7,7 +7,6 @@ export const StyledContentWrapper = styled.div`
   display: flex;
   justify-content: center;
 
-  height: 100vh;
   background-color: #e5e5e5;
   background-image: linear-gradient(
     180deg,
@@ -234,13 +233,20 @@ export const StyledProposalButton = styled.button`
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
-  :hover {
+  &:hover {
     background: #0c59e4;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+  &:focus {
+    border: 2px solid #e5e5e5;
+  }
+  &:active {
+    border: 2px solid #e5e5e5;
   }
 `
 
 export const StyledProposalTextContainer = styled.div`
+  padding-bottom: 40px;
   @media (max-width: 768px) {
     width: 100%;
   }

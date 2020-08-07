@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import {
   StyledProposalForm,
   StyledProposalButton,
@@ -14,8 +15,8 @@ export const Form4 = ({ onSubmit }) => (
         email address.{" "}
       </StyledProposalText>
     </StyledProposalTextContainer>
-    <StyledProposalButton style={{ marginTop: "50px" }} onClick={onSubmit}>
-      CLOSE WINDOW
-    </StyledProposalButton>
+    <Link to="/index_v1" tabIndex="-1">
+      <StyledProposalButton>CLOSE WINDOW</StyledProposalButton>
+    </Link>
   </StyledProposalForm>
 )

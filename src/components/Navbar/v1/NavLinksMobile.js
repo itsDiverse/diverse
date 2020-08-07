@@ -2,15 +2,16 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-import NavSeparator from "./NavSeparator"
-
 const Wrapper = styled.nav`
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  width: 100%;
 `
 
 const NavLink = styled(Link)`
+  padding: 5px;
   flex: 0 0 auto;
   display: inline-block;
   line-height: 3.125rem;
@@ -28,17 +29,28 @@ const NavLink = styled(Link)`
     opacity: 0.6;
   }
 `
+const NavSeparator = styled.span`
+  flex: 0 0 auto;
+  width: 70%;
+  height: 0.05rem;
+  margin: 0 0.9375rem;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 2px 4px 1px #eee;
+  opacity: 0.35;
+  color: #555555;
+`
 
-const NavLinks = () => (
+const NavLinksMobile = () => (
   <Wrapper>
-    <NavLink to="/">Home</NavLink>
+    <NavLink to="/"> HOME</NavLink>
     <NavSeparator />
-    <NavLink to="index.js">How We Work</NavLink>
+    <NavLink to="index.js">HOW WE WORK</NavLink>
     <NavSeparator />
-    <NavLink to="/">Our Services</NavLink>
+    <NavLink to="/">OUR SERVICES</NavLink>
     <NavSeparator />
-    <NavLink to="/">Contact Us</NavLink>
+    <NavLink to="/">CONTACT US</NavLink>
   </Wrapper>
 )
 
-export default NavLinks
+export default NavLinksMobile

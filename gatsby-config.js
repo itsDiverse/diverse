@@ -40,7 +40,25 @@ module.exports = {
     "gatsby-plugin-eslint",
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-css-modules`,
-    `gatsby-plugin-modal-routing`,
+    {
+      resolve: "gatsby-plugin-modal-routing",
+      options: {
+        modalProps: {
+          style: {
+            overlay: { zIndex: 1001 },
+            content: {
+              height: "fit-content",
+              padding: "0 0 40px 0",
+              margin: "0 auto",
+              left: "0",
+              right: "0",
+              bottom: "70",
+            },
+          },
+          shouldCloseOnOverlayClick: true,
+        },
+      },
+    },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
