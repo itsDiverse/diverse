@@ -3,10 +3,9 @@ import { Field } from "formik"
 
 export const StyledContentWrapper = styled.div`
   margin: 0;
-  padding: 0;
+  padding: 30px;
   display: flex;
   justify-content: center;
-
   background-color: #e5e5e5;
   background-image: linear-gradient(
     180deg,
@@ -18,6 +17,7 @@ export const StyledContentWrapper = styled.div`
   font-style: normal;
   @media (max-width: 768px) {
     height: 100%;
+    padding: 5px;
   }
 `
 export const StyledProposalContainer = styled.div`
@@ -27,7 +27,6 @@ export const StyledProposalContainer = styled.div`
   justify-content: center;
   width: 770px;
   height: 645px;
-  margin-top: 40px;
 
   background: linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%);
   box-shadow: 0px 4px 55px 20px rgba(0, 0, 0, 0.2);

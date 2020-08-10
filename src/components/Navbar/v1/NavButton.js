@@ -13,6 +13,14 @@ const NavButton = styled.button`
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  z-index: 10;
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+    background: rgba(0, 0, 0, 0.07);
+    border-radius: 3px;
+    outline: none;
+  }
   ${p =>
     p.active &&
     css`

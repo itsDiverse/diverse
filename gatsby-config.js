@@ -47,12 +47,12 @@ module.exports = {
           style: {
             overlay: { zIndex: 1001 },
             content: {
-              height: "fit-content",
-              padding: "0 0 40px 0",
+              overflow: "scroll",
+              padding: "0 0 0 0",
               margin: "0 auto",
+              bottom: "auto",
               left: "0",
               right: "0",
-              bottom: "70",
             },
           },
           shouldCloseOnOverlayClick: true,

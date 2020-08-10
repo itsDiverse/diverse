@@ -5,35 +5,41 @@ import { Link } from "gatsby"
 const Wrapper = styled.nav`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: flex-start;
   width: 100%;
+  margin-top: 3.75rem;
 `
 
 const NavLink = styled(Link)`
-  padding: 5px;
+  margin: 2px;
+  padding-left: 1.5rem !important;
+  width: 100%;
+  padding: 6px;
   flex: 0 0 auto;
   display: inline-block;
   line-height: 3.125rem;
   transition: opacity 0.2s, transform 0.2s;
   cursor: pointer;
-  letter-spacing: 0.025rem;
+  letter-spacing: sleec 0.025rem;
   color: currentColor;
+  border-radius: 2px;
   &:hover,
   &:focus {
-    opacity: 0.8;
-    color: #616161;
+    color: #195bb6;
+    transform: scale(1.1);
+    border: 0px transparent;
+    outline: none;
+    border-style: none;
   }
   &:active {
     transform: scale(0.95);
-    opacity: 0.6;
   }
 `
 const NavSeparator = styled.span`
   flex: 0 0 auto;
   width: 70%;
   height: 0.05rem;
-  margin: 0 0.9375rem;
+  margin: 0;
   border-radius: 50%;
   background: currentColor;
   box-shadow: 0 2px 4px 1px #eee;
@@ -43,13 +49,29 @@ const NavSeparator = styled.span`
 
 const NavLinksMobile = () => (
   <Wrapper>
-    <NavLink to="/"> HOME</NavLink>
+    <NavLink
+      to="/index_v1/"
+      activeClassName="active"
+      activeStyle={{ color: "#fff", background: "#195bb6" }}
+    >
+      {" "}
+      HOME
+    </NavLink>
     <NavSeparator />
-    <NavLink to="index.js">HOW WE WORK</NavLink>
+    <NavLink
+      activeStyle={{ color: "#fff", background: "#195bb6" }}
+      to="/index_v2/"
+    >
+      HOW WE WORK
+    </NavLink>
     <NavSeparator />
-    <NavLink to="/">OUR SERVICES</NavLink>
+    <NavLink activeStyle={{ color: "#fff", background: "#195bb6" }} to="/">
+      OUR SERVICES
+    </NavLink>
     <NavSeparator />
-    <NavLink to="/">CONTACT US</NavLink>
+    <NavLink activeStyle={{ color: "#fff", background: "#195bb6" }} to="/">
+      CONTACT US
+    </NavLink>
   </Wrapper>
 )
 

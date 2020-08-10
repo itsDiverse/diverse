@@ -26,13 +26,14 @@ const Wrapper = styled.div`
 
 const SecondaryMenu = styled.div`
   position: absolute;
-  top: 4.125rem;
-  left: 1.125rem;
-  right: 0;
+  top: 0;
+  left: 5.125rem;
+  right: 0 !important;
   ${p =>
     p.open
       ? css`
-          height: 91vh;
+          height: 100vh;
+          box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
         `
       : css`
           height: 0;
@@ -40,13 +41,12 @@ const SecondaryMenu = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 0 1.5rem;
-  transition: height 0.2s;
   user-select: none;
-  -webkit-overflow-scrolling: touch;
-  overflow-x: scroll;
+  -webkit-overflow-scrolling: none;
+  overflow-x: hidden;
   overflow-y: hidden;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -55,7 +55,7 @@ const SecondaryMenu = styled.div`
     rgba(247, 247, 247, 1) 50%,
     rgba(229, 229, 229, 1) 81%
   );
-  border-radius: 5px;
+  border-radius: 2px;
   color: #55555;
   font-weight: bold;
 `
@@ -68,12 +68,15 @@ const LogoLink = styled(Link).attrs({
   vertical-align: center;
   margin-left: 1.25rem;
   color: currentColor;
+  outline: none;
 `
 
 const IconWrapper = styled.div`
   transition: transform 0.1s;
-
   color: #555555;
+  &:focus {
+    color: #ffffff;
+  }
   ${p =>
     p.rotate &&
     css`
@@ -96,10 +99,18 @@ const Button = styled.button`
     transform: scale(0.95);
     opacity: 0.9;
   }
+  &:focus {
+    opacity: 0.9;
+    background: #195bb6;
+    color: #ffffff;
+    outline: none;
+  }
 `
 
 const SecondaryMenuItem = styled.div`
   // padding-right: 1.25rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
 `
 
 const MobileNavbar = props => {
@@ -122,6 +133,7 @@ const MobileNavbar = props => {
             <LogoMobile />
           </LogoLink>
           <Link
+            tabIndex="-1"
             to="/modalPopUp"
             state={{
               modal: true,
@@ -140,8 +152,17 @@ const MobileNavbar = props => {
           <SecondaryMenu open={!isMobileNavFolded}>
             <NavLinksMobile />
             <NavSeparator />
+
             <SecondaryMenuItem>
-              <Social />
+              <Link
+                tabIndex="-1"
+                to="/modalPopUp"
+                state={{
+                  modal: true,
+                }}
+              >
+                <Button>GET A PROPOSAL</Button>
+              </Link>
             </SecondaryMenuItem>
           </SecondaryMenu>
         </Wrapper>

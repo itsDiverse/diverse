@@ -22,7 +22,7 @@ const customStyles = {
     fontWeight: 100,
     color: state.isFocused || state.isSelected ? "#FFF" : styles.color,
     backgroundColor:
-      state.isFocused || state.isSelected ? "#5691e2" : styles.color,
+      state.isFocused || state.isSelected ? "#236CD1" : styles.color,
     borderBottom: "0.5px solid rgba(0, 0, 0, 0.125)",
     "&:hover": {
       color: "#FFF",
