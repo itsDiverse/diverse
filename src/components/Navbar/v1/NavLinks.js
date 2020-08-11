@@ -33,11 +33,11 @@ const NavLinks = () => (
   <Wrapper>
     <NavLink to="/">Home</NavLink>
     <NavSeparator />
-    <NavLink to="index.js">How We Work</NavLink>
+    <NavLink to="/index_v2/">How We Work</NavLink>
     <NavSeparator />
-    <NavLink to="/">Our Services</NavLink>
+    <NavLink to="/index_v3/">Our Services</NavLink>
     <NavSeparator />
-    <NavLink to="/">Contact Us</NavLink>
+    <NavLink to="/index_v4">Contact Us</NavLink>
   </Wrapper>
 )
 

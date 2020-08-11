@@ -51,7 +51,7 @@ const NavSeparator = styled.span`
 const NavLinksMobile = () => (
   <Wrapper>
     <NavLink
-      to="/"
+      to="/index_v3/"
       activeClassName="active"
       activeStyle={{
         color: "#fff",
@@ -80,7 +80,7 @@ const NavLinksMobile = () => (
         background:
           "linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%)",
       }}
-      to="/index_v3/"
+      to="/index_v1/"
     >
       OUR SERVICES
     </NavLink>

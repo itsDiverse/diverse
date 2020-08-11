@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react"
 import styled, { injectGlobal } from "styled-components"
+import { useMediaQuery } from "react-responsive"
 
 import rem from "../../../utils/rem"
 import Nav from "../../Navbar/v1"
@@ -11,6 +12,17 @@ const Wrapper = styled.div`
   min-height: 100vh;
   flex-direction: column;
 `
+const MediaFooter = () => {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" })
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-device-width: 1224px)",
+  })
+
+  if (isDesktopOrLaptop) return <Footer />
+  if (isTabletOrMobile) return <MobileFooter />
+
+  return null
+}
 
 class LayoutV1 extends PureComponent {
   state = {
@@ -38,7 +50,7 @@ class LayoutV1 extends PureComponent {
           onMobileNavToggle={this.toggleMobileNav}
         />
         {this.props.children}
-        <MobileFooter />
+        <MediaFooter />
       </Wrapper>
     )
   }
