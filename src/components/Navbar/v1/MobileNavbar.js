@@ -27,13 +27,14 @@ const Wrapper = styled.div`
 const SecondaryMenu = styled.div`
   position: absolute;
   top: 0;
-  left: 5.125rem;
+  left: 6.125rem;
   right: 0 !important;
   ${p =>
     p.open
       ? css`
           height: 100vh;
           box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+          overflow: scroll;
         `
       : css`
           height: 0;
@@ -43,11 +44,11 @@ const SecondaryMenu = styled.div`
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 1.5rem;
+  padding: 0 0 0 1rem;
   user-select: none;
-  -webkit-overflow-scrolling: none;
+
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: scroll;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
@@ -64,16 +65,18 @@ const LogoLink = styled(Link).attrs({
   to: "/",
   "aria-label": "home",
 })`
+  padding-top: 0.25rem;
   display: inline-block;
   vertical-align: center;
-  margin-left: 1.25rem;
+  margin-left: 0.25rem;
   color: currentColor;
   outline: none;
 `
 
 const IconWrapper = styled.div`
   transition: transform 0.1s;
-  color: #555555;
+  color: #195bb6;
+  background: white-smoke;
   &:focus {
     color: #ffffff;
   }
@@ -88,29 +91,26 @@ const IconWrapper = styled.div`
 const Button = styled.button`
   width: 166px;
   height: 43px;
-  margin-right: 5px;
-  background: #ffffff;
-  border: 3px solid #195bb6;
+  background: #fff;
   box-sizing: border-box;
+  border: 3px solid #195bb6;
+  border-color: #195bb6;
   border-radius: 5px;
   color: #195bb6;
+  font-size: 13.5px;
   font-weight: bold;
+  &:focus {
+    outline: none;
+  }
   &:active {
     transform: scale(0.95);
-    opacity: 0.9;
-  }
-  &:focus {
-    opacity: 0.9;
-    background: #195bb6;
-    color: #ffffff;
-    outline: none;
   }
 `
 
 const SecondaryMenuItem = styled.div`
   // padding-right: 1.25rem;
   margin-top: 2rem;
-  margin-left: 1rem;
+  margin-left: 0.75rem;
 `
 
 const MobileNavbar = props => {
@@ -136,10 +136,10 @@ const MobileNavbar = props => {
             tabIndex="-1"
             to="/modalPopUp"
             state={{
-              modal: true,
+              modal: false,
             }}
           >
-            <Button>GET A PROPOSAL</Button>
+            <Button autoFocus={true}>GET A PROPOSAL</Button>
           </Link>
           <Wrapper>
             <NavButton onClick={onMobileNavToggle} active={!isMobileNavFolded}>
@@ -158,7 +158,7 @@ const MobileNavbar = props => {
                 tabIndex="-1"
                 to="/modalPopUp"
                 state={{
-                  modal: true,
+                  modal: false,
                 }}
               >
                 <Button>GET A PROPOSAL</Button>

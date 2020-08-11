@@ -65,8 +65,8 @@ const Button = styled.button`
     opacity: 0.9;
     background: #195bb6;
     color: #ffffff;
-    outline: none;
   }
+
   &:active {
     transform: scale(0.95);
     opacity: 0.9;

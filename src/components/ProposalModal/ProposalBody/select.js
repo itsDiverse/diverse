@@ -45,7 +45,13 @@ const SelectOwn = props => (
       paddingTop: 0,
     }}
   >
-    <Select class="required" styles={customStyles} {...props} />
+    <Select
+      isSearchable={false}
+      inputProps={{ readOnly: true }}
+      class="required"
+      styles={customStyles}
+      {...props}
+    />
   </div>
 )
 

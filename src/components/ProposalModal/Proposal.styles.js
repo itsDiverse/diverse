@@ -1,5 +1,19 @@
 import styled, { css } from "styled-components"
 import { Field } from "formik"
+import { Link } from "gatsby"
+
+export const StyledClose = styled(Link)`
+  text-decoration: none;
+  color: white-smoke;
+  &:visited {
+    color: whiteSmoke;
+  }
+  ,
+  &:active {
+    color: whiteSmoke;
+    transform: scale(0.95);
+  }
+`
 
 export const StyledContentWrapper = styled.div`
   margin: 0;

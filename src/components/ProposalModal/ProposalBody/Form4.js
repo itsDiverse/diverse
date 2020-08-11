@@ -15,7 +15,7 @@ export const Form4 = ({ onSubmit }) => (
         email address.{" "}
       </StyledProposalText>
     </StyledProposalTextContainer>
-    <Link to="/index_v1" tabIndex="-1">
+    <Link to="/" tabIndex="-1">
       <StyledProposalButton>CLOSE WINDOW</StyledProposalButton>
     </Link>
   </StyledProposalForm>

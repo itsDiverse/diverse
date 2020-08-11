@@ -2,51 +2,80 @@ import React from "react"
 
 export const LogoMobile = () => (
   <svg
-    width="58"
-    height="50"
-    viewBox="0 0 8 6"
+    width="56"
+    height="55"
+    viewBox="0 0 56 55"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      d="M5.1268 4.23755L3.54932 4.50918L4.58284 5.74057L5.1268 4.23755Z"
-      fill="#BBDFF7"
-    />
-    <path
-      d="M5.68839 2.73462L4.09277 3.00625L5.1263 4.23764L5.68839 2.73462Z"
-      fill="#1D4D87"
-    />
-    <path
-      d="M3.54932 4.50888L5.1268 4.23725L4.09328 3.00586L3.54932 4.50888Z"
-      fill="#2E78CA"
-    />
-    <path
-      d="M4.65479 1.50303L6.23228 1.2314L5.19875 0L4.65479 1.50303Z"
-      fill="#1D4D87"
-    />
-    <path
-      d="M3.05908 1.77474L4.63658 1.50311L3.60304 0.271729L3.05908 1.77474Z"
-      fill="#BBDFF7"
-    />
-    <path
-      d="M5.19908 0L3.62158 0.27163L4.65511 1.50303L5.19908 0Z"
-      fill="#2E78CA"
-    />
-    <path
-      d="M1.48193 2.06434L3.07755 1.7746L2.04403 0.543213L1.48193 2.06434Z"
-      fill="#1D4D87"
-    />
-    <path
-      d="M0.937988 3.56747L2.51548 3.27773L1.48195 2.06445L0.937988 3.56747Z"
-      fill="#BBDFF7"
-    />
-    <path
-      d="M3.05949 1.77466L1.46387 2.0644L2.4974 3.27767L3.05949 1.77466Z"
-      fill="#2E78CA"
-    />
-    <path
-      d="M5.68896 2.73447L7.26645 2.44473L6.23292 1.23145L5.68896 2.73447Z"
-      fill="#BBDFF7"
-    />
+    <g filter="url(#filter0_i)">
+      <path
+        d="M27.85 47.0726L13.92 39.2141V54.9018L27.85 47.0726Z"
+        fill="#BDE0F7"
+      />
+      <path
+        d="M41.7899 39.2337L27.86 31.385V47.0727L41.7899 39.2337Z"
+        fill="#204E86"
+      />
+      <path
+        d="M13.92 39.2144L27.85 47.0729V31.3755L13.92 39.2144Z"
+        fill="#337AC8"
+      />
+      <path
+        d="M41.8 23.5462L55.73 31.3949V15.7073L41.8 23.5462Z"
+        fill="#204E86"
+      />
+      <path
+        d="M27.87 15.6876L41.8 23.5461V7.8584L27.87 15.6876Z"
+        fill="#BDE0F7"
+      />
+      <path
+        d="M55.75 15.7073L41.82 7.84888V23.5463L55.75 15.7073Z"
+        fill="#337AC8"
+      />
+      <path d="M13.94 7.79996L27.87 15.6487V0L13.94 7.79996Z" fill="#204E86" />
+      <path d="M0 15.6683L13.93 23.5267V7.80005L0 15.6683Z" fill="#BDE0F7" />
+      <path
+        d="M27.87 15.6878L13.94 7.80005V23.5267L27.87 15.6878Z"
+        fill="#337AC8"
+      />
+      <path
+        d="M41.79 39.2337L55.72 47.0922V31.3948L41.79 39.2337Z"
+        fill="#BDE0F7"
+      />
+    </g>
+    <defs>
+      <filter
+        id="filter0_i"
+        x="0"
+        y="0"
+        width="55.75"
+        height="57.9018"
+        filterUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB"
+      >
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend
+          mode="normal"
+          in="SourceGraphic"
+          in2="BackgroundImageFix"
+          result="shape"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+          result="hardAlpha"
+        />
+        <feOffset dy="3" />
+        <feGaussianBlur stdDeviation="2" />
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+        <feColorMatrix
+          type="matrix"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"
+        />
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
+      </filter>
+    </defs>
   </svg>
 )

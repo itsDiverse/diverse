@@ -7,14 +7,15 @@ const Wrapper = styled.nav`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  margin-top: 3.75rem;
+  margin-top: 1rem;
 `
 
 const NavLink = styled(Link)`
+  font-weight: 400;
   margin: 2px;
-  padding-left: 1.5rem !important;
   width: 100%;
   padding: 6px;
+  padding-left: 1rem;
   flex: 0 0 auto;
   display: inline-block;
   line-height: 3.125rem;
@@ -26,13 +27,13 @@ const NavLink = styled(Link)`
   &:hover,
   &:focus {
     color: #195bb6;
-    transform: scale(1.1);
     border: 0px transparent;
     outline: none;
     border-style: none;
   }
-  &:active {
-    transform: scale(0.95);
+  ...active {
+    background: linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%);
+    color: "#fff";
   }
 `
 const NavSeparator = styled.span`
@@ -50,26 +51,48 @@ const NavSeparator = styled.span`
 const NavLinksMobile = () => (
   <Wrapper>
     <NavLink
-      to="/index_v1/"
+      to="/"
       activeClassName="active"
-      activeStyle={{ color: "#fff", background: "#195bb6" }}
+      activeStyle={{
+        color: "#fff",
+        background:
+          "linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%)",
+      }}
     >
       {" "}
       HOME
     </NavLink>
     <NavSeparator />
     <NavLink
-      activeStyle={{ color: "#fff", background: "#195bb6" }}
+      activeStyle={{
+        color: "#fff",
+        background:
+          "linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%)",
+      }}
       to="/index_v2/"
     >
       HOW WE WORK
     </NavLink>
     <NavSeparator />
-    <NavLink activeStyle={{ color: "#fff", background: "#195bb6" }} to="/">
+    <NavLink
+      activeStyle={{
+        color: "#fff",
+        background:
+          "linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%)",
+      }}
+      to="/index_v3/"
+    >
       OUR SERVICES
     </NavLink>
     <NavSeparator />
-    <NavLink activeStyle={{ color: "#fff", background: "#195bb6" }} to="/">
+    <NavLink
+      activeStyle={{
+        color: "#fff",
+        background:
+          "linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%)",
+      }}
+      to="/index_v4/"
+    >
       CONTACT US
     </NavLink>
   </Wrapper>
