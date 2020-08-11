@@ -11,12 +11,6 @@ import { videos } from "../videos"
 export default () => (
   <LayoutV1>
     <Content>
-      <Module16v
-        theme={theme.module16v}
-        data={data.module16v}
-        images={images.module16v}
-        videos={videos.module16v}
-      />
       <Module15
         component={Module15}
         theme={theme.module15}
