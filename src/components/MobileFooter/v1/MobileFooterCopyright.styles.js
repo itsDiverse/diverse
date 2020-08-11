@@ -22,5 +22,8 @@ export const StyledLanguage = styled.p`
   text-align: center;
   font-size: 11px;
   line-height: 13px;
-  margin-top: 22px;
+  margin-top: 10px;
+  svg {
+    margin-right: 5px;
+  }
 `

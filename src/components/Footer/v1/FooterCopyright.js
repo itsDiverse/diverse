@@ -14,7 +14,7 @@ export const FooterCopyright = () => (
       English
     </StyledLanguage>
     <StyledMark>
-      Copyright © [{new Date().getFullYear()}] Diverse Marketing. All Rights
+      Copyright © {new Date().getFullYear()} Diverse Marketing. All Rights
       Reserved.
     </StyledMark>
   </StyledCopyright>

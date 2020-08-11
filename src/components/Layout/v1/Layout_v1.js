@@ -38,7 +38,7 @@ class LayoutV1 extends PureComponent {
           onMobileNavToggle={this.toggleMobileNav}
         />
         {this.props.children}
-        <Footer />
+        <MobileFooter />
       </Wrapper>
     )
   }

@@ -23,4 +23,16 @@ export const StyledDropDownItem = styled(Link)`
   color: #707070;
   padding: 10px 0px;
   text-decoration: none;
+
+  > label {
+    margin-left: 5px;
+    background: #195bb6;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 11px;
+    border: none;
+    display: inline;
+  }
 `

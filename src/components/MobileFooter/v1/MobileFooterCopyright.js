@@ -5,13 +5,17 @@ import {
   StyledLanguage,
   StyledMark,
 } from "./MobileFooterCopyright.styles.js"
+import { IconGlobe } from "../../Icons"
 
 export const MobileFooterCopyright = () => (
   <StyledCopyright>
     <StyledMark>
-      Copyright © [Current Year] Diverse Marketing. All Rights Reserved. Do not
-      sell my information
+      Copyright © {new Date().getFullYear()} Diverse Marketing. All Rights
+      Reserved.
     </StyledMark>
-    <StyledLanguage>English</StyledLanguage>
+    <StyledLanguage>
+      <IconGlobe size={12} color="#707070" />
+      English
+    </StyledLanguage>
   </StyledCopyright>
 )

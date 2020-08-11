@@ -1,4 +1,5 @@
 import React from "react"
+import { IconInstagram, IconFacebook } from "../../Icons"
 
 import {
   StyledDropDownItemsContainer,
@@ -14,6 +15,8 @@ import {
   StyledSmallDivider,
   StyledButtonText,
   StyledCTARow,
+  StyledSectionSocialMedia,
+  StyledSectionSocialMediaIcons,
 } from "./MobileFooterSections.styles"
 
 import { DropDown } from "../../DropDown"
@@ -48,7 +51,10 @@ export const MobileFooterSections = () => (
         <StyledDropDownItem to="/"> Privacy Policy</StyledDropDownItem>
         <StyledDropDownItem to="/"> Free Proposal</StyledDropDownItem>
         <StyledDropDownItem to="/"> Terms</StyledDropDownItem>
-        <StyledDropDownItem to="/"> Careers</StyledDropDownItem>
+        <StyledDropDownItem to="/">
+          {" "}
+          Careers <label>HIRING</label>
+        </StyledDropDownItem>
       </StyledDropDownItemsContainer>
     </DropDown>
 
@@ -65,8 +71,18 @@ export const MobileFooterSections = () => (
         <StyledPhoneNumber>
           Phone Number: <span>(833)-Diverse</span>
         </StyledPhoneNumber>
-        <StyledPhoneNumber>Social Profiles: </StyledPhoneNumber>
-        <GetInTouch></GetInTouch>
+        <StyledSectionSocialMedia>
+          Social Profiles:
+          <StyledSectionSocialMediaIcons>
+            <a href="https://twitter.com/gatsbyjs">
+              <IconFacebook size={20} />
+            </a>
+            <a href="https://instagram.com/gatsbyjs">
+              <IconInstagram size={20} />
+            </a>
+          </StyledSectionSocialMediaIcons>
+        </StyledSectionSocialMedia>
+        <GetInTouch />
       </StyledGetInTouch>
     </DropDown>
   </StyledMobileFooterSections>

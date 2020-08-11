@@ -65,3 +65,19 @@ export const StyledCTARow = styled.div`
   align-items: center;
   justify-content: center;
 `
+
+export const StyledSectionSocialMedia = styled.p`
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 7px;
+  color: #707070;
+`
+
+export const StyledSectionSocialMediaIcons = styled.div`
+  svg:first-child {
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+  opacity: 0.4 !important;
+`
