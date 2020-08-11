@@ -10,7 +10,9 @@ export const StyledBrandRow = styled.div`
 export const StyledBrandName = styled.div`
   text-transform: uppercase;
   margin-left: 15px;
+  margin-top:10px;
   font-size: ${({ size }) => (size ? `${size / 2.2}px;` : "16px;")}
   font-weight: 800;
+  font-family:NovaReg;
   letter-spacing: 4.0px;
   `

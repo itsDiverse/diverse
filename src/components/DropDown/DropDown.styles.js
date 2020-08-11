@@ -30,8 +30,8 @@ export const StyledTitles = styled.div`
 `
 
 export const StyledTitle = styled.p`
-  font-weight: bold;
   font-size: 16px;
+  font-weight: 400;
   line-height: 19px;
   color: #707070;
   user-select: inherit;

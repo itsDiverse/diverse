@@ -3,7 +3,8 @@ import styled, { injectGlobal } from "styled-components"
 
 import rem from "../../../utils/rem"
 import Nav from "../../Navbar/v1"
-import FooterV1 from "../../Footer/Footer_v1"
+import { Footer } from "../../Footer/v1/Footer"
+import { MobileFooter } from "../../MobileFooter/v1/MobileFooter"
 
 const Wrapper = styled.div`
   display: flex;
@@ -37,7 +38,7 @@ class LayoutV1 extends PureComponent {
           onMobileNavToggle={this.toggleMobileNav}
         />
         {this.props.children}
-        <FooterV1 />
+        <Footer />
       </Wrapper>
     )
   }
