@@ -2,13 +2,13 @@ import React from "react"
 import { StyledBrandRow, StyledBrandName } from "./Brand.styles"
 import { IconApp } from "../Icons"
 
-const Brand = ({ size = 32 }) => (
+const Brand = ({ size = 40 }) => (
   <StyledBrandRow>
     <IconApp size={size}></IconApp>
     <StyledBrandName>
       <svg
-        width="126"
-        height="20"
+        width="123"
+        height="18"
         viewBox="0 0 126 19"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

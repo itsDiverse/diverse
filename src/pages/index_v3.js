@@ -1,5 +1,5 @@
 import React from "react"
-import { Module16v } from "../components/widgets"
+import { Module2 } from "../components/widgets"
 import { Content } from "../components/Layout/v1/Scaffold"
 import LayoutV1 from "../components/Layout/v1/Layout_v1"
 
@@ -11,11 +11,11 @@ import { videos } from "../videos"
 export default () => (
   <LayoutV1>
     <Content>
-      <Module16v
-        theme={theme.module16v}
-        data={data.module16v}
-        images={images.module16v}
-        videos={videos.module16v}
+      <Module2
+        theme={theme.module2}
+        data={data.module2}
+        images={images.module2}
+        videos={videos.module2}
       />
     </Content>
   </LayoutV1>
