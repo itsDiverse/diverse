@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 const MediaFooter = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" })
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-device-width: 1224px)",
+    query: "(min-device-width: 900px)",
   })
 
   if (isDesktopOrLaptop) return <Footer />

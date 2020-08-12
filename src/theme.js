@@ -431,12 +431,12 @@ export const theme = {
     backgroundSize: "100% 100%",
     blendMode: `screen, difference, lighten`,
     //---------------------------
-    video: true,
+    video: false,
     shadow: true,
     shadowColor: `34.3px 62.5px 125px -25px rgba(50, 50, 93, 0.1),
     20.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6)`,
     skew: "0.01rad",
-    reverseSectionOrder: true,
+    reverseSectionOrder: false,
 
     colors: {
       title: "#32325d",

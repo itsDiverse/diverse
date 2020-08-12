@@ -123,7 +123,7 @@ export const StyledSectionSubtitleSmall = styled.p`
 `
 export const StyledSectionSocialMedia = styled.div`
   svg:first-child {
-    margin-right: 10px;
+    cursor: pointer;
   }
   opacity: 0.4 !important;
 `

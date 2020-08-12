@@ -52,11 +52,15 @@ export const FooterSections = () => (
           <StyledSectionTitle>GET IN TOUCH</StyledSectionTitle>
           <StyledSectionSubtitle to="/">Contact Us</StyledSectionSubtitle>
           <StyledSectionSocialMedia>
-            <IconFacebook size={20} />
-            <IconInstagram size={20} />
+            <a href="https://facebook.com/gatsbyjs">
+              <IconFacebook size={20} />
+            </a>{" "}
+            <a href="https://instagram.com/gatsbyjs">
+              <IconInstagram size={20} />
+            </a>
           </StyledSectionSocialMedia>
           <StyledSectionSubtitleSmall>Call Or Text:</StyledSectionSubtitleSmall>
-          <StyledSectionSubtitle to="/">
+          <StyledSectionSubtitle href="tel:8333483773">
             <span>(833)-DIVERSE</span>
           </StyledSectionSubtitle>
         </StyledSectionColumns>
