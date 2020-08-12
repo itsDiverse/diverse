@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 
 export const StyledClose = styled(Link)`
   text-decoration: none;
+  font-size: 12px;
+  padding-top: 0.5rem;
   color: white-smoke;
   &:visited {
     color: whiteSmoke;
@@ -12,6 +14,9 @@ export const StyledClose = styled(Link)`
   &:active {
     color: whiteSmoke;
     transform: scale(0.95);
+  }
+  &:hover {
+    text-decoration: underline;
   }
 `
 
