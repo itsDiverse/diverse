@@ -74,10 +74,20 @@ export const MobileFooterSections = () => (
         <StyledSectionSocialMedia>
           Social Profiles:
           <StyledSectionSocialMediaIcons>
-            <a href="https://twitter.com/gatsbyjs">
+            <a
+              href="https://twitter.com/gatsbyjs"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Find us on facebook"
+            >
               <IconFacebook size={20} />
             </a>
-            <a href="https://instagram.com/gatsbyjs">
+            <a
+              href="https://instagram.com/gatsbyjs"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Find us on instagram"
+            >
               <IconInstagram size={20} />
             </a>
           </StyledSectionSocialMediaIcons>

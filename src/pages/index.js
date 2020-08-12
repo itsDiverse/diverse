@@ -1,5 +1,5 @@
 import React from "react"
-import { Module16v, Module15 } from "../components/widgets"
+import { Module2, Module15 } from "../components/widgets"
 import { Content } from "../components/Layout/v1/Scaffold"
 import LayoutV1 from "../components/Layout/v1/Layout_v1"
 
