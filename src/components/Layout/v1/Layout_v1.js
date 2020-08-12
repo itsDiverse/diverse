@@ -45,12 +45,16 @@ class LayoutV1 extends PureComponent {
     const { isMobileNavFolded } = this.state
     return (
       <Wrapper>
-        <Nav
-          isMobileNavFolded={isMobileNavFolded}
-          onMobileNavToggle={this.toggleMobileNav}
-        />
-        {this.props.children}
-        <MediaFooter />
+        <navbar>
+          <Nav
+            isMobileNavFolded={isMobileNavFolded}
+            onMobileNavToggle={this.toggleMobileNav}
+          />
+        </navbar>
+        <main>{this.props.children}</main>
+        <footer>
+          <MediaFooter />
+        </footer>
       </Wrapper>
     )
   }

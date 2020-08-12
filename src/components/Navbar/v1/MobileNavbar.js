@@ -142,7 +142,11 @@ const MobileNavbar = props => {
             <Button autoFocus={true}>GET A PROPOSAL</Button>
           </Link>
           <Wrapper>
-            <NavButton onClick={onMobileNavToggle} active={!isMobileNavFolded}>
+            <NavButton
+              aria-label="dropdown"
+              onClick={onMobileNavToggle}
+              active={!isMobileNavFolded}
+            >
               <IconWrapper rotate={!isMobileNavFolded}>
                 <FontAwesomeIcon icon={faChevronDown} />
               </IconWrapper>

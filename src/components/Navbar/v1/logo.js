@@ -77,7 +77,7 @@ export const Logo = () => (
     />
     <defs>
       <filter
-        id="filter0_i"
+        id="filter1_i"
         x="0"
         y="0"
         width="42.6488"

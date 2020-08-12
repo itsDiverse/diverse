@@ -100,14 +100,14 @@ class NavBar extends PureComponent {
           }
         `}
         render={data => (
-          <Wrapper>
+          <Wrapper aria-label="navbar">
             <NormalNavbar>
-              <StartWrapper>
+              <StartWrapper aria-label="logo">
                 <LogoLink>
                   <Logo />
                 </LogoLink>
               </StartWrapper>
-              <NavLinks />
+              <NavLinks aria-label="links" />
               <EndWrapper>
                 <Link
                   tabIndex="-1"
