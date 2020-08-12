@@ -1,6 +1,4 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
-import React from "react"
 
 export const StyledSection = styled.div`
   display: flex;
@@ -78,7 +76,7 @@ export const StyledSectionTitle = styled.p`
   padding-bottom: 14px;
 `
 
-export const StyledSectionSubtitle = styled(props => <Link {...props} />)`
+export const StyledSectionSubtitle = styled.a`
   font-style: normal;
   font-weight: 500;
   font-size: 15px;

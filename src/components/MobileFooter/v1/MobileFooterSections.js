@@ -22,7 +22,6 @@ import {
 import { DropDown } from "../../DropDown"
 import { Button } from "../../Button"
 import { ProposalCTA } from "../../ProposalCTA"
-import { Link } from "gatsby"
 const GetInTouch = () => (
   <StyledButtonsCol>
     <StyledButtonsRow>

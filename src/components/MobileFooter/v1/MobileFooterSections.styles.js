@@ -66,7 +66,7 @@ export const StyledCTARow = styled.div`
   justify-content: center;
 `
 
-export const StyledSectionSocialMedia = styled.p`
+export const StyledSectionSocialMedia = styled.div`
   display: flex;
   align-items: center;
   font-size: 12px;

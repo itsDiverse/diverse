@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { ModalRoutingContext, Modal } from "gatsby-plugin-modal-routing"
+import { ModalRoutingContext } from "gatsby-plugin-modal-routing"
 
 const ModalExamplePage = () => (
   <ModalRoutingContext.Consumer>

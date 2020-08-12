@@ -7,7 +7,7 @@ import rem from "../../../utils/rem"
 import { navbarHeight } from "../../../utils/sizes"
 import { mobile } from "../../../utils/media"
 import NavLinks from "./NavLinks"
-import { Logo } from "./logo"
+//import { Logo } from "./logo"
 import { Brand } from "../../Brand"
 import MobileNavbar from "./MobileNavbar"
 

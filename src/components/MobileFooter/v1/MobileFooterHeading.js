@@ -14,7 +14,7 @@ export const MobileFooterHeading = () => (
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0)">
+      <g clipPath="url(#clip0)">
         <path d="M27.85 48.28L13.92 40.22V56.31L27.85 48.28Z" fill="#BDE0F7" />
         <path
           d="M41.79 40.2399L27.86 32.1899V48.2799L41.79 40.2399Z"

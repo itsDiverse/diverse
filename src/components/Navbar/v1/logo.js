@@ -83,9 +83,9 @@ export const Logo = () => (
         width="42.6488"
         height="44.9998"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        ColorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feBlend
           mode="normal"
           in="SourceGraphic"

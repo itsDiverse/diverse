@@ -8,10 +8,10 @@ import rem from "../../../utils/rem"
 import { navbarHeight } from "../../../utils/sizes"
 import { mobile } from "../../../utils/media"
 import NavLinksMobile from "./NavLinksMobile"
-import Social from "./Social"
 import NavSeparator from "./NavSeparator"
 import NavButton from "./NavButton"
 import { LogoMobile } from "./logoMobile"
+import { fadeinout } from "../../animations"
 
 const Wrapper = styled.div`
   display: none;
@@ -32,9 +32,10 @@ const SecondaryMenu = styled.div`
   ${p =>
     p.open
       ? css`
+          animation: ${fadeinout} 0.25s linear forwards;
           height: 100vh;
           box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
-          overflow: scroll;
+          overflow: hidden;
         `
       : css`
           height: 0;
@@ -147,13 +148,17 @@ const MobileNavbar = props => {
               onClick={onMobileNavToggle}
               active={!isMobileNavFolded}
             >
-              <IconWrapper rotate={!isMobileNavFolded}>
+              <IconWrapper>
                 <FontAwesomeIcon icon={faChevronDown} />
               </IconWrapper>
             </NavButton>
           </Wrapper>
 
-          <SecondaryMenu open={!isMobileNavFolded}>
+          <SecondaryMenu
+            onClick={onMobileNavToggle}
+            active={!isMobileNavFolded}
+            open={!isMobileNavFolded}
+          >
             <NavLinksMobile />
             <NavSeparator />
 

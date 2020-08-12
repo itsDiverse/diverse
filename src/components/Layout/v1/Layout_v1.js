@@ -1,8 +1,7 @@
 import React, { PureComponent } from "react"
-import styled, { injectGlobal } from "styled-components"
+import styled from "styled-components"
 import { useMediaQuery } from "react-responsive"
 
-import rem from "../../../utils/rem"
 import Nav from "../../Navbar/v1"
 import { Footer } from "../../Footer/v1/Footer"
 import { MobileFooter } from "../../MobileFooter/v1/MobileFooter"
@@ -45,12 +44,10 @@ class LayoutV1 extends PureComponent {
     const { isMobileNavFolded } = this.state
     return (
       <Wrapper>
-        <navbar>
-          <Nav
-            isMobileNavFolded={isMobileNavFolded}
-            onMobileNavToggle={this.toggleMobileNav}
-          />
-        </navbar>
+        <Nav
+          isMobileNavFolded={isMobileNavFolded}
+          onMobileNavToggle={this.toggleMobileNav}
+        />
         <main>{this.props.children}</main>
         <footer>
           <MediaFooter />
