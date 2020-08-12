@@ -15,7 +15,7 @@ export default () => (
     <Content>
       <h1
         style={{
-          fontFamily: "NovaBold",
+          fontFamily: "NovaReg",
           fontWeight: "600",
           fontSize: "35px",
           color: "#555555",
