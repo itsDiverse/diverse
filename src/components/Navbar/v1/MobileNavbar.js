@@ -12,6 +12,7 @@ import NavSeparator from "./NavSeparator"
 import NavButton from "./NavButton"
 import { LogoMobile } from "./logoMobile"
 import { SlideIn } from "../../animations"
+import { IconMobileNavbarV1 } from "../../../components/Icons/IconMobileNavbar_v1"
 
 const Wrapper = styled.div`
   display: none;
@@ -149,7 +150,7 @@ const MobileNavbar = props => {
               active={!isMobileNavFolded}
             >
               <IconWrapper>
-                <FontAwesomeIcon icon={faChevronDown} />
+                <IconMobileNavbarV1 />
               </IconWrapper>
             </NavButton>
           </Wrapper>
