@@ -35,7 +35,7 @@ export const StyledContentWrapper = styled.div`
       padding: 80px 0px;
     }
     .title-section h1 {
-      font-family: NovaBold;
+      font-family: NovaBlack;
       font-size: 50px;
       line-height: 44px;
       color: ${props.theme.colors.title};
