@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  margin: 0;
 `
 const MediaFooter = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" })
@@ -49,9 +50,7 @@ class LayoutV1 extends PureComponent {
           onMobileNavToggle={this.toggleMobileNav}
         />
         <main>{this.props.children}</main>
-        <footer>
-          <MediaFooter />
-        </footer>
+        <MediaFooter />
       </Wrapper>
     )
   }

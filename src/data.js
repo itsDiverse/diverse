@@ -32,6 +32,16 @@ export const data = {
       attract, close, and retain customers.`,
     },
   },
+
+  //-------------------------------------Module0
+  module0: {
+    heading: "WE DEVELOP",
+    title: "Multi-Channel Sales Processes",
+    text: `To help businesses attract, close, and retain customers.`,
+
+    //Buttons
+    singleButton: "GET A FREE PROPOSAL",
+  },
   //-------------------------------------Module1
   module1: {
     title: "",
@@ -670,16 +680,17 @@ export const data = {
   },
   //-------------------------------------Module 16v
   module16v: {
-    title: "Powerful tools for fraud professionals",
-    text: `Radar for Fraud Teams helps you fine-tune how Radar operates,
-    get fraud insights on suspicious charges, and assess your
-    fraud management performance from a unified dashboardd.`,
+    heading: "WE DEVELOP",
+    title: "Multi-Channel Sales Processes",
+    text: `To help businesses attract, close, and retain customers.`,
 
     //Buttons
-    textLeft: "Get Started",
+    singleButton: "GET A FREE PROPOSAL",
+
+    textLeft: "",
     linkLeft: "https://www.w3schools.com",
 
-    textRight: "Contact Sale",
+    textRight: "",
     linkRight: "https://www.w3schools.com",
   },
   //-------------------------------------Module 17

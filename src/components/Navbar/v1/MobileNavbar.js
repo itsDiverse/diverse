@@ -1,8 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import styled, { css } from "styled-components"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 
 import rem from "../../../utils/rem"
 import { navbarHeight } from "../../../utils/sizes"
@@ -16,7 +14,7 @@ import { IconMobileNavbarV1 } from "../../../components/Icons/IconMobileNavbar_v
 
 const Wrapper = styled.div`
   display: none;
-  box-shadow: 0 1px 4px 1px #eee;
+  margin: 0;
   ${mobile(css`
     display: flex;
     align-items: center;
@@ -67,10 +65,9 @@ const LogoLink = styled(Link).attrs({
   to: "/",
   "aria-label": "home",
 })`
-  padding-top: 0.25rem;
+  margin-left: 0.75rem;
   display: inline-block;
   vertical-align: center;
-  margin-left: 0.25rem;
   color: currentColor;
   outline: none;
 `
@@ -91,6 +88,8 @@ const IconWrapper = styled.div`
 `
 
 const Button = styled.button`
+  margin-left: 15px;
+  align-self: center;
   width: 166px;
   height: 43px;
   background: #fff;

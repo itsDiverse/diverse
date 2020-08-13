@@ -1,6 +1,8 @@
 import React from "react"
 
 import { StyledContentWrapper } from "./Module16v.styles"
+import { GetFreeProposalButton } from "../../Button"
+import { Link } from "gatsby"
 
 export default props => (
   <StyledContentWrapper theme={props.theme}>
@@ -9,7 +11,8 @@ export default props => (
         <div className="powerfultoolssection">
           <div className="powerful-tools-section">
             <div className="powerful-title-section">
-              <h2>{props.data.title}</h2>
+              <p>{props.data.heading}</p>
+              <h1>{props.data.title}</h1>
               <p>{props.data.text}</p>
               <div className="powerful-tools-btn">
                 {props.data.textLeft && (
@@ -28,6 +31,13 @@ export default props => (
                     {props.data.textRight}
                   </a>
                 )}
+                {props.data.singleButton && (
+                  <Link to="/modalPopUp/" state={{ modal: true }}>
+                    <GetFreeProposalButton to="/modalPopUp/">
+                      {props.data.singleButton}
+                    </GetFreeProposalButton>
+                  </Link>
+                )}
               </div>
             </div>
             <div className="video-container">
@@ -42,11 +52,11 @@ export default props => (
                     loop
                   >
                     <source
-                      src={props.videos.sample2}
+                      src={props.videos.cubeVideo}
                       type="video/webm"
                     ></source>
                     <source
-                      src={props.videos.sample2}
+                      src={props.videos.cubeVideo}
                       type="video/mp4"
                     ></source>
                   </video>

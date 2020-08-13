@@ -1,1 +1,1 @@
-export { Button, SquaredButton } from "./Button"
+export { Button, SquaredButton, GetFreeProposalButton } from "./Button"

@@ -76,9 +76,9 @@ export const StyledContentWrapper = styled.div`
       .powerful-tools-wrapper {
         padding: 80px 0px;
       }
-      .powerful-title-section h2 {
-        font-weight: 400;
-        font-size: 34px;
+      .powerful-title-section h1 {
+        font-family: NovaBold;
+        font-size: 50px;
         line-height: 44px;
         color: ${props.theme.colors.title};
         margin-bottom: 24px;
@@ -86,7 +86,7 @@ export const StyledContentWrapper = styled.div`
       }
       .powerful-title-section p {
         font-weight: 400;
-        font-size: 19px;
+        font-size: 16px;
         line-height: 32px;
         color: ${props.theme.colors.text};
       }

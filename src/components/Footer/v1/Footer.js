@@ -4,12 +4,14 @@ import { FooterSections } from "./FooterSections"
 import { FooterCerts } from "./FooterCerts"
 import { FooterCopyright } from "./FooterCopyright"
 
-import { StyledFooter } from "./Footer.styles"
+import { StyledFooterWrapper, StyledFooter } from "./Footer.styles"
 
 export const Footer = () => (
-  <StyledFooter>
-    <FooterSections />
-    <FooterCerts />
-    <FooterCopyright />
-  </StyledFooter>
+  <StyledFooterWrapper>
+    <StyledFooter>
+      <FooterSections />
+      <FooterCerts />
+      <FooterCopyright />
+    </StyledFooter>
+  </StyledFooterWrapper>
 )

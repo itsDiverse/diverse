@@ -62,7 +62,7 @@ export const StyledSectionLeft = styled.div`
 export const StyledSectionRight = styled.div`
   display: flex;
   flex: 1;
-  justify-content: flex-start;
+  justify-content: flex-end;
 `
 
 export const StyledSectionTitle = styled.p`

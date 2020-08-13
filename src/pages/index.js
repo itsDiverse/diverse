@@ -1,5 +1,5 @@
 import React from "react"
-import { Module15 } from "../components/widgets"
+import { Module0 } from "../components/widgets"
 import { Content } from "../components/Layout/v1/Scaffold"
 import LayoutV1 from "../components/Layout/v1/Layout_v1"
 import SEO from "../components/seo"
@@ -12,24 +12,11 @@ import { videos } from "../videos"
 export default () => (
   <LayoutV1>
     <SEO title="Index" />
-    <Content>
-      <h1
-        style={{
-          fontFamily: "NovaReg",
-          fontWeight: "600",
-          fontSize: "35px",
-          color: "#555555",
-        }}
-      >
-        Multi-Channel Sales Processes
-      </h1>
-      <Module15
-        component={Module15}
-        theme={theme.module15}
-        data={data.module15}
-        images={images.module15}
-        videos={videos.module15}
-      />
-    </Content>
+    <Module0
+      component={Module0}
+      theme={theme.module0}
+      data={data.module0}
+      videos={videos.module0}
+    />
   </LayoutV1>
 )

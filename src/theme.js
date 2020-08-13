@@ -40,6 +40,14 @@ export const theme = {
     },
     shadow: true,
   },
+  //-------------------------------------Module 0
+  module0: {
+    video: true,
+    colors: {
+      title: "#616161",
+      text: "#707070",
+    },
+  },
   //-------------------------------------Module 2
   module2: {
     backgroundVideoContainer: "rgba(170,183,196,.75)",
@@ -431,16 +439,16 @@ export const theme = {
     backgroundSize: "100% 100%",
     blendMode: `screen, difference, lighten`,
     //---------------------------
-    video: false,
-    shadow: true,
+    video: true,
+    shadow: false,
     shadowColor: `34.3px 62.5px 125px -25px rgba(50, 50, 93, 0.1),
     20.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6)`,
     skew: "0.01rad",
     reverseSectionOrder: false,
 
     colors: {
-      title: "#32325d",
-      text: "#525f7f",
+      title: "#616161",
+      text: "#707070",
     },
 
     buttons: {

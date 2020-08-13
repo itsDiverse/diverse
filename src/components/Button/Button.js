@@ -24,3 +24,27 @@ export const SquaredButton = styled.button`
   height: 45px;
   border: none;
 `
+
+export const GetFreeProposalButton = styled.button`
+  width: 190px;
+  height: 43px;
+
+  background: #195bb6;
+  border: 3px solid #195bb6;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+    background: #fff;
+    color: #195bb6;
+    outline: none;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+`

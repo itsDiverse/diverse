@@ -2,9 +2,9 @@ import React from "react"
 
 export const IconMobileNavbarV1 = () => (
   <svg
-    width="24"
-    height="17"
-    viewBox="0 0 24 17"
+    width="29"
+    height="30"
+    viewBox="0 0 29 16"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >

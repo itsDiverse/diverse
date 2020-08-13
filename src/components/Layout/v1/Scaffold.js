@@ -17,7 +17,7 @@ export const Content = styled.div`
   ${p =>
     p.hero &&
     css`
-      font-family: sans-serif;
+      font-family: NovaReg;
       width: 75rem;
     `}
 `

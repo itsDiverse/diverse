@@ -14,6 +14,7 @@ import MobileNavbar from "./MobileNavbar"
 const Wrapper = styled.nav`
   position: fixed;
   left: 0;
+  top: 0;
   box-sizing: border-box;
   z-index: 3;
   width: 100%;
@@ -28,13 +29,17 @@ const Wrapper = styled.nav`
     text-decoration: none;
   }
 `
+const ContainerLg = styled.div`
+  max-width: 1140px;
+  margin: 0 auto;
+`
 
 const NormalNavbar = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 0 ${rem(20)};
+  justify-content: space-between;
+  padding: 0;
   ${mobile(css`
     display: none;
   `)}
@@ -102,30 +107,32 @@ class NavBar extends PureComponent {
         `}
         render={data => (
           <Wrapper aria-label="navbar">
-            <NormalNavbar>
-              <StartWrapper aria-label="logo">
-                <LogoLink>
-                  <Brand />
-                </LogoLink>
-              </StartWrapper>
-              <NavLinks aria-label="links" />
-              <EndWrapper>
-                <Link
-                  tabIndex="-1"
-                  to="/modalPopUp"
-                  state={{
-                    modal: true,
-                  }}
-                >
-                  <Button>GET A PROPOSAL</Button>
-                </Link>
-              </EndWrapper>
-            </NormalNavbar>
+            <ContainerLg>
+              <NormalNavbar>
+                <StartWrapper aria-label="logo">
+                  <LogoLink>
+                    <Brand />
+                  </LogoLink>
+                </StartWrapper>
+                <NavLinks aria-label="links" />
+                <EndWrapper>
+                  <Link
+                    tabIndex="-1"
+                    to="/modalPopUp"
+                    state={{
+                      modal: true,
+                    }}
+                  >
+                    <Button>GET A PROPOSAL</Button>
+                  </Link>
+                </EndWrapper>
+              </NormalNavbar>
 
-            <MobileNavbar
-              isMobileNavFolded={isMobileNavFolded}
-              onMobileNavToggle={onMobileNavToggle}
-            />
+              <MobileNavbar
+                isMobileNavFolded={isMobileNavFolded}
+                onMobileNavToggle={onMobileNavToggle}
+              />
+            </ContainerLg>
           </Wrapper>
         )}
       />

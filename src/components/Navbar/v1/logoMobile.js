@@ -2,8 +2,8 @@ import React from "react"
 
 export const LogoMobile = () => (
   <svg
-    width="56"
-    height="55"
+    width="46"
+    height="45"
     viewBox="0 0 56 55"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
