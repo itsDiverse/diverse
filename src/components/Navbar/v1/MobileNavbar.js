@@ -11,7 +11,7 @@ import NavLinksMobile from "./NavLinksMobile"
 import NavSeparator from "./NavSeparator"
 import NavButton from "./NavButton"
 import { LogoMobile } from "./logoMobile"
-import { fadeinout } from "../../animations"
+import { SlideIn } from "../../animations"
 
 const Wrapper = styled.div`
   display: none;
@@ -32,9 +32,9 @@ const SecondaryMenu = styled.div`
   ${p =>
     p.open
       ? css`
-          animation: ${fadeinout} 0.25s linear forwards;
+          animation: ${SlideIn} 0.27s linear forwards;
           height: 100vh;
-          box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.8);
           overflow: hidden;
         `
       : css`

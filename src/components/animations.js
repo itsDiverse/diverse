@@ -8,3 +8,16 @@ export const fadeinout = keyframes`
     opacity: 1;
   }
 `
+
+export const SlideIn = keyframes`
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+`
