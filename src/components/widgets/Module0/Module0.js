@@ -28,7 +28,15 @@ export default props => (
             </div>
             <div className="video-container">
               {props.theme.video ? (
-                <video id="Video16v" poster="" autoPlay muted loop>
+                <video
+                  id="Video16v"
+                  poster=""
+                  autoPlay
+                  webkit-playsinline
+                  playsinline
+                  muted
+                  loop
+                >
                   <source
                     src={props.videos.cubeVideo}
                     type="video/webm"
