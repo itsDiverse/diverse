@@ -1,3 +1,6 @@
+//import images Module0 +++++++++++++
+import brands from "./images/Module0/brands.png"
+
 //import images Module 1 ++++++++++++
 import diverseLogo from "./images/QuadBox/diverseLogo.svg"
 import imageQuadBox1 from "./images/QuadBox/box1.svg"
@@ -210,6 +213,11 @@ export const images = {
     imageQuadBox3Alt: "",
     imageQuadBox4,
     imageQuadBox4Alt: "",
+  },
+  //-------------------------------------Module0
+  module0: {
+    brands,
+    brandsAlt: "brands logos",
   },
   //-------------------------------------Module1
   module1: {

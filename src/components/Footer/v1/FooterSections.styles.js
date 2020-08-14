@@ -4,7 +4,6 @@ export const StyledSection = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 30px 20px;
 `
 
 export const StyledSectionContainer = styled.div`
@@ -12,6 +11,7 @@ export const StyledSectionContainer = styled.div`
   flex-direction: row;
   align-items: space-between;
   flex: 1;
+  padding: 20px 0px;
 `
 export const StyledSectionPhrase = styled.p`
   max-width: 400px;
@@ -57,12 +57,12 @@ export const StyledSectionLeft = styled.div`
   flex-direction: column;
   flex: 1;
   align-content: flex-start;
-  padding: 20px 12px;
 `
 export const StyledSectionRight = styled.div`
   display: flex;
   flex: 1;
   justify-content: flex-end;
+  z-index: 1;
 `
 
 export const StyledSectionTitle = styled.p`

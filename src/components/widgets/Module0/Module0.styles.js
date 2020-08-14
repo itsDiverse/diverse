@@ -10,7 +10,7 @@ export const StyledContentWrapper = styled.div`
     .container-lg {
       max-width: 1240px;
       margin: 0 auto;
-      margin-top: 30px;
+      margin-top: 80px;
     }
     .tools-section {
       display: flex;
@@ -28,7 +28,7 @@ export const StyledContentWrapper = styled.div`
     }
     .heading-section {
       font-weight: 600;
-      font-size: 15px;
+      font-size: 16px;
       color: ${props.theme.colors.text};
     }
     .tools-wrapper {
@@ -37,15 +37,15 @@ export const StyledContentWrapper = styled.div`
     .title-section h1 {
       font-family: NovaBlack;
       font-size: 50px;
-      line-height: 44px;
+      line-height: 40px;
       color: ${props.theme.colors.title};
       margin-bottom: -2px;
-      margin-top: -15px;
+      margin-top: -5px;
       font-weight: 400;
     }
     .subtitle-section {
       font-weight: 400;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 32px;
       color: ${props.theme.colors.text};
     }
@@ -53,38 +53,51 @@ export const StyledContentWrapper = styled.div`
     .tools-btn {
       margin-top: 24px;
     }
+    .brands-wrapper {
+      width: 100%;
+      margin: 0;
+      padding-top: 20px;
+    }
+    .brands-wrapper img {
+      width: 100%;
+    }
     .video-container {
       display: flex;
-      justify-content: flex-end;
-      width: 100%;
+      width: fit-content;
     }
     .video-container video {
       height: 100%;
       width: 100%;
+      transform: scale(1) translateX(-50px);
     }
-    @media (min-width: 670px) {
+
+    @media (min-width: 980px) {
       .tools-section {
         display: grid;
         grid-column-gap: 0px;
         grid-template-columns: repeat(2, 1fr);
       }
       .title-section {
-        padding-left: 4rem;
+        margin: 40px 0px;
+        padding-left: 2rem;
         text-align: left;
+        z-index: 2;
       }
-      .title-section h2 {
-        font-size: 42px;
+      .title-section h1 {
+        font-size: 67px;
         line-height: 52px;
+        width: 500px;
+      }
+      .brands-wrapper img {
+        width: fit-content;
+      }
+      .brands-wrapper svg {
+        margin-left: -39px;
       }
       .video-container video {
-        height: 500px;
-        width: 800px;
+        transform: scale(1.8) translateX(-55px);
+        z-index: 0;
       }
     }
   `}
-`
-
-export const StyledBrandsWrapper = styled.div`
-  width: 100%;
-  margin: 0;
 `

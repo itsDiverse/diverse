@@ -2,7 +2,6 @@ import React from "react"
 import { StyledContentWrapper, StyledBrandsWrapper } from "./Module0.styles"
 import { Link } from "gatsby"
 import { GetFreeProposalButton } from "../../Button"
-import { StyledBrandLogos } from "./brands"
 
 export default props => (
   <StyledContentWrapper theme={props.theme}>
@@ -23,9 +22,9 @@ export default props => (
                   </Link>
                 )}
               </div>
-              <StyledBrandsWrapper>
-                <StyledBrandLogos />
-              </StyledBrandsWrapper>
+              <div className="brands-wrapper">
+                <img src={props.images.brands} alt={props.images.brandsAlt} />
+              </div>
             </div>
             <div className="video-container">
               {props.theme.video ? (

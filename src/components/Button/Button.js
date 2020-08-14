@@ -26,14 +26,15 @@ export const SquaredButton = styled.button`
 `
 
 export const GetFreeProposalButton = styled.button`
-  width: 190px;
+  width: 210px;
   height: 43px;
-
+  font-size: 13.5px;
   background: #195bb6;
   border: 3px solid #195bb6;
   box-sizing: border-box;
   border-radius: 5px;
   color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
   font-weight: bold;
   &:hover,
   &:focus {
