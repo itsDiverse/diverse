@@ -1,5 +1,6 @@
 import React from "react"
 import { IconInstagram, IconFacebook } from "../../Icons"
+import { Link } from "gatsby"
 
 import {
   StyledDropDownItemsContainer,
@@ -37,7 +38,9 @@ const GetInTouch = () => (
     </StyledButtonsRow>
     <StyledSmallDivider />
     <StyledCTARow>
-      <ProposalCTA />
+      <Link style={{ textDecoration: "none" }} to="/modalPopUp/">
+        <ProposalCTA />
+      </Link>
     </StyledCTARow>
   </StyledButtonsCol>
 )

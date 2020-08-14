@@ -1,5 +1,5 @@
 import React from "react"
-import { StyledContentWrapper, StyledBrandsWrapper } from "./Module0.styles"
+import { StyledContentWrapper } from "./Module0.styles"
 import { Link } from "gatsby"
 import { GetFreeProposalButton } from "../../Button"
 

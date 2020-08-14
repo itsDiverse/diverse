@@ -45,7 +45,7 @@ export const StyledContentWrapper = styled.div`
     }
     .subtitle-section {
       font-weight: 400;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 32px;
       color: ${props.theme.colors.text};
     }
@@ -68,10 +68,10 @@ export const StyledContentWrapper = styled.div`
     .video-container video {
       height: 100%;
       width: 100%;
-      transform: scale(1) translateX(-50px);
+      transform: scale(1) translateX(-35px);
     }
 
-    @media (min-width: 980px) {
+    @media (min-width: 1000px) {
       .tools-section {
         display: grid;
         grid-column-gap: 0px;

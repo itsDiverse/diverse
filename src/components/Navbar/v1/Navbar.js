@@ -31,7 +31,7 @@ const Wrapper = styled.nav`
 `
 const ContainerLg = styled.div`
   max-width: 1240px;
-  margin: 0 auto;
+  margin: 5px auto;
 `
 
 const NormalNavbar = styled.div`
@@ -59,7 +59,6 @@ const EndWrapper = styled.div`
 const Button = styled.button`
   width: 166px;
   height: 43px;
-
   background: #ffffff;
   border: 3px solid #195bb6;
   box-sizing: border-box;

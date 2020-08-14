@@ -13,8 +13,8 @@ import { SlideIn } from "../../animations"
 import { IconMobileNavbarV1 } from "../../../components/Icons/IconMobileNavbar_v1"
 
 const Wrapper = styled.div`
+  background: #fff;
   display: none;
-  margin: 0;
   ${mobile(css`
     display: flex;
     align-items: center;

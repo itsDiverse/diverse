@@ -10,7 +10,7 @@ const Wrapper = styled.nav`
   justify-content: center;
   font-style: normal;
   font-weight: bold;
-  font-size: 14.5px;
+  font-size: 16px;
 `
 
 const NavLink = styled(Link)`
