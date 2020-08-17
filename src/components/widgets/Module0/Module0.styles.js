@@ -25,6 +25,7 @@ export const StyledContentWrapper = styled.div`
       flex-direction: column;
       justify-content: center;
       text-align: center;
+      order: -1;
     }
     .heading-section {
       font-weight: 600;
@@ -74,14 +75,13 @@ export const StyledContentWrapper = styled.div`
     @media (min-width: 1000px) {
       .tools-section {
         display: grid;
-        grid-column-gap: 0px;
         grid-template-columns: repeat(2, 1fr);
       }
       .title-section {
         margin: 40px 0px;
         padding-left: 2rem;
         text-align: left;
-        z-index: 2;
+        z-index: 0;
       }
       .title-section h1 {
         font-size: 67px;
