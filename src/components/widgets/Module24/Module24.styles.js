@@ -96,6 +96,7 @@ export const StyledContentWrapper = styled.div`
     }
     .services-list li {
       font-size: 14px;
+      padding: 5px;
       color: ${props.theme.colors.text};
     }
 
@@ -112,7 +113,7 @@ export const StyledContentWrapper = styled.div`
         order: -1;
       }
       .title-section h2 {
-        font-size: 45px;
+        font-size: 35px;
         font-weight: bold;
         padding: 0px;
       }

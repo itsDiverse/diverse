@@ -63,7 +63,6 @@ export const StyledContentWrapper = styled.div`
     .title-section h2 {
       font-family: NovaBold;
       font-size: 28px;
-      line-height: 40px;
       color: ${props.theme.colors.title};
       margin: 0;
     }
@@ -111,6 +110,7 @@ export const StyledContentWrapper = styled.div`
         font-size: 35px;
         font-weight: bold;
         padding: 0px;
+        line-height: 40px;
       }
       .brands-wrapper img {
         width: fit-content;
