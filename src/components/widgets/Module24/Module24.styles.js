@@ -129,10 +129,8 @@ export const StyledContentWrapper = styled.div`
       .video-container {
         display: flex;
         width: fit-content;
-      }
-      .video-container video {
-        transform: scale(1.8) translateX(-55px);
-        z-index: 0;
+        z-index: 1;
+        transform: translateX(50px) translateY(-250px);
       }
     }
   `}
