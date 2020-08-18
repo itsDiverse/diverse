@@ -3,8 +3,9 @@ import sample from "./videos/sample.mp4"
 import sample2 from "./videos/A_Web_Programming_1.mp4"
 import sampleVideo from "./videos/samplevideo.mp4"
 import playIcon from "./images/Module2/play.svg"
-import cubePipesVideo from "./videos/DiverseCubePipes2.mp4"
-import cubeVideo from "./videos/DiverseCubePipes2.mp4"
+import cubePipesVideo from "./videos/cubePipes.mp4"
+import cubesVideo from "./videos/cubes_2.mp4"
+import cubesPeopleVideo from "./videos/cubes_2.mp4"
 //++++++++++++++++++++++++++++++++++++
 
 export const videos = {
@@ -31,14 +32,14 @@ export const videos = {
     playIcon,
     sample,
     sample2,
-    cubeVideo,
+    cubesVideo,
   },
   //---------------------------------Module 23
   module23: {
-    cubeVideo,
+    cubesVideo,
   },
   //---------------------------------Module 24
   module24: {
-    cubeVideo,
+    cubesVideo,
   },
 }

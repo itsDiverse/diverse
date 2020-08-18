@@ -28,7 +28,7 @@ export const StyledContentWrapper = styled.div`
       padding: 0px 16px;
     }
     .heading-section {
-      font-weight: 600;
+      font-family: NovaSemi;
       font-size: 16px;
       color: ${props.theme.colors.text};
     }
@@ -36,10 +36,10 @@ export const StyledContentWrapper = styled.div`
       padding: 80px 0px;
     }
     .title-section h2 {
-      font-style: normal;
       font-family: NovaBold;
+      font-weight: 400;
       font-size: 30px;
-      line-height: 40px;
+      line-height: 35px;
       color: ${props.theme.colors.title};
       margin: 0;
     }
@@ -85,7 +85,7 @@ export const StyledContentWrapper = styled.div`
     .services-title {
       font-family: NovaBold;
       color: ${props.theme.colors.title};
-      font-weight: bold;
+      font-weight: 400;
       font-size: 16px;
       margin-bottom: -10px;
     }
@@ -107,7 +107,7 @@ export const StyledContentWrapper = styled.div`
       }
       .title-section {
         margin: 40px 0px;
-        padding: 75px 75px 0px 90px;
+        padding: 205px 75px 0px 90px;
         text-align: left;
         z-index: 0;
         order: -1;
@@ -130,7 +130,7 @@ export const StyledContentWrapper = styled.div`
         display: flex;
         width: fit-content;
         z-index: 1;
-        transform: translateX(50px) translateY(-250px);
+        transform: translateX(50px) translateY(-50px);
       }
     }
   `}

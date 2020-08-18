@@ -8,9 +8,10 @@ const Wrapper = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
+  font-family: NovaReg;
+  font-weight: 600;
+  font-size: 15.5px;
+  line-height: 18px;
 `
 
 const NavLink = styled(Link)`

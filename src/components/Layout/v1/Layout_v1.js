@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   min-height: 100vh;
   flex-direction: column;
   margin: 0;
+  overflow: hidden;
 `
 const MediaFooter = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" })

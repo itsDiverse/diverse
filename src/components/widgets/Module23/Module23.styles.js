@@ -53,7 +53,7 @@ export const StyledContentWrapper = styled.div`
       padding: 0px 16px;
     }
     .heading-section {
-      font-weight: 600;
+      font-family: NovaSemi;
       font-size: 16px;
       color: ${props.theme.colors.text};
     }
@@ -62,7 +62,9 @@ export const StyledContentWrapper = styled.div`
     }
     .title-section h2 {
       font-family: NovaBold;
-      font-size: 28px;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 35px;
       color: ${props.theme.colors.title};
       margin: 0;
     }
@@ -90,7 +92,7 @@ export const StyledContentWrapper = styled.div`
       width: fit-content;
     }
     .video-container video {
-      height: 100%;
+      height: 600px;
       width: 100%;
       transform: scale(1) translateX(-35px);
     }
@@ -123,7 +125,7 @@ export const StyledContentWrapper = styled.div`
         width: fit-content;
       }
       .video-container video {
-        transform: scale(1.8) translateX(-55px);
+        transform: scale(1.5) translateY(95px) translateX(-10px);
         z-index: 0;
       }
     }

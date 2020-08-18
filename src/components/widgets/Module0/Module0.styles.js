@@ -28,7 +28,7 @@ export const StyledContentWrapper = styled.div`
       order: -1;
     }
     .heading-section {
-      font-weight: 600;
+      font-family: NovaSemi;
       font-size: 16px;
       color: ${props.theme.colors.text};
     }
