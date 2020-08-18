@@ -867,4 +867,15 @@ export const data = {
     link3: "",
     link4: "",
   },
+  //-------------------------------------Module 23
+  module23: {
+    heading: "How Our Services Work",
+    title:
+      "We follow customers on their journey to becoming a closed lead or sale.",
+    text: `In almost all service and product offerings, the customer does not make their buying decision the first time they see the offer. We develop end-to-end sales processes that turn strangers into loyal customers.
+    `,
+
+    //Buttons
+    singleButton: "GET A FREE PROPOSAL",
+  },
 }

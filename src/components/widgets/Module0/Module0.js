@@ -13,11 +13,11 @@ export default props => (
               {props.theme.video ? (
                 <video id="Video16v" poster="" autoPlay playsInline muted loop>
                   <source
-                    src={props.videos.cubeVideo}
+                    src={props.videos.cubePipesVideo}
                     type="video/webm"
                   ></source>
                   <source
-                    src={props.videos.cubeVideo}
+                    src={props.videos.cubePipesVideo}
                     type="video/mp4"
                   ></source>
                 </video>
