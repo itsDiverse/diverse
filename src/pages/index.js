@@ -1,5 +1,5 @@
 import React from "react"
-import { Module0, Module23 } from "../components/widgets"
+import { Module0, Module23, Module24 } from "../components/widgets"
 import LayoutV1 from "../components/Layout/v1/Layout_v1"
 import SEO from "../components/seo"
 
@@ -23,6 +23,13 @@ export default () => (
       theme={theme.module23}
       data={data.module23}
       videos={videos.module23}
+    />
+    <Module24
+      component={Module24}
+      theme={theme.module24}
+      data={data.module24}
+      images={images.module24}
+      videos={videos.module24}
     />
   </LayoutV1>
 )

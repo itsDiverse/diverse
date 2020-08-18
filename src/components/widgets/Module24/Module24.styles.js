@@ -1,30 +1,5 @@
 import styled, { css } from "styled-components"
 
-export const GetFreeProposalButtonWhite = styled.button`
-  width: 210px;
-  height: 43px;
-  font-size: 13.5px;
-  background: #fff;
-  border: 3px solid #195bb6;
-  box-sizing: border-box;
-  border-radius: 5px;
-  color: #195bb6;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
-  font-weight: bold;
-  &:hover,
-  &:focus {
-    opacity: 0.9;
-    background: #195bb6;
-    color: #fff;
-    outline: none;
-  }
-
-  &:active {
-    transform: scale(0.95);
-    opacity: 0.9;
-  }
-`
-
 export const StyledContentWrapper = styled.div`
   ${props => css`
     .content-wrapper {
@@ -61,8 +36,9 @@ export const StyledContentWrapper = styled.div`
       padding: 80px 0px;
     }
     .title-section h2 {
+      font-style: normal;
       font-family: NovaBold;
-      font-size: 28px;
+      font-size: 30px;
       line-height: 40px;
       color: ${props.theme.colors.title};
       margin: 0;
@@ -71,7 +47,7 @@ export const StyledContentWrapper = styled.div`
       font-family: NovaLight;
       font-style: normal;
       font-size: 18px;
-      line-height: 140.3%;
+      margin-top: 10px;
       color: ${props.theme.colors.text};
     }
 
@@ -95,6 +71,33 @@ export const StyledContentWrapper = styled.div`
       width: 100%;
       transform: scale(1) translateX(-35px);
     }
+    .services-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      color: ${props.theme.colors.text};
+    }
+    .services-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 0px 0px 20px;
+    }
+    .services-title {
+      font-family: NovaBold;
+      color: ${props.theme.colors.title};
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: -10px;
+    }
+    .services-list {
+      list-style-image: url(${props.images.ellipse});
+      color: red !important;
+      padding: 0;
+    }
+    .services-list li {
+      font-size: 14px;
+      color: ${props.theme.colors.text};
+    }
 
     @media (min-width: 1000px) {
       .tools-section {
@@ -106,11 +109,15 @@ export const StyledContentWrapper = styled.div`
         padding: 75px 75px 0px 90px;
         text-align: left;
         z-index: 0;
+        order: -1;
       }
       .title-section h2 {
-        font-size: 35px;
+        font-size: 45px;
         font-weight: bold;
         padding: 0px;
+      }
+      .subtitle-section {
+        font-weight: 200;
       }
       .brands-wrapper img {
         width: fit-content;

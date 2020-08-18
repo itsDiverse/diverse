@@ -588,8 +588,16 @@ export const theme = {
       background: "",
     },
   },
-  //-------------------------------------Module 0
+  //-------------------------------------Module 23
   module23: {
+    video: true,
+    colors: {
+      title: "#616161",
+      text: "#707070",
+    },
+  },
+  //-------------------------------------Module 24
+  module24: {
     video: true,
     colors: {
       title: "#616161",

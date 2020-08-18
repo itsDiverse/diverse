@@ -37,4 +37,8 @@ export const videos = {
   module23: {
     cubeVideo,
   },
+  //---------------------------------Module 24
+  module24: {
+    cubeVideo,
+  },
 }

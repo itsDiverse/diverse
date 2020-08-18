@@ -194,6 +194,10 @@ import sliderImg2 from "./images/Module22/slider-img-2.jpg"
 import sliderImg3 from "./images/Module22/slider-img-3.jpg"
 //++++++++++++++++++++++++++++++++++
 
+//import images Module 24+++++++++++
+import ellipse from "./images/Module24/ellipse.png"
+//++++++++++++++++++++++++++++++++++
+
 export const images = {
   //-------------------------------------Template
   title: "",
@@ -499,5 +503,9 @@ export const images = {
     sliderImg2Alt: "",
     sliderImg3,
     sliderImg3Alt: "",
+  },
+  //----------------------------------Module 22
+  module24: {
+    ellipse,
   },
 }

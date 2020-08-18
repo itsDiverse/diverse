@@ -878,4 +878,13 @@ export const data = {
     //Buttons
     singleButton: "GET A FREE PROPOSAL",
   },
+  //-------------------------------------Module 24
+  module24: {
+    heading: "Services We Offer",
+    title: "Your suite of services",
+    text: `We combine applicable services to build your end-to-end sales process.`,
+
+    //Buttons
+    singleButton: "GET A FREE PROPOSAL",
+  },
 }
