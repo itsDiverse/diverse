@@ -11,7 +11,7 @@ export default props => (
           <div className="tools-section">
             <div className="video-container">
               {props.theme.video ? (
-                <video id="Video16v" poster="" autoPlay playsInline muted loop>
+                <video id="Video0" poster="" autoPlay playsInline muted loop>
                   <source
                     src={props.videos.cubePipesVideo}
                     type="video/webm"

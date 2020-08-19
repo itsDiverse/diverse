@@ -71,7 +71,23 @@ export const StyledContentWrapper = styled.div`
       width: 100%;
       transform: scale(1) translateX(-35px);
     }
-
+    @media (max-width: 768px) {
+      .tools-section {
+        min-height: 100vh;
+      }
+      .brands-wrapper {
+        margin-top: 50px;
+      }
+      .video-container {
+        display: flex;
+        width: fit-content;
+        margin-top: -30px;
+        margin-bottom: 60px;
+      }
+      .video-container video {
+        transform: scale(1.5) translateY(1px) translateX(-30px);
+      }
+    }
     @media (min-width: 1000px) {
       .tools-section {
         display: grid;

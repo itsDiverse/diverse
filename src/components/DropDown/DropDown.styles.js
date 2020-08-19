@@ -30,7 +30,7 @@ export const StyledTitles = styled.div`
 `
 
 export const StyledTitle = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 19px;
   color: #707070;
