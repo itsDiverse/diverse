@@ -60,7 +60,7 @@ export const StyledContentWrapper = styled.div`
       padding-top: 20px;
     }
     .brands-wrapper img {
-      width: 100%;
+      width: 50%;
     }
     .video-container {
       display: flex;
@@ -75,8 +75,14 @@ export const StyledContentWrapper = styled.div`
       .tools-section {
         min-height: 100vh;
       }
+      .title-section {
+        margin-top: 30px;
+      }
       .brands-wrapper {
         margin-top: 50px;
+      }
+      .brands-wrapper img {
+        width: 85%;
       }
       .video-container {
         display: flex;

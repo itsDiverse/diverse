@@ -15,6 +15,7 @@ export const StyledContentWrapper = styled.div`
     .tools-section {
       display: flex;
       flex-direction: column-reverse;
+      align-items: center;
       margin-left: auto;
       margin-right: auto;
       position: relative;
@@ -27,6 +28,7 @@ export const StyledContentWrapper = styled.div`
       text-align: left;
       padding: 0px 16px;
       order: -1;
+      max-width: 500px;
     }
     .heading-section {
       font-family: NovaSemi;
@@ -66,11 +68,11 @@ export const StyledContentWrapper = styled.div`
     .video-container {
       display: flex;
       width: fit-content;
+      transform: scale(1) translateX(85px) translateY(-100px);
     }
     .video-container video {
       height: 100%;
       width: 100%;
-      transform: scale(1) translateY(-100px) translateX(65px);
     }
     .services-container {
       display: flex;
@@ -139,7 +141,7 @@ export const StyledContentWrapper = styled.div`
         display: flex;
         width: fit-content;
         z-index: 1;
-        transform: translateX(0px) translateY(-50px);
+        transform: translateX(1px) translateY(-50px);
       }
       .services-list li {
         padding: 5px;
@@ -157,6 +159,9 @@ export const StyledContentWrapper = styled.div`
       .services-right {
         padding-left: 5px;
         padding-right: 10px;
+      }
+      .video-container {
+        transform: scale(1) translateX(65px) translateY(-100px);
       }
     }
   `}

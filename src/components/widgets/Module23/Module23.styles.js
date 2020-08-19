@@ -40,6 +40,7 @@ export const StyledContentWrapper = styled.div`
     .tools-section {
       display: flex;
       flex-direction: column-reverse;
+      align-items: center;
       margin-left: auto;
       margin-right: auto;
       position: relative;
@@ -79,14 +80,6 @@ export const StyledContentWrapper = styled.div`
 
     .tools-btn {
       margin-top: 24px;
-    }
-    .brands-wrapper {
-      width: 100%;
-      margin: 0;
-      padding-top: 20px;
-    }
-    .brands-wrapper img {
-      width: 100%;
     }
     .video-container {
       display: none;
