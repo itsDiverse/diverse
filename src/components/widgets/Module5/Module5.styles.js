@@ -121,9 +121,10 @@ export const StyledContentWrapper = styled.div`
         padding-left: 5px;
       }
       .footer-cards-wrapper h3 {
+        font-family: NovaSemi;
         font-size: 17px;
         line-height: 28px;
-        font-weight: 600;
+        font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.025em;
         margin: 0 0 5px;

@@ -118,7 +118,7 @@ export const theme = {
     blendMode: `screen, difference, lighten`,
     //---------------------------
     colors: {
-      boxTitle: "#217ab7",
+      boxTitle: "#195bb6",
       boxText: "#525f7f",
       //Icon
       boxIconFill1: "#68d4f8",
