@@ -28,71 +28,79 @@ export default props => (
               <h2>{props.data.title}</h2>
               <p className="subtitle-section">{props.data.text}</p>
               <div className="services-container">
-                <div className="services-title">Marketing & Writing </div>
+                <div className="services-title">
+                  {props.data.marketingServices.title}
+                </div>
                 <div className="services-wrapper">
                   <div className="services-left">
                     <ul className="services-list">
-                      <li>PPC & SEO</li>
-                      <li>Writing/Copy Services</li>
+                      <li>{props.data.marketingServices.service1}</li>
+                      <li>{props.data.marketingServices.service2}</li>
                     </ul>
                   </div>
                   <div className="services-right">
                     <ul className="services-list">
-                      <li>PPC & SEO</li>
-                      <li>Writing/Copy Services</li>
+                      <li>{props.data.marketingServices.service3}</li>
+                      <li>{props.data.marketingServices.service4}</li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div className="services-container">
                 <div>
-                  <div className="services-title">Graphics & Design</div>
+                  <div className="services-title">
+                    {props.data.graphicServices.title}
+                  </div>
                   <div className="services-wrapper">
                     <div className="services-left">
                       <ul className="services-list">
-                        <li>PPC & SEO</li>
-                        <li>Writing/Copy Services</li>
+                        <li>{props.data.graphicServices.service1}</li>
+                        <li>{props.data.graphicServices.service2}</li>
                       </ul>
                     </div>
                     <div className="services-right">
                       <ul className="services-list">
-                        <li>PPC & SEO</li>
-                        <li>Writing/Copy Services</li>
+                        <li>{props.data.graphicServices.service3}</li>
+                        <li>{props.data.graphicServices.service4}</li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="services-container">
-                <div className="services-title">Video & Animation</div>
+                <div className="services-title">
+                  {props.data.videoServices.title}
+                </div>
                 <div className="services-wrapper">
                   <div className="services-left">
                     <ul className="services-list">
-                      <li>PPC & SEO</li>
-                      <li>Writing/Copy Services</li>
+                      <li>{props.data.videoServices.service1}</li>
+                      <li>{props.data.videoServices.service2}</li>
                     </ul>
                   </div>
                   <div className="services-right">
                     <ul className="services-list">
-                      <li>PPC & SEO</li>
-                      <li>Writing/Copy Services</li>
+                      <li>{props.data.videoServices.service3}</li>
+                      <li>{props.data.videoServices.service4}</li>
                     </ul>
                   </div>
                 </div>
               </div>
               <div className="services-container">
-                <div className="services-title">Programming & Tech </div>
+                <div className="services-title">
+                  {props.data.programmingServices.title}{" "}
+                </div>
                 <div className="services-wrapper">
                   <div className="services-left">
                     <ul className="services-list">
-                      <li>PPC & SEO</li>
-                      <li>Writing/Copy Services</li>
+                      <li>{props.data.programmingServices.service1}</li>
+                      <li>{props.data.programmingServices.service2}</li>
                     </ul>
                   </div>
                   <div className="services-right">
                     <ul className="services-list">
-                      <li>PPC & SEO</li>
-                      <li>Writing/Copy Services</li>
+                      <li>{props.data.programmingServices.service3}</li>
+                      <li>{props.data.programmingServices.service4}</li>
                     </ul>
                   </div>
                 </div>

@@ -81,7 +81,7 @@ export const StyledContentWrapper = styled.div`
     .services-wrapper {
       display: flex;
       justify-content: space-around;
-      margin: 0px 0px 0px 20px;
+      margin: 0px 0px 0px 30px;
     }
     .services-title {
       font-family: NovaBold;
@@ -92,8 +92,13 @@ export const StyledContentWrapper = styled.div`
     }
     .services-list {
       list-style-image: url(${props.images.ellipse});
-      color: red !important;
       padding: 0;
+    }
+    .services-left {
+      width: 50%;
+    }
+    .services-right {
+      width: 50%;
     }
     .services-list li {
       font-size: 14px;
@@ -135,6 +140,23 @@ export const StyledContentWrapper = styled.div`
         width: fit-content;
         z-index: 1;
         transform: translateX(0px) translateY(-50px);
+      }
+      .services-list li {
+        padding: 5px;
+      }
+    }
+    @media (max-width: 768px) {
+      .services-wrapper {
+        width: 100%;
+        margin-left: 20px;
+        padding: 0;
+      }
+      .services-left {
+        padding-right: 5px;
+      }
+      .services-right {
+        padding-left: 10px;
+        padding-right: 2px;
       }
     }
   `}

@@ -886,5 +886,35 @@ export const data = {
 
     //Buttons
     singleButton: "GET A FREE PROPOSAL",
+
+    //Services
+    marketingServices: {
+      title: "Marketing & Writing ",
+      service1: "PPC & SEO",
+      service2: "Social Madia & Email",
+      service3: "Writing/Copy Services",
+      service4: "Research & Strategy",
+    },
+    graphicServices: {
+      title: "Graphics & Design",
+      service1: "Website Design",
+      service2: "Landing Page Design",
+      service3: "Logo & Brand Idenity",
+      service4: "3D Character Design",
+    },
+    videoServices: {
+      title: "Video & Animation",
+      service1: "Animated Videos",
+      service2: "Editing & Post Production",
+      service3: "Social & Marketing Videos",
+      service4: "Live Action Videos",
+    },
+    programmingServices: {
+      title: "Programming & Tech",
+      service1: "Website Development",
+      service2: "Software Development ",
+      service3: "Mobile App Development",
+      service4: "Data Services ",
+    },
   },
 }
