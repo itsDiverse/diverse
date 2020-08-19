@@ -155,8 +155,8 @@ export const StyledContentWrapper = styled.div`
         padding-right: 5px;
       }
       .services-right {
-        padding-left: 10px;
-        padding-right: 2px;
+        padding-left: 5px;
+        padding-right: 10px;
       }
     }
   `}
