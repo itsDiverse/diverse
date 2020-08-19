@@ -53,6 +53,7 @@ export const StyledContentWrapper = styled.div`
       text-align: left;
       padding: 0px 16px;
       z-index: 1;
+      max-width: 500px;
     }
     .heading-section {
       font-family: NovaSemi;
