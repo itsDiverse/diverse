@@ -3,7 +3,7 @@ import { StyledContentWrapper } from "./Module5.styles"
 
 export default props => (
   <StyledContentWrapper theme={props.theme}>
-    <div className="content-wrapper">
+    <div id="contact" className="content-wrapper">
       <div className="footer-with-card-section-wrapper">
         {props.theme.boxesDisplay && (
           <section className="footer-with-card-section">

@@ -69,7 +69,7 @@ const NavLinksMobile = () => (
         background:
           "linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%)",
       }}
-      to="/index_v2/"
+      to="/#work"
     >
       HOW WE WORK
     </NavLink>
@@ -80,7 +80,7 @@ const NavLinksMobile = () => (
         background:
           "linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%)",
       }}
-      to="/index_v3/"
+      to="/#services"
     >
       OUR SERVICES
     </NavLink>
@@ -91,7 +91,7 @@ const NavLinksMobile = () => (
         background:
           "linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%)",
       }}
-      to="/index_v4/"
+      to="/#contact"
     >
       CONTACT US
     </NavLink>

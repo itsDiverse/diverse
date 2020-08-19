@@ -37,11 +37,11 @@ const NavLinks = () => (
   <Wrapper>
     <NavLink to="/">Home</NavLink>
     <NavSeparator />
-    <NavLink to="/index_v2/">How We Work</NavLink>
+    <NavLink to="/#work">How We Work</NavLink>
     <NavSeparator />
-    <NavLink to="/index_v3/">Our Services</NavLink>
+    <NavLink to="/#services">Our Services</NavLink>
     <NavSeparator />
-    <NavLink to="/index_v4">Contact Us</NavLink>
+    <NavLink to="/#contact">Contact Us</NavLink>
   </Wrapper>
 )
 

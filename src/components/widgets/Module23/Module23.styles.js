@@ -51,6 +51,7 @@ export const StyledContentWrapper = styled.div`
       justify-content: flex-start;
       text-align: left;
       padding: 0px 16px;
+      z-index: 1;
     }
     .heading-section {
       font-family: NovaSemi;
@@ -106,7 +107,7 @@ export const StyledContentWrapper = styled.div`
         margin: 40px 0px;
         padding: 75px 75px 0px 90px;
         text-align: left;
-        z-index: 0;
+        z-index: 2;
       }
       .title-section h2 {
         font-size: 35px;

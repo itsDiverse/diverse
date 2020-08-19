@@ -56,7 +56,7 @@ export const StyledContentWrapper = styled.div`
       .container-xl {
         max-width: 1160px;
         margin: 0 auto;
-        padding: 0px;
+        padding-bottom: 60px;
         width: 100%;
       }
       .container-lg {
@@ -279,6 +279,9 @@ export const StyledContentWrapper = styled.div`
         .footer-cards-wrapper {
           padding: 30px 30px 30px 110px;
         }
+        .container-xl {
+          padding-bottom: 50px;
+        }
       }
       @media (max-width: 767px) {
         .content-wrapper {
@@ -305,6 +308,9 @@ export const StyledContentWrapper = styled.div`
         }
         .get-in-touch-btn .btn-right {
           margin-right: 0px;
+        }
+        .container-xl {
+          padding-bottom: 30px;
         }
       }
     `}

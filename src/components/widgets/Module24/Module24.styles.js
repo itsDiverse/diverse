@@ -26,6 +26,7 @@ export const StyledContentWrapper = styled.div`
       justify-content: flex-start;
       text-align: left;
       padding: 0px 16px;
+      order: -1;
     }
     .heading-section {
       font-family: NovaSemi;
@@ -63,13 +64,13 @@ export const StyledContentWrapper = styled.div`
       width: 100%;
     }
     .video-container {
-      display: none;
+      display: flex;
       width: fit-content;
     }
     .video-container video {
       height: 100%;
       width: 100%;
-      transform: scale(1) translateX(-35px);
+      transform: scale(1) translateY(-100px) translateX(65px);
     }
     .services-container {
       display: flex;
@@ -79,7 +80,7 @@ export const StyledContentWrapper = styled.div`
     }
     .services-wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       margin: 0px 0px 0px 20px;
     }
     .services-title {
@@ -99,6 +100,9 @@ export const StyledContentWrapper = styled.div`
       padding: 5px;
       color: ${props.theme.colors.text};
     }
+    .video-container {
+      margin-bottom: -100px;
+    }
 
     @media (min-width: 1000px) {
       .tools-section {
@@ -109,7 +113,7 @@ export const StyledContentWrapper = styled.div`
         margin: 40px 0px;
         padding: 205px 75px 0px 90px;
         text-align: left;
-        z-index: 0;
+        z-index: 1;
         order: -1;
       }
       .title-section h2 {
@@ -130,7 +134,7 @@ export const StyledContentWrapper = styled.div`
         display: flex;
         width: fit-content;
         z-index: 1;
-        transform: translateX(50px) translateY(-50px);
+        transform: translateX(0px) translateY(-50px);
       }
     }
   `}

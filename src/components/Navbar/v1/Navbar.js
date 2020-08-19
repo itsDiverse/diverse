@@ -12,7 +12,7 @@ import { Brand } from "../../Brand"
 import MobileNavbar from "./MobileNavbar"
 
 const Wrapper = styled.nav`
-  position: fixed;
+  position: relative;
   left: 0;
   top: 0;
   box-sizing: border-box;

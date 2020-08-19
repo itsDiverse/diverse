@@ -22,7 +22,7 @@ export const StyledClose = styled(Link)`
 
 export const StyledContentWrapper = styled.div`
   margin: 0;
-  padding: 30px;
+  padding: 90px;
   display: flex;
   justify-content: center;
   background-color: #e5e5e5;

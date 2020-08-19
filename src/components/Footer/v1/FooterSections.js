@@ -21,7 +21,9 @@ export const FooterSections = () => (
   <StyledSection>
     <StyledSectionContainer>
       <StyledSectionLeft>
-        <Brand size={50}></Brand>
+        <Link to="/">
+          <Brand size={50}></Brand>
+        </Link>
         <StyledSectionPhrase>
           We develop multi-channel sales processes to help businesses attract,
           close, and retain customers.

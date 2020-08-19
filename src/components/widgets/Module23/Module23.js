@@ -7,21 +7,14 @@ import { Link } from "gatsby"
 
 export default props => (
   <StyledContentWrapper theme={props.theme}>
-    <div className="content-wrapper">
+    <div id="work" className="content-wrapper">
       <div className="container-lg">
         <div className="toolssection">
           <div className="tools-section">
             <div className="video-container">
               <div className="video-container">
                 {props.theme.video ? (
-                  <video
-                    id="Video16v"
-                    poster=""
-                    autoPlay
-                    playsInline
-                    muted
-                    loop
-                  >
+                  <video id="Video23" poster="" autoPlay playsInline muted loop>
                     <source
                       src={props.videos.cubesVideo}
                       type="video/webm"
