@@ -12,16 +12,18 @@ const Wrapper = styled.nav`
 
 const NavLink = styled(Link)`
   font-size: 14px;
+  font-style: normal;
   font-weight: 400;
-  margin: 2px;
+  margin: 0px;
   width: 100%;
   padding: 6px;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   flex: 0 0 auto;
   display: inline-block;
   line-height: 2.125rem;
   transition: opacity 0.2s, transform 0.2s;
   cursor: pointer;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
   letter-spacing: sleec 0.025rem;
   color: currentColor;
   border-radius: 2px;
@@ -42,8 +44,8 @@ const NavLink = styled(Link)`
 `
 const NavSeparator = styled.span`
   flex: 0 0 auto;
-  width: 70%;
-  height: 0.05rem;
+  width: 100%;
+  height: 0.03rem;
   margin: 0;
   border-radius: 50%;
   background: currentColor;
