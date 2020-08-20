@@ -11,6 +11,8 @@ import NavButton from "./NavButton"
 import { LogoMobile } from "./logoMobile"
 import { SlideIn } from "../../animations"
 import { IconMobileNavbarV1 } from "../../../components/Icons/IconMobileNavbar_v1"
+import { IconCloseMobileNavbarV1 } from "../../../components/Icons/IconCloseMobileNavbar_v1"
+import { Brand } from "../../Brand"
 
 const Wrapper = styled.div`
   background: #fff;
@@ -24,17 +26,16 @@ const Wrapper = styled.div`
 `
 
 const SecondaryMenu = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 6.125rem;
+  left: 55%;
   right: 0 !important;
   ${p =>
     p.open
       ? css`
           animation: ${SlideIn} 0.27s linear forwards;
-          height: 100vh;
+          min-height: 100vh;
           box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.8);
-          overflow: hidden;
         `
       : css`
           height: 0;
@@ -46,7 +47,6 @@ const SecondaryMenu = styled.div`
   justify-content: flex-start;
   padding: 0 0 0 1rem;
   user-select: none;
-
   overflow-x: hidden;
   overflow-y: scroll;
   background: rgb(255, 255, 255);
@@ -56,9 +56,13 @@ const SecondaryMenu = styled.div`
     rgba(247, 247, 247, 1) 50%,
     rgba(229, 229, 229, 1) 81%
   );
-  border-radius: 2px;
+  border-radius: 5px;
   color: #55555;
   font-weight: bold;
+  @media (max-width: 768px) {
+    left: 25%;
+    overflow-y: scroll;
+  }
 `
 
 const LogoLink = styled(Link).attrs({
@@ -86,9 +90,18 @@ const IconWrapper = styled.div`
       transform: rotate(180deg);
     `}
 `
+const IconWrapperClose = styled.div`
+  margin-top: -1rem;
+  margin-right: 1rem;
+  transition: transform 0.1s;
+  color: #195bb6;
+  background: white-smoke;
+  &:focus {
+    color: #ffffff;
+  }
+`
 
 const Button = styled.button`
-  margin-left: 15px;
   align-self: center;
   width: 166px;
   height: 43px;
@@ -108,9 +121,22 @@ const Button = styled.button`
   }
 `
 
+const PrimaryMenuItem = styled.div`
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  margin-left: 0.75rem;
+  margin-right: 0px;
+  @media (max-width: 768px) {
+    margin-left: 0.25rem;
+  }
+`
 const SecondaryMenuItem = styled.div`
   // padding-right: 1.25rem;
   margin-top: 2rem;
+  margin-bottom: 1rem;
   margin-left: 0.75rem;
 `
 
@@ -133,35 +159,37 @@ const MobileNavbar = props => {
           <LogoLink>
             <LogoMobile />
           </LogoLink>
-          <Link
-            tabIndex="-1"
-            to="/modalPopUp"
-            state={{
-              modal: false,
-            }}
-          >
+          <Link tabIndex="-1" to="/">
             <Button autoFocus={true}>GET A PROPOSAL</Button>
           </Link>
           <Wrapper>
-            <NavButton
-              aria-label="dropdown"
-              onClick={onMobileNavToggle}
-              active={!isMobileNavFolded}
-            >
+            <NavButton aria-label="dropdown" onClick={onMobileNavToggle}>
               <IconWrapper>
                 <IconMobileNavbarV1 />
               </IconWrapper>
             </NavButton>
           </Wrapper>
 
-          <SecondaryMenu
-            onClick={onMobileNavToggle}
-            active={!isMobileNavFolded}
-            open={!isMobileNavFolded}
-          >
+          <SecondaryMenu open={!isMobileNavFolded}>
+            <PrimaryMenuItem>
+              <Link
+                tabIndex="-1"
+                to="/modalPopUp"
+                state={{
+                  modal: false,
+                }}
+              >
+                <Brand />
+              </Link>
+              <IconWrapperClose
+                onClick={onMobileNavToggle}
+                close={isMobileNavFolded}
+              >
+                <IconCloseMobileNavbarV1 />
+              </IconWrapperClose>
+            </PrimaryMenuItem>
             <NavLinksMobile />
             <NavSeparator />
-
             <SecondaryMenuItem>
               <Link
                 tabIndex="-1"

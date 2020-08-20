@@ -7,10 +7,11 @@ const Wrapper = styled.nav`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  margin-top: 1rem;
+  margin: 2rem 0;
 `
 
 const NavLink = styled(Link)`
+  font-size: 14px;
   font-weight: 400;
   margin: 2px;
   width: 100%;
@@ -18,7 +19,7 @@ const NavLink = styled(Link)`
   padding-left: 1rem;
   flex: 0 0 auto;
   display: inline-block;
-  line-height: 3.125rem;
+  line-height: 2.125rem;
   transition: opacity 0.2s, transform 0.2s;
   cursor: pointer;
   letter-spacing: sleec 0.025rem;
@@ -34,6 +35,9 @@ const NavLink = styled(Link)`
   ...active {
     background: linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%);
     color: "#fff";
+  }
+  @media (max-width: 768px) {
+    font-size: 14px;
   }
 `
 const NavSeparator = styled.span`

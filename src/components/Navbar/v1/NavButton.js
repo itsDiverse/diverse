@@ -23,7 +23,7 @@ const NavButton = styled.button`
   ${p =>
     p.active &&
     css`
-      background: rgba(0, 0, 0, 0.07);
+      background: transparent;
     `}
 `
 
