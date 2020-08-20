@@ -110,11 +110,11 @@ const Button = styled.button`
   border-color: #195bb6;
   border-radius: 5px;
   color: #195bb6;
-  font-size: 13.5px;
+  font-size: 13px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
   font-weight: bold;
   padding: 0 1.5rem;
-  margin-left: 1rem;
+  margin-left: 1.2rem;
   &:focus {
     outline: none;
   }
@@ -142,7 +142,7 @@ const SecondaryMenuItem = styled.div`
   justify-content: center;
   width: 100%;
   margin: 0;
-  margin-left: -0.5rem;
+  margin-left: -0.6rem;
 `
 
 const MobileNavbar = props => {
