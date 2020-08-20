@@ -93,11 +93,15 @@ const IconWrapper = styled.div`
 const IconWrapperClose = styled.div`
   margin-top: -1rem;
   margin-right: 1rem;
+  height: 20px;
   transition: transform 0.1s;
   color: #195bb6;
   background: white-smoke;
   &:focus {
     color: #ffffff;
+  }
+  &:active {
+    background: transparent;
   }
 `
 
@@ -132,6 +136,10 @@ const PrimaryMenuItem = styled.div`
   @media (max-width: 768px) {
     margin-left: 0.25rem;
   }
+`
+
+const NavLinksContainer = styled.div`
+  width: 100% !important;
 `
 const SecondaryMenuItem = styled.div`
   // padding-right: 1.25rem;
@@ -188,7 +196,12 @@ const MobileNavbar = props => {
                 <IconCloseMobileNavbarV1 />
               </IconWrapperClose>
             </PrimaryMenuItem>
-            <NavLinksMobile />
+            <NavLinksContainer
+              onClick={onMobileNavToggle}
+              close={isMobileNavFolded}
+            >
+              <NavLinksMobile />
+            </NavLinksContainer>
             <NavSeparator />
             <SecondaryMenuItem>
               <Link
