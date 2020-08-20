@@ -3,7 +3,7 @@ import React from "react"
 export const IconCloseMobileNavbarV1 = () => (
   <svg
     width="24"
-    height="17"
+    height="12"
     viewBox="0 0 24 17"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

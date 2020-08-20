@@ -92,7 +92,7 @@ const IconWrapper = styled.div`
 `
 const IconWrapperClose = styled.div`
   margin-top: -1rem;
-  margin-right: 1rem;
+  margin-right: 18rem;
   height: 20px;
   transition: transform 0.1s;
   color: #195bb6;
@@ -102,6 +102,10 @@ const IconWrapperClose = styled.div`
   }
   &:active {
     background: transparent;
+  }
+  @media (max-width: 768px) {
+    margin-top: -1rem;
+    margin-right: 1rem;
   }
 `
 
@@ -187,7 +191,7 @@ const MobileNavbar = props => {
                   modal: false,
                 }}
               >
-                <Brand />
+                <Brand size="30" />
               </Link>
               <IconWrapperClose
                 onClick={onMobileNavToggle}
