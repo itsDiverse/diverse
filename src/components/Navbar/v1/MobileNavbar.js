@@ -9,7 +9,6 @@ import NavLinksMobile from "./NavLinksMobile"
 import NavSeparator from "./NavSeparator"
 import NavButton from "./NavButton"
 import { LogoMobile } from "./logoMobile"
-import { SlideIn } from "../../animations"
 import { IconMobileNavbarV1 } from "../../../components/Icons/IconMobileNavbar_v1"
 import { IconCloseMobileNavbarV1 } from "../../../components/Icons/IconCloseMobileNavbar_v1"
 import { Brand } from "../../Brand"
@@ -28,13 +27,16 @@ const Wrapper = styled.div`
 const SecondaryMenu = styled.div`
   position: fixed;
   top: 0;
-  right: 0 !important;
-  ${p =>
-    p.open
+
+  ${props =>
+    props.open
       ? css`
-          max-width: 250px;
-          animation: ${SlideIn} 0.27s linear forwards;
+          right: 0 !important;
+          right: 0 !important;
+          transition: all 0.3s ease;
+
           min-height: 100vh;
+          max-width: 280px;
           box-shadow: 0 0 0 151vh rgba(0, 0, 0, 0.8);
         `
       : css`
@@ -49,13 +51,7 @@ const SecondaryMenu = styled.div`
   user-select: none;
   overflow-x: hidden;
   overflow-y: scroll;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(247, 247, 247, 1) 50%,
-    rgba(229, 229, 229, 1) 81%
-  );
+  background: rgba(247, 247, 247, 1);
 
   color: #55555;
   font-weight: bold;
@@ -87,7 +83,7 @@ const IconWrapper = styled.div`
     `}
 `
 const IconWrapperClose = styled.div`
-  margin-top: -1rem;
+  margin-top: 0.75rem;
   margin-right: 1.5rem;
   height: 20px;
   transition: transform 0.1s;
@@ -127,22 +123,25 @@ const PrimaryMenuItem = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-bottom: 0rem;
   margin-left: 0.75rem;
   margin-right: 0px;
 `
+const BrandSecondaryMenuWrapper = styled.div`
+  padding-top: 3rem;
+`
 
 const NavLinksContainer = styled.div`
   width: 100% !important;
-  padding-left: 0.75rem;
+  padding-left: 0rem;
 `
 const SecondaryMenuItem = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
   margin: 0;
-  margin-left: -0.6rem;
+  margin-left: -1rem;
 `
 
 const MobileNavbar = props => {
@@ -168,7 +167,11 @@ const MobileNavbar = props => {
             <Button autoFocus={true}>GET A PROPOSAL</Button>
           </Link>
           <Wrapper>
-            <NavButton aria-label="dropdown" onClick={onMobileNavToggle}>
+            <NavButton
+              aria-label="mobile navbar"
+              onClick={onMobileNavToggle}
+              active={!isMobileNavFolded}
+            >
               <IconWrapper>
                 <IconMobileNavbarV1 />
               </IconWrapper>
@@ -177,7 +180,9 @@ const MobileNavbar = props => {
 
           <SecondaryMenu open={!isMobileNavFolded}>
             <PrimaryMenuItem>
-              <Brand size="30" />
+              <BrandSecondaryMenuWrapper>
+                <Brand size="30" />
+              </BrandSecondaryMenuWrapper>
               <IconWrapperClose
                 onClick={onMobileNavToggle}
                 close={isMobileNavFolded}

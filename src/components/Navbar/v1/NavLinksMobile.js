@@ -7,40 +7,34 @@ const Wrapper = styled.nav`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  margin: 2rem 0;
+  padding-top: 10px;
+  margin: 1.5rem 0;
 `
 
 const NavLink = styled(Link)`
-  font-size: 14px;
+  font-family: NovaReg;
   font-style: normal;
   font-weight: 400;
-  margin: 0px;
+  font-size: 16px;
+  margin: 5px 0px;
   width: 100%;
-  padding: 6px;
-  padding-left: 0.5rem;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  padding-left: 2rem;
   flex: 0 0 auto;
   display: inline-block;
   line-height: 2.125rem;
   transition: opacity 0.2s, transform 0.2s;
   cursor: pointer;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
-  letter-spacing: sleec 0.025rem;
+  sletter-spacing: 0.015em;
   color: currentColor;
-  border-radius: 2px;
   &:hover,
   &:focus {
     color: #195bb6;
     border: 0px transparent;
     outline: none;
     border-style: none;
-  }
-  ...active {
-    background: linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%);
-    color: "#fff";
-  }
-  @media (max-width: 768px) {
-    font-size: 14px;
-  }
+  
 `
 const NavSeparator = styled.span`
   flex: 0 0 auto;
@@ -60,42 +54,42 @@ const NavLinksMobile = () => (
       to="/"
       activeClassName="active"
       activeStyle={{
-        color: "#fff",
-        background:
-          "linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%)",
+        color: "#195bb6",
+        borderTop: "3px solid #195bb6",
+        borderBottom: "3px solid #195bb6",
       }}
     >
       {" "}
       HOME
     </NavLink>
-    <NavSeparator />
+
     <NavLink
       activeStyle={{
-        color: "#fff",
-        background:
-          "linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%)",
+        color: "#195bb6",
+        borderTop: "3px solid #195bb6",
+        borderBottom: "3px solid #195bb6",
       }}
       to="/#work"
     >
       HOW WE WORK
     </NavLink>
-    <NavSeparator />
+
     <NavLink
       activeStyle={{
-        color: "#fff",
-        background:
-          "linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%)",
+        color: "#195bb6",
+        borderTop: "3px solid #195bb6",
+        borderBottom: "3px solid #195bb6",
       }}
       to="/#services"
     >
       OUR SERVICES
     </NavLink>
-    <NavSeparator />
+
     <NavLink
       activeStyle={{
-        color: "#fff",
-        background:
-          "linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%)",
+        color: "#195bb6",
+        borderTop: "3px solid #195bb6",
+        borderBottom: "3px solid #195bb6",
       }}
       to="/#contact"
     >
