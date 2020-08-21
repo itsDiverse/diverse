@@ -60,6 +60,7 @@ export const StyledLink = styled(Link)`
   box-sizing: border-box;
   border-radius: 5px;
   color: #195bb6;
+  &:hover,
   &:focus {
     background: #195bb6;
     color: #ffffff;
