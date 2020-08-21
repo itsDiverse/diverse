@@ -36,6 +36,7 @@ export const GetFreeProposalButton = styled.button`
   color: #fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
   font-weight: bold;
+  cursor: pointer;
   &:hover,
   &:focus {
     opacity: 0.9;

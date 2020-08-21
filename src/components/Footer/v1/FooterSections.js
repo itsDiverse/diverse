@@ -4,6 +4,7 @@ import { Brand } from "../../Brand"
 import { IconInstagram, IconFacebook } from "../../Icons"
 
 import {
+  StyledLink,
   StyledSection,
   StyledSectionContainer,
   StyledSectionColumns,
@@ -28,11 +29,10 @@ export const FooterSections = () => (
           We develop multi-channel sales processes to help businesses attract,
           close, and retain customers.
         </StyledSectionPhrase>
-        <Link to="/modalPopUp/" state={{ modal: true }}>
-          <StyledSectionButton to="/modalPopUp/">
-            GET A FREE PROPOSAL
-          </StyledSectionButton>
-        </Link>
+
+        <StyledLink to="/modalPopUp/" state={{ modal: true }}>
+          GET A FREE PROPOSAL
+        </StyledLink>
       </StyledSectionLeft>
       <StyledSectionRight>
         <StyledSectionColumns>

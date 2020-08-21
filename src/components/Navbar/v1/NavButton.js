@@ -20,6 +20,7 @@ const NavButton = styled.button`
     border-radius: 3px;
     outline: none;
   }
+
   ${p =>
     p.active &&
     css`

@@ -33,7 +33,7 @@ const SecondaryMenu = styled.div`
       ? css`
           right: 0 !important;
           right: 0 !important;
-          transition: all 0.3s ease;
+          transition: all 0.2s ease;
 
           min-height: 100vh;
           max-width: 280px;
@@ -110,9 +110,13 @@ const Button = styled.button`
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
   font-weight: bold;
   padding: 0 1.5rem;
+  cursor: pointer;
   margin-left: 1.2rem;
+  &:hover,
   &:focus {
     outline: none;
+    background: #195bb6;
+    color: #fff;
   }
   &:active {
     transform: scale(0.95);
@@ -163,8 +167,8 @@ const MobileNavbar = props => {
           <LogoLink>
             <LogoMobile />
           </LogoLink>
-          <Link tabIndex="-1" to="/">
-            <Button autoFocus={true}>GET A PROPOSAL</Button>
+          <Link tabIndex="-1" to="/modalPopUp">
+            <Button>GET A PROPOSAL</Button>
           </Link>
           <Wrapper>
             <NavButton

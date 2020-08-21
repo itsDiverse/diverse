@@ -32,6 +32,10 @@ const Wrapper = styled.nav`
 const ContainerLg = styled.div`
   max-width: 1240px;
   margin: 5px auto;
+  padding: 0 20px;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `
 
 const NormalNavbar = styled.div`

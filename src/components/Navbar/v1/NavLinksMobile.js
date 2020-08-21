@@ -30,7 +30,8 @@ const NavLink = styled(Link)`
   color: currentColor;
   &:hover,
   &:focus {
-    color: #195bb6;
+    background: #195bb6;
+    color:#fff !important;
     border: 0px transparent;
     outline: none;
     border-style: none;

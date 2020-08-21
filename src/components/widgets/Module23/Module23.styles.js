@@ -9,6 +9,7 @@ export const GetFreeProposalButtonWhite = styled.button`
   box-sizing: border-box;
   border-radius: 5px;
   color: #195bb6;
+  cursor: pointer;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
   font-weight: bold;
   &:hover,

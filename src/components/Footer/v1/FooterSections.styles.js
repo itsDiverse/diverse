@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import { Link } from "gatsby"
 export const StyledSection = styled.div`
   display: flex;
   flex-direction: column;
@@ -40,7 +40,30 @@ export const StyledSectionButton = styled.button`
     color: #ffffff;
     outline: none;
   }
-
+  &:active {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+`
+export const StyledLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: NovaSemi;
+  font-size: 13.5px;
+  font-weight: bold;
+  text-decoration: none;
+  width: 190px;
+  height: 43px;
+  background: #ffffff;
+  border: 3px solid #195bb6;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #195bb6;
+  &:focus {
+    background: #195bb6;
+    color: #ffffff;
+  }
   &:active {
     transform: scale(0.95);
     opacity: 0.9;
@@ -70,6 +93,7 @@ export const StyledSectionTitle = styled.p`
   font-weight: bold;
   font-size: 17px;
   line-height: 21px;
+  cursor: pointer;
   /* identical to box height */
 
   color: #707070;
@@ -82,6 +106,7 @@ export const StyledSectionSubtitle = styled.a`
   font-size: 15px;
   line-height: 18px;
   color: #707070;
+  cursor: pointer;
   text-decoration: none;
   padding-bottom: 11px;
 
