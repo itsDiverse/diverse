@@ -5,6 +5,7 @@ import styled, { css } from "styled-components"
 import rem from "../../../utils/rem"
 import { navbarHeight } from "../../../utils/sizes"
 import { mobile } from "../../../utils/media"
+
 import NavLinksMobile from "./NavLinksMobile"
 import NavSeparator from "./NavSeparator"
 import NavButton from "./NavButton"
@@ -12,8 +13,11 @@ import { LogoMobile } from "./logoMobile"
 import { IconMobileNavbarV1 } from "../../../components/Icons/IconMobileNavbar_v1"
 import { IconCloseMobileNavbarV1 } from "../../../components/Icons/IconCloseMobileNavbar_v1"
 import { Brand } from "../../Brand"
+import { ModalLink } from "../../ModalLink"
 
 const Wrapper = styled.div`
+  margin: 0;
+  padding: 0;
   background: #fff;
   display: none;
   ${mobile(css`
@@ -27,21 +31,23 @@ const Wrapper = styled.div`
 const SecondaryMenu = styled.div`
   position: fixed;
   top: 0;
+  min-height: 100vh;
+  max-width: 270px;
+  min-width: 270px;
 
   ${props =>
     props.open
       ? css`
-          right: 0 !important;
-          right: 0 !important;
-          transition: all 0.2s ease;
-
-          min-height: 100vh;
-          max-width: 280px;
-          box-shadow: 0 0 0 151vh rgba(0, 0, 0, 0.8);
+          right: 0;
+          display: block;    
         `
       : css`
-          height: 0;
+          right: -300px;
+          display: none;
         `}
+  
+  transition: all 1s ease;
+  
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -55,6 +61,7 @@ const SecondaryMenu = styled.div`
 
   color: #55555;
   font-weight: bold;
+  z-index: 10;
 `
 
 const LogoLink = styled(Link).attrs({
@@ -148,6 +155,19 @@ const SecondaryMenuItem = styled.div`
   margin-left: -1rem;
 `
 
+const Overlay = styled.div`
+  opacity: ${({open}) => (open ? 1 : 0)};
+  transition: all 2s ease;
+  background: rgb(0 0 0 / 72%);
+  position: absolute;
+  top: 0;
+  bottom:0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 100vh;
+`;
+
 const MobileNavbar = props => {
   const { isMobileNavFolded, onMobileNavToggle } = props
 
@@ -182,6 +202,7 @@ const MobileNavbar = props => {
             </NavButton>
           </Wrapper>
 
+          <Overlay open={!isMobileNavFolded} onClick={onMobileNavToggle} />
           <SecondaryMenu open={!isMobileNavFolded}>
             <PrimaryMenuItem>
               <BrandSecondaryMenuWrapper>
@@ -202,15 +223,13 @@ const MobileNavbar = props => {
             </NavLinksContainer>
             <NavSeparator />
             <SecondaryMenuItem>
-              <Link
+              <ModalLink
                 tabIndex="-1"
                 to="/modalPopUp"
-                state={{
-                  modal: false,
-                }}
+                
               >
                 <Button>GET A PROPOSAL</Button>
-              </Link>
+              </ModalLink>
             </SecondaryMenuItem>
           </SecondaryMenu>
         </Wrapper>
