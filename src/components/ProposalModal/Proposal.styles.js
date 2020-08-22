@@ -18,6 +18,11 @@ export const StyledClose = styled(Link)`
   &:hover {
     text-decoration: underline;
   }
+
+  @media (max-width: 768px) {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
 `
 
 export const StyledContentWrapper = styled.div`
@@ -34,9 +39,10 @@ export const StyledContentWrapper = styled.div`
   );
   font-family: Helvetica;
   font-style: normal;
+  
   @media (max-width: 768px) {
-    height: 100%;
-    padding: 5px;
+    height: 100vh;
+    padding: 0px;
   }
 `
 export const StyledProposalContainer = styled.div`
@@ -50,12 +56,11 @@ export const StyledProposalContainer = styled.div`
   background: linear-gradient(116.43deg, #195bb6 6.27%, #08172d 125.19%);
   box-shadow: 0px 4px 55px 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+
   @media (max-width: 768px) {
-    border-radius: 10px;
-    padding-bottom: 20px;
+    border-radius: 0px;
     height: fit-content;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: auto;
   }
 `
 export const StyledProposalContent = styled.div`
@@ -72,6 +77,7 @@ export const StyledProposalHeader = styled.div`
   width: 100%;
   height: 77px;
   padding-top: 30px;
+  flex: 1;
 `
 
 export const StyledProposalBody = styled.div`
@@ -81,6 +87,8 @@ export const StyledProposalBody = styled.div`
   align-items: center;
   margin-top: 2rem;
   width: 100%;
+  flex: 1;
+
   @media (max-width: 768px) {
     flex-direction: column;
     height: 100%;
@@ -283,6 +291,7 @@ export const StyledProposalFooter = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 20px;
+  flex: 1;
 `
 export const StyledFooterContainer = styled.div`
   display: flex;
