@@ -1,12 +1,14 @@
 import React, { PureComponent } from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled, { css } from "styled-components"
-import { Link } from "gatsby"
+import { Link } from "gatsby"; 
 
 import rem from "../../../utils/rem"
 import { navbarHeight } from "../../../utils/sizes"
 import { mobile } from "../../../utils/media"
+
 import NavLinks from "./NavLinks"
+import { ModalLink } from "../../ModalLink"
 //import { Logo } from "./logo"
 import { Brand } from "../../Brand"
 import MobileNavbar from "./MobileNavbar"
@@ -33,8 +35,10 @@ const ContainerLg = styled.div`
   max-width: 1240px;
   margin: 5px auto;
   padding: 0 20px;
+
   @media (max-width: 768px) {
     padding: 0;
+    margin: 0;
   }
 `
 
@@ -119,15 +123,12 @@ class NavBar extends PureComponent {
                 </StartWrapper>
                 <NavLinks aria-label="links" />
                 <EndWrapper>
-                  <Link
+                  <ModalLink
                     tabIndex="-1"
                     to="/modalPopUp"
-                    state={{
-                      modal: true,
-                    }}
                   >
                     <Button>GET A PROPOSAL</Button>
-                  </Link>
+                  </ModalLink>
                 </EndWrapper>
               </NormalNavbar>
 
