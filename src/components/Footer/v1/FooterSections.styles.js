@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
+import { ModalLink } from "../../ModalLink";
+
 export const StyledSection = styled.div`
   display: flex;
   flex-direction: column;
@@ -45,7 +46,7 @@ export const StyledSectionButton = styled.button`
     opacity: 0.9;
   }
 `
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(ModalLink)`
   display: flex;
   justify-content: center;
   align-items: center;
