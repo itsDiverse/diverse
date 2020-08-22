@@ -1,7 +1,8 @@
 import React from "react"
 import { StyledContentWrapper } from "./Module0.styles"
-import { Link } from "gatsby"
+
 import { GetFreeProposalButton } from "../../Button"
+import { ModalLink } from "../../ModalLink";
 
 export default props => (
   <StyledContentWrapper theme={props.theme}>
@@ -31,11 +32,11 @@ export default props => (
               <p className="subtitle-section">{props.data.text}</p>
               <div className="powerful-tools-btn">
                 {props.data.singleButton && (
-                  <Link to="/modalPopUp/" state={{ modal: true }}>
+                  <ModalLink to="/modalPopUp/">
                     <GetFreeProposalButton to="/modalPopUp/">
                       {props.data.singleButton}
                     </GetFreeProposalButton>
-                  </Link>
+                  </ModalLink>
                 )}
               </div>
               <div className="brands-wrapper">
