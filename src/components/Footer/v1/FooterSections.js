@@ -29,9 +29,8 @@ export const FooterSections = () => (
           We develop multi-channel sales processes to help businesses attract,
           close, and retain customers.
         </StyledSectionPhrase>
-
         <StyledLink to="/modalPopUp/" state={{ modal: true }}>
-          GET A FREE PROPOSAL
+          <StyledSectionButton>GET A FREE PROPOSAL</StyledSectionButton>
         </StyledLink>
       </StyledSectionLeft>
       <StyledSectionRight>

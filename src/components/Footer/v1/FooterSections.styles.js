@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { ModalLink } from "../../ModalLink";
+import { ModalLink } from "../../ModalLink"
 
 export const StyledSection = styled.div`
   display: flex;
@@ -47,6 +47,8 @@ export const StyledSectionButton = styled.button`
   }
 `
 export const StyledLink = styled(ModalLink)`
+  width: 190px;
+  height: 43px;
   display: flex;
   justify-content: center;
   align-items: center;

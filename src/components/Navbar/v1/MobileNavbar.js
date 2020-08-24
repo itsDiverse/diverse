@@ -39,15 +39,14 @@ const SecondaryMenu = styled.div`
     props.open
       ? css`
           right: 0;
-          display: block;    
+          display: block;
         `
       : css`
           right: -300px;
           display: none;
         `}
-  
+
   transition: all 1s ease;
-  
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -156,17 +155,17 @@ const SecondaryMenuItem = styled.div`
 `
 
 const Overlay = styled.div`
-  opacity: ${({open}) => (open ? 1 : 0)};
+  opacity: ${({ open }) => (open ? 1 : 0)};
   transition: all 2s ease;
   background: rgb(0 0 0 / 72%);
   position: absolute;
   top: 0;
-  bottom:0;
+  bottom: 0;
   right: 0;
   left: 0;
   z-index: 1;
   height: 100vh;
-`;
+`
 
 const MobileNavbar = props => {
   const { isMobileNavFolded, onMobileNavToggle } = props
@@ -202,7 +201,6 @@ const MobileNavbar = props => {
             </NavButton>
           </Wrapper>
 
-          <Overlay open={!isMobileNavFolded} onClick={onMobileNavToggle} />
           <SecondaryMenu open={!isMobileNavFolded}>
             <PrimaryMenuItem>
               <BrandSecondaryMenuWrapper>
@@ -223,15 +221,12 @@ const MobileNavbar = props => {
             </NavLinksContainer>
             <NavSeparator />
             <SecondaryMenuItem>
-              <ModalLink
-                tabIndex="-1"
-                to="/modalPopUp"
-                
-              >
+              <ModalLink tabIndex="-1" to="/modalPopUp">
                 <Button>GET A PROPOSAL</Button>
               </ModalLink>
             </SecondaryMenuItem>
           </SecondaryMenu>
+          <Overlay open={!isMobileNavFolded} onClick={onMobileNavToggle} />
         </Wrapper>
       )}
     />
