@@ -14,16 +14,17 @@ const FormSchema = Yup.object().shape({
   spend: Yup.string().required("*Required"),
 })
 const optionsSell = [
-  { value: "option1", label: "Option1" },
-  { value: "option2", label: "Option2" },
-  { value: "option3", label: "Option3" },
-  { value: "option4", label: "Option4" },
+  { value: "leads", label: "Leads" },
+  { value: "dales", label: "Sales" },
+  { value: "both", label: "Both, I sell service and a product" },
+  { value: "notSure", label: "Not sure" },
 ]
 const optionsSpend = [
-  { value: "option1", label: "Option1" },
-  { value: "option2", label: "Option2" },
-  { value: "option3", label: "Option3" },
-  { value: "option4", label: "Option4" },
+  { value: "0-1000", label: "$0 - $1,000" },
+  { value: "1001-5000", label: "$1,001 - $5,000" },
+  { value: "5001-25000", label: "$5,001 - $25,000" },
+  { value: "25000-100000", label: "$25,001 - $100,000" },
+  { value: "more", label: "$100,001+" },
 ]
 
 export const Form2 = ({ setStep, formData, setFormData }) => (
@@ -64,7 +65,7 @@ export const Form2 = ({ setStep, formData, setFormData }) => (
           <ErrorMessage name="sell" />
         </ErrorValidation>
         <StyledProposalLabel>
-          What's your current monthly ad spend?
+          What's your monthly PPC ad spend?
           <SelectOwn
             value={values.spend}
             type="string"

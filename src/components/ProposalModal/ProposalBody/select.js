@@ -8,18 +8,21 @@ const customStyles = {
     paddingTop: 0,
     paddingBottom: 0,
     borderRadius: "3px",
+    cursor: "pointer",
   }),
   control: (styles, state) => ({
     ...styles,
     padding: 10,
     marginTop: "5%",
     marginBottom: "5%",
+    cursor: "pointer",
   }),
   option: (styles, state) => ({
     ...styles,
     padding: 20,
     height: "100% !important",
     fontWeight: 100,
+    cursor: "pointer",
     color: state.isFocused || state.isSelected ? "#FFF" : styles.color,
     backgroundColor:
       state.isFocused || state.isSelected ? "#236CD1" : styles.color,

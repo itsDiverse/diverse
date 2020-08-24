@@ -14,16 +14,17 @@ const FormSchema = Yup.object().shape({
   advertise: Yup.string().required("*Required"),
 })
 const optionsGoals = [
-  { value: "option1", label: "Option1" },
-  { value: "option2", label: "Option2" },
-  { value: "option3", label: "Option3" },
-  { value: "option4", label: "Option4" },
+  { value: "conversation", label: "Get more conversions" },
+  { value: "leads", label: "Get more phone leads" },
+  { value: "lowCostConversion", label: "Lower cost per conversion" },
+  { value: "all", label: "All of the above" },
+  { value: "other", label: "Other..." },
 ]
 const optionsAdvertise = [
-  { value: "option1", label: "Option1" },
-  { value: "option2", label: "Option2" },
-  { value: "option3", label: "Option3" },
-  { value: "option4", label: "Option4" },
+  { value: "nationally", label: "Nationally" },
+  { value: "locally", label: "Locally" },
+  { value: "internationally", label: "Internationally" },
+  { value: "other", label: "Other..." },
 ]
 
 export const Form1 = ({ setStep, formData, setFormData }) => (
@@ -49,7 +50,7 @@ export const Form1 = ({ setStep, formData, setFormData }) => (
     }) => (
       <StyledProposalForm>
         <StyledProposalLabel>
-          Do you want leads or goals?
+          What are your goals?
           <SelectOwn
             value={values.goals}
             type="string"
@@ -63,7 +64,7 @@ export const Form1 = ({ setStep, formData, setFormData }) => (
           <ErrorMessage name="goals" />
         </ErrorValidation>
         <StyledProposalLabel>
-          What's your current monthly ad advertise?
+          Where do you advertise?
           <SelectOwn
             value={values.advertise}
             type="string"
