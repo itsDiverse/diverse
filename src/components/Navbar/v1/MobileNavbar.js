@@ -156,6 +156,7 @@ const SecondaryMenuItem = styled.div`
 
 const Overlay = styled.div`
   opacity: ${({ open }) => (open ? 1 : 0)};
+  display: ${({ open }) => (open ? "block" : "none")};
   transition: all 2s ease;
   background: rgb(0 0 0 / 72%);
   position: absolute;
