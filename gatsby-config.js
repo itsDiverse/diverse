@@ -45,14 +45,19 @@ module.exports = {
       options: {
         modalProps: {
           style: {
-            overlay: { zIndex: 1001, backgroundColor: "#ccc" },
+            overlay: {
+              zIndex: 1001,
+              backgroundColor: "rgba(204, 204, 204, 0.40)",
+            },
             content: {
-              padding: "0 0 0 0",
-              margin: "0",
-              bottom: "0px",
-              top: "0px",
-              left: "0px",
-              right: "0px",
+              margin: 0,
+              padding: 0,
+              left: "50%",
+              top: "50%",
+              bottom: "auto",
+              right: "auto",
+              transform: "translateX(-50%) translateY(-50%)",
+              borderRadius: "25px",
             },
           },
           shouldCloseOnOverlayClick: true,

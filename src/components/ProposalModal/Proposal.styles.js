@@ -3,6 +3,7 @@ import { Field } from "formik"
 import { Link } from "gatsby"
 
 export const StyledClose = styled(Link)`
+  display: none;
   text-decoration: none;
   font-size: 12px;
   padding-top: 0.5rem;
@@ -20,6 +21,7 @@ export const StyledClose = styled(Link)`
   }
 
   @media (max-width: 768px) {
+    display: block;
     margin-top: 0px;
     margin-bottom: 20px;
   }
@@ -27,7 +29,7 @@ export const StyledClose = styled(Link)`
 
 export const StyledContentWrapper = styled.div`
   margin: 0;
-  padding: 90px;
+  padding: 0px;
   display: flex;
   justify-content: center;
   background-color: #e5e5e5;
@@ -39,7 +41,7 @@ export const StyledContentWrapper = styled.div`
   );
   font-family: Helvetica;
   font-style: normal;
-  
+
   @media (max-width: 768px) {
     height: 100vh;
     padding: 0px;
@@ -60,7 +62,9 @@ export const StyledProposalContainer = styled.div`
   @media (max-width: 768px) {
     border-radius: 0px;
     height: fit-content;
-    margin: auto;
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
   }
 `
 export const StyledProposalContent = styled.div`
@@ -279,6 +283,7 @@ export const StyledProposalTextContainer = styled.div`
 `
 
 export const StyledProposalText = styled.p`
+  max-width: 100%;
   font-weight: 100;
   font-size: 18px;
   line-height: 22px;
@@ -291,6 +296,7 @@ export const StyledProposalFooter = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 20px;
   flex: 1;
 `
 export const StyledFooterContainer = styled.div`
