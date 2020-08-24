@@ -50,7 +50,7 @@ export const Form2 = ({ setStep, formData, setFormData }) => (
     }) => (
       <StyledProposalForm>
         <StyledProposalLabel>
-          Do you want leads or sell?
+          Do you want leads or sales?
           <SelectOwn
             value={values.sell}
             type="string"
