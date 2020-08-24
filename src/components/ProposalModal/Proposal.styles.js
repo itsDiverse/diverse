@@ -81,7 +81,10 @@ export const StyledProposalHeader = styled.div`
   width: 100%;
   height: 77px;
   padding-top: 30px;
-  flex: 1;
+
+  @media (max-width: 768px) {
+    flex: 1;
+  }
 `
 
 export const StyledProposalBody = styled.div`
@@ -91,11 +94,11 @@ export const StyledProposalBody = styled.div`
   align-items: center;
   margin-top: 2rem;
   width: 100%;
-  flex: 1;
 
   @media (max-width: 768px) {
     flex-direction: column;
     height: 100%;
+    flex: 1;
   }
 `
 
@@ -297,7 +300,9 @@ export const StyledProposalFooter = styled.div`
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-  flex: 1;
+  @media (max-width: 768px) {
+    flex: 1;
+  }
 `
 export const StyledFooterContainer = styled.div`
   display: flex;

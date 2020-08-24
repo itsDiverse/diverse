@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled, { css } from "styled-components"
-import { Link } from "gatsby"; 
+import { Link } from "gatsby"
 
 import rem from "../../../utils/rem"
 import { navbarHeight } from "../../../utils/sizes"
@@ -73,6 +73,7 @@ const Button = styled.button`
   border-radius: 5px;
   color: #195bb6;
   font-weight: bold;
+  font-size: 13px;
   &:hover,
   &:focus {
     opacity: 0.9;
@@ -123,10 +124,7 @@ class NavBar extends PureComponent {
                 </StartWrapper>
                 <NavLinks aria-label="links" />
                 <EndWrapper>
-                  <ModalLink
-                    tabIndex="-1"
-                    to="/modalPopUp"
-                  >
+                  <ModalLink tabIndex="-1" to="/modalPopUp">
                     <Button>GET A PROPOSAL</Button>
                   </ModalLink>
                 </EndWrapper>

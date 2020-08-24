@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   overflow: hidden;
 `
 const MediaFooter = () => {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" })
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 970px)" })
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-device-width: 900px)",
   })

@@ -65,6 +65,7 @@ export const StyledContentWrapper = styled.div`
     .video-container {
       display: flex;
       width: fit-content;
+      z-index: 0;
     }
     .video-container video {
       height: 100%;
@@ -103,7 +104,7 @@ export const StyledContentWrapper = styled.div`
         margin: 40px 0px;
         padding-left: 2rem;
         text-align: left;
-        z-index: 0;
+        z-index: 1;
       }
       .title-section h1 {
         font-size: 67px;

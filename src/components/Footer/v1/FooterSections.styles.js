@@ -27,7 +27,7 @@ export const StyledSectionPhrase = styled.p`
 export const StyledSectionButton = styled.button`
   width: 190px;
   height: 43px;
-
+  font-size: 13px;
   background: #ffffff;
   border: 3px solid #195bb6;
   box-sizing: border-box;
@@ -47,13 +47,10 @@ export const StyledSectionButton = styled.button`
   }
 `
 export const StyledLink = styled(ModalLink)`
-  width: 190px;
-  height: 43px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: NovaSemi;
-  font-size: 13.5px;
   font-weight: bold;
   text-decoration: none;
   width: 190px;
