@@ -37,17 +37,6 @@ const NavLink = styled(Link)`
     border-style: none;
   
 `
-const NavSeparator = styled.span`
-  flex: 0 0 auto;
-  width: 100%;
-  height: 0.03rem;
-  margin: 0;
-  border-radius: 50%;
-  background: currentColor;
-  box-shadow: 0 2px 4px 1px #eee;
-  opacity: 0.35;
-  color: #555555;
-`
 
 const NavLinksMobile = () => (
   <Wrapper>
