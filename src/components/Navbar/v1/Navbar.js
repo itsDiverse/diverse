@@ -33,8 +33,9 @@ const Wrapper = styled.nav`
 `
 const ContainerLg = styled.div`
   max-width: 1240px;
-  margin: 5px auto;
+  margin: 0px auto;
   padding: 0 20px;
+  padding-top: 30px;
 
   @media (max-width: 768px) {
     padding: 0;

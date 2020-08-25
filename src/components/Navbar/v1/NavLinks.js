@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 import NavSeparator from "./NavSeparator"
 
 const Wrapper = styled.nav`
-  margin-top: 17px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Brand } from "../../Brand"
+import { BrandNav } from "../../Brand"
 import { IconInstagram, IconFacebook } from "../../Icons"
 
 import {
@@ -23,7 +23,7 @@ export const FooterSections = () => (
     <StyledSectionContainer>
       <StyledSectionLeft>
         <Link to="/">
-          <Brand size={50}></Brand>
+          <BrandNav />
         </Link>
         <StyledSectionPhrase>
           We develop multi-channel sales processes to help businesses attract,
@@ -54,7 +54,7 @@ export const FooterSections = () => (
           <StyledSectionSubtitle to="/">Contact Us</StyledSectionSubtitle>
           <StyledSectionSocialMedia>
             <a
-              href="https://facebook.com/gatsbyjs"
+              href="https://www.facebook.com/meetDiverse"
               target="_blank"
               rel="noreferrer"
               aria-label="Find us on facebook"
@@ -62,7 +62,7 @@ export const FooterSections = () => (
               <IconFacebook size={20} />
             </a>{" "}
             <a
-              href="https://instagram.com/gatsbyjs"
+              href="https://www.instagram.com/meetdiverse/"
               target="_blank"
               rel="noreferrer"
               aria-label="Find us on instagram"

@@ -12,8 +12,8 @@ import NavButton from "./NavButton"
 import { LogoMobile } from "./logoMobile"
 import { IconMobileNavbarV1 } from "../../../components/Icons/IconMobileNavbar_v1"
 import { IconCloseMobileNavbarV1 } from "../../../components/Icons/IconCloseMobileNavbar_v1"
-import { Brand } from "../../Brand"
 import { ModalLink } from "../../ModalLink"
+import { IconApp } from "../../Icons"
 
 const Wrapper = styled.div`
   margin: 0;
@@ -203,7 +203,7 @@ const MobileNavbar = props => {
           <SecondaryMenu open={!isMobileNavFolded}>
             <PrimaryMenuItem>
               <BrandSecondaryMenuWrapper>
-                <Brand size="30" />
+                <IconApp size="30" />
               </BrandSecondaryMenuWrapper>
               <IconWrapperClose
                 onClick={onMobileNavToggle}

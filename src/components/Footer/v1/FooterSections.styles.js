@@ -13,15 +13,17 @@ export const StyledSectionContainer = styled.div`
   align-items: space-between;
   flex: 1;
   padding: 20px 0px;
+  margin-bottom: 20px;
 `
 export const StyledSectionPhrase = styled.p`
+  font-family: NovaLight;
   max-width: 400px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 17px;
   line-height: 21px;
   color: #707070;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `
 
 export const StyledSectionButton = styled.button`
@@ -81,6 +83,7 @@ export const StyledSectionLeft = styled.div`
   flex-direction: column;
   flex: 1;
   align-content: flex-start;
+  padding-left: 15px;
 `
 export const StyledSectionRight = styled.div`
   display: flex;
@@ -90,8 +93,7 @@ export const StyledSectionRight = styled.div`
 `
 
 export const StyledSectionTitle = styled.p`
-  font-style: normal;
-  font-weight: bold;
+  font-family: NovaSemi;
   font-size: 17px;
   line-height: 21px;
   cursor: pointer;

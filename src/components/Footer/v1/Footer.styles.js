@@ -5,6 +5,7 @@ export const StyledFooterWrapper = styled.footer`
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding-bottom: 800px;
 `
 
 export const StyledFooter = styled.div`
