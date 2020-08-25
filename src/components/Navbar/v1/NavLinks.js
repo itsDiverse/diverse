@@ -5,12 +5,13 @@ import { Link } from "gatsby"
 import NavSeparator from "./NavSeparator"
 
 const Wrapper = styled.nav`
+  margin-top: 17px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: NovaReg;
-  font-weight: 600;
-  font-size: 15.5px;
+  font-family: NovaSemi;
+  font-weight: 400;
+  font-size: 14.5px;
   line-height: 18px;
 `
 
@@ -21,11 +22,11 @@ const NavLink = styled(Link)`
   transition: opacity 0.2s, transform 0.2s;
   cursor: pointer;
   letter-spacing: 0.025rem;
-  color: currentColor;
+  color: #757575;
   &:hover,
   &:focus {
     opacity: 0.8;
-    color: #616161;
+    color: #969696;
   }
   &:active {
     transform: scale(0.95);

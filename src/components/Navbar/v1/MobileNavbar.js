@@ -57,7 +57,6 @@ const SecondaryMenu = styled.div`
   overflow-x: hidden;
   overflow-y: scroll;
   background: rgba(247, 247, 247, 1);
-
   color: #55555;
   font-weight: bold;
   z-index: 10;
@@ -113,7 +112,6 @@ const Button = styled.button`
   border-radius: 5px;
   color: #195bb6;
   font-size: 13px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
   font-weight: bold;
   padding: 0 1.5rem;
   cursor: pointer;

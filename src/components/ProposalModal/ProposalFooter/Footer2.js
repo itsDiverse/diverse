@@ -2,22 +2,23 @@ import React from "react"
 import {
   StyledFooterContainer,
   StyledFooterContent,
-  StyledFooterTitle,
+  StyledFooterTitleStepTwo,
   StyledFooterCardSection,
   StyledFooterCardSectionImg,
   StyledFooterCardSectionText,
+  StyledNameStrong,
 } from "../Proposal.styles"
 
 export const Footer2 = () => (
   <div>
     <StyledFooterContainer>
-      <StyledFooterTitle>
+      <StyledFooterTitleStepTwo>
         "Diverse is absolutely excellent, and true professionals at their craft.
         <br />
         They are a valued team member to CTC and what we are doing.
         <br />
         Thank you Diverse for always going the extra mile."
-      </StyledFooterTitle>
+      </StyledFooterTitleStepTwo>
       <StyledFooterContent>
         <StyledFooterCardSection>
           <StyledFooterCardSectionImg>
@@ -51,7 +52,7 @@ export const Footer2 = () => (
             </svg>
           </StyledFooterCardSectionImg>
           <StyledFooterCardSectionText>
-            <b>Brandom Livingston</b>
+            <StyledNameStrong>Brandom Livingston</StyledNameStrong>
             <br />
             President - Coast to Coast Title & Escrow
           </StyledFooterCardSectionText>

@@ -25,7 +25,7 @@ export const StyledSectionPhrase = styled.p`
 `
 
 export const StyledSectionButton = styled.button`
-  width: 190px;
+  width: 200px;
   height: 43px;
   font-size: 13px;
   background: #ffffff;

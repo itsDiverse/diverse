@@ -11,8 +11,8 @@ export const Form4 = ({ onSubmit }) => (
     <StyledProposalTextContainer>
       <StyledProposalText>Thanks for your proposal request.</StyledProposalText>
       <StyledProposalText>
-        We will review your information and send your proposal to the provided
-        email address.{" "}
+        We will review your information and send <br />
+        your proposal to the provided email address.{" "}
       </StyledProposalText>
     </StyledProposalTextContainer>
     <Link to="/" tabIndex="-1">

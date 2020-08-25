@@ -26,7 +26,7 @@ export const SquaredButton = styled.button`
 `
 
 export const GetFreeProposalButton = styled.button`
-  width: 210px;
+  width: 250px;
   height: 43px;
   font-size: 13.5px;
   background: #195bb6;

@@ -28,8 +28,9 @@ export const StyledContentWrapper = styled.div`
       order: -1;
     }
     .heading-section {
-      font-family: NovaSemi;
-      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
       color: ${props.theme.colors.text};
     }
     .tools-wrapper {
@@ -45,9 +46,11 @@ export const StyledContentWrapper = styled.div`
       font-weight: 400;
     }
     .subtitle-section {
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 32px;
+      font-family: NovaReg;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
       color: ${props.theme.colors.text};
     }
 

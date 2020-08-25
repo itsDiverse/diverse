@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components"
 
 export const GetFreeProposalButtonWhite = styled.button`
-  width: 210px;
+  width: 216px;
   height: 43px;
   font-size: 13.5px;
   background: #fff;
@@ -10,7 +10,6 @@ export const GetFreeProposalButtonWhite = styled.button`
   border-radius: 5px;
   color: #195bb6;
   cursor: pointer;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.14);
   font-weight: bold;
   &:hover,
   &:focus {

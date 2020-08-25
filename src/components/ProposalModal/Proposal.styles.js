@@ -39,8 +39,6 @@ export const StyledContentWrapper = styled.div`
     #e5e5e5 50%,
     #ffffff 100%
   );
-  font-family: Helvetica;
-  font-style: normal;
 
   @media (max-width: 768px) {
     height: 100vh;
@@ -113,8 +111,11 @@ export const StyledProposalForm = styled.div`
 export const StyledProposalLabel = styled.label`
   color: #ffffff;
   text-align: center;
-  font-weight: 500;
-  font-size: 14px;
+  font-family: NovaReg !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
   padding-bottom: 2px;
 `
 
@@ -280,6 +281,11 @@ export const StyledProposalButton = styled.button`
 
 export const StyledProposalTextContainer = styled.div`
   padding-bottom: 40px;
+  font-style: normal;
+  font-family: NovaSemi;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -333,7 +339,26 @@ export const StyledFooterSection = styled.div`
 export const StyledFooterTitle = styled.p`
   color: white;
   text-align: center;
-  font-weight: 100;
+  font-style: normal !important;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+`
+
+export const StyledFooterTitleStepTwo = styled.p`
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 17.5px;
+  line-height: 21px;
+`
+
+export const StyledNameStrong = styled.p`
+  margin-top: 5px;
+  margin-bottom: -15px;
+  font-family: NovaSemi;
+  font-size: 18px;
+  line-height: 22px;
 `
 
 export const StyledFooterText = styled.p`
@@ -345,6 +370,9 @@ export const StyledFooterText = styled.p`
 export const StyledSectionDescription = styled.p`
   padding: 2px;
   color: white;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
 `
 export const StyledFooterCardSection = styled.div`
   display: flex;
@@ -357,6 +385,7 @@ export const StyledFooterCardSectionText = styled.p`
   color: white;
   font-weight: 100;
   align-self: center;
+  margin-left: 10px;
 `
 
 export const StyledCallNowContainer = styled.div`

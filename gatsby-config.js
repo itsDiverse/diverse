@@ -47,7 +47,7 @@ module.exports = {
           style: {
             overlay: {
               zIndex: 1001,
-              backgroundColor: "rgba(204, 204, 204, 0.40)",
+              backdropFilter: "blur(8px)",
             },
             content: {
               margin: 0,
@@ -56,7 +56,7 @@ module.exports = {
               top: "50%",
               bottom: "auto",
               right: "auto",
-              transform: "translateX(-50%) translateY(-50%)",
+              transform: "translateX(-50%) translateY(-52%)",
               borderRadius: "25px",
             },
           },
