@@ -84,14 +84,16 @@ export const StyledContentWrapper = styled.div`
       }
       .tools-section {
         min-height: 100vh;
-        flex: 1;
-        justify-content: space-around;
+        // flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .title-section {
-        margin-top: 0px;
+        margin-top: 10px;
         z-index: 1;
-        flex: 1;
-        justify-content: flex-start;
+        // flex: 1;
+        justify-content: center;
       }
       .brands-wrapper {
         padding-top: 20px;
@@ -105,12 +107,26 @@ export const StyledContentWrapper = styled.div`
       .video-container {
         display: flex;
         width: fit-content;
+        // flex: 1;
       }
       .video-container video {
-        transform: scale(1.4) translateX(-30px) translateY(-1px);
-        -webkit-mask-image: -webkit-radial-gradient(white, black);
-        -webkit-backface-visibility: hidden;
-        -moz-backface-visibility: hidden;
+        transform: scale(1.5) translateX(-35px) translateY(-30px);
+      }
+    }
+    @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+      .video-container video {
+        transform: scale(1.6) translateX(-60px) translateY(-30px);
+      }
+    }
+    @media (max-width: 320px) {
+      .video-container video {
+        transform: scale(1.4) translateX(-30px) translateY(-50px);
+      }
+      .title-section {
+        margin-top: -70px;
+      }
+      .title-section h1 {
+        font-size: 40px;
       }
     }
     @media (min-width: 1000px) {
