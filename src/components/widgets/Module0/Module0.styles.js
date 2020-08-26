@@ -107,7 +107,7 @@ export const StyledContentWrapper = styled.div`
         width: fit-content;
       }
       .video-container video {
-        transform: scale(1.2) translateX(-25px) translateY(-5px);
+        transform: scale(1.4) translateX(-30px) translateY(-1px);
         -webkit-mask-image: -webkit-radial-gradient(white, black);
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
