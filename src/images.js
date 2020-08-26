@@ -222,7 +222,7 @@ export const images = {
   //-------------------------------------Module0
   module0: {
     pipesImage,
-    pipesImageAlt: "",
+    pipesImageAlt: "pipes",
     brands,
     brandsAlt: "brands logos",
   },
