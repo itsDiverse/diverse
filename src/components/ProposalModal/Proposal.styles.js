@@ -41,8 +41,8 @@ export const StyledContentWrapper = styled.div`
   );
 
   @media (max-width: 768px) {
-    height: 100vh;
     padding: 0px;
+    min-height: 100vh;
   }
 `
 export const StyledProposalContainer = styled.div`
@@ -58,11 +58,10 @@ export const StyledProposalContainer = styled.div`
   border-radius: 20px;
 
   @media (max-width: 768px) {
-    border-radius: 0px;
+    border-radius: 10px;
     height: fit-content;
-    min-height: 100vh;
     padding: 0px;
-    margin: 0px;
+    margin: 5px;
   }
 `
 export const StyledProposalContent = styled.div`
@@ -111,11 +110,11 @@ export const StyledProposalForm = styled.div`
 export const StyledProposalLabel = styled.label`
   color: #ffffff;
   text-align: center;
-  font-family: NovaReg !important;
-  font-style: normal !important;
-  font-weight: 600 !important;
-  font-size: 14px !important;
-  line-height: 17px !important;
+  font-family: NovaSemi;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   padding-bottom: 2px;
 `
 

@@ -69,6 +69,9 @@ export const StyledContentWrapper = styled.div`
       display: flex;
       width: fit-content;
       transform: scale(1) translateX(85px) translateY(-100px);
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
     }
     .video-container video {
       height: 100%;
@@ -162,6 +165,9 @@ export const StyledContentWrapper = styled.div`
       }
       .video-container {
         transform: scale(1) translateX(65px) translateY(-100px);
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
       }
     }
   `}

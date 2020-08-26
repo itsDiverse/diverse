@@ -114,7 +114,14 @@ export const Footer3 = () => (
       />
     </svg>
 
-    <div style={{ fontWeight: "bold", fontSize: "18px", color: "#1D4D87" }}>
+    <div
+      style={{
+        fontFamily: "NovaSemi",
+        fontWeight: 400,
+        fontSize: "18px",
+        color: "#1D4D87",
+      }}
+    >
       Prefer to call?
     </div>
     <svg
@@ -145,7 +152,14 @@ export const Footer3 = () => (
         stroke="#EDEDED"
       />
     </svg>
-    <div style={{ fontWeight: "600", fontSize: "14px", color: "#1D4D87" }}>
+    <div
+      style={{
+        fontFamily: "NovaSemi",
+        fontWeight: 400,
+        fontSize: "14px",
+        color: "#1D4D87",
+      }}
+    >
       Call Now
     </div>
     <div
@@ -158,7 +172,12 @@ export const Footer3 = () => (
     >
       <a
         href="tel:8333483773"
-        style={{ textDecoration: "none", color: "rgb(12, 103, 228)" }}
+        style={{
+          fontFamily: "NovaSemi",
+          fontWeight: 400,
+          textDecoration: "none",
+          color: "rgb(12, 103, 228)",
+        }}
       >
         (833) 348-3773
       </a>{" "}

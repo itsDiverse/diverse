@@ -12,14 +12,17 @@ export const StyledContentWrapper = styled.div`
       margin: 0 auto;
       margin-top: 80px;
     }
-    .tools-section {
-      height: 100vh;
+    .toolssection {
+      height: 100%;
       display: flex;
-      justify-content: flex-end;
+      flex-direction: column;
+    }
+    .tools-section {
+      display: flex;
+      justify-content: space-around;
       flex-direction: column-reverse;
       margin-left: auto;
       margin-right: auto;
-      border: 1px solid red;
     }
     .title-section {
       display: flex;
@@ -58,45 +61,45 @@ export const StyledContentWrapper = styled.div`
     }
     .brands-wrapper {
       display: flex;
+      padding-top: 20px;
       justify-content: center;
       width: 100%;
-      margin-top: 20px;
-      margin-left: 30px;
     }
     .video-container {
       display: flex;
-      width: fit-content;
+      width: 100%;
       z-index: 0;
-      border: 2px solid orange;
     }
     .video-container video {
       height: 100%;
       width: 100%;
-      // transform: scale(1) translateX(-35px);
+      transform: scale(1.2) translateY(-35px) translateX(-70px);
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 768px) and (orientation: portrait) {
       .container-lg {
         margin-top: 0px;
       }
       .tools-section {
+        min-height: 100vh;
         flex: 1;
         justify-content: space-around;
       }
       .title-section {
         margin-top: 0px;
         z-index: 1;
-        border: 2px solid yellow;
         flex: 1;
         justify-content: flex-start;
       }
       .brands-wrapper {
-        margin-left: 0px;
-        margin-top: 0px;
+        padding-top: 20px;
         width: 100%;
+        margin: 0px;
       }
       .brands-wrapper img {
-        margin-left: 5px;
-        margin-right: 5px;
+        margin: 5px;
         max-width: 100%;
       }
       .video-container {
@@ -104,15 +107,17 @@ export const StyledContentWrapper = styled.div`
         width: fit-content;
       }
       .video-container video {
-        // transform: scale(0) translateY(10px) translateX(-30px);
+        transform: scale(1.2) translateX(-25px) translateY(-5px);
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
       }
     }
     @media (min-width: 1000px) {
       .tools-section {
-        height: 100%;
+        height: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        border: 1px solid red;
       }
       .title-section {
         margin: 40px 0px;
@@ -127,18 +132,20 @@ export const StyledContentWrapper = styled.div`
         width: 500px;
       }
       .brands-wrapper {
+        padding-top: 0;
         margin-top: -30px;
+        margin-left: 30px;
         justify-content: flex-start;
       }
       .brands-wrapper img {
         width: fit-content;
-        border: 1px solid green;
+        z-index: 1;
       }
       .brands-wrapper svg {
         margin-left: -39px;
       }
       .video-container video {
-        //transform: scale(1) translateX(-55px);
+        transform: scale(1.5) translateX(-55px) translateY(50px);
         z-index: 0;
       }
     }

@@ -16,12 +16,16 @@ const customStyles = {
     marginTop: "5%",
     marginBottom: "5%",
     cursor: "pointer",
+    fontFamily: "NovaSemi",
+    fontWeight: 400,
+    fontStyle: "normal",
+    fontSize: "14.5px",
+    color: "red !important",
   }),
   option: (styles, state) => ({
     ...styles,
     padding: 20,
     height: "100% !important",
-    fontWeight: 100,
     cursor: "pointer",
     color: state.isFocused || state.isSelected ? "#FFF" : styles.color,
     backgroundColor:
@@ -31,9 +35,15 @@ const customStyles = {
       color: "#FFF",
       backgroundColor: "#0c67e4",
     },
+    fontFamily: "NovaReg",
+    fontWeight: 400,
   }),
   placeholder: (styles, state) => ({
     color: "#555555",
+    fontFamily: "NovaSemi",
+    fontWeight: 400,
+    fontStyle: "normal",
+    fontSize: "14.5px",
   }),
 }
 
