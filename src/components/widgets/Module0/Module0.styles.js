@@ -76,14 +76,18 @@ export const StyledContentWrapper = styled.div`
       transform: scale(1) translateX(-35px);
     }
     @media (max-width: 768px) {
+      .container-lg {
+        margin-top: 30px;
+      }
       .tools-section {
         min-height: 100vh;
       }
       .title-section {
-        margin-top: 30px;
+        margin-top: 0px;
+        z-index: 1;
       }
       .brands-wrapper {
-        margin-top: 50px;
+        margin-top: 60px;
       }
       .brands-wrapper img {
         width: 85%;
@@ -95,7 +99,7 @@ export const StyledContentWrapper = styled.div`
         margin-bottom: 60px;
       }
       .video-container video {
-        transform: scale(1.5) translateY(1px) translateX(-30px);
+        transform: scale(1.5) translateY(10px) translateX(-30px);
       }
     }
     @media (min-width: 1000px) {
