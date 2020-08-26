@@ -161,7 +161,7 @@ export const StyledContentWrapper = styled.div`
         margin-left: -39px;
       }
       .video-container video {
-        transform: scale(1.6) translateX(-55px) translateY(50px);
+        transform: scale(1.8) translateX(-55px) translateY(30px);
         z-index: 0;
       }
     }
