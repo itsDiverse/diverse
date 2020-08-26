@@ -78,6 +78,15 @@ export const StyledContentWrapper = styled.div`
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
     }
+    .image-container {
+      display: flex;
+      width: 100%;
+      z-index: 0;
+    }
+    .image-container img {
+      width: 100%;
+      transform: scale(1.2) translateX(-70px) translateY(-30px);
+    }
     @media (max-width: 768px) and (orientation: portrait) {
       .container-lg {
         margin-top: 0px;
@@ -112,6 +121,10 @@ export const StyledContentWrapper = styled.div`
       .video-container video {
         transform: scale(1.5) translateX(-35px) translateY(-30px);
       }
+      .image-container img {
+        width: 100%;
+        transform: scale(1.2) translateX(-50px) translateY(-30px);
+      }
     }
     @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
       .video-container video {
@@ -127,6 +140,10 @@ export const StyledContentWrapper = styled.div`
       }
       .title-section h1 {
         font-size: 40px;
+      }
+      .image-container img {
+        width: 100%;
+        transform: scale(1.2) translateX(-30px) translateY(-80px);
       }
     }
     @media (min-width: 1000px) {
