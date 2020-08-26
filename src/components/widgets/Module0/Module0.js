@@ -2,7 +2,7 @@ import React from "react"
 import { StyledContentWrapper } from "./Module0.styles"
 
 import { GetFreeProposalButton } from "../../Button"
-import { ModalLink } from "../../ModalLink";
+import { ModalLink } from "../../ModalLink"
 
 export default props => (
   <StyledContentWrapper theme={props.theme}>
@@ -39,10 +39,10 @@ export default props => (
                   </ModalLink>
                 )}
               </div>
-              <div className="brands-wrapper">
-                <img src={props.images.brands} alt={props.images.brandsAlt} />
-              </div>
             </div>
+          </div>
+          <div className="brands-wrapper">
+            <img src={props.images.brands} alt={props.images.brandsAlt} />
           </div>
         </div>
       </div>
