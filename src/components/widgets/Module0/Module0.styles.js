@@ -123,12 +123,16 @@ export const StyledContentWrapper = styled.div`
       }
       .image-container img {
         width: 100%;
-        transform: scale(1.2) translateX(-50px) translateY(-30px);
+        transform: scale(1.5) translateX(-30px) translateY(-30px);
       }
     }
     @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
       .video-container video {
         transform: scale(1.6) translateX(-60px) translateY(-30px);
+      }
+      .image-container img {
+        width: 100%;
+        transform: scale(1.5) translateX(-60px) translateY(-40px);
       }
     }
     @media (max-width: 320px) {
