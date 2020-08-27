@@ -105,8 +105,8 @@ export const StyledContentWrapper = styled.div`
         justify-content: center;
       }
       .brands-wrapper {
-        width: 100%;
-        margin: 0px;
+        width: 95%;
+        margin: 0px auto;
         height: 100%;
       }
       .brands-wrapper img {
@@ -114,6 +114,7 @@ export const StyledContentWrapper = styled.div`
         max-width: 100%;
         height: auto;
         padding-top: 20px;
+        padding-bottom: 20px;
       }
       .video-container {
         display: flex;
@@ -150,8 +151,11 @@ export const StyledContentWrapper = styled.div`
       .title-section h1 {
         font-size: 40px;
       }
-      .brand-wrapper img {
-        height: 100%;
+      .brands-wrapper img {
+        max-height: 120px;
+        max-width: 100%;
+        padding-top: 5px;
+        padding-bottom: 0px;
       }
       .image-container img {
         width: 100%;
