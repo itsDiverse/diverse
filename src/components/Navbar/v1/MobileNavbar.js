@@ -203,7 +203,7 @@ const MobileNavbar = props => {
           <SecondaryMenu open={!isMobileNavFolded}>
             <PrimaryMenuItem>
               <BrandSecondaryMenuWrapper>
-                <IconApp size="30" />
+                <div />
               </BrandSecondaryMenuWrapper>
               <IconWrapperClose
                 onClick={onMobileNavToggle}
