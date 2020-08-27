@@ -120,6 +120,7 @@ export const StyledContentWrapper = styled.div`
     }
     .image-container img {
       width: 100%;
+      height: 100%;
       transform: scale(1px) translateX(-20px) translateY(-50px);
     }
 
