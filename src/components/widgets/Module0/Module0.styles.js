@@ -109,10 +109,12 @@ export const StyledContentWrapper = styled.div`
         padding-top: 20px;
         width: 100%;
         margin: 0px;
+        height: 100%;
       }
       .brands-wrapper img {
         margin: 5px;
         max-width: 100%;
+        height: auto;
       }
       .video-container {
         display: flex;
