@@ -93,20 +93,18 @@ export const StyledContentWrapper = styled.div`
         margin-top: 0px;
       }
       .tools-section {
-        min-height: 100vh;
+        min-height: 80vh;
         // flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
       }
       .title-section {
-        margin-top: 10px;
         z-index: 1;
         // flex: 1;
         justify-content: center;
       }
       .brands-wrapper {
-        padding-top: 20px;
         width: 100%;
         margin: 0px;
         height: 100%;
@@ -115,6 +113,7 @@ export const StyledContentWrapper = styled.div`
         margin: 5px;
         max-width: 100%;
         height: auto;
+        padding-top: 20px;
       }
       .video-container {
         display: flex;
@@ -126,10 +125,13 @@ export const StyledContentWrapper = styled.div`
       }
       .image-container img {
         width: 100%;
-        transform: scale(1.5) translateX(-30px) translateY(-30px);
+        transform: scale(1.5) translateX(-30px) translateY(0px);
       }
     }
     @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+      .tools-section {
+        min-height: 100vh;
+      }
       .video-container video {
         transform: scale(1.6) translateX(-60px) translateY(-30px);
       }
@@ -148,9 +150,12 @@ export const StyledContentWrapper = styled.div`
       .title-section h1 {
         font-size: 40px;
       }
+      .brand-wrapper img {
+        height: 100%;
+      }
       .image-container img {
         width: 100%;
-        transform: scale(1.2) translateX(-30px) translateY(-55px);
+        transform: scale(1.2) translateX(-30px) translateY(-35px);
       }
     }
     @media (min-width: 1000px) {
