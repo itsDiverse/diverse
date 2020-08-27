@@ -148,7 +148,7 @@ export const StyledContentWrapper = styled.div`
       }
       .image-container img {
         width: 100%;
-        transform: scale(1.2) translateX(-30px) translateY(-60px);
+        transform: scale(1.2) translateX(-30px) translateY(-55px);
       }
     }
     @media (min-width: 1000px) {
