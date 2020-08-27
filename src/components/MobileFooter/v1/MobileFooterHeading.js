@@ -8,7 +8,7 @@ import {
 export const MobileFooterHeading = () => (
   <StyledMobileFooterHeading>
     <svg
-      width="197"
+      width="145"
       height="55"
       viewBox="0 0 197 55"
       fill="none"
