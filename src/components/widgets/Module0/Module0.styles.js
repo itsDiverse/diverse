@@ -85,6 +85,7 @@ export const StyledContentWrapper = styled.div`
     }
     .image-container img {
       width: 100%;
+      height: 100%;
       transform: scale(1.2) translateX(-70px) translateY(-30px);
     }
     @media (max-width: 768px) and (orientation: portrait) {
@@ -147,7 +148,7 @@ export const StyledContentWrapper = styled.div`
       }
       .image-container img {
         width: 100%;
-        transform: scale(1.2) translateX(-30px) translateY(-80px);
+        transform: scale(1.2) translateX(-30px) translateY(-60px);
       }
     }
     @media (min-width: 1000px) {
