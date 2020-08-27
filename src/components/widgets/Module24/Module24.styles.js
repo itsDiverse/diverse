@@ -113,6 +113,16 @@ export const StyledContentWrapper = styled.div`
     .video-container {
       margin-bottom: -100px;
     }
+    .image-container {
+      display: flex;
+      width: 100%;
+      z-index: 1;
+    }
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      transform: scale(0.5px) translateX(0px) translateY(-20px);
+    }
 
     @media (min-width: 1000px) {
       .tools-section {

@@ -899,7 +899,7 @@ export const data = {
       title: "Graphics & Design",
       service1: "Website Design",
       service2: "Landing Page Design",
-      service3: "Logo & Brand Idenity",
+      service3: "Logo & Brand Identity",
       service4: "3D Character Design",
     },
     videoServices: {
