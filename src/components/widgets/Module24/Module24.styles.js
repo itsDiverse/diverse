@@ -116,12 +116,11 @@ export const StyledContentWrapper = styled.div`
     .image-container {
       display: flex;
       width: 100%;
-      z-index: 1;
+      margin-bottom: -25px;
     }
     .image-container img {
       width: 100%;
-      height: 100%;
-      transform: scale(0.5px) translateX(0px) translateY(-20px);
+      transform: scale(1px) translateX(-20px) translateY(-50px);
     }
 
     @media (min-width: 1000px) {
