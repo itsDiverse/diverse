@@ -154,7 +154,7 @@ export const StyledContentWrapper = styled.div`
         display: flex;
         width: fit-content;
         z-index: 1;
-        transform: translateX(1px) translateY(-50px);
+        transform: translateX(1px) translateY(-100px);
       }
       .services-list li {
         padding: 5px;
