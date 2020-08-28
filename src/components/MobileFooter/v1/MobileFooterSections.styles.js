@@ -1,6 +1,7 @@
 import styled from "styled-components"
 //import { Button } from "../Button"
 import { StyledDropDown } from "../../DropDown/DropDown.styles"
+import { Link } from "gatsby"
 
 export const StyledMobileFooterSections = styled.div`
   display: flex;
@@ -15,10 +16,12 @@ export const StyledMobileFooterSections = styled.div`
   }
 `
 export const StyledButtonsRow = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  padding: 10px 10px;
+  padding: 10px 0px;
 `
 export const StyledButtonsCol = styled.div`
   display: flex;
@@ -49,7 +52,7 @@ export const StyledSmallDivider = styled.div`
   margin: 15px auto;
   border-bottom: 1px solid #f2f2f2;
 `
-export const StyledButtonText = styled.p`
+export const StyledButtonText = styled(Link)`
   font-weight: 600;
   font-size: 11px;
   line-height: 13px;
@@ -57,6 +60,7 @@ export const StyledButtonText = styled.p`
   color: #ffffff;
   padding: 0px;
   margin: 2px;
+  text-decoration: none;
 `
 export const StyledCTARow = styled.div`
   display: flex;

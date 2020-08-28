@@ -81,7 +81,7 @@ const NavLinksMobile = () => (
         borderTop: "3px solid #195bb6",
         borderBottom: "3px solid #195bb6",
       }}
-      to="/#contact"
+      to="/comingSoon/"
     >
       CONTACT US
     </NavLink>

@@ -27,13 +27,13 @@ const GetInTouch = () => (
   <StyledButtonsCol>
     <StyledButtonsRow>
       <Button rounded primary small>
-        <StyledButtonText>CALL US</StyledButtonText>
+        <StyledButtonText to="/comingSoon/">CALL US</StyledButtonText>
       </Button>
       <Button rounded primary small>
-        <StyledButtonText>TEXT US</StyledButtonText>
+        <StyledButtonText to="/comingSoon/">TEXT US</StyledButtonText>
       </Button>
       <Button rounded primary small>
-        <StyledButtonText> EMAIL US</StyledButtonText>
+        <StyledButtonText to="/comingSoon/"> EMAIL US</StyledButtonText>
       </Button>
     </StyledButtonsRow>
     <StyledSmallDivider />
@@ -49,11 +49,17 @@ export const MobileFooterSections = () => (
   <StyledMobileFooterSections>
     <DropDown icon_expand="+" icon_expanded="-" title="OUR COMPANY">
       <StyledDropDownItemsContainer>
-        <StyledDropDownItem to="/"> About Us</StyledDropDownItem>
-        <StyledDropDownItem to="/"> Privacy Policy</StyledDropDownItem>
-        <StyledDropDownItem to="/"> Free Proposal</StyledDropDownItem>
-        <StyledDropDownItem to="/"> Terms</StyledDropDownItem>
-        <StyledDropDownItem to="/">
+        <StyledDropDownItem to="/comingSoon/"> About Us</StyledDropDownItem>
+        <StyledDropDownItem to="/comingSoon/">
+          {" "}
+          Privacy Policy
+        </StyledDropDownItem>
+        <StyledDropDownItem to="/comingSoon/">
+          {" "}
+          Free Proposal
+        </StyledDropDownItem>
+        <StyledDropDownItem to="/comingSoon/"> Terms</StyledDropDownItem>
+        <StyledDropDownItem to="/comingSoon/">
           {" "}
           Careers <label>HIRING</label>
         </StyledDropDownItem>
@@ -62,9 +68,9 @@ export const MobileFooterSections = () => (
 
     <DropDown icon_expand="+" icon_expanded="-" title="RESOURCES">
       <StyledDropDownItemsContainer>
-        <StyledDropDownItem to="/"> FAQs</StyledDropDownItem>
-        <StyledDropDownItem to="/"> Blog</StyledDropDownItem>
-        <StyledDropDownItem to="/"> Client Login</StyledDropDownItem>
+        <StyledDropDownItem to="/comingSoon/"> FAQs</StyledDropDownItem>
+        <StyledDropDownItem to="/comingSoon/"> Blog</StyledDropDownItem>
+        <StyledDropDownItem to="/comingSoon/"> Client Login</StyledDropDownItem>
       </StyledDropDownItemsContainer>
     </DropDown>
 

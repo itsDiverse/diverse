@@ -15,6 +15,7 @@ export const StyledHeading = styled.p`
   font-weight: 00;
   font-size: 18px;
   color: #555;
+  z-index: 1;
 `
 export const StyledTitle = styled.h1`
   font-family: NovaBlack;
@@ -35,5 +36,8 @@ export const StyledVideoContainer = styled.div`
   z-index: 0;
 `
 export const StyledVideo = styled.video`
-  transform: scale(1);
+  transform: scale(1.5);
+  @media (min-width: 1000px) {
+    transform: scale(1.5) translateY(-50px);
+  }
 `
