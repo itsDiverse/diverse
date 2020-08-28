@@ -81,7 +81,7 @@ export const FooterSections = () => (
             </a>
           </StyledSectionSocialMedia>
           <StyledSectionSubtitleSmall>Call Or Text:</StyledSectionSubtitleSmall>
-          <StyledSectionSubtitle href="tel:8333483773">
+          <StyledSectionSubtitle to="" href="tel:8333483773">
             <span>(833)-DIVERSE</span>
           </StyledSectionSubtitle>
         </StyledSectionColumns>
