@@ -49,7 +49,7 @@ export const IconApp = ({ size }) => (
     </g>
     <defs>
       <filter
-        id="filter0_ii"
+        id="filter0_i"
         x="0"
         y="0"
         width="42.6486"

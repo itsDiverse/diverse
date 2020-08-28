@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { BrandNav } from "../../Brand"
+import { Brand } from "../../Brand"
 import { IconInstagram, IconFacebook } from "../../Icons"
 
 import {
@@ -23,7 +23,7 @@ export const FooterSections = () => (
     <StyledSectionContainer>
       <StyledSectionLeft>
         <Link to="/">
-          <BrandNav />
+          <Brand />
         </Link>
         <StyledSectionPhrase>
           We develop multi-channel sales processes to help businesses attract,

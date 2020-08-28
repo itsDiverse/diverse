@@ -13,7 +13,7 @@ import { LogoMobile } from "./logoMobile"
 import { IconMobileNavbarV1 } from "../../../components/Icons/IconMobileNavbar_v1"
 import { IconCloseMobileNavbarV1 } from "../../../components/Icons/IconCloseMobileNavbar_v1"
 import { ModalLink } from "../../ModalLink"
-import { IconApp } from "../../Icons"
+import { Brand } from "../../Brand"
 
 const Wrapper = styled.div`
   margin: 0;
@@ -203,7 +203,7 @@ const MobileNavbar = props => {
           <SecondaryMenu open={!isMobileNavFolded}>
             <PrimaryMenuItem>
               <BrandSecondaryMenuWrapper>
-                <div />
+                <Brand />
               </BrandSecondaryMenuWrapper>
               <IconWrapperClose
                 onClick={onMobileNavToggle}
