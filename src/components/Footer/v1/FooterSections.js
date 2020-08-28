@@ -36,22 +36,32 @@ export const FooterSections = () => (
       <StyledSectionRight>
         <StyledSectionColumns>
           <StyledSectionTitle>COMPANY</StyledSectionTitle>
-          <StyledSectionSubtitle to="/">About Us</StyledSectionSubtitle>
-          <StyledSectionSubtitle to="/">Free Proposal</StyledSectionSubtitle>
-          <StyledSectionSubtitle to="/">
+          <StyledSectionSubtitle to="/comingSoon/">
+            About Us
+          </StyledSectionSubtitle>
+          <StyledSectionSubtitle to="/comingSoon/">
+            Free Proposal
+          </StyledSectionSubtitle>
+          <StyledSectionSubtitle to="/comingSoon/">
             Careers <label>HIRING</label>
           </StyledSectionSubtitle>
-          <StyledSectionSubtitle to="/">Privacy Policy</StyledSectionSubtitle>
+          <StyledSectionSubtitle to="/comingSoon/">
+            Privacy Policy
+          </StyledSectionSubtitle>
         </StyledSectionColumns>
         <StyledSectionColumns>
           <StyledSectionTitle>RESOURCES</StyledSectionTitle>
-          <StyledSectionSubtitle to="/">FAQs</StyledSectionSubtitle>
-          <StyledSectionSubtitle to="/">Client Login</StyledSectionSubtitle>
-          <StyledSectionSubtitle to="/">Blog</StyledSectionSubtitle>
+          <StyledSectionSubtitle to="/comingSoon/">FAQs</StyledSectionSubtitle>
+          <StyledSectionSubtitle to="/comingSoon/">
+            Client Login
+          </StyledSectionSubtitle>
+          <StyledSectionSubtitle to="/comingSoon/">Blog</StyledSectionSubtitle>
         </StyledSectionColumns>
         <StyledSectionColumns>
           <StyledSectionTitle>GET IN TOUCH</StyledSectionTitle>
-          <StyledSectionSubtitle to="/">Contact Us</StyledSectionSubtitle>
+          <StyledSectionSubtitle to="/comingSoon/">
+            Contact Us
+          </StyledSectionSubtitle>
           <StyledSectionSocialMedia>
             <a
               href="https://www.facebook.com/meetDiverse"

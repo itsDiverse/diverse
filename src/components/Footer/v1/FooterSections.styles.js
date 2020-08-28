@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { ModalLink } from "../../ModalLink"
+import { Link } from "gatsby"
 
 export const StyledSection = styled.div`
   display: flex;
@@ -96,14 +97,14 @@ export const StyledSectionTitle = styled.p`
   font-family: NovaSemi;
   font-size: 17px;
   line-height: 21px;
-  cursor: pointer;
+  cursor: default;
   /* identical to box height */
 
   color: #707070;
   padding-bottom: 14px;
 `
 
-export const StyledSectionSubtitle = styled.a`
+export const StyledSectionSubtitle = styled(Link)`
   font-style: normal;
   font-weight: 500;
   font-size: 15px;

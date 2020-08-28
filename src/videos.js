@@ -6,6 +6,7 @@ import playIcon from "./images/Module2/play.svg"
 import cubePipesVideo from "./videos/cubePipes.mp4"
 import cubesVideo from "./videos/cubes_2.mp4"
 import cubesObjects from "./videos/cubesObjects.mp4"
+import comingSoon from "./videos/comingSoon.mp4"
 //++++++++++++++++++++++++++++++++++++
 
 export const videos = {
@@ -41,5 +42,9 @@ export const videos = {
   //---------------------------------Module 24
   module24: {
     cubesObjects,
+  },
+  //---------------------------------ComingSoon Page
+  comingSoon: {
+    comingSoon,
   },
 }

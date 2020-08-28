@@ -41,7 +41,7 @@ const NavLinks = () => (
     <NavSeparator />
     <NavLink to="/#services">Our Services</NavLink>
     <NavSeparator />
-    <NavLink to="/#contact">Contact Us</NavLink>
+    <NavLink to="/comingSoon/">Contact Us</NavLink>
   </Wrapper>
 )
 
