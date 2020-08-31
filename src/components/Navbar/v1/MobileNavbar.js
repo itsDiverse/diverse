@@ -185,7 +185,7 @@ const MobileNavbar = props => {
           <LogoLink>
             <LogoMobile />
           </LogoLink>
-          <Link tabIndex="-1" to="/modalPopUp">
+          <Link tabIndex="-1" to="/Free-Proposal">
             <Button>GET A PROPOSAL</Button>
           </Link>
           <Wrapper>
@@ -220,7 +220,7 @@ const MobileNavbar = props => {
             </NavLinksContainer>
             <NavSeparator />
             <SecondaryMenuItem>
-              <ModalLink tabIndex="-1" to="/modalPopUp">
+              <ModalLink tabIndex="-1" to="/Free-Proposal">
                 <Button>GET A PROPOSAL</Button>
               </ModalLink>
             </SecondaryMenuItem>

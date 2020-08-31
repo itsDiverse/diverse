@@ -49,29 +49,8 @@ export const StyledSectionButton = styled.button`
     opacity: 0.9;
   }
 `
-export const StyledLink = styled(ModalLink)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: NovaSemi;
-  font-weight: bold;
-  text-decoration: none;
-  width: 190px;
-  height: 43px;
-  background: #ffffff;
-  border: 3px solid #195bb6;
-  box-sizing: border-box;
-  border-radius: 5px;
-  color: #195bb6;
-  &:hover,
-  &:focus {
-    background: #195bb6;
-    color: #ffffff;
-  }
-  &:active {
-    transform: scale(0.95);
-    opacity: 0.9;
-  }
+export const StyledLink = styled(Link)`
+  width: fit-content;
 `
 export const StyledSectionColumns = styled.div`
   display: flex;
@@ -85,6 +64,10 @@ export const StyledSectionLeft = styled.div`
   flex: 1;
   align-content: flex-start;
   padding-left: 15px;
+`
+
+export const StyledLinkBrand = styled(Link)`
+  width: fit-content;
 `
 export const StyledSectionRight = styled.div`
   display: flex;

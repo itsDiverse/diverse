@@ -38,7 +38,7 @@ const GetInTouch = () => (
     </StyledButtonsRow>
     <StyledSmallDivider />
     <StyledCTARow>
-      <Link style={{ textDecoration: "none" }} to="/modalPopUp/">
+      <Link style={{ textDecoration: "none" }} to="/Free-Proposal/">
         <ProposalCTA />
       </Link>
     </StyledCTARow>

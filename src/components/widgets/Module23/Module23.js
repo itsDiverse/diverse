@@ -4,7 +4,7 @@ import {
   GetFreeProposalButtonWhite,
 } from "./Module23.styles"
 
-import {ModalLink} from "../../ModalLink";
+import { ModalLink } from "../../ModalLink"
 
 export default props => (
   <StyledContentWrapper theme={props.theme}>
@@ -36,8 +36,8 @@ export default props => (
               <p className="subtitle-section">{props.data.text}</p>
               <div className="powerful-tools-btn">
                 {props.data.singleButton && (
-                  <ModalLink to="/modalPopUp/">
-                    <GetFreeProposalButtonWhite to="/modalPopUp/">
+                  <ModalLink to="/Free-Proposal/">
+                    <GetFreeProposalButtonWhite to="/Free-Proposal/">
                       {props.data.singleButton}
                     </GetFreeProposalButtonWhite>
                   </ModalLink>

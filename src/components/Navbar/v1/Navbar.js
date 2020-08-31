@@ -125,7 +125,7 @@ class NavBar extends PureComponent {
                 </StartWrapper>
                 <NavLinks aria-label="links" />
                 <EndWrapper>
-                  <ModalLink tabIndex="-1" to="/modalPopUp">
+                  <ModalLink tabIndex="-1" to="/Free-Proposal/">
                     <Button>GET A PROPOSAL</Button>
                   </ModalLink>
                 </EndWrapper>

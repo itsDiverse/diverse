@@ -16,20 +16,21 @@ import {
   StyledSectionTitle,
   StyledSectionSubtitleSmall,
   StyledSectionSubtitle,
+  StyledLinkBrand,
 } from "./FooterSections.styles"
 
 export const FooterSections = () => (
   <StyledSection>
     <StyledSectionContainer>
       <StyledSectionLeft>
-        <Link to="/">
+        <StyledLinkBrand to="/">
           <Brand />
-        </Link>
+        </StyledLinkBrand>
         <StyledSectionPhrase>
           We develop multi-channel sales processes to help businesses attract,
           close, and retain customers.
         </StyledSectionPhrase>
-        <StyledLink to="/modalPopUp/" state={{ modal: true }}>
+        <StyledLink to="/Free-Proposal/" state={{ modal: true }}>
           <StyledSectionButton>GET A FREE PROPOSAL</StyledSectionButton>
         </StyledLink>
       </StyledSectionLeft>
