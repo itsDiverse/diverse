@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Diverse: We develop multi-channel sales processes.`,
+    title: `We develop multi-channel sales processes.`,
     description: `Grow your business with the assistance of Diverse. We develop multi-channel sales processes to help businesses attract, close & retain customers.`,
     author: `@itsDiverse`,
   },
@@ -72,6 +72,13 @@ module.exports = {
           },
           shouldCloseOnOverlayClick: true,
         },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-5QQH65M",
+        includeInDevelopment: false,
       },
     },
 
