@@ -15,7 +15,15 @@ export default props => {
             <div className="tools-section">
               <div className="video-container">
                 {props.theme.video && !isTabletOrMobile ? (
-                  <video id="Video0" poster="" autoPlay playsInline muted loop>
+                  <video
+                    id="Video0"
+                    poster=""
+                    autoPlay
+                    playsInline
+                    muted
+                    loop
+                    style={{ outline: "none" }}
+                  >
                     <source
                       src={props.videos.cubePipesVideo}
                       type="video/webm"

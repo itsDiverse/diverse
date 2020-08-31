@@ -15,7 +15,15 @@ export default props => (
             <div className="video-container">
               <div className="video-container">
                 {props.theme.video ? (
-                  <video id="Video23" poster="" autoPlay playsInline muted loop>
+                  <video
+                    id="Video23"
+                    poster=""
+                    autoPlay
+                    playsInline
+                    muted
+                    loop
+                    style={{ outline: "none" }}
+                  >
                     <source
                       src={props.videos.cubesVideo}
                       type="video/webm"
