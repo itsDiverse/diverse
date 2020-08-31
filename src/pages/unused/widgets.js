@@ -1,4 +1,4 @@
-import React from "react"
+/*import React from "react"
 import { QuadBox } from "../components/widgets/QuadBox"
 import { Module1 } from "../components/widgets/Module1"
 import { Module1a } from "../components/widgets/Module1a"
@@ -184,13 +184,6 @@ export default () => (
       theme={theme.module19}
     />
     <hr></hr>
-    <h1>#20</h1>
-    {/* <Module20
-      theme={theme.module20}
-      data={data.module20}
-      images={images.module20}
-    ></Module20> */}
-    <hr></hr>
     <h1>#21</h1>
     <Module21
       theme={theme.module21}
@@ -199,3 +192,4 @@ export default () => (
     ></Module21>
   </>
 )
+*/
