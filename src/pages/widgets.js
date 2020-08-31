@@ -1,4 +1,4 @@
-/*import React from "react"
+import React from "react"
 import { QuadBox } from "../components/widgets/QuadBox"
 import { Module1 } from "../components/widgets/Module1"
 import { Module1a } from "../components/widgets/Module1a"
@@ -192,4 +192,3 @@ export default () => (
     ></Module21>
   </>
 )
-*/

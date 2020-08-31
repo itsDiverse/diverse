@@ -1,5 +1,5 @@
 import React from "react"
-import { MobileFooterServices } from "./MobileFooterServices"
+//import { MobileFooterServices } from "./MobileFooterServices"
 import { MobileFooterHeading } from "./MobileFooterHeading"
 import { MobileFooterSections } from "./MobileFooterSections"
 import { MobileFooterCerts } from "./MobileFooterCerts"
@@ -9,7 +9,6 @@ import { StyledMobileFooter } from "./MobileFooter.styles"
 
 export const MobileFooter = () => (
   <StyledMobileFooter>
-    <MobileFooterServices />
     <MobileFooterHeading />
     <MobileFooterSections />
     <MobileFooterCerts />

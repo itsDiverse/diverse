@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components"
 
-import rem from "../../../utils/rem"
-import { resetInput } from "../../../utils/form"
-import { navbarHeight } from "../../../utils/sizes"
+import rem from "../../utils/rem"
+import { resetInput } from "../../utils/form"
+import { navbarHeight } from "../../utils/sizes"
 
 const NavButton = styled.button`
   ${resetInput}

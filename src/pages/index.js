@@ -1,6 +1,6 @@
 import React from "react"
 import { Module0, Module23, Module24 } from "../components/widgets"
-import LayoutV1 from "../components/Layout/v1/Layout_v1"
+import { LayoutV1 } from "../components/Layout"
 import SEO from "../components/seo"
 
 import { theme } from "../theme"

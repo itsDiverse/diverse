@@ -1,1 +1,1 @@
-export { Brand, BrandNav } from "./Brand"
+export { Brand } from "./Brand"

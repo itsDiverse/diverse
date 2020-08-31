@@ -21,5 +21,5 @@ export const StyledParagraph = styled.p`
   font-size: 17px;
   line-height: 22px;
   color: #707070;
-  padding: 10px 58px 0px 12px;
+  padding: 10px 5px 0px 0px;
 `

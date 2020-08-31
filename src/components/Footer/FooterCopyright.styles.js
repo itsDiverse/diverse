@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const StyledCopyright = styled.div`
   border-top: 2px solid #f2f2f2;
-  padding: 20px 0px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: row;
   font-style: normal;

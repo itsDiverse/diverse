@@ -44,8 +44,8 @@ export default props => (
               <p className="subtitle-section">{props.data.text}</p>
               <div className="powerful-tools-btn">
                 {props.data.singleButton && (
-                  <ModalLink to="/Free-Proposal/">
-                    <GetFreeProposalButtonWhite to="/Free-Proposal/">
+                  <ModalLink to="/freeProposal/">
+                    <GetFreeProposalButtonWhite to="/freeProposal/">
                       {props.data.singleButton}
                     </GetFreeProposalButtonWhite>
                   </ModalLink>

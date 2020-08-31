@@ -2,9 +2,9 @@ import React, { PureComponent } from "react"
 import styled from "styled-components"
 import { useMediaQuery } from "react-responsive"
 
-import Nav from "../../Navbar/v1"
-import { Footer } from "../../Footer/v1/Footer"
-import { MobileFooter } from "../../MobileFooter/v1/MobileFooter"
+import Nav from "../Navbar"
+import { Footer } from "../Footer"
+import { MobileFooter } from "../MobileFooter/MobileFooter"
 
 const Wrapper = styled.div`
   display: flex;

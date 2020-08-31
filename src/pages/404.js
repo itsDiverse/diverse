@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import LayoutV1 from "../components/Layout/v1/Layout_v1"
+import { LayoutV1 } from "../components/Layout"
 import SEO from "../components/seo"
 
 const Wrapper = styled.div`

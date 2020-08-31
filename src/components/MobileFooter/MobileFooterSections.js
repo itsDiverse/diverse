@@ -1,4 +1,6 @@
 import React from "react"
+import { IconInstagram, IconFacebook } from "../Icons"
+import { Link } from "gatsby"
 
 import {
   StyledDropDownItemsContainer,
@@ -14,28 +16,31 @@ import {
   StyledSmallDivider,
   StyledButtonText,
   StyledCTARow,
+  StyledSectionSocialMedia,
+  StyledSectionSocialMediaIcons,
 } from "./MobileFooterSections.styles"
 
 import { DropDown } from "../DropDown"
 import { Button } from "../Button"
 import { ProposalCTA } from "../ProposalCTA"
-import { Link } from "gatsby"
 const GetInTouch = () => (
   <StyledButtonsCol>
     <StyledButtonsRow>
       <Button rounded primary small>
-        <StyledButtonText>CALL US</StyledButtonText>
+        <StyledButtonText to="/comingSoon/">CALL US</StyledButtonText>
       </Button>
       <Button rounded primary small>
-        <StyledButtonText>TEXT US</StyledButtonText>
+        <StyledButtonText to="/comingSoon/">TEXT US</StyledButtonText>
       </Button>
       <Button rounded primary small>
-        <StyledButtonText> EMAIL US</StyledButtonText>
+        <StyledButtonText to="/comingSoon/"> EMAIL US</StyledButtonText>
       </Button>
     </StyledButtonsRow>
     <StyledSmallDivider />
     <StyledCTARow>
-      <ProposalCTA />
+      <Link style={{ textDecoration: "none" }} to="/freeProposal/">
+        <ProposalCTA />
+      </Link>
     </StyledCTARow>
   </StyledButtonsCol>
 )
@@ -44,35 +49,28 @@ export const MobileFooterSections = () => (
   <StyledMobileFooterSections>
     <DropDown icon_expand="+" icon_expanded="-" title="OUR COMPANY">
       <StyledDropDownItemsContainer>
-        <StyledDropDownItem>
-          <Link to="/">About Us</Link>
+        <StyledDropDownItem to="/comingSoon/"> About Us</StyledDropDownItem>
+        <StyledDropDownItem to="/comingSoon/">
+          {" "}
+          Privacy Policy
         </StyledDropDownItem>
-        <StyledDropDownItem>
-          <Link to="/">Privacy Policy</Link>
+        <StyledDropDownItem to="/comingSoon/">
+          {" "}
+          Free Proposal
         </StyledDropDownItem>
-        <StyledDropDownItem>
-          <Link to="/">Free Proposal</Link>
-        </StyledDropDownItem>
-        <StyledDropDownItem>
-          <Link to="/">Terms</Link>
-        </StyledDropDownItem>
-        <StyledDropDownItem>
-          <Link to="/">Careers</Link>
+        <StyledDropDownItem to="/comingSoon/"> Terms</StyledDropDownItem>
+        <StyledDropDownItem to="/comingSoon/">
+          {" "}
+          Careers <label>HIRING</label>
         </StyledDropDownItem>
       </StyledDropDownItemsContainer>
     </DropDown>
 
     <DropDown icon_expand="+" icon_expanded="-" title="RESOURCES">
       <StyledDropDownItemsContainer>
-        <StyledDropDownItem>
-          <Link to="/">FAQs</Link>
-        </StyledDropDownItem>
-        <StyledDropDownItem>
-          <Link to="/">Blog</Link>
-        </StyledDropDownItem>
-        <StyledDropDownItem>
-          <Link to="/">Client Login</Link>
-        </StyledDropDownItem>
+        <StyledDropDownItem to="/comingSoon/"> FAQs</StyledDropDownItem>
+        <StyledDropDownItem to="/comingSoon/"> Blog</StyledDropDownItem>
+        <StyledDropDownItem to="/comingSoon/"> Client Login</StyledDropDownItem>
       </StyledDropDownItemsContainer>
     </DropDown>
 
@@ -81,8 +79,28 @@ export const MobileFooterSections = () => (
         <StyledPhoneNumber>
           Phone Number: <span>(833)-Diverse</span>
         </StyledPhoneNumber>
-        <StyledPhoneNumber>Social Profiles: </StyledPhoneNumber>
-        <GetInTouch></GetInTouch>
+        <StyledSectionSocialMedia>
+          Social Profiles:
+          <StyledSectionSocialMediaIcons>
+            <a
+              href="https://twitter.com/gatsbyjs"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Find us on facebook"
+            >
+              <IconFacebook size={20} />
+            </a>
+            <a
+              href="https://instagram.com/gatsbyjs"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Find us on instagram"
+            >
+              <IconInstagram size={20} />
+            </a>
+          </StyledSectionSocialMediaIcons>
+        </StyledSectionSocialMedia>
+        <GetInTouch />
       </StyledGetInTouch>
     </DropDown>
   </StyledMobileFooterSections>

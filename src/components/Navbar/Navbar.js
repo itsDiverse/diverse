@@ -3,14 +3,14 @@ import { StaticQuery, graphql } from "gatsby"
 import styled, { css } from "styled-components"
 import { Link } from "gatsby"
 
-import rem from "../../../utils/rem"
-import { navbarHeight } from "../../../utils/sizes"
-import { mobile } from "../../../utils/media"
+import rem from "../../utils/rem"
+import { navbarHeight } from "../../utils/sizes"
+import { mobile } from "../../utils/media"
 
 import NavLinks from "./NavLinks"
-import { ModalLink } from "../../ModalLink"
+import { ModalLink } from "../ModalLink"
 //import { Logo } from "./logo"
-import { Brand } from "../../Brand"
+import { Brand } from "../Brand"
 import MobileNavbar from "./MobileNavbar"
 
 const Wrapper = styled.nav`
@@ -125,7 +125,7 @@ class NavBar extends PureComponent {
                 </StartWrapper>
                 <NavLinks aria-label="links" />
                 <EndWrapper>
-                  <ModalLink tabIndex="-1" to="/Free-Proposal/">
+                  <ModalLink tabIndex="-1" to="/freeProposal/">
                     <Button>GET A PROPOSAL</Button>
                   </ModalLink>
                 </EndWrapper>

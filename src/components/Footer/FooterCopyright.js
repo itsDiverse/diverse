@@ -10,12 +10,12 @@ import { IconGlobe } from "../Icons"
 export const FooterCopyright = () => (
   <StyledCopyright>
     <StyledLanguage>
-      <IconGlobe size={20} color="#707070" />
+      <IconGlobe size={16} color="#707070" />
       English
     </StyledLanguage>
     <StyledMark>
-      Copyright © [Current Year] Diverse Marketing. All Rights Reserved. • Do
-      not sell my information
+      Copyright © {new Date().getFullYear()} Diverse Marketing. All Rights
+      Reserved.
     </StyledMark>
   </StyledCopyright>
 )

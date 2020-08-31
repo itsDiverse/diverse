@@ -32,8 +32,8 @@ export default props => (
                   </a>
                 )}
                 {props.data.singleButton && (
-                  <Link to="/Free-Proposal/" state={{ modal: true }}>
-                    <GetFreeProposalButton to="/Free-Proposal/">
+                  <Link to="/freeProposal/" state={{ modal: true }}>
+                    <GetFreeProposalButton to="/freeProposal/">
                       {props.data.singleButton}
                     </GetFreeProposalButton>
                   </Link>

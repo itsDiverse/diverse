@@ -2,18 +2,18 @@ import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import styled, { css } from "styled-components"
 
-import rem from "../../../utils/rem"
-import { navbarHeight } from "../../../utils/sizes"
-import { mobile } from "../../../utils/media"
+import rem from "../../utils/rem"
+import { navbarHeight } from "../../utils/sizes"
+import { mobile } from "../../utils/media"
 
 import NavLinksMobile from "./NavLinksMobile"
 import NavSeparator from "./NavSeparator"
 import NavButton from "./NavButton"
 import { LogoMobile } from "./logoMobile"
-import { IconMobileNavbarV1 } from "../../../components/Icons/IconMobileNavbar_v1"
-import { IconCloseMobileNavbarV1 } from "../../../components/Icons/IconCloseMobileNavbar_v1"
-import { ModalLink } from "../../ModalLink"
-import { Brand } from "../../Brand"
+import { IconMobileNavbarV1 } from "../../components/Icons/IconMobileNavbar_v1"
+import { IconCloseMobileNavbarV1 } from "../../components/Icons/IconCloseMobileNavbar_v1"
+import { ModalLink } from "../ModalLink"
+import { Brand } from "../Brand"
 
 const Wrapper = styled.div`
   margin: 0;
@@ -185,7 +185,7 @@ const MobileNavbar = props => {
           <LogoLink>
             <LogoMobile />
           </LogoLink>
-          <Link tabIndex="-1" to="/Free-Proposal">
+          <Link tabIndex="-1" to="/freeProposal/">
             <Button>GET A PROPOSAL</Button>
           </Link>
           <Wrapper>
@@ -220,7 +220,7 @@ const MobileNavbar = props => {
             </NavLinksContainer>
             <NavSeparator />
             <SecondaryMenuItem>
-              <ModalLink tabIndex="-1" to="/Free-Proposal">
+              <ModalLink tabIndex="-1" to="/freeProposal/">
                 <Button>GET A PROPOSAL</Button>
               </ModalLink>
             </SecondaryMenuItem>
