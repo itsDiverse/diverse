@@ -53,10 +53,11 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
         .catch(() => {
           alert("Error")
         })
+        .finally(() => setStep(4))
     }}
   >
     {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
-      <Form
+      <StyledProposalForm
         name="contact-form"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
@@ -117,7 +118,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
         <StyledProposalButton type="submit">
           SEND MY FREE PROPOSAL
         </StyledProposalButton>
-      </Form>
+      </StyledProposalForm>
     )}
   </Formik>
 )
