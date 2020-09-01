@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components"
-import { Field, Form } from "formik"
+import { Field } from "formik"
 import { Link } from "gatsby"
 
 export const StyledClose = styled(Link)`
@@ -99,7 +99,7 @@ export const StyledProposalBody = styled.div`
   }
 `
 
-export const StyledProposalForm = styled(Form)`
+export const StyledProposalForm = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
