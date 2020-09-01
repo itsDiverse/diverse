@@ -11,6 +11,12 @@ import * as Yup from "yup"
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
+
 const FormSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, "*Too Short!")
@@ -33,11 +39,24 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
     validationSchema={FormSchema}
     onSubmit={(values, actions) => {
       setFormData({ ...formData, ...values })
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact-demo", ...values }),
+      })
+        .then(() => {
+          alert("Success")
+          actions.resetForm()
+        })
+        .catch(() => {
+          alert("Error")
+        })
+        .finally(() => actions.setSubmitting(false))
       setStep(4)
     }}
   >
     {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
-      <StyledProposalForm name="Contact Form" method="POST" data-netlify="true">
+      <StyledProposalForm name="contact-demo" data-netlify={true}>
         <StyledProposalLabel>
           What’s your website?
           <StyledProposalInput
