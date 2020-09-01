@@ -6,10 +6,17 @@ import {
   StyledProposalInput,
   ErrorValidation,
 } from "../Proposal.styles"
-import { Formik, ErrorMessage, Form } from "formik"
+import { Formik, ErrorMessage, Form, Field } from "formik"
 import * as Yup from "yup"
+import { navigate } from "gatsby"
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
+
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
 
 const FormSchema = Yup.object().shape({
   name: Yup.string()
@@ -31,14 +38,31 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
       number: "",
     }}
     validationSchema={FormSchema}
-    onSubmit={(values, actions) => {
-      setFormData({ ...formData, ...values })
-      setStep(4)
+    onSubmit={(formData, { resetForm }) => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact-form", ...formData }),
+      })
+        .then(() => {
+          resetForm()
+        })
+        .catch(() => {
+          alert("Error")
+        })
+        .finally(() => setStep(4))
     }}
   >
     {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
       <StyledProposalForm>
-        <Form name="contact" method="POST" data-netlify="true">
+        <Form
+          name="contact-form"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <Field type="hidden" name="Proposal" />
+          <Field type="hidden" name="bot-field" />
+
           <StyledProposalLabel>
             What’s your website?
             <StyledProposalInput
