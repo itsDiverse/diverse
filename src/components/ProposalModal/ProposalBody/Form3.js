@@ -8,7 +8,6 @@ import {
 } from "../Proposal.styles"
 import { Formik, ErrorMessage, Form, Field } from "formik"
 import * as Yup from "yup"
-import { navigate } from "gatsby"
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
@@ -61,7 +60,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <Field type="hidden" name="from-name" />
+          <Field type="hidden" name="form-name" />
           <Field type="hidden" name="bot-field" />
 
           <StyledProposalLabel>
