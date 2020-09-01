@@ -38,7 +38,8 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
       number: "",
     }}
     validationSchema={FormSchema}
-    onSubmit={(values, formData, { resetForm }) => {
+    onSubmit={(values, { resetForm }) => {
+      setFormData({ ...formData, ...values })
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -113,7 +114,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
           <ErrorValidation>
             <ErrorMessage name="number" />
           </ErrorValidation>
-          <StyledProposalButton type="submit" onClick={handleSubmit}>
+          <StyledProposalButton type="submit">
             SEND MY FREE PROPOSAL
           </StyledProposalButton>
         </Form>
