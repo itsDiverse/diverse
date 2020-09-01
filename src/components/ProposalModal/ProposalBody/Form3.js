@@ -6,7 +6,7 @@ import {
   StyledProposalInput,
   ErrorValidation,
 } from "../Proposal.styles"
-import { Formik, ErrorMessage, Form, Field } from "formik"
+import { Formik, ErrorMessage, Form } from "formik"
 import * as Yup from "yup"
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
@@ -62,8 +62,8 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
           name="contact-form"
           data-netlify="true"
         >
-          <Field type="hidden" name="form-name" />
-          <Field type="hidden" name="bot-field" />
+          <StyledProposalInput type="hidden" name="form-name" />
+          <StyledProposalInput type="hidden" name="bot-field" />
 
           <StyledProposalLabel>
             What’s your website?
