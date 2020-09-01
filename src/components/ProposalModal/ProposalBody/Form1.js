@@ -48,11 +48,7 @@ export const Form1 = ({ setStep, formData, setFormData }) => (
       handleBlur,
       handleSubmit,
     }) => (
-      <StyledProposalForm
-        name="Contact Form1"
-        method="POST"
-        data-netlify="true"
-      >
+      <StyledProposalForm>
         <StyledProposalLabel>
           What are your goals?
           <SelectOwn
