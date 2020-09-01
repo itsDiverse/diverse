@@ -37,7 +37,11 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
     }}
   >
     {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
-      <StyledProposalForm>
+      <StyledProposalForm
+        name="Contact Form3"
+        method="POST"
+        data-netlify="true"
+      >
         <StyledProposalLabel>
           What’s your website?
           <StyledProposalInput
