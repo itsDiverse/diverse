@@ -60,7 +60,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
       <StyledProposalForm>
         <Form
           name="contact-form"
-          data-netlify="true"
+          data-netlify={true}
           data-netlify-honeypot="bot-field"
         >
           <Field type="hidden" name="form-name" />
