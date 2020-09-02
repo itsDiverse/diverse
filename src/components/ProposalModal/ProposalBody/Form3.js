@@ -22,7 +22,7 @@ const FormSchema = Yup.object().shape({
   number: Yup.string().matches(phoneRegExp, "Phone number is not valid"),
 })
 
-export const Form3 = ({ setStep, formData, setFormData }) => (
+export const Form3 = ({ setStep, formData }) => (
   <Formik
     initialValues={{
       website: "",
