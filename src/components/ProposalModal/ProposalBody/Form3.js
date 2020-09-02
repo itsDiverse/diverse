@@ -61,7 +61,11 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
           data-netlify-honeypot="bot-field"
           style={{ textAlign: "center" }}
         >
-          <StyledProposalInput type="hidden" name="form-name" value="contact" />
+          <StyledProposalInput
+            type="hidden"
+            name="form-name"
+            value="contact-form"
+          />
           <StyledProposalInput type="hidden" name="bot-field" />
 
           <StyledProposalLabel>
