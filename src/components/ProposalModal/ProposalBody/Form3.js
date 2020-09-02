@@ -53,7 +53,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
-          "form-name": "contact-form",
+          "form-name": "contact-form1",
           ...data,
         }),
       })
@@ -64,7 +64,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
     }}
   >
     <Form
-      name="contact-form"
+      name="contact-form1"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
