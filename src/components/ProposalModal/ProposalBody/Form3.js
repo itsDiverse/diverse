@@ -47,6 +47,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
         }),
       }).then(() => {
         console.log(values, formData)
+        setStep(4)
       })
     }}
   >
