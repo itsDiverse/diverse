@@ -67,7 +67,6 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
       name="contact-form"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      data-netlify-recaptcha="true"
     >
       <StyledProposalInput type="hidden" name="form-name" />
       <StyledProposalInput type="hidden" name="bot-field" />
