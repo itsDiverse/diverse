@@ -37,31 +37,27 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
       number: "",
     }}
     validationSchema={FormSchema}
-    onSubmit={(values, { resetForm }) => {
+    onSubmit={values => {
+      setFormData({ ...formData, ...values })
+      console.log(formData)
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
           "form-name": "contact-form",
-          ...values,
+          formData,
         }),
+      }).then(() => {
+        setStep(4)
       })
-        .then(() => {
-          resetForm()
-        })
-        .catch(() => {
-          alert("Error")
-        })
-        .finally(() => setStep(4))
     }}
   >
     {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
       <StyledProposalForm>
         <Form
-          method="POST"
-          netlify-honeypot="bot-field"
-          data-netlify="true"
           name="contact-form"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
           style={{ textAlign: "center" }}
         >
           <StyledProposalInput type="hidden" name="form-name" />
@@ -117,7 +113,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
           <ErrorValidation>
             <ErrorMessage name="number" />
           </ErrorValidation>
-          <StyledProposalButton type="submit" onClick={handleSubmit}>
+          <StyledProposalButton type="submit">
             SEND MY FREE PROPOSAL
           </StyledProposalButton>
         </Form>
