@@ -30,58 +30,95 @@ const FormSchema = Yup.object().shape({
 
 export const Form3 = ({ setStep, formData, setFormData }) => (
   <Formik
-    initialValues={{ fullName: "", email: "" }}
-    validate={values => {
-      const errors = {}
-      if (!values.fullName) {
-        errors.fullName = "Required"
-      } else if (values.fullName.length <= 1) {
-        errors.fullName = "must be at least 2 characters"
-      }
-      if (!values.email) {
-        errors.email = "Required"
-      } else if (
-        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
-      ) {
-        errors.email = "Invalid email address"
-      }
-      return errors
+    initialValues={{
+      website: "",
+      name: "",
+      email: "",
+      number: "",
     }}
-    onSubmit={data => {
-      console.log(data)
+    validationSchema={FormSchema}
+    onSubmit={values => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
           "form-name": "contact-form1",
-          ...data,
+          ...values,
+          formData,
         }),
       })
         .then(() => {
-          alert("send")
+          console.log(values, formData)
         })
-        .catch(error => alert(error))
+        .finally(() => setStep(4))
     }}
   >
-    <Form
-      name="contact-form1"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-    >
-      <StyledProposalInput type="hidden" name="form-name" />
-      <StyledProposalInput type="hidden" name="bot-field" />
+    {({ errors, touched, handleChange, handleBlur, onSubmit }) => (
+      <StyledProposalForm>
+        <Form
+          name="contact-form1"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          style={{ textAlign: "center" }}
+        >
+          <StyledProposalInput type="hidden" name="form-name" />
+          <StyledProposalInput type="hidden" name="bot-field" />
 
-      <label htmlFor="fullName">Full name:</label>
-      <StyledProposalInput name="fullName" type="text" />
-      <ErrorMessage name="fullName" />
-      <br />
-      <label htmlFor="email">Email</label>
-      <StyledProposalInput name="email" type="text" />
-      <ErrorMessage name="email" />
-      <br />
-
-      <br />
-      <button type="submit">Submit</button>
-    </Form>
+          <StyledProposalLabel>
+            What’s your website?
+            <StyledProposalInput
+              type="string"
+              name="website"
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+          </StyledProposalLabel>
+          <ErrorValidation>
+            <ErrorMessage name="website" />
+          </ErrorValidation>
+          <StyledProposalLabel>
+            What’s your name?
+            <StyledProposalInput
+              type="text"
+              name="name"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              error={touched.name && errors.name}
+            />
+          </StyledProposalLabel>
+          <ErrorValidation>
+            <ErrorMessage name="name" />
+          </ErrorValidation>
+          <StyledProposalLabel>
+            What’s your email?
+            <StyledProposalInput
+              type="email"
+              name="email"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              error={touched.email && errors.email}
+            />
+          </StyledProposalLabel>
+          <ErrorValidation>
+            <ErrorMessage name="email" />
+          </ErrorValidation>
+          <StyledProposalLabel>
+            What’s your number?
+            <StyledProposalInput
+              type="string"
+              name="number"
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+          </StyledProposalLabel>
+          <ErrorValidation>
+            <ErrorMessage name="number" />
+          </ErrorValidation>
+          <StyledProposalButton type="submit">
+            SEND MY FREE PROPOSAL
+          </StyledProposalButton>
+        </Form>
+      </StyledProposalForm>
+    )}
   </Formik>
 )
