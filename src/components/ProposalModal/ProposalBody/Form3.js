@@ -58,9 +58,10 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
     {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
       <StyledProposalForm>
         <Form
+          method="POST"
           netlify-honeypot="bot-field"
-          data-netlify={true}
-          name="contact"
+          data-netlify="true"
+          name="contact-form"
           style={{ textAlign: "center" }}
         >
           <StyledProposalInput type="hidden" name="form-name" />
