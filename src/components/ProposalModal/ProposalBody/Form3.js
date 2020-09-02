@@ -44,11 +44,10 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
         body: encode({
           "form-name": "contact-form",
           ...values,
-          formData,
         }),
       })
         .then(() => {
-          console.log(values, formData)
+          console.log(values)
         })
         .finally(() => setStep(4))
     }}
