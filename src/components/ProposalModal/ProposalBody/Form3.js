@@ -16,6 +16,14 @@ const encode = data => {
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&")
 }
+const serialize = function(obj) {
+  var str = []
+  for (var p in obj)
+    if (obj.hasOwnProperty(p)) {
+      str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]))
+    }
+  return str.join("&")
+}
 
 const FormSchema = Yup.object().shape({
   name: Yup.string()
@@ -38,19 +46,16 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
     }}
     validationSchema={FormSchema}
     onSubmit={values => {
-      fetch("/", {
+      fetch("/?no-cache=1", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({
+        body: serialize({
           "form-name": "contact-form",
           ...values,
-          formData,
         }),
+      }).then(() => {
+        console.log(values, formData)
       })
-        .then(() => {
-          console.log(values, formData)
-        })
-        .finally(() => setStep(4))
     }}
   >
     {({ errors, touched, handleChange, handleBlur, onSubmit }) => (
