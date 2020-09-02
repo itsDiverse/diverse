@@ -46,7 +46,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
     }}
     validationSchema={FormSchema}
     onSubmit={values => {
-      fetch("/?no-cache=1", {
+      fetch("/?no-cache=1/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: serialize({
