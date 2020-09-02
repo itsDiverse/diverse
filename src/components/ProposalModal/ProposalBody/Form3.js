@@ -38,21 +38,20 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
     }}
     validationSchema={FormSchema}
     onSubmit={values => {
-      setFormData({ ...formData, ...values })
-      console.log(formData)
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
           "form-name": "contact-form",
+          ...values,
           formData,
         }),
       }).then(() => {
-        setStep(4)
+        console.log(values, formData)
       })
     }}
   >
-    {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
+    {({ errors, touched, handleChange, handleBlur, onSubmit }) => (
       <StyledProposalForm>
         <Form
           name="contact-form"
