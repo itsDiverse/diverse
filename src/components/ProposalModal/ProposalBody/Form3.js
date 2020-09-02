@@ -46,9 +46,11 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
           ...values,
           formData,
         }),
-      }).then(() => {
-        console.log(values, formData)
       })
+        .then(() => {
+          console.log(values, formData)
+        })
+        .finally(() => setStep(4))
     }}
   >
     {({ errors, touched, handleChange, handleBlur, onSubmit }) => (
@@ -59,7 +61,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
           data-netlify-honeypot="bot-field"
           style={{ textAlign: "center" }}
         >
-          <StyledProposalInput type="hidden" name="form-name" />
+          <StyledProposalInput type="hidden" name="form-name" value="contact" />
           <StyledProposalInput type="hidden" name="bot-field" />
 
           <StyledProposalLabel>
