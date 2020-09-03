@@ -42,8 +42,9 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
-          "form-name": "contact-form",
+          "form-name": "contact",
           ...values,
+          formData,
         }),
       }).then(() => {
         console.log(values, formData)
@@ -54,7 +55,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
     {({ errors, touched, handleChange, handleBlur, onSubmit }) => (
       <StyledProposalForm>
         <Form
-          name="contact-form"
+          name="contact"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           style={{ textAlign: "center" }}
