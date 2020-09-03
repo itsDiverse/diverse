@@ -29,7 +29,7 @@ const FormSchema = Yup.object().shape({
 })
 
 export const Form3 = ({ setStep, formData, setFormData }) => (
-  <form name="contact" method="POST" data-netlify="true">
+  <form name="contact" method="POST" data-netlify="true" path="/">
     <p>
       <label for="name">Name</label>
       <input type="text" id="name" name="name" />
