@@ -44,7 +44,6 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
         body: encode({
           "form-name": "contact",
           ...values,
-          formData,
         }),
       })
         .then(() => {
@@ -58,8 +57,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
       <StyledProposalForm>
         <Form
           name="contact"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
+          data-netlify={true}
           style={{ textAlign: "center" }}
         >
           <StyledProposalInput type="hidden" name="form-name" />
