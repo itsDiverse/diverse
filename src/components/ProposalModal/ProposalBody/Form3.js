@@ -29,28 +29,93 @@ const FormSchema = Yup.object().shape({
 })
 
 export const Form3 = ({ setStep, formData, setFormData }) => (
-  <form
-    method="post"
-    netlify-honeypot="bot-field"
-    data-netlify="true"
-    name="contact"
+  <Formik
+    initialValues={{
+      website: "",
+      name: "",
+      email: "",
+      number: "",
+    }}
+    validationSchema={FormSchema}
+    onSubmit={values => {
+      fetch("https://www.meetdiverse.com/freeProposal", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "contact",
+          ...values,
+          ...formData,
+        }),
+      }).then(() => {
+        console.log(values, formData)
+        setStep(4)
+      })
+    }}
   >
-    <input type="hidden" name="bot-field" />
-    <input type="hidden" name="form-name" value="contact" />
-    <p>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" />
-    </p>
-    <p>
-      <label for="email">Email</label>
-      <input type="text" id="email" name="email" />
-    </p>
-    <p>
-      <label for="message">Message</label>
-      <textarea id="message" name="message"></textarea>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
+    {({ errors, touched, handleChange, handleBlur, onSubmit }) => (
+      <Form
+        method="post"
+        data-netlify-honeypot="bot-field"
+        data-netlify="true"
+        name="contact"
+        style={{ textAlign: "center" }}
+      >
+        <StyledProposalInput type="hidden" name="bot-field" />
+        <StyledProposalInput type="hidden" name="form-name" value="contact" />
+        <StyledProposalLabel>
+          What’s your website?
+          <StyledProposalInput
+            type="string"
+            name="website"
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+        </StyledProposalLabel>
+        <ErrorValidation>
+          <ErrorMessage name="website" />
+        </ErrorValidation>
+        <StyledProposalLabel>
+          What’s your name?
+          <StyledProposalInput
+            type="text"
+            name="name"
+            onChange={handleChange}
+            onBlur={handleBlur}
+            error={touched.name && errors.name}
+          />
+        </StyledProposalLabel>
+        <ErrorValidation>
+          <ErrorMessage name="name" />
+        </ErrorValidation>
+        <StyledProposalLabel>
+          What’s your email?
+          <StyledProposalInput
+            type="email"
+            name="email"
+            onChange={handleChange}
+            onBlur={handleBlur}
+            error={touched.email && errors.email}
+          />
+        </StyledProposalLabel>
+        <ErrorValidation>
+          <ErrorMessage name="email" />
+        </ErrorValidation>
+        <StyledProposalLabel>
+          What’s your number?
+          <StyledProposalInput
+            type="string"
+            name="number"
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+        </StyledProposalLabel>
+        <ErrorValidation>
+          <ErrorMessage name="number" />
+        </ErrorValidation>
+        <StyledProposalButton type="submit">
+          SEND MY FREE PROPOSAL
+        </StyledProposalButton>
+      </Form>
+    )}
+  </Formik>
 )
