@@ -54,7 +54,6 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
   >
     {({ errors, touched, handleChange, handleBlur, onSubmit }) => (
       <Form
-        method="post"
         data-netlify-honeypot="bot-field"
         data-netlify="true"
         name="contact"
