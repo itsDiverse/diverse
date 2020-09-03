@@ -15,7 +15,8 @@ module.exports = {
         lang: `en`,
       },
     },
-    `gatsby-plugin-netlify``gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
