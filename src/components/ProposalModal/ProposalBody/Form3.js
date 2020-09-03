@@ -37,7 +37,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
       number: "",
     }}
     validationSchema={FormSchema}
-    onSubmit={(values, actions) => {
+    onSubmit={values => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -45,25 +45,22 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
           "form-name": "contact",
           ...values,
         }),
+      }).then(() => {
+        console.log(values, formData)
+        setStep(4)
       })
-        .then(() => {
-          console.log(values, formData)
-          setStep(4)
-        })
-        .finally(() => actions.setSubmitting(false))
     }}
   >
     {({ errors, touched, handleChange, handleBlur, onSubmit }) => (
       <StyledProposalForm>
         <Form
           name="contact"
+          method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           style={{ textAlign: "center" }}
         >
-          <StyledProposalInput type="hidden" name="form-name" />
-          <StyledProposalInput type="hidden" name="bot-field" />
-
+          <input type="hidden" name="form-name" value="contact" />
           <StyledProposalLabel>
             What’s your website?
             <StyledProposalInput
