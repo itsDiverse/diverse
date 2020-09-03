@@ -38,7 +38,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
     }}
     validationSchema={FormSchema}
     onSubmit={values => {
-      fetch("https://www.meetdiverse.com/freeProposal", {
+      fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
