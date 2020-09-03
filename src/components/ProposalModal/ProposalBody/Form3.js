@@ -31,93 +31,56 @@ const FormSchema = Yup.object().shape({
 export const Form3 = ({ setStep, formData, setFormData }) => (
   <Formik
     initialValues={{
-      website: "",
       name: "",
       email: "",
-      number: "",
+      message: "",
     }}
-    validationSchema={FormSchema}
     onSubmit={(values, actions) => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({
-          "form-name": "contact",
-          ...values,
-        }),
+        body: encode({ "form-name": "contact-demo", ...values }),
       })
         .then(() => {
-          console.log(values, formData)
-          setStep(4)
+          alert("Success")
+          actions.resetForm()
+        })
+        .catch(() => {
+          alert("Error")
         })
         .finally(() => actions.setSubmitting(false))
     }}
+    validate={values => {
+      const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+      const errors = {}
+      if (!values.name) {
+        errors.name = "Name Required"
+      }
+      if (!values.email || !emailRegex.test(values.email)) {
+        errors.email = "Valid Email Required"
+      }
+      if (!values.message) {
+        errors.message = "Message Required"
+      }
+      return errors
+    }}
   >
-    {({ errors, touched, handleChange, handleBlur, onSubmit }) => (
-      <StyledProposalForm>
-        <Form
-          name="contact"
-          data-netlify={true}
-          style={{ textAlign: "center" }}
-        >
-          <StyledProposalInput type="hidden" name="form-name" />
-          <StyledProposalInput type="hidden" name="bot-field" />
+    {() => (
+      <Form name="contact-demo" data-netlify={true}>
+        <label htmlFor="name">Name: </label>
+        <StyledProposalInput name="name" />
+        <ErrorMessage name="name" />
 
-          <StyledProposalLabel>
-            What’s your website?
-            <StyledProposalInput
-              type="string"
-              name="website"
-              onChange={handleChange}
-              onBlur={handleBlur}
-            />
-          </StyledProposalLabel>
-          <ErrorValidation>
-            <ErrorMessage name="website" />
-          </ErrorValidation>
-          <StyledProposalLabel>
-            What’s your name?
-            <StyledProposalInput
-              type="text"
-              name="name"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              error={touched.name && errors.name}
-            />
-          </StyledProposalLabel>
-          <ErrorValidation>
-            <ErrorMessage name="name" />
-          </ErrorValidation>
-          <StyledProposalLabel>
-            What’s your email?
-            <StyledProposalInput
-              type="email"
-              name="email"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              error={touched.email && errors.email}
-            />
-          </StyledProposalLabel>
-          <ErrorValidation>
-            <ErrorMessage name="email" />
-          </ErrorValidation>
-          <StyledProposalLabel>
-            What’s your number?
-            <StyledProposalInput
-              type="string"
-              name="number"
-              onChange={handleChange}
-              onBlur={handleBlur}
-            />
-          </StyledProposalLabel>
-          <ErrorValidation>
-            <ErrorMessage name="number" />
-          </ErrorValidation>
-          <StyledProposalButton type="submit">
-            SEND MY FREE PROPOSAL
-          </StyledProposalButton>
-        </Form>
-      </StyledProposalForm>
+        <label htmlFor="email">Email: </label>
+        <StyledProposalInput name="email" />
+        <ErrorMessage name="email" />
+
+        <label htmlFor="message">Message: </label>
+        <StyledProposalInput name="message" component="textarea" />
+        <ErrorMessage name="message" />
+
+        <button type="submit">Send</button>
+      </Form>
     )}
   </Formik>
 )
