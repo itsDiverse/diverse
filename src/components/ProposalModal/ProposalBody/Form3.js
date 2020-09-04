@@ -11,23 +11,6 @@ import * as Yup from "yup"
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
-const encode = data => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&")
-}
-
-const FormSchema = Yup.object().shape({
-  name: Yup.string()
-    .min(2, "*Too Short!")
-    .max(70, "*Too Long!")
-    .required(""),
-  email: Yup.string()
-    .email("*Invalid email")
-    .required("*Required"),
-  number: Yup.string().matches(phoneRegExp, "Phone number is not valid"),
-})
-
 export const Form3 = ({ setStep, formData, setFormData }) => (
   <form
     data-netlify-honeypot="bot-field"
@@ -68,5 +51,5 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
     <StyledProposalButton type="submit">
       SEND MY FREE PROPOSAL
     </StyledProposalButton>
-  </Form>
+  </form>
 )
