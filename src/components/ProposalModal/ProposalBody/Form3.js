@@ -46,7 +46,6 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
           ...values,
         }),
       }).then(() => {
-        console.log(values)
         resetForm()
         setStep(4)
       })
@@ -54,6 +53,8 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
   >
     {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
       <Form
+        onSubmit={handleSubmit}
+        method="post"
         data-netlify-honeypot="bot-field"
         data-netlify="true"
         name="Contact Form2"
