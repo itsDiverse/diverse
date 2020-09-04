@@ -1,9 +1,9 @@
 import React from "react"
 import {
   StyledProposalForm,
-  StyledProposalLabel,
+  label,
   StyledProposalButton,
-  StyledProposalInput,
+  input,
   ErrorValidation,
 } from "../Proposal.styles"
 import { Formik, ErrorMessage, Form } from "formik"
@@ -20,34 +20,26 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
   >
     <input type="hidden" name="bot-field" />
     <input type="hidden" name="form-name" value="contact" />
-    <StyledProposalLabel>
+    <label>
       What’s your website?
-      <StyledProposalInput type="string" name="website" />
-    </StyledProposalLabel>
-    <ErrorValidation>
-      <ErrorMessage name="website" />
-    </ErrorValidation>
-    <StyledProposalLabel>
+      <input type="string" name="website" />
+    </label>
+
+    <label>
       What’s your name?
-      <StyledProposalInput type="text" name="name" />
-    </StyledProposalLabel>
-    <ErrorValidation>
-      <ErrorMessage name="name" />
-    </ErrorValidation>
-    <StyledProposalLabel>
+      <input type="text" name="name" />
+    </label>
+
+    <label>
       What’s your email?
-      <StyledProposalInput type="email" name="email" />
-    </StyledProposalLabel>
-    <ErrorValidation>
-      <ErrorMessage name="email" />
-    </ErrorValidation>
-    <StyledProposalLabel>
+      <input type="email" name="email" />
+    </label>
+
+    <label>
       What’s your number?
-      <StyledProposalInput type="string" name="number" />
-    </StyledProposalLabel>
-    <ErrorValidation>
-      <ErrorMessage name="number" />
-    </ErrorValidation>
+      <input type="string" name="number" />
+    </label>
+
     <StyledProposalButton type="submit">
       SEND MY FREE PROPOSAL
     </StyledProposalButton>
