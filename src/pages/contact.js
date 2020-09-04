@@ -16,7 +16,7 @@ export default () => (
       </p>
       <p>
         <label>
-          Your Email: <input type="email" name="advertise" />
+          Your Email: <input type="text" name="advertise" />
         </label>
       </p>
       <p>
@@ -26,14 +26,10 @@ export default () => (
       </p>
       <p>
         <label>
-          Your Email: <input type="email" name="spend" />
+          Your Email: <input type="text" name="spend" />
         </label>
       </p>
-      <p>
-        <label>
-          Message: <textarea name="message"></textarea>
-        </label>
-      </p>
+
       <p>
         <label>
           Message: <textarea name="website"></textarea>
