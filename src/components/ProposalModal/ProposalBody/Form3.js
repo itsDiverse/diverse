@@ -53,6 +53,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
   >
     {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
       <Form
+        onSubmit={handleSubmit}
         data-netlify-honeypot="bot-field"
         data-netlify="true"
         name="Contact Form4"
@@ -114,7 +115,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
         <ErrorValidation>
           <ErrorMessage name="number" />
         </ErrorValidation>
-        <StyledProposalButton type="submit" onclick={handleSubmit}>
+        <StyledProposalButton type="submit">
           SEND MY FREE PROPOSAL
         </StyledProposalButton>
       </Form>
