@@ -42,7 +42,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
-          "form-name": "Contact Form4",
+          "form-name": "Contact Form3",
           ...values,
         }),
       }).then(() => {
@@ -53,23 +53,22 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
   >
     {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
       <Form
-        onSubmit={handleSubmit}
         data-netlify-honeypot="bot-field"
         data-netlify="true"
-        name="Contact Form4"
+        name="Contact Form3"
         style={{ textAlign: "center" }}
       >
         <StyledProposalInput type="hidden" name="bot-field" />
         <StyledProposalInput
           type="hidden"
           name="form-name"
-          value="Contact Form4"
+          value="Contact Form3"
         />
         <StyledProposalLabel>
           What’s your website?
           <StyledProposalInput
             type="string"
-            name="website"
+            name="goals"
             onChange={handleChange}
             onBlur={handleBlur}
           />
@@ -115,7 +114,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
         <ErrorValidation>
           <ErrorMessage name="number" />
         </ErrorValidation>
-        <StyledProposalButton type="submit">
+        <StyledProposalButton type="submit" onClick={handleSubmit}>
           SEND MY FREE PROPOSAL
         </StyledProposalButton>
       </Form>
