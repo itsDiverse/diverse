@@ -27,6 +27,12 @@ const optionsAdvertise = [
   { value: "other", label: "Other..." },
 ]
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
+
 export const Form1 = ({ setStep, formData, setFormData }) => (
   <Formik
     initialValues={{
@@ -35,8 +41,16 @@ export const Form1 = ({ setStep, formData, setFormData }) => (
     }}
     validationSchema={FormSchema}
     onSubmit={(values, actions) => {
-      setFormData({ ...formData, ...values })
-      setStep(2)
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "contact",
+          ...values,
+        }),
+      }).then(() => {
+        setStep(2)
+      })
     }}
   >
     {({
@@ -48,7 +62,14 @@ export const Form1 = ({ setStep, formData, setFormData }) => (
       handleBlur,
       handleSubmit,
     }) => (
-      <StyledProposalForm>
+      <Form
+        data-netlify-honeypot="bot-field"
+        data-netlify="true"
+        name="contact"
+        style={{ textAlign: "center" }}
+      >
+        <StyledProposalInput type="hidden" name="bot-field" />
+        <StyledProposalInput type="hidden" name="form-name" value="contact" />
         <StyledProposalLabel>
           What are your goals?
           <SelectOwn
