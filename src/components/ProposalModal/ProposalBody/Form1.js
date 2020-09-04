@@ -1,8 +1,7 @@
 import React from "react"
-import { Formik, ErrorMessage, Form } from "formik"
+import { Formik, ErrorMessage } from "formik"
 import * as Yup from "yup"
 import {
-  StyledProposalInput,
   StyledProposalForm,
   StyledProposalLabel,
   StyledProposalButton,
@@ -49,20 +48,7 @@ export const Form1 = ({ setStep, formData, setFormData }) => (
       handleBlur,
       handleSubmit,
     }) => (
-      <Form
-        onSubmit="submit"
-        method="post"
-        data-netlify-honeypot="bot-field"
-        data-netlify="true"
-        name="Contact Form3"
-        style={{ textAlign: "center" }}
-      >
-        <StyledProposalInput type="hidden" name="bot-field" />
-        <StyledProposalInput
-          type="hidden"
-          name="form-name"
-          value="Contact Form3"
-        />
+      <StyledProposalForm>
         <StyledProposalLabel>
           What are your goals?
           <SelectOwn
@@ -94,7 +80,7 @@ export const Form1 = ({ setStep, formData, setFormData }) => (
         <StyledProposalButton type="submit" onClick={handleSubmit}>
           CONTINUE
         </StyledProposalButton>
-      </Form>
+      </StyledProposalForm>
     )}
   </Formik>
 )

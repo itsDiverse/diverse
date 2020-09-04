@@ -37,15 +37,24 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
       number: "",
     }}
     validationSchema={FormSchema}
-    onSubmit={values => {
-      setFormData({ ...formData, ...values })
-      setStep(4)
+    onSubmit={(values, { resetForm }) => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "Contact Form3",
+          ...values,
+          ...formData,
+        }),
+      }).then(() => {
+        console.log(formData, values)
+        resetForm()
+        setStep(4)
+      })
     }}
   >
     {({ errors, touched, handleChange, handleBlur, handleSubmit }) => (
       <Form
-        onSubmit="submit"
-        method="post"
         data-netlify-honeypot="bot-field"
         data-netlify="true"
         name="Contact Form3"
