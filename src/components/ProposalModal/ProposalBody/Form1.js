@@ -1,7 +1,8 @@
 import React from "react"
-import { Formik, ErrorMessage } from "formik"
+import { Formik, ErrorMessage, Form } from "formik"
 import * as Yup from "yup"
 import {
+  StyledProposalInput,
   StyledProposalForm,
   StyledProposalLabel,
   StyledProposalButton,
@@ -101,7 +102,7 @@ export const Form1 = ({ setStep, formData, setFormData }) => (
         <StyledProposalButton type="submit" onClick={handleSubmit}>
           CONTINUE
         </StyledProposalButton>
-      </StyledProposalForm>
+      </Form>
     )}
   </Formik>
 )
