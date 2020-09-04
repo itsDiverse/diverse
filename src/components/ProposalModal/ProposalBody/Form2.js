@@ -49,7 +49,7 @@ export const Form2 = ({ setStep, formData, setFormData }) => (
       handleSubmit,
     }) => (
       <Form
-        onSubmit={handleSubmit}
+        onSubmit="submit"
         method="post"
         data-netlify-honeypot="bot-field"
         data-netlify="true"
