@@ -11,9 +11,9 @@ import * as Yup from "yup"
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
-const encode = values => {
-  return Object.keys(values)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(values[key]))
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&")
 }
 
@@ -42,12 +42,10 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
-          "form-name": "Contact Form3",
+          "form-name": "Contact Form4",
           ...values,
-          ...formData,
         }),
       }).then(() => {
-        console.log(formData, values)
         resetForm()
         setStep(4)
       })
@@ -57,14 +55,14 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
       <Form
         data-netlify-honeypot="bot-field"
         data-netlify="true"
-        name="Contact Form3"
+        name="Contact Form4"
         style={{ textAlign: "center" }}
       >
         <StyledProposalInput type="hidden" name="bot-field" />
         <StyledProposalInput
           type="hidden"
           name="form-name"
-          value="Contact Form3"
+          value="Contact Form4"
         />
         <StyledProposalLabel>
           What’s your website?
