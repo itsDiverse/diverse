@@ -37,16 +37,18 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
       number: "",
     }}
     validationSchema={FormSchema}
-    onSubmit={values => {
+    onSubmit={(values, { resetForm }) => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
           "form-name": "Contact Form2",
           ...values,
+          formData,
         }),
       }).then(() => {
         console.log(values)
+        resetForm()
         setStep(4)
       })
     }}
