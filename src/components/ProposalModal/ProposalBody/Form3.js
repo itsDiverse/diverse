@@ -13,6 +13,7 @@ const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2
 
 export const Form3 = ({ setStep, formData, setFormData }) => (
   <form
+    method="POST"
     data-netlify-honeypot="bot-field"
     data-netlify="true"
     name="contact"
