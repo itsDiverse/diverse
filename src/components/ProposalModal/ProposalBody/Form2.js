@@ -2,6 +2,7 @@ import React from "react"
 import { Formik, ErrorMessage, Form } from "formik"
 import * as Yup from "yup"
 import {
+  StyledProposalInput,
   StyledProposalForm,
   StyledProposalLabel,
   StyledProposalButton,
@@ -53,9 +54,15 @@ export const Form2 = ({ setStep, formData, setFormData }) => (
         method="post"
         data-netlify-honeypot="bot-field"
         data-netlify="true"
-        name="Contact Form2"
+        name="Contact Form3"
         style={{ textAlign: "center" }}
       >
+        <StyledProposalInput type="hidden" name="bot-field" />
+        <StyledProposalInput
+          type="hidden"
+          name="form-name"
+          value="Contact Form3"
+        />
         <StyledProposalLabel>
           Do you want leads or sales?
           <SelectOwn
