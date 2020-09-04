@@ -16,7 +16,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
     method="POST"
     data-netlify-honeypot="bot-field"
     data-netlify="true"
-    name="contact"
+    name="Contact Form 1"
     style={{ textAlign: "center" }}
   >
     <input type="hidden" name="bot-field" />
