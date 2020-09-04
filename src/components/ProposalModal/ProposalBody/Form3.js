@@ -68,7 +68,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
           What’s your website?
           <StyledProposalInput
             type="string"
-            name="goals"
+            name="website"
             onChange={handleChange}
             onBlur={handleBlur}
           />
