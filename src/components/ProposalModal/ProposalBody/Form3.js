@@ -11,9 +11,9 @@ import * as Yup from "yup"
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
-const encode = data => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+const encode = values => {
+  return Object.keys(values)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(values[key]))
     .join("&")
 }
 
