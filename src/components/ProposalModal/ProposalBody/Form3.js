@@ -13,36 +13,29 @@ const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2
 
 export const Form3 = ({ setStep, formData, setFormData }) => (
   <form
-    method="POST"
-    data-netlify-honeypot="bot-field"
+    name="contact"
+    method="post"
     data-netlify="true"
-    name="Contact Form1"
-    style={{ textAlign: "center" }}
+    data-netlify-honeypot="bot-field"
   >
-    <input type="hidden" name="bot-field" />
     <input type="hidden" name="form-name" value="contact" />
-    <label>
-      What’s your website?
-      <input type="string" name="website" />
-    </label>
-
-    <label>
-      What’s your name?
-      <input type="text" name="name" />
-    </label>
-
-    <label>
-      What’s your email?
-      <input type="email" name="email" />
-    </label>
-
-    <label>
-      What’s your number?
-      <input type="string" name="number" />
-    </label>
-
-    <StyledProposalButton type="submit">
-      SEND MY FREE PROPOSAL
-    </StyledProposalButton>
+    <p>
+      <label>
+        Your Name: <input type="text" name="name" />
+      </label>
+    </p>
+    <p>
+      <label>
+        Your Email: <input type="email" name="email" />
+      </label>
+    </p>
+    <p>
+      <label>
+        Message: <textarea name="message"></textarea>
+      </label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
   </form>
 )
