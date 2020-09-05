@@ -46,7 +46,7 @@ export const LogoMobile = () => (
     </g>
     <defs>
       <filter
-        id="filter0_i"
+        id="filter0_"
         x="0"
         y="0"
         width="55.75"
