@@ -36,6 +36,7 @@ export const Form1 = ({ setStep, formData, setFormData }) => (
     validationSchema={FormSchema}
     onSubmit={(values, actions) => {
       setFormData({ ...formData, ...values })
+      console.log(formData)
       setStep(2)
     }}
   >

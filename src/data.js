@@ -891,7 +891,7 @@ export const data = {
     marketingServices: {
       title: "Marketing & Writing ",
       service1: "PPC & SEO",
-      service2: "Social Madia & Email",
+      service2: "Social Media & Email",
       service3: "Writing/Copy Services",
       service4: "Research & Strategy",
     },
