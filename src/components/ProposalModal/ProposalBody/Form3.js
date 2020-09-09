@@ -43,7 +43,6 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
         body: encode({
           "form-name": "contact",
           ...values,
-          ...formData,
         }),
       }).then(() => {
         resetForm()

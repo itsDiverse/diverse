@@ -872,7 +872,7 @@ export const data = {
     heading: "How Our Services Work",
     title:
       "We follow customers on their journey to becoming a closed lead or sale.",
-    text: `In almost all service and product offerings, the customer does not make their buying decision the first time they see the offer. We develop end-to-end sales processes that turn strangers into loyal customers.
+    text: `In almost all service and product offerings, the customer does not make their buying decision the first time they see an offer. We develop end-to-end sales processes that turn strangers into loyal customers.
     `,
 
     //Buttons
