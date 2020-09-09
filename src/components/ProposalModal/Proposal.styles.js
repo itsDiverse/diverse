@@ -3,9 +3,10 @@ import { Field } from "formik"
 import { Link } from "gatsby"
 
 export const StyledClose = styled(Link)`
+  display: none;
   text-decoration: none;
   font-size: 12px;
-
+  padding-top: 0.5rem;
   color: white-smoke;
   &:visited {
     color: whiteSmoke;
@@ -20,7 +21,6 @@ export const StyledClose = styled(Link)`
   }
 
   @media (max-width: 768px) {
-    padding-top: 0.5rem;
     display: block;
     margin-top: 0px;
     margin-bottom: 20px;
