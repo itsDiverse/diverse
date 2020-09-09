@@ -40,7 +40,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: JSON.stringify({
+        body: encode({
           "form-name": "contact",
           ...values,
           ...formData,
