@@ -171,7 +171,7 @@ export const StyledContentWrapper = styled.div`
         padding-left: 2rem;
         padding-bottom: 0px;
         text-align: left;
-        align-items: end;
+        align-items: start;
         z-index: 1;
       }
       .title-section h1 {
