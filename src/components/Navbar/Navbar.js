@@ -9,7 +9,7 @@ import { mobile } from "../../utils/media"
 
 import NavLinks from "./NavLinks"
 import { ModalLink } from "../ModalLink"
-import { Brand } from "../Brand"
+import Logo from "../../images/diverseLogo.svg"
 import MobileNavbar from "./MobileNavbar"
 
 const Wrapper = styled.nav`
@@ -119,7 +119,7 @@ class NavBar extends PureComponent {
               <NormalNavbar>
                 <StartWrapper aria-label="logo">
                   <LogoLink>
-                    <Brand />
+                    <img src={Logo} alt="alt" />
                   </LogoLink>
                 </StartWrapper>
                 <NavLinks aria-label="links" />

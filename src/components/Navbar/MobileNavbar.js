@@ -9,11 +9,11 @@ import { mobile } from "../../utils/media"
 import NavLinksMobile from "./NavLinksMobile"
 import NavSeparator from "./NavSeparator"
 import NavButton from "./NavButton"
-import { IconApp } from "../Icons"
-import { IconMobileNavbarV1 } from "../../components/Icons/IconMobileNavbar_v1"
-import { IconCloseMobileNavbarV1 } from "../../components/Icons/IconCloseMobileNavbar_v1"
+import IconApp from "../../images/iconApp.svg"
+import { IconMobileNavbarV1 } from "../Icons/IconMobileNavbar_v1"
+import { IconCloseMobileNavbarV1 } from "../Icons/IconCloseMobileNavbar_v1"
 import { ModalLink } from "../ModalLink"
-import { Brand } from "../Brand"
+import Logo from "../../images/diverseLogo.svg"
 
 const Wrapper = styled.div`
   margin: 0;
@@ -183,7 +183,7 @@ const MobileNavbar = props => {
       render={data => (
         <Wrapper>
           <LogoLink>
-            <IconApp />
+            <img src={IconApp} alt="logo" />
           </LogoLink>
           <ModalLink tabIndex="-1" to="/freeProposal/">
             <Button>GET A PROPOSAL</Button>
@@ -203,7 +203,7 @@ const MobileNavbar = props => {
           <SecondaryMenu open={!isMobileNavFolded}>
             <PrimaryMenuItem>
               <BrandSecondaryMenuWrapper>
-                <Brand />
+                <img src={Logo} alt="logo" />
               </BrandSecondaryMenuWrapper>
               <IconWrapperClose
                 onClick={onMobileNavToggle}

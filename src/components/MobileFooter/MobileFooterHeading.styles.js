@@ -23,3 +23,7 @@ export const StyledParagraph = styled.p`
   color: #707070;
   padding: 10px 5px 0px 0px;
 `
+
+export const StyledImg = styled.img`
+  align-self: self-start;
+`

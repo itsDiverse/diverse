@@ -1,5 +1,5 @@
 import React from "react"
-import { Brand } from "../Brand"
+import Logo from "../../images/diverseLogo.svg"
 import { IconInstagram, IconFacebook } from "../Icons"
 
 import {
@@ -23,7 +23,7 @@ export const FooterSections = () => (
     <StyledSectionContainer>
       <StyledSectionLeft>
         <StyledLinkBrand to="/">
-          <Brand />
+          <img src={Logo} alt="logo" />
         </StyledLinkBrand>
         <StyledSectionPhrase>
           We develop multi-channel sales processes to help businesses attract,

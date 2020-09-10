@@ -5,7 +5,7 @@ export const IconApp = ({ size }) => (
     width={size}
     height={size}
     viewBox="0 0 43 42"
-    fill="none"
+    fill="red"
     xmlns="http://www.w3.org/2000/svg"
   >
     <g filter="url(#filter0_i)">
