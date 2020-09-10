@@ -37,7 +37,7 @@ export const StyledVideoContainer = styled.div`
   z-index: -1;
 `
 export const StyledVideo = styled.video`
-  transform: scale(1.5);
+  transform: scale(1.5) translateY(-50px);
   @media (min-width: 1000px) {
     transform: scale(1.5) translateY(-50px);
   }
