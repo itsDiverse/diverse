@@ -131,7 +131,7 @@ export const StyledContentWrapper = styled.div`
       }
       .title-section {
         margin: 40px 0px;
-        padding: 205px 75px 0px 90px;
+        padding: 205px 75px 0px 40px;
         text-align: left;
         z-index: 1;
         order: -1;
@@ -154,7 +154,7 @@ export const StyledContentWrapper = styled.div`
         display: flex;
         width: fit-content;
         z-index: 1;
-        transform: translateX(1px) translateY(-100px);
+        transform: translateX(50px) translateY(-100px);
       }
       .services-list li {
         padding: 5px;
