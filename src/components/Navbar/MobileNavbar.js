@@ -185,9 +185,9 @@ const MobileNavbar = props => {
           <LogoLink>
             <LogoMobile />
           </LogoLink>
-          <Link tabIndex="-1" to="/freeProposal/">
+          <ModalLink tabIndex="-1" to="/freeProposal/">
             <Button>GET A PROPOSAL</Button>
-          </Link>
+          </ModalLink>
           <Wrapper>
             <NavButton
               aria-label="mobile navbar"
