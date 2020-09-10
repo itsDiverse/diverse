@@ -6,7 +6,7 @@ export const StyledComingWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 0px;
+  padding: 70px 0px;
 `
 
 export const StyledHeading = styled.p`
@@ -33,7 +33,8 @@ export const StyledVideoContainer = styled.div`
   display: flex;
   justify-content: center;
   max-height: 442px;
-  z-index: 0;
+  margin-bottom: -150px;
+  z-index: -1;
 `
 export const StyledVideo = styled.video`
   transform: scale(1.5);

@@ -352,7 +352,7 @@ export const StyledFooterTitleStepTwo = styled.p`
   line-height: 21px;
 `
 
-export const StyledNameStrong = styled.p`
+export const StyledNameStrong = styled.span`
   margin-top: 5px;
   margin-bottom: -15px;
   font-family: NovaSemi;

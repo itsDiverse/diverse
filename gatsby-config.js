@@ -57,7 +57,7 @@ module.exports = {
             overlay: {
               zIndex: 1001,
               backdropFilter: "blur(8px)",
-              webkitBackdropFilter: "blur(8px)",
+              WebkitBackdropFilter: "blur(8px)",
             },
 
             content: {
