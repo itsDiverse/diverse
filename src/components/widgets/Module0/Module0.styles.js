@@ -21,8 +21,6 @@ export const StyledContentWrapper = styled.div`
       display: flex;
       justify-content: space-around;
       flex-direction: column-reverse;
-      margin-left: auto;
-      margin-right: auto;
     }
     .title-section {
       display: flex;
@@ -173,6 +171,7 @@ export const StyledContentWrapper = styled.div`
         padding-left: 2rem;
         padding-bottom: 0px;
         text-align: left;
+        align-items: end;
         z-index: 1;
       }
       .title-section h1 {
