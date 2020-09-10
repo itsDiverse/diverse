@@ -4,6 +4,7 @@ import { StyledContentWrapper } from "./Module0.styles"
 import { GetFreeProposalButton } from "../../Button"
 import { ModalLink } from "../../ModalLink"
 import { useMediaQuery } from "react-responsive"
+import Brands from "../../../images/Module0/brands.svg"
 
 export default props => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1000px)" })
@@ -58,7 +59,7 @@ export default props => {
               </div>
             </div>
             <div className="brands-wrapper">
-              <img src={props.images.brands} alt={props.images.brandsAlt} />
+              <img src={Brands} alt={props.images.brandsAlt} />
             </div>
           </div>
         </div>
