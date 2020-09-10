@@ -43,6 +43,7 @@ export const GetFreeProposalButton = styled.button`
     background: #fff;
     color: #195bb6;
     outline: none;
+    text-shadow: none;
   }
 
   &:active {
