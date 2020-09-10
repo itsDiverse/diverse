@@ -9,7 +9,6 @@ import { mobile } from "../../utils/media"
 
 import NavLinks from "./NavLinks"
 import { ModalLink } from "../ModalLink"
-//import { Logo } from "./logo"
 import { Brand } from "../Brand"
 import MobileNavbar from "./MobileNavbar"
 

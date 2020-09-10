@@ -9,7 +9,7 @@ import { mobile } from "../../utils/media"
 import NavLinksMobile from "./NavLinksMobile"
 import NavSeparator from "./NavSeparator"
 import NavButton from "./NavButton"
-import { LogoMobile } from "./logoMobile"
+import { IconApp } from "../Icons"
 import { IconMobileNavbarV1 } from "../../components/Icons/IconMobileNavbar_v1"
 import { IconCloseMobileNavbarV1 } from "../../components/Icons/IconCloseMobileNavbar_v1"
 import { ModalLink } from "../ModalLink"
@@ -183,7 +183,7 @@ const MobileNavbar = props => {
       render={data => (
         <Wrapper>
           <LogoLink>
-            <LogoMobile />
+            <IconApp />
           </LogoLink>
           <ModalLink tabIndex="-1" to="/freeProposal/">
             <Button>GET A PROPOSAL</Button>
