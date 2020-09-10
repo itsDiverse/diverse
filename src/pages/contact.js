@@ -1,7 +1,7 @@
 import React from "react"
 import { LayoutV1 } from "../components/Layout"
 export default () => (
-  <div style={{ display: "none" }}>
+  <div style={{}}>
     <LayoutV1>
       <form
         name="contact"
