@@ -52,7 +52,7 @@ export const Form2 = ({ setStep, formData, setFormData }) => (
         <StyledProposalLabel>
           Do you want leads or sales?
           <SelectOwn
-            value={values.sell}
+            value={values.sell.value}
             type="string"
             name="sell"
             onChange={option => setFieldValue("sell", option.value)}
@@ -67,7 +67,7 @@ export const Form2 = ({ setStep, formData, setFormData }) => (
         <StyledProposalLabel>
           What's your monthly PPC ad spend?
           <SelectOwn
-            value={values.spend}
+            value={values.spend.value}
             type="string"
             name="spend"
             onChange={option => setFieldValue("spend", option.value)}
