@@ -46,7 +46,6 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
           ...formData,
         }),
       }).then(() => {
-        console.log(values, formData)
         resetForm()
         setStep(4)
       })
