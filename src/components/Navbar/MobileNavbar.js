@@ -183,7 +183,7 @@ const MobileNavbar = props => {
       render={data => (
         <Wrapper>
           <LogoLink>
-            <img src={IconApp} alt="logo" />
+            <img width="43" height="42" src={IconApp} alt="logo" />
           </LogoLink>
           <ModalLink tabIndex="-1" to="/freeProposal/">
             <Button>GET A PROPOSAL</Button>
@@ -203,7 +203,7 @@ const MobileNavbar = props => {
           <SecondaryMenu open={!isMobileNavFolded}>
             <PrimaryMenuItem>
               <BrandSecondaryMenuWrapper>
-                <img src={Logo} alt="logo" />
+                <img width="153" height="44" src={Logo} alt="logo" />
               </BrandSecondaryMenuWrapper>
               <IconWrapperClose
                 onClick={onMobileNavToggle}
