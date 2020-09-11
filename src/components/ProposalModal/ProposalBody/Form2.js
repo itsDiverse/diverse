@@ -55,7 +55,7 @@ export const Form2 = ({ setStep, formData, setFormData }) => (
             value={values.sell}
             type="string"
             name="sell"
-            onChange={option => setFieldValue("sell", option)}
+            onChange={option => setFieldValue("sell", option.value)}
             onBlur={handleBlur}
             options={optionsSell}
             autofocus
@@ -70,7 +70,7 @@ export const Form2 = ({ setStep, formData, setFormData }) => (
             value={values.spend}
             type="string"
             name="spend"
-            onChange={option => setFieldValue("spend", option)}
+            onChange={option => setFieldValue("spend", option.value)}
             onBlur={handleBlur}
             options={optionsSpend}
           />

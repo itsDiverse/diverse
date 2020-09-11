@@ -36,7 +36,6 @@ export const Form1 = ({ setStep, formData, setFormData }) => (
     validationSchema={FormSchema}
     onSubmit={(values, actions) => {
       setFormData({ ...formData, ...values })
-      console.log(formData)
       setStep(2)
     }}
   >
@@ -56,7 +55,7 @@ export const Form1 = ({ setStep, formData, setFormData }) => (
             value={values.goals}
             type="string"
             name="goals"
-            onChange={option => setFieldValue("goals", option)}
+            onChange={option => setFieldValue("goals", option.value)}
             onBlur={handleBlur}
             options={optionsGoals}
           />
@@ -70,7 +69,7 @@ export const Form1 = ({ setStep, formData, setFormData }) => (
             value={values.advertise}
             type="string"
             name="advertise"
-            onChange={option => setFieldValue("advertise", option)}
+            onChange={option => setFieldValue("advertise", option.value)}
             onBlur={handleBlur}
             options={optionsAdvertise}
           />
