@@ -93,7 +93,6 @@ module.exports = {
         prettier: true, // use prettier to format JS code output (default)
         svgo: false, // use svgo to optimize SVGs (default)
         svgoConfig: {
-          removeViewBox: true, // remove viewBox when possible (default)
           cleanupIDs: false, // remove unused IDs and minify remaining IDs (default)
         },
       },
