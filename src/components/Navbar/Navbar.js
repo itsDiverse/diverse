@@ -119,7 +119,11 @@ class NavBar extends PureComponent {
               <NormalNavbar>
                 <StartWrapper aria-label="logo">
                   <LogoLink>
-                    <img src={Logo} alt="alt" />
+                    <object
+                      type="image/svg+xml"
+                      data={Logo}
+                      aria-label="logo"
+                    ></object>
                   </LogoLink>
                 </StartWrapper>
                 <NavLinks aria-label="links" />

@@ -23,7 +23,7 @@ export const FooterSections = () => (
     <StyledSectionContainer>
       <StyledSectionLeft>
         <StyledLinkBrand to="/">
-          <img width="180" height="55" src={LogoFooter} alt="logo" />
+          <object type="image/svg+xml" data={LogoFooter} aria-label="logo" />
         </StyledLinkBrand>
         <StyledSectionPhrase>
           We develop multi-channel sales processes to help businesses attract,
