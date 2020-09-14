@@ -183,7 +183,7 @@ const MobileNavbar = props => {
       render={data => (
         <Wrapper>
           <LogoLink>
-            <img width="43" height="42" src={IconApp} alt="logo" />
+            <img src={IconApp} alt="logo" />
           </LogoLink>
           <ModalLink tabIndex="-1" to="/freeProposal/">
             <Button>GET A PROPOSAL</Button>
