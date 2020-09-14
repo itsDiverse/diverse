@@ -203,7 +203,7 @@ const MobileNavbar = props => {
           <SecondaryMenu open={!isMobileNavFolded}>
             <PrimaryMenuItem>
               <BrandSecondaryMenuWrapper>
-                <img width="153" height="44" src={Logo} alt="logo" />
+                <img src={Logo} alt="logo" />
               </BrandSecondaryMenuWrapper>
               <IconWrapperClose
                 onClick={onMobileNavToggle}
