@@ -5,11 +5,13 @@ import {
   StyledParagraph,
   StyledImg,
 } from "./MobileFooterHeading.styles"
-import Logo from "../../images/diverseLogo.svg"
+import LogoFooter from "../../images/diverseLogoFooter.svg"
 
 export const MobileFooterHeading = () => (
   <StyledMobileFooterHeading>
-    <StyledImg src={Logo} alt="logo" />
+    <object type="image/svg+xml" data={LogoFooter} aria-label="logo">
+      <StyledImg src={LogoFooter} alt="logo" />
+    </object>
     <StyledParagraph>
       We develop multi-channel sales processes to help businesses attract,
       close, and retain customers.
