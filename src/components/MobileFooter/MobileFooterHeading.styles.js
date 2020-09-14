@@ -5,6 +5,7 @@ export const StyledMobileFooterHeading = styled.div`
   flex-direction: column;
   padding: 20px 0px 0px;
   flex: 1;
+  align-items: flex-start;
 `
 export const StyledGrayRow = styled.div`
   padding: 15px 15px;
@@ -25,5 +26,5 @@ export const StyledParagraph = styled.p`
 `
 
 export const StyledImg = styled.img`
-  align-self: self-start;
+  align-self: center;
 `
