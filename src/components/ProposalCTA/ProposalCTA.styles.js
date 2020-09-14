@@ -12,6 +12,7 @@ export const StyledButtonDescription = styled.div`
   flex-direction: column;
   justify-content: center;
   margin-left: 20px;
+  text-decoration: none;
 `
 
 export const StyledProposalTitle = styled.p`
