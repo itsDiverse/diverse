@@ -14,6 +14,7 @@ export default props => {
                 {props.theme.video && !isTabletOrMobile ? (
                   <video
                     id="Video24"
+                    preload="none"
                     poster={props.images.cubeObjects}
                     autoPlay
                     playsInline

@@ -18,8 +18,8 @@ export default props => {
                 {props.theme.video && !isTabletOrMobile ? (
                   <video
                     id="Video0"
-                    poster=""
-                    preload={props.images.pipesImage}
+                    preload="none"
+                    poster={props.images.pipesImage}
                     autoPlay
                     playsInline
                     muted
