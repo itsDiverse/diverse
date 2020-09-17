@@ -17,7 +17,7 @@ export default props => (
                 {props.theme.video ? (
                   <video
                     id="Video23"
-                    poster=""
+                    poster={props.images.cubeBox}
                     autoPlay
                     playsInline
                     muted

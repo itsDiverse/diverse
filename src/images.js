@@ -195,6 +195,10 @@ import sliderImg2 from "./images/Module22/slider-img-2.jpg"
 import sliderImg3 from "./images/Module22/slider-img-3.jpg"
 //++++++++++++++++++++++++++++++++++
 
+//import images Module 23+++++++++++
+import cubeBox from "./images/Module23/cubesImg.png"
+//++++++++++++++++++++++++++++++++++
+
 //import images Module 24+++++++++++
 import ellipse from "./images/Module24/ellipse.png"
 import cubeObjects from "./images/Module24/cubesObjectsImg.png"
@@ -507,6 +511,10 @@ export const images = {
     sliderImg2Alt: "",
     sliderImg3,
     sliderImg3Alt: "",
+  },
+  //----------------------------------Module 23
+  module23: {
+    cubeBox,
   },
   //----------------------------------Module 24
   module24: {

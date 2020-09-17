@@ -22,6 +22,7 @@ export default () => (
       component={Module23}
       theme={theme.module23}
       data={data.module23}
+      images={images.module23}
       videos={videos.module23}
     />
     <Module24
