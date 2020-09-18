@@ -15,6 +15,7 @@ export default props => {
                   <video
                     id="Video24"
                     preload="none"
+                    poster={props.images.cubeObjects}
                     autoPlay
                     playsInline
                     muted
