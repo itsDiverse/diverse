@@ -9,6 +9,7 @@ module.exports = {
     author: `@itsDiverse`,
   },
   plugins: [
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-plugin-html-attributes`,
       options: {
@@ -17,7 +18,6 @@ module.exports = {
     },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
