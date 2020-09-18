@@ -21,6 +21,7 @@
     "gatsby-plugin-modal-routing": "^1.2.0",
     "gatsby-plugin-netlify": "^2.3.15",
     "gatsby-plugin-offline": "^3.2.28",
+    "gatsby-plugin-preload-fonts": "^1.2.25",
     "gatsby-plugin-react-css-modules": "^2.3.11",
     "gatsby-plugin-react-helmet": "^3.3.11",
     "gatsby-plugin-react-svg": "^3.0.0",
