@@ -9,7 +9,12 @@ module.exports = {
     author: `@itsDiverse`,
   },
   plugins: [
-    `gatsby-plugin-preload-fonts`,
+    {
+      resolve: `gatsby-plugin-preload-fonts`,
+      options: {
+        crossOrigin: `use-credentials`,
+      },
+    },
     {
       resolve: `gatsby-plugin-html-attributes`,
       options: {
