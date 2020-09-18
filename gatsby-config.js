@@ -17,6 +17,7 @@ module.exports = {
     },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -38,7 +39,8 @@ module.exports = {
         defaultQuality: 50,
       },
     },
-    `gatsby-plugin-sharp` /*
+    `gatsby-plugin-sharp`,
+    "gatsby-plugin-svgr" /*
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -87,7 +89,6 @@ module.exports = {
         includeInDevelopment: false,
       },
     },
-    "gatsby-plugin-svgr",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
