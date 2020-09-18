@@ -46,9 +46,6 @@ class LayoutV1 extends PureComponent {
     const { isMobileNavFolded } = this.state
     return (
       <Wrapper>
-        <head>
-          <link rel="stylesheet" href="./styles/global.css" />
-        </head>
         <Nav
           isMobileNavFolded={isMobileNavFolded}
           onMobileNavToggle={this.toggleMobileNav}
