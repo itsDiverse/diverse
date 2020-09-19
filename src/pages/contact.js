@@ -13,7 +13,7 @@ export default () => (
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>
-            Your Name: <input type="text" name="goals" />
+            Your Namee: <input type="text" name="goals" />
           </label>
         </p>
         <p>
