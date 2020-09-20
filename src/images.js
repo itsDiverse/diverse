@@ -1,6 +1,6 @@
 //import images Module0 +++++++++++++
 import brands from "./images/Module0/brands.png"
-import pipesImage from "./images/Module0/pipesImg.png"
+import pipesImage from "../static/pipesImg.png"
 
 //import images Module 1 ++++++++++++
 import diverseLogo from "./images/QuadBox/diverseLogo.svg"
