@@ -1,3 +1,2 @@
-*.mp4 filter=lfs diff=lfs merge=lfs -text
 src/images/Module0/pipesImg.png filter=lfs diff=lfs merge=lfs -text
 src/images/Module23/cubesImg.png filter=lfs diff=lfs merge=lfs -text
