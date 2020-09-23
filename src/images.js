@@ -1,6 +1,6 @@
 //import images Module0 +++++++++++++
 import brands from "./images/Module0/brands.png"
-import pipesImage from "../static/pipesImg.png"
+//import pipesImage from "../static/pipesImg.png"
 
 //import images Module 1 ++++++++++++
 import diverseLogo from "./images/QuadBox/diverseLogo.svg"
@@ -226,7 +226,7 @@ export const images = {
   },
   //-------------------------------------Module0
   module0: {
-    pipesImage,
+    pipesImage: "https://www.meetdiverse.com/pipesImg.png",
     pipesImageAlt: "pipes",
     brands,
     brandsAlt: "brands logos",
