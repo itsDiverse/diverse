@@ -52,22 +52,10 @@ module.exports = {
         name: `diverse`,
         short_name: `diverse`,
         start_url: `/`,
-        background_color: ``,
-        theme_color: ``,
+        background_color: `#fff`,
+        theme_color: `#fff`,
         display: `standalone`,
         icon: `static/favicon.png`,
-        icons: [
-          {
-            src: `/favicons/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicons/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
       },
     },
     {

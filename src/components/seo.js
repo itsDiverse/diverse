@@ -65,7 +65,9 @@ function SEO({ description, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <noscript>This app works best with JavaScript enabled.</noscript>
+    </Helmet>
   )
 }
 
