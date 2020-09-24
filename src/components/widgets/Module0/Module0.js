@@ -19,7 +19,7 @@ export default props => {
                   <video
                     id="Video0"
                     preload="none"
-                    poster={props.images.pipesImage}
+                    poster=""
                     autoPlay
                     playsInline
                     muted
