@@ -196,12 +196,12 @@ import sliderImg3 from "./images/Module22/slider-img-3.jpg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 23+++++++++++
-import cubeBox from "./images/Module23/cubesImg.png"
+import cubeBox from "./images/static/cubesImg.png"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 24+++++++++++
 import ellipse from "./images/Module24/ellipse.png"
-import cubeObjects from "./images/Module24/cubesObjectsImg.png"
+import cubeObjects from "./static/cubesObjectsImg.png"
 //++++++++++++++++++++++++++++++++++
 
 export const images = {
