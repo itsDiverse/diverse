@@ -31,12 +31,12 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`,
       },
     },
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: "./static/favicon.png",
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-favicon`,
+    //   options: {
+    //     logo: "./static/favicon.png",
+    //   },
+    // },
 
     {
       resolve: `gatsby-plugin-sharp`,
@@ -45,19 +45,37 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
-    "gatsby-plugin-svgr" /*
+    "gatsby-plugin-svgr",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `diverse`,
+        short_name: `diverse`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: ``,
+        theme_color: ``,
+        display: `standalone`,
+        icon: `static/favicon.png`,
+        icons: [
+          {
+            src: `/favicons/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicons/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+        ],
       },
-    },*/,
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/freeProposal/`],
+      },
+    },
     "gatsby-plugin-eslint",
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-css-modules`,
@@ -92,12 +110,6 @@ module.exports = {
       options: {
         id: "GTM-5QQH65M",
         includeInDevelopment: false,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/freeProposal/`],
       },
     },
   ],
