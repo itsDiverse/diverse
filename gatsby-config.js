@@ -58,6 +58,9 @@ module.exports = {
         display: `standalone`,
         icon: `static/favicon.png`,
       },
+      icon_options: {
+        purpose: `maskable`,
+      },
     },
     {
       resolve: `gatsby-plugin-offline`,
