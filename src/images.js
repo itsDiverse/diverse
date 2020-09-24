@@ -514,13 +514,13 @@ export const images = {
   },
   //----------------------------------Module 23
   module23: {
-    cubeBox: "https://www.meetdiverse.com/pipesImg.png",
+    cubeBox: "https://www.meetdiverse.com/cubesimg.png",
     cubeBoxAlt: "cubes image",
   },
   //----------------------------------Module 24
   module24: {
     ellipse,
-    cubeObjects: "https://www.meetdiverse.com/pipesImg.png",
+    cubeObjects: "https://www.meetdiverse.com/cubesobjectsimg.png",
     cubeObjectsAlt: "cube image with objects",
   },
 }
