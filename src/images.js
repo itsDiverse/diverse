@@ -196,12 +196,12 @@ import sliderImg3 from "./images/Module22/slider-img-3.jpg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 23+++++++++++
-import cubeBox from "./images/static/cubesImg.png"
+//import cubeBox from "./images/Module23/cubesImg.png"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 24+++++++++++
 import ellipse from "./images/Module24/ellipse.png"
-import cubeObjects from "./static/cubesObjectsImg.png"
+//import cubeObjects from "./images/Module24/cubesObjectsImg.png"
 //++++++++++++++++++++++++++++++++++
 
 export const images = {
@@ -514,12 +514,13 @@ export const images = {
   },
   //----------------------------------Module 23
   module23: {
-    cubeBox,
+    cubeBox: "https://www.meetdiverse.com/pipesImg.png",
+    cubeBoxAlt: "cubes image",
   },
   //----------------------------------Module 24
   module24: {
     ellipse,
-    cubeObjects,
-    cubeObjectsAlt: "",
+    cubeObjects: "https://www.meetdiverse.com/pipesImg.png",
+    cubeObjectsAlt: "cube image with objects",
   },
 }
