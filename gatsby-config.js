@@ -24,7 +24,6 @@ module.exports = {
     },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-js-fallback`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
