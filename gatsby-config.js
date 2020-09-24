@@ -57,9 +57,9 @@ module.exports = {
         theme_color: `#fff`,
         display: `standalone`,
         icon: `static/favicon.png`,
-      },
-      icon_options: {
-        purpose: `maskable`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
     {
