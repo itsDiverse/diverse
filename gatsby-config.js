@@ -63,12 +63,7 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/freeProposal/`],
-      },
-    },
+    `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-css-modules`,
     {
