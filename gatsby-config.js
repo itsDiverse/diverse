@@ -22,6 +22,7 @@ module.exports = {
         lang: `en`,
       },
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     {
@@ -46,7 +47,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
-    "gatsby-plugin-svgr",
+    `gatsby-plugin-svgr`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -62,14 +63,8 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/freeProposal/`],
-      },
-    },
-    "gatsby-plugin-eslint",
-    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-remove-serviceworker`,
+    `gatsby-plugin-eslint`,
     `gatsby-plugin-react-css-modules`,
     {
       resolve: "gatsby-plugin-modal-routing",
