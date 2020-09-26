@@ -66,12 +66,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
+        precachePages: [`/freeProposal/`],
         workboxConfig: {
           runtimeCaching: [
             {
               urlPattern: /.*\.mp4/,
               handler: `NetworkOnly`,
-              precachePages: [`/freeProposal/`],
             },
           ],
         },
