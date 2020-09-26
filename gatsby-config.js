@@ -63,7 +63,19 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-remove-serviceworker`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        workboxConfig: {
+          runtimeCaching: [
+            {
+              urlPattern: /.*\.mp4/,
+              handler: `NetworkOnly`,
+            },
+          ],
+        },
+      },
+    },
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-css-modules`,
     {
