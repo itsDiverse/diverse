@@ -226,7 +226,7 @@ export const images = {
   },
   //-------------------------------------Module0
   module0: {
-    pipesImage: "https://www.meetdiverse.com/pipesImg.png",
+    pipesImage: "https://www.meetdiverse.com/pipesimg.png",
     pipesImageAlt: "pipes",
     brands,
     brandsAlt: "brands logos",
