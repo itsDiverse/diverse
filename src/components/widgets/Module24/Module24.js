@@ -23,11 +23,11 @@ export default props => {
                   >
                     <source
                       src={props.videos.cubesObjects}
-                      type="video/webm"
+                      type="video/mp4"
                     ></source>
                     <source
                       src={props.videos.cubesObjects1}
-                      type="video/mp4"
+                      type="video/m4v"
                     ></source>
                     <source
                       src={props.videos.cubesObjects2}
