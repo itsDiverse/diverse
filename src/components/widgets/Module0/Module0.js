@@ -18,13 +18,11 @@ export default props => {
                 {props.theme.video && !isTabletOrMobile ? (
                   <video
                     id="Video0"
-                    preload="auto"
-                    poster=""
+                    preload="yes"
                     autoPlay
                     playsInline
                     muted
                     loop
-                    crossOrigin="anonymous"
                     style={{ outline: "none" }}
                   >
                     <source

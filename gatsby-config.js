@@ -71,6 +71,7 @@ module.exports = {
             {
               urlPattern: /.*\.mp4/,
               handler: `NetworkOnly`,
+              precachePages: [`/freeProposal/`],
             },
           ],
         },
