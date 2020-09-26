@@ -18,7 +18,7 @@ export default props => {
                 {props.theme.video && !isTabletOrMobile ? (
                   <video
                     id="Video0"
-                    preload="none"
+                    preload="auto"
                     poster=""
                     autoPlay
                     playsInline
