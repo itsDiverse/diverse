@@ -40,10 +40,10 @@ export const videos = {
   },
   //---------------------------------Module 24
   module24: {
-    cubesObjects: "https://www.meetdiverse.com/cubesObjects.mp4",
+    cubesObjects: "https://www.meetdiverse.com/cubesobjects.mp4",
   },
   //---------------------------------ComingSoon Page
   comingSoon: {
-    comingSoon: "https://www.meetdiverse.com/comingSoon.mp4",
+    comingSoon: "https://www.meetdiverse.com/comingsoon.mp4",
   },
 }
