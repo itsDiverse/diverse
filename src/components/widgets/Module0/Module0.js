@@ -15,7 +15,14 @@ export default props => {
           <div className="toolssection">
             <div className="tools-section">
               <div className="video-container">
-                {props.theme.video && !isTabletOrMobile ? (
+                {props.theme.video && isTabletOrMobile ? (
+                  <div className="image-container">
+                    <img
+                      src={props.images.pipesImage}
+                      alt={props.images.pipesImageAlt}
+                    />
+                  </div>
+                ) : (
                   <video
                     id="Video0"
                     preload="none"
@@ -38,13 +45,6 @@ export default props => {
                       type="video/webm"
                     ></source>
                   </video>
-                ) : (
-                  <div className="image-container">
-                    <img
-                      src={props.images.pipesImage}
-                      alt={props.images.pipesImageAlt}
-                    />
-                  </div>
                 )}
               </div>
               <div className="title-section">

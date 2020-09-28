@@ -11,7 +11,14 @@ export default props => {
           <div className="toolssection">
             <div className="tools-section">
               <div className="video-container">
-                {props.theme.video && !isTabletOrMobile ? (
+                {props.theme.video && isTabletOrMobile ? (
+                  <div className="image-container">
+                    <img
+                      src={props.images.cubeObjects}
+                      alt={props.images.cubeObjectsAlt}
+                    />
+                  </div>
+                ) : (
                   <video
                     id="Video24"
                     preload="yes"
@@ -34,13 +41,6 @@ export default props => {
                       type="video/webm"
                     ></source>
                   </video>
-                ) : (
-                  <div className="image-container">
-                    <img
-                      src={props.images.cubeObjects}
-                      alt={props.images.cubeObjectsAlt}
-                    />
-                  </div>
                 )}
               </div>
               <div id="services" className="title-section">
