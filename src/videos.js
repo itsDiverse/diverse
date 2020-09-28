@@ -44,7 +44,7 @@ export const videos = {
   },
   //---------------------------------Module 24
   module24: {
-    cubesObjects: "https://www.meetdiverse.com/cubesObjects.mp4",
+    cubesObjects: "https://www.meetdiverse.com/cubesobjects.mp4",
     cubesObjects1: "https://www.meetdiverse.com/sample.m4v",
     cubesObjects2: "https://www.meetdiverse.com/samplewebm.webm",
   },

@@ -1,6 +1,4 @@
 static/*.mp4 filter=lfs diff=lfs merge=lfs -text
-static/pipesImg.png filter=lfs diff=lfs merge=lfs -text
-static/cubesImg.png filter=lfs diff=lfs merge=lfs -text
-static/cubesObjectsImg.png filter=lfs diff=lfs merge=lfs -text
+static/*.jpg filter=lfs diff=lfs merge=lfs -text
 static/sample.m4v filter=lfs diff=lfs merge=lfs -text
 static/samplewebm.webm filter=lfs diff=lfs merge=lfs -text

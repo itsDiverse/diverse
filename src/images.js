@@ -226,7 +226,7 @@ export const images = {
   },
   //-------------------------------------Module0
   module0: {
-    pipesImage: "https://www.meetdiverse.com/pipesimg.png",
+    pipesImage: "https://www.meetdiverse.com/pipesimg.jpg",
     pipesImageAlt: "pipes",
     brands,
     brandsAlt: "brands logos",
@@ -514,13 +514,13 @@ export const images = {
   },
   //----------------------------------Module 23
   module23: {
-    cubeBox: "https://www.meetdiverse.com/cubesimg.png",
+    cubeBox: "https://www.meetdiverse.com/cubesimg.jpg",
     cubeBoxAlt: "cubes image",
   },
   //----------------------------------Module 24
   module24: {
     ellipse,
-    cubeObjects: "https://www.meetdiverse.com/cubesobjectsimg.png",
+    cubeObjects: "https://www.meetdiverse.com/cubesobjectsimg.jpg",
     cubeObjectsAlt: "cube image with objects",
   },
 }
