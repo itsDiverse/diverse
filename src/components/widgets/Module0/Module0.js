@@ -19,7 +19,7 @@ export default props => {
                   <video
                     id="Video0"
                     preload="yes"
-                    autoPlay
+                    autoPlay="autoplay"
                     playsInline
                     muted
                     loop

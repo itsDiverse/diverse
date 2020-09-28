@@ -75,9 +75,6 @@ export const StyledContentWrapper = styled.div`
       -webkit-mask-image: -webkit-radial-gradient(white, black);
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
-      video::-webkit-media-controls-overlay-play-button {
-        display: none;
-      }
     }
     .image-container {
       display: flex;
