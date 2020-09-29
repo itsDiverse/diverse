@@ -17,7 +17,6 @@ export default props => (
                 <video
                   id="Video23"
                   preload="yes"
-                  poster=""
                   autoPlay
                   playsInline
                   muted
