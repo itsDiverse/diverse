@@ -11,37 +11,28 @@ export default props => {
           <div className="toolssection">
             <div className="tools-section">
               <div className="video-container">
-                {props.theme.video && isTabletOrMobile ? (
-                  <div className="image-container">
-                    <img
-                      src={props.images.cubeObjects}
-                      alt={props.images.cubeObjectsAlt}
-                    />
-                  </div>
-                ) : (
-                  <video
-                    id="Video24"
-                    preload="yes"
-                    autoPlay
-                    playsInline
-                    muted
-                    loop
-                    style={{ outline: "none" }}
-                  >
-                    <source
-                      src={props.videos.cubesObjects}
-                      type="video/mp4"
-                    ></source>
-                    <source
-                      src={props.videos.cubesObjects1}
-                      type="video/m4v"
-                    ></source>
-                    <source
-                      src={props.videos.cubesObjects2}
-                      type="video/webm"
-                    ></source>
-                  </video>
-                )}
+                <video
+                  id="Video24"
+                  preload="yes"
+                  autoPlay
+                  playsInline
+                  muted
+                  loop
+                  style={{ outline: "none" }}
+                >
+                  <source
+                    src={props.videos.cubesObjects}
+                    type="video/mp4"
+                  ></source>
+                  <source
+                    src={props.videos.cubesObjects1}
+                    type="video/m4v"
+                  ></source>
+                  <source
+                    src={props.videos.cubesObjects2}
+                    type="video/webm"
+                  ></source>
+                </video>
               </div>
               <div id="services" className="title-section">
                 <p className="heading-section">{props.data.heading}</p>

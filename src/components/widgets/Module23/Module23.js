@@ -17,33 +17,29 @@ export default props => {
             <div className="tools-section">
               <div className="video-container">
                 <div className="video-container">
-                  {props.theme.video && isTabletOrMobile ? (
-                    <div />
-                  ) : (
-                    <video
-                      id="Video23"
-                      preload="yes"
-                      poster=""
-                      autoPlay
-                      playsInline
-                      muted
-                      loop
-                      style={{ outline: "none" }}
-                    >
-                      <source
-                        src={props.videos.cubesVideo}
-                        type="video/mp4"
-                      ></source>
-                      <source
-                        src={props.videos.cubesVideo1}
-                        type="video/m4v"
-                      ></source>
-                      <source
-                        src={props.videos.cubesVideo2}
-                        type="video/webm"
-                      ></source>
-                    </video>
-                  )}
+                  <video
+                    id="Video23"
+                    preload="yes"
+                    poster=""
+                    autoPlay
+                    playsInline
+                    muted
+                    loop
+                    style={{ outline: "none" }}
+                  >
+                    <source
+                      src={props.videos.cubesVideo}
+                      type="video/mp4"
+                    ></source>
+                    <source
+                      src={props.videos.cubesVideo1}
+                      type="video/m4v"
+                    ></source>
+                    <source
+                      src={props.videos.cubesVideo2}
+                      type="video/webm"
+                    ></source>
+                  </video>
                 </div>
               </div>
               <div className="title-section">

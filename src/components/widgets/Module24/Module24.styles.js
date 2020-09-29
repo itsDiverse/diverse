@@ -74,6 +74,7 @@ export const StyledContentWrapper = styled.div`
       -moz-backface-visibility: hidden;
     }
     .video-container video {
+      transform: scale(1px) translateX(-20px) translateY(-50px);
       height: 100%;
       width: 100%;
     }
