@@ -17,7 +17,7 @@ export default props => {
               <div className="video-container">
                 <video
                   id="Video0"
-                  preload="none"
+                  preload="yes"
                   autoPlay="autoplay"
                   playsInline
                   muted
