@@ -71,14 +71,10 @@ export const StyledContentWrapper = styled.div`
     .video-container video {
       height: 100%;
       width: 100%;
-      transform: scale(1.2) translateX(-70px) translateY(-30px);
+      transform: scale(1.2) translateY(-35px) translateX(-70px);
       -webkit-mask-image: -webkit-radial-gradient(white, black);
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
-    }
-    *::-webkit-media-controls-start-playback-button {
-      display: none !important;
-      -webkit-appearance: none;
     }
     .image-container {
       display: flex;
@@ -124,6 +120,9 @@ export const StyledContentWrapper = styled.div`
         // flex: 1;
       }
       .video-container video {
+        transform: scale(1.5) translateX(-35px) translateY(-30px);
+      }
+      .image-container img {
         width: 100%;
         transform: scale(1.5) translateX(-30px) translateY(0px);
       }
@@ -133,8 +132,7 @@ export const StyledContentWrapper = styled.div`
         min-height: 100vh;
       }
       .video-container video {
-        width: 100%;
-        transform: scale(1.5) translateX(-60px) translateY(-40px);
+        transform: scale(1.6) translateX(-60px) translateY(-30px);
       }
       .image-container img {
         width: 100%;
@@ -143,8 +141,7 @@ export const StyledContentWrapper = styled.div`
     }
     @media (max-width: 320px) {
       .video-container video {
-        width: 100%;
-        transform: scale(1.2) translateX(-30px) translateY(-35px);
+        transform: scale(1.4) translateX(-30px) translateY(-50px);
       }
       .title-section {
         margin-top: -70px;
