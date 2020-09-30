@@ -76,8 +76,9 @@ export const StyledContentWrapper = styled.div`
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
     }
-    video::-webkit-media-controls {
+    *::-webkit-media-controls-start-playback-button {
       display: none !important;
+      -webkit-appearance: none;
     }
     .image-container {
       display: flex;
