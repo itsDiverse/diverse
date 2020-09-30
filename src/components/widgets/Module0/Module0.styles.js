@@ -151,7 +151,8 @@ export const StyledContentWrapper = styled.div`
         margin-top: -70px;
       }
       .title-section h1 {
-        font-size: 40px;
+        font-size: 42px;
+        line-height: 35px;
       }
       .brands-wrapper img {
         max-height: 120px;
