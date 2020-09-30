@@ -76,9 +76,9 @@ export const StyledContentWrapper = styled.div`
     .video-container video {
       height: 100%;
       width: 100%;
-    }
-    video::-webkit-media-controls {
-      display: none !important;
+      video::-webkit-media-controls {
+        display: none !important;
+      }
     }
     .services-container {
       display: flex;
