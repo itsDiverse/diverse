@@ -68,19 +68,6 @@ export const StyledContentWrapper = styled.div`
       width: 100%;
       z-index: 0;
     }
-    .video-container video {
-      height: 100%;
-      width: 100%;
-      transform: scale(1.2) translateY(-35px) translateX(-70px);
-      -webkit-mask-image: -webkit-radial-gradient(white, black);
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
-      *::-webkit-media-controls-start-playback-button {
-        display: none !important;
-        -webkit-appearance: none;
-      }
-    }
-
     .image-container {
       display: flex;
       width: 100%;
@@ -90,6 +77,19 @@ export const StyledContentWrapper = styled.div`
       width: 100%;
       height: 100%;
       transform: scale(1.2) translateX(-70px) translateY(-30px);
+    }
+    .video-container video {
+      height: 100%;
+      width: 100%;
+      transform: scale(1.2) translateY(-35px) translateX(-70px);
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+    }
+    .video-container video::-webkit-media-controls {
+      display: none !important;
+      position: absolute; top: -9999px
+      opacity: 0;
     }
     @media (max-width: 768px) and (orientation: portrait) {
       .container-lg {
