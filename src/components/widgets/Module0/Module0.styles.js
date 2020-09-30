@@ -76,6 +76,9 @@ export const StyledContentWrapper = styled.div`
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
     }
+    video::-webkit-media-controls {
+      display: none !important;
+    }
     .image-container {
       display: flex;
       width: 100%;

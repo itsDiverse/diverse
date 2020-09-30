@@ -77,6 +77,9 @@ export const StyledContentWrapper = styled.div`
       height: 100%;
       width: 100%;
     }
+    video::-webkit-media-controls {
+      display: none !important;
+    }
     .services-container {
       display: flex;
       flex-direction: column;
