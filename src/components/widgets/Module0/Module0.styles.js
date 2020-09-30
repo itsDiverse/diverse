@@ -75,11 +75,12 @@ export const StyledContentWrapper = styled.div`
       -webkit-mask-image: -webkit-radial-gradient(white, black);
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
+      *::-webkit-media-controls-start-playback-button {
+        display: none !important;
+        -webkit-appearance: none;
+      }
     }
-    *::-webkit-media-controls-start-playback-button {
-      display: none !important;
-      -webkit-appearance: none;
-    }
+
     .image-container {
       display: flex;
       width: 100%;
