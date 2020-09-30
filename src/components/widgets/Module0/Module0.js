@@ -15,39 +15,37 @@ export default props => {
           <div className="toolssection">
             <div className="tools-section">
               <div className="video-container">
-                {props =>
-                  isTabletOrMobile ? (
-                    <div className="image-container">
-                      <img
-                        src={props.images.pipesImage}
-                        alt={props.images.pipesImageAlt}
-                      />
-                    </div>
-                  ) : (
-                    <video
-                      id="Video0"
-                      preload="none"
-                      autoPlay="autoplay"
-                      playsInline
-                      muted
-                      loop
-                      style={{ outline: "none" }}
-                    >
-                      <source
-                        src={props.videos.cubePipesVideo}
-                        type="video/mp4"
-                      ></source>
-                      <source
-                        src={props.videos.cubePipesVideo1}
-                        type="video/m4v"
-                      ></source>
-                      <source
-                        src={props.videos.cubePipesVideo2}
-                        type="video/webm"
-                      ></source>
-                    </video>
-                  )
-                }
+                {isTabletOrMobile ? (
+                  <div className="image-container">
+                    <img
+                      src={props.images.pipesImage}
+                      alt={props.images.pipesImageAlt}
+                    />
+                  </div>
+                ) : (
+                  <video
+                    id="Video0"
+                    preload="none"
+                    autoPlay="autoplay"
+                    playsInline
+                    muted
+                    loop
+                    style={{ outline: "none" }}
+                  >
+                    <source
+                      src={props.videos.cubePipesVideo}
+                      type="video/mp4"
+                    ></source>
+                    <source
+                      src={props.videos.cubePipesVideo1}
+                      type="video/m4v"
+                    ></source>
+                    <source
+                      src={props.videos.cubePipesVideo2}
+                      type="video/webm"
+                    ></source>
+                  </video>
+                )}
               </div>
               <div className="title-section">
                 <p className="heading-section">{props.data.heading}</p>
