@@ -72,4 +72,4 @@ yarn-error.log
 .netlify
 
 #page for test 
-src/pages/widgets.js
+src/pages/test.js
