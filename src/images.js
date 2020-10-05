@@ -204,6 +204,10 @@ import ellipse from "./images/Module24/ellipse.png"
 //import cubeObjects from "./images/Module24/cubesObjectsImg.png"
 //++++++++++++++++++++++++++++++++++
 
+//import images Module 25+++++++++++
+
+//++++++++++++++++++++++++++++++++++
+
 export const images = {
   //-------------------------------------Template
   title: "",
@@ -523,4 +527,5 @@ export const images = {
     cubeObjects: "https://www.meetdiverse.com/cubesobjectsimg.jpg",
     cubeObjectsAlt: "cube image with objects",
   },
+  module25: {},
 }
