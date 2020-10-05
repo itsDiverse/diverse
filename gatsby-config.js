@@ -66,7 +66,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/freeProposal/`],
+        precachePages: [`/freeProposal/`, `/coomingSoon/`, `/404/`],
         workboxConfig: {
           runtimeCaching: [
             {
