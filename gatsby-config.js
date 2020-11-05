@@ -30,7 +30,6 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-        icon: `src/images/gatsby-icon.png`,
       },
     },
     // {
@@ -46,8 +45,14 @@ module.exports = {
         defaultQuality: 50,
       },
     },
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-svgr`,
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -50,
+        duration: 400,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
