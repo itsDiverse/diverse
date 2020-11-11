@@ -25,7 +25,7 @@ import { Button } from "../Button"
 import { ProposalCTA } from "../ProposalCTA"
 const GetInTouch = () => (
   <StyledButtonsCol>
-    <StyledButtonsRow>
+    {/* <StyledButtonsRow>
       <Button rounded primary small>
         <StyledButtonText to="/comingSoon/">CALL US</StyledButtonText>
       </Button>
@@ -35,7 +35,7 @@ const GetInTouch = () => (
       <Button rounded primary small>
         <StyledButtonText to="/comingSoon/"> EMAIL US</StyledButtonText>
       </Button>
-    </StyledButtonsRow>
+    </StyledButtonsRow> */}
     <StyledSmallDivider />
     <StyledCTARow>
       <ModalLink to="/freeProposal/">
@@ -83,7 +83,7 @@ export const MobileFooterSections = () => (
           Social Profiles:
           <StyledSectionSocialMediaIcons>
             <a
-              href="https://twitter.com/gatsbyjs"
+              href="https://www.facebook.com/meetDiverse"
               target="_blank"
               rel="noreferrer"
               aria-label="Find us on facebook"
@@ -91,7 +91,7 @@ export const MobileFooterSections = () => (
               <IconFacebook size={20} />
             </a>
             <a
-              href="https://instagram.com/gatsbyjs"
+              href="https://www.instagram.com/meetDiverse"
               target="_blank"
               rel="noreferrer"
               aria-label="Find us on instagram"
