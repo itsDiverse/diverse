@@ -36,22 +36,26 @@ export const FooterSections = () => (
       <StyledSectionRight>
         <StyledSectionColumns>
           <StyledSectionTitle>COMPANY</StyledSectionTitle>
-          <StyledSectionSubtitle to="/comingSoon/">
-            About Us
-          </StyledSectionSubtitle>
-          <StyledSectionSubtitle to="/comingSoon/">
+          <StyledSectionSubtitle to="/freeProposal/" state={{ modal: true }}>
             Free Proposal
           </StyledSectionSubtitle>
           <StyledSectionSubtitle to="/comingSoon/">
             Careers <label>HIRING</label>
           </StyledSectionSubtitle>
-          <StyledSectionSubtitle to="/comingSoon/">
+          <StyledSectionSubtitle to="/privacy/">
             Privacy Policy
           </StyledSectionSubtitle>
         </StyledSectionColumns>
         <StyledSectionColumns>
           <StyledSectionTitle>RESOURCES</StyledSectionTitle>
-          <StyledSectionSubtitle to="/comingSoon/">FAQs</StyledSectionSubtitle>
+          <StyledSectionSubtitle
+            to=""
+            href="https://www.facebook.com/meetDiverse/reviews/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Reviews
+          </StyledSectionSubtitle>
           <StyledSectionSubtitle to="/comingSoon/">
             Client Login
           </StyledSectionSubtitle>
@@ -59,9 +63,6 @@ export const FooterSections = () => (
         </StyledSectionColumns>
         <StyledSectionColumns>
           <StyledSectionTitle>GET IN TOUCH</StyledSectionTitle>
-          <StyledSectionSubtitle to="/comingSoon/">
-            Contact Us
-          </StyledSectionSubtitle>
           <StyledSectionSocialMedia>
             <a
               href="https://www.facebook.com/meetDiverse"
@@ -80,7 +81,9 @@ export const FooterSections = () => (
               <IconInstagram size={20} />
             </a>
           </StyledSectionSocialMedia>
-          <StyledSectionSubtitleSmall>Call Or Text:</StyledSectionSubtitleSmall>
+          <StyledSectionSubtitleSmall>
+            Give Us A Call:
+          </StyledSectionSubtitleSmall>
           <StyledSectionSubtitle to="" href="tel:8333483773">
             <span>(833)-DIVERSE</span>
           </StyledSectionSubtitle>
