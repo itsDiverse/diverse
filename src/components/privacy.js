@@ -116,7 +116,14 @@ export const Privacy = () => {
       <Title>Contact Us</Title>
       <Description>
         If you have any questions or suggestions about our Privacy Policy, do
-        not hesitate to contact us at support@itsdiverse.com.
+        not hesitate to contact us at{" "}
+        <a
+          style={{ textDecoration: "none", color: "#195bb6" }}
+          href={"mailto: support@itsdiverse.com"}
+        >
+          support@itsdiverse.com
+        </a>
+        .
       </Description>
     </div>
   )
