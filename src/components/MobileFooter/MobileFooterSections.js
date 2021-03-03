@@ -49,38 +49,37 @@ export const MobileFooterSections = () => (
   <StyledMobileFooterSections>
     <DropDown icon_expand="+" icon_expanded="-" title="OUR COMPANY">
       <StyledDropDownItemsContainer>
-        <StyledDropDownItem to="/comingSoon/"> About Us</StyledDropDownItem>
-        <StyledDropDownItem to="/comingSoon/">
-          {" "}
-          Privacy Policy
-        </StyledDropDownItem>
-        <StyledDropDownItem to="/comingSoon/">
+        <StyledDropDownItem to="/freeProposal/">
           {" "}
           Free Proposal
         </StyledDropDownItem>
-        <StyledDropDownItem to="/comingSoon/"> Terms</StyledDropDownItem>
+
         <StyledDropDownItem to="/comingSoon/">
           {" "}
           Careers <label>HIRING</label>
         </StyledDropDownItem>
+        <StyledDropDownItem to="/privacy/"> Privacy Policy</StyledDropDownItem>
       </StyledDropDownItemsContainer>
     </DropDown>
 
     <DropDown icon_expand="+" icon_expanded="-" title="RESOURCES">
       <StyledDropDownItemsContainer>
-        <StyledDropDownItem to="/comingSoon/"> FAQs</StyledDropDownItem>
-        <StyledDropDownItem to="/comingSoon/"> Blog</StyledDropDownItem>
+        <StyledDropDownItem
+          to=""
+          href="https://www.facebook.com/meetDiverse"
+          target="_blank"
+        >
+          {" "}
+          Reviews
+        </StyledDropDownItem>
         <StyledDropDownItem to="/comingSoon/"> Client Login</StyledDropDownItem>
+        <StyledDropDownItem to="/comingSoon/"> Blog</StyledDropDownItem>
       </StyledDropDownItemsContainer>
     </DropDown>
 
     <DropDown icon_expand="+" icon_expanded="-" title="GET IN TOUCH">
       <StyledGetInTouch>
-        <StyledPhoneNumber>
-          Phone Number: <span>(833)-Diverse</span>
-        </StyledPhoneNumber>
         <StyledSectionSocialMedia>
-          Social Profiles:
           <StyledSectionSocialMediaIcons>
             <a
               href="https://www.facebook.com/meetDiverse"
@@ -100,6 +99,9 @@ export const MobileFooterSections = () => (
             </a>
           </StyledSectionSocialMediaIcons>
         </StyledSectionSocialMedia>
+        <StyledPhoneNumber>
+          Give Us A Call: <span>(833)-Diverse</span>
+        </StyledPhoneNumber>
         <GetInTouch />
       </StyledGetInTouch>
     </DropDown>

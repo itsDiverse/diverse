@@ -26,16 +26,16 @@ const NavLink = styled(Link)`
   line-height: 2.125rem;
   transition: opacity 0.2s, transform 0.2s;
   cursor: pointer;
-  sletter-spacing: 0.015em;
+  letter-spacing: 0.015em;
   color: currentColor;
   &:hover,
   &:focus {
     background: #195bb6;
-    color:#fff !important;
+    color: #fff !important;
     border: 0px transparent;
     outline: none;
     border-style: none;
-  
+  }
 `
 
 const NavLinksMobile = () => (
@@ -81,9 +81,11 @@ const NavLinksMobile = () => (
         borderTop: "3px solid #195bb6",
         borderBottom: "3px solid #195bb6",
       }}
-      to="/comingSoon/"
+      to=""
+      href="https://www.facebook.com/meetDiverse/reviews/"
+      target="_blank"
     >
-      CONTACT US
+      REVIEWS
     </NavLink>
   </Wrapper>
 )

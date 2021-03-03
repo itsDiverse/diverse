@@ -57,7 +57,7 @@ const SecondaryMenu = styled.div`
   overflow-x: hidden;
   overflow-y: scroll;
   background: rgba(247, 247, 247, 1);
-  color: #55555;
+  color: #555555;
   font-weight: bold;
   z-index: 10;
 `
