@@ -8,7 +8,7 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   margin: 4rem;
-  max-width: 1240px;
+  max-width: 1200px;
 `
 
 const Title = styled.h3``
