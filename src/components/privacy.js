@@ -10,7 +10,7 @@ const Description = styled.p`
 
 export const Privacy = () => {
   return (
-    <div style={{ margin: "4rem" }}>
+    <div style={{ margin: "4rem", maxWidth: "1240px" }}>
       <Title>Privacy Policy</Title>
       <Description>
         Diverse Marketing LLC built the Diverse app as a Free app. This SERVICE
