@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import {
   StyledMobileFooterHeading,
@@ -9,9 +10,10 @@ import LogoFooter from "../../images/diverseLogoFooter.svg"
 
 export const MobileFooterHeading = () => (
   <StyledMobileFooterHeading>
-    <object type="image/svg+xml" data={LogoFooter} aria-label="logo">
+    <Link to="/">
       <StyledImg src={LogoFooter} alt="logo" />
-    </object>
+    </Link>
+
     <StyledParagraph>
       We develop multi-channel sales processes to help businesses attract,
       close, and retain customers.

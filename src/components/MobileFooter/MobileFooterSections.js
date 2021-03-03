@@ -9,19 +9,19 @@ import {
 
 import {
   StyledMobileFooterSections,
-  StyledButtonsRow,
+  //StyledButtonsRow,
   StyledButtonsCol,
   StyledPhoneNumber,
   StyledGetInTouch,
   StyledSmallDivider,
-  StyledButtonText,
+  //StyledButtonText,
   StyledCTARow,
   StyledSectionSocialMedia,
   StyledSectionSocialMediaIcons,
 } from "./MobileFooterSections.styles"
 
 import { DropDown } from "../DropDown"
-import { Button } from "../Button"
+//import { Button } from "../Button"
 import { ProposalCTA } from "../ProposalCTA"
 const GetInTouch = () => (
   <StyledButtonsCol>
