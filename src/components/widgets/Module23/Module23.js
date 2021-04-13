@@ -33,10 +33,10 @@ export default props => {
                         src={props.videos.cubesVideo}
                         type="video/mp4"
                       ></source>
-                      <source
+                      {/* <source
                         src={props.videos.cubesVideo1}
                         type="video/m4v"
-                      ></source>
+                      ></source> */}
                       <source
                         src={props.videos.cubesVideo2}
                         type="video/webm"

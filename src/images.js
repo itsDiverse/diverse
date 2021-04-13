@@ -1,6 +1,6 @@
 //import images Module0 +++++++++++++
 import brands from "./images/Module0/brands.png"
-//import pipesImage from "../static/pipesImg.png"
+import pipesImage from "../static/pipesimg.jpg"
 
 //import images Module 1 ++++++++++++
 import diverseLogo from "./images/QuadBox/diverseLogo.svg"
@@ -196,12 +196,12 @@ import sliderImg3 from "./images/Module22/slider-img-3.jpg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 23+++++++++++
-//import cubeBox from "./images/Module23/cubesImg.png"
+import cubeBox from "../static/cubesimg.jpg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 24+++++++++++
 import ellipse from "./images/Module24/ellipse.png"
-//import cubeObjects from "./images/Module24/cubesObjectsImg.png"
+import cubeObjects from "../static/cubesobjectsimg.jpg"
 //++++++++++++++++++++++++++++++++++
 
 //import images Module 25+++++++++++
@@ -230,7 +230,7 @@ export const images = {
   },
   //-------------------------------------Module0
   module0: {
-    pipesImage: "https://www.meetdiverse.com/pipesimg.jpg",
+    pipesImage,
     pipesImageAlt: "pipes",
     brands,
     brandsAlt: "brands logos",
@@ -518,13 +518,13 @@ export const images = {
   },
   //----------------------------------Module 23
   module23: {
-    cubeBox: "https://www.meetdiverse.com/cubesimg.jpg",
+    cubeBox,
     cubeBoxAlt: "cubes image",
   },
   //----------------------------------Module 24
   module24: {
     ellipse,
-    cubeObjects: "https://www.meetdiverse.com/cubesobjectsimg.jpg",
+    cubeObjects,
     cubeObjectsAlt: "cube image with objects",
   },
   module25: {},
