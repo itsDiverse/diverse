@@ -185,8 +185,11 @@ const MobileNavbar = props => {
           <LogoLink>
             <img src={IconApp} alt="logo"></img>
           </LogoLink>
-          <ModalLink tabIndex="-1" to="/freeProposal/">
-            <Button>GET A PROPOSAL</Button>
+          <ModalLink
+            tabIndex="-1"
+            to="https://clients.meetdiverse.com/wp-admin"
+          >
+            <Button>CLIENT LOGIN</Button>
           </ModalLink>
           <Wrapper>
             <NavButton
@@ -220,8 +223,11 @@ const MobileNavbar = props => {
             </NavLinksContainer>
             <NavSeparator />
             <SecondaryMenuItem>
-              <ModalLink tabIndex="-1" to="/freeProposal/">
-                <Button>GET A PROPOSAL</Button>
+              <ModalLink
+                tabIndex="-1"
+                to="https://clients.meetdiverse.com/wp-admin"
+              >
+                <Button>CLIENT LOGIN</Button>
               </ModalLink>
             </SecondaryMenuItem>
           </SecondaryMenu>

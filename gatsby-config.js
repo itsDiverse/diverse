@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `We develop multi-channel sales processes.`,
-    description: `Grow your business with the assistance of Diverse. We develop multi-channel sales processes to help businesses attract, close & retain customers.`,
+    title: `We deliver the most impactful sales messages through Personalized-Visual™ communication.`,
+    description: `Grow your business with the assistance of Diverse. We deliver the most impactful sales messages through Personalized-Visual™ sales processes to help businesses attract, close & retain customers.`,
     author: `@itsDiverse`,
     siteUrl: `https://meetdiverse.com`,
   },

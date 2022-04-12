@@ -11,7 +11,7 @@ export default props => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1000px)" })
   return (
     <StyledContentWrapper theme={props.theme}>
-      <div id="work" className="content-wrapper">
+      <div id="technology" className="content-wrapper">
         <div className="container-lg">
           <div className="toolssection">
             <div className="tools-section">
@@ -48,7 +48,12 @@ export default props => {
               <div className="title-section">
                 <p className="heading-section">{props.data.heading}</p>
                 <h2>{props.data.title}</h2>
-                <p className="subtitle-section">{props.data.text}</p>
+                <p className="subtitle-section">{props.data.text1}</p>
+                <p className="subtitle-section">{props.data.text2}</p>
+                <p className="subtitle-section">{props.data.text3}</p>
+                <p className="subtitle-section">
+                  {props.data.text4} <a href="tel:+18333483773">{props.data.phone}</a>.
+                </p>
                 <div className="powerful-tools-btn">
                   {props.data.singleButton && (
                     <ModalLink to="/freeProposal/">

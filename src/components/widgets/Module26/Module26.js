@@ -46,9 +46,7 @@ export default props => {
               <div id="services" className="title-section">
                 <p className="heading-section">{props.data.heading}</p>
                 <h2>{props.data.title}</h2>
-                <p className="subtitle-section">{props.data.text1}</p>
-                <p className="subtitle-section">{props.data.text2}</p>
-                <p className="subtitle-section">{props.data.text3}</p>
+                <p className="subtitle-section">{props.data.text}</p>
                 <div className="services-container">
                   <div className="services-title">
                     {props.data.marketingServices.title}
@@ -64,6 +62,65 @@ export default props => {
                       <ul className="services-list">
                         <li>{props.data.marketingServices.service3}</li>
                         <li>{props.data.marketingServices.service4}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="services-container">
+                  <div>
+                    <div className="services-title">
+                      {props.data.graphicServices.title}
+                    </div>
+                    <div className="services-wrapper">
+                      <div className="services-left">
+                        <ul className="services-list">
+                          <li>{props.data.graphicServices.service1}</li>
+                          <li>{props.data.graphicServices.service2}</li>
+                        </ul>
+                      </div>
+                      <div className="services-right">
+                        <ul className="services-list">
+                          <li>{props.data.graphicServices.service3}</li>
+                          <li>{props.data.graphicServices.service4}</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="services-container">
+                  <div className="services-title">
+                    {props.data.videoServices.title}
+                  </div>
+                  <div className="services-wrapper">
+                    <div className="services-left">
+                      <ul className="services-list">
+                        <li>{props.data.videoServices.service1}</li>
+                        <li>{props.data.videoServices.service2}</li>
+                      </ul>
+                    </div>
+                    <div className="services-right">
+                      <ul className="services-list">
+                        <li>{props.data.videoServices.service3}</li>
+                        <li>{props.data.videoServices.service4}</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="services-container">
+                  <div className="services-title">
+                    {props.data.programmingServices.title}{" "}
+                  </div>
+                  <div className="services-wrapper">
+                    <div className="services-left">
+                      <ul className="services-list">
+                        <li>{props.data.programmingServices.service1}</li>
+                        <li>{props.data.programmingServices.service2}</li>
+                      </ul>
+                    </div>
+                    <div className="services-right">
+                      <ul className="services-list">
+                        <li>{props.data.programmingServices.service3}</li>
+                        <li>{props.data.programmingServices.service4}</li>
                       </ul>
                     </div>
                   </div>

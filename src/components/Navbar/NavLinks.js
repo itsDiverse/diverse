@@ -57,17 +57,10 @@ const NavLinks = () => (
   <Wrapper>
     <NavLink to="/">Home</NavLink>
     <NavSeparator />
+    <HashLink to="/#technology">Our Technology</HashLink>
+    <NavSeparator />
     <HashLink to="/#work">How We Work</HashLink>
     <NavSeparator />
-    <HashLink to="/#services">Our Services</HashLink>
-    <NavSeparator />
-    <NavLink
-      to=""
-      href="https://www.facebook.com/meetDiverse/reviews/"
-      target="_blank"
-    >
-      Reviews
-    </NavLink>
   </Wrapper>
 )
 

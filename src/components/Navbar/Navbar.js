@@ -124,8 +124,11 @@ class NavBar extends PureComponent {
                 </StartWrapper>
                 <NavLinks aria-label="links" />
                 <EndWrapper>
-                  <ModalLink tabIndex="-1" to="/freeProposal/">
-                    <Button>GET A PROPOSAL</Button>
+                  <ModalLink
+                    tabIndex="-1"
+                    to="https://clients.meetdiverse.com/wp-admin"
+                  >
+                    <Button>CLIENT LOGIN</Button>
                   </ModalLink>
                 </EndWrapper>
               </NormalNavbar>

@@ -59,34 +59,22 @@ const NavLinksMobile = () => (
         borderTop: "3px solid #195bb6",
         borderBottom: "3px solid #195bb6",
       }}
+      to="/#technology"
+    >
+      Our Technology
+    </NavLink>
+
+    <NavLink
+      activeStyle={{
+        color: "#195bb6",
+        borderTop: "3px solid #195bb6",
+        borderBottom: "3px solid #195bb6",
+      }}
       to="/#work"
     >
-      HOW WE WORK
+      How We Work
     </NavLink>
 
-    <NavLink
-      activeStyle={{
-        color: "#195bb6",
-        borderTop: "3px solid #195bb6",
-        borderBottom: "3px solid #195bb6",
-      }}
-      to="/#services"
-    >
-      OUR SERVICES
-    </NavLink>
-
-    <NavLink
-      activeStyle={{
-        color: "#195bb6",
-        borderTop: "3px solid #195bb6",
-        borderBottom: "3px solid #195bb6",
-      }}
-      to=""
-      href="https://www.facebook.com/meetDiverse/reviews/"
-      target="_blank"
-    >
-      REVIEWS
-    </NavLink>
   </Wrapper>
 )
 
