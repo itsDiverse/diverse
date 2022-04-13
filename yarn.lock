@@ -9384,7 +9384,7 @@
     "format" "^0.2.0"
 
 "favicons-webpack-plugin@git+https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf":
-  "resolved" "git+ssh://git@github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
+  "resolved" "https://git@github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
   "version" "0.0.9"
   dependencies:
     "core-js" "^2.5.7"
