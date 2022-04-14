@@ -14,10 +14,7 @@ export const ProposalCTA = () => (
     <StyledButtonRow>
       <IconWhitePage size={25}></IconWhitePage>
       <StyledButtonDescription>
-        <StyledProposalTitle>Get A Free Proposal</StyledProposalTitle>
-        <StyledProposalSubheading>
-          Tailored to your company's needs.
-        </StyledProposalSubheading>
+        <StyledProposalTitle>REQUEST A DEMO</StyledProposalTitle>
       </StyledButtonDescription>
     </StyledButtonRow>
   </Button>

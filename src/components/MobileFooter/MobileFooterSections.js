@@ -46,64 +46,72 @@ const GetInTouch = () => (
 )
 
 export const MobileFooterSections = () => (
-  <StyledMobileFooterSections>
-    <DropDown icon_expand="+" icon_expanded="-" title="OUR COMPANY">
-      <StyledDropDownItemsContainer>
-        <StyledDropDownItem to="/freeProposal/">
-          {" "}
-          Free Proposal
-        </StyledDropDownItem>
+         <StyledMobileFooterSections>
+           <DropDown icon_expand="+" icon_expanded="-" title="OUR COMPANY">
+             <StyledDropDownItemsContainer>
+               <StyledDropDownItem to="/freeProposal/">
+                 {" "}
+                 Demo Request
+               </StyledDropDownItem>
 
-        <StyledDropDownItem to="/comingSoon/">
-          {" "}
-          Careers <label>HIRING</label>
-        </StyledDropDownItem>
-        <StyledDropDownItem to="/privacy/"> Privacy Policy</StyledDropDownItem>
-      </StyledDropDownItemsContainer>
-    </DropDown>
+               <StyledDropDownItem to="/comingSoon/">
+                 {" "}
+                 Careers <label>HIRING</label>
+               </StyledDropDownItem>
+               <StyledDropDownItem to="/privacy/">
+                 {" "}
+                 Privacy Policy
+               </StyledDropDownItem>
+             </StyledDropDownItemsContainer>
+           </DropDown>
 
-    <DropDown icon_expand="+" icon_expanded="-" title="RESOURCES">
-      <StyledDropDownItemsContainer>
-        <StyledDropDownItem
-          to=""
-          href="https://www.facebook.com/meetDiverse"
-          target="_blank"
-        >
-          {" "}
-          Reviews
-        </StyledDropDownItem>
-        <StyledDropDownItem to="/comingSoon/"> Client Login</StyledDropDownItem>
-        <StyledDropDownItem to="/comingSoon/"> Blog</StyledDropDownItem>
-      </StyledDropDownItemsContainer>
-    </DropDown>
+           <DropDown icon_expand="+" icon_expanded="-" title="RESOURCES">
+             <StyledDropDownItemsContainer>
+               <StyledDropDownItem
+                 to=""
+                 href="https://www.facebook.com/meetDiverse"
+                 target="_blank"
+               >
+                 {" "}
+                 Reviews
+               </StyledDropDownItem>
+               <StyledDropDownItem to="https://clients.meetdiverse.com/wp-admin">
+                 {" "}
+                 Client Login
+               </StyledDropDownItem>
+               <StyledDropDownItem
+                 to="#"
+                 onClick={e => {
+                   window.location.href =
+                     "mailto:support@meetdiverse.com?Subject=Diverse%20Website%20Submission"
+                   e.preventDefault()
+                 }}
+               >
+                 {" "}
+                 Email Us
+               </StyledDropDownItem>
+             </StyledDropDownItemsContainer>
+           </DropDown>
 
-    <DropDown icon_expand="+" icon_expanded="-" title="GET IN TOUCH">
-      <StyledGetInTouch>
-        <StyledSectionSocialMedia>
-          <StyledSectionSocialMediaIcons>
-            <a
-              href="https://www.facebook.com/meetDiverse"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Find us on facebook"
-            >
-              <IconFacebook size={20} />
-            </a>
-            <a
-              href="https://www.instagram.com/meetDiverse"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Find us on instagram"
-            >
-              <IconInstagram size={20} />
-            </a>
-          </StyledSectionSocialMediaIcons>
-        </StyledSectionSocialMedia>
-        <StyledPhoneNumber>
-          Give Us A Call: <span>(833)-Diverse</span>
-        </StyledPhoneNumber>
-        <GetInTouch />
-      </StyledGetInTouch>
-    </DropDown>
-  </StyledMobileFooterSections>
-)
+           <DropDown icon_expand="+" icon_expanded="-" title="GET IN TOUCH">
+             <StyledGetInTouch>
+               <StyledSectionSocialMedia>
+                 <StyledSectionSocialMediaIcons>
+                   <a
+                     href="https://www.facebook.com/meetDiverse"
+                     target="_blank"
+                     rel="noreferrer"
+                     aria-label="Find us on facebook"
+                   >
+                     <IconFacebook size={20} />
+                   </a>
+                 </StyledSectionSocialMediaIcons>
+               </StyledSectionSocialMedia>
+               <StyledPhoneNumber href="tel:+18333483773">
+                 Give Us A Call: <span>1-833-DIVERSE</span>
+               </StyledPhoneNumber>
+               <GetInTouch />
+             </StyledGetInTouch>
+           </DropDown>
+         </StyledMobileFooterSections>
+       )

@@ -878,7 +878,7 @@ export const data = {
          module23: {
            heading: "Our Technology",
            title: "Personalized-Visual™",
-           text:
+           text1:
              "After many iterations, we are proud to announce the release of our proprietary tech: Personalized-Visual™.",
            text2:
              "Personalized-Visual™ allows us to create and send the most effective outbound sales campaigns by impacting each prospect with a one-on-one, personally made video.",

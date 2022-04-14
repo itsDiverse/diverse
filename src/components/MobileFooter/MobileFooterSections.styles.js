@@ -81,7 +81,6 @@ export const StyledSectionSocialMedia = styled.div`
 export const StyledSectionSocialMediaIcons = styled.div`
   svg:first-child {
     margin-right: 10px;
-    margin-left: 5px;
   }
-  opacity: 0.4 !important;
+  width: 40%;
 `
