@@ -65,7 +65,7 @@ export const Form2 = ({ setStep, formData, setFormData }) => (
           <ErrorMessage name="sell" />
         </ErrorValidation>
         <StyledProposalLabel>
-          What's your monthly PPC ad spend?
+          Current monthly marketing budget?
           <SelectOwn
             value={values.spend.value}
             type="string"

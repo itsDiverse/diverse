@@ -2,7 +2,7 @@ import React from "react"
 
 import { ProposalHeader } from "./ProposalHeader"
 import { ProposalBody } from "./ProposalBody"
-import { ProposalFooter } from "./ProposalFooter"
+// import { ProposalFooter } from "./ProposalFooter"
 import {
   StyledClose,
   StyledContentWrapper,
@@ -23,7 +23,7 @@ export const Proposal = () => {
           setFormData={setFormData}
           formData={formData}
         />
-        <ProposalFooter step={step} />
+        {/* <ProposalFooter step={step} /> */}
         {step !== 4 && <StyledClose to="/">Close</StyledClose>}
       </StyledProposalContainer>
     </StyledContentWrapper>

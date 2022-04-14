@@ -14,11 +14,11 @@ const FormSchema = Yup.object().shape({
   advertise: Yup.string().required("*Required"),
 })
 const optionsGoals = [
-  { value: "conversation", label: "Get more conversions" },
-  { value: "leads", label: "Get more phone leads" },
-  { value: "lowCostConversion", label: "Lower cost per conversion" },
-  { value: "all", label: "All of the above" },
-  { value: "other", label: "Other..." },
+  { value: "realEstate", label: "Real Estate" },
+  { value: "solar", label: "Solar" },
+  { value: "boating", label: "Boating" },
+//   { value: "all", label: "All of the above" },
+  { value: "other", label: "Other" },
 ]
 const optionsAdvertise = [
   { value: "nationally", label: "Nationally" },
@@ -50,7 +50,7 @@ export const Form1 = ({ setStep, formData, setFormData }) => (
     }) => (
       <StyledProposalForm>
         <StyledProposalLabel>
-          What are your goals?
+          What industry are you in?
           <SelectOwn
             value={values.goals.value}
             type="string"

@@ -111,7 +111,7 @@ export const Form3 = ({ setStep, formData, setFormData }) => (
           <ErrorMessage name="number" />
         </ErrorValidation>
         <StyledProposalButton type="submit" onClick={handleSubmit}>
-          SEND MY FREE PROPOSAL
+          SUBMIT DEMO REQUEST
         </StyledProposalButton>
       </Form>
     )}

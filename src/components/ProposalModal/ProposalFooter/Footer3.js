@@ -135,7 +135,7 @@ export const Footer3 = () => (
     </svg>
 
     <div style={{ fontWeight: "normal", fontSize: "14px", color: "#1D4D87" }}>
-      Reach us directly to discuss your sales and advertising goal
+      Reach us directly to schedule your demo request
     </div>
     <svg
       width="164"
@@ -171,7 +171,7 @@ export const Footer3 = () => (
       }}
     >
       <a
-        href="tel:8333483773"
+        href="tel+18333483773"
         style={{
           fontFamily: "NovaSemi",
           fontWeight: 400,

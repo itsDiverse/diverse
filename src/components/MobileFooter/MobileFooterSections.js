@@ -1,5 +1,5 @@
 import React from "react"
-import { IconInstagram, IconFacebook } from "../Icons"
+import { IconFacebook } from "../Icons"
 import { ModalLink } from "../ModalLink"
 
 import {

@@ -2,7 +2,6 @@ import React from "react"
 import { Button } from "../Button"
 import {
   StyledProposalTitle,
-  StyledProposalSubheading,
   StyledButtonRow,
   StyledButtonDescription,
 } from "./ProposalCTA.styles"
