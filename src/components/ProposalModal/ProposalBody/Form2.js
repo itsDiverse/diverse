@@ -20,9 +20,7 @@ const optionsSell = [
   { value: "notSure", label: "Not sure" },
 ]
 const optionsSpend = [
-  { value: "0-1000", label: "$0 - $1,000" },
-  { value: "1001-5000", label: "$1,001 - $5,000" },
-  { value: "5001-25000", label: "$5,001 - $25,000" },
+  { value: "5000-25000", label: "$5,000 - $25,000" },
   { value: "25000-100000", label: "$25,001 - $100,000" },
   { value: "more", label: "$100,001+" },
 ]

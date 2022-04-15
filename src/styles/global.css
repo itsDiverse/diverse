@@ -28,3 +28,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
+body .ReactModal__Content.ReactModal__Content--after-open {
+	overflow: visible !important;
+}

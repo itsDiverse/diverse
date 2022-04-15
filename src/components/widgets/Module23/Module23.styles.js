@@ -75,7 +75,6 @@ export const StyledContentWrapper = styled.div`
       font-family: NovaLight;
       font-style: normal;
       font-size: 18px;
-      line-height: 140.3%;
       color: ${props.theme.colors.text};
     }
 
