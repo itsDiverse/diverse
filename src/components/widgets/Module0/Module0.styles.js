@@ -99,7 +99,6 @@ export const StyledContentWrapper = styled.div`
         min-height: 80vh;
         // flex: 1;
         display: flex;
-        justify-content: center;
         align-items: center;
       }
       .title-section {
