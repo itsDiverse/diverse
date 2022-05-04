@@ -15,8 +15,7 @@ export const MobileFooterHeading = () => (
     </Link>
 
     <StyledParagraph>
-      We develop multi-channel sales processes to help businesses attract,
-      close, and retain customers.
+      We deliver the most impactful sales messages through Personalized-Visual™ communication.
     </StyledParagraph>
   </StyledMobileFooterHeading>
 )

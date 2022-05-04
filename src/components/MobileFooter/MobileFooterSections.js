@@ -69,7 +69,7 @@ export const MobileFooterSections = () => (
              <StyledDropDownItemsContainer>
                <StyledDropDownItem
                  to=""
-                 href="https://www.facebook.com/meetDiverse"
+                 href="https://www.facebook.com/meetDiverse/reviews"
                  target="_blank"
                >
                  {" "}

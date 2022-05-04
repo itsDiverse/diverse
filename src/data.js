@@ -13,23 +13,19 @@ export const data = {
            subtitle: "Excepteur laboris est commodo velit vol",
            box1: {
              title: "Box1",
-             text: `We develop multi-channel sales processes to help businesses
-      attract, close, and retain customers.`,
+             text: `We deliver the most impactful sales messages through Personalized-Visual™ communication.`,
            },
            box2: {
              title: "Box2",
-             text: `We develop multi-channel sales processes to help businesses
-      attract, close, and retain customers.`,
+             text: `We deliver the most impactful sales messages through Personalized-Visual™ communication.`,
            },
            box3: {
              title: "Box3",
-             text: `We develop multi-channel sales processes to help businesses
-      attract, close, and retain customers.`,
+             text: `We deliver the most impactful sales messages through Personalized-Visual™ communication.`,
            },
            box4: {
              title: "Box4",
-             text: `We develop multi-channel sales processes to help businesses
-      attract, close, and retain customers.`,
+             text: `We deliver the most impactful sales messages through Personalized-Visual™ communication.`,
            },
          },
 
@@ -892,7 +888,7 @@ export const data = {
            heading: "How We Work",
            title: "Our Approach",
            text1:
-             "After much consideration, we have decided to offer Personalized-Visual™ directly to suitable businesses in a results-based partnership model rather than as a SaaS (Software as a Service) product to the mass market for a set monthly fee.",
+             "After much consideration, we have decided to offer Personalized-Visual™ directly to suitable businesses in a results-based partnership model rather than as a SaaS (Software as a Service) product to the mass market.",
            text2:
              "We provide service on our clients' behalf and only obtain compensation after our clients collect payment from the facilitated business.",
            text3:
