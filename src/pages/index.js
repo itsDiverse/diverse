@@ -10,7 +10,7 @@ import { videos } from "../videos"
 
 export default () => (
   <LayoutV1>
-    <SEO />
+    <SEO title="Diverse Visual" />
     <Module0
       component={Module0}
       theme={theme.module0}

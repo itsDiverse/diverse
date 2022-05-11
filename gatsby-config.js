@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Diverse Visual - Visual Effects Advertising`,
+    title: 'Visual Effects Advertising',
     description: `We deliver the most impactful sales messages through Personalized-Visual™ communication. We partner with select clients and provide a results-based service model.`,
     author: `@itsDiverse`,
     siteUrl: `https://meetdiverse.com`,
