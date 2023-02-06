@@ -15,8 +15,8 @@ const FormSchema = Yup.object().shape({
 })
 const optionsGoals = [
   { value: "realEstate", label: "Real Estate" },
-  { value: "solar", label: "Solar" },
-  { value: "boating", label: "Boating" },
+  // { value: "solar", label: "Solar" },
+  // { value: "boating", label: "Boating" },
 //   { value: "all", label: "All of the above" },
   { value: "other", label: "Other" },
 ]
