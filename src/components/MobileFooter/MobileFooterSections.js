@@ -75,7 +75,7 @@ export const MobileFooterSections = () => (
                  {" "}
                  Reviews
                </StyledDropDownItem>
-               <StyledDropDownItem to="https://clients.meetdiverse.com/wp-admin">
+               <StyledDropDownItem to="https://app.meetdiverse.com">
                  {" "}
                  Client Login
                </StyledDropDownItem>

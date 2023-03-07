@@ -187,7 +187,7 @@ const MobileNavbar = props => {
           </LogoLink>
           <ModalLink
             tabIndex="-1"
-            to="https://clients.meetdiverse.com/wp-admin"
+            to="https://app.meetdiverse.com"
           >
             <Button>CLIENT LOGIN</Button>
           </ModalLink>
@@ -225,7 +225,7 @@ const MobileNavbar = props => {
             <SecondaryMenuItem>
               <ModalLink
                 tabIndex="-1"
-                to="https://clients.meetdiverse.com/wp-admin"
+                to="https://app.meetdiverse.com"
               >
                 <Button>CLIENT LOGIN</Button>
               </ModalLink>

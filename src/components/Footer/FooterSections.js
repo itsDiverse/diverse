@@ -59,7 +59,7 @@ export const FooterSections = () => (
                  >
                    Reviews
                  </StyledSectionSubtitle>
-                 <StyledSectionSubtitle to="https://clients.meetdiverse.com/wp-admin">
+                 <StyledSectionSubtitle to="https://app.meetdiverse.com">
                    Client Login
                  </StyledSectionSubtitle>
                  <StyledSectionSubtitle
