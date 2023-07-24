@@ -191,7 +191,8 @@ export const StyledContentWrapper = styled.div`
         justify-content: flex-start;
       }
       .brands-wrapper img {
-        width: fit-content;
+        width: 40%;
+        min-width: 400px;
         z-index: 1;
       }
       .brands-wrapper svg {
