@@ -60,12 +60,12 @@ export default props => {
                         {/* <li>{props.data.marketingServices.service2}</li> */}
                       </ul>
                     </div>
-                    {/* <div className="services-right">
+                    <div className="services-right">
                       <ul className="services-list">
-                        <li>{props.data.marketingServices.service3}</li>
-                        <li>{props.data.marketingServices.service4}</li>
+                      {/*  <li>{props.data.marketingServices.service3}</li>
+                        <li>{props.data.marketingServices.service4}</li> */}
                       </ul>
-                    </div> */}
+                    </div>
                   </div>
                 </div>
               </div>
