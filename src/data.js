@@ -875,12 +875,10 @@ export const data = {
            heading: "Our Technology",
            title: "Personalized-Visual™",
            text1:
-             "After many iterations, we are proud to announce the release of our proprietary tech: Personalized-Visual™.",
-           text2:
              "Personalized-Visual™ allows us to create and send the most effective outbound sales campaigns by impacting each prospect with a one-on-one, personally made video.",
-           text3:
+           text2:
              "We are able to turn one pre-recorded video into an individually rendered masterpiece for hundreds of thousands of prospects to enjoy and consume on a personal level.",
-           text4:
+           text3:
              "To experience a demo, feel free to schedule online, send us an email, or call our office",
            phone: "1-833-DIVERSE",
          },
@@ -888,17 +886,17 @@ export const data = {
            heading: "How We Work",
            title: "Our Approach",
            text1:
-             "After much consideration, we have decided to offer Personalized-Visual™ directly to suitable businesses in a results-based partnership model rather than as a SaaS (Software as a Service) product to the mass market.",
+             "We use our technology to market real estate agents to their local market. Most lead generation companies focus on their brand. We focus on the agent’s brand.",
            text2:
-             "We provide service on our clients' behalf and only obtain compensation after our clients collect payment from the facilitated business.",
+             "We work on a results-based model. For this reason, we take careful consideration upon entering each new client relationship. We only work with established real estate agents.",
            text3:
-             "When entering each market, we take a strategic approach. Due to the size of each market segment, we can only partner with one business per service location. For this reason, and the nature of our results-based model, we take careful consideration upon entering each new client relationship.",
+             "We provide exclusive leads. No more competing with other agents over the same lead.",
            marketingServices: {
              title: "Current Industries Serviced",
              service1: "Real Estate",
-             service2: "Solar",
-             service3: "Automotive",
-             service4: "More Coming Soon",
+            //  service2: "Solar",
+            //  service3: "Automotive",
+            //  service4: "More Coming Soon",
            },
          },
          //-------------------------------------Module 24
