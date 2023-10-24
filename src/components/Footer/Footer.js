@@ -10,7 +10,7 @@ export const Footer = () => (
   <StyledFooterWrapper>
     <StyledFooter>
       <FooterSections />
-      {/* <FooterCerts /> */}
+      <FooterCerts />
       <FooterCopyright />
     </StyledFooter>
   </StyledFooterWrapper>

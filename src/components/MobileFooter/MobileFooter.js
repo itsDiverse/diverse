@@ -11,7 +11,7 @@ export const MobileFooter = () => (
   <StyledMobileFooter>
     <MobileFooterHeading />
     <MobileFooterSections />
-    {/* <MobileFooterCerts /> */}
+    <MobileFooterCerts />
     <MobileFooterCopyright />
   </StyledMobileFooter>
 )
