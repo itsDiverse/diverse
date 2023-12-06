@@ -67,14 +67,14 @@ export const MobileFooterSections = () => (
 
            <DropDown icon_expand="+" icon_expanded="-" title="RESOURCES">
              <StyledDropDownItemsContainer>
-               <StyledDropDownItem
+               {/* <StyledDropDownItem
                  to=""
                  href="https://www.facebook.com/meetDiverse/reviews"
                  target="_blank"
                >
                  {" "}
                  Reviews
-               </StyledDropDownItem>
+               </StyledDropDownItem> */}
                <StyledDropDownItem to="https://app.meetdiverse.com">
                  {" "}
                  Client Login

@@ -51,14 +51,14 @@ export const FooterSections = () => (
                </StyledSectionColumns>
                <StyledSectionColumns>
                  <StyledSectionTitle>RESOURCES</StyledSectionTitle>
-                 <StyledSectionSubtitle
+                 {/* <StyledSectionSubtitle
                    to=""
                    href="https://www.facebook.com/meetDiverse/reviews/"
                    target="_blank"
                    rel="noreferrer"
                  >
                    Reviews
-                 </StyledSectionSubtitle>
+                 </StyledSectionSubtitle> */}
                  <StyledSectionSubtitle to="https://app.meetdiverse.com">
                    Client Login
                  </StyledSectionSubtitle>
