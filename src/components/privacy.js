@@ -152,12 +152,16 @@ export const Privacy = () => {
         </Description>
         <Description>
           Diverse Marketing LLC
+        </Description>
+        <Description>
           <a
             style={{ textDecoration: "none", color: "#195bb6" }}
             href={"mailto: office@meetdiverse.com"}
           >
             office@meetdiverse.com
           </a>
+        </Description>
+        <Description>
           833-DIVERSE
         </Description>
       </Container>
