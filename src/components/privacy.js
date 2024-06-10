@@ -149,7 +149,8 @@ export const Privacy = () => {
         <MainTitle>Contact Us</MainTitle>
         <Description>
           If you have any questions about this Privacy Policy, please contact us at:
-
+        </Description>
+        <Description>
           Diverse Marketing LLC
           <a
             style={{ textDecoration: "none", color: "#195bb6" }}
