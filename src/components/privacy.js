@@ -13,6 +13,8 @@ const Container = styled.div`
 
 const Title = styled.h3``
 
+const MainTitle = styled.h2``
+
 const Description = styled.p`
   margin-top: -15px;
   margin-bottom: 15px;
@@ -22,119 +24,140 @@ export const Privacy = () => {
   return (
     <Wrapper>
       <Container>
-        <Title>Privacy Policy</Title>
+        <MainTitle>Privacy Policy</MainTitle>
+        <Title>Introduction</Title>
         <Description>
-          Diverse Marketing LLC built the Diverse app as a Free app. This
-          SERVICE is provided by Diverse Marketing LLC at no cost and is
-          intended for use as is. This page is used to inform visitors regarding
-          our policies with the collection, use, and disclosure of Personal
-          Information if anyone decided to use our Service. If you choose to use
-          our Service, then you agree to the collection and use of information
-          in relation to this policy. The Personal Information that we collect
-          is used for providing and improving the Service. We will not use or
-          share your information with anyone except as described in this Privacy
-          Policy. The terms used in this Privacy Policy have the same meanings
-          as in our Terms and Conditions, which is accessible at Diverse unless
-          otherwise defined in this Privacy Policy.
+        Welcome to Diverse Marketing LLC. We are committed to protecting your privacy. This Privacy
+        Policy explains how we collect, use, disclose, and safeguard your information when you visit our
+        website. Please read this Privacy Policy carefully. If you do not agree with the terms of this 
+        Privacy Policy, please do not access the site.
         </Description>
         {""}
-        <Title>Information Collection and Use</Title>
+        <MainTitle>Information We Collect</MainTitle>
         <Description>
-          For a better experience, while using our Service, we may require you
-          to provide us with certain personally identifiable information. The
-          information that we request will be retained by us and used as
-          described in this privacy policy.
+        We may collect information about you in a variety of ways. The information we may collect on 
+        the site includes:
         </Description>
         {""}
-        <Title>Log Data</Title>
+        <Title>Personal Data</Title>
         <Description>
-          We want to inform you that whenever you use our Service, in a case of
-          an error in the app we collect data and information (through third
-          party products) on your phone called Log Data. This Log Data may
-          include information such as your device Internet Protocol (“IP”)
-          address, device name, operating system version, the configuration of
-          the app when utilizing our Service, the time and date of your use of
-          the Service, and other statistics.
+          Personally identifiable information, such as your name, shipping address, email address, and 
+          telephone number, and demographic information, such as your age, gender, hometown, and 
+          interests, that you voluntarily give to us when you register with the site or when you choose to 
+          participate in various activities related to the site, such as online chat and message boards.
         </Description>
         {""}
-        <Title>Cookies</Title>
+        <Title>Derivative Data</Title>
         <Description>
-          Cookies are files with a small amount of data that are commonly used
-          as anonymous unique identifiers. These are sent to your browser from
-          the websites that you visit and are stored on your device's internal
-          memory. This Service does not use these “cookies” explicitly. However,
-          the app may use third party code and libraries that use “cookies” to
-          collect information and improve their services. You have the option to
-          either accept or refuse these cookies and know when a cookie is being
-          sent to your device. If you choose to refuse our cookies, you may not
-          be able to use some portions of this Service.
+          Information our servers automatically collect when you access the site, such as your IP address, 
+          your browser type, your operating system, your access times, and the pages you have viewed 
+          directly before and after accessing the site.
         </Description>
         {""}
-        <Title>Service Providers</Title>
+        <Title>Financial Data</Title>
         <Description>
-          We may employ third-party companies and individuals due to the
-          following reasons:
+          Financial information, such as data related to your payment method (e.g., valid credit card 
+          number, card brand, expiration date) that we may collect when you purchase, order, return, 
+          exchange, or request information about our services from the site
+        </Description>
+        {""}
+        <Title>Data From Social Networks</Title>
+        <Description>
+          User information from social networking sites, such as Facebook, Google+, Instagram, including
+          your name, your social network username, location, gender, birth date, email address, profile 
+          picture, and public data for contacts, if you connect your account to such social networks.
+        </Description>
+        {""}
+        <Title>Mobile Device Data</Title>
+        <Description>
+          Device information, such as your mobile device ID, model, and manufacturer, and information 
+          about the location of your device, if you access the site from a mobile device
+        </Description>
+        {""}
+        <MainTitle>Use of Your Information</MainTitle>
+        <Description>
+          Having accurate information about you permits us to provide you with a smooth, efficient, and 
+          customized experience. Specifically, we may use information collected about you via the site to:
           <ul>
-            <li>To facilitate our Service;</li>
-            <li> To provide the Service on our behalf;</li>
-            <li> To perform Service-related services; or </li>
-            <li>To assist us in analyzing how our Service is used.</li>
+            <li>Create and manage your account.</li>
+            <li>Process your transactions and send related information, including purchase confirmations
+                and invoices.</li>
+            <li>Email you regarding your account or order.</li>
+            <li>Fulfill and manage purchases, orders, payments, and other transactions related to the site.</li>
+            <li>Increase the efficiency and operation of the site.</li>
+            <li>Monitor and analyze usage and trends to improve your experience with the site.</li>
+            <li>Request feedback and contact you about your use of the site.</li>
+            <li>Resolve disputes and troubleshoot problems.</li>
+            <li>Respond to product and customer service requests.</li>
           </ul>
-          We want to inform users of this Service that these third parties have
-          access to your Personal Information. The reason is to perform the
-          tasks assigned to them on our behalf. However, they are obligated not
-          to disclose or use the information for any other purpose.
         </Description>
         {""}
-        <Title>Security</Title>
+        <MainTitle>SMS Communications</MainTitle>
+        <Title>Opt-In</Title>
         <Description>
-          We value your trust in providing us your Personal Information, thus we
-          are striving to use commercially acceptable means of protecting it.
-          But remember that no method of transmission over the internet, or
-          method of electronic storage is 100% secure and reliable, and we
-          cannot guarantee its absolute security.
+          By providing your mobile phone number, you agree to receive SMS messages from Diverse 
+          Marketing LLC. These messages may include updates about your account, transactions, 
+          promotional offers, and other information related to our services. Standard message and data 
+          rates may apply.
         </Description>
         {""}
-        <Title>Links to Other Sites</Title>
+        <Title>Opt-Out</Title>
         <Description>
-          This Service may contain links to other sites. If you click on a
-          third-party link, you will be directed to that site. Note that these
-          external sites are not operated by us. Therefore, we strongly advise
-          you to review the Privacy Policy of these websites. We have no control
-          over and assume no responsibility for the content, privacy policies,
-          or practices of any third-party sites or services.
+          You can opt out of receiving SMS messages at any time by replying "STOP" to any message you
+          receive from us. After opting out, you will no longer receive SMS messages from Diverse 
+          Marketing LLC, but you may still receive emails and other forms of communication if you have 
+          opted into those.
         </Description>
         {""}
-        <Title>Children’s Privacy</Title>
+        <Title>Frequency</Title>
         <Description>
-          These Services do not address anyone under the age of 13. We do not
-          knowingly collect personally identifiable information from children
-          under 13 years of age. In the case we discover that a child under 13
-          has provided us with personal information, we immediately delete this
-          from our servers. If you are a parent or guardian and you are aware
-          that your child has provided us with personal information, please
-          contact us so that we will be able to do necessary actions.
+          The frequency of SMS messages will vary based on your interactions and the nature of our 
+          communications with you. We strive to keep the number of messages reasonable and relevant to 
+          your interests.
         </Description>
         {""}
-        <Title>Changes to This Privacy Policy</Title>
+        <MainTitle>Disclosure of Your Information</MainTitle>
         <Description>
-          We may update our Privacy Policy from time to time. Thus, you are
-          advised to review this page periodically for any changes. We will
-          notify you of any changes by posting the new Privacy Policy on this
-          page. This policy is effective as of 2020-03-02
+          We do not share any information we have collected about you with third parties.
         </Description>
         {""}
-        <Title>Contact Us</Title>
+        <MainTitle>Security of Your Information</MainTitle>
         <Description>
-          If you have any questions or suggestions about our Privacy Policy, do
-          not hesitate to contact us at{" "}
+          We use administrative, technical, and physical security measures to help protect your personal 
+          information. While we have taken reasonable steps to secure the personal information you 
+          provide to us, please be aware that despite our efforts, no security measures are perfect or 
+          impenetrable, and no method of data transmission can be guaranteed against any interception or 
+          other types of misuse.
+        </Description>
+        {""}
+        <MainTitle>Policy for Children</MainTitle>
+        <Description>
+          We do not knowingly solicit information from or market to children under the age of 13. If we 
+          learn that we have collected personal information from a child under age 13 without verification 
+          of parental consent, we will delete that information as quickly as possible. If you become aware 
+          of any data we have collected from children under age 13, please contact us at [contact email].
+        </Description>
+        {""}
+        <MainTitle>Changes to This Privacy Policy</MainTitle>
+        <Description>
+          We may update this Privacy Policy from time to time in order to reflect, for example, changes to 
+          our practices or for other operational, legal, or regulatory reasons. Any changes or modifications 
+          will be effective immediately upon posting the updated Privacy Policy on the site, and you waive
+          the right to receive specific notice of each such change or modification.
+        </Description>
+        {""}
+        <MainTitle>Contact Us</MainTitle>
+        <Description>
+          If you have any questions about this Privacy Policy, please contact us at:
+
+          Diverse Marketing LLC
           <a
             style={{ textDecoration: "none", color: "#195bb6" }}
-            href={"mailto: support@itsdiverse.com"}
+            href={"mailto: office@meetdiverse.com"}
           >
-            support@itsdiverse.com
+            office@meetdiverse.com
           </a>
-          .
+          833-DIVERSE
         </Description>
       </Container>
     </Wrapper>
