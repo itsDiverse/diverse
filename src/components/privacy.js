@@ -135,7 +135,7 @@ export const Privacy = () => {
           We do not knowingly solicit information from or market to children under the age of 13. If we 
           learn that we have collected personal information from a child under age 13 without verification 
           of parental consent, we will delete that information as quickly as possible. If you become aware 
-          of any data we have collected from children under age 13, please contact us at [contact email].
+          of any data we have collected from children under age 13, please contact us at office@meetdiverse.com.
         </Description>
         {""}
         <MainTitle>Changes to This Privacy Policy</MainTitle>
