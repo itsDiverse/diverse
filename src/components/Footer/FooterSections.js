@@ -59,7 +59,7 @@ export const FooterSections = () => (
                  >
                    Reviews
                  </StyledSectionSubtitle> */}
-                 <StyledSectionSubtitle to="https://app.meetdiverse.com">
+                 <StyledSectionSubtitle to="https://portal.meetdiverse.com">
                    Client Login
                  </StyledSectionSubtitle>
                  <StyledSectionSubtitle

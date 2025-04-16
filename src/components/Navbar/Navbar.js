@@ -126,7 +126,7 @@ class NavBar extends PureComponent {
                 <EndWrapper>
                   <ModalLink
                     tabIndex="-1"
-                    to="https://app.meetdiverse.com"
+                    to="https://portal.meetdiverse.com"
                   >
                     <Button>CLIENT LOGIN</Button>
                   </ModalLink>
