@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "18.14.0"
+  SHARP_IGNORE_GLOBAL_LIBVIPS = "true"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+# Force the build to use an older Python version that's compatible with node-gyp
+[build.environment.PYTHON]
+  version = "3.8" 
