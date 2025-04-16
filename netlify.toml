@@ -1,0 +1,12 @@
+[build]
+  command = "npm run netlify-build"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "14.17.0"
+  SHARP_IGNORE_GLOBAL_LIBVIPS = "true"
+  NPM_FLAGS = "--no-optional"
+  PYTHON_VERSION = "3.8"
+
+[[plugins]]
+  package = "@netlify/plugin-gatsby" 
